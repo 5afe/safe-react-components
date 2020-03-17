@@ -1,0 +1,7 @@
+{
+    "extends": ["react-app", "prettier", "prettier/react", "plugin:import/errors"],
+    "plugins": ["prettier", "import"],
+    "parserOptions": {
+      "ecmaVersion": 9
+    }
+  }
