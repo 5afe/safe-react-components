@@ -19,6 +19,19 @@ import deleteIcon from './images/delete';
 import devicePassword from './images/devicePassword';
 import edit from './images/edit';
 import error from './images/error';
+import eth from './images/eth';
+import externalLink from './images/externalLink';
+import eye from './images/eye';
+import eyeOff from './images/eyeOff';
+import filledCross from './images/filledCross';
+import fingerPrint from './images/fingerPrint';
+import getInTouch from './images/getInTouch';
+import info from './images/info';
+import licenses from './images/licenses';
+import loadSafe from './images/loadSafe';
+import locked from './images/locked';
+import mobileConfirm from './images/mobileConfirm';
+import noInternet from './images/noInternet';
 
 import { Theme } from '../../theme';
 
@@ -43,7 +56,20 @@ const icons = {
   delete: deleteIcon,
   devicePassword,
   edit,
-  error
+  error,
+  eth,
+  externalLink,
+  eye,
+  eyeOff,
+  filledCross,
+  fingerPrint,
+  getInTouch,
+  info,
+  licenses,
+  loadSafe,
+  locked,
+  mobileConfirm,
+  noInternet
 };
 
 type IconType = typeof icons;
