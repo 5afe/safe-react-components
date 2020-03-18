@@ -4,20 +4,40 @@ const theme = {
     fontFamilyCode: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`
   },
   colors: {
-    // semantic colors
     primary: '#008C73',
-    primarySoft: '#A1D2CA',
-    secondary: '#001428',
-    secondarySoft: '#5D6D74',
-    error: '#DB3A3D',
-    disabled: '#B2B5B2',
+    primaryLight: '#A1D2CA',
+    primaryHover: '#B2B5B2',
 
-    // named colors
-    white: '#F7F5F5',
-    whiteSmokeSoft: '#F0EFEE',
-    whiteSmoke: '#E8E7E6',
-    mediumGrey: '#B2B5B2',
-    lightGrey: '#D4D5D3'
+    // secondary: '#',
+    // secondaryLight: '#',
+    // secondaryHover: '#',
+
+    // disabled: '#'
+
+    error: '#DB3A3D',
+    errorHover: '#C31717',
+    placeHolder: '#5D6D74',
+    serviceIcon: '#B2B5B2',
+    rinkeby: '#E8673C',
+    pendingTagHover: '#FBE5C5',
+
+    tag: '#D4D5D3',
+    separator: '#E8E7E6',
+    inputField: '#F0EFEE',
+    background: '#F7F5F5',
+
+    overlay: {
+      opacity: '75%',
+      color: '#E8E7E6'
+    },
+    shadow: {
+      opacity: '18%',
+      color: '#28363D'
+    },
+    cardShadow: {
+      opacity: '59%',
+      color: '#D4D4D3'
+    }
   },
   buttons: {
     size: {
