@@ -7,25 +7,22 @@ const theme = {
     primary: '#008C73',
     primaryLight: '#A1D2CA',
     primaryHover: '#B2B5B2',
-
-    // secondary: '#',
-    // secondaryLight: '#',
-    // secondaryHover: '#',
-
-    // disabled: '#'
-
+    secondary: '#008C73',
+    secondaryLight: '#A1D2CA',
+    secondaryHover: '#005546',
     error: '#DB3A3D',
     errorHover: '#C31717',
     placeHolder: '#5D6D74',
     serviceIcon: '#B2B5B2',
     rinkeby: '#E8673C',
     pendingTagHover: '#FBE5C5',
-
     tag: '#D4D5D3',
     separator: '#E8E7E6',
     inputField: '#F0EFEE',
     background: '#F7F5F5',
-
+    disabled: {
+      opacity: '50%'
+    },
     overlay: {
       opacity: '75%',
       color: '#E8E7E6'
