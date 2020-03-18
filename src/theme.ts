@@ -78,8 +78,8 @@ const theme = {
   },
   icons: {
     size: {
-      sm: '16px',
-      md: '24px'
+      sm: '16',
+      md: '24'
     }
   }
 };
