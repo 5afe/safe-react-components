@@ -13,9 +13,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.svg$/,
+        test: /\.woff2$/,
         use: {
-          loader: 'svg-url-loader',
+          loader: 'file-loader',
           options: {}
         }
       },

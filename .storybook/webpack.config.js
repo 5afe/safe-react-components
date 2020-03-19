@@ -5,23 +5,30 @@ module.exports = ({ config }) => {
       {
         loader: require.resolve('awesome-typescript-loader')
       },
-      // Optional
       {
         loader: require.resolve('react-docgen-typescript-loader')
       }
     ]
   });
+
   config.module.rules.push({
-    test: /\.svg$/,
-    use: {
-      loader: 'svg-url-loader',
-      options: {}
-    }
-  }),
-    config.resolve.extensions.push('.ts', '.tsx');
+    test: /\.(woff|woff2|eot|ttf)$/,
+    use: [
+      {
+        loader: 'file-loader',
+        query: {
+          name: '[name].[ext]'
+        }
+      }
+    ]
+  });
+
+  config.resolve.extensions.push('.ts', '.tsx', 'woff2');
+
   config.node = {
     fs: 'empty',
     child_process: 'empty'
   };
+
   return config;
 };

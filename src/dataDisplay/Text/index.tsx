@@ -11,11 +11,12 @@ type Props = {
 };
 
 const StyledText = styled.p<Props>`
+  font-family: 'Averta';
   margin: 0;
   font-weight: ${({ strong }) => (strong ? 'bold' : 'normal')};
   font-size: ${({ size, theme }) => theme.text.size[size].fontSize};  
   line-height: ${({ size, theme }) => theme.text.size[size].lineHeight};
-  text-align: ${({ center }) => (center ? 'center' : 'strat')};
+  text-align: ${({ center }) => (center ? 'center' : 'start')};
 `;
 
 const Text = ({ children, ...rest }: Props) => (
