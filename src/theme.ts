@@ -6,20 +6,27 @@ const theme = {
   colors: {
     primary: '#008C73',
     primaryLight: '#A1D2CA',
-    primaryHover: '#B2B5B2',
-    secondary: '#008C73',
+    primaryHover: '#005546',
+
+    secondary: '#001428',
     secondaryLight: '#A1D2CA',
     secondaryHover: '#005546',
+
     error: '#DB3A3D',
     errorHover: '#C31717',
-    placeHolder: '#5D6D74',
+
+    text: '#001428',
     icon: '#B2B5B2',
+    placeHolder: '#5D6D74',
+    inputField: '#F0EFEE',
+    
+    separator: '#E8E7E6',
     rinkeby: '#E8673C',
     pendingTagHover: '#FBE5C5',
     tag: '#D4D5D3',
-    separator: '#E8E7E6',
-    inputField: '#F0EFEE',
     background: '#F7F5F5',
+    white: '#ffffff',
+
     disabled: {
       opacity: '50%'
     },
@@ -38,10 +45,8 @@ const theme = {
   },
   buttons: {
     size: {
-      xs: '50px',
-      sm: '70px',
-      md: '90px',
-      lg: '90px'
+      md: { height: '36px' },
+      lg: { height: '52px' }
     }
   },
   text: {
@@ -62,6 +67,12 @@ const theme = {
         fontSize: '16px',
         lineHeight: '22px'
       }
+    }
+  },
+  iconText: {
+    size: {
+      sm: null,
+      md: null
     }
   },
   title: {

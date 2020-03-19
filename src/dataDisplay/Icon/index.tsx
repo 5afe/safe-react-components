@@ -63,9 +63,7 @@ import wallet from './images/wallet';
 
 import { Theme } from '../../theme';
 
-const StyledIcon = styled.span`
-  
-`;
+//const StyledIcon = styled.span``;
 
 const icons = {
   add,
@@ -129,7 +127,7 @@ const icons = {
   wallet
 };
 
-type IconType = typeof icons;
+export type IconType = typeof icons;
 
 type Props = {
   type: keyof IconType;
@@ -141,7 +139,8 @@ type Props = {
  * the type props or custom one using the customUrl.
  */
 function Icon({ type, size }: Props) {
-  return <StyledIcon> {icons[type][size]}</StyledIcon>;
+  //return <StyledIcon> {icons[type][size]}</StyledIcon>;
+  return icons[type][size];
 }
 
 export default Icon;
