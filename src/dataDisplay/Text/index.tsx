@@ -13,7 +13,7 @@ type Props = {
 const StyledText = styled.p<Props>`
   margin: 10px 0;
   font-weight: ${({ strong }) => (strong ? 'bold' : 'normal')};
-  font-size: ${({ size, theme }) => theme.text.size[size].fontSize};
+  font-size: ${({ size, theme }) => theme.text.size[size].fontSize};  
   line-height: ${({ size, theme }) => theme.text.size[size].lineHeight};
   text-align: ${({ center }) => (center ? 'center' : 'strat')};
 `;

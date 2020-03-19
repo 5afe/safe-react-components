@@ -13,7 +13,7 @@ const theme = {
     error: '#DB3A3D',
     errorHover: '#C31717',
     placeHolder: '#5D6D74',
-    serviceIcon: '#B2B5B2',
+    icon: '#B2B5B2',
     rinkeby: '#E8673C',
     pendingTagHover: '#FBE5C5',
     tag: '#D4D5D3',

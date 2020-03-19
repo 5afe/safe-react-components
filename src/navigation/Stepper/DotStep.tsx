@@ -14,7 +14,7 @@ const Circle = styled.div<{ disabled: boolean; error?: boolean }>`
 
     return theme.colors.primary;
   }};
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.background};
   width: 24px;
   height: 24px;
   border-radius: 50%;

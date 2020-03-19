@@ -1,3 +1,6 @@
+import React from 'react';
+import styled from 'styled-components';
+
 import add from './images/add';
 import addressBook from './images/addressBook';
 import addressBookAdd from './images/addressBookAdd';
@@ -32,8 +35,37 @@ import loadSafe from './images/loadSafe';
 import locked from './images/locked';
 import mobileConfirm from './images/mobileConfirm';
 import noInternet from './images/noInternet';
+import owners from './images/owners';
+import paste from './images/paste';
+import paymentToken from './images/paymentToken';
+import privacyPolicy from './images/privacyPolicy';
+import qrCode from './images/qrCode';
+import question from './images/question';
+import rateApp from './images/rateApp';
+import received from './images/received';
+import recover from './images/recover';
+import replaceOwner from './images/replaceOwner';
+import requiredConfirmations from './images/requiredConfirmations';
+import restricted from './images/restricted';
+import resync from './images/resync';
+import scan from './images/scan';
+import search from './images/search';
+import sendAgain from './images/sendAgain';
+import sent from './images/sent';
+import settings from './images/settings';
+import settingsChange from './images/settingsChange';
+import share from './images/share';
+import termsOfUse from './images/termsOfUse';
+import transactionsInactive from './images/transactionsInactive';
+import unlocked from './images/unlocked';
+import userEdit from './images/userEdit';
+import wallet from './images/wallet';
 
 import { Theme } from '../../theme';
+
+const StyledIcon = styled.span`
+  
+`;
 
 const icons = {
   add,
@@ -69,7 +101,32 @@ const icons = {
   loadSafe,
   locked,
   mobileConfirm,
-  noInternet
+  noInternet,
+  owners,
+  paste,
+  paymentToken,
+  privacyPolicy,
+  qrCode,
+  question,
+  rateApp,
+  received,
+  recover,
+  replaceOwner,
+  requiredConfirmations,
+  restricted,
+  resync,
+  scan,
+  search,
+  sendAgain,
+  sent,
+  settings,
+  settingsChange,
+  share,
+  termsOfUse,
+  transactionsInactive,
+  unlocked,
+  userEdit,
+  wallet
 };
 
 type IconType = typeof icons;
@@ -84,7 +141,7 @@ type Props = {
  * the type props or custom one using the customUrl.
  */
 function Icon({ type, size }: Props) {
-  return icons[type][size];
+  return <StyledIcon> {icons[type][size]}</StyledIcon>;
 }
 
 export default Icon;

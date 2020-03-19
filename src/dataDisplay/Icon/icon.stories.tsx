@@ -17,44 +17,88 @@ export const icons = () => {
     flex-wrap: wrap;
   `;
 
-  const listIconSize = 'md';
-  
+  const IconBox = styled.div`
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    justify-content: space-evenly;;
+    
+    padding: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid ${({ theme }) => theme.colors.primary};
+  `;
+
   return (
     <Wrapper>
-      <Icon size={listIconSize} type="add" />
-      <Icon size={listIconSize} type="addressBook" />
-      <Icon size={listIconSize} type="addressBookAdd" />
-      <Icon size={listIconSize} type="apps" />
-      <Icon size={listIconSize} type="alert" />
-      <Icon size={listIconSize} type="arrowDown" />
-      <Icon size={listIconSize} type="assets" />
-      <Icon size={listIconSize} type="awaitingConfirmations" />
-      <Icon size={listIconSize} type="camera" />
-      <Icon size={listIconSize} type="check" />
-      <Icon size={listIconSize} type="circleCheck" />
-      <Icon size={listIconSize} type="circleCross" />
-      <Icon size={listIconSize} type="code" />
-      <Icon size={listIconSize} type="collectibles" />
-      <Icon size={listIconSize} type="copy" />
-      <Icon size={listIconSize} type="cross" />
-      <Icon size={listIconSize} type="currency" />
-      <Icon size={listIconSize} type="delete" />
-      <Icon size={listIconSize} type="devicePassword" />
-      <Icon size={listIconSize} type="edit" />
-      <Icon size={listIconSize} type="error" />
-      <Icon size={listIconSize} type="eth" />
-      <Icon size={listIconSize} type="externalLink" />
-      <Icon size={listIconSize} type="eye" />
-      <Icon size={listIconSize} type="eyeOff" />
-      <Icon size={listIconSize} type="filledCross" />
-      <Icon size={listIconSize} type="fingerPrint" />
-      <Icon size={listIconSize} type="getInTouch" />
-      <Icon size={listIconSize} type="info" />
-      <Icon size={listIconSize} type="licenses" />
-      <Icon size={listIconSize} type="loadSafe" />
-      <Icon size={listIconSize} type="locked" />
-      <Icon size={listIconSize} type="mobileConfirm" />
-      <Icon size={listIconSize} type="noInternet" />
+      {[
+        'add',
+        'addressBook',
+        'addressBookAdd',
+        'apps',
+        'alert',
+        'arrowDown',
+        'assets',
+        'awaitingConfirmations',
+        'camera',
+        'check',
+        'circleCheck',
+        'circleCross',
+        'code',
+        'collectibles',
+        'copy',
+        'cross',
+        'currency',
+        'delete',
+        'devicePassword',
+        'edit',
+        'error',
+        'eth',
+        'externalLink',
+        'eye',
+        'eyeOff',
+        'filledCross',
+        'fingerPrint',
+        'getInTouch',
+        'info',
+        'licenses',
+        'loadSafe',
+        'locked',
+        'mobileConfirm',
+        'noInternet',
+        'owners',
+        'paste',
+        'paymentToken',
+        'privacyPolicy',
+        'qrCode',
+        'question',
+        'rateApp',
+        'received',
+        'recover',
+        'replaceOwner',
+        'requiredConfirmations',
+        'restricted',
+        'resync',
+        'scan',
+        'search',
+        'sendAgain',
+        'sent',
+        'settings',
+        'settingsChange',
+        'share',
+        'termsOfUse',
+        'transactionsInactive',
+        'unlocked',
+        'userEdit',
+        'wallet'
+      ].map((type: any, index) => (
+        <IconBox>
+          <Icon key={index} size={'md'} type={type} />
+          {type}
+        </IconBox>
+      ))}
     </Wrapper>
   );
 };
