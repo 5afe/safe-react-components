@@ -1,14 +1,25 @@
-import React from "react";
+import React from 'react';
 
-import Title from "./index";
+import Title from './index';
 
 export default {
-  title: "Data Display/Title",
+  title: 'Data Display/Title',
   component: Title,
   parameters: {
-    componentSubtitle: "The Title component"
+    componentSubtitle: 'The Title component'
   }
 };
 
-export const title = () => <Title>Some Title</Title>;
+export const title = () => <Title size="lg">Title LG</Title>;
 
+export const sizes = () => {
+  return (
+    <>
+      <Title size="xl">Title XL</Title>
+      <Title size="lg">Title LG</Title>
+      <Title size="md">Title MD</Title>
+      <Title size="sm">Title SM</Title>
+      <Title size="xs">Title XS</Title>
+    </>
+  );
+};

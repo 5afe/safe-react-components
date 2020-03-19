@@ -46,25 +46,45 @@ const theme = {
   },
   text: {
     size: {
-      xs: {
+      sm: {
         fontSize: '11px',
         lineHeight: '14px'
       },
-      sm: {
+      md: {
         fontSize: '12px',
         lineHeight: '16px'
       },
-      md: {
+      lg: {
         fontSize: '14px',
         lineHeight: '20px'
       },
-      lg: {
+      xl: {
         fontSize: '16px',
         lineHeight: '22px'
-      },
-      xl: {
+      }
+    }
+  },
+  title: {
+    size: {
+      xs: {
         fontSize: '20px',
         lineHeight: '26px'
+      },
+      sm: {
+        fontSize: '24px',
+        lineHeight: '30px'
+      },
+      md: {
+        fontSize: '32px',
+        lineHeight: '36px'
+      },
+      lg: {
+        fontSize: '44px',
+        lineHeight: '52px'
+      },
+      xl: {
+        fontSize: '60px',
+        lineHeight: '64px'
       }
     }
   },

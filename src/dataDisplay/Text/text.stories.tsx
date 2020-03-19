@@ -10,23 +10,22 @@ export default {
   }
 };
 
-export const text = () => <Text size="xs">Some Text...</Text>;
+export const text = () => <Text size="sm">Some Text...</Text>;
 
 export const bold = () => (
-  <Text size="xs" strong>
+  <Text size="sm" strong>
     Some Text...
   </Text>
 );
 
 export const centered = () => (
-  <Text size="xs" center>
+  <Text size="sm" center>
     Some Text...
   </Text>
 );
 
 export const customSize = () => (
-  <>
-    <Text size="xs">Some Text...</Text>
+  <>    
     <Text size="sm">Some Text...</Text>
     <Text size="md">Some Text...</Text>
     <Text size="lg">Some Text...</Text>
