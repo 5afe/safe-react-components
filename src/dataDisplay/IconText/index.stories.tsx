@@ -15,8 +15,11 @@ export default {
 export const sizes = () => {
   return (
     <>
-      <IconText size="sm" iconType="add" text="Some text" />
-      <IconText size="md" iconType="add" text="Some text" />
+      <IconText iconSize="sm" textSize="sm" iconType="add" text="Some text" />
+      <IconText iconSize="sm" textSize="xl" iconType="add" text="Some text" />
+
+      <IconText iconSize="md" textSize="sm" iconType="add" text="Some text" />
+      <IconText iconSize="md" textSize="xl" iconType="add" text="Some text" />
     </>
   );
 };
