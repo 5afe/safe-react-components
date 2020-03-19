@@ -10,7 +10,7 @@ export default {
       <defs>
         <path id="prefix__a" d="M0 0L15.987 0 15.987 13.998 0 13.998z" />
       </defs>
-      <g fill="none" fill-rule="evenodd">
+      <g fill="none" fillRule="evenodd">
         <path d="M0 0H16V16H0z" />
         <g transform="translate(0 1)">
           <path
@@ -31,7 +31,7 @@ export default {
       <defs>
         <path id="prefix__a" d="M0 0L23.984 0 23.984 22.002 0 22.002z" />
       </defs>
-      <g fill="none" fill-rule="evenodd">
+      <g fill="none" fillRule="evenodd">
         <path d="M0 0H24V24H0z" />
         <g transform="translate(0 1)">
           <path

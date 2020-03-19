@@ -19,10 +19,10 @@ export const icons = () => {
 
   const IconBox = styled.div`
     display: flex;
-    align-items: center;    
+    align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;;
-    
+    justify-content: space-evenly;
+
     padding: 2px;
     margin-right: 2px;
     margin-bottom: 2px;
@@ -94,8 +94,8 @@ export const icons = () => {
         'userEdit',
         'wallet'
       ].map((type: any, index) => (
-        <IconBox>
-          <Icon key={index} size={'md'} type={type} />
+        <IconBox key={index}>
+          <Icon size={'md'} type={type} />
           {type}
         </IconBox>
       ))}

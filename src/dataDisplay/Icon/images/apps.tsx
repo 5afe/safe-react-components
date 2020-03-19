@@ -7,11 +7,11 @@ export default {
       width="16"
       height="16"
       viewBox="0 0 16 16">
-      <g fill="none" fill-rule="evenodd">
+      <g fill="none" fillRule="evenodd">
         <path d="M0 0H16V16H0z" />
         <g fill="#B2B5B2">
           <path
-            fill-rule="nonzero"
+            fillRule="nonzero"
             d="M1 0h4c.552 0 1 .448 1 1v4c0 .552-.448 1-1 1H1c-.552 0-1-.448-1-1V1c0-.552.448-1 1-1zm1 2v2h2V2H2zM9 8h4c.552 0 1 .448 1 1v4c0 .552-.448 1-1 1H9c-.552 0-1-.448-1-1V9c0-.552.448-1 1-1zm1 2v2h2v-2h-2zM11 6c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm0-1.9c-.607 0-1.1-.492-1.1-1.1 0-.608.493-1.1 1.1-1.1.608 0 1.1.492 1.1 1.1 0 .608-.492 1.1-1.1 1.1z"
             transform="translate(1 1)"
           />
@@ -29,11 +29,11 @@ export default {
       width="24"
       height="24"
       viewBox="0 0 24 24">
-      <g fill="none" fill-rule="evenodd">
+      <g fill="none" fillRule="evenodd">
         <path d="M0 0H24V24H0z" />
         <g fill="#B2B5B2">
           <path
-            fill-rule="nonzero"
+            fillRule="nonzero"
             d="M2 0h5c1.105 0 2 .895 2 2v5c0 1.105-.895 2-2 2H2C.895 9 0 8.105 0 7V2C0 .895.895 0 2 0zm0 2v5h5V2H2zM13 11h5c1.105 0 2 .895 2 2v5c0 1.105-.895 2-2 2h-5c-1.105 0-2-.895-2-2v-5c0-1.105.895-2 2-2zm0 2v5h5v-5h-5zM15.5 9C17.985 9 20 6.985 20 4.5S17.985 0 15.5 0 11 2.015 11 4.5 13.015 9 15.5 9zm0-2C14.12 7 13 5.88 13 4.5S14.12 2 15.5 2 18 3.12 18 4.5 16.88 7 15.5 7z"
             transform="translate(2 2)"
           />

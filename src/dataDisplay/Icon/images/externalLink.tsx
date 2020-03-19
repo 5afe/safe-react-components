@@ -7,11 +7,11 @@ export default {
       width="16"
       height="16"
       viewBox="0 0 16 16">
-      <g fill="none" fill-rule="evenodd">
+      <g fill="none" fillRule="evenodd">
         <path d="M0 0H16V16H0z" />
         <path
           fill="#008C73"
-          fill-rule="nonzero"
+          fillRule="nonzero"
           d="M13 13v-2c0-.552.448-1 1-1s1 .448 1 1v2c0 1.105-.895 2-2 2H3c-1.105 0-2-.895-2-2V3c0-1.105.895-2 2-2h2c.552 0 1 .448 1 1s-.448 1-1 1H3v10h10z"
         />
         <path
@@ -27,11 +27,11 @@ export default {
       width="24"
       height="24"
       viewBox="0 0 24 24">
-      <g fill="none" fill-rule="evenodd">
+      <g fill="none" fillRule="evenodd">
         <path d="M0 0H24V24H0z" />
         <path
           fill="#008C73"
-          fill-rule="nonzero"
+          fillRule="nonzero"
           d="M20 20v-8c0-.552.448-1 1-1s1 .448 1 1v8c0 1.105-.895 2-2 2H4c-1.105 0-2-.895-2-2V4c0-1.105.895-2 2-2h8c.552 0 1 .448 1 1s-.448 1-1 1H4v16h16z"
         />
         <path

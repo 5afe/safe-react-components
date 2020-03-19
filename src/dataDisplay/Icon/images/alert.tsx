@@ -7,7 +7,7 @@ export default {
       width="17"
       height="16"
       viewBox="0 0 17 16">
-      <g fill="none" fill-rule="evenodd">
+      <g fill="none" fillRule="evenodd">
         <path d="M0 0H16V16H0z" />
         <path
           fill="#F02525"
@@ -26,7 +26,7 @@ export default {
       width="24"
       height="25"
       viewBox="0 0 24 25">
-      <g fill="none" fill-rule="evenodd">
+      <g fill="none" fillRule="evenodd">
         <path d="M0 0H24V24H0z" />
         <path
           fill="#B2B5B2"
