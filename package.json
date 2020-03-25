@@ -1,5 +1,5 @@
 {
-  "name": "gnosis-safe-components",
+  "name": "@gnosis/safe-react-components",
   "version": "0.1.1",
   "main": "dist/index.min.js",
   "files": [
