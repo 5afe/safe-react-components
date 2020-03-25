@@ -38,7 +38,11 @@ module.exports = {
       'styled-components': {
         commonjs: 'styled-components',
         commonjs2: 'styled-components'
-      }
+      },
+      web3: {
+        commonjs: 'web3',
+        commonjs2: 'web3'
+      },
     },
     "@material-ui/core", "@material-ui/icons", /@material-ui\/core\/*./, /@material-ui\/icons\/*./        
   ],
