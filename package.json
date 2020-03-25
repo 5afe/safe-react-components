@@ -2,10 +2,11 @@
   "name": "@gnosis/safe-react-components",
   "version": "0.1.1",
   "main": "dist/index.min.js",
+  "typings": "dist/index",
   "files": [
     "dist"
   ],
-  "dependencies": {    
+  "dependencies": {
     "big-number-input": "^1.0.1",
     "big.js": "^5.2.2"
   },
@@ -44,6 +45,7 @@
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "rimraf": "^3.0.2",
     "styled-components": "^4.4.1",
     "typescript": "^3.7.3",
     "web3": "^1.2.4",
@@ -59,9 +61,9 @@
     "web3": "1.2.x"
   },
   "scripts": {
-    "types": "yarn tsc",
-    "start": "webpack --mode production --watch",
-    "build": "webpack --mode production",
+    "types": "yarn tsc",    
+    "buildOld": "rimraf dist && tsc && tsc -m es6 --outDir dist/lib-esm && webpack --mode production",
+    "build": "rimraf dist && webpack --mode production",
     "build-storybook": "build-storybook -s public --docs",
     "storybook": "start-storybook -p 9009 -s public --docs",
     "prepare": "yarn build"

@@ -2,14 +2,17 @@ const path = require('path');
 
 module.exports = {
   entry: './src/index.ts',
+  output: {
+    filename: 'index.min.js',
+    sourceMapFilename: '[file].map',
+    path: path.join(__dirname, '/dist'),
+    libraryTarget: 'umd',
+    library: JSON.stringify(require("package.json").name),
+  },
   resolve: {
     extensions: ['.ts', '.tsx', '.js']
   },
-  output: {
-    path: path.join(__dirname, '/dist'),
-    filename: 'index.min.js',
-    libraryTarget: 'umd'
-  },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -21,12 +24,13 @@ module.exports = {
       },
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader'
+        loader: 'awesome-typescript-loader',
+        exclude: [/node_modules/]
       }
     ]
   },
-  externals: [        
-    {      
+  externals: [
+    {
       react: {
         commonjs: 'react',
         commonjs2: 'react'
@@ -42,12 +46,12 @@ module.exports = {
       web3: {
         commonjs: 'web3',
         commonjs2: 'web3'
-      },
+      }
     },
-    "@material-ui/core", "@material-ui/icons", /@material-ui\/core\/*./, /@material-ui\/icons\/*./        
+    /@material-ui\/core\/.*/,
   ],
   node: {
     fs: 'empty',
     child_process: 'empty'
-  },
+  }
 };
