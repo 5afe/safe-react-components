@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Theme } from '../../theme';
 import Icon, { IconType } from '../../dataDisplay/Icon';
 
-interface Props extends React.ComponentPropsWithoutRef<'button'> {  
+interface Props extends React.ComponentPropsWithoutRef<'button'> {
   children: any;
   iconType?: keyof IconType;
   size: keyof Theme['buttons']['size'];
@@ -13,8 +13,9 @@ interface Props extends React.ComponentPropsWithoutRef<'button'> {
   variant?: 'outlined' | 'contained';
 }
 
-const ButtonMUIAlias = ButtonMUI as any;
-const StyledButton = styled(ButtonMUIAlias)<Props>`
+const StyledButton = styled(({ children, size, ...rest }) => (
+  <ButtonMUI {...rest}>{children}</ButtonMUI>
+))<Props>`
   && {
     height: ${({ size, theme }) => theme.buttons.size[size].height};
     color: ${({ variant, color, theme }) =>

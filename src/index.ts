@@ -5,4 +5,4 @@ export * from './navigation';
 //export * from './layouts'
 export * from './surfaces';
 //export * from './utils'
-export { default } from './theme';
+export { default as theme } from './theme';
