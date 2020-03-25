@@ -8,7 +8,11 @@
   ],
   "dependencies": {
     "big-number-input": "^1.0.1",
-    "big.js": "^5.2.2"
+    "big.js": "^5.2.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1",
+    "web3": "^1.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
@@ -42,27 +46,15 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "prettier": "^1.19.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "rimraf": "^3.0.2",
-    "styled-components": "^4.4.1",
-    "typescript": "^3.7.3",
-    "web3": "^1.2.4",
+    "prettier": "^1.19.1",    
+    "rimraf": "^3.0.2",    
+    "typescript": "^3.7.3",    
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-node-externals": "^1.7.2"
   },
-  "peerDependencies": {
-    "@material-ui/core": "4.8.x",
-    "react": "16.x",
-    "react-dom": "16.x",
-    "styled-components": "4.4.x",
-    "web3": "1.2.x"
-  },
   "scripts": {
-    "types": "yarn tsc",    
-    "buildOld": "rimraf dist && tsc && tsc -m es6 --outDir dist/lib-esm && webpack --mode production",
+    "types": "yarn tsc",        
     "build": "rimraf dist && webpack --mode production",
     "build-storybook": "build-storybook -s public --docs",
     "storybook": "start-storybook -p 9009 -s public --docs",
