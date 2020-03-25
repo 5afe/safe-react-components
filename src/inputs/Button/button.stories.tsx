@@ -48,16 +48,23 @@ export const sizes = () => (
   </>
 );
 
-
 export const withIcon = () => (
   <>
-    <Button size="lg" iconType="addressBook" color="primary">
+    <Button
+      size="lg"
+      iconType="addressBook"
+      color="primary"
+      onClick={() => alert('click')}>
       text
-    </Button>    
+    </Button>
     <Button size="lg" iconType="addressBook" color="primary" variant="outlined">
       text
     </Button>
-    <Button size="lg" iconType="addressBook" color="primary" variant="contained">
+    <Button
+      size="lg"
+      iconType="addressBook"
+      color="primary"
+      variant="contained">
       text
     </Button>
   </>
