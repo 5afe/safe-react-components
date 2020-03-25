@@ -1,5 +1,5 @@
 {
-  "name": "safe-widgets",
+  "name": "gnosis-safe-components",
   "version": "0.1.1",
   "main": "dist/index.min.js",
   "files": [
