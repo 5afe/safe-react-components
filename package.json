@@ -8,9 +8,7 @@
   ],
   "dependencies": {
     "big-number-input": "^1.0.1",
-    "big.js": "^5.2.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "big.js": "^5.2.2",    
     "styled-components": "^4.4.1",
     "web3": "^1.2.4"
   },
@@ -53,6 +51,10 @@
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-node-externals": "^1.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.x.x",
+    "react-dom": "^16.x.x"
   },
   "scripts": {
     "types": "yarn tsc",
