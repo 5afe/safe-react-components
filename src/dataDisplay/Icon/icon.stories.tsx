@@ -35,6 +35,7 @@ export const icons = () => {
     <Wrapper>
       {[
         'add',
+        'addcolor',        
         'addressBook',
         'addressBookAdd',
         'apps',
