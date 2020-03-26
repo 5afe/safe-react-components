@@ -1,4 +1,8 @@
+import React from 'react';
+import styled from 'styled-components';
+
 import add from './images/add';
+import addcolor from './images/addcolor';
 import addressBook from './images/addressBook';
 import addressBookAdd from './images/addressBookAdd';
 import alert from './images/alert';
@@ -60,10 +64,13 @@ import wallet from './images/wallet';
 
 import { Theme } from '../../theme';
 
-//const StyledIcon = styled.span``;
+const StyledIcon = styled.span`
+.icon-color {fill:green};
+`;
 
 const icons = {
   add,
+  addcolor,
   addressBook,
   addressBookAdd,
   apps,
@@ -136,8 +143,8 @@ type Props = {
  * the type props or custom one using the customUrl.
  */
 function Icon({ type, size }: Props) {
-  //return <StyledIcon> {icons[type][size]}</StyledIcon>;
-  return icons[type][size];
+  return <StyledIcon> {icons[type][size]}</StyledIcon>;
+  //return icons[type][size];
 }
 
 export default Icon;
