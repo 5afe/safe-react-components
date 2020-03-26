@@ -3,10 +3,11 @@ import styled from "styled-components";
 
 const Card = styled.div`
   font-family: "Averta";
-  min-width: 150px;
+  width: 100%;
   min-height: 300px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  padding: 0 20px;
 `;
 
 const Body = styled.div``;

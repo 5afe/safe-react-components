@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "./index";
 
 export default {
-  title: "Layout",
+  title: "Data Display/Layout",
   component: Layout,
   parameters: {
     componentSubtitle: "Basic Layout"

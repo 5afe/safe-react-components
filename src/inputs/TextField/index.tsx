@@ -4,7 +4,11 @@ import styled from "styled-components";
 
 const StyledForm = styled.form`
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+`;
+
+const StyledTextField = styled(TextFieldMui)`
+  width: 400px;
 `;
 
 type Props = {
@@ -17,7 +21,7 @@ function TextField({ errorMsg, label, ...rest }: Props) {
 
   return (
     <StyledForm noValidate autoComplete="off" onSubmit={onSubmit}>
-      <TextFieldMui
+      <StyledTextField
         error={errorMsg && errorMsg.length ? true : false}
         label={errorMsg || label}
         variant="filled"
