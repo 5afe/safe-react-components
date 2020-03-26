@@ -1,6 +1,3 @@
-import React from 'react';
-import styled from 'styled-components';
-
 import add from './images/add';
 import addcolor from './images/addcolor';
 import addressBook from './images/addressBook';

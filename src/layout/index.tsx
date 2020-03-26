@@ -44,7 +44,7 @@ const Footer = styled.div`
 `;
   
 
-const Layout = (props) => (
+const Layout = () => (
   <Container>
       <Title>Title</Title>
       <Navbar>Navbar</Navbar>

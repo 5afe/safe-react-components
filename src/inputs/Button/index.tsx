@@ -5,41 +5,37 @@ import styled from 'styled-components';
 import { Theme } from '../../theme';
 import Icon, { IconType } from '../../dataDisplay/Icon';
 
-type Props = {
+interface Props extends React.ComponentPropsWithoutRef<'button'> {
   children: any;
   iconType?: keyof IconType;
   size: keyof Theme['buttons']['size'];
   color: 'primary' | 'secondary' | 'error';
   variant?: 'outlined' | 'contained';
-};
+}
 
-const StyledButton = styled(ButtonMUI)<any>`
+const StyledButton = styled(({ children, size, ...rest }) => (
+  <ButtonMUI {...rest}>{children}</ButtonMUI>
+))<Props>`
   && {
-    height: ${({ buttonsize, theme }) => theme.buttons.size[buttonsize].height};
-    color: ${({ variant, buttoncolor, theme }) =>
-      variant === 'contained' ? theme.colors.white : theme.colors[buttoncolor]};
-    background-color: ${({ variant, buttoncolor, theme }) =>
-      variant === 'contained' ? theme.colors[buttoncolor] : theme.colors.white};
-    border-color: ${({ buttoncolor, theme }) => theme.colors[buttoncolor]};
+    height: ${({ size, theme }) => theme.buttons.size[size].height};
+    color: ${({ variant, color, theme }) =>
+      variant === 'contained' ? theme.colors.white : theme.colors[color]};
+    background-color: ${({ variant, color, theme }) =>
+      variant === 'contained' ? theme.colors[color] : theme.colors.white};
+    border-color: ${({ color, theme }) => theme.colors[color]};
 
     :hover {
-      border-color: ${({ buttoncolor, theme }) => theme.colors[buttoncolor]};
-      background-color: ${({ variant, buttoncolor, theme }) => {
+      border-color: ${({ color, theme }) => theme.colors[color]};
+      background-color: ${({ variant, color, theme }) => {
         return variant === 'contained'
-          ? theme.colors[`${buttoncolor}Hover`]
+          ? theme.colors[`${color}Hover`]
           : theme.colors.white;
       }}
   }
 `;
 
-const Button = ({
-  children,
-  iconType,
-  size: buttonSize,
-  color: buttonColor,
-  ...rest
-}: Props) => (
-  <StyledButton buttonsize={buttonSize} buttoncolor={buttonColor} {...rest}>
+const Button = ({ children, iconType, size, color, ...rest }: Props) => (
+  <StyledButton size={size} color={color} {...rest}>
     {iconType && <Icon size="md" type={iconType} />}
     {children}
   </StyledButton>
