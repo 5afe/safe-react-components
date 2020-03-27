@@ -6,11 +6,8 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "big-number-input": "^1.0.1",
-    "big.js": "^5.2.2",    
-    "styled-components": "^4.4.1",
-    "web3": "^1.2.4"
+  "dependencies": {        
+    
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
@@ -49,6 +46,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "rimraf": "^3.0.2",
+    "styled-components": "^4.4.1",
     "typescript": "^3.7.3",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
@@ -56,7 +54,8 @@
   },
   "peerDependencies": {
     "react": "^16.x.x",
-    "react-dom": "^16.x.x"
+    "react-dom": "^16.x.x",
+    "styled-components": "^4.x.x"
   },
   "scripts": {
     "types": "yarn tsc",
