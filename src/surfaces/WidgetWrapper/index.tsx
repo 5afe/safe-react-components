@@ -10,7 +10,17 @@ const Card = styled.div`
   padding: 0 20px;
 `;
 
-const Body = styled.div``;
+const Body = styled.div`
+margin:0;
+
+h5:first-child {
+    margin-top: 8px;
+  }
+  
+h5 {
+  margin-top: 0px;
+}
+`;
 
 const WidgetWrapper: React.FC = ({ children }) => (
   <Card>
