@@ -7,15 +7,11 @@ const StyledDivider = styled.div`
   width: 100%;
 `;
 
-type Props = {
-  children: any;
-};
-
 /**
  * Use `Divider` to separate content.
  */
-const Divider = ({ children }: Props) => (
-  <StyledDivider>{children}</StyledDivider>
+const Divider = () => (
+  <StyledDivider />
 );
 
 export default Divider;
