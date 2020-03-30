@@ -7,7 +7,6 @@ const Card = styled.div`
   min-height: 300px;
   display: flex;
   justify-content: left;
-  padding: 0 20px;
 `;
 
 const Body = styled.div`

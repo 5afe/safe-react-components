@@ -8,9 +8,9 @@ const theme = {
     primaryLight: '#A1D2CA',
     primaryHover: '#005546',
 
-    secondary: '#001428',
-    secondaryLight: '#A1D2CA',
-    secondaryHover: '#005546',
+    Secondary: '#001428',
+    secondaryLight: '#B2B5B2',
+    secondaryHover: '#5D6D74',
 
     error: '#DB3A3D',
     errorHover: '#C31717',
