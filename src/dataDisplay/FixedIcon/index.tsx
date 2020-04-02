@@ -44,12 +44,11 @@ type Props = {
 };
 
 /**
- * The `Icon` renders an icon, it can be one already defined specified by
+ * The `FixedIcon` renders an icon, it can be one already defined specified by
  * the type props or custom one using the customUrl.
  */
 function FixedIcon({ type }: Props) {
   return <span>{icons[type]}</span>;
-  //return FixedIcon[type][size];
 }
 
 export default FixedIcon;
