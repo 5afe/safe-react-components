@@ -35,7 +35,7 @@ export const icons = () => {
     <Wrapper>
       {[
         'add',
-        'allowances',        
+        'allowances',
         'addressBook',
         'addressBookAdd',
         'apps',
@@ -108,5 +108,13 @@ export const customSize = () => (
   <>
     <Icon size="sm" type="add" />
     <Icon size="md" type="add" />
+  </>
+);
+
+export const customColor = () => (
+  <>
+    <Icon size="md" type="add" color="primary" />
+    <Icon size="md" type="add" color="error" />
+    <Icon size="md" type="add" color="rinkeby" />
   </>
 );

@@ -64,8 +64,11 @@ import wallet from './images/wallet';
 
 import { Theme } from '../../theme';
 
-const StyledIcon = styled.span`
-.icon-color {fill:#B2B5B2};
+const StyledIcon = styled.span<any>`
+  .icon-color {
+    fill: ${({ theme, color }) =>
+      color ? theme.colors[color] : theme.colors.icon};
+  }
 `;
 
 const icons = {
@@ -135,6 +138,7 @@ export type IconType = typeof icons;
 
 type Props = {
   type: keyof IconType;
+  color?: keyof Theme['colors'];
   size: keyof Theme['icons']['size'];
 };
 
@@ -142,9 +146,8 @@ type Props = {
  * The `Icon` renders an icon, it can be one already defined specified by
  * the type props or custom one using the customUrl.
  */
-function Icon({ type, size }: Props) {
-  return <StyledIcon> {icons[type][size]}</StyledIcon>;
-  //return icons[type][size];
+function Icon({ type, size, color }: Props) {
+  return <StyledIcon color={color}> {icons[type][size]}</StyledIcon>;
 }
 
 export default Icon;
