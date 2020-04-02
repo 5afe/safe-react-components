@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import add from './images/add';
-import addcolor from './images/addcolor';
+import allowances from './images/allowances';
 import addressBook from './images/addressBook';
 import addressBookAdd from './images/addressBookAdd';
 import alert from './images/alert';
@@ -65,12 +65,12 @@ import wallet from './images/wallet';
 import { Theme } from '../../theme';
 
 const StyledIcon = styled.span`
-.icon-color {fill:green};
+.icon-color {fill:#B2B5B2};
 `;
 
 const icons = {
   add,
-  addcolor,
+  allowances,
   addressBook,
   addressBookAdd,
   apps,
