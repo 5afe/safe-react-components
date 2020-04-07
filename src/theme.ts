@@ -8,7 +8,7 @@ const theme = {
     primaryLight: '#A1D2CA',
     primaryHover: '#005546',
 
-    Secondary: '#001428',
+    secondary: '#001428',
     secondaryLight: '#B2B5B2',
     secondaryHover: '#5D6D74',
 
@@ -31,15 +31,15 @@ const theme = {
       opacity: '50%'
     },
     overlay: {
-      opacity: '75%',
+      opacity: '75',
       color: '#E8E7E6'
     },
     shadow: {
-      opacity: '18%',
+      opacity: '18',
       color: '#28363D'
     },
     cardShadow: {
-      opacity: '59%',
+      opacity: '59',
       color: '#D4D4D3'
     }
   },
