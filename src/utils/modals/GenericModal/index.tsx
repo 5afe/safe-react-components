@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from '@material-ui/core/Modal';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import cn from 'classnames';
 
@@ -43,14 +43,14 @@ type Props = {
   paperClassName?: string;
 };
 
-const styles = (): any => ({
+const useStyles = makeStyles({
   modal: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     overflowY: 'scroll',
     backgroundColor: theme.colors.overlay.color,
-    opacity: `${theme.colors.overlay.opacity}%`    
+    opacity: `${theme.colors.overlay.opacity}%`
   },
   paper: {
     position: 'absolute',
@@ -70,13 +70,13 @@ const GenericModal = ({
   body,
   footer,
   onClose,
-  title,
-  classes,
-  paperClassName
+  title
 }: Props) => {
+  const classes = useStyles()
+
   return (
     <Modal open className={classes.modal} title="GenericModal">
-      <div className={cn(classes.paper, paperClassName)}>
+      <div className={cn(classes.paper)}>
         <TitleSection>
           {title}
           <StyledButton onClick={onClose}>
@@ -98,4 +98,4 @@ const GenericModal = ({
   );
 };
 
-export default withStyles(styles)(GenericModal);
+export default GenericModal;
