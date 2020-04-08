@@ -23,6 +23,18 @@ module.exports = ({ config }) => {
     ]
   });
 
+  config.module.rules.push({
+    test: /\.(svg)$/,
+    use: [
+      {
+        loader: 'url-loader',
+        query: {
+          name: '[name].[ext]'
+        }
+      }
+    ]
+  });
+
   config.resolve.extensions.push('.ts', '.tsx', 'woff2');
 
   config.node = {

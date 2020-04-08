@@ -8,7 +8,7 @@ module.exports = {
     sourceMapFilename: '[file].map',
     path: path.join(__dirname, '/dist'),
     libraryTarget: 'umd',
-    library: JSON.stringify(require("./package.json").name),
+    library: JSON.stringify(require('./package.json').name)
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js']
@@ -24,17 +24,20 @@ module.exports = {
         }
       },
       {
+        test: /\.(svg)$/i,
+        use: {
+          loader: 'url-loader',
+          options: {}
+        }
+      },
+      {
         test: /\.tsx?$/,
         loader: 'awesome-typescript-loader',
         exclude: [/node_modules/]
       }
     ]
   },
-  plugins: [
-    new CopyPlugin([
-      { from: 'src/fonts', to: 'fonts' },
-    ]),
-  ],
+  plugins: [new CopyPlugin([{ from: 'src/fonts', to: 'fonts' }])],
   externals: [
     {
       react: {
@@ -50,7 +53,7 @@ module.exports = {
         commonjs2: 'styled-components'
       }
     },
-    /@material-ui\/core\/.*/,
+    /@material-ui\/core\/.*/
   ],
   node: {
     fs: 'empty',
