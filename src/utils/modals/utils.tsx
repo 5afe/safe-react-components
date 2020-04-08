@@ -24,13 +24,12 @@ export const ModalFooterConfirmation = ({
   return (
     <FooterWrapper>
       <Button
-        size="lg"
-        color="secondary"
-        variant="outlined"
+        size="md"
+        color="secondary"        
         onClick={handleCancel}>
         {cancelText}
       </Button>
-      <Button color="primary" size="lg" variant="contained" onClick={handleOk}>
+      <Button color="primary" size="md" variant="contained" onClick={handleOk}>
         {okText}
       </Button>
     </FooterWrapper>
