@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import { GenericModal, Icon, Button, Switch } from '../../../index';
+import {
+  GenericModal,
+  Icon,
+  Button,
+  Switch,
+  ModalFooterConfirmation
+} from '../../../index';
 
 const SearchInput = styled.input`
   border: none;
@@ -58,6 +64,7 @@ type Props = {
   addButtonLabel?: string;
   formBody: React.ReactNode;
   formSubmitLabel?: string;
+  onSubmitForm: () => any;
   onItemToggle: (itemId: number | string, checked: boolean) => any;
   onClose: () => any;
 };
@@ -66,10 +73,11 @@ const ManageList = ({
   title = 'Manage List',
   itemList,
   defaultIconUrl,
-  onItemToggle,
   formBody,
   addButtonLabel = 'add',
-  // formSubmitLabel = 'Submit',
+  formSubmitLabel = 'Submit',
+  onSubmitForm,
+  onItemToggle,
   onClose
 }: Props) => {
   const [search, setSearch] = useState('');
@@ -130,7 +138,16 @@ const ManageList = ({
   };
 
   const getFooter = () => {
-    return !isFormMode ? null : <div>footer</div>;
+    return !isFormMode ? null : (
+      <ModalFooterConfirmation
+        okText={formSubmitLabel}
+        handleCancel={() => setIsFormMode(false)}
+        handleOk={() => {
+          onClose()
+          onSubmitForm()
+        }}
+      />
+    );
   };
 
   return (

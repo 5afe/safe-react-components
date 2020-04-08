@@ -60,6 +60,7 @@ export const modal = () => {
           itemList={items}
           addButtonLabel="Add custom app"
           formBody={<div>some form</div>}
+          onSubmitForm={() => {}}
           onClose={() => setIsOpen(false)}
           onItemToggle={onItemToggle}
         />
