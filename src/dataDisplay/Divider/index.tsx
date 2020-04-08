@@ -1,10 +1,9 @@
-// import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-const Divider = styled.div`
-  border-top: 2px solid #e8e7e6;
-  margin: 16px 0;
-  width: 100%;
+const Divider = styled.hr`
+border-top: 2px solid ${({ theme }) => theme.colors.separator};
+margin: 16px 0;
 `;
 
-export default Divider;
+export default ({ ...args }) => <Divider {...args} />;
