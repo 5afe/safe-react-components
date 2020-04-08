@@ -56,9 +56,11 @@ export const modal = () => {
       </Button>
       {isOpen && (
         <ManageList
-          onClose={() => setIsOpen(false)}
           defaultIconUrl={appIcon}
           itemList={items}
+          addButtonLabel="Add custom app"
+          formBody={<div>some form</div>}
+          onClose={() => setIsOpen(false)}
           onItemToggle={onItemToggle}
         />
       )}

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-//import theme from '../../../theme';
 import { GenericModal, Icon, Button, Switch } from '../../../index';
 
 const SearchInput = styled.input`
@@ -56,6 +55,9 @@ type Props = {
     description?: string;
     checked: boolean;
   }>;
+  addButtonLabel?: string;
+  formBody: React.ReactNode;
+  formSubmitLabel?: string;
   onItemToggle: (itemId: number | string, checked: boolean) => any;
   onClose: () => any;
 };
@@ -64,62 +66,79 @@ const ManageList = ({
   title = 'Manage List',
   itemList,
   defaultIconUrl,
-  onClose,
-  onItemToggle
+  onItemToggle,
+  formBody,
+  addButtonLabel = 'add',
+  // formSubmitLabel = 'Submit',
+  onClose
 }: Props) => {
   const [search, setSearch] = useState('');
+  const [isFormMode, setIsFormMode] = useState(false);
 
   const setDefaultImage = (e: any) => {
     e.target.onerror = null;
     e.target.src = defaultIconUrl;
   };
 
-  const body = (
-    <>
-      <BodyHeader>
-        <SearchContainer>
-          <Icon size="md" type="search" />
-          <SearchInput
-            onChange={event => setSearch(event.target.value)}
-            placeholder="Search by name or symbol"
-            value={search}
-          />
-        </SearchContainer>
+  const getBody = () => {
+    return isFormMode ? (
+      formBody
+    ) : (
+      <>
+        <BodyHeader>
+          <SearchContainer>
+            <Icon size="md" type="search" />
+            <SearchInput
+              onChange={event => setSearch(event.target.value)}
+              placeholder="Search by name or symbol"
+              value={search}
+            />
+          </SearchContainer>
 
-        <Button size="md" color="primary" variant="contained">
-          + Add custom app
-        </Button>
-      </BodyHeader>
-      <div>
-        {itemList.map(i => {
-          const onChange = (checked: boolean) => onItemToggle(i.id, checked);
+          <Button
+            size="md"
+            color="primary"
+            variant="contained"
+            onClick={() => setIsFormMode(!isFormMode)}>
+            + {addButtonLabel}
+          </Button>
+        </BodyHeader>
+        <div>
+          {itemList.map(i => {
+            const onChange = (checked: boolean) => onItemToggle(i.id, checked);
 
-          return (
-            <StyledItem key={i.id}>
-              <StyledImageName>
-                <StyledImage
-                  alt={i.name}
-                  onError={setDefaultImage}
-                  src={i.iconUrl}
-                />
-                <div>
-                  <div>{i.name}</div>
-                  <div>{i.description && i.description}</div>
-                </div>
-              </StyledImageName>
-              <Switch checked={i.checked} onChange={onChange} />
-            </StyledItem>
-          );
-        })}
-      </div>
-    </>
-  );
+            return (
+              <StyledItem key={i.id}>
+                <StyledImageName>
+                  <StyledImage
+                    alt={i.name}
+                    onError={setDefaultImage}
+                    src={i.iconUrl}
+                  />
+                  <div>
+                    <div>{i.name}</div>
+                    <div>{i.description && i.description}</div>
+                  </div>
+                </StyledImageName>
+                <Switch checked={i.checked} onChange={onChange} />
+              </StyledItem>
+            );
+          })}
+        </div>
+      </>
+    );
+  };
+
+  const getFooter = () => {
+    return !isFormMode ? null : <div>footer</div>;
+  };
 
   return (
     <GenericModal
       onClose={onClose}
       title={title}
-      body={body}
+      body={getBody()}
+      footer={getFooter()}
       withoutBodyPadding
     />
   );
