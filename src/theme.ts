@@ -112,7 +112,7 @@ const theme = {
       sm: '16',
       md: '24'
     }
-  }
+  }    
 };
 
 export type Theme = typeof theme;

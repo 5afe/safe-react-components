@@ -5,9 +5,8 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import { rgba } from 'polished';
 
-
 import theme from '../../../theme';
-import { Divider, Icon } from '../../../index';
+import { Icon, Title } from '../../../index';
 
 const StyledButton = styled.button`
   background: none;
@@ -18,31 +17,31 @@ const StyledButton = styled.button`
   }
 `;
 
-const StyledDivider = styled(Divider)`
-  margin: 0px;
-`;
-
 const TitleSection = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 24px;
+  padding: 16px 24px;
+  border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
 `;
-const BodySection = styled.div`
-  padding: 24px;
+
+const BodySection = styled.div<{ withoutBodyPadding?: boolean }>`
   max-height: 460px;
   overflow-y: auto;
+  padding: ${({ withoutBodyPadding }) =>
+    withoutBodyPadding ? '0' : '16px 24px'};
 `;
+
 const FooterSection = styled.div`
-  margin: 24px;
+  border-top: 2px solid ${({ theme }) => theme.colors.separator};
+  padding: 16px 24px;
 `;
 
 type Props = {
   title: string;
   body: React.ReactNode;
-  footer: React.ReactNode;
+  withoutBodyPadding?: boolean;
+  footer?: React.ReactNode;
   onClose: () => any;
-  classes?: any;
-  paperClassName?: string;
 };
 
 const useStyles = makeStyles({
@@ -72,29 +71,28 @@ const GenericModal = ({
   body,
   footer,
   onClose,
-  title
+  title,
+  withoutBodyPadding
 }: Props) => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <Modal open className={classes.modal} title="GenericModal">
       <div className={cn(classes.paper)}>
         <TitleSection>
-          {title}
+          <Title size="sm" withoutMargin>
+            {title}
+          </Title>
           <StyledButton onClick={onClose}>
             <Icon size="sm" type="cross" />
           </StyledButton>
         </TitleSection>
 
-        <StyledDivider />
-        <BodySection>{body}</BodySection>
+        <BodySection withoutBodyPadding={withoutBodyPadding}>
+          {body}
+        </BodySection>
 
-        {footer && (
-          <>
-            <StyledDivider />
-            <FooterSection>{footer}</FooterSection>
-          </>
-        )}
+        {footer && <FooterSection>{footer}</FooterSection>}
       </div>
     </Modal>
   );

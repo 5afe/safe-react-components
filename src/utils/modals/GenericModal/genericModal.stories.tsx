@@ -22,7 +22,7 @@ export const modal = () => {
         <GenericModal
           onClose={() => setIsOpen(false)}
           title="This is the title"
-          body={<div>This is the body</div>}
+          body={<div>This is the body</div>}          
           footer={<div>This is the footer</div>}
         />
       )}

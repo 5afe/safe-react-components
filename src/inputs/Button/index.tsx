@@ -36,7 +36,7 @@ const StyledButton = styled(({ children, size, ...rest }) => (
 
 const Button = ({ children, iconType, size, color, ...rest }: Props) => (
   <StyledButton size={size} color={color} {...rest}>
-    {iconType && <Icon size="md" type={iconType} />}
+    {iconType && <Icon size="md" color="white" type={iconType} />}
     {children}
   </StyledButton>
 );
