@@ -3,6 +3,8 @@ import Modal from '@material-ui/core/Modal';
 import { makeStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import cn from 'classnames';
+import { rgba } from 'polished';
+
 
 import theme from '../../../theme';
 import { Divider, Icon } from '../../../index';
@@ -49,9 +51,9 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     overflowY: 'scroll',
-    backgroundColor: theme.colors.overlay.color,
-    opacity: `${theme.colors.overlay.opacity}%`
+    background: rgba(theme.colors.overlay.color, 0.75)
   },
+
   paper: {
     position: 'absolute',
     top: '121px',
