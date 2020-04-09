@@ -50,9 +50,7 @@ const StyledImage = styled.img`
   width: 26px;
   height: 26px;
   object-fit: contain;
-  margin: 0 16px 0 0;
-  border-radius: 16px;
-  background-color: ${({ theme }) => theme.colors.icon};;
+  padding: 0 16px 0 0;
 `;
 
 const StyledImageName = styled.div`
