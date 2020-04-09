@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import {
   GenericModal,
   Icon,
+  Text,
   Button,
   Switch,
   ModalFooterConfirmation
@@ -29,6 +30,9 @@ const BodyHeader = styled.div`
 const SearchContainer = styled.div`
   display: flex;
   align-items: center;
+  height: 52px;
+  border-right: 2px solid ${({ theme }) => theme.colors.separator};
+  padding: 0 16px 0 0;
 `;
 
 const StyledItem = styled.div`
@@ -38,12 +42,21 @@ const StyledItem = styled.div`
   padding: 0px 24px;
   height: 51px;
   border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
+
+  :last-child {
+    border-bottom: 0px;  
+  }
+`;
+
+const StyledButton = styled(Button)`
+  text-transform: capitalize; 
 `;
 
 const StyledImage = styled.img`
   width: 26px;
   height: 26px;
   object-fit: contain;
+  padding: 0 16px 0 0;
 `;
 
 const StyledImageName = styled.div`
@@ -103,13 +116,13 @@ const ManageList = ({
             />
           </SearchContainer>
 
-          <Button
+          <StyledButton
             size="md"
             color="primary"
             variant="contained"
             onClick={() => setIsFormMode(!isFormMode)}>
-            + {addButtonLabel}
-          </Button>
+            <Text size="lg">+ {addButtonLabel}</Text>
+          </StyledButton>
         </BodyHeader>
         <div>
           {itemList.map(i => {
@@ -124,8 +137,12 @@ const ManageList = ({
                     src={i.iconUrl}
                   />
                   <div>
-                    <div>{i.name}</div>
-                    <div>{i.description && i.description}</div>
+                    <div>
+                      <Text size="lg" strong>{i.name}</Text>
+                    </div>
+                    <div>
+                      <Text size="md">{i.description && i.description}</Text>
+                    </div>
                   </div>
                 </StyledImageName>
                 <Switch checked={i.checked} onChange={onChange} />

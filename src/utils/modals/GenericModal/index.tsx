@@ -11,9 +11,22 @@ import { Icon, Title } from '../../../index';
 const StyledButton = styled.button`
   background: none;
   border: none;
+  padding: 5px;
+  width: 26px;
+  height: 26px;
+ 
+
+  span {
+    margin-right: 0px;
+  }
 
   :focus {
     outline: none;
+  }
+
+  :hover {
+    background: ${({ theme }) => theme.colors.separator};
+    border-radius: 16px;
   }
 `;
 
@@ -80,7 +93,7 @@ const GenericModal = ({
     <Modal open className={classes.modal} title="GenericModal">
       <div className={cn(classes.paper)}>
         <TitleSection>
-          <Title size="sm" withoutMargin>
+          <Title size="xs" withoutMargin>
             {title}
           </Title>
           <StyledButton onClick={onClose}>
