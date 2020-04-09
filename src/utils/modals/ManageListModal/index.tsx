@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import {
-  GenericModal,
-  Icon,
-  Text,
-  Button,
-  Switch,
-  ModalFooterConfirmation
-} from '../../../index';
+import { GenericModal, Icon, Text, Button, Switch } from '../../../index';
 
 const SearchInput = styled.input`
   border: none;
@@ -44,12 +37,12 @@ const StyledItem = styled.div`
   border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
 
   :last-child {
-    border-bottom: 0px;  
+    border-bottom: 0px;
   }
 `;
 
 const StyledButton = styled(Button)`
-  text-transform: capitalize; 
+  text-transform: capitalize;
 `;
 
 const StyledImage = styled.img`
@@ -88,8 +81,6 @@ const ManageList = ({
   defaultIconUrl,
   formBody,
   addButtonLabel = 'add',
-  formSubmitLabel = 'Submit',
-  onSubmitForm,
   onItemToggle,
   onClose
 }: Props) => {
@@ -138,7 +129,9 @@ const ManageList = ({
                   />
                   <div>
                     <div>
-                      <Text size="lg" strong>{i.name}</Text>
+                      <Text size="lg" strong>
+                        {i.name}
+                      </Text>
                     </div>
                     <div>
                       <Text size="md">{i.description && i.description}</Text>
@@ -154,25 +147,11 @@ const ManageList = ({
     );
   };
 
-  const getFooter = () => {
-    return !isFormMode ? null : (
-      <ModalFooterConfirmation
-        okText={formSubmitLabel}
-        handleCancel={() => setIsFormMode(false)}
-        handleOk={() => {
-          onClose()
-          onSubmitForm()
-        }}
-      />
-    );
-  };
-
   return (
     <GenericModal
       onClose={onClose}
       title={title}
       body={getBody()}
-      footer={getFooter()}
       withoutBodyPadding
     />
   );
