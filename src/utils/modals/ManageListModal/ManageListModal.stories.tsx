@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 
-import ManageList from './index';
-import { Button } from '../../../index';
+import { Button, ManageListModal } from '../../../index';
 import appIcon from './appsIcon.svg';
 
 export default {
   title: 'Utils/Modals/ManageList',
-  component: ManageList,
+  component: ManageListModal,
   parameters: {
     componentSubtitle:
       'A Modal to Manage a list by enabling/disabled list items'
@@ -55,7 +54,7 @@ export const modal = () => {
         Toggle modal
       </Button>
       {isOpen && (
-        <ManageList
+        <ManageListModal
           defaultIconUrl={appIcon}
           itemList={items}
           addButtonLabel="Add custom app"
