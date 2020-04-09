@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-import ManageListModal from './index';
-import { Button } from '../../../index';
+import { Button, ManageListModal } from '../../../index';
 import appIcon from './appsIcon.svg';
 
 export default {
