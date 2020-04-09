@@ -7,6 +7,7 @@ const SearchInput = styled.input`
   border: none;
   background-color: transparent;
   box-shadow: none;
+  font-family: ${({ theme }) => theme.fonts.fontFamily};
 
   :focus {
     outline: none;
@@ -49,7 +50,9 @@ const StyledImage = styled.img`
   width: 26px;
   height: 26px;
   object-fit: contain;
-  padding: 0 16px 0 0;
+  margin: 0 16px 0 0;
+  border-radius: 16px;
+  background-color: ${({ theme }) => theme.colors.icon};;
 `;
 
 const StyledImageName = styled.div`
