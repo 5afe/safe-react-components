@@ -45,12 +45,12 @@ const StyledItem = styled.div`
   border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
 
   :last-child {
-    border-bottom: 0px;  
+    border-bottom: 0px;
   }
 `;
 
 const StyledButton = styled(Button)`
-  text-transform: capitalize; 
+  text-transform: capitalize;
 `;
 
 const StyledImage = styled.img`
@@ -59,7 +59,7 @@ const StyledImage = styled.img`
   object-fit: contain;
   margin: 0 16px 0 0;
   border-radius: 16px;
-  background-color: ${({ theme }) => theme.colors.icon};;
+  background-color: ${({ theme }) => theme.colors.icon};
 `;
 
 const StyledImageName = styled.div`
@@ -79,7 +79,6 @@ type Props = {
   }>;
   addButtonLabel?: string;
   formBody: React.ReactNode;
-  formSubmitLabel?: string;
   onSubmitForm: () => any;
   onItemToggle: (itemId: number | string, checked: boolean) => any;
   onClose: () => any;
@@ -91,7 +90,6 @@ const ManageList = ({
   defaultIconUrl,
   formBody,
   addButtonLabel = 'add',
-  formSubmitLabel = 'Submit',
   onSubmitForm,
   onItemToggle,
   onClose
@@ -141,7 +139,9 @@ const ManageList = ({
                   />
                   <div>
                     <div>
-                      <Text size="lg" strong>{i.name}</Text>
+                      <Text size="lg" strong>
+                        {i.name}
+                      </Text>
                     </div>
                     <div>
                       <Text size="md">{i.description && i.description}</Text>
@@ -160,12 +160,9 @@ const ManageList = ({
   const getFooter = () => {
     return !isFormMode ? null : (
       <ModalFooterConfirmation
-        okText={formSubmitLabel}
+        okText="Save"
         handleCancel={() => setIsFormMode(false)}
-        handleOk={() => {
-          onClose()
-          onSubmitForm()
-        }}
+        handleOk={onSubmitForm}
       />
     );
   };
