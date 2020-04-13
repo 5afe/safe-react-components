@@ -8,8 +8,13 @@ import styled from 'styled-components';
 export interface Props {
   label: string;
   checked: boolean;
-  onChange: (checked: boolean) => void;
+  name: string;
+  onChange: (
+    event: React.ChangeEvent<HTMLInputElement>,
+    checked: boolean
+  ) => void;
   meta?: any;
+  input?: any; // added for compatibility with react-final-form
 }
 
 const StyledCheckbox = styled(({ ...props }) => <CheckboxMUI {...props} />)<
@@ -37,23 +42,28 @@ const Checkbox = ({
   checked,
   label,
   onChange,
+  name,
   meta,
+  input,
   ...rest
 }: Props) => {
-  const localOnChange = (
-    _event: React.ChangeEvent<HTMLInputElement>,
-    checked: boolean
-  ) => onChange(checked);
+  const getCheckboxFromReactFinalForm = () => {
+    const { name, value, ...inputRest } = input;
+    return (
+      <StyledCheckbox {...rest} name={name} checked={!!value} {...inputRest} />
+    );
+  };
 
   return (
     <FormControlLabel
       control={
         <>
-          <StyledCheckbox
-            {...rest}
-            checked={!!checked}
-            onChange={localOnChange}
-          />
+          {input ? (
+            getCheckboxFromReactFinalForm()
+          ) : (
+            <StyledCheckbox {...rest} checked={checked} onChange={onChange} />
+          )}
+
           {meta?.error && (
             <StyledFormHelperText>{meta.error}</StyledFormHelperText>
           )}

@@ -13,7 +13,12 @@ export default {
 export const checkbox = () => {
   const [enabled, setEnabled] = useState(true);
   return (
-    <Checkbox checked={enabled} onChange={setEnabled} label="Some checkbox" />
+    <Checkbox
+      name="checkbox"
+      checked={enabled}
+      onChange={(_, checked) => setEnabled(checked)}
+      label="Some checkbox"
+    />
   );
 };
 
@@ -21,9 +26,10 @@ export const error = () => {
   const [enabled, setEnabled] = useState(false);
   return (
     <Checkbox
-      meta={{ error: 'required' }}
+      name="checkboxWithError"
+      meta={{ error: enabled ? undefined : 'required' }}
       checked={enabled}
-      onChange={setEnabled}
+      onChange={(_, checked) => setEnabled(checked)}
       label="Some checkbox"
     />
   );

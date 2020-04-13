@@ -1,33 +1,37 @@
-import React from "react";
-import TextFieldMui from "@material-ui/core/TextField";
-import styled from "styled-components";
-
-const StyledForm = styled.form`
-  display: flex;
-  /* justify-content: center; */
-`;
-
-const StyledTextField = styled(TextFieldMui)`
-  width: 400px;
-`;
+import React from 'react';
+import TextFieldMui from '@material-ui/core/TextField';
+import styled from 'styled-components';
 
 type Props = {
   label: string;
-  errorMsg?: string;
-};
+  readOnly?: boolean;
+  meta?: any;
+} & React.InputHTMLAttributes<HTMLInputElement>;
 
-function TextField({ errorMsg, label, ...rest }: Props) {
-  const onSubmit = (e: React.FormEvent) => e.preventDefault();
+const StyledTextField = styled(({ ...props }) => <TextFieldMui {...props} />)<
+  Props
+>`
+  &&& {
+    width: 400px;
+    color: ${({ theme }) => theme.colors.primary};
+    .MuiFilledInput-input {
+      cursor: ${({ readOnly }) => (readOnly === true ? 'not-allowed' : 'auto')};
+    }
+  }
+`;
 
+function TextField({ meta, disabled, readOnly, label, ...rest }: Props) {
   return (
-    <StyledForm noValidate autoComplete="off" onSubmit={onSubmit}>
-      <StyledTextField
-        error={errorMsg && errorMsg.length ? true : false}
-        label={errorMsg || label}
-        variant="filled"
-        {...rest}
-      />
-    </StyledForm>
+    <StyledTextField
+      error={meta && meta.error}
+      label={(meta && meta.error) || label}
+      variant="filled"
+      InputProps={{
+        readOnly
+      }}
+      readOnly={readOnly}
+      {...rest}
+    />
   );
 }
 
