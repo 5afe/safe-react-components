@@ -1,9 +1,13 @@
 import CheckboxMUI from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormHelperText from '@material-ui/core/FormHelperText';
+import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
 import styled from 'styled-components';
 // import { rgba } from 'polished';
+
+import theme from '../../theme';
+
 
 export interface Props {
   label: string;
@@ -17,20 +21,15 @@ export interface Props {
   input?: any; // added for compatibility with react-final-form
 }
 
-const StyledCheckbox = styled(({ ...props }) => <CheckboxMUI {...props} />)<
-  Props
->`
-  && {
-    .MuiCheckbox-colorSecondary.Mui-checked,
-    svg.MuiSvgIcon-root {
-      color: ${({ theme }) => theme.colors.primary}};
-    }
-
-    .MuiTouchRipple-root {
-      background-color: transparent;
-    }
-  }
-`;
+const CustomCheckbox = withStyles({
+  root: {
+    color: theme.colors.primary,
+    '&$checked': {
+      color: theme.colors.primary,
+    },
+  },
+  checked: {},
+})((props: any) => <CheckboxMUI color="default" {...props} />);
 
 const StyledFormHelperText = styled(FormHelperText)`
   && {
@@ -50,7 +49,7 @@ const Checkbox = ({
   const getCheckboxFromReactFinalForm = () => {
     const { name, value, ...inputRest } = input;
     return (
-      <StyledCheckbox {...rest} name={name} checked={!!value} {...inputRest} />
+      <CustomCheckbox {...rest} name={name} checked={!!value} {...inputRest} />
     );
   };
 
@@ -61,7 +60,7 @@ const Checkbox = ({
           {input ? (
             getCheckboxFromReactFinalForm()
           ) : (
-            <StyledCheckbox {...rest} checked={checked} onChange={onChange} />
+            <CustomCheckbox {...rest} checked={checked} onChange={onChange} />
           )}
 
           {meta?.error && (

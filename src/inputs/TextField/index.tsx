@@ -11,7 +11,7 @@ type Props = {
 const StyledTextField = styled(({ ...props }) => <TextFieldMui {...props} />)<
   Props
 >`
-  &&& {
+  && {
     width: 400px;
     color: ${({ theme }) => theme.colors.primary};
     .MuiFilledInput-input {
