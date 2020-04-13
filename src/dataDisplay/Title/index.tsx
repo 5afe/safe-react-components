@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Theme } from '../../theme';
 
 type Props = {
-  children: any;
+  children: string;
   size: keyof Theme['title']['size'];
   withoutMargin?: boolean;
 };
@@ -49,24 +49,44 @@ const StyledH5 = styled.h5<{ withoutMargin?: boolean }>`
   margin: ${({ withoutMargin }) => (withoutMargin ? 0 : '18px')} 0;
 `;
 
-const Text = ({ children, size, withoutMargin }: Props) => {
+const Title = ({ children, size, withoutMargin, ...rest }: Props) => {
   switch (size) {
     case 'xl': {
-      return <StyledH1 withoutMargin={withoutMargin}>{children}</StyledH1>;
+      return (
+        <StyledH1 withoutMargin={withoutMargin} {...rest}>
+          {children}
+        </StyledH1>
+      );
     }
     case 'lg': {
-      return <StyledH2 withoutMargin={withoutMargin}>{children}</StyledH2>;
+      return (
+        <StyledH2 withoutMargin={withoutMargin} {...rest}>
+          {children}
+        </StyledH2>
+      );
     }
     case 'md': {
-      return <StyledH3 withoutMargin={withoutMargin}>{children}</StyledH3>;
+      return (
+        <StyledH3 withoutMargin={withoutMargin} {...rest}>
+          {children}
+        </StyledH3>
+      );
     }
     case 'sm': {
-      return <StyledH4 withoutMargin={withoutMargin}>{children}</StyledH4>;
+      return (
+        <StyledH4 withoutMargin={withoutMargin} {...rest}>
+          {children}
+        </StyledH4>
+      );
     }
     case 'xs': {
-      return <StyledH5 withoutMargin={withoutMargin}>{children}</StyledH5>;
+      return (
+        <StyledH5 withoutMargin={withoutMargin} {...rest}>
+          {children}
+        </StyledH5>
+      );
     }
   }
 };
 
-export default Text;
+export default Title;

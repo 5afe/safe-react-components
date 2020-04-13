@@ -57,14 +57,18 @@ const StyledImage = styled.img`
   width: 26px;
   height: 26px;
   object-fit: contain;
-  margin: 0 16px 0 0;
-  border-radius: 16px;
-  background-color: ${({ theme }) => theme.colors.icon};
+  margin: 0 16px 0 0;    
 `;
 
 const StyledImageName = styled.div`
   display: flex;
   align-items: center;
+`;
+
+const FormContainer = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 24px;
 `;
 
 type Props = {
@@ -104,7 +108,7 @@ const ManageList = ({
 
   const getBody = () => {
     return isFormMode ? (
-      formBody
+      <FormContainer>{formBody}</FormContainer>
     ) : (
       <>
         <BodyHeader>
