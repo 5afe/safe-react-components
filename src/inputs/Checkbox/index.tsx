@@ -34,6 +34,8 @@ const CustomCheckbox = withStyles({
 const StyledFormHelperText = styled(FormHelperText)`
   && {
     color: ${({ theme }) => theme.colors.error};
+    position: absolute;
+    margin: 20px 12px;
   }
 `;
 
