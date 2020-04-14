@@ -1,4 +1,5 @@
 import CheckboxMUI from '@material-ui/core/Checkbox';
+import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import { withStyles } from '@material-ui/core/styles';
@@ -33,8 +34,7 @@ const CustomCheckbox = withStyles({
 const StyledFormHelperText = styled(FormHelperText)`
   && {
     color: ${({ theme }) => theme.colors.error};
-    position: absolute;
-    margin: 20px 12px;
+    margin: -6px 0px 0 34px;
   }
 `;
 
@@ -55,22 +55,21 @@ const Checkbox = ({
   };
 
   return (
-    <FormControlLabel
-      control={
-        <>
-          {input ? (
-            getCheckboxForReactFinalForm()
-          ) : (
-            <CustomCheckbox {...rest} checked={checked} onChange={onChange} />
-          )}
-
-          {meta?.error && (
-            <StyledFormHelperText>{meta.error}</StyledFormHelperText>
-          )}
-        </>
-      }
-      label={label}
-    />
+    <FormControl component="fieldset">
+      <FormControlLabel
+        control={
+          <>
+            {input ? (
+              getCheckboxForReactFinalForm()
+            ) : (
+              <CustomCheckbox {...rest} checked={checked} onChange={onChange} />
+            )}
+          </>
+        }
+        label={label}
+      />
+      {meta?.error && <StyledFormHelperText>{meta.error}</StyledFormHelperText>}
+    </FormControl>
   );
 };
 
