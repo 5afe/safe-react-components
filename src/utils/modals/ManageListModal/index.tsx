@@ -49,10 +49,6 @@ const StyledItem = styled.div`
   }
 `;
 
-const StyledButton = styled(Button)`
-  text-transform: capitalize;
-`;
-
 const StyledImage = styled.img`
   width: 26px;
   height: 26px;
@@ -121,15 +117,14 @@ const ManageList = ({
               placeholder="Search by name or symbol"
               value={search}
             />
-          </SearchContainer>
-
-          <StyledButton
+          </SearchContainer>          
+          <Button
             size="md"
             color="primary"
             variant="contained"
             onClick={() => setIsFormMode(!isFormMode)}>
-            <Text size="lg">+ {addButtonLabel}</Text>
-          </StyledButton>
+            <Text size="lg" color="white">+ {addButtonLabel}</Text>
+          </Button>
         </BodyHeader>
         <div>
           {itemList.map(i => {

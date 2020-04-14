@@ -25,6 +25,7 @@ const Button = ({
     root: {
       height: theme.buttons.size[size].height,
       color: variant === 'contained' ? theme.colors.white : theme.colors[color],
+      'text-transform': 'capitalize',
       'background-color':
         variant === 'contained' ? theme.colors[color] : theme.colors.white,
       'border-color': theme.colors[color],
