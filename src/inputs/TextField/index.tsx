@@ -34,7 +34,7 @@ function TextField({
   ...rest
 }: Props) {
   const customProps = {
-    error: meta && meta.error.length,
+    error: meta && !!meta.error,
     label: (meta && meta.error) || label,
     variant: 'filled',
     InputProps: {
