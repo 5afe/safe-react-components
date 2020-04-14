@@ -47,7 +47,7 @@ const Checkbox = ({
   input,
   ...rest
 }: Props) => {
-  const getCheckboxFromReactFinalForm = () => {
+  const getCheckboxForReactFinalForm = () => {
     const { name, value, ...inputRest } = input;
     return (
       <CustomCheckbox {...rest} name={name} checked={!!value} {...inputRest} />
@@ -59,7 +59,7 @@ const Checkbox = ({
       control={
         <>
           {input ? (
-            getCheckboxFromReactFinalForm()
+            getCheckboxForReactFinalForm()
           ) : (
             <CustomCheckbox {...rest} checked={checked} onChange={onChange} />
           )}

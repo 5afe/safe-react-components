@@ -10,14 +10,12 @@ export default {
   }
 };
 
-// const onSubmit = (e: React.FormEvent) => e.preventDefault();
-// <StyledForm noValidate autoComplete="off" onSubmit={onSubmit}>
-// </StyledForm>
+const onSubmit = (e: React.FormEvent) => e.preventDefault();
 
 export const textField = () => {
   const [value, setValue] = useState<string>('');
   return (
-    <form noValidate autoComplete="off">
+    <form noValidate autoComplete="off" onSubmit={onSubmit}>
       <TextField
         id="standard-name"
         label="Name"
@@ -28,18 +26,17 @@ export const textField = () => {
   );
 };
 
-
 export const readOnly = () => {
-    const [value, setValue] = useState<string>('');
-    return (
-      <form noValidate autoComplete="off">
-        <TextField
-          id="standard-name"
-          label="Name"
-          readOnly
-          value={value}
-          onChange={e => setValue(e.target.value)}
-        />
-      </form>
-    );
-  };
+  const [value, setValue] = useState<string>('some value readOnly');
+  return (
+    <form noValidate autoComplete="off" onSubmit={onSubmit}>
+      <TextField
+        id="standard-name"
+        label="Name"
+        readOnly
+        value={value}
+        onChange={e => setValue(e.target.value)}
+      />
+    </form>
+  );
+};
