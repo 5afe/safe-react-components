@@ -11,6 +11,7 @@ const FooterWrapper = styled.div`
 type Props = {
   okText?: string;
   cancelText?: string;
+  okDisabled?: boolean;
   handleOk: () => void;
   handleCancel: () => void;
 };
@@ -18,18 +19,21 @@ type Props = {
 export const ModalFooterConfirmation = ({
   cancelText = 'Cancel',
   handleCancel,
+  okDisabled,
   handleOk,
   okText = 'Confirm'
 }: Props) => {
   return (
     <FooterWrapper>
-      <Button
-        size="md"
-        color="secondary"        
-        onClick={handleCancel}>
+      <Button size="md" color="secondary" onClick={handleCancel}>
         {cancelText}
       </Button>
-      <Button color="primary" size="md" variant="contained" onClick={handleOk}>
+      <Button
+        color="primary"
+        size="md"
+        variant="contained"
+        onClick={handleOk}
+        disabled={okDisabled === true}>
         {okText}
       </Button>
     </FooterWrapper>

@@ -10,11 +10,23 @@ export default {
   }
 };
 
-export const modal = () => {
+export const modalFooter = () => {
   return (
     <ModalFooterConfirmation
       okText="ok button text"
       cancelText="cancel button text"
+      handleCancel={() => {}}
+      handleOk={() => {}}
+    />
+  );
+};
+
+export const okDisabled = () => {
+  return (
+    <ModalFooterConfirmation
+      okText="ok button text"
+      cancelText="cancel button text"
+      okDisabled
       handleCancel={() => {}}
       handleOk={() => {}}
     />
