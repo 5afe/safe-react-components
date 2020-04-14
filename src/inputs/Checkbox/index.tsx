@@ -35,6 +35,7 @@ const StyledFormHelperText = styled(FormHelperText)`
   && {
     color: ${({ theme }) => theme.colors.error};
     margin: -6px 0px 0 34px;
+    position: relative;
   }
 `;
 
