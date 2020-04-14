@@ -33,7 +33,7 @@ export const ModalFooterConfirmation = ({
         size="md"
         variant="contained"
         onClick={handleOk}
-        disabled={okDisabled === true}>
+        disabled={okDisabled}>
         {okText}
       </Button>
     </FooterWrapper>

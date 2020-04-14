@@ -83,6 +83,7 @@ type Props = {
   }>;
   addButtonLabel?: string;
   formBody: React.ReactNode;
+  isSubmitFormDisabled?: boolean;
   onSubmitForm: () => any;
   onItemToggle: (itemId: number | string, checked: boolean) => any;
   onClose: () => any;
@@ -94,6 +95,7 @@ const ManageList = ({
   defaultIconUrl,
   formBody,
   addButtonLabel = 'add',
+  isSubmitFormDisabled = false,
   onSubmitForm,
   onItemToggle,
   onClose
@@ -165,6 +167,7 @@ const ManageList = ({
     return !isFormMode ? null : (
       <ModalFooterConfirmation
         okText="Save"
+        okDisabled={isSubmitFormDisabled}
         handleCancel={() => setIsFormMode(false)}
         handleOk={onSubmitForm}
       />

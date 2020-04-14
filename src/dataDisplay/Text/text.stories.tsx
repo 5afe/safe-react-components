@@ -32,3 +32,9 @@ export const customSize = () => (
     <Text size="xl">Some Text...</Text>
   </>
 );
+
+export const color = () => (
+  <>    
+    <Text size="sm" color="primary">Some Text...</Text>    
+  </>
+);

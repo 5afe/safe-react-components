@@ -27,8 +27,7 @@ const CustomCheckbox = withStyles({
     '&$checked': {
       color: theme.colors.primary,
     },
-  },
-  checked: {},
+  }
 })((props: any) => <CheckboxMUI color="default" {...props} />);
 
 const StyledFormHelperText = styled(FormHelperText)`
