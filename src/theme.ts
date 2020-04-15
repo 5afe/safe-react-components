@@ -45,7 +45,7 @@ const theme = {
   },
   buttons: {
     size: {
-      md: { height: '36px', padding: '0'},
+      md: { height: '36px', padding: '0 16px'},
       lg: { height: '52px', padding: '0 25px'}
     }
   },

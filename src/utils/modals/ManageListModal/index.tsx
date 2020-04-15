@@ -26,6 +26,7 @@ const BodyHeader = styled.div`
   justify-content: space-around;
   align-items: center;
   border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
+  padding: 0 24px;
 `;
 
 const SearchContainer = styled.div`
@@ -33,7 +34,7 @@ const SearchContainer = styled.div`
   align-items: center;
   height: 52px;
   border-right: 2px solid ${({ theme }) => theme.colors.separator};
-  padding: 0 16px 0 0;
+  margin: 0 0 0 10px;
 `;
 
 const StyledItem = styled.div`
