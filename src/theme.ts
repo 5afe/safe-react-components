@@ -19,7 +19,7 @@ const theme = {
     icon: '#B2B5B2',
     placeHolder: '#5D6D74',
     inputField: '#F0EFEE',
-    
+
     separator: '#E8E7E6',
     rinkeby: '#E8673C',
     pendingTagHover: '#FBE5C5',
@@ -45,8 +45,8 @@ const theme = {
   },
   buttons: {
     size: {
-      md: { height: '36px' },
-      lg: { height: '52px' }
+      md: { height: '36px', padding: '0'},
+      lg: { height: '52px', padding: '0 25px'}
     }
   },
   text: {
@@ -112,7 +112,7 @@ const theme = {
       sm: '16',
       md: '24'
     }
-  }    
+  }
 };
 
 export type Theme = typeof theme;
