@@ -5,7 +5,6 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
 import styled from 'styled-components';
-// import { rgba } from 'polished';
 
 import theme from '../../theme';
 
@@ -34,7 +33,8 @@ const CustomCheckbox = withStyles({
 const StyledFormHelperText = styled(FormHelperText)`
   && {
     color: ${({ theme }) => theme.colors.error};
-    margin: -6px 0px 0 34px;
+    margin-top: 0px;
+    padding-left: 0px;
     position: relative;
   }
 `;
