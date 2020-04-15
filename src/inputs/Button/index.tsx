@@ -24,6 +24,7 @@ const Button = ({
   const BootstrapButton = withStyles({
     root: {
       height: theme.buttons.size[size].height,
+      padding: theme.buttons.size[size].padding,
       color: variant === 'contained' ? theme.colors.white : theme.colors[color],
       'text-transform': 'capitalize',
       'background-color':
