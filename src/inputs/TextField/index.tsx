@@ -1,6 +1,9 @@
 import React from 'react';
 import TextFieldMui from '@material-ui/core/TextField';
+//import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
+
+//import theme from '../../theme';
 
 type Props = {
   value: string;
@@ -11,14 +14,25 @@ type Props = {
   input?: any; // added for compatibility with react-final-form
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-const StyledTextField = styled(({ input, ...props }) => (
+const CustomTextField = styled(({ input, ...props }) => (
   <TextFieldMui {...props} />
 ))<Props>`
   && {
     width: 400px;
-    color: ${({ theme }) => theme.colors.primary};
+
     .MuiFilledInput-input {
       cursor: ${({ readOnly }) => (readOnly === true ? 'not-allowed' : 'auto')};
+    }
+
+    .MuiFormLabel-root.Mui-focused {
+      color: ${({ theme, error }) =>
+        error ? theme.colors.error : theme.colors.primary};
+    }
+
+    .MuiFilledInput-underline:after {
+      border-bottom: 2px solid
+        ${({ theme, error }) =>
+          error ? theme.colors.error : theme.colors.primary};
     }
   }
 `;
@@ -47,7 +61,7 @@ function TextField({
   const getCheckboxForReactFinalForm = () => {
     const { name, value, ...inputRest } = input;
     return (
-      <StyledTextField
+      <CustomTextField
         {...rest}
         {...customProps}
         name={name}
@@ -60,7 +74,7 @@ function TextField({
   return input ? (
     getCheckboxForReactFinalForm()
   ) : (
-    <StyledTextField
+    <CustomTextField
       {...rest}
       {...customProps}
       value={value}

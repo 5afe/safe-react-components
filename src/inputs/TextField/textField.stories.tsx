@@ -26,6 +26,21 @@ export const textField = () => {
   );
 };
 
+export const error = () => {
+  const [value, setValue] = useState<string>('some incorrect value');
+  return (
+    <form noValidate autoComplete="off" onSubmit={onSubmit}>
+      <TextField
+        id="standard-name"
+        label="Name"
+        value={value}
+        meta={{ error: 'Some error' }}
+        onChange={e => setValue(e.target.value)}
+      />
+    </form>
+  );
+};
+
 export const readOnly = () => {
   const [value, setValue] = useState<string>('some value readOnly');
   return (
