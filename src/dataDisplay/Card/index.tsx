@@ -7,6 +7,7 @@ const Card = styled.div`
     ${({ theme }) => rgba(theme.colors.shadow.color, 0.08)};
   border-radius: 8px;
   padding: 24px;
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export default ({ ...args }) => <Card {...args} />;
