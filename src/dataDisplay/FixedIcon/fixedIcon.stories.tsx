@@ -49,7 +49,9 @@ export const icons = () => {
         'chevronUp',
         'chevronDown',
         'settingsChange',
-        'creatingInProgress'        
+        'creatingInProgress',
+        'notOwner'
+
         
       ].map((type: any, index) => (
         <IconBox key={index}>

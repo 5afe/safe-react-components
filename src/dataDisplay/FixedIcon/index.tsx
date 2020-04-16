@@ -16,6 +16,7 @@ import chevronUp from './images/chevronUp';
 import chevronDown from './images/chevronDown';
 import settingsChange from './images/settingsChange';
 import creatingInProgress from './images/creatingInProgress';
+import notOwner from './images/notOwner';
 
 
 const icons = {
@@ -35,6 +36,7 @@ const icons = {
   chevronDown,
   settingsChange,
   creatingInProgress,
+  notOwner,
 };
 
 export type IconType = typeof icons;
