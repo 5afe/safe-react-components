@@ -23,7 +23,7 @@ const SearchInput = styled.input`
 
 const BodyHeader = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
   padding: 0 24px;
@@ -34,7 +34,7 @@ const SearchContainer = styled.div`
   align-items: center;
   height: 52px;
   border-right: 2px solid ${({ theme }) => theme.colors.separator};
-  margin: 0 0 0 10px;
+  margin: 0;
 `;
 
 const StyledItem = styled.div`
