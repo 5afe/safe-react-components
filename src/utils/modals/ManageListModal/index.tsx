@@ -54,7 +54,7 @@ const StyledImage = styled.img`
   width: 26px;
   height: 26px;
   object-fit: contain;
-  margin: 0 16px 0 0;    
+  margin: 0 16px 0 0;
 `;
 
 const StyledImageName = styled.div`
@@ -105,6 +105,14 @@ const ManageList = ({
     e.target.src = defaultIconUrl;
   };
 
+  const getFilteredItemList = () => {
+    if (!search || !search.length) {
+      return itemList;
+    }
+
+    return itemList.filter(i => i.name.includes(search) || i.description?.includes(search));
+  };
+
   const getBody = () => {
     return isFormMode ? (
       <FormContainer>{formBody}</FormContainer>
@@ -115,20 +123,22 @@ const ManageList = ({
             <Icon size="md" type="search" />
             <SearchInput
               onChange={event => setSearch(event.target.value)}
-              placeholder="Search by name or symbol"
+              placeholder="Search"
               value={search}
             />
-          </SearchContainer>          
+          </SearchContainer>
           <Button
             size="md"
             color="primary"
             variant="contained"
             onClick={() => setIsFormMode(!isFormMode)}>
-            <Text size="lg" color="white">+ {addButtonLabel}</Text>
+            <Text size="lg" color="white">
+              + {addButtonLabel}
+            </Text>
           </Button>
         </BodyHeader>
         <div>
-          {itemList.map(i => {
+          {getFilteredItemList().map(i => {
             const onChange = (checked: boolean) => onItemToggle(i.id, checked);
 
             return (

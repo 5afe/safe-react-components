@@ -18,22 +18,22 @@ export const modal = () => {
     {
       id: '1',
       iconUrl: 'someUrl',
-      name: 'name 1',
-      description: 'description 1',
+      name: 'one',
+      description: 'Lorem Ipsum has been the industry',
       checked: true
     },
     {
       id: '2',
       iconUrl: 'someUrl2',
-      name: 'name 2',
-      description: 'description 2',
+      name: 'two',
+      description: 'unknown printer took a galley of type',
       checked: true
     },
     {
       id: '3',
       iconUrl: 'someUrl3',
-      name: 'name 3',
-      description: 'description 3',
+      name: 'three',
+      description: 'ever since the 1500s',
       checked: true
     }
   ]);
