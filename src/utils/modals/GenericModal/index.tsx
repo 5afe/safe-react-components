@@ -63,7 +63,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     overflowY: 'scroll',
-    background: rgba(theme.colors.overlay.color, 0.75)
+    background: rgba(theme.colors.overlay.color, theme.colors.overlay.opacity)
   },
 
   paper: {
@@ -72,7 +72,7 @@ const useStyles = makeStyles({
     minWidth: '450px',
     backgroundColor: theme.colors.white,
     borderRadius: '8px',
-    boxShadow: `0 0 ${theme.colors.shadow.opacity}px 0 ${theme.colors.shadow.color}`,
+    boxShadow: `0 0 ${theme.colors.shadow.opacity} 0 ${theme.colors.shadow.color}`,
 
     '&:focus': {
       outline: 'none'

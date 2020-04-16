@@ -25,22 +25,19 @@ const theme = {
     pendingTagHover: '#FBE5C5',
     tag: '#D4D5D3',
     background: '#F7F5F5',
-    white: '#ffffff',
+    white: '#ffffff',    
 
     disabled: {
-      opacity: '50%'
+      opacity: 0.5
     },
     overlay: {
-      opacity: '75',
+      opacity: 0.75,
       color: '#E8E7E6'
     },
     shadow: {
-      opacity: '18',
+      blur: '18px',
+      opacity: 0.75,
       color: '#28363D'
-    },
-    cardShadow: {
-      opacity: '59',
-      color: '#D4D4D3'
     }
   },
   buttons: {
