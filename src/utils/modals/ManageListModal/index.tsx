@@ -110,7 +110,11 @@ const ManageList = ({
       return itemList;
     }
 
-    return itemList.filter(i => i.name.includes(search) || i.description?.includes(search));
+    return itemList.filter(
+      i =>
+        i.name.toLowerCase().includes(search.toLowerCase()) ||
+        i.description?.toLowerCase().includes(search.toLowerCase())
+    );
   };
 
   const getBody = () => {
