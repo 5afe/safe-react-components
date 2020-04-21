@@ -1,11 +1,25 @@
 {
   "name": "@gnosis.pm/safe-react-components",
   "version": "0.1.1",
+  "description": "Gnosis UI components",
   "main": "dist/index.min.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "keywords": [
+    "Gnosis"
+  ],
+  "scripts": {
+    "types": "yarn tsc",
+    "start": "rimraf dist && webpack --mode production --watch",
+    "build": "rimraf dist && webpack --mode production",
+    "build-storybook": "build-storybook -s public --docs",
+    "storybook": "start-storybook -p 9009 -s public --docs",
+    "prepare": "yarn build"
+  },
+  "author": "Gnosis (https://gnosis.pm)",
+  "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.6",
     "polished": "^3.5.1",
@@ -59,16 +73,7 @@
     "react": "^16.x.x",
     "react-dom": "^16.x.x",
     "styled-components": "^4.x.x"
-  },
-  "scripts": {
-    "types": "yarn tsc",
-    "start": "rimraf dist && webpack --mode production --watch",
-    "build": "rimraf dist && webpack --mode production",
-    "build-storybook": "build-storybook -s public --docs",
-    "storybook": "start-storybook -p 9009 -s public --docs",
-    "prepare": "yarn build"
-  },
-  "types": "dist/types/index.d.ts",
+  },    
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -83,5 +88,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnosis/safe-react-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gnosis/safe-react-components/issues"
+  },
+  "homepage": "https://github.com/gnosis/safe-react-components#readme"
 }
