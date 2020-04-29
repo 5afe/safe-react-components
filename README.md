@@ -1,3 +1,3 @@
 # safe-react-components
 
-[Live example](https://gnosis-react-components.netlify.com/)
+[Live example](https://components.gnosis-safe.io/)
