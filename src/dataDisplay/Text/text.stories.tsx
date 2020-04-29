@@ -6,7 +6,7 @@ export default {
   title: "Data Display/Text",
   component: Text,
   parameters: {
-    componentSubtitle: "The Text component"
+    componentSubtitle: "Text component, it allows several configurations"
   }
 };
 

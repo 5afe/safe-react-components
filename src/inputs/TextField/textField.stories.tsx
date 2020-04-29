@@ -6,7 +6,7 @@ export default {
   title: 'Inputs/TextField',
   component: TextField,
   parameters: {
-    componentSubtitle: 'Input used to toggle a value'
+    componentSubtitle: 'Text field input with several variants'
   }
 };
 

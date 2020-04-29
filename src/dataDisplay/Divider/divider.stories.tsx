@@ -6,7 +6,7 @@ export default {
   title: 'Data Display/Divider',
   component: Divider,
   parameters: {
-    componentSubtitle: 'Handy status label'
+    componentSubtitle: 'Used to separate content.'
   }
 };
 

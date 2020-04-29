@@ -6,7 +6,7 @@ export default {
   title: 'Inputs/Checkbox',
   component: Checkbox,
   parameters: {
-    componentSubtitle: 'Input used to toggle a value'
+    componentSubtitle: 'Checkbox Input.'
   }
 };
 

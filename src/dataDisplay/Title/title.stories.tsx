@@ -6,7 +6,7 @@ export default {
   title: 'Data Display/Title',
   component: Title,
   parameters: {
-    componentSubtitle: 'The Title component'
+    componentSubtitle: 'Title Component.'
   }
 };
 

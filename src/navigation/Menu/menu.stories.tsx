@@ -7,7 +7,7 @@ export default {
   title: 'navigation/Menu',
   component: Menu,
   parameters: {
-    componentSubtitle: 'Menu component'
+    componentSubtitle: 'Menu component used in Safe Multisig.'
   }
 };
 

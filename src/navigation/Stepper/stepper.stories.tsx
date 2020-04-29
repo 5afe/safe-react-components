@@ -6,7 +6,7 @@ export default {
   title: "Navigation/Stepper",
   component: Stepper,
   parameters: {
-    componentSubtitle: "The Stepper component"
+    componentSubtitle: "Stepper component used in Safe Multisig."
   }
 };
 

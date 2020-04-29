@@ -7,7 +7,7 @@ export default {
   title: 'Data Display/Card',
   component: Card,
   parameters: {
-    componentSubtitle: 'Handy status label'
+    componentSubtitle: 'Useful to wrap content inside a styled container.'
   }
 };
 

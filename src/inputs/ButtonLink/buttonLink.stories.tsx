@@ -6,7 +6,7 @@ export default {
   title: 'inputs/ButtonLink',
   component: ButtonLink,
   parameters: {
-    componentSubtitle: 'Menu component'
+    componentSubtitle: 'Button component as a Link.'
   }
 };
 

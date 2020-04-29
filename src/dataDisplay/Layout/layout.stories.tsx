@@ -6,7 +6,7 @@ export default {
   title: "Data Display/Layout",
   component: Layout,
   parameters: {
-    componentSubtitle: "Basic Layout"
+    componentSubtitle: "It provides a custom layout used in Safe Multisig"
   }
 };
 

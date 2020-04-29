@@ -6,7 +6,7 @@ export default {
   title: 'Inputs/Switch',
   component: Switch,
   parameters: {
-    componentSubtitle: 'Input used to toggle a value'
+    componentSubtitle: 'Switch input component.'
   }
 };
 

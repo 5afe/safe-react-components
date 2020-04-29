@@ -7,7 +7,8 @@ export default {
   title: 'Data Display/FixedIcon',
   component: FixedIcon,
   parameters: {
-    componentSubtitle: 'The Fixed Icon component'
+    componentSubtitle: `Components that renders an icon customized for Safe Multisig app, this icon is not 
+     customizable by props. If you need generic purposes Icons, try Icon component.`
   }
 };
 

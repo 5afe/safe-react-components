@@ -7,7 +7,8 @@ export default {
   title: 'Data Display/Icon',
   component: Icon,
   parameters: {
-    componentSubtitle: 'The Icon component'
+    componentSubtitle:
+      'Icon component, you can select one of the set of icons we already have configured.'
   }
 };
 

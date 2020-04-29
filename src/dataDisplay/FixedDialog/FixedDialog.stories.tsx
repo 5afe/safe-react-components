@@ -6,7 +6,9 @@ export default {
   title: 'Data Display/FixedDialog',
   component: FixedDialog,
   parameters: {
-    componentSubtitle: ''
+    componentSubtitle: `It shows a Dialog, with a modal look and feels, but only being 
+    rendered inside a container instead of taking position absolute.
+    `
   }
 };
 
