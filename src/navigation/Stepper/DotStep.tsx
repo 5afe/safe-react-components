@@ -9,7 +9,7 @@ const Circle = styled.div<{ disabled: boolean; error?: boolean }>`
       return theme.colors.error;
     }
     if (disabled) {
-      return theme.colors.disabled;
+      return theme.colors.secondaryLight;
     }
 
     return theme.colors.primary;
@@ -21,7 +21,12 @@ const Circle = styled.div<{ disabled: boolean; error?: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5px;
+  
+`;
+
+const StyledIcon = styled(Icon)`
+  /* span {margin:0px} */
+  margin-right: 0;
 `;
 
 type Props = {
@@ -32,7 +37,7 @@ type Props = {
 const DotStep = ({ currentIndex, dotIndex, error }: Props) => {
   return (
     <Circle disabled={dotIndex > currentIndex} error={error}>
-      {dotIndex < currentIndex ? <Icon size="sm" type="check" /> : dotIndex}
+      {dotIndex < currentIndex ? <StyledIcon size="sm" type="check" color="white" /> : dotIndex}
     </Circle>
   );
 };

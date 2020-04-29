@@ -23,12 +23,12 @@ export const icons = () => {
     flex-direction: column;
     justify-content: space-evenly;
 
-    padding: 2px;
-    margin-right: 2px;
-    margin-bottom: 2px;
-    width: 150px;
-    height: 150px;
-    border: 1px solid ${({ theme }) => theme.colors.primary};
+    padding: 5px;
+    width: 140px;
+    height: 140px;
+    border: 1px solid ${({ theme }) => theme.colors.background};
+    font-family: 'Averta', sans-serif;
+    font-size: 14px;
   `;
 
   return (

@@ -65,7 +65,6 @@ import wallet from './images/wallet';
 import { Theme } from '../../theme';
 
 const StyledIcon = styled.span<any>`
-  margin-right: 5px;
   .icon-color {
     fill: ${({ theme, color }) =>
       color ? theme.colors[color] : theme.colors.icon};

@@ -7,7 +7,7 @@ export default create({
   colorSecondary: '#005546',
 
   // UI
-  appBg: '#f7f5f5',
+  appBg: 'white',
   appContentBg: 'white',
   appBorderColor: 'grey',
   appBorderRadius: 4,
@@ -33,6 +33,6 @@ export default create({
 
   brandTitle: 'Gnosis theme',
   brandUrl: 'https://gnosis.io',
-  brandImage: 'https://miro.medium.com/fit/c/160/160/1*_8QTHtOTxPVQTYaWJOE6_w@2x.png',
-  // brandImage: 'https://miro.medium.com/max/1060/1*DZopze1Xtir7mZHraVNZ_w.png',
+  brandImage: 'https://miro.medium.com/max/1060/1*DZopze1Xtir7mZHraVNZ_w.png',
+  //brandImage: 'https://gnosis-safe.readthedocs.io/en/latest/_images/safe-banner.svg',
 });
