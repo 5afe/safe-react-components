@@ -23,6 +23,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "polished": "3.6.3",
+    "react-docgen-typescript-loader": "^3.7.2",
     "url-loader": "^4.1.0"
   },
   "devDependencies": {
