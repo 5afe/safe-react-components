@@ -15,6 +15,7 @@ const SearchInput = styled.input`
   background-color: transparent;
   box-shadow: none;
   font-family: ${({ theme }) => theme.fonts.fontFamily};
+  width: 200px;
 
   :focus {
     outline: none;
@@ -66,6 +67,13 @@ const FormContainer = styled.div`
   display: flex;
   align-items: center;
   padding: 24px;
+`;
+
+const TextDesc = styled(Text)`
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 type Props = {
@@ -160,7 +168,7 @@ const ManageList = ({
                       </Text>
                     </div>
                     <div>
-                      <Text size="md">{i.description && i.description}</Text>
+                      <TextDesc size="md">{i.description && i.description}</TextDesc>
                     </div>
                   </div>
                 </StyledImageName>
