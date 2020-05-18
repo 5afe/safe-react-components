@@ -15,7 +15,7 @@ const SearchInput = styled.input`
   background-color: transparent;
   box-shadow: none;
   font-family: ${({ theme }) => theme.fonts.fontFamily};
-  width: 200px;
+  width: 250px;
 
   :focus {
     outline: none;
@@ -70,7 +70,7 @@ const FormContainer = styled.div`
 `;
 
 const TextDesc = styled(Text)`
-  width: 300px;
+  width: 350px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
