@@ -25,6 +25,7 @@ const Button = ({
     root: {
       height: theme.buttons.size[size].height,
       padding: theme.buttons.size[size].padding,
+      fontFamily: theme.fonts.fontFamily,
       color: variant === 'contained' ? theme.colors.white : theme.colors[color],
       'text-transform': 'capitalize',
       'background-color':
@@ -41,7 +42,8 @@ const Button = ({
 
       '&:disabled': {
         opacity: theme.colors.disabled.opacity,
-        color: variant === 'contained' ? theme.colors.white : theme.colors[color],
+        color:
+          variant === 'contained' ? theme.colors.white : theme.colors[color]
       }
     }
   })(ButtonMUI);
