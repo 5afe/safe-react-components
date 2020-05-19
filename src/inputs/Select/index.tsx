@@ -1,8 +1,8 @@
-import React from "react";
-import MenuItem from "@material-ui/core/MenuItem";
-import FormControl from "@material-ui/core/FormControl";
-import SelectMUI from "@material-ui/core/Select";
-import styled from "styled-components";
+import React from 'react';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import SelectMUI from '@material-ui/core/Select';
+import styled from 'styled-components';
 
 const IconImg = styled.img`
   width: 20px;
@@ -19,6 +19,10 @@ const StyledSelect = styled(SelectMUI)`
     display: flex;
     align-items: center;
     padding-left: 15px;
+  }
+
+  .MuiSelect-selectMenu {
+    font-family: ${(p) => p.theme.fonts.fontFamily};
   }
 `;
 
@@ -48,15 +52,14 @@ function Select({ items, activeItemId, onItemClick, id }: Props) {
     <div>
       <FormControl>
         <StyledSelect
-          labelId={id ? id : "generic-select"}
-          id={id ? id : "generic-select"}
+          labelId={id ? id : 'generic-select'}
+          id={id ? id : 'generic-select'}
           open={open}
           onClose={handleClose}
           onOpen={handleOpen}
           value={activeItemId}
-          onChange={handleChange}
-        >
-          {items.map(i => {
+          onChange={handleChange}>
+          {items.map((i) => {
             return (
               <MenuItem value={i.id} key={i.id}>
                 {i.iconUrl && <IconImg alt={i.label} src={i.iconUrl} />}
