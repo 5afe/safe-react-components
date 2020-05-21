@@ -69,7 +69,7 @@ const useStyles = makeStyles({
   paper: {
     position: 'absolute',
     top: '121px',
-    minWidth: '450px',
+    minWidth: '500px',
     backgroundColor: theme.colors.white,
     borderRadius: '8px',
     boxShadow: `0 0 ${theme.colors.shadow.opacity} 0 ${theme.colors.shadow.color}`,

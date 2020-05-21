@@ -33,7 +33,7 @@ export const modal = () => {
       id: '3',
       iconUrl: 'someUrl3',
       name: 'three',
-      description: 'ever since the 1500s',
+      description: 'Long desc ever since the 1500s do not finish over the ocean of this',
       checked: true
     }
   ]);
