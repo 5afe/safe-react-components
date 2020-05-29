@@ -31,9 +31,10 @@ type Props = {
   activeStepIndex: number;
   error?: boolean;
   orientation: "vertical" | "horizontal";
+  startStepperAtZeroIndex?: boolean;
 };
 
-const Stepper = ({ steps, error, activeStepIndex, orientation }: Props) => {
+const Stepper = ({ steps, startStepperAtZeroIndex, error, activeStepIndex, orientation }: Props) => {
   return (
     <StepperMUI activeStep={activeStepIndex} orientation={orientation}>
       {steps.map((s, index) => {
@@ -42,8 +43,8 @@ const Stepper = ({ steps, error, activeStepIndex, orientation }: Props) => {
             <StepLabelMUI
               icon={
                 <DotStep
-                  currentIndex={activeStepIndex}
-                  dotIndex={index}
+                  currentIndex={startStepperAtZeroIndex ? activeStepIndex : activeStepIndex + 1}
+                  dotIndex={startStepperAtZeroIndex ? index : index + 1 }
                   error={index === activeStepIndex && error}
                 />
               }

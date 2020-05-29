@@ -21,12 +21,10 @@ const Circle = styled.div<{ disabled: boolean; error?: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  
-`;
 
-const StyledIcon = styled(Icon)`
-  /* span {margin:0px} */
-  margin-right: 0;
+  svg {
+    margin-top: 4px;
+  }
 `;
 
 type Props = {
@@ -37,7 +35,7 @@ type Props = {
 const DotStep = ({ currentIndex, dotIndex, error }: Props) => {
   return (
     <Circle disabled={dotIndex > currentIndex} error={error}>
-      {dotIndex < currentIndex ? <StyledIcon size="sm" type="check" color="white" /> : dotIndex}
+      {dotIndex < currentIndex ? <Icon size="sm" type="check" color="white" /> : dotIndex}
     </Circle>
   );
 };
