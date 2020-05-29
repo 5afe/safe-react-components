@@ -1,15 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { Colors, IconTextSize, TextSize } from 'styled-components';
 
-import { Theme } from '../../theme';
 import Icon, { IconType } from '../Icon';
 import Text from '../Text';
 
 type Props = {
   iconType: keyof IconType;
-  iconSize: keyof Theme['icons']['size'];
-  textSize: keyof Theme['text']['size'];
-  color?: keyof Theme['colors'];
+  iconSize: keyof IconTextSize;
+  textSize: keyof TextSize;
+  color?: keyof Colors;
   text: string;
 };
 

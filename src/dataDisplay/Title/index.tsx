@@ -1,11 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-
-import { Theme } from '../../theme';
+import styled, { TextSize } from 'styled-components';
 
 type Props = {
   children: string;
-  size: keyof Theme['title']['size'];
+  size: keyof TextSize;
   withoutMargin?: boolean;
 };
 
@@ -43,8 +41,8 @@ const StyledH4 = styled.h4<{ withoutMargin?: boolean }>`
 
 const StyledH5 = styled.h5<{ withoutMargin?: boolean }>`
   font-family: 'Averta';
-  font-size: ${({ theme }) => theme.title.size.xs.fontSize};
-  line-height: ${({ theme }) => theme.title.size.xs.lineHeight};
+  font-size: ${({ theme }) => theme.title.size.xs?.fontSize};
+  line-height: ${({ theme }) => theme.title.size.xs?.lineHeight};
   font-weight: normal;
   margin: ${({ withoutMargin }) => (withoutMargin ? 0 : '18px')} 0;
 `;

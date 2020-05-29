@@ -1,12 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-
-import { Theme } from '../../theme';
+import styled, { Colors, TextSize } from 'styled-components';
 
 type Props = {
   children: any;
-  size: keyof Theme['text']['size'];
-  color?: keyof Theme['colors'];
+  size: keyof TextSize;
+  color?: keyof Colors;
   strong?: boolean;
   center?: boolean;
 };
@@ -14,11 +12,11 @@ type Props = {
 const StyledText = styled.p<Props>`
   font-family: 'Averta';
   color: ${({ color, theme }) =>
-    color ? theme.colors[color] : theme.colors.text};
+    color ? theme.colors[color] as string : theme.colors.text};
   margin: 0;
   font-weight: ${({ strong }) => (strong ? 'bold' : 'normal')};
-  font-size: ${({ size, theme }) => theme.text.size[size].fontSize};
-  line-height: ${({ size, theme }) => theme.text.size[size].lineHeight};
+  font-size: ${({ size, theme }) => theme.text.size[size]?.fontSize};
+  line-height: ${({ size, theme }) => theme.text.size[size]?.lineHeight};
   text-align: ${({ center }) => (center ? 'center' : 'start')};
 `;
 

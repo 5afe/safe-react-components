@@ -1,13 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { Colors } from 'styled-components';
 
-import { Theme } from '../../theme';
 import Icon, { IconType } from '../../dataDisplay/Icon';
 import { Text } from '../../index';
 
 type Props = {
   iconType?: keyof IconType;
-  color: keyof Theme['colors'];
+  color: keyof Colors;
   children: any;
 };
 
@@ -16,11 +15,13 @@ const StyledButtonLink = styled.button<Props>`
   border: none;
   text-decoration: underline;
   cursor: pointer;
-  color: ${({ theme, color }) => theme['colors'][color]};
+  color: ${({ theme, color }) => {
+      return theme.colors[color] as string;
+  }};
   font-family: inherit;
   display: flex;
   align-items: center;
-  
+
   :focus {
     outline: none;
   }

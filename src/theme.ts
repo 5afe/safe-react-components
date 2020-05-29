@@ -1,4 +1,6 @@
-const theme = {
+import { DefaultTheme } from 'styled-components';
+
+const theme: DefaultTheme = {
   fonts: {
     fontFamily: `'Averta', 'Roboto', 'Helvetica Neue', 'Arial', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', '-apple-system', 'BlinkMacSystemFont', sans-serif`,
     fontFamilyCode: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`
@@ -25,7 +27,7 @@ const theme = {
     pendingTagHover: '#FBE5C5',
     tag: '#D4D5D3',
     background: '#F7F5F5',
-    white: '#ffffff',    
+    white: '#ffffff',
 
     disabled: {
       opacity: 0.5

@@ -1,14 +1,15 @@
 import React from 'react';
 import ButtonMUI from '@material-ui/core/Button';
+import { ButtonsSize } from "styled-components";
 import { withStyles } from '@material-ui/core/styles';
 
-import theme, { Theme } from '../../theme';
+import theme from '../../theme';
 import Icon, { IconType } from '../../dataDisplay/Icon';
 
 export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   children: any;
   iconType?: keyof IconType;
-  size: keyof Theme['buttons']['size'];
+  size: keyof ButtonsSize;
   color: 'primary' | 'secondary' | 'error';
   variant?: 'outlined' | 'contained';
 }

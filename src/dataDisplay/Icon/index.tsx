@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { Colors } from 'styled-components';
 
 import add from './images/add';
 import allowances from './images/allowances';
@@ -61,8 +61,6 @@ import transactionsInactive from './images/transactionsInactive';
 import unlocked from './images/unlocked';
 import userEdit from './images/userEdit';
 import wallet from './images/wallet';
-
-import { Theme } from '../../theme';
 
 const StyledIcon = styled.span<any>`
   .icon-color {
@@ -138,8 +136,8 @@ export type IconType = typeof icons;
 
 type Props = {
   type: keyof IconType;
-  color?: keyof Theme['colors'];
-  size: keyof Theme['icons']['size'];
+  color?: keyof Colors;
+  size: string;
 };
 
 /**
