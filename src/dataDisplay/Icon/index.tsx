@@ -1,5 +1,6 @@
 import React from 'react';
-import styled, { Colors } from 'styled-components';
+import styled from 'styled-components';
+import { Colors } from '../../theme';
 
 import add from './images/add';
 import allowances from './images/allowances';

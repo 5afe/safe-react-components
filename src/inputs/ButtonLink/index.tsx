@@ -1,8 +1,9 @@
 import React from 'react';
-import styled, { Colors } from 'styled-components';
+import styled from 'styled-components';
 
 import Icon, { IconType } from '../../dataDisplay/Icon';
 import { Text } from '../../index';
+import { Colors } from '../../theme';
 
 type Props = {
   iconType?: keyof IconType;
@@ -16,7 +17,7 @@ const StyledButtonLink = styled.button<Props>`
   text-decoration: underline;
   cursor: pointer;
   color: ${({ theme, color }) => {
-      return theme.colors[color] as string;
+    return theme.colors[color] as string;
   }};
   font-family: inherit;
   display: flex;

@@ -1,5 +1,7 @@
 import React from 'react';
-import styled, { Colors, IconTextSize, TextSize } from 'styled-components';
+import styled from 'styled-components';
+
+import { Colors, IconTextSize, TextSize } from '../../theme';
 
 import Icon, { IconType } from '../Icon';
 import Text from '../Text';
@@ -28,7 +30,9 @@ function IconText({ iconSize, textSize, iconType, text, color }: Props) {
   return (
     <StyledIconText>
       <Icon size={iconSize} type={iconType} color={color} />
-      <Text size={textSize} color={color}>{text}</Text>
+      <Text size={textSize} color={color}>
+        {text}
+      </Text>
     </StyledIconText>
   );
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import styled, { LoaderSize } from 'styled-components';
+import styled from 'styled-components';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-import theme from '../../theme';
+import theme, { LoaderSize } from '../../theme';
 
 const Wrapper = styled.div`
   display: flex;

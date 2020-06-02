@@ -1,5 +1,6 @@
 import React from 'react';
-import styled, { TextSize } from 'styled-components';
+import styled from 'styled-components';
+import { TextSize } from '../../theme';
 
 type Props = {
   children: string;

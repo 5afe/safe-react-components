@@ -1,9 +1,8 @@
 import React from 'react';
 import ButtonMUI from '@material-ui/core/Button';
-import { ButtonsSize } from "styled-components";
 import { withStyles } from '@material-ui/core/styles';
 
-import theme from '../../theme';
+import theme, { ButtonsSize } from '../../theme';
 import Icon, { IconType } from '../../dataDisplay/Icon';
 
 export interface Props extends React.ComponentPropsWithoutRef<'button'> {
