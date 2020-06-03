@@ -50,7 +50,13 @@ const Button = ({
 
   return (
     <BootstrapButton {...rest}>
-      {iconType && <Icon size="md" color="white" type={iconType} />}
+      {iconType && (
+        <Icon
+          size="md"
+          color={variant === 'contained' ? 'white' : color}
+          type={iconType}
+        />
+      )}
       {children}
     </BootstrapButton>
   );
