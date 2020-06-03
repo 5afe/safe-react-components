@@ -1,10 +1,10 @@
-import React from "react";
-import StepperMUI from "@material-ui/core/Stepper";
-import StepMUI from "@material-ui/core/Step";
-import StepLabelMUI from "@material-ui/core/StepLabel";
-import styled from "styled-components";
+import React from 'react';
+import StepperMUI from '@material-ui/core/Stepper';
+import StepMUI from '@material-ui/core/Step';
+import StepLabelMUI from '@material-ui/core/StepLabel';
+import styled from 'styled-components';
 
-import DotStep from "./DotStep";
+import DotStep from './DotStep';
 
 const StyledStepLabel = styled.p<any>`
   && {
@@ -30,11 +30,10 @@ type Props = {
   steps: Array<{ id: string; label: string }>;
   activeStepIndex: number;
   error?: boolean;
-  orientation: "vertical" | "horizontal";
-  startStepperAtZeroIndex?: boolean;
+  orientation: 'vertical' | 'horizontal';
 };
 
-const Stepper = ({ steps, startStepperAtZeroIndex, error, activeStepIndex, orientation }: Props) => {
+const Stepper = ({ steps, error, activeStepIndex, orientation }: Props) => {
   return (
     <StepperMUI activeStep={activeStepIndex} orientation={orientation}>
       {steps.map((s, index) => {
@@ -43,17 +42,15 @@ const Stepper = ({ steps, startStepperAtZeroIndex, error, activeStepIndex, orien
             <StepLabelMUI
               icon={
                 <DotStep
-                  currentIndex={startStepperAtZeroIndex ? activeStepIndex : activeStepIndex + 1}
-                  dotIndex={startStepperAtZeroIndex ? index : index + 1 }
+                  currentIndex={activeStepIndex}
+                  dotIndex={index}
                   error={index === activeStepIndex && error}
                 />
-              }
-            >
+              }>
               <StyledStepLabel
                 error={index === activeStepIndex && error}
                 index={index}
-                activeStepIndex={activeStepIndex}
-              >
+                activeStepIndex={activeStepIndex}>
                 {s.label}
               </StyledStepLabel>
             </StepLabelMUI>

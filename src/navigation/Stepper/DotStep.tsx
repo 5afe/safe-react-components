@@ -35,7 +35,7 @@ type Props = {
 const DotStep = ({ currentIndex, dotIndex, error }: Props) => {
   return (
     <Circle disabled={dotIndex > currentIndex} error={error}>
-      {dotIndex < currentIndex ? <Icon size="sm" type="check" color="white" /> : dotIndex}
+      {dotIndex < currentIndex ? <Icon size="sm" type="check" color="white" /> : dotIndex + 1}
     </Circle>
   );
 };
