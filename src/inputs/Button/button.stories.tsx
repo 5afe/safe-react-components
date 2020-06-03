@@ -57,7 +57,7 @@ export const withIcon = () => (
       onClick={() => alert('click')}>
       text
     </Button>
-    <Button size="lg" iconType="addressBook" color="primary" variant="outlined">
+    <Button size="lg" iconType="addressBook" color="error" variant="outlined">
       text
     </Button>
     <Button
