@@ -38,7 +38,7 @@ const TitleSection = styled.div`
 `;
 
 const BodySection = styled.div<{ withoutBodyPadding?: boolean }>`
-  max-height: 460px;
+  max-height: 280px;
   overflow-y: auto;
   padding: ${({ withoutBodyPadding }) =>
     withoutBodyPadding ? '0' : '16px 24px'};
@@ -67,8 +67,7 @@ const useStyles = makeStyles({
   },
 
   paper: {
-    position: 'absolute',
-    top: '121px',
+    position: 'relative',
     minWidth: '500px',
     backgroundColor: theme.colors.white,
     borderRadius: '8px',
