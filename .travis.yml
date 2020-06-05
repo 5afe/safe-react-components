@@ -14,11 +14,13 @@ script: |
   echo "Build website"
   yarn build-storybook
 
+  # build project -> content goes to /dist
+  echo "Build NPM package"
+  yarn build
+
+  # pack project for NPM publishing 
   if [ -n "$TRAVIS_TAG" ]
   then
-    # build project for NPM publishing -> content goes to /dist
-    echo "Build NPM package"
-    yarn build
     cd dist/
     # https://classic.yarnpkg.com/en/docs/cli/pack/
     yarn pack --filename safe-react-components-$TRAVIS_TAG.tgz
