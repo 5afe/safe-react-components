@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import { default as TabMui } from '@material-ui/core/Tab';
-import { default as TabsMui } from '@material-ui/core/Tabs';
+import TabMui, { TabProps } from '@material-ui/core/Tab';
+import TabsMui, { TabsProps } from '@material-ui/core/Tabs';
 import { withStyles } from '@material-ui/core/styles';
 
 import theme, { Theme } from '../../theme';
@@ -22,10 +22,14 @@ type Props = {
   items: Array<Item>;
   selectedTab: string;
   orientation?: 'vertical' | 'horizontal';
-  variant: 'outlined' | 'contained';
+  variant?: 'outlined' | 'contained';
 };
 
-const CustomTabs = ({ variantStyle, ...rest }: any): any => {
+interface CustomTabsProps extends TabsProps {
+  variantStyle: string;
+  children: any;
+}
+const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps): any => {
   const CustomTabsMui = withStyles({
     root: {
       backgroundColor:
@@ -36,14 +40,22 @@ const CustomTabs = ({ variantStyle, ...rest }: any): any => {
   return <CustomTabsMui {...rest} />;
 };
 
-const CustomTab = (props: any): any => {
+interface CustomTabProps extends TabProps {
+  variantStyle: string;
+}
+const CustomTab = ({ variantStyle, ...rest }: CustomTabProps): any => {
   const CustomTabMui = withStyles({
     root: {
-      fontFamily: theme.fonts.fontFamily
+      fontFamily: theme.fonts.fontFamily,
+      backgroundColor: variantStyle === 'contained' ? theme.colors.overlay.color : 'inherit',
+      '&$selected': {
+        color: '#1890ff',
+        backgroundColor: theme.colors.overlay
+      }
     }
   })(TabMui);
 
-  return <CustomTabMui {...props} />;
+  return <CustomTabMui {...rest} />;
 };
 
 function Tab({
@@ -52,10 +64,10 @@ function Tab({
   color,
   selectedTab,
   orientation = 'horizontal',
-  variant
+  variant = 'outlined'
 }: Props) {
-  const handleChange = (_event: React.ChangeEvent<{}>, newValue: string) => {
-    onChange(newValue);
+  const handleChange = (_event: React.ChangeEvent<{}>, value: any) => {
+    onChange(value);
   };
 
   const getLabel = (item: Item) => {
@@ -87,7 +99,7 @@ function Tab({
       orientation={orientation}
       variant="scrollable"
       value={selectedTab}
-      onChange={handleChange}
+      onChange={handleChange as any}
       variantStyle={variant}>
       {items.map(item => (
         <CustomTab
@@ -95,6 +107,7 @@ function Tab({
           label={getLabel(item)}
           value={item.id}
           disabled={item.disabled}
+          variantStyle={variant}
         />
       ))}
     </CustomTabs>
