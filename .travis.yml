@@ -1,4 +1,3 @@
-if: (branch = master) OR (branch = development) OR (tag IS present)
 language: node_js
 node_js: '12'
 before_install:
