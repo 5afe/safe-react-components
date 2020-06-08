@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import cn from 'classnames';
 import { rgba } from 'polished';
+import Media from 'react-media';
 
 import theme from '../../../theme';
 import { Icon, Title } from '../../../index';
@@ -14,7 +15,6 @@ const StyledButton = styled.button`
   padding: 5px;
   width: 26px;
   height: 26px;
- 
 
   span {
     margin-right: 0px;
@@ -37,8 +37,11 @@ const TitleSection = styled.div`
   border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
 `;
 
-const BodySection = styled.div<{ withoutBodyPadding?: boolean }>`
-  max-height: 280px;
+const BodySection = styled.div<{
+  withoutBodyPadding?: boolean;
+  smallHeight: boolean;
+}>`
+  max-height: ${({ smallHeight }) => (smallHeight ? '280px' : '460px')};
   overflow-y: auto;
   padding: ${({ withoutBodyPadding }) =>
     withoutBodyPadding ? '0' : '16px 24px'};
@@ -67,8 +70,13 @@ const useStyles = makeStyles({
   },
 
   paper: {
-    position: 'relative',
+    position: (props: { smallHeight: boolean }) =>
+      props.smallHeight ? 'relative' : 'absolute',
+    top: (props: { smallHeight: boolean }) =>
+      props.smallHeight ? 'unset' : '121px',
     minWidth: '500px',
+    width: (props: { smallHeight: boolean }) =>
+      props.smallHeight ? '500px' : 'inherit',
     backgroundColor: theme.colors.white,
     borderRadius: '8px',
     boxShadow: `0 0 ${theme.colors.shadow.opacity} 0 ${theme.colors.shadow.color}`,
@@ -84,10 +92,12 @@ const GenericModal = ({
   footer,
   onClose,
   title,
-  withoutBodyPadding
-}: Props) => {
-  const classes = useStyles();
-
+  withoutBodyPadding,
+  smallHeight
+}: Props & { smallHeight: boolean }) => {
+  const classes = useStyles({ smallHeight });
+  console.log('smallHeight: ', smallHeight);
+  debugger;
   return (
     <Modal open className={classes.modal} title="GenericModal">
       <div className={cn(classes.paper)}>
@@ -100,7 +110,9 @@ const GenericModal = ({
           </StyledButton>
         </TitleSection>
 
-        <BodySection withoutBodyPadding={withoutBodyPadding}>
+        <BodySection
+          withoutBodyPadding={withoutBodyPadding}
+          smallHeight={smallHeight}>
           {body}
         </BodySection>
 
@@ -110,4 +122,9 @@ const GenericModal = ({
   );
 };
 
-export default GenericModal;
+const MediaModal = (props: Props) => (
+  <Media query={{ maxHeight: 500 }}>
+    {(matches) => <GenericModal {...props} smallHeight={matches} />}
+  </Media>
+);
+export default MediaModal;
