@@ -5,7 +5,7 @@ import { Theme } from '../../theme';
 import Icon, { IconType } from '../../dataDisplay/Icon';
 import { Text } from '../../index';
 
-type Props = {
+export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   iconType?: keyof IconType;
   color: keyof Theme['colors'];
   children: any;
