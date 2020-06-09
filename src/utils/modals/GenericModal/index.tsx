@@ -52,7 +52,7 @@ const FooterSection = styled.div`
   padding: 16px 24px;
 `;
 
-type Props = {
+export type GenericModalProps = {
   title: string;
   body: React.ReactNode;
   withoutBodyPadding?: boolean;
@@ -94,7 +94,7 @@ const GenericModal = ({
   title,
   withoutBodyPadding,
   smallHeight
-}: Props & { smallHeight: boolean }) => {
+}: GenericModalProps & { smallHeight: boolean }) => {
   const classes = useStyles({ smallHeight });
   console.log('smallHeight: ', smallHeight);
   debugger;
@@ -122,7 +122,7 @@ const GenericModal = ({
   );
 };
 
-const MediaModal = (props: Props) => (
+const MediaModal = (props: GenericModalProps) => (
   <Media query={{ maxHeight: 500 }}>
     {(matches) => <GenericModal {...props} smallHeight={matches} />}
   </Media>
