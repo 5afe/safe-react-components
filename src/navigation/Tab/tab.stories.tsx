@@ -11,11 +11,11 @@ export default {
 };
 
 const items: Item[] = [
-  { id: '1', label: 'Transaction submitted', icon: 'add' },
-  { id: '2', label: 'Validating transaction' },
-  { id: '3', label: 'Deploying smart contract' },
-  { id: '4', label: 'Generating your Safe', disabled: true },
-  { id: '5', label: 'Result', customLabel: <div>custom</div> }
+  { id: '1', label: 'Assets', icon: 'assets' },
+  { id: '2', label: 'Transactions', icon: 'transactionsInactive' },
+  { id: '3', label: 'Apps', icon: 'apps' },
+  { id: '4', label: 'Address Book', icon: 'addressBook', disabled: true },
+  { id: '5', label: 'Settings', customLabel: <div>custom</div> }
 ];
 
 export const stepper = () => {
@@ -25,8 +25,9 @@ export const stepper = () => {
     <>
       <Tab
         onChange={setSelected}
-        color="error"
+        color="text"
         selectedTab={selected}
+        variant="outlined"
         items={items}
       />
       {selected}
@@ -41,7 +42,7 @@ export const stepperContained = () => {
     <>
       <Tab
         onChange={setSelected}
-        color="error"
+        color="text"
         selectedTab={selected}
         variant="contained"
         items={items}
@@ -51,13 +52,13 @@ export const stepperContained = () => {
   );
 };
 
-export const stepperVertical = () => {
+/* export const stepperVertical = () => {
   const [selected, setSelected] = useState('3');
 
   return (
     <>
       <Tab
-        color="error"
+        color="text"
         variant="contained"
         orientation="vertical"
         onChange={setSelected}
@@ -67,4 +68,4 @@ export const stepperVertical = () => {
       {selected}
     </>
   );
-};
+}; */

@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import Box from '@material-ui/core/Box';
 import TabMui, { TabProps } from '@material-ui/core/Tab';
 import TabsMui, { TabsProps } from '@material-ui/core/Tabs';
 import { withStyles } from '@material-ui/core/styles';
@@ -33,7 +34,28 @@ const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps): any => {
   const CustomTabsMui = withStyles({
     root: {
       backgroundColor:
-        variantStyle === 'contained' ? theme.colors.white : 'inherit'
+        variantStyle === 'contained' ? theme.colors.white : theme.colors.white,
+      borderRadius: variantStyle === 'contained' ? '8px 8px 0 0' : 'inherit',
+
+      '& .MuiTabs-indicator': {
+        backgroundColor: variantStyle === 'outlined' ? '#008C73' : 'transparent'
+      },
+      '& .MuiTab-wrapper svg': {
+        marginTop: '4px'
+      },
+      '& .MuiTab-root.Mui-selected': {
+        backgroundColor:
+          variantStyle === 'contained'
+            ? theme.colors.inputField
+            : theme.colors.white
+      },
+      '& .MuiTab-textColorInherit.Mui-selected p': {
+        color: '#008C73',
+        fontWeight: '700'
+      },
+      '& .MuiTabs-root.MuiTabs-vertical p': {
+        textAlign: 'left'
+      }
     }
   })(TabsMui);
 
@@ -43,15 +65,21 @@ const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps): any => {
 interface CustomTabProps extends TabProps {
   variantStyle: string;
 }
+
 const CustomTab = ({ variantStyle, ...rest }: CustomTabProps): any => {
   const CustomTabMui = withStyles({
     root: {
       fontFamily: theme.fonts.fontFamily,
-      backgroundColor: variantStyle === 'contained' ? theme.colors.overlay.color : 'inherit',
-      '&$selected': {
-        color: '#1890ff',
-        backgroundColor: theme.colors.overlay
-      }
+      backgroundColor:
+        variantStyle === 'contained' ? theme.colors.white : 'inherit',
+      border:
+        variantStyle === 'contained'
+          ? '1px solid rgb(232, 231, 230)'
+          : 'inherit',
+      '& .MuiTabs-indicator': {
+        backgroundColor: variantStyle === 'contained' ? 'none' : 'inherit'
+      },
+      textTransform: variantStyle === 'contained' ? 'capitalize' : 'uppercase'
     }
   })(TabMui);
 
@@ -76,6 +104,11 @@ function Tab({
     }
 
     if (item.icon) {
+      // if (selectedTab) {
+      //   color="primary"
+      // } else {
+      //   color="text"
+      // }
       return (
         <IconText
           iconSize="sm"
@@ -95,22 +128,30 @@ function Tab({
   };
 
   return (
-    <CustomTabs
-      orientation={orientation}
-      variant="scrollable"
-      value={selectedTab}
-      onChange={handleChange as any}
-      variantStyle={variant}>
-      {items.map(item => (
-        <CustomTab
-          key={item.id}
-          label={getLabel(item)}
-          value={item.id}
-          disabled={item.disabled}
-          variantStyle={variant}
-        />
-      ))}
-    </CustomTabs>
+    <Box
+      width="100%"
+      border={1}
+      borderColor="grey.300"
+      borderTop={0}
+      borderRight={0}
+      borderLeft={0}>
+      <CustomTabs
+        orientation={orientation}
+        variant="scrollable"
+        value={selectedTab}
+        onChange={handleChange as any}
+        variantStyle={variant}>
+        {items.map(item => (
+          <CustomTab
+            key={item.id}
+            label={getLabel(item)}
+            value={item.id}
+            disabled={item.disabled}
+            variantStyle={variant}
+          />
+        ))}
+      </CustomTabs>
+    </Box>
   );
 }
 
