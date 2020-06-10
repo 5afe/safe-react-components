@@ -43,7 +43,7 @@ const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps): any => {
       borderRadius: variantStyle === 'contained' ? '8px 8px 0 0' : 'inherit',
 
       '& .MuiTabs-indicator': {
-        backgroundColor: variantStyle === 'outlined' ? '#008C73' : 'transparent'
+        backgroundColor: variantStyle === 'outlined' ? theme.colors.primary : 'transparent'
       },
       '& .MuiTab-wrapper svg': {
         marginTop: '4px'
@@ -55,7 +55,7 @@ const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps): any => {
             : theme.colors.white
       },
       '& .MuiTab-textColorInherit.Mui-selected p': {
-        color: '#008C73',
+        color: theme.colors.primary,
         fontWeight: '700'
       },
       '& .MuiTabs-root.MuiTabs-vertical p': {
@@ -79,7 +79,7 @@ const CustomTab = ({ variantStyle, ...rest }: CustomTabProps): any => {
         variantStyle === 'contained' ? theme.colors.white : 'inherit',
       border:
         variantStyle === 'contained'
-          ? '1px solid rgb(232, 231, 230)'
+          ? '1px solid' + theme.colors.separator
           : 'inherit',
       '& .MuiTabs-indicator': {
         backgroundColor: variantStyle === 'contained' ? 'none' : 'inherit'
