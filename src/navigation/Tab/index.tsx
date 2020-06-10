@@ -1,10 +1,10 @@
 import React, { ReactElement } from 'react';
-import Box from '@material-ui/core/Box';
 import TabMui, { TabProps } from '@material-ui/core/Tab';
 import TabsMui, { TabsProps } from '@material-ui/core/Tabs';
 import { withStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
 
-import theme, { Theme } from '../../theme';
+import theme from '../../theme';
 import { IconType } from '../../dataDisplay/Icon';
 import IconText from '../../dataDisplay/IconText';
 import Text from '../../dataDisplay/Text';
@@ -19,12 +19,17 @@ export type Item = {
 
 type Props = {
   onChange: (selectedIndex: string) => void;
-  color?: keyof Theme['colors'];
   items: Array<Item>;
   selectedTab: string;
-  orientation?: 'vertical' | 'horizontal';
   variant?: 'outlined' | 'contained';
 };
+
+const TabWrapper = styled.div<{ variantStyle: string }>`
+  border-bottom: ${({ variantStyle }) =>
+    variantStyle === 'outlined'
+      ? '1px solid ' + theme.colors.overlay.color
+      : 'none'};
+`;
 
 interface CustomTabsProps extends TabsProps {
   variantStyle: string;
@@ -86,14 +91,7 @@ const CustomTab = ({ variantStyle, ...rest }: CustomTabProps): any => {
   return <CustomTabMui {...rest} />;
 };
 
-function Tab({
-  onChange,
-  items,
-  color,
-  selectedTab,
-  orientation = 'horizontal',
-  variant = 'outlined'
-}: Props) {
+function Tab({ onChange, items, selectedTab, variant = 'outlined' }: Props) {
   const handleChange = (_event: React.ChangeEvent<{}>, value: any) => {
     onChange(value);
   };
@@ -104,44 +102,32 @@ function Tab({
     }
 
     if (item.icon) {
-      // if (selectedTab) {
-      //   color="primary"
-      // } else {
-      //   color="text"
-      // }
       return (
         <IconText
           iconSize="sm"
           iconType={item!.icon}
           textSize="sm"
-          color={color}
+          color={selectedTab === item.id ? 'primary' : 'text'}
           text={item.label}
         />
       );
     }
 
     return (
-      <Text color={color} size="sm">
+      <Text color="text" size="sm">
         {item.label}{' '}
       </Text>
     );
   };
 
   return (
-    <Box
-      width="100%"
-      border={1}
-      borderColor="grey.300"
-      borderTop={0}
-      borderRight={0}
-      borderLeft={0}>
+    <TabWrapper variantStyle={variant}>
       <CustomTabs
-        orientation={orientation}
         variant="scrollable"
         value={selectedTab}
         onChange={handleChange as any}
         variantStyle={variant}>
-        {items.map(item => (
+        {items.map((item) => (
           <CustomTab
             key={item.id}
             label={getLabel(item)}
@@ -151,7 +137,7 @@ function Tab({
           />
         ))}
       </CustomTabs>
-    </Box>
+    </TabWrapper>
   );
 }
 

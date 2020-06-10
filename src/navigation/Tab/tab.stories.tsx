@@ -25,7 +25,6 @@ export const stepper = () => {
     <>
       <Tab
         onChange={setSelected}
-        color="text"
         selectedTab={selected}
         variant="outlined"
         items={items}
@@ -42,7 +41,6 @@ export const stepperContained = () => {
     <>
       <Tab
         onChange={setSelected}
-        color="text"
         selectedTab={selected}
         variant="contained"
         items={items}
@@ -51,21 +49,3 @@ export const stepperContained = () => {
     </>
   );
 };
-
-/* export const stepperVertical = () => {
-  const [selected, setSelected] = useState('3');
-
-  return (
-    <>
-      <Tab
-        color="text"
-        variant="contained"
-        orientation="vertical"
-        onChange={setSelected}
-        selectedTab={selected}
-        items={items}
-      />
-      {selected}
-    </>
-  );
-}; */
