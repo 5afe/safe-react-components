@@ -1,62 +1,24 @@
 import * as React from 'react';
 
 import makeBlockie from 'ethereum-blockies-base64';
-import { RefObject, useEffect, useState } from 'react';
+import styled from 'styled-components';
 
 type Props = {
   address: string;
   diameter: number;
+  className?: string
 };
 
-type StyleProps = {
-  width: number;
-  height: number;
-};
+const StyledImg = styled.img<{ diameter: number }>`
+  height: ${({ diameter }) => (diameter ? diameter : 32)}px;
+  width: ${({ diameter }) => (diameter ? diameter : 32)}px;
+  border-radius: ${({ diameter }) => (diameter ? diameter / 2 : 16)}px;
+`;
 
-const getStyleFrom = (diameter: number): StyleProps => ({
-  width: diameter,
-  height: diameter
-});
+const Identicon: React.FC<Props> = ({ diameter = 32, address, className }) => {
+  const iconSrc = React.useMemo(() => makeBlockie(address), [address]);
 
-const generateBlockieIdenticon = (
-  address: string,
-  diameter: number
-): HTMLImageElement => {
-  const image = new window.Image();
-  image.src = makeBlockie(address);
-  image.height = diameter;
-  image.width = diameter;
-  image.style.borderRadius = `${diameter / 2}px`;
+  return <StyledImg src={iconSrc} diameter={diameter} className={className} />
+}
 
-  return image;
-};
-
-const Identicon = (props: Props) => {
-  const { address, diameter } = props;
-  const style: StyleProps = getStyleFrom(diameter);
-
-  const [identicon, setIdenticon] = useState<RefObject<HTMLImageElement> | null>(null);
-
-  useEffect(() => {
-    setIdenticon(React.createRef<HTMLImageElement>());
-  }, []);
-
-  useEffect(() => {
-    const image = generateBlockieIdenticon(address, diameter);
-
-    if (!identicon || !identicon.current) {
-      return;
-    }
-
-    const { children } = identicon.current;
-    for (let i = 0; i < children.length; i += 1) {
-      identicon.current.removeChild(children[i]);
-    }
-
-    identicon.current.appendChild(image);
-  }, [address, diameter, identicon]);
-
-  return <div ref={identicon} style={style} />;
-};
-
-export default Identicon;
+export default Identicon
