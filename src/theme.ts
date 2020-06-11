@@ -111,9 +111,9 @@ const theme = {
     }
   },
   identicon: {
-    diameter: {
-      sm: '16',
-      md: '32',
+    size: {
+      sm: '16px',
+      md: '32px',
       lg: '60px'
     }
   }

@@ -7,13 +7,13 @@ import { Theme } from '../../theme';
 type Props = {
   address: string;
   className?: string;
-  diameter: keyof Theme['identicon']['diameter'];
+  diameter: keyof Theme['identicon']['size'];
 };
 
 const StyledImg = styled.img<{ diameter: string }>`
   height: ${({ diameter }) => diameter}px;
   width: ${({ diameter }) => diameter}px;
-  line-height: ${({ diameter, theme }) => theme.identicon.diameter[diameter]};
+  line-height: ${({ diameter, theme }) => theme.identicon.size[diameter]};
   border-radius: 50%;
 `;
 
