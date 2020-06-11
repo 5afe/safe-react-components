@@ -17,7 +17,7 @@ export type Item = {
   disabled?: boolean;
 };
 
-type Props = {
+export type Props = {
   onChange: (selectedIndex: string) => void;
   items: Array<Item>;
   selectedTab: string;

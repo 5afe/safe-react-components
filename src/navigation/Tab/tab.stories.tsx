@@ -18,7 +18,7 @@ const items: Item[] = [
   { id: '5', label: 'Settings', customLabel: <div>custom</div> }
 ];
 
-export const stepper = () => {
+export const tab = () => {
   const [selected, setSelected] = useState('3');
 
   return (
@@ -34,7 +34,7 @@ export const stepper = () => {
   );
 };
 
-export const stepperContained = () => {
+export const tabContained = () => {
   const [selected, setSelected] = useState('3');
 
   return (
