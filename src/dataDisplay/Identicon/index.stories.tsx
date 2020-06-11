@@ -11,9 +11,5 @@ export default {
 };
 
 export const sizes = () => {
-  return (
-    <>
-      <Identicon address={"thisisanexample"} diameter={32}/>
-    </>
-  );
+  return <Identicon address={"thisisanexample"} diameter={'md'}/>;
 };
