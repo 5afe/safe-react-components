@@ -6,19 +6,19 @@ import styled from 'styled-components';
 type Props = {
   address: string;
   diameter: number;
-  className?: string
+  className?: string;
 };
 
 const StyledImg = styled.img<{ diameter: number }>`
-  height: ${({ diameter }) => (diameter ? diameter : 32)}px;
-  width: ${({ diameter }) => (diameter ? diameter : 32)}px;
-  border-radius: ${({ diameter }) => (diameter ? diameter / 2 : 16)}px;
+  height: ${({ diameter }) => diameter}px;
+  width: ${({ diameter }) => diameter}px;
+  border-radius: 50%;
 `;
 
 const Identicon: React.FC<Props> = ({ diameter = 32, address, className }) => {
   const iconSrc = React.useMemo(() => makeBlockie(address), [address]);
 
-  return <StyledImg src={iconSrc} diameter={diameter} className={className} />
-}
+  return <StyledImg src={iconSrc} diameter={diameter} className={className} />;
+};
 
-export default Identicon
+export default Identicon;
