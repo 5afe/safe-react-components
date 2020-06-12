@@ -14,7 +14,7 @@ As Safe-multisig allows to integrate third party applications, Gnosis team recom
 - Same style as the one used Safe-multisig. Making third-party apps looks native.
 - As the space used to render third-party apps is reduced, most of the components will be optimized to render properly in different resolutions.
 - Blockchain oriented: Some components will allow you to solve common problems like, inputs for ETH addresses and bigNumbers, Identicon images, etc.
-- Safe time, as you don't have to start from scratch building your safe-app.
+- Save time, as you don't have to start from scratch building your safe-app.
 
 
 ## How to install
@@ -25,11 +25,11 @@ As Safe-multisig allows to integrate third party applications, Gnosis team recom
 
 ## Integration
 
-This library make use of [material-ui](https://material-ui.com/) as a peerDependency, it means you must install it in your Safe-app. Make sure to provide the same version as the one being use by the current version of this library.
+This library makes use of [material-ui](https://material-ui.com/) as a `peerDependency`, it means you must install it in your Safe-app. Make sure to provide the same version as the one being used by the current version of this library.
 
 Once everything is installed, you have to instantiate a [ThemeProvider](https://styled-components.com/docs/api#themeprovider) from [styled-components](https://@gnosis.pm/safe-react-components/).
 
-This example uses the theme exported by safe-react-components. Here, you could extends this theme to customize it to your needs.
+This example uses the theme exported by safe-react-components. Here, you can extend this theme to customize it to your needs.
 
 ```js
 import { ThemeProvider } from 'styled-components';
@@ -46,7 +46,7 @@ export default () => (
 
 ### Using the same fonts as Safe-multisig
 
-If you want your app has the same fonts as the one used by Safe-multisig you need to do next.
+If you want your app to have the same fonts as the one used by Safe-multisig you need to do the following.
 
 ```js
 import { createGlobalStyle } from 'styled-components';
@@ -102,7 +102,5 @@ export default App;
 
 You can find documentation and examples of all our components in this [storybook](https://components.gnosis-safe.io/).
 
-
 ## Examples
 At Gnosis we have developed some Safe-apps. Here is the [repository](https://github.com/gnosis/safe-react-apps). 
-
