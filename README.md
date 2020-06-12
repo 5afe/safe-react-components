@@ -46,7 +46,7 @@ export default () => (
 
 ### Using the same fonts as Safe-multisig
 
-If you want your app has the same fonts as the one used by Safe-multisig you need to do next.
+If you want your app to have the same fonts as the one used by Safe-multisig you need to do the following.
 
 ```js
 import { createGlobalStyle } from 'styled-components';
@@ -101,4 +101,3 @@ export default App;
 ## Storybook
 
 You can find documentation and examples of all our components in this [storybook](https://components.gnosis-safe.io/).
-
