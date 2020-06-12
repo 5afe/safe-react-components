@@ -7,14 +7,14 @@
 
 This repository contains a set of React components written in typescript.
 
-These components are being used to build [Safe-multisig](https://github.com/gnosis/safe-react) app.
+These components are being used to build the [Safe Multisig](https://github.com/gnosis/safe-react) web and desktop app.
 
-As Safe-multisig allows to integrate third party applications, Gnosis team recommends to build these apps using this components to get the following benefits:
+As Safe Multisig allows to integrate third party applications ("Safe Apps"), these components can also be used to build Safe Apps with the following benefits:
 
-- Same style as the one used Safe-multisig. Making third-party apps looks native.
-- As the space used to render third-party apps is reduced, most of the components will be optimized to render properly in different resolutions.
-- Blockchain oriented: Some components will allow you to solve common problems like, inputs for ETH addresses and bigNumbers, Identicon images, etc.
-- Save time, as you don't have to start from scratch building your safe-app.
+- **Native feel:** Build your Safe Apps with a similar style as the one used Safe-multisig. This makes your Safe Apps feel almost like a native feature of the Safe Multisig.
+- **Responsive:** Most of the components will are optimized to render properly in different resolutions.
+- **Blockchain-focused:** Some components solve common blockchain-related problems like inputs for ETH addresses and bigNumbers, identicon images, and more.
+- **Save time:** No need to build all components from scratch.
 
 
 ## How to install
@@ -25,7 +25,7 @@ As Safe-multisig allows to integrate third party applications, Gnosis team recom
 
 ## Integration
 
-This library makes use of [material-ui](https://material-ui.com/) as a `peerDependency`, it means you must install it in your Safe-app. Make sure to provide the same version as the one being used by the current version of this library.
+This library makes use of [material-ui](https://material-ui.com/) as a `peerDependency`, this means you must install it in your Safe App. Make sure to provide the same version as the one being used by the current version of this library.
 
 Once everything is installed, you have to instantiate a [ThemeProvider](https://styled-components.com/docs/api#themeprovider) from [styled-components](https://@gnosis.pm/safe-react-components/).
 
@@ -46,7 +46,7 @@ export default () => (
 
 ### Using the same fonts as Safe-multisig
 
-If you want your app to have the same fonts as the one used by Safe-multisig you need to do the following.
+If you want your app to have the same fonts as the one used by Safe Multisig you need to do the following.
 
 ```js
 import { createGlobalStyle } from 'styled-components';
@@ -65,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle;
 ```
 
-And then include it in the root of your App.
+And then include it in the root of your Safe App.
 
 ```js
 import React from "react";
@@ -103,4 +103,5 @@ export default App;
 You can find documentation and examples of all our components in this [storybook](https://components.gnosis-safe.io/).
 
 ## Examples
-At Gnosis we have developed some Safe-apps. Here is the [repository](https://github.com/gnosis/safe-react-apps). 
+
+At Gnosis we have developed some example Safe Apps. Here is the [repository](https://github.com/gnosis/safe-react-apps). 
