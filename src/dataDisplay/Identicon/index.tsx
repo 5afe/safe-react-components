@@ -11,9 +11,8 @@ type Props = {
 };
 
 const StyledImg = styled.img<{ diameter: string }>`
-  height: ${({ diameter }) => diameter}px;
-  width: ${({ diameter }) => diameter}px;
-  line-height: ${({ diameter, theme }) => theme.identicon.size[diameter]};
+  height: ${({ diameter, theme }) => theme.identicon.size[diameter]};
+  width: ${({ diameter, theme }) => theme.identicon.size[diameter]};
   border-radius: 50%;
 `;
 
