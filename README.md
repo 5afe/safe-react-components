@@ -29,7 +29,7 @@ This library make use of [material-ui](https://material-ui.com/) as a peerDepend
 
 Once everything is installed, you have to instantiate a [ThemeProvider](https://styled-components.com/docs/api#themeprovider) from [styled-components](https://@gnosis.pm/safe-react-components/).
 
-This example uses the theme exported by safe-react-components. Here, you could extends this theme to customize it to your needs.
+This example uses the theme exported by safe-react-components. Here, you can extend this theme to customize it to your needs.
 
 ```js
 import { ThemeProvider } from 'styled-components';
@@ -101,6 +101,5 @@ export default App;
 ## Storybook
 
 You can find documentation and examples of all our components in this [storybook](https://components.gnosis-safe.io/).
-
 
 
