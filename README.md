@@ -14,7 +14,7 @@ As Safe-multisig allows to integrate third party applications, Gnosis team recom
 - Same style as the one used Safe-multisig. Making third-party apps looks native.
 - As the space used to render third-party apps is reduced, most of the components will be optimized to render properly in different resolutions.
 - Blockchain oriented: Some components will allow you to solve common problems like, inputs for ETH addresses and bigNumbers, Identicon images, etc.
-- Safe time, as you don't have to start from scratch building your safe-app.
+- Save time, as you don't have to start from scratch building your safe-app.
 
 
 ## How to install
@@ -101,7 +101,6 @@ export default App;
 ## Storybook
 
 You can find documentation and examples of all our components in this [storybook](https://components.gnosis-safe.io/).
-
 
 
 
