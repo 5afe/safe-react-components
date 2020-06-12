@@ -6,7 +6,6 @@ import { Theme } from '../../theme';
 
 type Props = {
   address: string;
-  className?: string;
   size: keyof Theme['identicon']['size'];
 };
 
@@ -16,10 +15,10 @@ const StyledImg = styled.img<{ size: string }>`
   border-radius: 50%;
 `;
 
-const Identicon: React.FC<Props> = ({ size = 'md', address, className }) => {
+const Identicon = ({ size = 'md', address, ...rest }: Props) => {
   const iconSrc = React.useMemo(() => makeBlockie(address), [address]);
 
-  return <StyledImg src={iconSrc} size={size} className={className} />;
+  return <StyledImg src={iconSrc} size={size} {...rest} />;
 };
 
 export default Identicon;
