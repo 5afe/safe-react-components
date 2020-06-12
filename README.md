@@ -65,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle;
 ```
 
-And then include it wrapping your application.
+And then include it in the root of your App.
 
 ```js
 import React from "react";
@@ -103,5 +103,6 @@ export default App;
 You can find documentation and examples of all our components in this [storybook](https://components.gnosis-safe.io/).
 
 
-
+## Examples
+At Gnosis we have developed some Safe-apps. Here is the [repository](https://github.com/gnosis/safe-react-apps). 
 
