@@ -3,7 +3,7 @@ import React from 'react';
 import Identicon from './index';
 
 export default {
-  title: 'Data Display/Identicon',
+  title: 'Utils/Identicon',
   component: Identicon,
   parameters: {
     componentSubtitle: 'Identicon Component.'
@@ -13,9 +13,9 @@ export default {
 export const sizes = () => {
   return (
     <>
-      <Identicon address={"thisisanexample"} diameter="sm"/>
-      <Identicon address={"thisisanexample"} diameter="md"/>
-      <Identicon address={"thisisanexample"} diameter="lg"/>
+      <Identicon address="thisIsAnExample" size="sm" />
+      <Identicon address="thisIsAnExample" size="md" />
+      <Identicon address="thisIsAnExample" size="lg" />
     </>
   );
 };
