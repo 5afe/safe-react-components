@@ -25,7 +25,7 @@ As Safe-multisig allows to integrate third party applications, Gnosis team recom
 
 ## Integration
 
-This library make use of [material-ui](https://material-ui.com/) as a peerDependency, it means you must install it in your Safe-app. Make sure to provide the same version as the one being use by the current version of this library.
+This library makes use of [material-ui](https://material-ui.com/) as a `peerDependency`, it means you must install it in your Safe-app. Make sure to provide the same version as the one being used by the current version of this library.
 
 Once everything is installed, you have to instantiate a [ThemeProvider](https://styled-components.com/docs/api#themeprovider) from [styled-components](https://@gnosis.pm/safe-react-components/).
 
@@ -101,5 +101,4 @@ export default App;
 ## Storybook
 
 You can find documentation and examples of all our components in this [storybook](https://components.gnosis-safe.io/).
-
 
