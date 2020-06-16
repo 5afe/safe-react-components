@@ -13,7 +13,7 @@ export type Item = {
   id: string;
   icon?: keyof IconType;
   label: string;
-  customLabel?: ReactElement;
+  customContent?: ReactElement;
   disabled?: boolean;
 };
 
@@ -22,6 +22,7 @@ export type Props = {
   items: Array<Item>;
   selectedTab: string;
   variant?: 'outlined' | 'contained';
+  fullWidth?: Boolean;
 };
 
 const TabWrapper = styled.div<{ variantStyle: string }>`
@@ -43,7 +44,8 @@ const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps): any => {
       borderRadius: variantStyle === 'contained' ? '8px 8px 0 0' : 'inherit',
 
       '& .MuiTabs-indicator': {
-        backgroundColor: variantStyle === 'outlined' ? theme.colors.primary : 'transparent'
+        backgroundColor:
+          variantStyle === 'outlined' ? theme.colors.primary : 'transparent'
       },
       '& .MuiTab-wrapper svg': {
         marginTop: '4px'
@@ -91,14 +93,14 @@ const CustomTab = ({ variantStyle, ...rest }: CustomTabProps): any => {
   return <CustomTabMui {...rest} />;
 };
 
-function Tab({ onChange, items, selectedTab, variant = 'outlined' }: Props) {
+function Tab({ onChange, items, selectedTab, variant = 'outlined', fullWidth }: Props) {
   const handleChange = (_event: React.ChangeEvent<{}>, value: any) => {
     onChange(value);
   };
 
   const getLabel = (item: Item) => {
-    if (item.customLabel) {
-      return item.customLabel;
+    if (item.customContent) {
+      return item.customContent;
     }
 
     if (item.icon) {
@@ -123,7 +125,7 @@ function Tab({ onChange, items, selectedTab, variant = 'outlined' }: Props) {
   return (
     <TabWrapper variantStyle={variant}>
       <CustomTabs
-        variant="scrollable"
+        variant={fullWidth ? 'fullWidth' : 'scrollable'}
         value={selectedTab}
         onChange={handleChange as any}
         variantStyle={variant}>

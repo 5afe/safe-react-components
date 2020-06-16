@@ -15,7 +15,7 @@ const items: Item[] = [
   { id: '2', label: 'Transactions', icon: 'transactionsInactive' },
   { id: '3', label: 'Apps', icon: 'apps' },
   { id: '4', label: 'Address Book', icon: 'addressBook', disabled: true },
-  { id: '5', label: 'Settings', customLabel: <div>custom</div> }
+  { id: '5', label: 'Settings', customContent: <div>custom</div> }
 ];
 
 export const tab = () => {
@@ -44,6 +44,23 @@ export const tabContained = () => {
         selectedTab={selected}
         variant="contained"
         items={items}
+      />
+      {selected}
+    </>
+  );
+};
+
+export const tabContainedFull = () => {
+  const [selected, setSelected] = useState('3');
+
+  return (
+    <>
+      <Tab
+        onChange={setSelected}
+        selectedTab={selected}
+        variant="contained"
+        items={items}
+        fullWidth
       />
       {selected}
     </>
