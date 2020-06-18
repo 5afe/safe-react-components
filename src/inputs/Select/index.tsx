@@ -33,7 +33,7 @@ type Props = {
   id?: string;
 };
 
-function Select({ items, activeItemId, onItemClick, id }: Props) {
+function Select({ items, activeItemId, onItemClick, id, ...rest }: Props) {
   const [open, setOpen] = React.useState(false);
 
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
@@ -58,7 +58,8 @@ function Select({ items, activeItemId, onItemClick, id }: Props) {
           onClose={handleClose}
           onOpen={handleOpen}
           value={activeItemId}
-          onChange={handleChange}>
+          onChange={handleChange}
+          {...rest}>
           {items.map((i) => {
             return (
               <MenuItem value={i.id} key={i.id}>
