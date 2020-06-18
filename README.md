@@ -1,9 +1,8 @@
 # safe-react-components
 
-![Badge](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg) 
+![Badge](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/gnosis/safe-react-components?sort=semver)
 ![GitHub](https://img.shields.io/github/license/gnosis/safe-react-components)
-
 
 This repository contains a set of React components written in typescript.
 
@@ -16,18 +15,20 @@ As Safe Multisig allows to integrate third party applications ("Safe Apps"), the
 - **Blockchain-focused:** Some components solve common blockchain-related problems like inputs for ETH addresses and bigNumbers, identicon images, and more.
 - **Save time:** No need to build all components from scratch.
 
-
 ## How to install
 
 ```bash
    yarn add @gnosis.pm/safe-react-components
+
+   npm install @gnosis.pm/safe-react-components
 ```
 
 ## Integration
 
-This library makes use of [material-ui](https://material-ui.com/) as a `peerDependency`, this means you must install it in your Safe App. Make sure to provide the same version as the one being used by the current version of this library.
+This library makes use of [material-ui - 4.X.X](https://material-ui.com/) and [styled-componentes - 5.X.X]() as `peer dependencies`, this means you must install it in your Safe App. Make sure to provide the same version as the one being used by the current version of this library.
 
-Once everything is installed, you have to instantiate a [ThemeProvider](https://styled-components.com/docs/api#themeprovider) from [styled-components](https://@gnosis.pm/safe-react-components/).
+
+Once everything is installed, you have to instantiate a [ThemeProvider](https://styled-components.com/docs/api#themeprovider) from [styled-components](http://styled-components.com/).
 
 This example uses the theme exported by safe-react-components. Here, you can extend this theme to customize it to your needs.
 
@@ -56,6 +57,7 @@ import avertaBoldFont from '@gnosis.pm/safe-react-components/dist/fonts/averta-b
 const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: 'Averta';
+        font-display: swap;
         src: local('Averta'), local('Averta Bold'),
         url(${avertaFont}) format('woff2'),
         url(${avertaBoldFont}) format('woff');
@@ -92,10 +94,9 @@ import { Text } from '@gnosis.pm/safe-react-components';
 
 const App = () => {
   return <Text size="lg">some text</Text>;
-}
+};
 
 export default App;
-
 ```
 
 ## Storybook
@@ -104,4 +105,4 @@ You can find documentation and examples of all our components in this [storybook
 
 ## Examples
 
-At Gnosis we have developed some example Safe Apps. Here is the [repository](https://github.com/gnosis/safe-react-apps). 
+At Gnosis we have developed some example Safe Apps. Here is the [repository](https://github.com/gnosis/safe-react-apps).
