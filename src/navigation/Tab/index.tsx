@@ -17,26 +17,28 @@ export type Item = {
   disabled?: boolean;
 };
 
+type Variant = 'outlined' | 'contained';
+
 export type Props = {
   onChange: (selectedIndex: string) => void;
   items: Array<Item>;
   selectedTab: string;
-  variant?: 'outlined' | 'contained';
+  variant?: Variant;
   fullWidth?: Boolean;
 };
 
-const TabWrapper = styled.div<{ variantStyle: string }>`
-  border-bottom: ${({ variantStyle }) =>
-    variantStyle === 'outlined'
+const TabWrapper = styled.div<{ variant: Variant }>`
+  border-bottom: ${({ variant, theme }) =>
+    variant === 'outlined'
       ? '1px solid ' + theme.colors.overlay.color
       : 'none'};
 `;
 
 interface CustomTabsProps extends TabsProps {
   variantStyle: string;
-  children: any;
+  children: React.ReactNode;
 }
-const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps): any => {
+const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps) => {
   const CustomTabsMui = withStyles({
     root: {
       backgroundColor:
@@ -73,7 +75,7 @@ interface CustomTabProps extends TabProps {
   variantStyle: string;
 }
 
-const CustomTab = ({ variantStyle, ...rest }: CustomTabProps): any => {
+const CustomTab = ({ variantStyle, ...rest }: CustomTabProps) => {
   const CustomTabMui = withStyles({
     root: {
       fontFamily: theme.fonts.fontFamily,
@@ -93,8 +95,14 @@ const CustomTab = ({ variantStyle, ...rest }: CustomTabProps): any => {
   return <CustomTabMui {...rest} />;
 };
 
-function Tab({ onChange, items, selectedTab, variant = 'outlined', fullWidth }: Props) {
-  const handleChange = (_event: React.ChangeEvent<{}>, value: any) => {
+function Tab({
+  onChange,
+  items,
+  selectedTab,
+  variant = 'outlined',
+  fullWidth
+}: Props) {
+  const handleChange = (_event: React.ChangeEvent<{}>, value: string): void => {    
     onChange(value);
   };
 
@@ -123,7 +131,7 @@ function Tab({ onChange, items, selectedTab, variant = 'outlined', fullWidth }: 
   };
 
   return (
-    <TabWrapper variantStyle={variant}>
+    <TabWrapper variant={variant}>
       <CustomTabs
         variant={fullWidth ? 'fullWidth' : 'scrollable'}
         value={selectedTab}
