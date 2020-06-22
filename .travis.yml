@@ -1,4 +1,4 @@
-if: (branch = master) OR (branch = development) OR (tag IS present)
+if: (branch = master) OR (branch = development) OR (type = pull_request) OR (tag IS present)
 language: node_js
 node_js: '12'
 before_install:
@@ -26,6 +26,10 @@ script: |
   else
     echo "No tagged commit, won't build NPM lib"
   fi
+after_success:
+  # Pull Request - Deploy it to a review environment
+  # Travis doesn't do deploy step with pull requests builds
+  - ./travis/deploy_pull_request.sh
 deploy:
   # DEVELOPMENT env deployment
   - provider: s3

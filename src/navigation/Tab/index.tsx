@@ -34,10 +34,14 @@ const TabWrapper = styled.div<{ variant: Variant }>`
       : 'none'};
 `;
 
-interface CustomTabsProps extends TabsProps {
-  variantStyle: string;
-  children: React.ReactNode;
-}
+type CustomTabsProps = TabsProps<
+  React.ElementType,
+  {
+    variantStyle: string;
+    children: React.ReactNode;
+  }
+>;
+
 const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps) => {
   const CustomTabsMui = withStyles({
     root: {
@@ -71,9 +75,12 @@ const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps) => {
   return <CustomTabsMui {...rest} />;
 };
 
-interface CustomTabProps extends TabProps {
-  variantStyle: string;
-}
+type CustomTabProps = TabProps<
+  React.ElementType,
+  {
+    variantStyle: string;
+  }
+>;
 
 const CustomTab = ({ variantStyle, ...rest }: CustomTabProps) => {
   const CustomTabMui = withStyles({
@@ -135,7 +142,7 @@ const Tab = ({
       <CustomTabs
         variant={fullWidth ? 'fullWidth' : 'scrollable'}
         value={selectedTab}
-        onChange={handleChange as any}
+        onChange={handleChange}
         variantStyle={variant}>
         {items.map((item) => (
           <CustomTab
