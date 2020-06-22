@@ -95,14 +95,14 @@ const CustomTab = ({ variantStyle, ...rest }: CustomTabProps) => {
   return <CustomTabMui {...rest} />;
 };
 
-function Tab({
+const Tab = ({
   onChange,
   items,
   selectedTab,
   variant = 'outlined',
   fullWidth
-}: Props) {
-  const handleChange = (_event: React.ChangeEvent<{}>, value: string): void => {    
+}: Props) => {
+  const handleChange = (_event: React.ChangeEvent<{}>, value: string): void => {
     onChange(value);
   };
 
@@ -149,6 +149,6 @@ function Tab({
       </CustomTabs>
     </TabWrapper>
   );
-}
+};
 
 export default Tab;
