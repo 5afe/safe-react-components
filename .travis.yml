@@ -51,6 +51,7 @@ deploy:
     local_dir: storybook-static
     upload-dir: current
     region: eu-central-1
+    cache_control: "max-age=0,no-cache,no-store,must-revalidate"
     on:
       branch: master
 
@@ -63,6 +64,7 @@ deploy:
     local_dir: storybook-static
     upload-dir: releases/$TRAVIS_TAG/website
     region: eu-central-1
+    cache_control: "max-age=0,no-cache,no-store,must-revalidate"
     on:
       tags: true
 
