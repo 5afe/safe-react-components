@@ -4,13 +4,16 @@ import FormControl from '@material-ui/core/FormControl';
 import SelectMUI from '@material-ui/core/Select';
 import styled from 'styled-components';
 
+import { Text } from '../../dataDisplay';
+//import theme from '../../theme';
+
 const IconImg = styled.img`
   width: 20px;
   margin-right: 10px;
 `;
 
 const StyledSelect = styled(SelectMUI)`
-  background-color: #e8e7e6;
+  background-color: ${(props) => props.theme.colors.separator};
   border-radius: 5px;
   height: 56px;
   width: 140px;
@@ -22,12 +25,26 @@ const StyledSelect = styled(SelectMUI)`
   }
 
   .MuiSelect-selectMenu {
-    font-family: ${(p) => p.theme.fonts.fontFamily};
+    font-family: ${(props) => props.theme.fonts.fontFamily};
+  }
+
+  &.MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
+  }
+  &.MuiInput-underline:after {
+    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
   }
 `;
 
+export type SelectItem = {
+  id: string;
+  title?: string;
+  label: string;
+  iconUrl?: string;
+};
+
 type Props = {
-  items: Array<{ id: string; label: string; iconUrl?: string }>;
+  items: Array<SelectItem>;
   activeItemId: string;
   onItemClick: (id: string) => void;
   id?: string;
@@ -64,7 +81,16 @@ function Select({ items, activeItemId, onItemClick, id, ...rest }: Props) {
             return (
               <MenuItem value={i.id} key={i.id}>
                 {i.iconUrl && <IconImg alt={i.label} src={i.iconUrl} />}
-                <span>{i.label}</span>
+                <div>
+                  {i.title && (
+                    <Text size="sm" color="secondary" strong>
+                      Title
+                    </Text>
+                  )}
+                  <Text size="sm" color="text">
+                    {i.label}
+                  </Text>
+                </div>
               </MenuItem>
             );
           })}
