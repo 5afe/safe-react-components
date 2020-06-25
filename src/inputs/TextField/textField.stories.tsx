@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import TextField from './index';
+import { Icon } from '../../dataDisplay';
 
 export default {
   title: 'Inputs/TextField',
@@ -20,7 +21,7 @@ export const textField = () => {
         id="standard-name"
         label="Name"
         value={value}
-        onChange={e => setValue(e.target.value)}
+        onChange={(e) => setValue(e.target.value)}
       />
     </form>
   );
@@ -35,7 +36,7 @@ export const error = () => {
         label="Name"
         value={value}
         meta={{ error: 'Some error' }}
-        onChange={e => setValue(e.target.value)}
+        onChange={(e) => setValue(e.target.value)}
       />
     </form>
   );
@@ -50,7 +51,39 @@ export const readOnly = () => {
         label="Name"
         readOnly
         value={value}
-        onChange={e => setValue(e.target.value)}
+        onChange={(e) => setValue(e.target.value)}
+      />
+    </form>
+  );
+};
+
+export const startAdornment = () => {
+  const [value, setValue] = useState('');
+  const adornment = <Icon size="md" type="assets"/>;
+  return (
+    <form noValidate autoComplete="off" onSubmit={onSubmit}>
+      <TextField
+        id="standard-name"
+        label="Name"
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        startAdornment={adornment}
+      />
+    </form>
+  );
+};
+
+export const endAdornment = () => {
+  const [value, setValue] = useState('');
+  const adornment = <Icon size="md" type="assets"/>;
+  return (
+    <form noValidate autoComplete="off" onSubmit={onSubmit}>
+      <TextField
+        id="standard-name"
+        label="Name"
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        endAdornment={adornment}
       />
     </form>
   );

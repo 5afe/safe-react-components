@@ -1,9 +1,7 @@
 import React from 'react';
 import TextFieldMui from '@material-ui/core/TextField';
-//import { withStyles } from '@material-ui/core/styles';
+import InputAdornment from '@material-ui/core/InputAdornment';
 import styled from 'styled-components';
-
-//import theme from '../../theme';
 
 type Props = {
   value: string;
@@ -12,14 +10,26 @@ type Props = {
   readOnly?: boolean;
   meta?: any;
   input?: any; // added for compatibility with react-final-form
+  startAdornment?: React.ReactElement;
+  endAdornment?: React.ReactElement;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-const CustomTextField = styled(({ input, ...props }) => (
-  <TextFieldMui {...props} />
-))<Props>`
+const CustomTextField = styled(
+  ({ input, startAdornment, endAdornment, ...props }) => (
+    <TextFieldMui
+      {...props}
+      InputProps={{
+        startAdornment: startAdornment ? (
+          <InputAdornment position="start">{startAdornment}</InputAdornment>
+        ) : null,
+        endAdornment: endAdornment ? (
+          <InputAdornment position="start">{endAdornment}</InputAdornment>
+        ) : null
+      }}
+    />
+  )
+)<Props>`
   && {
-    width: 400px;
-
     .MuiFilledInput-input {
       cursor: ${({ readOnly }) => (readOnly === true ? 'not-allowed' : 'auto')};
     }
