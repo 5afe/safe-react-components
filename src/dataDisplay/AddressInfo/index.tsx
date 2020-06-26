@@ -17,6 +17,7 @@ const IdenticonContainer = styled.div`
 `;
 
 const InfoContainer = styled.div`
+  display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
