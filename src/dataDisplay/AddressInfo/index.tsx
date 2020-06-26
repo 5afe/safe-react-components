@@ -17,11 +17,10 @@ const IdenticonContainer = styled.div`
 `;
 
 const InfoContainer = styled.div`
-  /* Uncomment for CASE 2 
-  display: flex;
-  align-items: center;
-  */
-  `;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+`;
 
 const AddressContainer = styled.div`
   display: flex;
