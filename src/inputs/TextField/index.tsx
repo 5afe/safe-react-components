@@ -8,27 +8,17 @@ type Props = {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   label: string;
   readOnly?: boolean;
-  meta?: any;
-  input?: any; // added for compatibility with react-final-form
+  meta?: {
+    error?: string;
+  };
+  input?: HTMLInputElement; // added for compatibility with react-final-form
   startAdornment?: React.ReactElement;
   endAdornment?: React.ReactElement;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-const CustomTextField = styled(
-  ({ input, startAdornment, endAdornment, ...props }) => (
-    <TextFieldMui
-      {...props}
-      InputProps={{
-        startAdornment: startAdornment ? (
-          <InputAdornment position="start">{startAdornment}</InputAdornment>
-        ) : null,
-        endAdornment: endAdornment ? (
-          <InputAdornment position="start">{endAdornment}</InputAdornment>
-        ) : null
-      }}
-    />
-  )
-)<Props>`
+const CustomTextField = styled(({ ...props }) => (
+  <TextFieldMui {...props} />
+))<Props>`
   && {
     .MuiFilledInput-input {
       cursor: ${({ readOnly }) => (readOnly === true ? 'not-allowed' : 'auto')};
@@ -55,6 +45,8 @@ function TextField({
   disabled,
   readOnly,
   label,
+  startAdornment,
+  endAdornment,
   ...rest
 }: Props) {
   const customProps = {
@@ -62,21 +54,27 @@ function TextField({
     label: (meta && meta.error) || label,
     variant: 'filled',
     InputProps: {
-      readOnly
+      readOnly,
+      startAdornment: startAdornment ? (
+        <InputAdornment position="start">{startAdornment}</InputAdornment>
+      ) : null,
+      endAdornment: endAdornment ? (
+        <InputAdornment position="start">{endAdornment}</InputAdornment>
+      ) : null
     },
     disabled: readOnly,
     readOnly: readOnly
   };
 
   const getCheckboxForReactFinalForm = () => {
-    const { name, value, ...inputRest } = input;
+    const { name, value, ...inputRest } = input!;
     return (
       <CustomTextField
         {...rest}
         {...customProps}
+        {...inputRest}
         name={name}
         checked={!!value}
-        {...inputRest}
       />
     );
   };
