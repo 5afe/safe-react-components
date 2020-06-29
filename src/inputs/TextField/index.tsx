@@ -11,7 +11,7 @@ type Props = {
   meta?: {
     error?: string;
   };
-  input?: HTMLInputElement; // added for compatibility with react-final-form
+  input?: React.InputHTMLAttributes<HTMLInputElement>; // added for compatibility with react-final-form
   startAdornment?: React.ReactElement;
   endAdornment?: React.ReactElement;
 } & React.InputHTMLAttributes<HTMLInputElement>;
