@@ -5,7 +5,6 @@ import SelectMUI from '@material-ui/core/Select';
 import styled from 'styled-components';
 
 import { Text } from '../../dataDisplay';
-//import theme from '../../theme';
 
 const IconImg = styled.img`
   width: 20px;
@@ -84,7 +83,7 @@ function Select({ items, activeItemId, onItemClick, id, ...rest }: Props) {
                 <div>
                   {i.title && (
                     <Text size="sm" color="secondary" strong>
-                      Title
+                      {i.title}
                     </Text>
                   )}
                   <Text size="sm" color="text">
