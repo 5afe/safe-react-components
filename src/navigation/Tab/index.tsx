@@ -24,7 +24,7 @@ export type Props = {
   items: Array<Item>;
   selectedTab: string;
   variant?: Variant;
-  fullWidth?: Boolean;
+  fullWidth?: boolean;
 };
 
 const TabWrapper = styled.div<{ variant: Variant }>`
@@ -108,7 +108,7 @@ const Tab = ({
   selectedTab,
   variant = 'outlined',
   fullWidth
-}: Props) => {
+}: Props): JSX.Element => {
   const handleChange = (_event: React.ChangeEvent<{}>, value: string): void => {
     onChange(value);
   };
@@ -122,7 +122,7 @@ const Tab = ({
       return (
         <IconText
           iconSize="sm"
-          iconType={item!.icon}
+          iconType={item.icon}
           textSize="sm"
           color={selectedTab === item.id ? 'primary' : 'text'}
           text={item.label}

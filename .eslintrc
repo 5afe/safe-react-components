@@ -1,7 +1,11 @@
 {
-    "extends": ["react-app", "prettier", "prettier/react", "plugin:import/errors"],
-    "plugins": ["prettier", "import"],
-    "parserOptions": {
-      "ecmaVersion": 9
-    }
-  }
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "react-app",
+    "prettier",
+    "prettier/react",
+    "plugin:import/errors",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["prettier", "import"]
+}

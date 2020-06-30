@@ -33,14 +33,15 @@ export const modal = () => {
       id: '3',
       iconUrl: 'someUrl3',
       name: 'three',
-      description: 'Long desc ever since the 1500s do not finish over the ocean of this',
+      description:
+        'Long desc ever since the 1500s do not finish over the ocean of this',
       checked: true
     }
   ]);
 
-  const onItemToggle = (itemId: string, checked: boolean) => {
+  const onItemToggle = (itemId: string | number, checked: boolean) => {
     const copy = [...items];
-    const localItem = copy.find(i => i.id === itemId);
+    const localItem = copy.find((i) => i.id === itemId);
     if (!localItem) {
       return;
     }
@@ -58,7 +59,7 @@ export const modal = () => {
           defaultIconUrl={appIcon}
           itemList={items}
           addButtonLabel="Add custom app"
-          formBody={<div>some form</div>}                    
+          formBody={<div>some form</div>}
           onSubmitForm={() => {}}
           onClose={() => setIsOpen(false)}
           onItemToggle={onItemToggle}
