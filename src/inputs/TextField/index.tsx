@@ -1,5 +1,5 @@
 import React from 'react';
-import TextFieldMui from '@material-ui/core/TextField';
+import TextFieldMui, { TextFieldProps } from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import styled from 'styled-components';
 
@@ -16,7 +16,9 @@ type Props = {
   endAdornment?: React.ReactElement;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-const CustomTextField = styled(({ ...props }) => (
+type Color = '';
+
+const CustomTextField = styled(({ ...props }: TextFieldProps) => (
   <TextFieldMui {...props} />
 ))<Props>`
   && {
@@ -75,6 +77,7 @@ function TextField({
         {...inputRest}
         name={name}
         checked={!!value}
+        color="primary"
       />
     );
   };
@@ -83,9 +86,9 @@ function TextField({
     getCheckboxForReactFinalForm()
   ) : (
     <CustomTextField
-      {...rest}
       {...customProps}
       value={value}
+      color="primary"
       onChange={onChange}
     />
   );
