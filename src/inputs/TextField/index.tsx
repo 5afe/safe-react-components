@@ -16,8 +16,6 @@ type Props = {
   endAdornment?: React.ReactElement;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-type Color = '';
-
 const CustomTextField = styled(({ ...props }: TextFieldProps) => (
   <TextFieldMui {...props} />
 ))<Props>`
