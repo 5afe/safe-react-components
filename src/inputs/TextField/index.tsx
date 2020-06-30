@@ -16,9 +16,9 @@ type Props = {
   endAdornment?: React.ReactElement;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-const CustomTextField = styled(({ ...props }: TextFieldProps) => (
-  <TextFieldMui {...props} />
-))<Props>`
+const CustomTextField = styled(({ ...props }) => <TextFieldMui {...props} />)<
+  Props
+>`
   && {
     .MuiFilledInput-input {
       cursor: ${({ readOnly }) => (readOnly === true ? 'not-allowed' : 'auto')};
@@ -66,7 +66,7 @@ function TextField({
     readOnly: readOnly
   };
 
-  const getCheckboxForReactFinalForm = () => {
+  if (input) {
     const { name, value, ...inputRest } = input!;
     return (
       <CustomTextField
@@ -78,11 +78,9 @@ function TextField({
         color="primary"
       />
     );
-  };
+  }
 
-  return input ? (
-    getCheckboxForReactFinalForm()
-  ) : (
+  return (
     <CustomTextField
       {...customProps}
       value={value}
