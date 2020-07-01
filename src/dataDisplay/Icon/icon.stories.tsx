@@ -32,22 +32,31 @@ export const icons = () => {
     font-size: 14px;
   `;
 
+  const IconDisplay = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  `;
+
   return (
     <Wrapper>
       {[
         'add',
-        'allowances',
         'addressBook',
         'addressBookAdd',
-        'apps',
         'alert',
+        'allowances',
+        'apps',
         'arrowDown',
         'assets',
         'awaitingConfirmations',
         'camera',
+        'chain',
         'check',
         'circleCheck',
         'circleCross',
+        'circleDropdown',
         'code',
         'collectibles',
         'copy',
@@ -64,7 +73,9 @@ export const icons = () => {
         'filledCross',
         'fingerPrint',
         'getInTouch',
+        'home',
         'info',
+        'knowledge',
         'licenses',
         'loadSafe',
         'locked',
@@ -83,12 +94,15 @@ export const icons = () => {
         'requiredConfirmations',
         'restricted',
         'resync',
+        'rocket',
         'scan',
         'search',
         'sendAgain',
         'sent',
+        'serverError',
         'settings',
         'settingsChange',
+        'settingsTool',
         'share',
         'termsOfUse',
         'transactionsInactive',
@@ -97,7 +111,7 @@ export const icons = () => {
         'wallet'
       ].map((type: any, index) => (
         <IconBox key={index}>
-          <Icon size={'md'} type={type} />
+          <Icon size="md" type={type} />
           {type}
         </IconBox>
       ))}

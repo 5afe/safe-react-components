@@ -2,18 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 
 import add from './images/add';
-import allowances from './images/allowances';
 import addressBook from './images/addressBook';
 import addressBookAdd from './images/addressBookAdd';
 import alert from './images/alert';
+import allowances from './images/allowances';
 import apps from './images/apps';
 import arrowDown from './images/arrowDown';
 import assets from './images/assets';
 import awaitingConfirmations from './images/awaitingConfirmations';
 import camera from './images/camera';
+import chain from './images/chain';
 import check from './images/check';
 import circleCheck from './images/circleCheck';
 import circleCross from './images/circleCross';
+import circleDropdown from './images/circleDropdown';
 import code from './images/code';
 import collectibles from './images/collectibles';
 import copy from './images/copy';
@@ -30,7 +32,9 @@ import eyeOff from './images/eyeOff';
 import filledCross from './images/filledCross';
 import fingerPrint from './images/fingerPrint';
 import getInTouch from './images/getInTouch';
+import home from './images/home';
 import info from './images/info';
+import knowledge from './images/knowledge';
 import licenses from './images/licenses';
 import loadSafe from './images/loadSafe';
 import locked from './images/locked';
@@ -49,12 +53,15 @@ import replaceOwner from './images/replaceOwner';
 import requiredConfirmations from './images/requiredConfirmations';
 import restricted from './images/restricted';
 import resync from './images/resync';
+import rocket from './images/rocket';
 import scan from './images/scan';
 import search from './images/search';
 import sendAgain from './images/sendAgain';
 import sent from './images/sent';
+import serverError from './images/serverError';
 import settings from './images/settings';
 import settingsChange from './images/settingsChange';
+import settingsTool from './images/settingsTool';
 import share from './images/share';
 import termsOfUse from './images/termsOfUse';
 import transactionsInactive from './images/transactionsInactive';
@@ -73,18 +80,20 @@ const StyledIcon = styled.span<any>`
 
 const icons = {
   add,
-  allowances,
   addressBook,
   addressBookAdd,
-  apps,
   alert,
+  allowances,
+  apps,
   arrowDown,
   assets,
   awaitingConfirmations,
   camera,
+  chain,
   check,
   circleCheck,
   circleCross,
+  circleDropdown,
   code,
   collectibles,
   copy,
@@ -101,7 +110,9 @@ const icons = {
   filledCross,
   fingerPrint,
   getInTouch,
+  home,
   info,
+  knowledge,
   licenses,
   loadSafe,
   locked,
@@ -120,18 +131,21 @@ const icons = {
   requiredConfirmations,
   restricted,
   resync,
+  rocket,
   scan,
   search,
   sendAgain,
   sent,
+  serverError,
   settings,
   settingsChange,
+  settingsTool,
   share,
   termsOfUse,
   transactionsInactive,
   unlocked,
   userEdit,
-  wallet
+  wallet,
 };
 
 export type IconType = typeof icons;
