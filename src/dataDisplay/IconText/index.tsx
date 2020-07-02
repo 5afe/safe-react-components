@@ -26,22 +26,20 @@ const StyledIconText = styled.div`
 /**
  * The `IconText` renders an icon next to a text
  */
-function IconText({
+const IconText = ({
   iconSize,
   textSize,
   iconType,
   text,
   color,
   className
-}: Props) {
-  return (
-    <StyledIconText className={className}>
-      <Icon size={iconSize} type={iconType} color={color} />
-      <Text size={textSize} color={color}>
-        {text}
-      </Text>
-    </StyledIconText>
-  );
-}
+}: Props): React.ReactElement => (
+  <StyledIconText className={className}>
+    <Icon size={iconSize} type={iconType} color={color} />
+    <Text size={textSize} color={color}>
+      {text}
+    </Text>
+  </StyledIconText>
+);
 
 export default IconText;

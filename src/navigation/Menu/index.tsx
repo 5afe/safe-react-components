@@ -12,11 +12,11 @@ const Wrapper = styled.div`
 `;
 
 type Props = {
-  children: any;
+  children: React.ReactNode;
   className?: string;
 };
 
-const Menu = ({ children, className }: Props) => (
+const Menu = ({ children, className }: Props): React.ReactElement => (
   <Wrapper className={className}>{children}</Wrapper>
 );
 
