@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  margin: 8px 0;
   padding: 16px 0;
   box-sizing: border-box;
   max-height: 54px;
@@ -13,9 +12,12 @@ const Wrapper = styled.div`
 `;
 
 type Props = {
-  children: any;
+  children: React.ReactNode;
+  className?: string;
 };
 
-const Menu = ({ children }: Props) => <Wrapper>{children}</Wrapper>;
+const Menu = ({ children, className }: Props): React.ReactElement => (
+  <Wrapper className={className}>{children}</Wrapper>
+);
 
 export default Menu;
