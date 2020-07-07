@@ -2,20 +2,22 @@ import React, { useState } from 'react';
 
 import gnoIcon from './gnosis.png';
 import daiIcon from './dai.png';
+import tokenPlaceholder from './token-placeholder.svg';
 import Select, { SelectItem } from './';
 
 export default {
   title: 'Inputs/Select',
   component: Select,
   parameters: {
-    componentSubtitle: 'Checkbox Input.'
+    componentSubtitle: 'Select Input.'
   }
 };
 
 export const select = () => {
   const items: Array<SelectItem> = [
-    { id: '1', label: 'DAI asd asd ', title: 'Title', iconUrl: daiIcon },
+    { id: '1', label: 'DAI', subLabel: 'stablecoin', iconUrl: daiIcon },
     { id: '2', label: 'GNO', iconUrl: gnoIcon },
+    { id: '2', label: 'BrokenImage', iconUrl: 'https://broken-image.test' },
     { id: '3', label: 'without icon' }
   ];
 
@@ -26,7 +28,8 @@ export const select = () => {
       activeItemId={activeItemId}
       onItemClick={(id) => {
         setActiveItemId(id);
-      }}
+      }}      
+      fallbackImage={tokenPlaceholder} // image source or URL
     />
   );
 };

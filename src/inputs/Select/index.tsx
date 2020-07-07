@@ -37,8 +37,8 @@ const StyledSelect = styled(SelectMUI)`
 
 export type SelectItem = {
   id: string;
-  title?: string;
   label: string;
+  subLabel?: string;
   iconUrl?: string;
 };
 
@@ -47,9 +47,17 @@ type Props = {
   activeItemId: string;
   onItemClick: (id: string) => void;
   id?: string;
+  fallbackImage?: string;
 };
 
-function Select({ items, activeItemId, onItemClick, id, ...rest }: Props) {
+function Select({
+  items,
+  activeItemId,
+  onItemClick,
+  id,
+  fallbackImage,
+  ...rest
+}: Props) {
   const [open, setOpen] = React.useState(false);
 
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
@@ -62,6 +70,15 @@ function Select({ items, activeItemId, onItemClick, id, ...rest }: Props) {
 
   const handleOpen = () => {
     setOpen(true);
+  };
+
+  const onFallbackImage: React.ReactEventHandler<HTMLImageElement> = (e) => {
+    if (!fallbackImage) {
+      return;
+    }
+
+    (e.target as HTMLImageElement).onerror = null;
+    (e.target as HTMLImageElement).src = fallbackImage;
   };
 
   return (
@@ -79,16 +96,22 @@ function Select({ items, activeItemId, onItemClick, id, ...rest }: Props) {
           {items.map((i) => {
             return (
               <MenuItem value={i.id} key={i.id}>
-                {i.iconUrl && <IconImg alt={i.label} src={i.iconUrl} />}
+                {i.iconUrl && (
+                  <IconImg
+                    alt={i.label}
+                    onError={onFallbackImage}
+                    src={i.iconUrl}
+                  />
+                )}
                 <div>
-                  {i.title && (
-                    <Text size="sm" color="secondary" strong>
-                      {i.title}
-                    </Text>
-                  )}
                   <Text size="sm" color="text">
                     {i.label}
                   </Text>
+                  {i.subLabel && (
+                    <Text size="sm" color="secondary" strong>
+                      {i.subLabel}
+                    </Text>
+                  )}
                 </div>
               </MenuItem>
             );
