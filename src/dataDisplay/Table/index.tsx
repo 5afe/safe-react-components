@@ -1,5 +1,4 @@
 import React from 'react';
-//import { makeStyles } from '@material-ui/core/styles';
 import TableMui from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
@@ -8,14 +7,12 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-// import Box from '@material-ui/core/Box';
-// import Collapse from '@material-ui/core/Collapse';
-// import IconButton from '@material-ui/core/IconButton';
+import Box from '@material-ui/core/Box';
+import Collapse from '@material-ui/core/Collapse';
+//import { makeStyles } from '@material-ui/core/styles';
 //import styled from 'styled-components';
 
-// import theme from '../../theme';
-//import Icon from '../Icon';
-//import Text from '../Text';
+import { FixedIcon } from '../..';
 
 // const useStyles = makeStyles({
 //   table: {
@@ -37,7 +34,8 @@ import Paper from '@material-ui/core/Paper';
 
 export enum Alignment {
   left = 'left',
-  right = 'right'
+  right = 'right',
+  center = 'center'
 }
 
 export enum SortDirection {
@@ -51,18 +49,22 @@ export type Header = {
   label: string;
 };
 
+type RowCells = {
+  id?: string;
+  alignment?: Alignment;
+  content: React.ReactNode;
+};
+
 export type Row = {
   id: string;
-  cells: Array<{
-    id?: string;
-    alignment?: Alignment;
-    content: React.ReactNode;
-  }>;
+  collapsibleContent?: React.ReactNode;
+  cells: RowCells[];
 };
 
 type Props = {
-  headers?: Header[];
   rows: Row[];
+  headers?: Header[];
+  isCollapsible?: boolean;
   className?: string;
   selectedRowIds?: Set<string>;
   sortedByHeaderId?: string;
@@ -71,14 +73,52 @@ type Props = {
   onRowClick?: (id: string) => void;
 };
 
+const getHeaders = (headers: Header[], isCollapsible: boolean): Header[] => {
+  if (!isCollapsible) {
+    return headers;
+  }
+
+  return [
+    ...headers,
+    {
+      id: 'chevron',
+      label: ''
+    }
+  ];
+};
+
+const getRowCells = (
+  cells: RowCells[],
+  isSelected: boolean,
+  isCollapsible: boolean
+) => {
+  if (!isCollapsible) {
+    return cells;
+  }
+
+  return [
+    ...cells,
+    {
+      alignment: Alignment.center,
+      content: isSelected ? (
+        <FixedIcon type="chevronUp" />
+      ) : (
+        <FixedIcon type="chevronDown" />
+      )
+    }
+  ];
+};
+
 const Table = ({
-  headers,
   rows,
+  headers,
+  isCollapsible,
   className,
   selectedRowIds,
   sortedByHeaderId,
   sortDirection,
-  onHeaderClick
+  onRowClick = () => {},
+  onHeaderClick = () => {}
 }: Props) => {
   //const classes = useStyles();
 
@@ -88,14 +128,14 @@ const Table = ({
         {/* HEADER CELLS */}
         <TableHead>
           <TableRow>
-            {headers?.map((header) => (
+            {getHeaders(headers || [], isCollapsible || false).map((header) => (
               <TableCell
                 key={header.id}
                 align={header.alignment || Alignment.left}>
                 <TableSortLabel
                   active={sortedByHeaderId === header.id}
                   direction={sortDirection}
-                  onClick={() => onHeaderClick && onHeaderClick(header.id)}>
+                  onClick={() => onHeaderClick(header.id)}>
                   {header.label}
                 </TableSortLabel>
               </TableCell>
@@ -105,17 +145,47 @@ const Table = ({
 
         {/* TABLE BODY */}
         <TableBody>
-          {rows.map((row) => (
-            <TableRow hover key={row.id} selected={selectedRowIds?.has(row.id)}>
-              {row.cells.map((c, index) => (
-                <TableCell
-                  key={c.id || index}
-                  align={c.alignment || Alignment.left}>
-                  {c.content}
-                </TableCell>
-              ))}
-            </TableRow>
-          ))}
+          {rows.map((row) => {
+            return (
+              <>
+                <TableRow
+                  hover
+                  key={row.id}
+                  selected={selectedRowIds?.has(row.id)}
+                  onClick={() => onRowClick(row.id)}>
+                  {getRowCells(
+                    row.cells,
+                    selectedRowIds?.has(row.id) || false,
+                    isCollapsible || false
+                  ).map((c, index) => {
+                    return (
+                      <TableCell
+                        key={c.id || index}
+                        align={c.alignment || Alignment.left}>
+                        {c.content}
+                      </TableCell>
+                    );
+                  })}
+                </TableRow>
+
+                {/* Collapsible content */}
+                {isCollapsible && (
+                  <TableRow>
+                    <TableCell
+                      style={{ paddingBottom: 0, paddingTop: 0 }}
+                      colSpan={6}>
+                      <Collapse
+                        in={selectedRowIds?.has(row.id)}
+                        timeout="auto"
+                        unmountOnExit>
+                        <Box margin={1}>{row.collapsibleContent}</Box>
+                      </Collapse>
+                    </TableCell>
+                  </TableRow>
+                )}
+              </>
+            );
+          })}
         </TableBody>
       </TableMui>
     </TableContainer>

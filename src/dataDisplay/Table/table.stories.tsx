@@ -12,24 +12,69 @@ export default {
   }
 };
 
-export const section = () => {
-  const [selectedRowIds, setSelectedRowIds] = useState<Set<string>>(new Set());
+const headerCells = [
+  {
+    id: 'col1',
+    label: 'col1'
+  },
+  {
+    id: 'col2',
+    alignment: Alignment.right,
+    label: 'col2'
+  },
+  {
+    id: 'col3',
+    alignment: Alignment.right,
+    label: 'col3'
+  }
+];
+
+const rows = [
+  {
+    id: '1',
+    collapsibleContent: <div>content 1</div>,
+    cells: [
+      {
+        content: <Icon type="addressBook" size="sm" />
+      },
+      {
+        content: 1,
+        alignment: Alignment.right
+      },
+      {
+        content: 'safe',
+        alignment: Alignment.right
+      }
+    ]
+  },
+  {
+    id: '2',
+    collapsibleContent: <div>content 2</div>,
+    cells: [
+      {
+        content: <Icon type="apps" size="sm" />
+      },
+      {
+        content: 2,
+        alignment: Alignment.right
+      },
+      {
+        content: 'gnosis',
+        alignment: Alignment.right
+      }
+    ]
+  }
+];
+
+export const table = () => <Table headers={headerCells} rows={rows} />;
+
+export const sortable = () => {
   const [sortedByHeaderId, setSortedByHeaderId] = useState<string | undefined>(
     'col2'
   );
   const [sortDirection, setSortDirection] = useState<SortDirection>(
     SortDirection.asc
   );
-
-  const onRowClick = (rowId: string) => {
-    const cp = new Set(selectedRowIds);
-    if (cp.has(rowId)) {
-      cp.delete(rowId);
-    } else {
-      cp.add(rowId);
-    }
-    setSelectedRowIds(cp);
-  };
 
   const onHeaderClick = (headerId: string) => {
     if (!['col2'].includes(headerId)) {
@@ -54,64 +99,38 @@ export const section = () => {
     });
   };
 
-  const headerCells = [
-    {
-      id: 'col1',
-      label: 'col1'
-    },
-    {
-      id: 'col2',
-      alignment: Alignment.right,
-      label: 'col2'
-    },
-    {
-      id: 'col3',
-      label: 'col3'
-    }
-  ];
-
-  const rows = [
-    {
-      id: '1',
-      cells: [
-        {
-          content: <Icon type="addressBook" size="sm" />
-        },
-        {
-          content: 1,
-          alignment: Alignment.right
-        },
-        {
-          content: 'safe'
-        }
-      ]
-    },
-    {
-      id: '2',
-      cells: [
-        {
-          content: <Icon type="apps" size="sm" />
-        },
-        {
-          content: 2,
-          alignment: Alignment.right
-        },
-        {
-          content: 'gnosis'
-        }
-      ]
-    }
-  ];
-
   return (
     <Table
       headers={headerCells}
       rows={getSortedRows()}
-      selectedRowIds={selectedRowIds}
+      //selectedRowIds={selectedRowIds}
       sortedByHeaderId={sortedByHeaderId}
       sortDirection={sortDirection}
-      onRowClick={onRowClick}
       onHeaderClick={onHeaderClick}
+    />
+  );
+};
+
+export const collapsible = () => {
+  const [selectedRowIds, setSelectedRowIds] = useState<Set<string>>(new Set());
+
+  const onRowClick = (rowId: string) => {
+    const cp = new Set(selectedRowIds);
+    if (cp.has(rowId)) {
+      cp.delete(rowId);
+    } else {
+      cp.add(rowId);
+    }
+    setSelectedRowIds(cp);
+  };
+
+  return (
+    <Table
+      headers={headerCells}
+      isCollapsible
+      rows={rows}
+      selectedRowIds={selectedRowIds}
+      onRowClick={onRowClick}
     />
   );
 };
