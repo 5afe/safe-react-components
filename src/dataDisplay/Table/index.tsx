@@ -9,20 +9,10 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Collapse from '@material-ui/core/Collapse';
-//import { makeStyles } from '@material-ui/core/styles';
+
 //import styled from 'styled-components';
 
 import { FixedIcon } from '../..';
-
-// const useStyles = makeStyles({
-//   table: {
-//     //  minWidth: 450
-//     // '& .MuiTableRow-root:hover': {
-//     //   backgroundColor: theme.colors.background,
-//     //   cursor: 'pointer'
-//     // },
-//   }
-// });
 
 // const TextTHead = styled(Text)`
 //   text-transform: uppercase;
@@ -119,77 +109,73 @@ const Table = ({
   sortDirection,
   onRowClick = () => {},
   onHeaderClick = () => {}
-}: Props) => {
-  //const classes = useStyles();
+}: Props) => (
+  <TableContainer component={Paper} elevation={3}>
+    <TableMui className={className}>
+      {/* HEADER CELLS */}
+      <TableHead>
+        <TableRow>
+          {getHeaders(headers || [], isCollapsible || false).map((header) => (
+            <TableCell
+              key={header.id}
+              align={header.alignment || Alignment.left}>
+              <TableSortLabel
+                active={sortedByHeaderId === header.id}
+                direction={sortDirection}
+                onClick={() => onHeaderClick(header.id)}>
+                {header.label}
+              </TableSortLabel>
+            </TableCell>
+          ))}
+        </TableRow>
+      </TableHead>
 
-  return (
-    <TableContainer component={Paper} elevation={3}>
-      <TableMui className={className}>
-        {/* HEADER CELLS */}
-        <TableHead>
-          <TableRow>
-            {getHeaders(headers || [], isCollapsible || false).map((header) => (
-              <TableCell
-                key={header.id}
-                align={header.alignment || Alignment.left}>
-                <TableSortLabel
-                  active={sortedByHeaderId === header.id}
-                  direction={sortDirection}
-                  onClick={() => onHeaderClick(header.id)}>
-                  {header.label}
-                </TableSortLabel>
-              </TableCell>
-            ))}
-          </TableRow>
-        </TableHead>
-
-        {/* TABLE BODY */}
-        <TableBody>
-          {rows.map((row) => {
-            return (
-              <>
-                <TableRow
-                  hover
-                  key={row.id}
-                  selected={selectedRowIds?.has(row.id)}
-                  onClick={() => onRowClick(row.id)}>
-                  {getRowCells(
-                    row.cells,
-                    selectedRowIds?.has(row.id) || false,
-                    isCollapsible || false
-                  ).map((c, index) => {
-                    return (
-                      <TableCell
-                        key={c.id || index}
-                        align={c.alignment || Alignment.left}>
-                        {c.content}
-                      </TableCell>
-                    );
-                  })}
-                </TableRow>
-
-                {/* Collapsible content */}
-                {isCollapsible && (
-                  <TableRow>
+      {/* TABLE BODY */}
+      <TableBody>
+        {rows.map((row) => {
+          return (
+            <>
+              <TableRow
+                hover
+                key={row.id}
+                selected={selectedRowIds?.has(row.id)}
+                onClick={() => onRowClick(row.id)}>
+                {getRowCells(
+                  row.cells,
+                  selectedRowIds?.has(row.id) || false,
+                  isCollapsible || false
+                ).map((c, index) => {
+                  return (
                     <TableCell
-                      style={{ paddingBottom: 0, paddingTop: 0 }}
-                      colSpan={6}>
-                      <Collapse
-                        in={selectedRowIds?.has(row.id)}
-                        timeout="auto"
-                        unmountOnExit>
-                        <Box margin={1}>{row.collapsibleContent}</Box>
-                      </Collapse>
+                      key={c.id || index}
+                      align={c.alignment || Alignment.left}>
+                      {c.content}
                     </TableCell>
-                  </TableRow>
-                )}
-              </>
-            );
-          })}
-        </TableBody>
-      </TableMui>
-    </TableContainer>
-  );
-};
+                  );
+                })}
+              </TableRow>
+
+              {/* Collapsible content */}
+              {isCollapsible && (
+                <TableRow>
+                  <TableCell
+                    style={{ paddingBottom: 0, paddingTop: 0 }}
+                    colSpan={6}>
+                    <Collapse
+                      in={selectedRowIds?.has(row.id)}
+                      timeout="auto"
+                      unmountOnExit>
+                      <Box margin={1}>{row.collapsibleContent}</Box>
+                    </Collapse>
+                  </TableCell>
+                </TableRow>
+              )}
+            </>
+          );
+        })}
+      </TableBody>
+    </TableMui>
+  </TableContainer>
+);
 
 export default Table;
