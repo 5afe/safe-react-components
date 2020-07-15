@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Table, { Alignment, SortDirection } from './index';
+import { Table, TableAlignment, TableSortDirection } from './index';
 import { Icon } from '../../';
 
 export default {
@@ -19,12 +19,12 @@ const headerCells = [
   },
   {
     id: 'col2',
-    alignment: Alignment.right,
+    alignment: TableAlignment.right,
     label: 'col2'
   },
   {
     id: 'col3',
-    alignment: Alignment.right,
+    alignment: TableAlignment.right,
     label: 'col3'
   }
 ];
@@ -39,11 +39,11 @@ const rows = [
       },
       {
         content: 1,
-        alignment: Alignment.right
+        alignment: TableAlignment.right
       },
       {
         content: 'safe',
-        alignment: Alignment.right
+        alignment: TableAlignment.right
       }
     ]
   },
@@ -56,11 +56,11 @@ const rows = [
       },
       {
         content: 2,
-        alignment: Alignment.right
+        alignment: TableAlignment.right
       },
       {
         content: 'gnosis',
-        alignment: Alignment.right
+        alignment: TableAlignment.right
       }
     ]
   }
@@ -68,12 +68,14 @@ const rows = [
 
 export const table = () => <Table headers={headerCells} rows={rows} />;
 
+export const withoutHeader = () => <Table rows={rows} />;
+
 export const sortable = () => {
   const [sortedByHeaderId, setSortedByHeaderId] = useState<string | undefined>(
     'col2'
   );
-  const [sortDirection, setSortDirection] = useState<SortDirection>(
-    SortDirection.asc
+  const [sortDirection, setSortDirection] = useState<TableSortDirection>(
+    TableSortDirection.asc
   );
 
   const onHeaderClick = (headerId: string) => {
@@ -82,9 +84,9 @@ export const sortable = () => {
     }
 
     let newDirection =
-      sortedByHeaderId === headerId && sortDirection === SortDirection.asc
-        ? SortDirection.desc
-        : SortDirection.asc;
+      sortedByHeaderId === headerId && sortDirection === TableSortDirection.asc
+        ? TableSortDirection.desc
+        : TableSortDirection.asc;
 
     setSortDirection(newDirection);
     setSortedByHeaderId(headerId);
@@ -93,7 +95,7 @@ export const sortable = () => {
   const getSortedRows = () => {
     const cp = [...rows];
     return cp.sort((a, b) => {
-      return sortDirection === SortDirection.asc
+      return sortDirection === TableSortDirection.asc
         ? Number(a.cells[1].content) - Number(b.cells[1].content)
         : Number(b.cells[1].content) - Number(a.cells[1].content);
     });
