@@ -89,9 +89,9 @@ type Props = {
   addButtonLabel?: string;
   formBody: React.ReactNode;
   isSubmitFormDisabled?: boolean;
-  onSubmitForm: () => any;
-  onItemToggle: (itemId: number | string, checked: boolean) => any;
-  onClose: () => any;
+  onSubmitForm: () => void;
+  onItemToggle: (itemId: number | string, checked: boolean) => void;
+  onClose: () => void;
 };
 
 const ManageList = ({
@@ -104,13 +104,13 @@ const ManageList = ({
   onSubmitForm,
   onItemToggle,
   onClose
-}: Props) => {
+}: Props): JSX.Element => {
   const [search, setSearch] = useState('');
   const [isFormMode, setIsFormMode] = useState(false);
 
-  const setDefaultImage = (e: any) => {
-    e.target.onerror = null;
-    e.target.src = defaultIconUrl;
+  const setDefaultImage = (e: React.SyntheticEvent<HTMLImageElement>): void => {
+    (e.target as HTMLImageElement).onerror = null;
+    (e.target as HTMLImageElement).src = defaultIconUrl;
   };
 
   const getFilteredItemList = () => {
@@ -119,7 +119,7 @@ const ManageList = ({
     }
 
     return itemList.filter(
-      i =>
+      (i) =>
         i.name.toLowerCase().includes(search.toLowerCase()) ||
         i.description?.toLowerCase().includes(search.toLowerCase())
     );
@@ -134,7 +134,7 @@ const ManageList = ({
           <SearchContainer>
             <Icon size="md" type="search" />
             <SearchInput
-              onChange={event => setSearch(event.target.value)}
+              onChange={(event) => setSearch(event.target.value)}
               placeholder="Search"
               value={search}
             />
@@ -150,7 +150,7 @@ const ManageList = ({
           </Button>
         </BodyHeader>
         <div>
-          {getFilteredItemList().map(i => {
+          {getFilteredItemList().map((i) => {
             const onChange = (checked: boolean) => onItemToggle(i.id, checked);
 
             return (
@@ -168,7 +168,9 @@ const ManageList = ({
                       </Text>
                     </div>
                     <div>
-                      <TextDesc size="md">{i.description && i.description}</TextDesc>
+                      <TextDesc size="md">
+                        {i.description && i.description}
+                      </TextDesc>
                     </div>
                   </div>
                 </StyledImageName>

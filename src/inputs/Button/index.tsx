@@ -13,6 +13,8 @@ export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   variant?: 'outlined' | 'contained';
 }
 
+type HoverColor = 'primaryHover' | 'secondaryHover' | 'errorHover';
+
 const Button = ({
   children,
   iconType,
@@ -36,7 +38,7 @@ const Button = ({
         'border-color': theme.colors[color],
         'background-color':
           variant === 'contained'
-            ? theme.colors[`${color}Hover`]
+            ? theme.colors[`${color}Hover` as HoverColor]
             : theme.colors.white
       },
 

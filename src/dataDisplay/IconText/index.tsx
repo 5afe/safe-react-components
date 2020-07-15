@@ -11,6 +11,7 @@ type Props = {
   textSize: keyof Theme['text']['size'];
   color?: keyof Theme['colors'];
   text: string;
+  className?: string;
 };
 
 const StyledIconText = styled.div`
@@ -25,13 +26,20 @@ const StyledIconText = styled.div`
 /**
  * The `IconText` renders an icon next to a text
  */
-function IconText({ iconSize, textSize, iconType, text, color }: Props) {
-  return (
-    <StyledIconText>
-      <Icon size={iconSize} type={iconType} color={color} />
-      <Text size={textSize} color={color}>{text}</Text>
-    </StyledIconText>
-  );
-}
+const IconText = ({
+  iconSize,
+  textSize,
+  iconType,
+  text,
+  color,
+  className
+}: Props): React.ReactElement => (
+  <StyledIconText className={className}>
+    <Icon size={iconSize} type={iconType} color={color} />
+    <Text size={textSize} color={color}>
+      {text}
+    </Text>
+  </StyledIconText>
+);
 
 export default IconText;
