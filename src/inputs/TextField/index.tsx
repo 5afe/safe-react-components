@@ -59,7 +59,7 @@ function TextField({
         <InputAdornment position="start">{startAdornment}</InputAdornment>
       ) : null,
       endAdornment: endAdornment ? (
-        <InputAdornment position="start">{endAdornment}</InputAdornment>
+        <InputAdornment position="end">{endAdornment}</InputAdornment>
       ) : null
     },
     disabled: readOnly,
