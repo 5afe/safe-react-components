@@ -14,11 +14,13 @@ type Props = {
   input?: React.InputHTMLAttributes<HTMLInputElement>; // added for compatibility with react-final-form
   startAdornment?: React.ReactElement;
   endAdornment?: React.ReactElement;
+  className?: string;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
 const CustomTextField = styled((props: TextFieldProps) => (
   <TextFieldMui {...props} />
 ))<Props>`
+  width: 400px;
   && {
     .MuiFilledInput-input {
       cursor: ${({ readOnly }) => (readOnly === true ? 'not-allowed' : 'auto')};
@@ -47,6 +49,7 @@ function TextField({
   label,
   startAdornment,
   endAdornment,
+  className,
   ...rest
 }: Props) {
   const customProps = {
@@ -73,6 +76,7 @@ function TextField({
         {...rest}
         {...customProps}
         {...inputRest}
+        className={className}
         size={undefined}
         onChange={onChange}
         name={name}
@@ -86,6 +90,7 @@ function TextField({
   return (
     <CustomTextField
       {...customProps}
+      className={className}
       value={value}
       color="primary"
       onChange={onChange}
