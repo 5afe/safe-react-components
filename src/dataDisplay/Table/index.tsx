@@ -116,22 +116,24 @@ export const Table = ({
   <TableContainer component={Paper} elevation={3}>
     <TableMui className={className}>
       {/* HEADER CELLS */}
-      <TableHead>
-        <TableRow>
-          {getHeaders(headers || [], isCollapsible || false).map((header) => (
-            <TableCell
-              key={header.id}
-              align={header.alignment || TableAlignment.left}>
-              <TableSortLabel
-                active={sortedByHeaderId === header.id}
-                direction={sortDirection}
-                onClick={() => onHeaderClick(header.id)}>
-                {header.label}
-              </TableSortLabel>
-            </TableCell>
-          ))}
-        </TableRow>
-      </TableHead>
+      {headers && (
+        <TableHead>
+          <TableRow>
+            {getHeaders(headers || [], isCollapsible || false).map((header) => (
+              <TableCell
+                key={header.id}
+                align={header.alignment || TableAlignment.left}>
+                <TableSortLabel
+                  active={sortedByHeaderId === header.id}
+                  direction={sortDirection}
+                  onClick={() => onHeaderClick(header.id)}>
+                  {header.label}
+                </TableSortLabel>
+              </TableCell>
+            ))}
+          </TableRow>
+        </TableHead>
+      )}
 
       {/* TABLE BODY */}
       <TableBody>
