@@ -22,48 +22,51 @@ import { FixedIcon } from '../..';
 //   border-bottom: 2px solid ${({ theme }) => theme.colors.separator} !important;
 // `;
 
-export enum Alignment {
+export enum TableAlignment {
   left = 'left',
   right = 'right',
   center = 'center'
 }
 
-export enum SortDirection {
+export enum TableSortDirection {
   asc = 'asc',
   desc = 'desc'
 }
 
-export type Header = {
+export type TableHeader = {
   id: string;
-  alignment?: Alignment;
+  alignment?: TableAlignment;
   label: string;
 };
 
 type RowCells = {
   id?: string;
-  alignment?: Alignment;
+  alignment?: TableAlignment;
   content: React.ReactNode;
 };
 
-export type Row = {
+export type TableRow = {
   id: string;
   collapsibleContent?: React.ReactNode;
   cells: RowCells[];
 };
 
 type Props = {
-  rows: Row[];
-  headers?: Header[];
+  rows: TableRow[];
+  headers?: TableHeader[];
   isCollapsible?: boolean;
   className?: string;
   selectedRowIds?: Set<string>;
   sortedByHeaderId?: string;
-  sortDirection?: SortDirection;
+  sortDirection?: TableSortDirection;
   onHeaderClick?: (id: string) => void;
   onRowClick?: (id: string) => void;
 };
 
-const getHeaders = (headers: Header[], isCollapsible: boolean): Header[] => {
+const getHeaders = (
+  headers: TableHeader[],
+  isCollapsible: boolean
+): TableHeader[] => {
   if (!isCollapsible) {
     return headers;
   }
@@ -89,7 +92,7 @@ const getRowCells = (
   return [
     ...cells,
     {
-      alignment: Alignment.center,
+      alignment: TableAlignment.center,
       content: isSelected ? (
         <FixedIcon type="chevronUp" />
       ) : (
@@ -99,7 +102,7 @@ const getRowCells = (
   ];
 };
 
-const Table = ({
+export const Table = ({
   rows,
   headers,
   isCollapsible,
@@ -118,7 +121,7 @@ const Table = ({
           {getHeaders(headers || [], isCollapsible || false).map((header) => (
             <TableCell
               key={header.id}
-              align={header.alignment || Alignment.left}>
+              align={header.alignment || TableAlignment.left}>
               <TableSortLabel
                 active={sortedByHeaderId === header.id}
                 direction={sortDirection}
@@ -148,7 +151,7 @@ const Table = ({
                   return (
                     <TableCell
                       key={c.id || index}
-                      align={c.alignment || Alignment.left}>
+                      align={c.alignment || TableAlignment.left}>
                       {c.content}
                     </TableCell>
                   );
@@ -177,5 +180,3 @@ const Table = ({
     </TableMui>
   </TableContainer>
 );
-
-export default Table;
