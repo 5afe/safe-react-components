@@ -24,7 +24,7 @@ module.exports = ({ config }) => {
   });
 
   config.module.rules.push({
-    test: /\.(svg)$/,
+    test: /\.(svg|png|jpg)$/i,
     use: [
       {
         loader: 'url-loader',
