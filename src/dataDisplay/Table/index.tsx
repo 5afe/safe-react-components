@@ -105,9 +105,9 @@ const getRowCells = (
 export const Table = ({
   rows,
   headers,
-  isCollapsible,
+  isCollapsible = false,
   className,
-  selectedRowIds,
+  selectedRowIds = new Set(),
   sortedByHeaderId,
   sortDirection,
   onRowClick = () => {},
@@ -119,7 +119,7 @@ export const Table = ({
       {headers && (
         <TableHead>
           <TableRow>
-            {getHeaders(headers || [], isCollapsible || false).map((header) => (
+            {getHeaders(headers || [], isCollapsible).map((header) => (
               <TableCell
                 key={header.id}
                 align={header.alignment || TableAlignment.left}>
@@ -138,18 +138,20 @@ export const Table = ({
       {/* TABLE BODY */}
       <TableBody>
         {rows.map((row) => {
+          const rowCells = getRowCells(
+            row.cells,
+            selectedRowIds.has(row.id),
+            isCollapsible
+          );
+          
           return (
             <>
               <TableRow
                 hover
                 key={row.id}
-                selected={selectedRowIds?.has(row.id)}
+                selected={selectedRowIds.has(row.id)}
                 onClick={() => onRowClick(row.id)}>
-                {getRowCells(
-                  row.cells,
-                  selectedRowIds?.has(row.id) || false,
-                  isCollapsible || false
-                ).map((c, index) => {
+                {rowCells.map((c, index) => {
                   return (
                     <TableCell
                       key={c.id || index}
@@ -163,11 +165,9 @@ export const Table = ({
               {/* Collapsible content */}
               {isCollapsible && (
                 <TableRow>
-                  <TableCell
-                    style={{ paddingBottom: 0, paddingTop: 0 }}
-                    colSpan={6}>
+                  <TableCell colSpan={rowCells.length}>
                     <Collapse
-                      in={selectedRowIds?.has(row.id)}
+                      in={selectedRowIds.has(row.id)}
                       timeout="auto"
                       unmountOnExit>
                       <Box margin={1}>{row.collapsibleContent}</Box>
