@@ -133,3 +133,7 @@ export const customColor = () => (
     <Icon size="md" type="add" color="rinkeby" />
   </>
 );
+
+export const withTooltip = () => (
+    <Icon size="md" type="add" color="primary" tooltip="some text" />
+);

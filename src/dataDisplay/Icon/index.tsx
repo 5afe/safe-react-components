@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Tooltip from '@material-ui/core/Tooltip';
+import { withStyles } from '@material-ui/core/styles';
 
 import add from './images/add';
 import addressBook from './images/addressBook';
@@ -68,8 +70,9 @@ import transactionsInactive from './images/transactionsInactive';
 import unlocked from './images/unlocked';
 import userEdit from './images/userEdit';
 import wallet from './images/wallet';
+import { rgba } from 'polished';
 
-import { Theme } from '../../theme';
+import theme, { Theme } from '../../theme';
 
 const StyledIcon = styled.span<any>`
   .icon-color {
@@ -77,6 +80,15 @@ const StyledIcon = styled.span<any>`
       color ? theme.colors[color] : theme.colors.icon};
   }
 `;
+
+const StyledTooltip = withStyles(() => ({
+  tooltip: {
+    backgroundColor: theme.colors.overlay.color,
+    border: `1px solid ${theme.colors.icon}`,
+    boxShadow: `1px 2px 4px ${rgba(theme.colors.shadow.color, 0.08)}`,
+    color: theme.colors.text
+  }
+}))(Tooltip);
 
 const icons = {
   add,
@@ -145,23 +157,36 @@ const icons = {
   transactionsInactive,
   unlocked,
   userEdit,
-  wallet,
+  wallet
 };
 
 export type IconType = typeof icons;
 
 type Props = {
   type: keyof IconType;
-  color?: keyof Theme['colors'];
   size: keyof Theme['icons']['size'];
+  color?: keyof Theme['colors'];
+  tooltip?: string;
+  className?: string;
 };
 
 /**
  * The `Icon` renders an icon, it can be one already defined specified by
  * the type props or custom one using the customUrl.
  */
-function Icon({ type, size, color }: Props) {
-  return <StyledIcon color={color}> {icons[type][size]}</StyledIcon>;
+function Icon({ type, size, color, tooltip, className }: Props) {
+  const IconElement = (
+    <StyledIcon color={color} className={className}>
+      {icons[type][size]}
+    </StyledIcon>
+  );
+  return tooltip === undefined ? (
+    IconElement
+  ) : (
+    <StyledTooltip title={tooltip} placement="top">
+      {IconElement}
+    </StyledTooltip>
+  );
 }
 
 export default Icon;
