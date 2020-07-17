@@ -8,7 +8,7 @@ const icon = (
       viewBox="0 0 6 6">
       <path
         fill="#008C73"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M3 0C1.347 0 0 1.347 0 3s1.347 3 3 3 3-1.347 3-3-1.347-3-3-3z"
       />
     </svg>

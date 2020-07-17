@@ -6,7 +6,7 @@ const icon = (
       width="20"
       height="4"
       viewBox="0 0 20 4">
-      <g fill="#B2B5B2" fill-rule="evenodd">
+      <g fill="#B2B5B2" fillRule="evenodd">
         <rect width="4" height="4" x="16" rx="2" />
         <rect width="4" height="4" x="8" rx="2" />
         <rect width="4" height="4" rx="2" />
