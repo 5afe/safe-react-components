@@ -1,7 +1,9 @@
 const theme = {
-  fonts: {
-    fontFamily: `'Averta', 'Roboto', 'Helvetica Neue', 'Arial', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', '-apple-system', 'BlinkMacSystemFont', sans-serif`,
-    fontFamilyCode: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`
+  buttons: {
+    size: {
+      md: { height: '36px', padding: '0 16px' },
+      lg: { height: '52px', padding: '0 25px' }
+    }
   },
   colors: {
     primary: '#008C73',
@@ -25,7 +27,7 @@ const theme = {
     pendingTagHover: '#FBE5C5',
     tag: '#D4D5D3',
     background: '#F7F5F5',
-    white: '#ffffff',    
+    white: '#ffffff',
 
     disabled: {
       opacity: 0.5
@@ -40,10 +42,41 @@ const theme = {
       color: '#28363D'
     }
   },
-  buttons: {
+  statusDot: {
     size: {
-      md: { height: '36px', padding: '0 16px'},
-      lg: { height: '52px', padding: '0 25px'}
+      sm: '5px',
+      md: '10px'
+    }
+  },
+  fonts: {
+    fontFamily: `'Averta', 'Roboto', 'Helvetica Neue', 'Arial', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', '-apple-system', 'BlinkMacSystemFont', sans-serif`,
+    fontFamilyCode: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`
+  },
+  icons: {
+    size: {
+      sm: '16',
+      md: '24'
+    }
+  },
+  iconText: {
+    size: {
+      sm: null,
+      md: null
+    }
+  },
+  identicon: {
+    size: {
+      sm: '16px',
+      md: '32px',
+      lg: '60px'
+    }
+  },
+  loader: {
+    size: {
+      xs: '10px',
+      sm: '30px',
+      md: '50px',
+      lg: '70px'
     }
   },
   text: {
@@ -64,12 +97,6 @@ const theme = {
         fontSize: '16px',
         lineHeight: '22px'
       }
-    }
-  },
-  iconText: {
-    size: {
-      sm: null,
-      md: null
     }
   },
   title: {
@@ -94,27 +121,6 @@ const theme = {
         fontSize: '60px',
         lineHeight: '64px'
       }
-    }
-  },
-  loader: {
-    size: {
-      xs: '10px',
-      sm: '30px',
-      md: '50px',
-      lg: '70px'
-    }
-  },
-  icons: {
-    size: {
-      sm: '16',
-      md: '24'
-    }
-  },
-  identicon: {
-    size: {
-      sm: '16px',
-      md: '32px',
-      lg: '60px'
     }
   }
 };
