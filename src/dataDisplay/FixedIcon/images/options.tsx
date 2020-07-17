@@ -6,7 +6,7 @@ const icon = (
       width="16"
       height="4"
       viewBox="0 0 16 4">
-      <g fill="#B2B5B2" fill-rule="evenodd">
+      <g fill="#B2B5B2" fillRule="evenodd">
         <circle cx="2" cy="2" r="2" />
         <circle cx="8" cy="2" r="2" />
         <circle cx="14" cy="2" r="2" />
