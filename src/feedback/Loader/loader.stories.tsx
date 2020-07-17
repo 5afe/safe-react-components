@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import Loader from "./index";
+import Loader from './index';
 
 export default {
-  title: "Feedback/Loader",
+  title: 'Feedback/Loader',
   component: Loader,
   parameters: {
-    componentSubtitle: "Loader component"
+    componentSubtitle: 'Loader component'
   }
 };
 
@@ -18,3 +18,5 @@ export const loader = () => (
     <Loader size="lg" />
   </>
 );
+
+export const withColor = () => <Loader size="md" color="rinkeby" />;
