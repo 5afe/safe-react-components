@@ -174,7 +174,7 @@ type Props = {
  * The `Icon` renders an icon, it can be one already defined specified by
  * the type props or custom one using the customUrl.
  */
-function Icon({ type, size, color, tooltip, className }: Props) {
+function Icon({ type, size, color, tooltip, className }: Props): React.ReactElement {
   const IconElement = (
     <StyledIcon color={color} className={className}>
       {icons[type][size]}

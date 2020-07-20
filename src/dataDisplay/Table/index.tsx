@@ -84,7 +84,7 @@ const getRowCells = (
   cells: RowCells[],
   isSelected: boolean,
   isCollapsible: boolean
-) => {
+): RowCells[] => {
   if (!isCollapsible) {
     return cells;
   }
@@ -112,7 +112,7 @@ export const Table = ({
   sortDirection,
   onRowClick = () => {},
   onHeaderClick = () => {}
-}: Props) => (
+}: Props): React.ReactElement => (
   <TableContainer component={Paper} elevation={3}>
     <TableMui className={className}>
       {/* HEADER CELLS */}

@@ -16,6 +16,6 @@ const StyledDot = styled.div<Props>`
   width: ${({ theme, size }) => theme.statusDot.size[size]};
 `;
 
-const StatusDot = (props: Props) => <StyledDot {...props} />;
+const StatusDot = (props: Props): React.ReactElement => <StyledDot {...props} />;
 
 export default StatusDot;

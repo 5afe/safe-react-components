@@ -41,7 +41,7 @@ const StyledTooltip = withStyles(() => ({
   }
 }))(Tooltip);
 
-const Text = ({ children, tooltip, ...rest }: Props) => {
+const Text = ({ children, tooltip, ...rest }: Props): React.ReactElement => {
   const TextElement = <StyledText {...rest}>{children}</StyledText>;
 
   return tooltip === undefined ? (
