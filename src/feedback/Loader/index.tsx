@@ -14,18 +14,6 @@ type Props = {
   className?: string;
 };
 
-const Wrapper = styled.div`
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-
-  .p {
-    margin-right: 5px;
-  }
-`;
-
 const StyledCircularProgress = styled(({ size, className }: Props) => (
   <CircularProgress size={theme.loader.size[size]} className={className} />
 ))`
@@ -36,9 +24,7 @@ const StyledCircularProgress = styled(({ size, className }: Props) => (
 
 const Loader = ({ className, size, color }: Props) => {
   return (
-    <Wrapper>
-      <StyledCircularProgress size={size} color={color} className={className} />
-    </Wrapper>
+    <StyledCircularProgress size={size} color={color} className={className} />
   );
 };
 
