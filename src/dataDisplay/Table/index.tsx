@@ -9,8 +9,9 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Collapse from '@material-ui/core/Collapse';
+//import { borders } from '@material-ui/system';
 
-//import styled from 'styled-components';
+import styled from 'styled-components';
 
 import { FixedIcon } from '../..';
 
@@ -18,9 +19,35 @@ import { FixedIcon } from '../..';
 //   text-transform: uppercase;
 // `;
 
-// const StyledTableCell = styled(TableCell)`
-//   border-bottom: 2px solid ${({ theme }) => theme.colors.separator} !important;
-// `;
+ const StyledTableRow = styled(TableRow)`
+/*  border-bottom: 2px solid ${({ theme }) =>
+   theme.colors.separator} !important; 
+  border-top: 2px solid ${({ theme }) => theme.colors.separator} !important; */
+  && {
+    border-top: 1px solid ${({ theme }) => theme.colors.separator};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.separator};
+    &.Mui-selected { 
+      background-color: red;
+   /* border-top: 2px solid ${({ theme }) => theme.colors.separator};
+    border-bottom: 2px solid ${({ theme }) => theme.colors.separator}; */
+    & > .MuiCollapse-container.MuiCollapse-entered {
+      margin: 0 -16px;
+      border-top: 1px solid ${({ theme }) => theme.colors.separator};
+      border-bottom: 1px solid ${({ theme }) => theme.colors.separator};
+    }
+  }
+  }
+`;
+
+const StyledTableRowCollapsed = styled(TableRow)`
+ /*&& {
+  & .MuiTableCell-root.MuiTableCell-body {
+    border-top: 2px solid ${({ theme }) => theme.colors.separator};
+      border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
+  } 
+ } */
+
+`;
 
 export enum TableAlignment {
   left = 'left',
@@ -118,7 +145,7 @@ export const Table = ({
       {/* HEADER CELLS */}
       {headers && (
         <TableHead>
-          <TableRow>
+          <StyledTableRow>
             {getHeaders(headers || [], isCollapsible).map((header) => (
               <TableCell
                 key={header.id}
@@ -131,7 +158,7 @@ export const Table = ({
                 </TableSortLabel>
               </TableCell>
             ))}
-          </TableRow>
+          </StyledTableRow>
         </TableHead>
       )}
 
@@ -146,7 +173,7 @@ export const Table = ({
           
           return (
             <>
-              <TableRow
+              <StyledTableRow
                 hover
                 key={row.id}
                 selected={selectedRowIds.has(row.id)}
@@ -160,20 +187,20 @@ export const Table = ({
                     </TableCell>
                   );
                 })}
-              </TableRow>
+              </StyledTableRow>
 
               {/* Collapsible content */}
               {isCollapsible && (
-                <TableRow>
-                  <TableCell colSpan={rowCells.length} style={{ paddingBottom: 0, paddingTop: 0 }}>
-                    <Collapse
+                <StyledTableRowCollapsed>
+                  <TableCell colSpan={rowCells.length} style={{ paddingBottom: 0, paddingTop: 0}}>
+                    <Collapse 
                       in={selectedRowIds.has(row.id)}
                       timeout="auto"
                       unmountOnExit>
                       <Box margin={1}>{row.collapsibleContent}</Box>
                     </Collapse>
                   </TableCell>
-                </TableRow>
+                </StyledTableRowCollapsed>
               )}
             </>
           );
