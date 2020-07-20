@@ -9,44 +9,41 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Collapse from '@material-ui/core/Collapse';
-//import { borders } from '@material-ui/system';
+import { rgba } from 'polished';
 
 import styled from 'styled-components';
 
 import { FixedIcon } from '../..';
 
-// const TextTHead = styled(Text)`
-//   text-transform: uppercase;
-// `;
-
- const StyledTableRow = styled(TableRow)`
-/*  border-bottom: 2px solid ${({ theme }) =>
-   theme.colors.separator} !important; 
-  border-top: 2px solid ${({ theme }) => theme.colors.separator} !important; */
+const StyledTableHead = styled(TableHead)`
   && {
-    border-top: 1px solid ${({ theme }) => theme.colors.separator};
-    border-bottom: 1px solid ${({ theme }) => theme.colors.separator};
-    &.Mui-selected { 
-      background-color: red;
-   /* border-top: 2px solid ${({ theme }) => theme.colors.separator};
-    border-bottom: 2px solid ${({ theme }) => theme.colors.separator}; */
-    & > .MuiCollapse-container.MuiCollapse-entered {
-      margin: 0 -16px;
-      border-top: 1px solid ${({ theme }) => theme.colors.separator};
-      border-bottom: 1px solid ${({ theme }) => theme.colors.separator};
-    }
-  }
+    border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
   }
 `;
 
-const StyledTableRowCollapsed = styled(TableRow)`
- /*&& {
-  & .MuiTableCell-root.MuiTableCell-body {
-    border-top: 2px solid ${({ theme }) => theme.colors.separator};
-      border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
-  } 
- } */
+const StyledTableRow = styled(TableRow)`
+  && {
+    border-top: 1px solid ${({ theme }) => theme.colors.separator};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.separator};
 
+    &.MuiTableRow-hover:hover,
+    &.Mui-selected,
+    &.Mui-selected:hover {
+      background-color: ${({ theme }) => rgba(theme.colors.shadow.color, 0.08)};
+    }
+  }
+`;
+
+const StyledTableCellCollapsible = styled(TableCell)`
+  && {
+    padding: 0;
+  }
+`;
+
+const StyledCollapse = styled(Collapse)`
+  border-top: 1px solid ${({ theme }) => theme.colors.separator};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.separator};
+  padding: 0 16px;
 `;
 
 export enum TableAlignment {
@@ -144,7 +141,7 @@ export const Table = ({
     <TableMui className={className}>
       {/* HEADER CELLS */}
       {headers && (
-        <TableHead>
+        <StyledTableHead>
           <StyledTableRow>
             {getHeaders(headers || [], isCollapsible).map((header) => (
               <TableCell
@@ -159,7 +156,7 @@ export const Table = ({
               </TableCell>
             ))}
           </StyledTableRow>
-        </TableHead>
+        </StyledTableHead>
       )}
 
       {/* TABLE BODY */}
@@ -170,7 +167,7 @@ export const Table = ({
             selectedRowIds.has(row.id),
             isCollapsible
           );
-          
+
           return (
             <>
               <StyledTableRow
@@ -191,16 +188,16 @@ export const Table = ({
 
               {/* Collapsible content */}
               {isCollapsible && (
-                <StyledTableRowCollapsed>
-                  <TableCell colSpan={rowCells.length} style={{ paddingBottom: 0, paddingTop: 0}}>
-                    <Collapse 
+                <TableRow>
+                  <StyledTableCellCollapsible colSpan={rowCells.length}>
+                    <StyledCollapse
                       in={selectedRowIds.has(row.id)}
                       timeout="auto"
                       unmountOnExit>
                       <Box margin={1}>{row.collapsibleContent}</Box>
-                    </Collapse>
-                  </TableCell>
-                </StyledTableRowCollapsed>
+                    </StyledCollapse>
+                  </StyledTableCellCollapsible>
+                </TableRow>
               )}
             </>
           );
