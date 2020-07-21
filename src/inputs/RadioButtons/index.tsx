@@ -19,7 +19,7 @@ const RadioButtons = ({
   onRadioChange,
   options,
   ...rest
-}: Props) => {
+}: Props): React.ReactElement => {
   const onChangeInternal = (event: React.ChangeEvent<HTMLInputElement>) =>
     onRadioChange((event.target as HTMLInputElement).value);
 

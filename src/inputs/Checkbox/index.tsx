@@ -42,11 +42,10 @@ const Checkbox = ({
   checked,
   label,
   onChange,
-  name,
   meta,
   input,
   ...rest
-}: Props) => {
+}: Props): React.ReactElement => {
   const getCheckboxForReactFinalForm = () => {
     const { name, value, ...inputRest } = input;
     return (

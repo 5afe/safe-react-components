@@ -10,21 +10,23 @@ export default {
   },
 };
 
-export const text = () => <Text size="sm">Some Text...</Text>;
+export const SimpleTexttext = (): React.ReactElement => (
+  <Text size="sm">Some Text...</Text>
+);
 
-export const bold = () => (
+export const Bold = (): React.ReactElement => (
   <Text size="sm" strong>
     Some Text...
   </Text>
 );
 
-export const centered = () => (
+export const Centered = (): React.ReactElement => (
   <Text size="sm" center>
     Some Text...
   </Text>
 );
 
-export const customSize = () => (
+export const CustomSize = (): React.ReactElement => (
   <>
     <Text size="sm">Some Text...</Text>
     <Text size="md">Some Text...</Text>
@@ -33,13 +35,13 @@ export const customSize = () => (
   </>
 );
 
-export const customColor = () => (
+export const CustomColor = (): React.ReactElement => (
   <Text size="sm" color="primary">
     Some Text...
   </Text>
 );
 
-export const withTooltip = () => (
+export const WithTooltip = (): React.ReactElement => (
   <Text size="sm" color="primary" tooltip="some other text">
     Some Text...
   </Text>

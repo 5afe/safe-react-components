@@ -10,13 +10,13 @@ const StyledSection = styled.div`
 `;
 
 type Props = {
-  children: any;
+  children: React.ReactNode;
 };
 
 /**
  * Use `Section` to highlight/group content.
  */
-const Section = ({ children }: Props) => (
+const Section = ({ children }: Props): React.ReactElement => (
   <StyledSection>{children}</StyledSection>
 );
 

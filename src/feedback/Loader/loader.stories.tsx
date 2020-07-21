@@ -10,7 +10,7 @@ export default {
   },
 };
 
-export const loader = () => (
+export const loader = (): React.ReactElement => (
   <>
     <Loader size="xs" />
     <Loader size="sm" />
@@ -19,4 +19,6 @@ export const loader = () => (
   </>
 );
 
-export const withColor = () => <Loader size="md" color="rinkeby" />;
+export const withColor = (): React.ReactElement => (
+  <Loader size="md" color="rinkeby" />
+);

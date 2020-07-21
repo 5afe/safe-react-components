@@ -49,7 +49,12 @@ const StyledH5 = styled.h5<{ withoutMargin?: boolean }>`
   margin: ${({ withoutMargin }) => (withoutMargin ? 0 : '18px')} 0;
 `;
 
-const Title = ({ children, size, withoutMargin, ...rest }: Props) => {
+const Title = ({
+  children,
+  size,
+  withoutMargin,
+  ...rest
+}: Props): React.ReactElement => {
   switch (size) {
     case 'xl': {
       return (

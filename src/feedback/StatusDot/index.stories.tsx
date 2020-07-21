@@ -8,7 +8,7 @@ export default {
   parameters: {},
 };
 
-export const statusDot = () => (
+export const SimpleStatusDot = (): React.ReactElement => (
   <>
     <StatusDot size="sm" color="rinkeby" />
     <br />

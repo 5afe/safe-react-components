@@ -22,7 +22,7 @@ const Button = ({
   color,
   variant,
   ...rest
-}: Props) => {
+}: Props): React.ReactElement => {
   const BootstrapButton = withStyles({
     root: {
       height: theme.buttons.size[size].height,

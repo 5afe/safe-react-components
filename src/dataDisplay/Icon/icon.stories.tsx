@@ -12,7 +12,7 @@ export default {
   },
 };
 
-export const icons = () => {
+export const Icons = (): React.ReactElement => {
   const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -30,13 +30,6 @@ export const icons = () => {
     border: 1px solid ${({ theme }) => theme.colors.background};
     font-family: 'Averta', sans-serif;
     font-size: 14px;
-  `;
-
-  const IconDisplay = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
   `;
 
   return (
@@ -119,14 +112,14 @@ export const icons = () => {
   );
 };
 
-export const customSize = () => (
+export const CustomSize = (): React.ReactElement => (
   <>
     <Icon size="sm" type="add" />
     <Icon size="md" type="add" />
   </>
 );
 
-export const customColor = () => (
+export const CustomColor = (): React.ReactElement => (
   <>
     <Icon size="md" type="add" color="primary" />
     <Icon size="md" type="add" color="error" />
@@ -134,6 +127,6 @@ export const customColor = () => (
   </>
 );
 
-export const withTooltip = () => (
+export const WithTooltip = (): React.ReactElement => (
   <Icon size="md" type="add" color="primary" tooltip="some text" />
 );

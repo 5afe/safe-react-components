@@ -43,7 +43,7 @@ const Footer = styled.div`
   grid-area: footer;
 `;
 
-const Layout = () => (
+const Layout = (): React.ReactElement => (
   <Container>
     <Title>Title</Title>
     <Navbar>Navbar</Navbar>

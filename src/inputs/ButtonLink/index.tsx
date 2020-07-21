@@ -8,7 +8,7 @@ import { Text } from '../../index';
 export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   iconType?: keyof IconType;
   color: keyof Theme['colors'];
-  children: any;
+  children: React.ReactNode;
 }
 
 const StyledButtonLink = styled.button<Props>`
@@ -26,7 +26,11 @@ const StyledButtonLink = styled.button<Props>`
   }
 `;
 
-const ButtonLik = ({ iconType, children, ...rest }: Props) => {
+const ButtonLik = ({
+  iconType,
+  children,
+  ...rest
+}: Props): React.ReactElement => {
   return (
     <StyledButtonLink {...rest}>
       {iconType && <Icon size="md" color={rest.color} type={iconType} />}

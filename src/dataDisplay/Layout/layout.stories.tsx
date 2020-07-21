@@ -10,4 +10,4 @@ export default {
   },
 };
 
-export const layout = () => <Layout />;
+export const SimpleLayout = (): React.ReactElement => <Layout />;

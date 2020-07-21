@@ -44,7 +44,6 @@ function TextField({
   value,
   onChange,
   meta,
-  disabled,
   readOnly,
   label,
   startAdornment,
@@ -70,7 +69,7 @@ function TextField({
   };
 
   if (input) {
-    const { name, value, ...inputRest } = input!;
+    const { name, value, ...inputRest } = input;
     return (
       <CustomTextField
         {...rest}
