@@ -16,6 +16,7 @@
     "build": "rimraf dist && webpack --mode production",
     "build-storybook": "build-storybook -s public --docs",
     "storybook": "start-storybook -p 9009 -s public --docs",
+    "lint:check": "eslint './src/**/*.{js,jsx,ts,tsx}'",
     "prepare": "yarn build"
   },
   "author": "Gnosis (https://gnosis.pm)",

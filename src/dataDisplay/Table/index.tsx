@@ -25,12 +25,12 @@ import { FixedIcon } from '../..';
 export enum TableAlignment {
   left = 'left',
   right = 'right',
-  center = 'center'
+  center = 'center',
 }
 
 export enum TableSortDirection {
   asc = 'asc',
-  desc = 'desc'
+  desc = 'desc',
 }
 
 export type TableHeader = {
@@ -75,8 +75,8 @@ const getHeaders = (
     ...headers,
     {
       id: 'chevron',
-      label: ''
-    }
+      label: '',
+    },
   ];
 };
 
@@ -97,8 +97,8 @@ const getRowCells = (
         <FixedIcon type="chevronUp" />
       ) : (
         <FixedIcon type="chevronDown" />
-      )
-    }
+      ),
+    },
   ];
 };
 
@@ -110,8 +110,8 @@ export const Table = ({
   selectedRowIds = new Set(),
   sortedByHeaderId,
   sortDirection,
-  onRowClick = () => {},
-  onHeaderClick = () => {}
+  onRowClick = () => undefined,
+  onHeaderClick = () => undefined,
 }: Props): React.ReactElement => (
   <TableContainer component={Paper} elevation={3}>
     <TableMui className={className}>
