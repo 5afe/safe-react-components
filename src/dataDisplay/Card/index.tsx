@@ -12,10 +12,11 @@ const StyledCard = styled.div`
 
 type Props = {
   className?: string;
+  children: React.ReactNode;
 };
 
-const Card = ({ className }: Props): React.ReactElement => (
-  <StyledCard className={className} />
+const Card = ({ className, children }: Props): React.ReactElement => (
+  <StyledCard className={className}>{children}</StyledCard>
 );
 
 export default Card;

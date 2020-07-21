@@ -11,7 +11,7 @@ export default {
   },
 };
 
-export const card = () => (
+export const SimpleCard = (): React.ReactElement => (
   <Card>
     <Title size="xs">Some text</Title>
   </Card>
