@@ -10,9 +10,11 @@ type Props = {
   className?: string;
 };
 
-const StyledCircularProgress = styled(({ size, className }: Props): React.ReactElement => (
-  <CircularProgress size={theme.loader.size[size]} className={className} />
-))`
+const StyledCircularProgress = styled(
+  ({ size, className }: Props): React.ReactElement => (
+    <CircularProgress size={theme.loader.size[size]} className={className} />
+  )
+)`
   &.MuiCircularProgress-colorPrimary {
     color: ${({ theme, color = 'primary' }) => theme.colors[color]};
   }

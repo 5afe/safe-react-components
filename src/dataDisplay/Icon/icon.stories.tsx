@@ -135,5 +135,5 @@ export const customColor = () => (
 );
 
 export const withTooltip = () => (
-    <Icon size="md" type="add" color="primary" tooltip="some text" />
+  <Icon size="md" type="add" color="primary" tooltip="some text" />
 );

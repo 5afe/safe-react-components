@@ -143,7 +143,7 @@ export const Table = ({
             selectedRowIds.has(row.id),
             isCollapsible
           );
-          
+
           return (
             <>
               <TableRow
@@ -165,7 +165,9 @@ export const Table = ({
               {/* Collapsible content */}
               {isCollapsible && (
                 <TableRow>
-                  <TableCell colSpan={rowCells.length} style={{ paddingBottom: 0, paddingTop: 0 }}>
+                  <TableCell
+                    colSpan={rowCells.length}
+                    style={{ paddingBottom: 0, paddingTop: 0 }}>
                     <Collapse
                       in={selectedRowIds.has(row.id)}
                       timeout="auto"
