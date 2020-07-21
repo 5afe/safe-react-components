@@ -15,17 +15,17 @@ export default {
 const headerCells = [
   {
     id: 'col1',
-    label: 'col1'
+    label: 'Asset'
   },
   {
     id: 'col2',
     alignment: TableAlignment.right,
-    label: 'col2'
+    label: 'Balance'
   },
   {
     id: 'col3',
     alignment: TableAlignment.right,
-    label: 'col3'
+    label: 'Value'
   }
 ];
 
@@ -38,7 +38,7 @@ const rows = [
         content: <Icon type="addressBook" size="sm" />
       },
       {
-        content: 1,
+        content: 123,
         alignment: TableAlignment.right
       },
       {
@@ -55,7 +55,7 @@ const rows = [
         content: <Icon type="apps" size="sm" />
       },
       {
-        content: 2,
+        content: 456,
         alignment: TableAlignment.right
       },
       {

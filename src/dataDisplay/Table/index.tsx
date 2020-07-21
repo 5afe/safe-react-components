@@ -6,7 +6,6 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Collapse from '@material-ui/core/Collapse';
 import { rgba } from 'polished';
@@ -14,6 +13,14 @@ import { rgba } from 'polished';
 import styled from 'styled-components';
 
 import { FixedIcon } from '../..';
+import Text from '../Text';
+
+
+const StyledTableContainer = styled(TableContainer)`
+  box-shadow: 1px 2px 10px 0 ${({ theme }) => rgba(theme.colors.shadow.color, 0.15)};
+  border-radius: 8px;
+  background-color: ${({ theme }) => theme.colors.white};
+`;
 
 const StyledTableHead = styled(TableHead)`
   && {
@@ -23,8 +30,16 @@ const StyledTableHead = styled(TableHead)`
 
 const StyledTableRow = styled(TableRow)`
   && {
-    border-top: 1px solid ${({ theme }) => theme.colors.separator};
-    border-bottom: 1px solid ${({ theme }) => theme.colors.separator};
+    border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
+    /*border-top: 1px solid ${({ theme }) => theme.colors.separator};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.separator};*/
+
+    &:first-child {
+      border-top: 0;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
 
     &.MuiTableRow-hover:hover,
     &.Mui-selected,
@@ -41,9 +56,17 @@ const StyledTableCellCollapsible = styled(TableCell)`
 `;
 
 const StyledCollapse = styled(Collapse)`
-  border-top: 1px solid ${({ theme }) => theme.colors.separator};
   border-bottom: 1px solid ${({ theme }) => theme.colors.separator};
   padding: 0 16px;
+`;
+
+const StyledText = styled(Text)`
+  text-align: inherit;
+`;
+
+const StyledTextCap = styled(Text)`
+  text-align: inherit;
+  text-transform: uppercase;
 `;
 
 export enum TableAlignment {
@@ -116,7 +139,7 @@ const getRowCells = (
   return [
     ...cells,
     {
-      alignment: TableAlignment.center,
+      alignment: TableAlignment.right,
       content: isSelected ? (
         <FixedIcon type="chevronUp" />
       ) : (
@@ -137,7 +160,7 @@ export const Table = ({
   onRowClick = () => {},
   onHeaderClick = () => {}
 }: Props) => (
-  <TableContainer component={Paper} elevation={3}>
+  <StyledTableContainer>
     <TableMui className={className}>
       {/* HEADER CELLS */}
       {headers && (
@@ -151,7 +174,7 @@ export const Table = ({
                   active={sortedByHeaderId === header.id}
                   direction={sortDirection}
                   onClick={() => onHeaderClick(header.id)}>
-                  {header.label}
+                  <StyledTextCap size="sm" strong>{header.label}</StyledTextCap>
                 </TableSortLabel>
               </TableCell>
             ))}
@@ -180,7 +203,7 @@ export const Table = ({
                     <TableCell
                       key={c.id || index}
                       align={c.alignment || TableAlignment.left}>
-                      {c.content}
+                      <StyledText size="lg">{c.content}</StyledText>
                     </TableCell>
                   );
                 })}
@@ -194,7 +217,9 @@ export const Table = ({
                       in={selectedRowIds.has(row.id)}
                       timeout="auto"
                       unmountOnExit>
-                      <Box margin={1}>{row.collapsibleContent}</Box>
+                      <Box margin={1}>
+                        <StyledText size="lg">{row.collapsibleContent}</StyledText>
+                      </Box>
                     </StyledCollapse>
                   </StyledTableCellCollapsible>
                 </TableRow>
@@ -204,5 +229,5 @@ export const Table = ({
         })}
       </TableBody>
     </TableMui>
-  </TableContainer>
+  </StyledTableContainer>
 );
