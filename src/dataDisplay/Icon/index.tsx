@@ -161,9 +161,10 @@ const icons = {
 };
 
 export type IconType = typeof icons;
+export type IconTypes = keyof IconType;
 
 type Props = {
-  type: keyof IconType;
+  type: IconTypes;
   size: keyof Theme['icons']['size'];
   color?: keyof Theme['colors'];
   tooltip?: string;
