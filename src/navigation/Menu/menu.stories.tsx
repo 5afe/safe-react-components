@@ -7,8 +7,8 @@ export default {
   title: 'navigation/Menu',
   component: Menu,
   parameters: {
-    componentSubtitle: 'Menu component used in Safe Multisig.'
-  }
+    componentSubtitle: 'Menu component used in Safe Multisig.',
+  },
 };
 
 export const loader = () => (

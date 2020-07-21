@@ -11,45 +11,44 @@ const Container = styled.div`
   grid-template-rows: 50px auto 60px;
   grid-gap: 10px;
   grid-template-areas:
-    "title title"
-    "navbar body"
-    "footer footer";
+    'title title'
+    'navbar body'
+    'footer footer';
 
-    @media(max-width: 400px) {
+  @media (max-width: 400px) {
     grid-template-columns: 1fr;
     grid-template-rows: 50px auto 1fr;
     grid-template-areas:
-      "title"
-      "navbar"
-      "body"
-      "footer";
+      'title'
+      'navbar'
+      'body'
+      'footer';
   }
 `;
 
 const Title = styled.div`
-    background: rgb(137, 180, 206);
-    grid-area: title;
+  background: rgb(137, 180, 206);
+  grid-area: title;
 `;
 const Navbar = styled.div`
-    background: rgb(139, 131, 127);
-    grid-area: navbar;
+  background: rgb(139, 131, 127);
+  grid-area: navbar;
 `;
 const Body = styled.div`
-    background: rgb(193, 197, 197);
-    grid-area: body;
+  background: rgb(193, 197, 197);
+  grid-area: body;
 `;
 const Footer = styled.div`
-    background: rgb(158, 158, 158);
-    grid-area: footer;
+  background: rgb(158, 158, 158);
+  grid-area: footer;
 `;
-  
 
 const Layout = () => (
   <Container>
-      <Title>Title</Title>
-      <Navbar>Navbar</Navbar>
-      <Body>Body</Body>
-      <Footer>footer</Footer>
+    <Title>Title</Title>
+    <Navbar>Navbar</Navbar>
+    <Body>Body</Body>
+    <Footer>footer</Footer>
   </Container>
 );
 

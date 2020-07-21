@@ -6,8 +6,8 @@ export default {
   title: 'Inputs/Checkbox',
   component: Checkbox,
   parameters: {
-    componentSubtitle: 'Checkbox Input.'
-  }
+    componentSubtitle: 'Checkbox Input.',
+  },
 };
 
 export const checkbox = () => {

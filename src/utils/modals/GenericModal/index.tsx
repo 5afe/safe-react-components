@@ -66,7 +66,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     overflowY: 'scroll',
-    background: rgba(theme.colors.overlay.color, theme.colors.overlay.opacity)
+    background: rgba(theme.colors.overlay.color, theme.colors.overlay.opacity),
   },
 
   paper: {
@@ -82,9 +82,9 @@ const useStyles = makeStyles({
     boxShadow: `0 0 ${theme.colors.shadow.opacity} 0 ${theme.colors.shadow.color}`,
 
     '&:focus': {
-      outline: 'none'
-    }
-  }
+      outline: 'none',
+    },
+  },
 });
 
 const GenericModal = ({
@@ -93,7 +93,7 @@ const GenericModal = ({
   onClose,
   title,
   withoutBodyPadding,
-  smallHeight
+  smallHeight,
 }: GenericModalProps & { smallHeight: boolean }) => {
   const classes = useStyles({ smallHeight });
   console.log('smallHeight: ', smallHeight);

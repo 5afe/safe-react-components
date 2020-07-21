@@ -9,7 +9,7 @@ export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   iconType?: keyof IconType;
   color: keyof Theme['colors'];
   children: any;
-};
+}
 
 const StyledButtonLink = styled.button<Props>`
   background: transparent;
@@ -20,7 +20,7 @@ const StyledButtonLink = styled.button<Props>`
   font-family: inherit;
   display: flex;
   align-items: center;
-  
+
   :focus {
     outline: none;
   }

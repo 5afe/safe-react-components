@@ -6,8 +6,8 @@ export default {
   title: 'Inputs/Button',
   component: Button,
   parameters: {
-    componentSubtitle: 'Button component with several variants'
-  }
+    componentSubtitle: 'Button component with several variants',
+  },
 };
 
 export const button = () => (

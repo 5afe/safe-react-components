@@ -8,7 +8,6 @@ import styled from 'styled-components';
 
 import theme from '../../theme';
 
-
 export interface Props {
   label: string;
   checked: boolean;
@@ -27,7 +26,7 @@ const CustomCheckbox = withStyles({
     '&$checked': {
       color: theme.colors.primary,
     },
-  }
+  },
 })((props: any) => <CheckboxMUI color="default" {...props} />);
 
 const StyledFormHelperText = styled(FormHelperText)`

@@ -6,8 +6,8 @@ export default {
   title: 'Data Display/Icon Text',
   component: IconText,
   parameters: {
-    componentSubtitle: 'IconText, It combines both Icon and Text component.'
-  }
+    componentSubtitle: 'IconText, It combines both Icon and Text component.',
+  },
 };
 
 //export const title = () => <Title size="lg">Title LG</Title>;

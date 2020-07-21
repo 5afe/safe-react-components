@@ -6,8 +6,8 @@ export default {
   title: 'Data Display/Title',
   component: Title,
   parameters: {
-    componentSubtitle: 'Title Component.'
-  }
+    componentSubtitle: 'Title Component.',
+  },
 };
 
 export const title = () => <Title size="lg">Title LG</Title>;

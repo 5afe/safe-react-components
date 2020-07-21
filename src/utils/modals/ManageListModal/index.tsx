@@ -7,7 +7,7 @@ import {
   Text,
   Button,
   Switch,
-  ModalFooterConfirmation
+  ModalFooterConfirmation,
 } from '../../../index';
 
 const SearchInput = styled.input`
@@ -103,7 +103,7 @@ const ManageList = ({
   isSubmitFormDisabled = false,
   onSubmitForm,
   onItemToggle,
-  onClose
+  onClose,
 }: Props): JSX.Element => {
   const [search, setSearch] = useState('');
   const [isFormMode, setIsFormMode] = useState(false);

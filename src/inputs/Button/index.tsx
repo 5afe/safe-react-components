@@ -39,15 +39,15 @@ const Button = ({
         'background-color':
           variant === 'contained'
             ? theme.colors[`${color}Hover` as HoverColor]
-            : theme.colors.white
+            : theme.colors.white,
       },
 
       '&:disabled': {
         opacity: theme.colors.disabled.opacity,
         color:
-          variant === 'contained' ? theme.colors.white : theme.colors[color]
-      }
-    }
+          variant === 'contained' ? theme.colors.white : theme.colors[color],
+      },
+    },
   })(ButtonMUI);
 
   return (

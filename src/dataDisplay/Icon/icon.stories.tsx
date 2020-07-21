@@ -8,8 +8,8 @@ export default {
   component: Icon,
   parameters: {
     componentSubtitle:
-      'Icon component, you can select one of the set of icons we already have configured.'
-  }
+      'Icon component, you can select one of the set of icons we already have configured.',
+  },
 };
 
 export const icons = () => {
@@ -108,7 +108,7 @@ export const icons = () => {
         'transactionsInactive',
         'unlocked',
         'userEdit',
-        'wallet'
+        'wallet',
       ].map((type: any, index) => (
         <IconBox key={index}>
           <Icon size="md" type={type} />

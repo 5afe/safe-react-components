@@ -33,12 +33,12 @@ const StyledTooltip = withStyles(() => ({
   tooltip: {
     backgroundColor: theme.colors.white,
     color: theme.colors.text,
-    boxShadow: `0px 0px 10px ${rgba(theme.colors.shadow.color, 0.2)}`
+    boxShadow: `0px 0px 10px ${rgba(theme.colors.shadow.color, 0.2)}`,
   },
   arrow: {
     color: theme.colors.white,
-    boxShadow: `0px 0px 10px ${rgba(theme.colors.shadow.color, 0.2)}`
-  }
+    boxShadow: `0px 0px 10px ${rgba(theme.colors.shadow.color, 0.2)}`,
+  },
 }))(Tooltip);
 
 const Text = ({ children, tooltip, ...rest }: Props): React.ReactElement => {

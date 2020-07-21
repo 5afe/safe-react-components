@@ -18,7 +18,6 @@ import settingsChange from './images/settingsChange';
 import creatingInProgress from './images/creatingInProgress';
 import notOwner from './images/notOwner';
 
-
 const icons = {
   arrowSort,
   connectedRinkeby,

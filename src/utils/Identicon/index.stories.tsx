@@ -6,8 +6,8 @@ export default {
   title: 'Utils/Identicon',
   component: Identicon,
   parameters: {
-    componentSubtitle: 'Identicon Component.'
-  }
+    componentSubtitle: 'Identicon Component.',
+  },
 };
 
 export const sizes = () => {

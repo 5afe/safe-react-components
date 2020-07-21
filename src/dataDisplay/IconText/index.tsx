@@ -32,7 +32,7 @@ const IconText = ({
   iconType,
   text,
   color,
-  className
+  className,
 }: Props): React.ReactElement => (
   <StyledIconText className={className}>
     <Icon size={iconSize} type={iconType} color={color} />

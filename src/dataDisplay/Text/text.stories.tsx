@@ -6,8 +6,8 @@ export default {
   title: 'Data Display/Text',
   component: Text,
   parameters: {
-    componentSubtitle: 'Text component, it allows several configurations'
-  }
+    componentSubtitle: 'Text component, it allows several configurations',
+  },
 };
 
 export const text = () => <Text size="sm">Some Text...</Text>;

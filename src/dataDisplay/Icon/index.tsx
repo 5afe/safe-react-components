@@ -86,8 +86,8 @@ const StyledTooltip = withStyles(() => ({
     backgroundColor: theme.colors.overlay.color,
     border: `1px solid ${theme.colors.icon}`,
     boxShadow: `1px 2px 4px ${rgba(theme.colors.shadow.color, 0.08)}`,
-    color: theme.colors.text
-  }
+    color: theme.colors.text,
+  },
 }))(Tooltip);
 
 const icons = {
@@ -157,7 +157,7 @@ const icons = {
   transactionsInactive,
   unlocked,
   userEdit,
-  wallet
+  wallet,
 };
 
 export type IconType = typeof icons;
@@ -179,7 +179,7 @@ function Icon({
   size,
   color,
   tooltip,
-  className
+  className,
 }: Props): React.ReactElement {
   const IconElement = (
     <StyledIcon color={color} className={className}>

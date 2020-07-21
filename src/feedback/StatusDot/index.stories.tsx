@@ -5,7 +5,7 @@ import StatusDot from './index';
 export default {
   title: 'Feedback/StatusDot',
   component: StatusDot,
-  parameters: {}
+  parameters: {},
 };
 
 export const statusDot = () => (

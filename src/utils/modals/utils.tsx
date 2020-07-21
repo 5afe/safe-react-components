@@ -21,7 +21,7 @@ export const ModalFooterConfirmation = ({
   handleCancel,
   okDisabled,
   handleOk,
-  okText = 'Confirm'
+  okText = 'Confirm',
 }: Props) => {
   return (
     <FooterWrapper>

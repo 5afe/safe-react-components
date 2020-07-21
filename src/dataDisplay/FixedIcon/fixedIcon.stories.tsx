@@ -8,8 +8,8 @@ export default {
   component: FixedIcon,
   parameters: {
     componentSubtitle: `Components that renders an icon customized for Safe Multisig app, this icon is not 
-     customizable by props. If you need generic purposes Icons, try Icon component.`
-  }
+     customizable by props. If you need generic purposes Icons, try Icon component.`,
+  },
 };
 
 export const icons = () => {
@@ -51,9 +51,7 @@ export const icons = () => {
         'chevronDown',
         'settingsChange',
         'creatingInProgress',
-        'notOwner'
-
-        
+        'notOwner',
       ].map((type: any, index) => (
         <IconBox key={index}>
           <FixedIcon type={type} />
@@ -63,4 +61,3 @@ export const icons = () => {
     </Wrapper>
   );
 };
-

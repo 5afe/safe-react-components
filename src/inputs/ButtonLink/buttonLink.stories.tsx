@@ -6,8 +6,8 @@ export default {
   title: 'inputs/ButtonLink',
   component: ButtonLink,
   parameters: {
-    componentSubtitle: 'Button component as a Link.'
-  }
+    componentSubtitle: 'Button component as a Link.',
+  },
 };
 
 export const buttonLink = () => (

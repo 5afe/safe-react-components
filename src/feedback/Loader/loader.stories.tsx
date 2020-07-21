@@ -6,8 +6,8 @@ export default {
   title: 'Feedback/Loader',
   component: Loader,
   parameters: {
-    componentSubtitle: 'Loader component'
-  }
+    componentSubtitle: 'Loader component',
+  },
 };
 
 export const loader = () => (

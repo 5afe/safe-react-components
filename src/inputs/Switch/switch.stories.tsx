@@ -6,8 +6,8 @@ export default {
   title: 'Inputs/Switch',
   component: Switch,
   parameters: {
-    componentSubtitle: 'Switch input component.'
-  }
+    componentSubtitle: 'Switch input component.',
+  },
 };
 
 export const switchInput = () => {

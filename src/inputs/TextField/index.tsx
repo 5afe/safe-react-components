@@ -63,10 +63,10 @@ function TextField({
       ) : null,
       endAdornment: endAdornment ? (
         <InputAdornment position="end">{endAdornment}</InputAdornment>
-      ) : null
+      ) : null,
     },
     disabled: readOnly,
-    readOnly: readOnly
+    readOnly: readOnly,
   };
 
   if (input) {

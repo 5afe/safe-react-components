@@ -8,8 +8,8 @@ export default {
   parameters: {
     componentSubtitle: `It shows a Dialog, with a modal look and feels, but only being 
     rendered inside a container instead of taking position absolute.
-    `
-  }
+    `,
+  },
 };
 
 export const fixedDialog = () => (
