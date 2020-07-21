@@ -10,25 +10,25 @@ export default {
   },
 };
 
-export const modalFooter = () => {
+export const ModalFooter = (): React.ReactElement => {
   return (
     <ModalFooterConfirmation
       okText="ok button text"
       cancelText="cancel button text"
-      handleCancel={() => {}}
-      handleOk={() => {}}
+      handleCancel={() => undefined}
+      handleOk={() => undefined}
     />
   );
 };
 
-export const okDisabled = () => {
+export const OkDisabled = (): React.ReactElement => {
   return (
     <ModalFooterConfirmation
       okText="ok button text"
       cancelText="cancel button text"
       okDisabled
-      handleCancel={() => {}}
-      handleOk={() => {}}
+      handleCancel={() => undefined}
+      handleOk={() => undefined}
     />
   );
 };

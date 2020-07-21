@@ -10,7 +10,7 @@ export default {
   },
 };
 
-export const section = () => (
+export const Section = (): React.ReactElement => (
   <>
     <div>Some content</div>
     <Divider />

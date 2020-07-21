@@ -12,7 +12,7 @@ export default {
   },
 };
 
-export const modal = () => {
+export const SimpleModal = (): React.ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const [items, setItems] = useState([
     {
@@ -60,7 +60,7 @@ export const modal = () => {
           itemList={items}
           addButtonLabel="Add custom app"
           formBody={<div>some form</div>}
-          onSubmitForm={() => {}}
+          onSubmitForm={() => undefined}
           onClose={() => setIsOpen(false)}
           onItemToggle={onItemToggle}
         />

@@ -57,7 +57,7 @@ export type GenericModalProps = {
   body: React.ReactNode;
   withoutBodyPadding?: boolean;
   footer?: React.ReactNode;
-  onClose: () => any;
+  onClose: () => void;
 };
 
 const useStyles = makeStyles({
@@ -122,7 +122,7 @@ const GenericModal = ({
   );
 };
 
-const MediaModal = (props: GenericModalProps) => (
+const MediaModal = (props: GenericModalProps): React.ReactElement => (
   <Media query={{ maxHeight: 500 }}>
     {(matches) => <GenericModal {...props} smallHeight={matches} />}
   </Media>

@@ -18,7 +18,7 @@ const items: Item[] = [
   { id: '5', label: 'Settings', customContent: <div>custom</div> },
 ];
 
-export const tab = () => {
+export const SimpleTab = (): React.ReactElement => {
   const [selected, setSelected] = useState('3');
 
   return (
@@ -34,7 +34,7 @@ export const tab = () => {
   );
 };
 
-export const tabContained = () => {
+export const TabContained = (): React.ReactElement => {
   const [selected, setSelected] = useState('3');
 
   return (
@@ -50,7 +50,7 @@ export const tabContained = () => {
   );
 };
 
-export const tabContainedFull = () => {
+export const TabContainedFull = (): React.ReactElement => {
   const [selected, setSelected] = useState('3');
 
   return (

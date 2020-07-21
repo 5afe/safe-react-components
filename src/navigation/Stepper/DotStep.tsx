@@ -32,7 +32,11 @@ type Props = {
   currentIndex: number;
   error?: boolean;
 };
-const DotStep = ({ currentIndex, dotIndex, error }: Props) => {
+const DotStep = ({
+  currentIndex,
+  dotIndex,
+  error,
+}: Props): React.ReactElement => {
   return (
     <Circle disabled={dotIndex > currentIndex} error={error}>
       {dotIndex < currentIndex ? (

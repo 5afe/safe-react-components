@@ -10,7 +10,7 @@ export default {
   },
 };
 
-export const switchInput = () => {
+export const SwitchInput = (): React.ReactElement => {
   const [enabled, setEnabled] = useState(true);
   return <Switch checked={enabled} onChange={setEnabled} />;
 };

@@ -51,7 +51,7 @@ function TextField({
   endAdornment,
   className,
   ...rest
-}: Props) {
+}: Props): React.ReactElement {
   const customProps = {
     error: meta && !!meta.error,
     label: (meta && meta.error) || label,

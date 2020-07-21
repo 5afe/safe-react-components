@@ -10,7 +10,7 @@ export default {
   },
 };
 
-export const sizes = () => {
+export const sizes = (): React.ReactElement => {
   return (
     <>
       <Identicon address="thisIsAnExample" size="sm" />

@@ -109,7 +109,10 @@ const Tab = ({
   variant = 'outlined',
   fullWidth,
 }: Props): JSX.Element => {
-  const handleChange = (_event: React.ChangeEvent<{}>, value: string): void => {
+  const handleChange = (
+    _event: React.ChangeEvent<unknown>,
+    value: string
+  ): void => {
     onChange(value);
   };
 

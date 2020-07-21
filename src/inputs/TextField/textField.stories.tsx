@@ -13,7 +13,7 @@ export default {
 
 const onSubmit = (e: React.FormEvent) => e.preventDefault();
 
-export const textField = () => {
+export const SimpleTextField = (): React.ReactElement => {
   const [value, setValue] = useState<string>('');
   return (
     <form noValidate autoComplete="off" onSubmit={onSubmit}>
@@ -27,7 +27,7 @@ export const textField = () => {
   );
 };
 
-export const error = () => {
+export const Error = (): React.ReactElement => {
   const [value, setValue] = useState<string>('some incorrect value');
   return (
     <form noValidate autoComplete="off" onSubmit={onSubmit}>
@@ -42,7 +42,7 @@ export const error = () => {
   );
 };
 
-export const readOnly = () => {
+export const ReadOnly = (): React.ReactElement => {
   const [value, setValue] = useState<string>('some value readOnly');
   return (
     <form noValidate autoComplete="off" onSubmit={onSubmit}>
@@ -57,7 +57,7 @@ export const readOnly = () => {
   );
 };
 
-export const startAdornment = () => {
+export const StartAdornment = (): React.ReactElement => {
   const [value, setValue] = useState('');
   const adornment = <Icon size="md" type="assets" />;
   return (
@@ -75,7 +75,7 @@ export const startAdornment = () => {
   );
 };
 
-export const endAdornment = () => {
+export const EndAdornment = (): React.ReactElement => {
   const [value, setValue] = useState('');
   const adornment = <Icon size="md" type="assets" />;
   return (

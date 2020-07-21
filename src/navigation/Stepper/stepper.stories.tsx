@@ -18,14 +18,14 @@ const steps = [
   { id: '5', label: 'Result' },
 ];
 
-export const stepper = () => (
+export const stepper = (): React.ReactElement => (
   <Stepper steps={steps} activeStepIndex={1} orientation="vertical" />
 );
 
-export const stepWithError = () => (
+export const stepWithError = (): React.ReactElement => (
   <Stepper steps={steps} activeStepIndex={1} orientation="vertical" error />
 );
 
-export const orientationHorizontal = () => (
+export const orientationHorizontal = (): React.ReactElement => (
   <Stepper steps={steps} activeStepIndex={1} orientation="horizontal" />
 );

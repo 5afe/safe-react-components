@@ -11,7 +11,7 @@ export default {
   },
 };
 
-export const modal = () => {
+export const SimpleModal = (): React.ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>

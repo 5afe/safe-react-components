@@ -11,7 +11,7 @@ export default {
   },
 };
 
-export const loader = () => (
+export const Loader = (): React.ReactElement => (
   <Menu>
     <ButtonLink color="primary">Item 1</ButtonLink>
     <ButtonLink color="error" iconType="delete">

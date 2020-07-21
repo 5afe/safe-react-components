@@ -12,11 +12,11 @@ export default {
   },
 };
 
-export const fixedDialog = () => (
+export const SimpleFixedDialog = (): React.ReactElement => (
   <FixedDialog
     title="Legal Disclaimer"
     body={<div>Some Body</div>}
-    onCancel={() => {}}
-    onConfirm={() => {}}
+    onCancel={() => undefined}
+    onConfirm={() => undefined}
   />
 );
