@@ -1,12 +1,11 @@
 import * as React from 'react';
 
 import styled from 'styled-components';
-import { Theme, ThemeColors } from '../../theme';
-
+import { ThemeColors, ThemeStatusDotSize } from '../../theme';
 
 type Props = {
   color: ThemeColors;
-  size: StatusDotSize;
+  size: ThemeStatusDotSize;
   className?: string;
 };
 

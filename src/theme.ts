@@ -136,5 +136,4 @@ export type ThemeLoaderSize = keyof Theme['loader']['size'];
 export type ThemeButtonSize = keyof Theme['buttons']['size'];
 export type ThemeIdenticonSize = keyof Theme['identicon']['size'];
 
-
 export default theme;
