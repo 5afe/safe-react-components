@@ -2,16 +2,14 @@ import * as React from 'react';
 
 import makeBlockie from 'ethereum-blockies-base64';
 import styled from 'styled-components';
-import { Theme } from '../../theme';
-
-type IdenticonSize = keyof Theme['identicon']['size'];
+import { ThemeIdenticonSize } from '../../theme';
 
 type Props = {
   address: string;
-  size: IdenticonSize;
+  size: ThemeIdenticonSize;
 };
 
-const StyledImg = styled.img<{ size: IdenticonSize }>`
+const StyledImg = styled.img<{ size: ThemeIdenticonSize }>`
   height: ${({ size, theme }) => theme.identicon.size[size]};
   width: ${({ size, theme }) => theme.identicon.size[size]};
   border-radius: 50%;

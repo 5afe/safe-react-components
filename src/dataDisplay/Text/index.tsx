@@ -4,12 +4,12 @@ import Tooltip from '@material-ui/core/Tooltip';
 import { withStyles } from '@material-ui/core/styles';
 import { rgba } from 'polished';
 
-import theme, { Theme } from '../../theme';
+import theme, { ThemeTextSize, ThemeColors } from '../../theme';
 
 type Props = {
   children: React.ReactNode;
-  size: keyof Theme['text']['size'];
-  color?: keyof Theme['colors'];
+  size: ThemeTextSize;
+  color?: ThemeColors;
   strong?: boolean;
   center?: boolean;
   tooltip?: string;

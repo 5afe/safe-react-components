@@ -72,9 +72,9 @@ import userEdit from './images/userEdit';
 import wallet from './images/wallet';
 import { rgba } from 'polished';
 
-import theme, { Theme } from '../../theme';
+import theme, { Theme, ThemeColors, ThemeIconSize } from '../../theme';
 
-const StyledIcon = styled.span<{ color?: keyof Theme['colors'] }>`
+const StyledIcon = styled.span<{ color?: ThemeColors }>`
   .icon-color {
     fill: ${({ theme, color }) =>
       color ? theme.colors[color] : theme.colors.icon};
@@ -165,8 +165,8 @@ export type IconTypes = keyof IconType;
 
 type Props = {
   type: IconTypes;
-  size: keyof Theme['icons']['size'];
-  color?: keyof Theme['colors'];
+  size: ThemeIconSize;
+  color?: ThemeColors;
   tooltip?: string;
   className?: string;
 };
@@ -175,13 +175,13 @@ type Props = {
  * The `Icon` renders an icon, it can be one already defined specified by
  * the type props or custom one using the customUrl.
  */
-function Icon({
+const Icon = ({
   type,
   size,
   color,
   tooltip,
   className,
-}: Props): React.ReactElement {
+}: Props): React.ReactElement => {
   const IconElement = (
     <StyledIcon color={color} className={className}>
       {icons[type][size]}
@@ -194,6 +194,6 @@ function Icon({
       {IconElement}
     </StyledTooltip>
   );
-}
+};
 
 export default Icon;

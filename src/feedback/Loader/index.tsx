@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-import theme, { Theme } from '../../theme';
+import theme, { ThemeLoaderSize, ThemeColors } from '../../theme';
 
 type Props = {
-  size: keyof Theme['loader']['size'];
-  color?: keyof Theme['colors'];
+  size: ThemeLoaderSize;
+  color?: ThemeColors;
   className?: string;
 };
 

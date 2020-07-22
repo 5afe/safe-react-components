@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Theme } from '../../theme';
+import { ThemeTitleSize } from '../../theme';
 
 type Props = {
   children: string;
-  size: keyof Theme['title']['size'];
+  size: ThemeTitleSize;
   withoutMargin?: boolean;
 };
 

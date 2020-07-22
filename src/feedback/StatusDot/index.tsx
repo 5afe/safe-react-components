@@ -1,12 +1,11 @@
 import * as React from 'react';
 
 import styled from 'styled-components';
-import { Theme } from '../../theme';
+import { Theme, ThemeColors } from '../../theme';
 
-export type StatusDotSize = keyof Theme['statusDot']['size'];
 
 type Props = {
-  color: keyof Theme['colors'];
+  color: ThemeColors;
   size: StatusDotSize;
   className?: string;
 };

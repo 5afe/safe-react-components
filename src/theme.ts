@@ -127,4 +127,14 @@ const theme = {
 
 export type Theme = typeof theme;
 
+export type ThemeColors = keyof Theme['colors'];
+export type ThemeIconSize = keyof Theme['icons']['size'];
+export type ThemeTextSize = keyof Theme['text']['size'];
+export type ThemeTitleSize = keyof Theme['title']['size'];
+export type ThemeStatusDotSize = keyof Theme['statusDot']['size'];
+export type ThemeLoaderSize = keyof Theme['loader']['size'];
+export type ThemeButtonSize = keyof Theme['buttons']['size'];
+export type ThemeIdenticonSize = keyof Theme['identicon']['size'];
+
+
 export default theme;
