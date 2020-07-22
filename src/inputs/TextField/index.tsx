@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 type Props = {
   value: string;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   label: string;
   readOnly?: boolean;
   meta?: {
@@ -20,8 +20,9 @@ type Props = {
 const CustomTextField = styled((props: TextFieldProps) => (
   <TextFieldMui {...props} />
 ))<Props>`
-  width: 400px;
   && {
+    width: 400px;
+
     .MuiFilledInput-input {
       cursor: ${({ readOnly }) => (readOnly === true ? 'not-allowed' : 'auto')};
     }
@@ -78,7 +79,6 @@ function TextField({
         {...inputRest}
         className={className}
         size={undefined}
-        onChange={onChange}
         name={name}
         checked={!!value}
         color="primary"
