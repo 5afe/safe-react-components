@@ -6,7 +6,7 @@ import theme, { Theme } from '../../theme';
 import Icon, { IconType } from '../../dataDisplay/Icon';
 
 export interface Props extends React.ComponentPropsWithoutRef<'button'> {
-  children: any;
+  children: React.ReactNode;
   iconType?: keyof IconType;
   size: keyof Theme['buttons']['size'];
   color: 'primary' | 'secondary' | 'error';

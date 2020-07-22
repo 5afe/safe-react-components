@@ -74,7 +74,7 @@ import { rgba } from 'polished';
 
 import theme, { Theme } from '../../theme';
 
-const StyledIcon = styled.span<any>`
+const StyledIcon = styled.span<{ color?: keyof Theme['colors'] }>`
   .icon-color {
     fill: ${({ theme, color }) =>
       color ? theme.colors[color] : theme.colors.icon};

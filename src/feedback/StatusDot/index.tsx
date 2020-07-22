@@ -3,9 +3,11 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Theme } from '../../theme';
 
+export type StatusDotSize = keyof Theme['statusDot']['size'];
+
 type Props = {
   color: keyof Theme['colors'];
-  size: keyof Theme['statusDot']['size'];
+  size: StatusDotSize;
   className?: string;
 };
 

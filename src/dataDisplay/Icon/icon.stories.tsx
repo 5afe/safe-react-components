@@ -104,7 +104,7 @@ export const Icons = (): React.ReactElement => {
 
   return (
     <Wrapper>
-      {icons.map((type: any, index) => (
+      {icons.map((type, index) => (
         <IconBox key={index}>
           <Icon size="md" type={type} />
           {type}

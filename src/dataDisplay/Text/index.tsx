@@ -7,7 +7,7 @@ import { rgba } from 'polished';
 import theme, { Theme } from '../../theme';
 
 type Props = {
-  children: any;
+  children: React.ReactNode;
   size: keyof Theme['text']['size'];
   color?: keyof Theme['colors'];
   strong?: boolean;
