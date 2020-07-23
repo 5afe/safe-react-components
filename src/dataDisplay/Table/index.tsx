@@ -31,8 +31,8 @@ const StyledTableHead = styled(TableHead)`
 const StyledTableRow = styled(TableRow)`
   && {
     border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
-    /*border-top: 1px solid ${({ theme }) => theme.colors.separator};
-    border-bottom: 1px solid ${({ theme }) => theme.colors.separator};*/
+    /* border-top: 1px solid ${({ theme }) => theme.colors.separator};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.separator}; */
 
     &:first-child {
       border-top: 0;
@@ -52,16 +52,16 @@ const StyledTableRow = styled(TableRow)`
 const StyledTableCellCollapsible = styled(TableCell)`
   && {
     padding: 0;
+
+    &.MuiTableCell-root {
+      border-bottom: none;
+    }
   }
 `;
 
 const StyledCollapse = styled(Collapse)`
-  border-bottom: 1px solid ${({ theme }) => theme.colors.separator};
   padding: 0 16px;
-`;
-
-const StyledText = styled(Text)`
-  text-align: inherit;
+  border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
 `;
 
 const StyledTextCap = styled(Text)`
@@ -194,7 +194,7 @@ export const Table = ({
           );
 
           return (
-            <>
+            <React.Fragment key={row.id}>
               <StyledTableRow
                 hover
                 key={row.id}
@@ -205,7 +205,7 @@ export const Table = ({
                     <TableCell
                       key={c.id || index}
                       align={c.alignment || TableAlignment.left}>
-                      <StyledText size="lg">{c.content}</StyledText>
+                      {c.content}
                     </TableCell>
                   );
                 })}
@@ -215,20 +215,18 @@ export const Table = ({
               {isCollapsible && (
                 <TableRow>
                   <StyledTableCellCollapsible colSpan={rowCells.length}>
-                    <StyledCollapse
-                      in={selectedRowIds.has(row.id)}
-                      timeout="auto"
-                      unmountOnExit>
-                      <Box margin={1}>
-                        <StyledText size="lg">
-                          {row.collapsibleContent}
-                        </StyledText>
-                      </Box>
-                    </StyledCollapse>
+                    {selectedRowIds.has(row.id) && (
+                      <StyledCollapse
+                        in={selectedRowIds.has(row.id)}
+                        timeout="auto"
+                        unmountOnExit>
+                        <Box margin={1}>{row.collapsibleContent}</Box>
+                      </StyledCollapse>
+                    )}
                   </StyledTableCellCollapsible>
                 </TableRow>
               )}
-            </>
+            </React.Fragment>
           );
         })}
       </TableBody>
