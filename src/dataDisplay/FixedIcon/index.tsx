@@ -18,7 +18,6 @@ import settingsChange from './images/settingsChange';
 import creatingInProgress from './images/creatingInProgress';
 import notOwner from './images/notOwner';
 
-
 const icons = {
   arrowSort,
   connectedRinkeby,
@@ -40,15 +39,16 @@ const icons = {
 };
 
 export type IconType = typeof icons;
+export type IconTypes = keyof IconType;
 
 type Props = {
-  type: keyof IconType;
+  type: IconTypes;
 };
 
 /**
  * The `FixedIcon` renders an icon
  */
-function FixedIcon({ type }: Props) {
+function FixedIcon({ type }: Props): React.ReactElement {
   return <span>{icons[type]}</span>;
 }
 

@@ -1,7 +1,9 @@
 const theme = {
-  fonts: {
-    fontFamily: `'Averta', 'Roboto', 'Helvetica Neue', 'Arial', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', '-apple-system', 'BlinkMacSystemFont', sans-serif`,
-    fontFamilyCode: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`
+  buttons: {
+    size: {
+      md: { height: '36px', padding: '0 16px' },
+      lg: { height: '52px', padding: '0 25px' },
+    },
   },
   colors: {
     primary: '#008C73',
@@ -25,100 +27,113 @@ const theme = {
     pendingTagHover: '#FBE5C5',
     tag: '#D4D5D3',
     background: '#F7F5F5',
-    white: '#ffffff',    
+    white: '#ffffff',
 
     disabled: {
-      opacity: 0.5
+      opacity: 0.5,
     },
     overlay: {
       opacity: 0.75,
-      color: '#E8E7E6'
+      color: '#E8E7E6',
     },
     shadow: {
       blur: '18px',
       opacity: 0.75,
-      color: '#28363D'
-    }
+      color: '#28363D',
+    },
   },
-  buttons: {
+  statusDot: {
     size: {
-      md: { height: '36px', padding: '0 16px'},
-      lg: { height: '52px', padding: '0 25px'}
-    }
+      sm: '5px',
+      md: '10px',
+    },
   },
-  text: {
+  fonts: {
+    fontFamily: `'Averta', 'Roboto', 'Helvetica Neue', 'Arial', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', '-apple-system', 'BlinkMacSystemFont', sans-serif`,
+    fontFamilyCode: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`,
+  },
+  icons: {
     size: {
-      sm: {
-        fontSize: '11px',
-        lineHeight: '14px'
-      },
-      md: {
-        fontSize: '12px',
-        lineHeight: '16px'
-      },
-      lg: {
-        fontSize: '14px',
-        lineHeight: '20px'
-      },
-      xl: {
-        fontSize: '16px',
-        lineHeight: '22px'
-      }
-    }
+      sm: '16',
+      md: '24',
+    },
   },
   iconText: {
     size: {
       sm: null,
-      md: null
-    }
+      md: null,
+    },
   },
-  title: {
+  identicon: {
     size: {
-      xs: {
-        fontSize: '20px',
-        lineHeight: '26px'
-      },
-      sm: {
-        fontSize: '24px',
-        lineHeight: '30px'
-      },
-      md: {
-        fontSize: '32px',
-        lineHeight: '36px'
-      },
-      lg: {
-        fontSize: '44px',
-        lineHeight: '52px'
-      },
-      xl: {
-        fontSize: '60px',
-        lineHeight: '64px'
-      }
-    }
+      sm: '16px',
+      md: '32px',
+      lg: '60px',
+    },
   },
   loader: {
     size: {
       xs: '10px',
       sm: '30px',
       md: '50px',
-      lg: '70px'
-    }
+      lg: '70px',
+    },
   },
-  icons: {
+  text: {
     size: {
-      sm: '16',
-      md: '24'
-    }
+      sm: {
+        fontSize: '11px',
+        lineHeight: '14px',
+      },
+      md: {
+        fontSize: '12px',
+        lineHeight: '16px',
+      },
+      lg: {
+        fontSize: '14px',
+        lineHeight: '20px',
+      },
+      xl: {
+        fontSize: '16px',
+        lineHeight: '22px',
+      },
+    },
   },
-  identicon: {
+  title: {
     size: {
-      sm: '16px',
-      md: '32px',
-      lg: '60px'
-    }
-  }
+      xs: {
+        fontSize: '20px',
+        lineHeight: '26px',
+      },
+      sm: {
+        fontSize: '24px',
+        lineHeight: '30px',
+      },
+      md: {
+        fontSize: '32px',
+        lineHeight: '36px',
+      },
+      lg: {
+        fontSize: '44px',
+        lineHeight: '52px',
+      },
+      xl: {
+        fontSize: '60px',
+        lineHeight: '64px',
+      },
+    },
+  },
 };
 
 export type Theme = typeof theme;
+
+export type ThemeColors = keyof Theme['colors'];
+export type ThemeIconSize = keyof Theme['icons']['size'];
+export type ThemeTextSize = keyof Theme['text']['size'];
+export type ThemeTitleSize = keyof Theme['title']['size'];
+export type ThemeStatusDotSize = keyof Theme['statusDot']['size'];
+export type ThemeLoaderSize = keyof Theme['loader']['size'];
+export type ThemeButtonSize = keyof Theme['buttons']['size'];
+export type ThemeIdenticonSize = keyof Theme['identicon']['size'];
 
 export default theme;

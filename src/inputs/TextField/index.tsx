@@ -45,14 +45,13 @@ function TextField({
   value,
   onChange,
   meta,
-  disabled,
   readOnly,
   label,
   startAdornment,
   endAdornment,
   className,
   ...rest
-}: Props) {
+}: Props): React.ReactElement {
   const customProps = {
     error: meta && !!meta.error,
     label: (meta && meta.error) || label,
@@ -64,14 +63,14 @@ function TextField({
       ) : null,
       endAdornment: endAdornment ? (
         <InputAdornment position="end">{endAdornment}</InputAdornment>
-      ) : null
+      ) : null,
     },
     disabled: readOnly,
-    readOnly: readOnly
+    readOnly: readOnly,
   };
 
   if (input) {
-    const { name, value, ...inputRest } = input!;
+    const { name, value, ...inputRest } = input;
     return (
       <CustomTextField
         {...rest}

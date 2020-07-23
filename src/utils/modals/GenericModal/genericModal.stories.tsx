@@ -7,11 +7,11 @@ export default {
   title: 'Utils/Modals/Generic',
   component: GenericModal,
   parameters: {
-    componentSubtitle: 'A generic modal with custom Title, Body and Footer'
-  }
+    componentSubtitle: 'A generic modal with custom Title, Body and Footer',
+  },
 };
 
-export const modal = () => {
+export const SimpleModal = (): React.ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -22,7 +22,7 @@ export const modal = () => {
         <GenericModal
           onClose={() => setIsOpen(false)}
           title="This is the title"
-          body={<div>This is the body</div>}          
+          body={<div>This is the body</div>}
           footer={<div>This is the footer</div>}
         />
       )}

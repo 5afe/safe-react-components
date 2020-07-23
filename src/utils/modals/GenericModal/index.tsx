@@ -57,7 +57,7 @@ export type GenericModalProps = {
   body: React.ReactNode;
   withoutBodyPadding?: boolean;
   footer?: React.ReactNode;
-  onClose: () => any;
+  onClose: () => void;
 };
 
 const useStyles = makeStyles({
@@ -66,7 +66,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     overflowY: 'scroll',
-    background: rgba(theme.colors.overlay.color, theme.colors.overlay.opacity)
+    background: rgba(theme.colors.overlay.color, theme.colors.overlay.opacity),
   },
 
   paper: {
@@ -82,9 +82,9 @@ const useStyles = makeStyles({
     boxShadow: `0 0 ${theme.colors.shadow.opacity} 0 ${theme.colors.shadow.color}`,
 
     '&:focus': {
-      outline: 'none'
-    }
-  }
+      outline: 'none',
+    },
+  },
 });
 
 const GenericModal = ({
@@ -93,7 +93,7 @@ const GenericModal = ({
   onClose,
   title,
   withoutBodyPadding,
-  smallHeight
+  smallHeight,
 }: GenericModalProps & { smallHeight: boolean }) => {
   const classes = useStyles({ smallHeight });
   console.log('smallHeight: ', smallHeight);
@@ -122,7 +122,7 @@ const GenericModal = ({
   );
 };
 
-const MediaModal = (props: GenericModalProps) => (
+const MediaModal = (props: GenericModalProps): React.ReactElement => (
   <Media query={{ maxHeight: 500 }}>
     {(matches) => <GenericModal {...props} smallHeight={matches} />}
   </Media>
