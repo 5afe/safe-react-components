@@ -6,11 +6,11 @@ export default {
   title: 'Data Display/Divider',
   component: Divider,
   parameters: {
-    componentSubtitle: 'Used to separate content.'
-  }
+    componentSubtitle: 'Used to separate content.',
+  },
 };
 
-export const section = () => (
+export const Section = (): React.ReactElement => (
   <>
     <div>Some content</div>
     <Divider />

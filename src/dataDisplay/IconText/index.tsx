@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Theme } from '../../theme';
+import { ThemeColors, ThemeIconSize, ThemeTextSize } from '../../theme';
 import Icon, { IconType } from '../Icon';
 import Text from '../Text';
 
 type Props = {
   iconType: keyof IconType;
-  iconSize: keyof Theme['icons']['size'];
-  textSize: keyof Theme['text']['size'];
-  color?: keyof Theme['colors'];
+  iconSize: ThemeIconSize;
+  textSize: ThemeTextSize;
+  color?: ThemeColors;
   text: string;
   className?: string;
 };
@@ -32,7 +32,7 @@ const IconText = ({
   iconType,
   text,
   color,
-  className
+  className,
 }: Props): React.ReactElement => (
   <StyledIconText className={className}>
     <Icon size={iconSize} type={iconType} color={color} />

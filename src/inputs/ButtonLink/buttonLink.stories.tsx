@@ -6,11 +6,11 @@ export default {
   title: 'inputs/ButtonLink',
   component: ButtonLink,
   parameters: {
-    componentSubtitle: 'Button component as a Link.'
-  }
+    componentSubtitle: 'Button component as a Link.',
+  },
 };
 
-export const buttonLink = () => (
+export const SimpleButtonLink = (): React.ReactElement => (
   <ButtonLink color="primary" iconType="add">
     Some text
   </ButtonLink>

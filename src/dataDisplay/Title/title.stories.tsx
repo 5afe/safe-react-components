@@ -6,13 +6,15 @@ export default {
   title: 'Data Display/Title',
   component: Title,
   parameters: {
-    componentSubtitle: 'Title Component.'
-  }
+    componentSubtitle: 'Title Component.',
+  },
 };
 
-export const title = () => <Title size="lg">Title LG</Title>;
+export const SimpleTitle = (): React.ReactElement => (
+  <Title size="lg">Title LG</Title>
+);
 
-export const sizes = () => {
+export const WithSizes = (): React.ReactElement => {
   return (
     <>
       <Title size="xl">Title XL</Title>

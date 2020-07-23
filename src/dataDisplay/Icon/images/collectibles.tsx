@@ -42,5 +42,5 @@ export default {
         </g>
       </g>
     </svg>
-  )
+  ),
 };

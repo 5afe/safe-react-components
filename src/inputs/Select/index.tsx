@@ -57,7 +57,7 @@ function Select({
   id,
   fallbackImage,
   ...rest
-}: Props) {
+}: Props): React.ReactElement {
   const [open, setOpen] = React.useState(false);
 
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {

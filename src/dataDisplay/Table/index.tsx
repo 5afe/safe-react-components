@@ -15,9 +15,9 @@ import styled from 'styled-components';
 import { FixedIcon } from '../..';
 import Text from '../Text';
 
-
 const StyledTableContainer = styled(TableContainer)`
-  box-shadow: 1px 2px 10px 0 ${({ theme }) => rgba(theme.colors.shadow.color, 0.15)};
+  box-shadow: 1px 2px 10px 0
+    ${({ theme }) => rgba(theme.colors.shadow.color, 0.15)};
   border-radius: 8px;
   background-color: ${({ theme }) => theme.colors.white};
 `;
@@ -72,12 +72,12 @@ const StyledTextCap = styled(Text)`
 export enum TableAlignment {
   left = 'left',
   right = 'right',
-  center = 'center'
+  center = 'center',
 }
 
 export enum TableSortDirection {
   asc = 'asc',
-  desc = 'desc'
+  desc = 'desc',
 }
 
 export type TableHeader = {
@@ -122,8 +122,8 @@ const getHeaders = (
     ...headers,
     {
       id: 'chevron',
-      label: ''
-    }
+      label: '',
+    },
   ];
 };
 
@@ -144,8 +144,8 @@ const getRowCells = (
         <FixedIcon type="chevronUp" />
       ) : (
         <FixedIcon type="chevronDown" />
-      )
-    }
+      ),
+    },
   ];
 };
 
@@ -157,9 +157,9 @@ export const Table = ({
   selectedRowIds = new Set(),
   sortedByHeaderId,
   sortDirection,
-  onRowClick = () => {},
-  onHeaderClick = () => {}
-}: Props) => (
+  onRowClick = () => undefined,
+  onHeaderClick = () => undefined,
+}: Props): React.ReactElement => (
   <StyledTableContainer>
     <TableMui className={className}>
       {/* HEADER CELLS */}
@@ -174,7 +174,9 @@ export const Table = ({
                   active={sortedByHeaderId === header.id}
                   direction={sortDirection}
                   onClick={() => onHeaderClick(header.id)}>
-                  <StyledTextCap size="sm" strong>{header.label}</StyledTextCap>
+                  <StyledTextCap size="sm" strong>
+                    {header.label}
+                  </StyledTextCap>
                 </TableSortLabel>
               </TableCell>
             ))}
@@ -218,7 +220,9 @@ export const Table = ({
                       timeout="auto"
                       unmountOnExit>
                       <Box margin={1}>
-                        <StyledText size="lg">{row.collapsibleContent}</StyledText>
+                        <StyledText size="lg">
+                          {row.collapsibleContent}
+                        </StyledText>
                       </Box>
                     </StyledCollapse>
                   </StyledTableCellCollapsible>

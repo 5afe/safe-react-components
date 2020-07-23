@@ -8,25 +8,25 @@ export default {
   component: Table,
   parameters: {
     componentSubtitle:
-      'Used for tabular information. It allows sorting by a single column.'
-  }
+      'Used for tabular information. It allows sorting by a single column.',
+  },
 };
 
 const headerCells = [
   {
     id: 'col1',
-    label: 'Asset'
+    label: 'Asset',
   },
   {
     id: 'col2',
     alignment: TableAlignment.right,
-    label: 'Balance'
+    label: 'Balance',
   },
   {
     id: 'col3',
     alignment: TableAlignment.right,
-    label: 'Value'
-  }
+    label: 'Value',
+  },
 ];
 
 const rows = [
@@ -35,42 +35,44 @@ const rows = [
     collapsibleContent: <div>content 1</div>,
     cells: [
       {
-        content: <Icon type="addressBook" size="sm" />
+        content: <Icon type="addressBook" size="sm" />,
       },
       {
         content: 123,
-        alignment: TableAlignment.right
+        alignment: TableAlignment.right,
       },
       {
         content: 'safe',
-        alignment: TableAlignment.right
-      }
-    ]
+        alignment: TableAlignment.right,
+      },
+    ],
   },
   {
     id: '2',
     collapsibleContent: <div>content 2</div>,
     cells: [
       {
-        content: <Icon type="apps" size="sm" />
+        content: <Icon type="apps" size="sm" />,
       },
       {
         content: 456,
-        alignment: TableAlignment.right
+        alignment: TableAlignment.right,
       },
       {
         content: 'gnosis',
-        alignment: TableAlignment.right
-      }
-    ]
-  }
+        alignment: TableAlignment.right,
+      },
+    ],
+  },
 ];
 
-export const table = () => <Table headers={headerCells} rows={rows} />;
+export const SimpleTable = (): React.ReactElement => (
+  <Table headers={headerCells} rows={rows} />
+);
 
-export const withoutHeader = () => <Table rows={rows} />;
+export const withoutHeader = (): React.ReactElement => <Table rows={rows} />;
 
-export const sortable = () => {
+export const Sortable = (): React.ReactElement => {
   const [sortedByHeaderId, setSortedByHeaderId] = useState<string | undefined>(
     'col2'
   );
@@ -83,7 +85,7 @@ export const sortable = () => {
       return;
     }
 
-    let newDirection =
+    const newDirection =
       sortedByHeaderId === headerId && sortDirection === TableSortDirection.asc
         ? TableSortDirection.desc
         : TableSortDirection.asc;
@@ -113,7 +115,7 @@ export const sortable = () => {
   );
 };
 
-export const collapsible = () => {
+export const Collapsible = (): React.ReactElement => {
   const [selectedRowIds, setSelectedRowIds] = useState<Set<string>>(new Set());
 
   const onRowClick = (rowId: string) => {

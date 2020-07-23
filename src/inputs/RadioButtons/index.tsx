@@ -19,7 +19,7 @@ const RadioButtons = ({
   onRadioChange,
   options,
   ...rest
-}: Props) => {
+}: Props): React.ReactElement => {
   const onChangeInternal = (event: React.ChangeEvent<HTMLInputElement>) =>
     onRadioChange((event.target as HTMLInputElement).value);
 
@@ -30,7 +30,7 @@ const RadioButtons = ({
       value={value}
       onChange={onChangeInternal}
       {...rest}>
-      {options.map(o => (
+      {options.map((o) => (
         <FormControlLabel
           key={o.value}
           label={o.label}

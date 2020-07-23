@@ -2,13 +2,13 @@ import React from 'react';
 import ButtonMUI from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 
-import theme, { Theme } from '../../theme';
+import theme, { ThemeButtonSize } from '../../theme';
 import Icon, { IconType } from '../../dataDisplay/Icon';
 
 export interface Props extends React.ComponentPropsWithoutRef<'button'> {
-  children: any;
+  children: React.ReactNode;
   iconType?: keyof IconType;
-  size: keyof Theme['buttons']['size'];
+  size: ThemeButtonSize;
   color: 'primary' | 'secondary' | 'error';
   variant?: 'outlined' | 'contained';
 }
@@ -22,7 +22,7 @@ const Button = ({
   color,
   variant,
   ...rest
-}: Props) => {
+}: Props): React.ReactElement => {
   const BootstrapButton = withStyles({
     root: {
       height: theme.buttons.size[size].height,
@@ -39,15 +39,15 @@ const Button = ({
         'background-color':
           variant === 'contained'
             ? theme.colors[`${color}Hover` as HoverColor]
-            : theme.colors.white
+            : theme.colors.white,
       },
 
       '&:disabled': {
         opacity: theme.colors.disabled.opacity,
         color:
-          variant === 'contained' ? theme.colors.white : theme.colors[color]
-      }
-    }
+          variant === 'contained' ? theme.colors.white : theme.colors[color],
+      },
+    },
   })(ButtonMUI);
 
   return (
