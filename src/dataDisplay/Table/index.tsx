@@ -22,6 +22,12 @@ const StyledTableContainer = styled(TableContainer)`
   background-color: ${({ theme }) => theme.colors.white};
 `;
 
+const StyledTableMui = styled(TableMui)`
+  .MuiTableCell-root {
+  font-family: 'Averta';
+}
+`;
+
 const StyledTableHead = styled(TableHead)`
   && {
     border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
@@ -161,7 +167,7 @@ export const Table = ({
   onHeaderClick = () => undefined,
 }: Props): React.ReactElement => (
   <StyledTableContainer>
-    <TableMui className={className}>
+    <StyledTableMui className={className}>
       {/* HEADER CELLS */}
       {headers && (
         <StyledTableHead>
@@ -230,6 +236,6 @@ export const Table = ({
           );
         })}
       </TableBody>
-    </TableMui>
+    </StyledTableMui>
   </StyledTableContainer>
 );
