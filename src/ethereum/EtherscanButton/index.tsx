@@ -10,16 +10,6 @@ type Props = {
   value: string;
 };
 
-const StyledButton = styled.button`
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-`;
-
 const EtherscanButton = ({
   className,
   type,
@@ -32,20 +22,22 @@ const EtherscanButton = ({
   };
 
   const goToEtherscan = () =>
-    window.open(
-      `https://${getNetwork()}etherscan.io/${type}/${value}`,
-      '_blank'
-    );
+    `https://${getNetwork()}etherscan.io/${type}/${value}`;
 
   return (
-    <StyledButton className={className} onClick={goToEtherscan}>
+    <a
+      className={className}
+      aria-label="Show details on Etherscan"
+      href={goToEtherscan()}
+      rel="noopener noreferrer"
+      target="_blank">
       <Icon
         size="sm"
         color="icon"
         type="externalLink"
         tooltip="Show details on Etherscan"
       />
-    </StyledButton>
+    </a>
   );
 };
 
