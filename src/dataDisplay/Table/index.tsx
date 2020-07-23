@@ -37,8 +37,6 @@ const StyledTableHead = styled(TableHead)`
 const StyledTableRow = styled(TableRow)`
   && {
     border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
-    /* border-top: 1px solid ${({ theme }) => theme.colors.separator};
-    border-bottom: 1px solid ${({ theme }) => theme.colors.separator}; */
 
     &:first-child {
       border-top: 0;
