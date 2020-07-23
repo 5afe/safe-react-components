@@ -14,12 +14,10 @@ const copyToClipboard = (text: string): void => {
   }
 
   range.selectNodeContents(document.body);
-
   documentSelection.addRange(range);
   document.addEventListener('copy', listener);
   document.execCommand('copy');
   document.removeEventListener('copy', listener);
-
   documentSelection.removeAllRanges();
 };
 
