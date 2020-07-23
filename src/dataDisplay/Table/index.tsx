@@ -14,6 +14,7 @@ import styled from 'styled-components';
 
 import { FixedIcon } from '../..';
 import Text from '../Text';
+import theme from '../../theme';
 
 const StyledTableContainer = styled(TableContainer)`
   box-shadow: 1px 2px 10px 0
@@ -24,7 +25,7 @@ const StyledTableContainer = styled(TableContainer)`
 
 const StyledTableMui = styled(TableMui)`
   .MuiTableCell-root {
-  font-family: 'Averta';
+  font-family: ${({ theme }) => theme.fonts.fontFamily};
 }
 `;
 
