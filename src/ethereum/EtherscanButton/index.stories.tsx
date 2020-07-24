@@ -16,14 +16,14 @@ const StyledText = styled(Text)`
 
 export const SimpleEtherscanButton = (): React.ReactElement => (
   <>
-    <StyledText size="md">An Address example </StyledText>
+    <StyledText size="md">An Address example</StyledText>
     <br />
     <EtherscanButton
       type="address"
       value="0xda6786379ff88729264d31d472fa917f5e561443"
     />
     <br />
-    <StyledText size="md">A Transaction example </StyledText>
+    <StyledText size="md">A Transaction example</StyledText>
     <br />
     <EtherscanButton
       type="tx"
