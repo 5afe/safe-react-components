@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { Icon } from '../..';
-import copyToClipboard from './copyToClipboard';
+import copyTextToClipboard from './copyTextToClipboard';
 
 const StyledButton = styled.button`
   background: none;
@@ -26,7 +26,7 @@ const CopyToClipboard = ({
   const [clicked, setClicked] = useState<boolean>(false);
 
   const onButtonClick = (): void => {
-    copyToClipboard(textToCopy);
+    copyTextToClipboard(textToCopy);
     setClicked(true);
   };
 
