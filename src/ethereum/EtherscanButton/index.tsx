@@ -22,14 +22,15 @@ const EtherscanButton = ({
   value,
   network = 'mainnet',
 }: Props): React.ReactElement => {
-  const getEtherscanLink = () =>
-    `https://${getNetwork(network)}etherscan.io/${type}/${value}`;
+  const etherscanLink = `https://${getNetwork(
+    network
+  )}etherscan.io/${type}/${value}`;
 
   return (
     <a
       className={className}
       aria-label="Show details on Etherscan"
-      href={getEtherscanLink()}
+      href={etherscanLink}
       rel="noopener noreferrer"
       target="_blank">
       <Icon
