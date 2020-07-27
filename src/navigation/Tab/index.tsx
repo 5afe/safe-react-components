@@ -24,7 +24,7 @@ export type Props = {
   items: Array<Item>;
   selectedTab: string;
   variant?: Variant;
-  fullWidth?: Boolean;
+  fullWidth?: boolean;
 };
 
 const TabWrapper = styled.div<{ variant: Variant }>`
@@ -51,25 +51,25 @@ const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps) => {
 
       '& .MuiTabs-indicator': {
         backgroundColor:
-          variantStyle === 'outlined' ? theme.colors.primary : 'transparent'
+          variantStyle === 'outlined' ? theme.colors.primary : 'transparent',
       },
       '& .MuiTab-wrapper svg': {
-        marginTop: '4px'
+        marginTop: '4px',
       },
       '& .MuiTab-root.Mui-selected': {
         backgroundColor:
           variantStyle === 'contained'
             ? theme.colors.inputField
-            : theme.colors.white
+            : theme.colors.white,
       },
       '& .MuiTab-textColorInherit.Mui-selected p': {
         color: theme.colors.primary,
-        fontWeight: '700'
+        fontWeight: '700',
       },
       '& .MuiTabs-root.MuiTabs-vertical p': {
-        textAlign: 'left'
-      }
-    }
+        textAlign: 'left',
+      },
+    },
   })(TabsMui);
 
   return <CustomTabsMui {...rest} />;
@@ -93,10 +93,10 @@ const CustomTab = ({ variantStyle, ...rest }: CustomTabProps) => {
           ? '1px solid' + theme.colors.separator
           : 'inherit',
       '& .MuiTabs-indicator': {
-        backgroundColor: variantStyle === 'contained' ? 'none' : 'inherit'
+        backgroundColor: variantStyle === 'contained' ? 'none' : 'inherit',
       },
-      textTransform: variantStyle === 'contained' ? 'capitalize' : 'uppercase'
-    }
+      textTransform: variantStyle === 'contained' ? 'capitalize' : 'uppercase',
+    },
   })(TabMui);
 
   return <CustomTabMui {...rest} />;
@@ -107,9 +107,12 @@ const Tab = ({
   items,
   selectedTab,
   variant = 'outlined',
-  fullWidth
-}: Props) => {
-  const handleChange = (_event: React.ChangeEvent<{}>, value: string): void => {
+  fullWidth,
+}: Props): JSX.Element => {
+  const handleChange = (
+    _event: React.ChangeEvent<unknown>,
+    value: string
+  ): void => {
     onChange(value);
   };
 
@@ -122,7 +125,7 @@ const Tab = ({
       return (
         <IconText
           iconSize="sm"
-          iconType={item!.icon}
+          iconType={item.icon}
           textSize="sm"
           color={selectedTab === item.id ? 'primary' : 'text'}
           text={item.label}

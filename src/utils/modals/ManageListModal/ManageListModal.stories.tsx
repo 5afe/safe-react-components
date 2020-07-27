@@ -8,11 +8,11 @@ export default {
   component: ManageListModal,
   parameters: {
     componentSubtitle:
-      'A Modal to Manage a list by enabling/disabled list items'
-  }
+      'A Modal to Manage a list by enabling/disabled list items',
+  },
 };
 
-export const modal = () => {
+export const SimpleModal = (): React.ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const [items, setItems] = useState([
     {
@@ -20,27 +20,28 @@ export const modal = () => {
       iconUrl: 'someUrl',
       name: 'one',
       description: 'Lorem Ipsum has been the industry',
-      checked: true
+      checked: true,
     },
     {
       id: '2',
       iconUrl: 'someUrl2',
       name: 'two',
       description: 'unknown printer took a galley of type',
-      checked: true
+      checked: true,
     },
     {
       id: '3',
       iconUrl: 'someUrl3',
       name: 'three',
-      description: 'Long desc ever since the 1500s do not finish over the ocean of this',
-      checked: true
-    }
+      description:
+        'Long desc ever since the 1500s do not finish over the ocean of this',
+      checked: true,
+    },
   ]);
 
-  const onItemToggle = (itemId: string, checked: boolean) => {
+  const onItemToggle = (itemId: string | number, checked: boolean) => {
     const copy = [...items];
-    const localItem = copy.find(i => i.id === itemId);
+    const localItem = copy.find((i) => i.id === itemId);
     if (!localItem) {
       return;
     }
@@ -58,8 +59,8 @@ export const modal = () => {
           defaultIconUrl={appIcon}
           itemList={items}
           addButtonLabel="Add custom app"
-          formBody={<div>some form</div>}                    
-          onSubmitForm={() => {}}
+          formBody={<div>some form</div>}
+          onSubmitForm={() => undefined}
           onClose={() => setIsOpen(false)}
           onItemToggle={onItemToggle}
         />

@@ -51,7 +51,12 @@ type Props = {
   onConfirm: () => void;
 };
 
-const FixedDialog = ({ body, title, onConfirm, onCancel }: Props) => {
+const FixedDialog = ({
+  body,
+  title,
+  onConfirm,
+  onCancel,
+}: Props): React.ReactElement => {
   return (
     <Container>
       <Wrapper>

@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import FixedIcon from './index';
+import FixedIcon, { IconTypes } from './index';
 
 export default {
   title: 'Data Display/FixedIcon',
   component: FixedIcon,
   parameters: {
     componentSubtitle: `Components that renders an icon customized for Safe Multisig app, this icon is not 
-     customizable by props. If you need generic purposes Icons, try Icon component.`
-  }
+     customizable by props. If you need generic purposes Icons, try Icon component.`,
+  },
 };
 
-export const icons = () => {
+export const Icons = (): React.ReactElement => {
   const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -32,29 +32,29 @@ export const icons = () => {
     font-size: 14px;
   `;
 
+  const icons: IconTypes[] = [
+    'arrowSort',
+    'connectedRinkeby',
+    'connectedWallet',
+    'bullit',
+    'dropdownArrowSmall',
+    'arrowReceived',
+    'arrowSent',
+    'threeDots',
+    'options',
+    'plus',
+    'chevronRight',
+    'chevronLeft',
+    'chevronUp',
+    'chevronDown',
+    'settingsChange',
+    'creatingInProgress',
+    'notOwner',
+  ];
+
   return (
     <Wrapper>
-      {[
-        'arrowSort',
-        'connectedRinkeby',
-        'connectedWallet',
-        'bullit',
-        'dropdownArrowSmall',
-        'arrowReceived',
-        'arrowSent',
-        'threeDots',
-        'options',
-        'plus',
-        'chevronRight',
-        'chevronLeft',
-        'chevronUp',
-        'chevronDown',
-        'settingsChange',
-        'creatingInProgress',
-        'notOwner'
-
-        
-      ].map((type: any, index) => (
+      {icons.map((type, index) => (
         <IconBox key={index}>
           <FixedIcon type={type} />
           {type}
@@ -63,4 +63,3 @@ export const icons = () => {
     </Wrapper>
   );
 };
-

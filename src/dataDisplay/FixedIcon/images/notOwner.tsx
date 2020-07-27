@@ -6,7 +6,7 @@ const icon = (
     width="108"
     height="96"
     viewBox="0 0 108 96">
-    <g fill="none" fill-rule="evenodd">
+    <g fill="none" fillRule="evenodd">
       <path d="M0 0H108V96H0z" opacity=".557" />
       <g>
         <path
@@ -26,7 +26,7 @@ const icon = (
         />
         <path
           fill="#F02525"
-          fill-rule="nonzero"
+          fillRule="nonzero"
           d="M76.5 61C83.956 61 90 67.044 90 74.5S83.956 88 76.5 88 63 81.956 63 74.5 69.044 61 76.5 61zm8.026 8.415l-13.111 13.11C72.885 83.46 74.629 84 76.5 84c5.247 0 9.5-4.253 9.5-9.5 0-1.87-.54-3.615-1.474-5.085zM76.5 65c-5.247 0-9.5 4.253-9.5 9.5 0 1.929.575 3.723 1.562 5.221l13.159-13.159C80.223 65.575 78.429 65 76.5 65z"
           transform="translate(5 4)"
         />

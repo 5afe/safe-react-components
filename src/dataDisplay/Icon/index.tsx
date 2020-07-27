@@ -1,19 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
+import Tooltip from '@material-ui/core/Tooltip';
+import { withStyles } from '@material-ui/core/styles';
 
 import add from './images/add';
-import allowances from './images/allowances';
 import addressBook from './images/addressBook';
 import addressBookAdd from './images/addressBookAdd';
 import alert from './images/alert';
+import allowances from './images/allowances';
 import apps from './images/apps';
 import arrowDown from './images/arrowDown';
 import assets from './images/assets';
 import awaitingConfirmations from './images/awaitingConfirmations';
 import camera from './images/camera';
+import chain from './images/chain';
 import check from './images/check';
 import circleCheck from './images/circleCheck';
 import circleCross from './images/circleCross';
+import circleDropdown from './images/circleDropdown';
 import code from './images/code';
 import collectibles from './images/collectibles';
 import copy from './images/copy';
@@ -30,7 +34,9 @@ import eyeOff from './images/eyeOff';
 import filledCross from './images/filledCross';
 import fingerPrint from './images/fingerPrint';
 import getInTouch from './images/getInTouch';
+import home from './images/home';
 import info from './images/info';
+import knowledge from './images/knowledge';
 import licenses from './images/licenses';
 import loadSafe from './images/loadSafe';
 import locked from './images/locked';
@@ -49,42 +55,57 @@ import replaceOwner from './images/replaceOwner';
 import requiredConfirmations from './images/requiredConfirmations';
 import restricted from './images/restricted';
 import resync from './images/resync';
+import rocket from './images/rocket';
 import scan from './images/scan';
 import search from './images/search';
 import sendAgain from './images/sendAgain';
 import sent from './images/sent';
+import serverError from './images/serverError';
 import settings from './images/settings';
 import settingsChange from './images/settingsChange';
+import settingsTool from './images/settingsTool';
 import share from './images/share';
 import termsOfUse from './images/termsOfUse';
 import transactionsInactive from './images/transactionsInactive';
 import unlocked from './images/unlocked';
 import userEdit from './images/userEdit';
 import wallet from './images/wallet';
+import { rgba } from 'polished';
 
-import { Theme } from '../../theme';
+import theme, { Theme, ThemeColors, ThemeIconSize } from '../../theme';
 
-const StyledIcon = styled.span<any>`
+const StyledIcon = styled.span<{ color?: ThemeColors }>`
   .icon-color {
     fill: ${({ theme, color }) =>
       color ? theme.colors[color] : theme.colors.icon};
   }
 `;
 
+const StyledTooltip = withStyles(() => ({
+  tooltip: {
+    backgroundColor: theme.colors.overlay.color,
+    border: `1px solid ${theme.colors.icon}`,
+    boxShadow: `1px 2px 4px ${rgba(theme.colors.shadow.color, 0.08)}`,
+    color: theme.colors.text,
+  },
+}))(Tooltip);
+
 const icons = {
   add,
-  allowances,
   addressBook,
   addressBookAdd,
-  apps,
   alert,
+  allowances,
+  apps,
   arrowDown,
   assets,
   awaitingConfirmations,
   camera,
+  chain,
   check,
   circleCheck,
   circleCross,
+  circleDropdown,
   code,
   collectibles,
   copy,
@@ -101,7 +122,9 @@ const icons = {
   filledCross,
   fingerPrint,
   getInTouch,
+  home,
   info,
+  knowledge,
   licenses,
   loadSafe,
   locked,
@@ -120,34 +143,57 @@ const icons = {
   requiredConfirmations,
   restricted,
   resync,
+  rocket,
   scan,
   search,
   sendAgain,
   sent,
+  serverError,
   settings,
   settingsChange,
+  settingsTool,
   share,
   termsOfUse,
   transactionsInactive,
   unlocked,
   userEdit,
-  wallet
+  wallet,
 };
 
 export type IconType = typeof icons;
+export type IconTypes = keyof IconType;
 
 type Props = {
-  type: keyof IconType;
-  color?: keyof Theme['colors'];
-  size: keyof Theme['icons']['size'];
+  type: IconTypes;
+  size: ThemeIconSize;
+  color?: ThemeColors;
+  tooltip?: string;
+  className?: string;
 };
 
 /**
  * The `Icon` renders an icon, it can be one already defined specified by
  * the type props or custom one using the customUrl.
  */
-function Icon({ type, size, color }: Props) {
-  return <StyledIcon color={color}> {icons[type][size]}</StyledIcon>;
-}
+const Icon = ({
+  type,
+  size,
+  color,
+  tooltip,
+  className,
+}: Props): React.ReactElement => {
+  const IconElement = (
+    <StyledIcon color={color} className={className}>
+      {icons[type][size]}
+    </StyledIcon>
+  );
+  return tooltip === undefined ? (
+    IconElement
+  ) : (
+    <StyledTooltip title={tooltip} placement="top">
+      {IconElement}
+    </StyledTooltip>
+  );
+};
 
 export default Icon;

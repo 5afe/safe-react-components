@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import Layout from "./index";
+import Layout from './index';
 
 export default {
-  title: "Data Display/Layout",
+  title: 'Data Display/Layout',
   component: Layout,
   parameters: {
-    componentSubtitle: "It provides a custom layout used in Safe Multisig"
-  }
+    componentSubtitle: 'It provides a custom layout used in Safe Multisig',
+  },
 };
 
-export const layout = () => <Layout />;
+export const SimpleLayout = (): React.ReactElement => <Layout />;

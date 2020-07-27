@@ -26,7 +26,7 @@ type Props = {
   onChange: (checked: boolean) => void;
 };
 
-const Switch = ({ checked, onChange }: Props) => {
+const Switch = ({ checked, onChange }: Props): React.ReactElement => {
   const onSwitchChange = (_event: any, checked: boolean) => onChange(checked);
 
   return <StyledSwitch checked={checked} onChange={onSwitchChange} />;

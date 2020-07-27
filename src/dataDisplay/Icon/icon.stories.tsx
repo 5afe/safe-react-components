@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Icon from './index';
+import Icon, { IconTypes } from './index';
 
 export default {
   title: 'Data Display/Icon',
   component: Icon,
   parameters: {
     componentSubtitle:
-      'Icon component, you can select one of the set of icons we already have configured.'
-  }
+      'Icon component, you can select one of the set of icons we already have configured.',
+  },
 };
 
-export const icons = () => {
+export const Icons = (): React.ReactElement => {
   const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -32,72 +32,81 @@ export const icons = () => {
     font-size: 14px;
   `;
 
+  const icons: IconTypes[] = [
+    'add',
+    'addressBook',
+    'addressBookAdd',
+    'alert',
+    'allowances',
+    'apps',
+    'arrowDown',
+    'assets',
+    'awaitingConfirmations',
+    'camera',
+    'chain',
+    'check',
+    'circleCheck',
+    'circleCross',
+    'circleDropdown',
+    'code',
+    'collectibles',
+    'copy',
+    'cross',
+    'currency',
+    'delete',
+    'devicePassword',
+    'edit',
+    'error',
+    'eth',
+    'externalLink',
+    'eye',
+    'eyeOff',
+    'filledCross',
+    'fingerPrint',
+    'getInTouch',
+    'home',
+    'info',
+    'knowledge',
+    'licenses',
+    'loadSafe',
+    'locked',
+    'mobileConfirm',
+    'noInternet',
+    'owners',
+    'paste',
+    'paymentToken',
+    'privacyPolicy',
+    'qrCode',
+    'question',
+    'rateApp',
+    'received',
+    'recover',
+    'replaceOwner',
+    'requiredConfirmations',
+    'restricted',
+    'resync',
+    'rocket',
+    'scan',
+    'search',
+    'sendAgain',
+    'sent',
+    'serverError',
+    'settings',
+    'settingsChange',
+    'settingsTool',
+    'share',
+    'termsOfUse',
+    'transactionsInactive',
+    'unlocked',
+    'userEdit',
+    'wallet',
+  ];
+
   return (
     <Wrapper>
-      {[
-        'add',
-        'allowances',
-        'addressBook',
-        'addressBookAdd',
-        'apps',
-        'alert',
-        'arrowDown',
-        'assets',
-        'awaitingConfirmations',
-        'camera',
-        'check',
-        'circleCheck',
-        'circleCross',
-        'code',
-        'collectibles',
-        'copy',
-        'cross',
-        'currency',
-        'delete',
-        'devicePassword',
-        'edit',
-        'error',
-        'eth',
-        'externalLink',
-        'eye',
-        'eyeOff',
-        'filledCross',
-        'fingerPrint',
-        'getInTouch',
-        'info',
-        'licenses',
-        'loadSafe',
-        'locked',
-        'mobileConfirm',
-        'noInternet',
-        'owners',
-        'paste',
-        'paymentToken',
-        'privacyPolicy',
-        'qrCode',
-        'question',
-        'rateApp',
-        'received',
-        'recover',
-        'replaceOwner',
-        'requiredConfirmations',
-        'restricted',
-        'resync',
-        'scan',
-        'search',
-        'sendAgain',
-        'sent',
-        'settings',
-        'settingsChange',
-        'share',
-        'termsOfUse',
-        'transactionsInactive',
-        'unlocked',
-        'userEdit',
-        'wallet'
-      ].map((type: any, index) => (
+      {icons.map((type, index) => (
         <IconBox key={index}>
-          <Icon size={'md'} type={type} />
+          <Icon size="md" type={type} />
           {type}
         </IconBox>
       ))}
@@ -105,17 +114,21 @@ export const icons = () => {
   );
 };
 
-export const customSize = () => (
+export const CustomSize = (): React.ReactElement => (
   <>
     <Icon size="sm" type="add" />
     <Icon size="md" type="add" />
   </>
 );
 
-export const customColor = () => (
+export const CustomColor = (): React.ReactElement => (
   <>
     <Icon size="md" type="add" color="primary" />
     <Icon size="md" type="add" color="error" />
     <Icon size="md" type="add" color="rinkeby" />
   </>
+);
+
+export const WithTooltip = (): React.ReactElement => (
+  <Icon size="md" type="add" color="primary" tooltip="some text" />
 );

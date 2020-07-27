@@ -1,31 +1,33 @@
-import React from "react";
+import React from 'react';
 
-import Text from "./index";
+import Text from './index';
 
 export default {
-  title: "Data Display/Text",
+  title: 'Data Display/Text',
   component: Text,
   parameters: {
-    componentSubtitle: "Text component, it allows several configurations"
-  }
+    componentSubtitle: 'Text component, it allows several configurations',
+  },
 };
 
-export const text = () => <Text size="sm">Some Text...</Text>;
+export const SimpleTexttext = (): React.ReactElement => (
+  <Text size="sm">Some Text...</Text>
+);
 
-export const bold = () => (
+export const Bold = (): React.ReactElement => (
   <Text size="sm" strong>
     Some Text...
   </Text>
 );
 
-export const centered = () => (
+export const Centered = (): React.ReactElement => (
   <Text size="sm" center>
     Some Text...
   </Text>
 );
 
-export const customSize = () => (
-  <>    
+export const CustomSize = (): React.ReactElement => (
+  <>
     <Text size="sm">Some Text...</Text>
     <Text size="md">Some Text...</Text>
     <Text size="lg">Some Text...</Text>
@@ -33,8 +35,14 @@ export const customSize = () => (
   </>
 );
 
-export const color = () => (
-  <>    
-    <Text size="sm" color="primary">Some Text...</Text>    
-  </>
+export const CustomColor = (): React.ReactElement => (
+  <Text size="sm" color="primary">
+    Some Text...
+  </Text>
+);
+
+export const WithTooltip = (): React.ReactElement => (
+  <Text size="sm" color="primary" tooltip="some other text">
+    Some Text...
+  </Text>
 );

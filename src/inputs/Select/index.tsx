@@ -4,13 +4,15 @@ import FormControl from '@material-ui/core/FormControl';
 import SelectMUI from '@material-ui/core/Select';
 import styled from 'styled-components';
 
+import { Text } from '../../dataDisplay';
+
 const IconImg = styled.img`
   width: 20px;
   margin-right: 10px;
 `;
 
 const StyledSelect = styled(SelectMUI)`
-  background-color: #e8e7e6;
+  background-color: ${(props) => props.theme.colors.separator};
   border-radius: 5px;
   height: 56px;
   width: 140px;
@@ -22,18 +24,40 @@ const StyledSelect = styled(SelectMUI)`
   }
 
   .MuiSelect-selectMenu {
-    font-family: ${(p) => p.theme.fonts.fontFamily};
+    font-family: ${(props) => props.theme.fonts.fontFamily};
+  }
+
+  &.MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
+  }
+  &.MuiInput-underline:after {
+    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
   }
 `;
 
+export type SelectItem = {
+  id: string;
+  label: string;
+  subLabel?: string;
+  iconUrl?: string;
+};
+
 type Props = {
-  items: Array<{ id: string; label: string; iconUrl?: string }>;
+  items: Array<SelectItem>;
   activeItemId: string;
   onItemClick: (id: string) => void;
   id?: string;
+  fallbackImage?: string;
 };
 
-function Select({ items, activeItemId, onItemClick, id, ...rest }: Props) {
+function Select({
+  items,
+  activeItemId,
+  onItemClick,
+  id,
+  fallbackImage,
+  ...rest
+}: Props): React.ReactElement {
   const [open, setOpen] = React.useState(false);
 
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
@@ -46,6 +70,15 @@ function Select({ items, activeItemId, onItemClick, id, ...rest }: Props) {
 
   const handleOpen = () => {
     setOpen(true);
+  };
+
+  const onFallbackImage: React.ReactEventHandler<HTMLImageElement> = (e) => {
+    if (!fallbackImage) {
+      return;
+    }
+
+    (e.target as HTMLImageElement).onerror = null;
+    (e.target as HTMLImageElement).src = fallbackImage;
   };
 
   return (
@@ -63,8 +96,23 @@ function Select({ items, activeItemId, onItemClick, id, ...rest }: Props) {
           {items.map((i) => {
             return (
               <MenuItem value={i.id} key={i.id}>
-                {i.iconUrl && <IconImg alt={i.label} src={i.iconUrl} />}
-                <span>{i.label}</span>
+                {i.iconUrl && (
+                  <IconImg
+                    alt={i.label}
+                    onError={onFallbackImage}
+                    src={i.iconUrl}
+                  />
+                )}
+                <div>
+                  <Text size="sm" color="text">
+                    {i.label}
+                  </Text>
+                  {i.subLabel && (
+                    <Text size="sm" color="secondary" strong>
+                      {i.subLabel}
+                    </Text>
+                  )}
+                </div>
               </MenuItem>
             );
           })}
