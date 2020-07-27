@@ -73,7 +73,7 @@ import userEdit from './images/userEdit';
 import wallet from './images/wallet';
 import { rgba } from 'polished';
 
-import theme, { Theme, ThemeColors, ThemeIconSize } from '../../theme';
+import theme, { ThemeColors, ThemeIconSize } from '../../theme';
 
 const StyledIcon = styled.span<{ color?: ThemeColors }>`
   .icon-color {
