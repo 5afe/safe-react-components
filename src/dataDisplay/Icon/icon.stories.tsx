@@ -63,6 +63,7 @@ export const Icons = (): React.ReactElement => {
     'eyeOff',
     'filledCross',
     'fingerPrint',
+    'fuelIndicator',
     'getInTouch',
     'home',
     'info',
