@@ -68,7 +68,7 @@ const AddressInfo = ({
       <InfoContainer>
         {name && (
           <Text size="lg" color="text">
-            Owner #1
+            {name}
           </Text>
         )}
         <AddressContainer>
