@@ -1,15 +1,15 @@
 import React from 'react';
 
-import CopyToClipboard from './index';
+import CopyToClipboardBtn from './index';
 
 export default {
-  title: 'Utils/CopyToClipboard',
-  component: CopyToClipboard,
+  title: 'Utils/CopyToClipboardBtn',
+  component: CopyToClipboardBtn,
   parameters: {
     componentSubtitle: 'Copy text to clipboard.',
   },
 };
 
 export const Copy = (): React.ReactElement => (
-  <CopyToClipboard textToCopy="some value" />
+  <CopyToClipboardBtn textToCopy="some value" />
 );

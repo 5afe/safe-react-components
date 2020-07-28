@@ -19,7 +19,7 @@ type Props = {
   className?: string;
 };
 
-const CopyToClipboard = ({
+const CopyToClipboardBtn = ({
   className,
   textToCopy,
 }: Props): React.ReactElement => {
@@ -48,4 +48,4 @@ const CopyToClipboard = ({
   );
 };
 
-export default CopyToClipboard;
+export default CopyToClipboardBtn;
