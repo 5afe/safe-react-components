@@ -22,22 +22,17 @@ export const WithShortAddress = (): React.ReactElement => (
 );
 
 export const WithOwner = (): React.ReactElement => (
-  <AddressInfo address={address} owner="Owner 1" />
+  <AddressInfo address={address} name="Owner 1" />
 );
 
 export const WithIdenticon = (): React.ReactElement => (
-  <AddressInfo
-    address={address}
-    owner="Owner 1"
-    showIdenticon
-    shortenAddress={4}
-  />
+  <AddressInfo address={address} showIdenticon shortenAddress={4} />
 );
 
 export const WithButtons = (): React.ReactElement => (
   <AddressInfo
     address={address}
-    owner="Owner 1"
+    name="Owner 1"
     showIdenticon
     showCopy
     showEtherscan
@@ -53,7 +48,7 @@ export const WithMenu = (): React.ReactElement => {
   return (
     <AddressInfo
       address={address}
-      owner="Owner 1"
+      name="Owner 1"
       showIdenticon
       showCopy
       showEtherscan

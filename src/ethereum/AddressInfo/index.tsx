@@ -38,7 +38,7 @@ const AddressContainer = styled.div`
 type Props = {
   address: string;
   shortenAddress?: number;
-  owner?: string;
+  name?: string;
   showIdenticon?: boolean;
   showCopy?: boolean;
   menuItems?: EllipsisMenuItem[];
@@ -50,7 +50,7 @@ const getShortAddress = (text: string, shortenAddress: number) =>
 
 const AddressInfo = ({
   address,
-  owner,
+  name,
   shortenAddress,
   showIdenticon,
   showCopy,
@@ -66,7 +66,7 @@ const AddressInfo = ({
       )}
 
       <InfoContainer>
-        {owner && (
+        {name && (
           <Text size="lg" color="text">
             Owner #1
           </Text>
