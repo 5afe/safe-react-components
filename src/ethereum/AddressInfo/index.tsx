@@ -38,6 +38,7 @@ const AddressContainer = styled.div`
 type Props = {
   address: string;
   shortenAddress?: number;
+  className?: string;
   name?: string;
   showIdenticon?: boolean;
   showCopy?: boolean;
@@ -51,39 +52,36 @@ const getShortAddress = (text: string, shortenAddress: number) =>
 const AddressInfo = ({
   address,
   name,
+  className,
   shortenAddress,
   showIdenticon,
   showCopy,
   menuItems,
   showEtherscan,
 }: Props): React.ReactElement => (
-  <>
-    <StyledContainer>
-      {showIdenticon && (
-        <IdenticonContainer>
-          <Identicon address="thisIsAnExample" size="md" />
-        </IdenticonContainer>
-      )}
+  <StyledContainer className={className}>
+    {showIdenticon && (
+      <IdenticonContainer>
+        <Identicon address="thisIsAnExample" size="md" />
+      </IdenticonContainer>
+    )}
 
-      <InfoContainer>
-        {name && (
-          <Text size="lg" color="text">
-            {name}
-          </Text>
-        )}
-        <AddressContainer>
-          <Text size="lg" color="text">
-            {shortenAddress
-              ? getShortAddress(address, shortenAddress)
-              : address}
-          </Text>
-          {showCopy && <Icon size="sm" type="copy" />}
-          {showEtherscan && <EtherscanButton type="address" value={address} />}
-          {menuItems && <EllipsisMenu menuItems={menuItems} />}
-        </AddressContainer>
-      </InfoContainer>
-    </StyledContainer>
-  </>
+    <InfoContainer>
+      {name && (
+        <Text size="lg" color="text">
+          {name}
+        </Text>
+      )}
+      <AddressContainer>
+        <Text size="lg" color="text">
+          {shortenAddress ? getShortAddress(address, shortenAddress) : address}
+        </Text>
+        {showCopy && <Icon size="sm" type="copy" />}
+        {showEtherscan && <EtherscanButton type="address" value={address} />}
+        {menuItems && <EllipsisMenu menuItems={menuItems} />}
+      </AddressContainer>
+    </InfoContainer>
+  </StyledContainer>
 );
 
 export default AddressInfo;
