@@ -28,6 +28,7 @@ const theme = {
     tag: '#D4D5D3',
     background: '#F7F5F5',
     white: '#ffffff',
+    warning: '#FFC05F',
 
     disabled: {
       opacity: 0.5,
