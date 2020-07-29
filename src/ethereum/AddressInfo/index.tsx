@@ -41,13 +41,10 @@ type Props = {
   className?: string;
   name?: string;
   showIdenticon?: boolean;
-  showCopy?: boolean;
+  showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
-  showEtherscan?: boolean;
+  showEtherscanBtn?: boolean;
 };
-
-const getShortAddress = (text: string, shortenAddress: number) =>
-  textShortener(text, shortenAddress + 2, shortenAddress);
 
 const AddressInfo = ({
   address,
@@ -55,9 +52,9 @@ const AddressInfo = ({
   className,
   shortenAddress,
   showIdenticon,
-  showCopy,
+  showCopyBtn,
   menuItems,
-  showEtherscan,
+  showEtherscanBtn,
 }: Props): React.ReactElement => (
   <StyledContainer className={className}>
     {showIdenticon && (
@@ -74,10 +71,12 @@ const AddressInfo = ({
       )}
       <AddressContainer>
         <Text size="lg" color="text">
-          {shortenAddress ? getShortAddress(address, shortenAddress) : address}
+          {shortenAddress
+            ? textShortener(address, shortenAddress + 2, shortenAddress)
+            : address}
         </Text>
-        {showCopy && <Icon size="sm" type="copy" />}
-        {showEtherscan && <EtherscanButton type="address" value={address} />}
+        {showCopyBtn && <Icon size="sm" type="copy" />}
+        {showEtherscanBtn && <EtherscanButton type="address" value={address} />}
         {menuItems && <EllipsisMenu menuItems={menuItems} />}
       </AddressContainer>
     </InfoContainer>

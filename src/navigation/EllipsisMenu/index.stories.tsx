@@ -15,6 +15,6 @@ const items: EllipsisMenuItem[] = [
   { label: 'Item 2', onClick: console.log },
 ];
 
-export const Loader = (): React.ReactElement => (
+export const SimpleEllipsisMenu = (): React.ReactElement => (
   <EllipsisMenu menuItems={items} />
 );

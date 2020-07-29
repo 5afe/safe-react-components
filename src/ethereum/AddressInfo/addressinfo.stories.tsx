@@ -21,7 +21,7 @@ export const WithShortAddress = (): React.ReactElement => (
   <AddressInfo address={address} shortenAddress={4} />
 );
 
-export const WithOwner = (): React.ReactElement => (
+export const WithName = (): React.ReactElement => (
   <AddressInfo address={address} name="Owner 1" />
 );
 
@@ -34,8 +34,8 @@ export const WithButtons = (): React.ReactElement => (
     address={address}
     name="Owner 1"
     showIdenticon
-    showCopy
-    showEtherscan
+    showCopyBtn
+    showEtherscanBtn
     shortenAddress={4}
   />
 );
@@ -50,8 +50,8 @@ export const WithMenu = (): React.ReactElement => {
       address={address}
       name="Owner 1"
       showIdenticon
-      showCopy
-      showEtherscan
+      showCopyBtn
+      showEtherscanBtn
       menuItems={items}
       shortenAddress={4}
     />
