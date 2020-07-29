@@ -49,43 +49,41 @@ type Props = {
 };
 
 const EllipsisMenu = ({ menuItems }: Props): React.ReactElement => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState<HTMLElement | null>(null);
 
-  const handleClick = (event: any) => setAnchorEl(event.currentTarget);
+  const handleClick = (event: React.MouseEvent<HTMLElement>): void =>
+    setAnchorEl(event.currentTarget);
 
   const closeMenuHandler = () => {
     setAnchorEl(null);
   };
 
-  const onMenuItemClick = (i: EllipsisMenuItem) => {
-    i.onClick();
+  const onMenuItemClick = (item: EllipsisMenuItem) => {
+    item.onClick();
     closeMenuHandler();
   };
 
   return (
     <ClickAwayListener onClickAway={closeMenuHandler}>
       <MenuWrapper>
-        <IconWrapper onClick={handleClick} onKeyDown={handleClick}>
+        <IconWrapper onClick={handleClick}>
           <FixedIcon type="options" />
         </IconWrapper>
         <Menu
           anchorEl={anchorEl}
-          id="simple-menu"
           keepMounted
           onClose={closeMenuHandler}
           open={Boolean(anchorEl)}>
-          {menuItems.map((i, index) => {
-            return (
-              <MenuItemWrapper key={index}>
-                {index > 0 && <Divider />}
-                <MenuItem
-                  disabled={i.disabled}
-                  onClick={() => onMenuItemClick(i)}>
-                  {i.label}
-                </MenuItem>
-              </MenuItemWrapper>
-            );
-          })}
+          {menuItems.map((item, i) => (
+            <MenuItemWrapper key={item.label}>
+              {i > 0 && <Divider />}
+              <MenuItem
+                disabled={item.disabled}
+                onClick={() => onMenuItemClick(item)}>
+                {item.label}
+              </MenuItem>
+            </MenuItemWrapper>
+          ))}
         </Menu>
       </MenuWrapper>
     </ClickAwayListener>
