@@ -10,6 +10,7 @@ import {
   CopyToClipboardBtn,
 } from '../../';
 import { textShortener } from '../../utils/strings';
+import { ThemeTextSize, ThemeColors } from '../../theme';
 
 const StyledContainer = styled.div`
   display: flex;
@@ -37,6 +38,8 @@ const AddressContainer = styled.div`
 
 type Props = {
   address: string;
+  textColor?: ThemeColors;
+  textSize?: ThemeTextSize;
   shortenAddress?: number;
   className?: string;
   name?: string;
@@ -49,6 +52,8 @@ type Props = {
 const AddressInfo = ({
   address,
   name,
+  textColor = 'text',
+  textSize = 'lg',
   className,
   shortenAddress,
   showIdenticon,
@@ -70,7 +75,7 @@ const AddressInfo = ({
         </Text>
       )}
       <AddressContainer>
-        <Text size="lg" color="text">
+        <Text size={textSize} color={textColor}>
           {shortenAddress
             ? textShortener(address, shortenAddress + 2, shortenAddress)
             : address}
