@@ -66,6 +66,7 @@ const theme = {
   },
   identicon: {
     size: {
+      xs: '10px',
       sm: '16px',
       md: '32px',
       lg: '60px',
