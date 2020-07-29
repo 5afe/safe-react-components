@@ -33,6 +33,7 @@ import eye from './images/eye';
 import eyeOff from './images/eyeOff';
 import filledCross from './images/filledCross';
 import fingerPrint from './images/fingerPrint';
+import fuelIndicator from './images/fuelIndicator';
 import getInTouch from './images/getInTouch';
 import home from './images/home';
 import info from './images/info';
@@ -121,6 +122,7 @@ const icons = {
   eyeOff,
   filledCross,
   fingerPrint,
+  fuelIndicator,
   getInTouch,
   home,
   info,
