@@ -1,4 +1,4 @@
-const copyToClipboard = (text: string): void => {
+const copyTextToClipboard = (text: string): void => {
   const listener = (e: ClipboardEvent): void => {
     e.preventDefault();
     if (e.clipboardData) {
@@ -21,4 +21,4 @@ const copyToClipboard = (text: string): void => {
   documentSelection.removeAllRanges();
 };
 
-export default copyToClipboard;
+export default copyTextToClipboard;
