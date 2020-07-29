@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Network } from '../../typings/misc';
 import {
   Text,
   Identicon,
@@ -47,6 +48,7 @@ type Props = {
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
   showEtherscanBtn?: boolean;
+  network?: Network;
 };
 
 const AddressInfo = ({
@@ -60,6 +62,7 @@ const AddressInfo = ({
   showCopyBtn,
   menuItems,
   showEtherscanBtn,
+  network,
 }: Props): React.ReactElement => (
   <StyledContainer className={className}>
     {showIdenticon && (
@@ -81,7 +84,9 @@ const AddressInfo = ({
             : address}
         </Text>
         {showCopyBtn && <CopyToClipboardBtn textToCopy={address} />}
-        {showEtherscanBtn && <EtherscanButton type="address" value={address} />}
+        {showEtherscanBtn && (
+          <EtherscanButton type="address" value={address} network={network} />
+        )}
         {menuItems && <EllipsisMenu menuItems={menuItems} />}
       </AddressContainer>
     </InfoContainer>

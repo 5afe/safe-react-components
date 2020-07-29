@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Icon } from '../..';
 
-type Network = 'mainnet' | 'rinkeby';
+import { Network } from '../../typings/misc';
 
 type Props = {
   className?: string;
