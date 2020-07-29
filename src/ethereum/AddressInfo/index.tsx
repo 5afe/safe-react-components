@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {
-  Icon,
   Text,
   Identicon,
   EllipsisMenu,
   EllipsisMenuItem,
   EtherscanButton,
+  CopyToClipboardBtn,
 } from '../../';
 import { textShortener } from '../../utils/strings';
 
@@ -75,7 +75,7 @@ const AddressInfo = ({
             ? textShortener(address, shortenAddress + 2, shortenAddress)
             : address}
         </Text>
-        {showCopyBtn && <Icon size="sm" type="copy" />}
+        {showCopyBtn && <CopyToClipboardBtn textToCopy={address} />}
         {showEtherscanBtn && <EtherscanButton type="address" value={address} />}
         {menuItems && <EllipsisMenu menuItems={menuItems} />}
       </AddressContainer>
