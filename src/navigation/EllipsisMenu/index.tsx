@@ -1,4 +1,4 @@
-import { ClickAwayListener, Divider } from '@material-ui/core';
+import { ClickAwayListener } from '@material-ui/core';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import React from 'react';
@@ -6,13 +6,23 @@ import styled from 'styled-components';
 
 import { FixedIcon } from '../..';
 
+const StyledMenu = styled(Menu)`
+  && {
+    .MuiMenu-list {
+      div:not(:first-child) {
+        border-top: 1px solid ${({ theme }) => theme.colors.separator};
+      }
+    }
+  }
+`;
+
 const MenuWrapper = styled.div`
   display: flex;
 `;
 
 const MenuItemWrapper = styled.div`
   :focus {
-    outline-color: transparent;
+    outline-color: ${({ theme }) => theme.colors.separator};
   }
 `;
 
@@ -67,14 +77,13 @@ const EllipsisMenu = ({ menuItems }: Props): React.ReactElement => {
         <IconWrapper onClick={handleClick}>
           <FixedIcon type="options" />
         </IconWrapper>
-        <Menu
+        <StyledMenu
           anchorEl={anchorEl}
           keepMounted
           onClose={closeMenuHandler}
           open={Boolean(anchorEl)}>
           {menuItems.map((item, i) => (
             <MenuItemWrapper key={item.label}>
-              {i > 0 && <Divider />}
               <MenuItem
                 disabled={item.disabled}
                 onClick={() => onMenuItemClick(item)}>
@@ -82,7 +91,7 @@ const EllipsisMenu = ({ menuItems }: Props): React.ReactElement => {
               </MenuItem>
             </MenuItemWrapper>
           ))}
-        </Menu>
+        </StyledMenu>
       </MenuWrapper>
     </ClickAwayListener>
   );
