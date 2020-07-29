@@ -29,10 +29,10 @@ const InfoContainer = styled.div`
 
 const AddressContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: end;
 
   *:not(:first-child) {
-    margin-left: 12px;
+    margin-left: 8px;
   }
 `;
 
