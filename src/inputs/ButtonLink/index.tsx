@@ -27,7 +27,7 @@ const StyledButtonLink = styled.button<Props>`
   }
 `;
 
-const ButtonLik = ({
+const ButtonLink = ({
   iconType,
   children,
   textSize = 'lg',
@@ -43,4 +43,4 @@ const ButtonLik = ({
   );
 };
 
-export default ButtonLik;
+export default ButtonLink;

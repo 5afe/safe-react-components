@@ -82,7 +82,7 @@ const EllipsisMenu = ({ menuItems }: Props): React.ReactElement => {
           keepMounted
           onClose={closeMenuHandler}
           open={Boolean(anchorEl)}>
-          {menuItems.map((item, i) => (
+          {menuItems.map((item) => (
             <MenuItemWrapper key={item.label}>
               <MenuItem
                 disabled={item.disabled}
