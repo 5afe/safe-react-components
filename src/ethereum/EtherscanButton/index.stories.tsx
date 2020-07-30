@@ -5,7 +5,7 @@ import EtherscanButton from './index';
 import { Text } from '../..';
 
 export default {
-  title: 'Ethereum/EtherscanButton',
+  title: 'Ethereum/Etherscan Button',
   component: EtherscanButton,
   parameters: {},
 };

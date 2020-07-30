@@ -76,6 +76,8 @@ import { rgba } from 'polished';
 import theme, { ThemeColors, ThemeIconSize } from '../../theme';
 
 const StyledIcon = styled.span<{ color?: ThemeColors }>`
+  display: inline-flex;
+
   .icon-color {
     fill: ${({ theme, color }) =>
       color ? theme.colors[color] : theme.colors.icon};
@@ -83,6 +85,9 @@ const StyledIcon = styled.span<{ color?: ThemeColors }>`
 `;
 
 const StyledTooltip = withStyles(() => ({
+  popper: {
+    zIndex: 2001,
+  },
   tooltip: {
     backgroundColor: theme.colors.overlay.color,
     border: `1px solid ${theme.colors.icon}`,
