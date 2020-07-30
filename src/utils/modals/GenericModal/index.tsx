@@ -17,7 +17,7 @@ const StyledButton = styled.button`
   height: 26px;
 
   span {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   :focus {
@@ -96,8 +96,7 @@ const GenericModal = ({
   smallHeight,
 }: GenericModalProps & { smallHeight: boolean }) => {
   const classes = useStyles({ smallHeight });
-  console.log('smallHeight: ', smallHeight);
-  debugger;
+
   return (
     <Modal open className={classes.modal} title="GenericModal">
       <div className={cn(classes.paper)}>
@@ -127,4 +126,5 @@ const MediaModal = (props: GenericModalProps): React.ReactElement => (
     {(matches) => <GenericModal {...props} smallHeight={matches} />}
   </Media>
 );
+
 export default MediaModal;
