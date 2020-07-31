@@ -30,7 +30,7 @@ const IconWrapper = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  margin: 0 4px;
+  margin: 0;
   border-radius: 50%;
   transition: background-color 0.2s ease-in-out;
   outline-color: transparent;

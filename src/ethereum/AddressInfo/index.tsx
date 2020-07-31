@@ -11,14 +11,16 @@ import {
   CopyToClipboardBtn,
 } from '../../';
 import { textShortener } from '../../utils/strings';
-import { ThemeTextSize, ThemeColors } from '../../theme';
+import { ThemeTextSize, ThemeColors, ThemeIdenticonSize } from '../../theme';
 
 const StyledContainer = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 const IdenticonContainer = styled.div`
-  margin: 4px 8px 0 0;
+  display: flex;
+  margin-right: 8px;
 `;
 
 const InfoContainer = styled.div`
@@ -30,7 +32,7 @@ const InfoContainer = styled.div`
 
 const AddressContainer = styled.div`
   display: flex;
-  align-items: end;
+  align-items: center;
 
   *:not(:first-child) {
     margin-left: 8px;
@@ -41,6 +43,7 @@ type Props = {
   address: string;
   textColor?: ThemeColors;
   textSize?: ThemeTextSize;
+  identiconSize?: ThemeIdenticonSize;
   shortenAddress?: number;
   className?: string;
   name?: string;
@@ -56,6 +59,7 @@ const AddressInfo = ({
   name,
   textColor = 'text',
   textSize = 'lg',
+  identiconSize = 'md',
   className,
   shortenAddress,
   showIdenticon,
@@ -67,13 +71,13 @@ const AddressInfo = ({
   <StyledContainer className={className}>
     {showIdenticon && (
       <IdenticonContainer>
-        <Identicon address="thisIsAnExample" size="md" />
+        <Identicon address={address} size={identiconSize} />
       </IdenticonContainer>
     )}
 
     <InfoContainer>
       {name && (
-        <Text size="lg" color="text">
+        <Text size={textSize} color={textColor}>
           {name}
         </Text>
       )}

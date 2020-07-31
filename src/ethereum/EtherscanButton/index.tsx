@@ -1,8 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import { Icon } from '../..';
-
 import { Network } from '../../typings/misc';
+
+const StyledLink = styled.a`
+  display: flex;
+`;
 
 type Props = {
   className?: string;
@@ -27,7 +31,7 @@ const EtherscanButton = ({
   )}etherscan.io/${type}/${value}`;
 
   return (
-    <a
+    <StyledLink
       className={className}
       aria-label="Show details on Etherscan"
       href={etherscanLink}
@@ -39,7 +43,7 @@ const EtherscanButton = ({
         type="externalLink"
         tooltip="Show details on Etherscan"
       />
-    </a>
+    </StyledLink>
   );
 };
 

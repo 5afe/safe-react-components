@@ -12,6 +12,7 @@ const StyledButton = styled.button`
   font: inherit;
   cursor: pointer;
   outline-color: ${({ theme }) => theme.colors.separator};
+  display: flex;
 `;
 
 type Props = {
