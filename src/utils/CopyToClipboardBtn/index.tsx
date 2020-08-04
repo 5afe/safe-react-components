@@ -26,7 +26,12 @@ const CopyToClipboardBtn = ({
 }: Props): React.ReactElement => {
   const [clicked, setClicked] = useState<boolean>(false);
 
-  const onButtonClick = (): void => {
+  const onButtonClick = (
+    event:
+      | React.MouseEvent<HTMLButtonElement>
+      | React.KeyboardEvent<HTMLButtonElement>
+  ): void => {
+    event?.stopPropagation();
     copyTextToClipboard(textToCopy);
     setClicked(true);
   };
@@ -38,6 +43,7 @@ const CopyToClipboardBtn = ({
     <StyledButton
       className={className}
       onClick={onButtonClick}
+      onKeyPress={onButtonClick}
       onMouseLeave={onButtonBlur}>
       <Icon
         size="sm"

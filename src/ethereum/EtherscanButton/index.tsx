@@ -26,17 +26,25 @@ const EtherscanButton = ({
 }: Props): React.ReactElement => {
   const type = value.length > 42 ? 'tx' : 'address';
 
-  const etherscanLink = `https://${getNetwork(
-    network
-  )}etherscan.io/${type}/${value}`;
+  const onClick = (
+    event:
+      | React.MouseEvent<HTMLAnchorElement>
+      | React.KeyboardEvent<HTMLAnchorElement>
+  ): void => {
+    event?.stopPropagation();
+    window.open(
+      `https://${getNetwork(network)}etherscan.io/${type}/${value}`,
+      '_blank'
+    );
+  };
 
   return (
     <StyledLink
       className={className}
       aria-label="Show details on Etherscan"
-      href={etherscanLink}
       rel="noopener noreferrer"
-      target="_blank">
+      onClick={onClick}
+      onKeyPress={onClick}>
       <Icon
         size="sm"
         color="icon"
