@@ -11,7 +11,6 @@ const StyledLink = styled.a`
 type Props = {
   className?: string;
   network?: Network;
-  type: 'address' | 'tx';
   value: string;
 };
 
@@ -22,10 +21,11 @@ const getNetwork = (network: Network) => {
 
 const EtherscanButton = ({
   className,
-  type,
   value,
   network = 'mainnet',
 }: Props): React.ReactElement => {
+  const type = value.length > 42 ? 'tx' : 'address';
+
   const etherscanLink = `https://${getNetwork(
     network
   )}etherscan.io/${type}/${value}`;

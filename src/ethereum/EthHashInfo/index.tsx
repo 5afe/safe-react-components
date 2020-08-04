@@ -40,11 +40,11 @@ const AddressContainer = styled.div`
 `;
 
 type Props = {
-  address: string;
+  hash: string;
   textColor?: ThemeColors;
   textSize?: ThemeTextSize;
   identiconSize?: ThemeIdenticonSize;
-  shortenAddress?: number;
+  shortenHash?: number;
   className?: string;
   name?: string;
   showIdenticon?: boolean;
@@ -54,14 +54,14 @@ type Props = {
   network?: Network;
 };
 
-const AddressInfo = ({
-  address,
+const EthHashInfo = ({
+  hash,
   name,
   textColor = 'text',
   textSize = 'lg',
   identiconSize = 'md',
   className,
-  shortenAddress,
+  shortenHash,
   showIdenticon,
   showCopyBtn,
   menuItems,
@@ -71,7 +71,7 @@ const AddressInfo = ({
   <StyledContainer className={className}>
     {showIdenticon && (
       <IdenticonContainer>
-        <Identicon address={address} size={identiconSize} />
+        <Identicon address={hash} size={identiconSize} />
       </IdenticonContainer>
     )}
 
@@ -83,18 +83,16 @@ const AddressInfo = ({
       )}
       <AddressContainer>
         <Text size={textSize} color={textColor}>
-          {shortenAddress
-            ? textShortener(address, shortenAddress + 2, shortenAddress)
-            : address}
+          {shortenHash
+            ? textShortener(hash, shortenHash + 2, shortenHash)
+            : hash}
         </Text>
-        {showCopyBtn && <CopyToClipboardBtn textToCopy={address} />}
-        {showEtherscanBtn && (
-          <EtherscanButton type="address" value={address} network={network} />
-        )}
+        {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
+        {showEtherscanBtn && <EtherscanButton value={hash} network={network} />}
         {menuItems && <EllipsisMenu menuItems={menuItems} />}
       </AddressContainer>
     </InfoContainer>
   </StyledContainer>
 );
 
-export default AddressInfo;
+export default EthHashInfo;
