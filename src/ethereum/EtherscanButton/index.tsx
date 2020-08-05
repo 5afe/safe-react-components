@@ -38,13 +38,20 @@ const EtherscanButton = ({
     );
   };
 
+  const onKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>): void => {
+    // prevents event from bubbling when `Enter` is pressed
+    if (event.keyCode === 13) {
+      event.stopPropagation();
+    }
+  };
+
   return (
     <StyledLink
       className={className}
       aria-label="Show details on Etherscan"
       rel="noopener noreferrer"
       onClick={onClick}
-      onKeyPress={onClick}>
+      onKeyPress={onKeyDown}>
       <Icon
         size="sm"
         color="icon"

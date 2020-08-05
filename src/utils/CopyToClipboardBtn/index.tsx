@@ -31,9 +31,16 @@ const CopyToClipboardBtn = ({
       | React.MouseEvent<HTMLButtonElement>
       | React.KeyboardEvent<HTMLButtonElement>
   ): void => {
-    event?.stopPropagation();
+    event.stopPropagation();
     copyTextToClipboard(textToCopy);
     setClicked(true);
+  };
+
+  const onKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>): void => {
+    // prevents event from bubbling when `Enter` is pressed
+    if (event.keyCode === 13) {
+      event.stopPropagation();
+    }
   };
 
   const onButtonBlur = (): number =>
@@ -43,7 +50,7 @@ const CopyToClipboardBtn = ({
     <StyledButton
       className={className}
       onClick={onButtonClick}
-      onKeyPress={onButtonClick}
+      onKeyPress={onKeyDown}
       onMouseLeave={onButtonBlur}>
       <Icon
         size="sm"
