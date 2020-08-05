@@ -5,13 +5,13 @@ import { Icon } from '../..';
 import { Network } from '../../typings/misc';
 
 const StyledLink = styled.a`
-  display: flex;
+  display: inline-flex;
+  outline-color: ${({ theme }) => theme.colors.separator};
 `;
 
 type Props = {
   className?: string;
   network?: Network;
-  type: 'address' | 'tx';
   value: string;
 };
 
@@ -22,21 +22,31 @@ const getNetwork = (network: Network) => {
 
 const EtherscanButton = ({
   className,
-  type,
   value,
   network = 'mainnet',
 }: Props): React.ReactElement => {
-  const etherscanLink = `https://${getNetwork(
-    network
-  )}etherscan.io/${type}/${value}`;
+  const type = value.length > 42 ? 'tx' : 'address';
+
+  const onClick = (event: React.MouseEvent<HTMLAnchorElement>): void => {
+    event.stopPropagation();
+  };
+
+  const onKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>): void => {
+    // prevents event from bubbling when `Enter` is pressed
+    if (event.keyCode === 13) {
+      event.stopPropagation();
+    }
+  };
 
   return (
     <StyledLink
       className={className}
       aria-label="Show details on Etherscan"
-      href={etherscanLink}
       rel="noopener noreferrer"
-      target="_blank">
+      onClick={onClick}
+      href={`https://${getNetwork(network)}etherscan.io/${type}/${value}`}
+      target="_blank"
+      onKeyDown={onKeyDown}>
       <Icon
         size="sm"
         color="icon"
