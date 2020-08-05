@@ -6,6 +6,7 @@ import { Network } from '../../typings/misc';
 
 const StyledLink = styled.a`
   display: inline-flex;
+  outline-color: ${({ theme }) => theme.colors.separator};
 `;
 
 type Props = {
