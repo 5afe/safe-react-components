@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { ThemeTitleSize } from '../../theme';
 
 type Props = {
-  children: string;
+  children: string | React.ReactNode;
   size: ThemeTitleSize;
   withoutMargin?: boolean;
 };
