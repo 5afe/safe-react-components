@@ -51,7 +51,7 @@ const CopyToClipboardBtn = ({
     <StyledButton
       className={className}
       onClick={onButtonClick}
-      onKeyPress={onKeyDown}
+      onKeyDown={onKeyDown}
       onMouseLeave={onButtonBlur}>
       <Icon
         size="sm"
