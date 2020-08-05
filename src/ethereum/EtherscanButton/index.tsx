@@ -28,7 +28,7 @@ const EtherscanButton = ({
   const type = value.length > 42 ? 'tx' : 'address';
 
   const onClick = (event: React.MouseEvent<HTMLAnchorElement>): void => {
-    event?.stopPropagation();
+    event.stopPropagation();
   };
 
   const onKeyDown = (event: React.KeyboardEvent<HTMLAnchorElement>): void => {
