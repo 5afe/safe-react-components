@@ -26,14 +26,14 @@ const CopyToClipboardBtn = ({
 }: Props): React.ReactElement => {
   const [clicked, setClicked] = useState<boolean>(false);
 
-  const onButtonClick = (
-    event:
-      | React.MouseEvent<HTMLButtonElement>
-      | React.KeyboardEvent<HTMLButtonElement>
-  ): void => {
-    event.stopPropagation();
+  const copy = () => {
     copyTextToClipboard(textToCopy);
     setClicked(true);
+  };
+
+  const onButtonClick = (event: React.MouseEvent<HTMLButtonElement>): void => {
+    event.stopPropagation();
+    copy();
   };
 
   const onKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>): void => {
@@ -41,6 +41,7 @@ const CopyToClipboardBtn = ({
     if (event.keyCode === 13) {
       event.stopPropagation();
     }
+    copy();
   };
 
   const onButtonBlur = (): number =>
