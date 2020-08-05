@@ -53,7 +53,7 @@ const FooterSection = styled.div`
 `;
 
 export type GenericModalProps = {
-  title: string;
+  title: string | React.ReactNode;
   body: React.ReactNode;
   withoutBodyPadding?: boolean;
   footer?: React.ReactNode;
