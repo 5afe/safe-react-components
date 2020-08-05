@@ -46,7 +46,7 @@ const EtherscanButton = ({
       onClick={onClick}
       href={`https://${getNetwork(network)}etherscan.io/${type}/${value}`}
       target="_blank"
-      onKeyPress={onKeyDown}>
+      onKeyDown={onKeyDown}>
       <Icon
         size="sm"
         color="icon"
