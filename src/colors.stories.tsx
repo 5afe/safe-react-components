@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { parseToHsl } from 'polished';
 
 import { Text, theme } from './index';
 
@@ -8,12 +9,14 @@ const Grid = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
 `;
+
 const ColorWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 16px;
 `;
+
 const ColorDisplay = styled.div<{ color: string }>`
   margin: 8px auto;
   width: 100px;
@@ -27,29 +30,33 @@ export default {
 };
 
 export const ColorsSample = (): React.ReactElement => {
-  const colors = Object.keys(theme.colors).reduce(
-    (acc: { name: string; color: string }[], name: string) => {
+  const colors = Object.keys(theme.colors)
+    .reduce((acc: { name: string; code: string }[], name: string) => {
       if (typeof (theme.colors as Record<string, unknown>)[name] === 'string') {
         acc.push({
           name,
-          color: (theme.colors as Record<string, unknown>)[name] as string,
+          code: ((theme.colors as Record<string, unknown>)[
+            name
+          ] as string).toUpperCase(),
         });
       }
       return acc;
-    },
-    []
-  );
+    }, [])
+    .sort(
+      ({ code: colorA }, { code: colorB }) =>
+        parseToHsl(colorA).lightness - parseToHsl(colorB).lightness
+    );
 
   return (
     <Grid>
-      {colors?.map(({ name, color }) => (
+      {colors?.map(({ name, code }) => (
         <ColorWrapper key={name}>
-          <ColorDisplay color={color} />
+          <ColorDisplay color={code} />
           <Text size="md" center>
             {name}
           </Text>
           <Text size="md" center>
-            {color.toUpperCase()}
+            {code}
           </Text>
         </ColorWrapper>
       ))}
