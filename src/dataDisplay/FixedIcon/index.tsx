@@ -7,6 +7,7 @@ import bullit from './images/bullit';
 import dropdownArrowSmall from './images/dropdownArrowSmall';
 import arrowReceived from './images/arrowReceived';
 import arrowSent from './images/arrowSent';
+import arrowSentWhite from './images/arrowSentWhite';
 import threeDots from './images/threeDots';
 import options from './images/options';
 import plus from './images/plus';
@@ -26,6 +27,7 @@ const icons = {
   dropdownArrowSmall,
   arrowReceived,
   arrowSent,
+  arrowSentWhite,
   threeDots,
   options,
   plus,

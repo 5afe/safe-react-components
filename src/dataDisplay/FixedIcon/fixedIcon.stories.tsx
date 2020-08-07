@@ -40,6 +40,7 @@ export const Icons = (): React.ReactElement => {
     'dropdownArrowSmall',
     'arrowReceived',
     'arrowSent',
+    'arrowSentWhite',
     'threeDots',
     'options',
     'plus',
