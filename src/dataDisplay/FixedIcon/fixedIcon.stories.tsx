@@ -12,25 +12,25 @@ export default {
   },
 };
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const IconBox = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px;
+  width: 140px;
+  height: 140px;
+  border: 1px solid ${({ theme }) => theme.colors.background};
+  font-family: ${({ theme }) => theme.fonts.fontFamily};
+  font-size: 14px;
+`;
+
 export const Icons = (): React.ReactElement => {
-  const Wrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-  `;
-
-  const IconBox = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 5px;
-    width: 140px;
-    height: 140px;
-    border: 1px solid ${({ theme }) => theme.colors.background};
-    font-family: ${({ theme }) => theme.fonts.fontFamily};
-    font-size: 14px;
-  `;
-
   const icons: IconTypes[] = [
     'arrowSort',
     'connectedRinkeby',
@@ -64,23 +64,8 @@ export const Icons = (): React.ReactElement => {
 };
 
 export const IconsWhite = (): React.ReactElement => {
-  const Wrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-  `;
-
-  const IconBoxColor = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 5px;
-    width: 140px;
-    height: 140px;
-    border: 1px solid ${({ theme }) => theme.colors.background};
+  const GreenBoxColor = styled(IconBox)`
     background-color: ${({ theme }) => theme.colors.primary};
-    font-family: ${({ theme }) => theme.fonts.fontFamily};
-    font-size: 14px;
     color: white;
   `;
 
@@ -88,11 +73,11 @@ export const IconsWhite = (): React.ReactElement => {
 
   return (
     <Wrapper>
-      {iconsWhite.map((iconsWhite, index) => (
-        <IconBoxColor key="index">
+      {iconsWhite.map((iconsWhite) => (
+        <GreenBoxColor key="index">
           <FixedIcon type={iconsWhite} />
           {iconsWhite}
-        </IconBoxColor>
+        </GreenBoxColor>
       ))}
     </Wrapper>
   );
