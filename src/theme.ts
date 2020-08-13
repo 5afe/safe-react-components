@@ -70,7 +70,7 @@ const theme = {
       xs: '10px',
       sm: '16px',
       md: '32px',
-      lg: '60px',
+      lg: '40px',
     },
   },
   loader: {
