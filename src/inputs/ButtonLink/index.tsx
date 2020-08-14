@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { ThemeColors, ThemeTextSize } from '../../theme';
-import Icon, { IconType } from '../../dataDisplay/Icon';
+import { Icon, IconType } from '../../dataDisplay/Icon';
 import { Text } from '../../index';
 
 export interface Props extends React.ComponentPropsWithoutRef<'button'> {

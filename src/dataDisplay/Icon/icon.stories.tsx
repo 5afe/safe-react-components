@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Icon, { IconTypes } from './index';
+import { Icon, IconTypes } from './index';
 
 export default {
   title: 'Data Display/Icon',

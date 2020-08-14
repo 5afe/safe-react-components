@@ -182,7 +182,7 @@ type Props = {
  * The `Icon` renders an icon, it can be one already defined specified by
  * the type props or custom one using the customUrl.
  */
-const Icon = ({
+export const Icon = ({
   type,
   size,
   color,
@@ -202,5 +202,3 @@ const Icon = ({
     </StyledTooltip>
   );
 };
-
-export default Icon;
