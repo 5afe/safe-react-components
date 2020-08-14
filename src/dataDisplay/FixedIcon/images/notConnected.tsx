@@ -9,7 +9,7 @@ const icon = (
     <defs>
       <circle id="ca7p6cg2da" cx="20" cy="20" r="20" />
     </defs>
-    <g fill="none" fill-rule="evenodd">
+    <g fill="none" fillRule="evenodd">
       <circle
         cx="20"
         cy="20"
