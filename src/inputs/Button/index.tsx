@@ -3,7 +3,7 @@ import ButtonMUI from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 
 import theme, { ThemeButtonSize } from '../../theme';
-import Icon, { IconType } from '../../dataDisplay/Icon';
+import { Icon, IconType } from '../../dataDisplay/Icon';
 
 export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   children: React.ReactNode;
