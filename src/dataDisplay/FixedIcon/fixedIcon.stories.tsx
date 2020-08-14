@@ -49,6 +49,7 @@ export const Icons = (): React.ReactElement => {
     'settingsChange',
     'creatingInProgress',
     'notOwner',
+    'notConnected',
   ];
 
   return (

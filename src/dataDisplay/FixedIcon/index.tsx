@@ -19,6 +19,7 @@ import chevronDown from './images/chevronDown';
 import settingsChange from './images/settingsChange';
 import creatingInProgress from './images/creatingInProgress';
 import notOwner from './images/notOwner';
+import notConnected from './images/notConnected';
 
 const icons = {
   arrowSort,
@@ -40,6 +41,7 @@ const icons = {
   settingsChange,
   creatingInProgress,
   notOwner,
+  notConnected,
 };
 
 export type IconType = typeof icons;
