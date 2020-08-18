@@ -1,17 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledDivider = styled.div`
+type Props = {
+  className?: string;
+  orientation?: 'vertical' | 'horizontal';
+};
+
+const HorizontalDivider = styled.div`
   border-top: 2px solid ${({ theme }) => theme.colors.separator};
   margin: 16px 0;
 `;
 
-type Props = {
-  className?: string;
-};
+const VerticalDivider = styled.div`
+  border-right: 2px solid ${({ theme }) => theme.colors.separator};
+  margin: 0 5px;
+  height: 100%;
+`;
 
-const Divider = ({ className }: Props): React.ReactElement => (
-  <StyledDivider className={className} />
-);
+const Divider = ({ className, orientation }: Props): React.ReactElement => {
+  return orientation === 'vertical' ? (
+    <VerticalDivider className={className} />
+  ) : (
+    <HorizontalDivider className={className} />
+  );
+};
 
 export default Divider;
