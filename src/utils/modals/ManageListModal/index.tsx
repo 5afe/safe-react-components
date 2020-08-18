@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Divider } from '../../../index';
 
 import {
   GenericModal,
@@ -27,7 +28,7 @@ const BodyHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
-  padding: 0 10px;
+  padding: 0 24px;
 `;
 
 const SearchContainer = styled.div`
@@ -35,7 +36,6 @@ const SearchContainer = styled.div`
   align-items: center;
   height: 52px;
   border-right: 2px solid ${({ theme }) => theme.colors.separator};
-  padding: 0 10px;
 `;
 
 const StyledItem = styled.div`
@@ -76,33 +76,51 @@ const TextDesc = styled(Text)`
   text-overflow: ellipsis;
 `;
 
+const UnstyledButton = styled.button`
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline-color: ${({ theme }) => theme.colors.separator};
+`;
+
+const StyledDivider = styled(Divider)`
+  height: 30px;
+`;
+
 type Props = {
   title?: string;
   defaultIconUrl: string;
+  showDeleteButton?: boolean;
   itemList: Array<{
     id: number | string;
     iconUrl: string;
     name: string;
     description?: string;
     checked: boolean;
+    deletable?: boolean;
   }>;
   addButtonLabel?: string;
   formBody: React.ReactNode;
   isSubmitFormDisabled?: boolean;
   onSubmitForm: () => void;
   onItemToggle: (itemId: number | string, checked: boolean) => void;
+  onItemRemoved?: (itemId: number | string) => void;
   onClose: () => void;
 };
 
 const ManageList = ({
   title = 'Manage List',
   itemList,
+  showDeleteButton,
   defaultIconUrl,
   formBody,
   addButtonLabel = 'add',
   isSubmitFormDisabled = false,
   onSubmitForm,
   onItemToggle,
+  onItemRemoved,
   onClose,
 }: Props): JSX.Element => {
   const [search, setSearch] = useState('');
@@ -152,6 +170,12 @@ const ManageList = ({
         <div>
           {getFilteredItemList().map((i) => {
             const onChange = (checked: boolean) => onItemToggle(i.id, checked);
+            const onDeleteClick = () => {
+              if (!onItemRemoved) {
+                return;
+              }
+              onItemRemoved(i.id);
+            };
 
             return (
               <StyledItem key={i.id}>
@@ -175,6 +199,20 @@ const ManageList = ({
                   </div>
                 </StyledImageName>
                 <Switch checked={i.checked} onChange={onChange} />
+                {showDeleteButton && (
+                  <>
+                    <StyledDivider orientation="vertical" />
+                    <UnstyledButton
+                      onClick={onDeleteClick}
+                      disabled={!i.deletable}>
+                      <Icon
+                        size="md"
+                        color={i.deletable ? 'error' : 'icon'}
+                        type="delete"
+                      />
+                    </UnstyledButton>
+                  </>
+                )}
               </StyledItem>
             );
           })}

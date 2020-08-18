@@ -21,6 +21,7 @@ export const SimpleModal = (): React.ReactElement => {
       name: 'one',
       description: 'Lorem Ipsum has been the industry',
       checked: true,
+      deletable: true,
     },
     {
       id: '2',
@@ -28,6 +29,7 @@ export const SimpleModal = (): React.ReactElement => {
       name: 'two',
       description: 'unknown printer took a galley of type',
       checked: true,
+      deletable: true,
     },
     {
       id: '3',
@@ -58,11 +60,13 @@ export const SimpleModal = (): React.ReactElement => {
         <ManageListModal
           defaultIconUrl={appIcon}
           itemList={items}
+          showDeleteButton
           addButtonLabel="Add custom app"
           formBody={<div>some form</div>}
           onSubmitForm={() => undefined}
           onClose={() => setIsOpen(false)}
           onItemToggle={onItemToggle}
+          onItemRemoved={() => alert('asd')}
         />
       )}
     </>
