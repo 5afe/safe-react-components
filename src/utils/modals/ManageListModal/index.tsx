@@ -99,14 +99,14 @@ type Props = {
     name: string;
     description?: string;
     checked: boolean;
-    deletable?: boolean;
+    isDeletable?: boolean;
   }>;
   addButtonLabel?: string;
   formBody: React.ReactNode;
   isSubmitFormDisabled?: boolean;
   onSubmitForm: () => void;
   onItemToggle: (itemId: number | string, checked: boolean) => void;
-  onItemRemoved?: (itemId: number | string) => void;
+  onItemDeleted?: (itemId: number | string) => void;
   onClose: () => void;
 };
 
@@ -120,7 +120,7 @@ const ManageList = ({
   isSubmitFormDisabled = false,
   onSubmitForm,
   onItemToggle,
-  onItemRemoved,
+  onItemDeleted,
   onClose,
 }: Props): JSX.Element => {
   const [search, setSearch] = useState('');
@@ -170,12 +170,7 @@ const ManageList = ({
         <div>
           {getFilteredItemList().map((i) => {
             const onChange = (checked: boolean) => onItemToggle(i.id, checked);
-            const onDeleteClick = () => {
-              if (!onItemRemoved) {
-                return;
-              }
-              onItemRemoved(i.id);
-            };
+            const onDeleteClick = () => onItemDeleted?.(i.id);
 
             return (
               <StyledItem key={i.id}>
@@ -204,10 +199,10 @@ const ManageList = ({
                     <StyledDivider orientation="vertical" />
                     <UnstyledButton
                       onClick={onDeleteClick}
-                      disabled={!i.deletable}>
+                      disabled={!i.isDeletable}>
                       <Icon
                         size="md"
-                        color={i.deletable ? 'error' : 'icon'}
+                        color={i.isDeletable ? 'error' : 'icon'}
                         type="delete"
                       />
                     </UnstyledButton>
