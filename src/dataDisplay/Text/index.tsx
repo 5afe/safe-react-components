@@ -14,12 +14,27 @@ type Props = {
   center?: boolean;
   tooltip?: string;
   className?: string;
+  isParagraph?: boolean;
 };
 
-const StyledText = styled.p<Props>`
+const SpanOrParagraph = React.forwardRef<
+  HTMLParagraphElement | HTMLSpanElement,
+  Props
+>(({ isParagraph = true, children, ...rest }, ref) =>
+  isParagraph ? (
+    <p ref={ref as React.RefObject<HTMLParagraphElement>} {...rest}>
+      {children}
+    </p>
+  ) : (
+    <span ref={ref as React.RefObject<HTMLSpanElement>} {...rest}>
+      {children}
+    </span>
+  )
+);
+SpanOrParagraph.displayName = 'SpanOrParagraph';
+
+const StyledText = styled(SpanOrParagraph)`
   font-family: 'Averta';
-  display: ${({ tooltip }) =>
-    tooltip === undefined ? 'inline-block' : 'block'};
   color: ${({ color, theme }) =>
     color ? theme.colors[color] : theme.colors.text};
   margin: 0;
