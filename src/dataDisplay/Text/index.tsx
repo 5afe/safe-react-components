@@ -14,14 +14,14 @@ type Props = {
   center?: boolean;
   tooltip?: string;
   className?: string;
-  isParagraph?: boolean;
+  is?: 'span' | 'paragraph';
 };
 
 const SpanOrParagraph = React.forwardRef<
   HTMLParagraphElement | HTMLSpanElement,
   Props
->(({ isParagraph = true, children, ...rest }, ref) =>
-  isParagraph ? (
+>(({ is = 'paragraph', children, ...rest }, ref) =>
+  is === 'paragraph' ? (
     <p ref={ref as React.RefObject<HTMLParagraphElement>} {...rest}>
       {children}
     </p>
