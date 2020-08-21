@@ -42,7 +42,7 @@ export const CustomColor = (): React.ReactElement => (
 );
 
 export const WithTooltip = (): React.ReactElement => (
-  <Text size="sm" color="primary" tooltip="some other text">
+  <Text size="sm" color="primary" tooltip="some other text" is="span">
     Some Text...
   </Text>
 );
