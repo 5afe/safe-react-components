@@ -46,3 +46,21 @@ export const WithTooltip = (): React.ReactElement => (
     Some Text...
   </Text>
 );
+
+export const ParagraphElement = (): React.ReactElement => (
+  <>
+    <Text size="sm">Paragraph element is by default</Text>
+    <Text size="sm">Some Text...</Text>
+  </>
+);
+
+export const SpanElement = (): React.ReactElement => (
+  <>
+    <Text size="sm" is="span">
+      This are span elements.
+    </Text>
+    <Text size="sm" is="span">
+      Some Text in a span...
+    </Text>
+  </>
+);
