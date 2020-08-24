@@ -6,6 +6,8 @@ import { rgba } from 'polished';
 
 import theme, { ThemeTextSize, ThemeColors } from '../../theme';
 
+const CustomTag = styled.p``;
+
 type Props = {
   children: React.ReactNode;
   size: ThemeTextSize;
@@ -14,23 +16,17 @@ type Props = {
   center?: boolean;
   tooltip?: string;
   className?: string;
-  is?: 'span' | 'paragraph';
+  is?: 'span' | 'p';
 };
 
 const SpanOrParagraph = React.forwardRef<
   HTMLParagraphElement | HTMLSpanElement,
   Props
->(({ is = 'paragraph', children, ...rest }, ref) =>
-  is === 'paragraph' ? (
-    <p ref={ref as React.RefObject<HTMLParagraphElement>} {...rest}>
-      {children}
-    </p>
-  ) : (
-    <span ref={ref as React.RefObject<HTMLSpanElement>} {...rest}>
-      {children}
-    </span>
-  )
-);
+>(({ is = 'p', children, ...rest }, ref) => (
+  <CustomTag as={is} ref={ref as React.RefObject<HTMLElement>} {...rest}>
+    {children}
+  </CustomTag>
+));
 SpanOrParagraph.displayName = 'SpanOrParagraph';
 
 const StyledText = styled(SpanOrParagraph)`
