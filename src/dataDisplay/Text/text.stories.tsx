@@ -42,7 +42,7 @@ export const CustomColor = (): React.ReactElement => (
 );
 
 export const WithTooltip = (): React.ReactElement => (
-  <Text size="sm" color="primary" tooltip="some other text" is="span">
+  <Text size="sm" color="primary" tooltip="some other text" as="span">
     Some Text...
   </Text>
 );
@@ -56,10 +56,10 @@ export const ParagraphElement = (): React.ReactElement => (
 
 export const SpanElement = (): React.ReactElement => (
   <>
-    <Text size="sm" is="span">
+    <Text size="sm" as="span">
       This are span elements.
     </Text>
-    <Text size="sm" is="span">
+    <Text size="sm" as="span">
       Some Text in a span...
     </Text>
   </>
