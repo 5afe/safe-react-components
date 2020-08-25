@@ -17,19 +17,8 @@ type Props = {
   as?: 'span' | 'p';
 };
 
-const StyledP = styled.p``;
-
-const CustomTag = React.forwardRef<HTMLElement, Props>(
-  ({ as = 'p', children, ...rest }, ref) => (
-    <StyledP as={as} ref={ref as React.RefObject<HTMLElement>} {...rest}>
-      {children}
-    </StyledP>
-  )
-);
-CustomTag.displayName = 'CustomTag';
-
-const StyledText = styled(CustomTag)`
-  font-family: 'Averta';
+const StyledText = styled.p<Props>`
+  font-family: ${({ theme }) => theme.fonts.fontFamily};
   color: ${({ color, theme }) =>
     color ? theme.colors[color] : theme.colors.text};
   margin: 0;
@@ -51,8 +40,17 @@ const StyledTooltip = withStyles(() => ({
   },
 }))(Tooltip);
 
-const Text = ({ children, tooltip, ...rest }: Props): React.ReactElement => {
-  const TextElement = <StyledText {...rest}>{children}</StyledText>;
+const Text = ({
+  children,
+  as,
+  tooltip,
+  ...rest
+}: Props): React.ReactElement => {
+  const TextElement = (
+    <StyledText as={as} {...rest}>
+      {children}
+    </StyledText>
+  );
 
   return tooltip === undefined ? (
     TextElement
