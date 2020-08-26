@@ -14,12 +14,11 @@ type Props = {
   center?: boolean;
   tooltip?: string;
   className?: string;
+  as?: 'span' | 'p';
 };
 
 const StyledText = styled.p<Props>`
-  font-family: 'Averta';
-  display: ${({ tooltip }) =>
-    tooltip === undefined ? 'inline-block' : 'block'};
+  font-family: ${({ theme }) => theme.fonts.fontFamily};
   color: ${({ color, theme }) =>
     color ? theme.colors[color] : theme.colors.text};
   margin: 0;
@@ -41,8 +40,17 @@ const StyledTooltip = withStyles(() => ({
   },
 }))(Tooltip);
 
-const Text = ({ children, tooltip, ...rest }: Props): React.ReactElement => {
-  const TextElement = <StyledText {...rest}>{children}</StyledText>;
+const Text = ({
+  children,
+  as,
+  tooltip,
+  ...rest
+}: Props): React.ReactElement => {
+  const TextElement = (
+    <StyledText as={as} {...rest}>
+      {children}
+    </StyledText>
+  );
 
   return tooltip === undefined ? (
     TextElement

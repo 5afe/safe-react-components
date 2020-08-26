@@ -42,7 +42,25 @@ export const CustomColor = (): React.ReactElement => (
 );
 
 export const WithTooltip = (): React.ReactElement => (
-  <Text size="sm" color="primary" tooltip="some other text">
+  <Text size="sm" color="primary" tooltip="some other text" as="span">
     Some Text...
   </Text>
+);
+
+export const ParagraphElement = (): React.ReactElement => (
+  <>
+    <Text size="sm">Paragraph element is by default</Text>
+    <Text size="sm">Some Text...</Text>
+  </>
+);
+
+export const SpanElement = (): React.ReactElement => (
+  <>
+    <Text size="sm" as="span">
+      This are span elements.
+    </Text>
+    <Text size="sm" as="span">
+      Some Text in a span...
+    </Text>
+  </>
 );
