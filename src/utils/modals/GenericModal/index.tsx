@@ -98,7 +98,7 @@ const GenericModal = ({
   const classes = useStyles({ smallHeight });
 
   return (
-    <Modal open className={classes.modal} title="GenericModal">
+    <Modal open className={classes.modal}>
       <div className={cn(classes.paper)}>
         <TitleSection>
           <Title size="xs" withoutMargin>

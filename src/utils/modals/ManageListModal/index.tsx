@@ -174,6 +174,7 @@ const ManageList = ({
 
             return (
               <StyledItem key={i.id}>
+                {/* Item description */}
                 <StyledImageName>
                   <StyledImage
                     alt={i.name}
@@ -193,7 +194,11 @@ const ManageList = ({
                     </div>
                   </div>
                 </StyledImageName>
+
+                {/* Switch */}
                 <Switch checked={i.checked} onChange={onChange} />
+
+                {/* Delete button */}
                 {showDeleteButton && (
                   <>
                     <StyledDivider orientation="vertical" />
