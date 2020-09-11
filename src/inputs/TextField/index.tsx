@@ -5,7 +5,6 @@ import styled from 'styled-components';
 
 type Props = {
   value: string;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   label: string;
   readOnly?: boolean;
   meta?: {
@@ -86,11 +85,10 @@ function TextField({
     );
   }
 
-  const { size, ...textFieldMuiProps } = rest;
-
   return (
     <CustomTextField
-      {...textFieldMuiProps}
+      {...rest}
+      size={undefined}
       {...customProps}
       className={className}
       value={value}
