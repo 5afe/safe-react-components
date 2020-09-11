@@ -86,8 +86,11 @@ function TextField({
     );
   }
 
+  const { size, ...textFieldMuiProps } = rest;
+
   return (
     <CustomTextField
+      {...textFieldMuiProps}
       {...customProps}
       className={className}
       value={value}
