@@ -1,18 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
+import Tooltip from '@material-ui/core/Tooltip';
+import { withStyles } from '@material-ui/core/styles';
+import { rgba } from 'polished';
 
-import { Theme } from '../../theme';
+import theme, { ThemeTextSize, ThemeColors } from '../../theme';
 
 type Props = {
-  children: any;
-  size: keyof Theme['text']['size'];
-  color?: keyof Theme['colors'];
+  children: React.ReactNode;
+  size: ThemeTextSize;
+  color?: ThemeColors;
   strong?: boolean;
   center?: boolean;
+  tooltip?: string;
+  className?: string;
+  as?: 'span' | 'p';
 };
 
 const StyledText = styled.p<Props>`
-  font-family: 'Averta';
+  font-family: ${({ theme }) => theme.fonts.fontFamily};
   color: ${({ color, theme }) =>
     color ? theme.colors[color] : theme.colors.text};
   margin: 0;
@@ -22,8 +28,37 @@ const StyledText = styled.p<Props>`
   text-align: ${({ center }) => (center ? 'center' : 'start')};
 `;
 
-const Text = ({ children, ...rest }: Props) => (
-  <StyledText {...rest}>{children}</StyledText>
-);
+const StyledTooltip = withStyles(() => ({
+  tooltip: {
+    backgroundColor: theme.colors.white,
+    color: theme.colors.text,
+    boxShadow: `0px 0px 10px ${rgba(theme.colors.shadow.color, 0.2)}`,
+  },
+  arrow: {
+    color: theme.colors.white,
+    boxShadow: `0px 0px 10px ${rgba(theme.colors.shadow.color, 0.2)}`,
+  },
+}))(Tooltip);
+
+const Text = ({
+  children,
+  as,
+  tooltip,
+  ...rest
+}: Props): React.ReactElement => {
+  const TextElement = (
+    <StyledText as={as} {...rest}>
+      {children}
+    </StyledText>
+  );
+
+  return tooltip === undefined ? (
+    TextElement
+  ) : (
+    <StyledTooltip title={tooltip} placement="bottom" arrow>
+      {TextElement}
+    </StyledTooltip>
+  );
+};
 
 export default Text;

@@ -6,7 +6,9 @@ import connectedWallet from './images/connectedWallet';
 import bullit from './images/bullit';
 import dropdownArrowSmall from './images/dropdownArrowSmall';
 import arrowReceived from './images/arrowReceived';
+import arrowReceivedWhite from './images/arrowReceivedWhite';
 import arrowSent from './images/arrowSent';
+import arrowSentWhite from './images/arrowSentWhite';
 import threeDots from './images/threeDots';
 import options from './images/options';
 import plus from './images/plus';
@@ -17,7 +19,7 @@ import chevronDown from './images/chevronDown';
 import settingsChange from './images/settingsChange';
 import creatingInProgress from './images/creatingInProgress';
 import notOwner from './images/notOwner';
-
+import notConnected from './images/notConnected';
 
 const icons = {
   arrowSort,
@@ -26,7 +28,9 @@ const icons = {
   bullit,
   dropdownArrowSmall,
   arrowReceived,
+  arrowReceivedWhite,
   arrowSent,
+  arrowSentWhite,
   threeDots,
   options,
   plus,
@@ -37,18 +41,20 @@ const icons = {
   settingsChange,
   creatingInProgress,
   notOwner,
+  notConnected,
 };
 
 export type IconType = typeof icons;
+export type IconTypes = keyof IconType;
 
 type Props = {
-  type: keyof IconType;
+  type: IconTypes;
 };
 
 /**
  * The `FixedIcon` renders an icon
  */
-function FixedIcon({ type }: Props) {
+function FixedIcon({ type }: Props): React.ReactElement {
   return <span>{icons[type]}</span>;
 }
 

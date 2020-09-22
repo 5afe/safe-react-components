@@ -6,11 +6,11 @@ export default {
   title: 'Inputs/Checkbox',
   component: Checkbox,
   parameters: {
-    componentSubtitle: 'Checkbox Input.'
-  }
+    componentSubtitle: 'Checkbox Input.',
+  },
 };
 
-export const checkbox = () => {
+export const SimpleCheckbox = (): React.ReactElement => {
   const [enabled, setEnabled] = useState(true);
   return (
     <Checkbox
@@ -22,7 +22,7 @@ export const checkbox = () => {
   );
 };
 
-export const error = () => {
+export const WithError = (): React.ReactElement => {
   const [enabled, setEnabled] = useState(false);
   return (
     <Checkbox

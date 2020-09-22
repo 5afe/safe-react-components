@@ -8,15 +8,15 @@ export default {
   parameters: {
     componentSubtitle: `It shows a Dialog, with a modal look and feels, but only being 
     rendered inside a container instead of taking position absolute.
-    `
-  }
+    `,
+  },
 };
 
-export const fixedDialog = () => (
+export const SimpleFixedDialog = (): React.ReactElement => (
   <FixedDialog
     title="Legal Disclaimer"
     body={<div>Some Body</div>}
-    onCancel={() => {}}
-    onConfirm={() => {}}
+    onCancel={() => undefined}
+    onConfirm={() => undefined}
   />
 );

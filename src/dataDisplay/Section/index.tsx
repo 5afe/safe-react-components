@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledSection = styled.div`
   /* border: 1px solid #e8e7e6; 
@@ -10,13 +10,13 @@ const StyledSection = styled.div`
 `;
 
 type Props = {
-  children: any;
+  children: React.ReactNode;
 };
 
 /**
  * Use `Section` to highlight/group content.
  */
-const Section = ({ children }: Props) => (
+const Section = ({ children }: Props): React.ReactElement => (
   <StyledSection>{children}</StyledSection>
 );
 

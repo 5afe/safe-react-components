@@ -1,60 +1,60 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import FixedIcon from './index';
+import FixedIcon, { IconTypes } from './index';
 
 export default {
   title: 'Data Display/FixedIcon',
   component: FixedIcon,
   parameters: {
     componentSubtitle: `Components that renders an icon customized for Safe Multisig app, this icon is not 
-     customizable by props. If you need generic purposes Icons, try Icon component.`
-  }
+     customizable by props. If you need generic purposes Icons, try Icon component.`,
+  },
 };
 
-export const icons = () => {
-  const Wrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-  `;
+const Wrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
 
-  const IconBox = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
+const IconBox = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px;
+  width: 140px;
+  height: 140px;
+  border: 1px solid ${({ theme }) => theme.colors.background};
+  font-family: ${({ theme }) => theme.fonts.fontFamily};
+  font-size: 14px;
+`;
 
-    padding: 5px;
-    width: 140px;
-    height: 140px;
-    border: 1px solid ${({ theme }) => theme.colors.background};
-    font-family: 'Averta', sans-serif;
-    font-size: 14px;
-  `;
+export const Icons = (): React.ReactElement => {
+  const icons: IconTypes[] = [
+    'arrowSort',
+    'connectedRinkeby',
+    'connectedWallet',
+    'bullit',
+    'dropdownArrowSmall',
+    'arrowReceived',
+    'arrowSent',
+    'threeDots',
+    'options',
+    'plus',
+    'chevronRight',
+    'chevronLeft',
+    'chevronUp',
+    'chevronDown',
+    'settingsChange',
+    'creatingInProgress',
+    'notOwner',
+    'notConnected',
+  ];
 
   return (
     <Wrapper>
-      {[
-        'arrowSort',
-        'connectedRinkeby',
-        'connectedWallet',
-        'bullit',
-        'dropdownArrowSmall',
-        'arrowReceived',
-        'arrowSent',
-        'threeDots',
-        'options',
-        'plus',
-        'chevronRight',
-        'chevronLeft',
-        'chevronUp',
-        'chevronDown',
-        'settingsChange',
-        'creatingInProgress',
-        'notOwner'
-
-        
-      ].map((type: any, index) => (
+      {icons.map((type, index) => (
         <IconBox key={index}>
           <FixedIcon type={type} />
           {type}
@@ -64,3 +64,22 @@ export const icons = () => {
   );
 };
 
+export const IconsWhite = (): React.ReactElement => {
+  const GreenBoxColor = styled(IconBox)`
+    background-color: ${({ theme }) => theme.colors.primary};
+    color: white;
+  `;
+
+  const iconsWhite: IconTypes[] = ['arrowSentWhite', 'arrowReceivedWhite'];
+
+  return (
+    <Wrapper>
+      {iconsWhite.map((iconsWhite) => (
+        <GreenBoxColor key="index">
+          <FixedIcon type={iconsWhite} />
+          {iconsWhite}
+        </GreenBoxColor>
+      ))}
+    </Wrapper>
+  );
+};

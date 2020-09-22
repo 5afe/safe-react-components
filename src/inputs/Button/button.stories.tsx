@@ -6,11 +6,11 @@ export default {
   title: 'Inputs/Button',
   component: Button,
   parameters: {
-    componentSubtitle: 'Button component with several variants'
-  }
+    componentSubtitle: 'Button component with several variants',
+  },
 };
 
-export const button = () => (
+export const SimpleButton = (): React.ReactElement => (
   <>
     <div>
       <Button size="md" color="primary" variant="contained">
@@ -37,7 +37,7 @@ export const button = () => (
   </>
 );
 
-export const sizes = () => (
+export const Sizes = (): React.ReactElement => (
   <>
     <Button size="md" color="primary" variant="contained">
       text
@@ -48,7 +48,7 @@ export const sizes = () => (
   </>
 );
 
-export const withIcon = () => (
+export const withIcon = (): React.ReactElement => (
   <>
     <Button
       size="lg"

@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Theme } from '../../theme';
-import Icon, { IconType } from '../../dataDisplay/Icon';
+import { ThemeColors, ThemeTextSize } from '../../theme';
+import { Icon, IconType } from '../../dataDisplay/Icon';
 import { Text } from '../../index';
 
 export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   iconType?: keyof IconType;
-  color: keyof Theme['colors'];
-  children: any;
-};
+  textSize?: ThemeTextSize;
+  color: ThemeColors;
+  children: React.ReactNode;
+}
 
 const StyledButtonLink = styled.button<Props>`
   background: transparent;
@@ -20,21 +21,26 @@ const StyledButtonLink = styled.button<Props>`
   font-family: inherit;
   display: flex;
   align-items: center;
-  
+
   :focus {
     outline: none;
   }
 `;
 
-const ButtonLik = ({ iconType, children, ...rest }: Props) => {
+const ButtonLink = ({
+  iconType,
+  children,
+  textSize = 'lg',
+  ...rest
+}: Props): React.ReactElement => {
   return (
     <StyledButtonLink {...rest}>
       {iconType && <Icon size="md" color={rest.color} type={iconType} />}
-      <Text size="xl" color={rest.color}>
+      <Text size={textSize} color={rest.color}>
         {children}
       </Text>
     </StyledButtonLink>
   );
 };
 
-export default ButtonLik;
+export default ButtonLink;

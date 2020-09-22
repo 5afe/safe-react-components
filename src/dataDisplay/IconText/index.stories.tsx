@@ -6,13 +6,11 @@ export default {
   title: 'Data Display/Icon Text',
   component: IconText,
   parameters: {
-    componentSubtitle: 'IconText, It combines both Icon and Text component.'
-  }
+    componentSubtitle: 'IconText, It combines both Icon and Text component.',
+  },
 };
 
-//export const title = () => <Title size="lg">Title LG</Title>;
-
-export const sizes = () => {
+export const Sizes = (): React.ReactElement => {
   return (
     <>
       <IconText iconSize="sm" textSize="sm" iconType="add" text="Some text" />

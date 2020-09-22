@@ -21,8 +21,8 @@ export const ModalFooterConfirmation = ({
   handleCancel,
   okDisabled,
   handleOk,
-  okText = 'Confirm'
-}: Props) => {
+  okText = 'Confirm',
+}: Props): React.ReactElement => {
   return (
     <FooterWrapper>
       <Button size="md" color="secondary" onClick={handleCancel}>

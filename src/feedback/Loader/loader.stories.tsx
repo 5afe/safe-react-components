@@ -1,20 +1,24 @@
-import React from "react";
+import React from 'react';
 
-import Loader from "./index";
+import Loader from './index';
 
 export default {
-  title: "Feedback/Loader",
+  title: 'Feedback/Loader',
   component: Loader,
   parameters: {
-    componentSubtitle: "Loader component"
-  }
+    componentSubtitle: 'Loader component',
+  },
 };
 
-export const loader = () => (
+export const loader = (): React.ReactElement => (
   <>
     <Loader size="xs" />
     <Loader size="sm" />
     <Loader size="md" />
     <Loader size="lg" />
   </>
+);
+
+export const withColor = (): React.ReactElement => (
+  <Loader size="md" color="rinkeby" />
 );

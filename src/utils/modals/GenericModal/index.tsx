@@ -17,7 +17,7 @@ const StyledButton = styled.button`
   height: 26px;
 
   span {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   :focus {
@@ -53,11 +53,11 @@ const FooterSection = styled.div`
 `;
 
 export type GenericModalProps = {
-  title: string;
+  title: string | React.ReactNode;
   body: React.ReactNode;
   withoutBodyPadding?: boolean;
   footer?: React.ReactNode;
-  onClose: () => any;
+  onClose: () => void;
 };
 
 const useStyles = makeStyles({
@@ -66,7 +66,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     overflowY: 'scroll',
-    background: rgba(theme.colors.overlay.color, theme.colors.overlay.opacity)
+    background: rgba(theme.colors.overlay.color, theme.colors.overlay.opacity),
   },
 
   paper: {
@@ -82,9 +82,9 @@ const useStyles = makeStyles({
     boxShadow: `0 0 ${theme.colors.shadow.opacity} 0 ${theme.colors.shadow.color}`,
 
     '&:focus': {
-      outline: 'none'
-    }
-  }
+      outline: 'none',
+    },
+  },
 });
 
 const GenericModal = ({
@@ -93,13 +93,12 @@ const GenericModal = ({
   onClose,
   title,
   withoutBodyPadding,
-  smallHeight
+  smallHeight,
 }: GenericModalProps & { smallHeight: boolean }) => {
   const classes = useStyles({ smallHeight });
-  console.log('smallHeight: ', smallHeight);
-  debugger;
+
   return (
-    <Modal open className={classes.modal} title="GenericModal">
+    <Modal open className={classes.modal}>
       <div className={cn(classes.paper)}>
         <TitleSection>
           <Title size="xs" withoutMargin>
@@ -122,9 +121,10 @@ const GenericModal = ({
   );
 };
 
-const MediaModal = (props: GenericModalProps) => (
+const MediaModal = (props: GenericModalProps): React.ReactElement => (
   <Media query={{ maxHeight: 500 }}>
     {(matches) => <GenericModal {...props} smallHeight={matches} />}
   </Media>
 );
+
 export default MediaModal;

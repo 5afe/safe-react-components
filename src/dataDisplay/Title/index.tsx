@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Theme } from '../../theme';
+import { ThemeTitleSize } from '../../theme';
 
 type Props = {
-  children: string;
-  size: keyof Theme['title']['size'];
+  children: string | React.ReactNode;
+  size: ThemeTitleSize;
   withoutMargin?: boolean;
 };
 
@@ -49,7 +49,12 @@ const StyledH5 = styled.h5<{ withoutMargin?: boolean }>`
   margin: ${({ withoutMargin }) => (withoutMargin ? 0 : '18px')} 0;
 `;
 
-const Title = ({ children, size, withoutMargin, ...rest }: Props) => {
+const Title = ({
+  children,
+  size,
+  withoutMargin,
+  ...rest
+}: Props): React.ReactElement => {
   switch (size) {
     case 'xl': {
       return (

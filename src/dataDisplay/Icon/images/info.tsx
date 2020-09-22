@@ -31,7 +31,14 @@ export default {
       viewBox="0 0 24 24">
       <g fill="none" fillRule="evenodd">
         <path d="M0 0H24V24H0z" />
-        <rect width="2" height="8" x="11" y="10" className="icon-color" rx="1" />
+        <rect
+          width="2"
+          height="8"
+          x="11"
+          y="10"
+          className="icon-color"
+          rx="1"
+        />
         <path
           className="icon-color"
           fillRule="nonzero"
@@ -44,5 +51,5 @@ export default {
         />
       </g>
     </svg>
-  )
+  ),
 };

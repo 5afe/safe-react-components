@@ -6,13 +6,14 @@ export default {
   title: 'Utils/Identicon',
   component: Identicon,
   parameters: {
-    componentSubtitle: 'Identicon Component.'
-  }
+    componentSubtitle: 'Identicon Component.',
+  },
 };
 
-export const sizes = () => {
+export const sizes = (): React.ReactElement => {
   return (
     <>
+      <Identicon address="thisIsAnExample" size="xs" />
       <Identicon address="thisIsAnExample" size="sm" />
       <Identicon address="thisIsAnExample" size="md" />
       <Identicon address="thisIsAnExample" size="lg" />
