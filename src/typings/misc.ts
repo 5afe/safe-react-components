@@ -1,1 +1,1 @@
-export type Network = 'mainnet' | 'rinkeby';
+export type ScanBlockUrl = () => { url: string; alt: string };

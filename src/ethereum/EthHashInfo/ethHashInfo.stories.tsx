@@ -12,6 +12,8 @@ export default {
 };
 
 const hash = '0x69904ff6d6100799344E5C9A2806936318F6ba4f';
+const scanBlocksUrl = `https://etherscan.io/address/${hash}`;
+const scanBlocksAlt = `Show details on Etherscan`;
 
 export const Address = (): React.ReactElement => <EthHashInfo hash={hash} />;
 
@@ -33,7 +35,8 @@ export const WithButtons = (): React.ReactElement => (
     name="Owner 1"
     showIdenticon
     showCopyBtn
-    showEtherscanBtn
+    showScanBlocksButton
+    scanBlockUrl={() => ({ alt: scanBlocksAlt, url: scanBlocksUrl })}
     shortenHash={4}
   />
 );
@@ -49,7 +52,7 @@ export const WithMenu = (): React.ReactElement => {
       name="Owner 1"
       showIdenticon
       showCopyBtn
-      showEtherscanBtn
+      showScanBlocksButton
       menuItems={items}
       shortenHash={4}
     />
