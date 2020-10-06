@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Network } from '../../typings/misc';
 import {
   Text,
   Identicon,
   EllipsisMenu,
   EllipsisMenuItem,
-  EtherscanButton,
+  ExplorerButton,
   CopyToClipboardBtn,
 } from '../../';
 import { textShortener } from '../../utils/strings';
 import { ThemeTextSize, ThemeColors, ThemeIdenticonSize } from '../../theme';
+import { ExplorerInfo } from '../../typings/misc';
 
 const StyledContainer = styled.div`
   display: flex;
@@ -50,8 +50,7 @@ type Props = {
   showIdenticon?: boolean;
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
-  showEtherscanBtn?: boolean;
-  network?: Network;
+  explorerUrl?: ExplorerInfo;
 };
 
 const EthHashInfo = ({
@@ -65,8 +64,7 @@ const EthHashInfo = ({
   showIdenticon,
   showCopyBtn,
   menuItems,
-  showEtherscanBtn,
-  network,
+  explorerUrl,
 }: Props): React.ReactElement => (
   <StyledContainer className={className}>
     {showIdenticon && (
@@ -88,7 +86,7 @@ const EthHashInfo = ({
             : hash}
         </Text>
         {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
-        {showEtherscanBtn && <EtherscanButton value={hash} network={network} />}
+        {explorerUrl && <ExplorerButton explorerUrl={explorerUrl} />}
         {menuItems && <EllipsisMenu menuItems={menuItems} />}
       </AddressContainer>
     </InfoContainer>
