@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ScanBlockButton from './index';
+import ExplorerButton from './index';
 import { Text } from '../..';
 
 export default {
-  title: 'Ethereum/ScanBlock Button',
-  component: ScanBlockButton,
+  title: 'Ethereum/Explorer Button',
+  component: ExplorerButton,
   parameters: {},
 };
 
@@ -27,14 +27,14 @@ const explorerUrl2 = () => ({
   url: `https://blockscout.com/poa/xdai/address/${hash2}`,
 });
 
-export const SimpleScanBlockButton = (): React.ReactElement => (
+export const SimpleExplorerButton = (): React.ReactElement => (
   <>
     <StyledText size="md">An Address example</StyledText>
     <br />
-    <ScanBlockButton explorerUrl={explorerUrl1} />
+    <ExplorerButton explorerUrl={explorerUrl1} />
     <br />
     <StyledText size="md">A Transaction example</StyledText>
     <br />
-    <ScanBlockButton explorerUrl={explorerUrl2} />
+    <ExplorerButton explorerUrl={explorerUrl2} />
   </>
 );

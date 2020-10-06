@@ -14,7 +14,7 @@ type Props = {
   explorerUrl: ExplorerInfo;
 };
 
-const ScanBlockButton = ({
+const ExplorerButton = ({
   className,
   explorerUrl,
 }: Props): React.ReactElement => {
@@ -44,4 +44,4 @@ const ScanBlockButton = ({
   );
 };
 
-export default ScanBlockButton;
+export default ExplorerButton;

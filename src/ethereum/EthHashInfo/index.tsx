@@ -6,7 +6,7 @@ import {
   Identicon,
   EllipsisMenu,
   EllipsisMenuItem,
-  ScanBlockButton,
+  ExplorerButton,
   CopyToClipboardBtn,
 } from '../../';
 import { textShortener } from '../../utils/strings';
@@ -86,7 +86,7 @@ const EthHashInfo = ({
             : hash}
         </Text>
         {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
-        {explorerUrl && <ScanBlockButton explorerUrl={explorerUrl} />}
+        {explorerUrl && <ExplorerButton explorerUrl={explorerUrl} />}
         {menuItems && <EllipsisMenu menuItems={menuItems} />}
       </AddressContainer>
     </InfoContainer>
