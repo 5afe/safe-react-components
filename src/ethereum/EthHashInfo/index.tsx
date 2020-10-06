@@ -51,7 +51,6 @@ type Props = {
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
   explorerUrl?: ExplorerInfo;
-  showScanBlocksButton?: boolean;
 };
 
 const EthHashInfo = ({
@@ -65,7 +64,6 @@ const EthHashInfo = ({
   showIdenticon,
   showCopyBtn,
   menuItems,
-  showScanBlocksButton,
   explorerUrl,
 }: Props): React.ReactElement => (
   <StyledContainer className={className}>
@@ -88,9 +86,7 @@ const EthHashInfo = ({
             : hash}
         </Text>
         {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
-        {showScanBlocksButton && explorerUrl && (
-          <ScanBlockButton explorerUrl={explorerUrl} />
-        )}
+        {explorerUrl && <ScanBlockButton explorerUrl={explorerUrl} />}
         {menuItems && <EllipsisMenu menuItems={menuItems} />}
       </AddressContainer>
     </InfoContainer>

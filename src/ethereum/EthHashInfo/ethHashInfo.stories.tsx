@@ -35,7 +35,6 @@ export const WithButtons = (): React.ReactElement => (
     name="Owner 1"
     showIdenticon
     showCopyBtn
-    showScanBlocksButton
     explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
     shortenHash={4}
   />
@@ -52,7 +51,6 @@ export const WithMenu = (): React.ReactElement => {
       name="Owner 1"
       showIdenticon
       showCopyBtn
-      showScanBlocksButton
       menuItems={items}
       shortenHash={4}
     />
