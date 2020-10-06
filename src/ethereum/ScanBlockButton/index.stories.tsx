@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import EtherscanButton from './index';
+import ScanBlockButton from './index';
 import { Text } from '../..';
 
 export default {
   title: 'Ethereum/Etherscan Button',
-  component: EtherscanButton,
+  component: ScanBlockButton,
   parameters: {},
 };
 
@@ -28,14 +28,14 @@ const scanBlockUrl2 = () => ({
   url: `https://etherscan.io/address/${hash2}`,
 });
 
-export const SimpleEtherscanButton = (): React.ReactElement => (
+export const SimpleScanBlockButton = (): React.ReactElement => (
   <>
     <StyledText size="md">An Address example</StyledText>
     <br />
-    <EtherscanButton scanBlockUrl={scanBlockUrl1} />
+    <ScanBlockButton scanBlockUrl={scanBlockUrl1} />
     <br />
     <StyledText size="md">A Transaction example</StyledText>
     <br />
-    <EtherscanButton scanBlockUrl={scanBlockUrl2} />
+    <ScanBlockButton scanBlockUrl={scanBlockUrl2} />
   </>
 );

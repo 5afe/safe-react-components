@@ -14,7 +14,7 @@ type Props = {
   scanBlockUrl: ScanBlockUrl;
 };
 
-const EtherscanButton = ({
+const ScanBlockButton = ({
   className,
   scanBlockUrl,
 }: Props): React.ReactElement => {
@@ -44,4 +44,4 @@ const EtherscanButton = ({
   );
 };
 
-export default EtherscanButton;
+export default ScanBlockButton;
