@@ -11,7 +11,7 @@ import {
 } from '../../';
 import { textShortener } from '../../utils/strings';
 import { ThemeTextSize, ThemeColors, ThemeIdenticonSize } from '../../theme';
-import { ExplorerUrl } from '../../typings/misc';
+import { ExplorerInfo } from '../../typings/misc';
 
 const StyledContainer = styled.div`
   display: flex;
@@ -50,7 +50,7 @@ type Props = {
   showIdenticon?: boolean;
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
-  explorerUrl?: ExplorerUrl;
+  explorerUrl?: ExplorerInfo;
   showScanBlocksButton?: boolean;
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Icon } from '../..';
-import { ExplorerUrl } from '../../typings/misc';
+import { ExplorerInfo } from '../../typings/misc';
 
 const StyledLink = styled.a`
   display: inline-flex;
@@ -11,7 +11,7 @@ const StyledLink = styled.a`
 
 type Props = {
   className?: string;
-  explorerUrl: ExplorerUrl;
+  explorerUrl: ExplorerInfo;
 };
 
 const ScanBlockButton = ({
