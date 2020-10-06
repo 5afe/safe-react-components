@@ -1,1 +1,1 @@
-export type ScanBlockUrl = () => { url: string; alt: string };
+export type ExplorerUrl = () => { url: string; alt: string };

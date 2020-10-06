@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Icon } from '../..';
-import { ScanBlockUrl } from '../../typings/misc';
+import { ExplorerUrl } from '../../typings/misc';
 
 const StyledLink = styled.a`
   display: inline-flex;
@@ -11,14 +11,14 @@ const StyledLink = styled.a`
 
 type Props = {
   className?: string;
-  scanBlockUrl: ScanBlockUrl;
+  explorerUrl: ExplorerUrl;
 };
 
 const ScanBlockButton = ({
   className,
-  scanBlockUrl,
+  explorerUrl,
 }: Props): React.ReactElement => {
-  const { url, alt } = scanBlockUrl();
+  const { url, alt } = explorerUrl();
   const onClick = (event: React.MouseEvent<HTMLAnchorElement>): void => {
     event.stopPropagation();
   };

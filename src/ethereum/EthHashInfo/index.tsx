@@ -11,7 +11,7 @@ import {
 } from '../../';
 import { textShortener } from '../../utils/strings';
 import { ThemeTextSize, ThemeColors, ThemeIdenticonSize } from '../../theme';
-import { ScanBlockUrl } from '../../typings/misc';
+import { ExplorerUrl } from '../../typings/misc';
 
 const StyledContainer = styled.div`
   display: flex;
@@ -50,7 +50,7 @@ type Props = {
   showIdenticon?: boolean;
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
-  scanBlockUrl?: ScanBlockUrl;
+  explorerUrl?: ExplorerUrl;
   showScanBlocksButton?: boolean;
 };
 
@@ -66,7 +66,7 @@ const EthHashInfo = ({
   showCopyBtn,
   menuItems,
   showScanBlocksButton,
-  scanBlockUrl,
+  explorerUrl,
 }: Props): React.ReactElement => (
   <StyledContainer className={className}>
     {showIdenticon && (
@@ -88,8 +88,8 @@ const EthHashInfo = ({
             : hash}
         </Text>
         {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
-        {showScanBlocksButton && scanBlockUrl && (
-          <ScanBlockButton scanBlockUrl={scanBlockUrl} />
+        {showScanBlocksButton && explorerUrl && (
+          <ScanBlockButton explorerUrl={explorerUrl} />
         )}
         {menuItems && <EllipsisMenu menuItems={menuItems} />}
       </AddressContainer>
