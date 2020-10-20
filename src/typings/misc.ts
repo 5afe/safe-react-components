@@ -1,1 +1,1 @@
-export type Network = 'mainnet' | 'rinkeby';
+export type ExplorerInfo = () => { url: string; alt: string };
