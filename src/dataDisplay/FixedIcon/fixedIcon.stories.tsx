@@ -50,6 +50,7 @@ export const Icons = (): React.ReactElement => {
     'creatingInProgress',
     'notOwner',
     'notConnected',
+    'networkError',
   ];
 
   return (
