@@ -1,6 +1,7 @@
 import React from 'react';
 import ButtonMUI from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
 
 import theme, { ThemeButtonSize } from '../../theme';
 import { Icon, IconType } from '../../dataDisplay/Icon';
@@ -14,6 +15,10 @@ export interface Props extends React.ComponentPropsWithoutRef<'button'> {
 }
 
 type HoverColor = 'primaryHover' | 'secondaryHover' | 'errorHover';
+
+const StyledIcon = styled(Icon)`
+  margin-right: 5px;
+`;
 
 const Button = ({
   children,
@@ -53,7 +58,7 @@ const Button = ({
   return (
     <BootstrapButton {...rest}>
       {iconType && (
-        <Icon
+        <StyledIcon
           size="md"
           color={variant === 'contained' ? 'white' : color}
           type={iconType}
