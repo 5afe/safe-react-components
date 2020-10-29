@@ -26,7 +26,7 @@ const ColorDisplay = styled.div<{ color: string }>`
 `;
 
 export default {
-  title: 'Colors',
+  title: 'Utils/Colors',
 };
 
 export const ColorsSample = (): React.ReactElement => {
