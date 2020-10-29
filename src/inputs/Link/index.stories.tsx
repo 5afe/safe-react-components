@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Link from './index';
 import { Icon } from '../../';
@@ -27,9 +28,16 @@ export const WithCustomSize = (): React.ReactElement => (
   </Link>
 );
 
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const WithCustomChild = (): React.ReactElement => (
   <Link href="#" size="lg">
-    <Icon type="alert" size="md" />
-    Some text
+    <Wrapper>
+      <Icon type="alert" size="md" />
+      Some text
+    </Wrapper>
   </Link>
 );
