@@ -29,7 +29,7 @@ export const WithCustomSize = (): React.ReactElement => (
 
 export const WithCustomChild = (): React.ReactElement => (
   <Link href="#" size="lg">
-    <Icon type="alert" size="md"/>
+    <Icon type="alert" size="md" />
     Some text
   </Link>
 );
