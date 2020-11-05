@@ -1,8 +1,8 @@
 if: (branch = master) OR (branch = development) OR (type = pull_request) OR (tag IS present)
+dist: bionic
 language: node_js
 node_js: '12'
 before_install:
-  - yarn install
   # Needed to deploy pull request and releases
   - pip install awscli --upgrade --user
 cache:
