@@ -37,7 +37,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [new CopyPlugin([{ from: 'src/fonts', to: 'fonts' }])],
+  plugins: [new CopyPlugin({ patterns: [{ from: 'src/fonts', to: 'fonts' }] })],
   externals: [
     {
       react: {
