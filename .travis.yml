@@ -1,12 +1,14 @@
 if: (branch = master) OR (branch = development) OR (type = pull_request) OR (tag IS present)
+os: linux
 dist: bionic
 language: node_js
 node_js: '12'
+cache:
+  yarn: true
+
 before_install:
   # Needed to deploy pull request and releases
   - pip install awscli --upgrade --user
-cache:
-  yarn: true
 script: |
   echo "Skip tests" # no test cases for the project
 
