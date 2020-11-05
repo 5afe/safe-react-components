@@ -24,7 +24,6 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "polished": "^3.6.7",
-    "react-docgen-typescript-loader": "^3.7.2",
     "react-media": "^1.10.0"
   },
   "devDependencies": {
@@ -59,6 +58,7 @@
     "file-loader": "^6.2.0",
     "prettier": "^2.1.2",
     "react": "16.13.1",
+    "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "16.13.1",
     "rimraf": "^3.0.2",
     "styled-components": "^5.2.1",
