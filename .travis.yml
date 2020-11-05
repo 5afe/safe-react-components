@@ -51,7 +51,7 @@ deploy:
     secret_access_key: $AWS_SECRET_ACCESS_KEY
     skip_cleanup: true
     local_dir: storybook-static
-    upload-dir: current
+    upload_dir: current
     region: eu-central-1
     on:
       branch: master
@@ -63,7 +63,7 @@ deploy:
     secret_access_key: $AWS_SECRET_ACCESS_KEY
     skip_cleanup: true
     local_dir: storybook-static
-    upload-dir: releases/$TRAVIS_TAG/website
+    upload_dir: releases/$TRAVIS_TAG/website
     region: eu-central-1
     on:
       tags: true
@@ -75,7 +75,7 @@ deploy:
     secret_access_key: $AWS_SECRET_ACCESS_KEY
     skip_cleanup: true
     local_dir: dist
-    upload-dir: releases/$TRAVIS_TAG/npmlib
+    upload_dir: releases/$TRAVIS_TAG/npmlib
     region: eu-central-1
     on:
       tags: true
