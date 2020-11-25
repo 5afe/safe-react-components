@@ -1,7 +1,6 @@
 import React from 'react';
-import { Title } from '..';
 
-import Dot from './index';
+import { Dot, Text, Icon } from '../../index';
 
 export default {
   title: 'Data Display/Dot',
@@ -11,16 +10,16 @@ export default {
   },
 };
 
-export const Text = (): React.ReactElement => <Dot content="text" />;
+export const DotWithText = (): React.ReactElement => (
+  <Dot color="primary">
+    <Text size="sm" color="white">
+      1
+    </Text>
+  </Dot>
+);
 
-export const Icon = (): React.ReactElement => (
-  <div
-    style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-    }}>
-    <Dot content="icon" />
-    <Title size="xs">Some title</Title>
-  </div>
+export const DotWithIcon = (): React.ReactElement => (
+  <Dot color="rinkeby">
+    <Icon color="white" type="check" size="sm" />
+  </Dot>
 );
