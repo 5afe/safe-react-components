@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Icon } from '../..';
-import { Network } from '../../typings/misc';
+import { ExplorerInfo } from '../../typings/misc';
 
 const StyledLink = styled.a`
   display: inline-flex;
@@ -11,22 +11,14 @@ const StyledLink = styled.a`
 
 type Props = {
   className?: string;
-  network?: Network;
-  value: string;
+  explorerUrl: ExplorerInfo;
 };
 
-const getNetwork = (network: Network) => {
-  const lowerCaseNetwork = network.toLowerCase();
-  return lowerCaseNetwork === 'mainnet' ? '' : `${lowerCaseNetwork}.`;
-};
-
-const EtherscanButton = ({
+const ExplorerButton = ({
   className,
-  value,
-  network = 'mainnet',
+  explorerUrl,
 }: Props): React.ReactElement => {
-  const type = value.length > 42 ? 'tx' : 'address';
-
+  const { url, alt } = explorerUrl();
   const onClick = (event: React.MouseEvent<HTMLAnchorElement>): void => {
     event.stopPropagation();
   };
@@ -44,17 +36,12 @@ const EtherscanButton = ({
       aria-label="Show details on Etherscan"
       rel="noopener noreferrer"
       onClick={onClick}
-      href={`https://${getNetwork(network)}etherscan.io/${type}/${value}`}
+      href={url}
       target="_blank"
       onKeyDown={onKeyDown}>
-      <Icon
-        size="sm"
-        color="icon"
-        type="externalLink"
-        tooltip="Show details on Etherscan"
-      />
+      <Icon size="sm" color="icon" type="externalLink" tooltip={alt} />
     </StyledLink>
   );
 };
 
-export default EtherscanButton;
+export default ExplorerButton;
