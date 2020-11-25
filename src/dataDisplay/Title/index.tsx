@@ -50,47 +50,22 @@ const StyledH5 = styled.h5<{ withoutMargin?: boolean; strong?: boolean }>`
   margin: ${({ withoutMargin }) => (withoutMargin ? 0 : '18px')} 0;
 `;
 
-const Title = ({
-  children,
-  size,
-  withoutMargin,
-  ...rest
-}: Props): React.ReactElement => {
+const Title = ({ children, size, ...rest }: Props): React.ReactElement => {
   switch (size) {
     case 'xl': {
-      return (
-        <StyledH1 withoutMargin={withoutMargin} {...rest}>
-          {children}
-        </StyledH1>
-      );
+      return <StyledH1 {...rest}>{children}</StyledH1>;
     }
     case 'lg': {
-      return (
-        <StyledH2 withoutMargin={withoutMargin} {...rest}>
-          {children}
-        </StyledH2>
-      );
+      return <StyledH2 {...rest}>{children}</StyledH2>;
     }
     case 'md': {
-      return (
-        <StyledH3 withoutMargin={withoutMargin} {...rest}>
-          {children}
-        </StyledH3>
-      );
+      return <StyledH3 {...rest}>{children}</StyledH3>;
     }
     case 'sm': {
-      return (
-        <StyledH4 withoutMargin={withoutMargin} {...rest}>
-          {children}
-        </StyledH4>
-      );
+      return <StyledH4 {...rest}>{children}</StyledH4>;
     }
     case 'xs': {
-      return (
-        <StyledH5 withoutMargin={withoutMargin} {...rest}>
-          {children}
-        </StyledH5>
-      );
+      return <StyledH5 {...rest}>{children}</StyledH5>;
     }
   }
 };
