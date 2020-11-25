@@ -28,7 +28,7 @@ export const Icons = (): React.ReactElement => {
     width: 140px;
     height: 140px;
     border: 1px solid ${({ theme }) => theme.colors.background};
-    font-family: 'Averta', sans-serif;
+    font-family: ${({ theme }) => theme.fonts.fontFamily}, sans-serif;
     font-size: 14px;
   `;
 

@@ -18,7 +18,7 @@ const StyledButtonLink = styled.button<Props>`
   text-decoration: underline;
   cursor: pointer;
   color: ${({ theme, color }) => theme['colors'][color]};
-  font-family: inherit;
+  font-family: ${({ theme }) => theme.fonts.fontFamily};
   display: flex;
   align-items: center;
 
