@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Button from './index';
+import { Text } from '../../index';
 
 export default {
   title: 'Inputs/Button',
@@ -20,15 +21,25 @@ const Wrapper = styled.div`
 export const SimpleButton = (): React.ReactElement => (
   <>
     <Button size="md" color="primary" variant="contained">
-      text
+      <Text size="xl" color="white">
+        Text
+      </Text>
     </Button>
 
     <Button size="md" color="primary" variant="outlined">
-      text
+      <Text size="xl" color="primary">
+        Text
+      </Text>
     </Button>
 
-    <Button size="md" iconType="addressBook" color="primary" variant="bordered">
-      text
+    <Button
+      size="md"
+      iconType="addressBook"
+      color="secondary"
+      variant="bordered">
+      <Text size="xl" color="secondary">
+        Text
+      </Text>
     </Button>
   </>
 );
@@ -36,11 +47,15 @@ export const SimpleButton = (): React.ReactElement => (
 export const DisabledButton = (): React.ReactElement => (
   <>
     <Button size="md" color="primary" variant="contained" disabled>
-      text
+      <Text size="xl" color="white">
+        Text
+      </Text>
     </Button>
 
     <Button size="md" color="primary" variant="outlined" disabled>
-      text
+      <Text size="xl" color="primary">
+        Text
+      </Text>
     </Button>
 
     <Button
@@ -49,7 +64,9 @@ export const DisabledButton = (): React.ReactElement => (
       color="primary"
       variant="bordered"
       disabled>
-      text
+      <Text size="xl" color="primary">
+        Text
+      </Text>
     </Button>
   </>
 );
@@ -57,10 +74,19 @@ export const DisabledButton = (): React.ReactElement => (
 export const Sizes = (): React.ReactElement => (
   <Wrapper>
     <Button size="md" color="primary" variant="contained">
-      text
+      <Text size="xl" color="white">
+        Text
+      </Text>
     </Button>
     <Button size="lg" color="primary" variant="contained">
-      some text
+      <Text size="xl" color="white">
+        Text
+      </Text>
+    </Button>
+    <Button size="lg" color="secondary" variant="bordered">
+      <Text size="xl" color="secondary">
+        Text
+      </Text>
     </Button>
   </Wrapper>
 );
@@ -72,17 +98,32 @@ export const withIcon = (): React.ReactElement => (
       iconType="addressBook"
       color="primary"
       onClick={() => alert('click')}>
-      text
+      <Text size="xl" color="primary">
+        Text
+      </Text>
     </Button>
     <Button size="lg" iconType="addressBook" color="error" variant="outlined">
-      text
+      <Text size="xl" color="error">
+        Text
+      </Text>
     </Button>
     <Button
       size="lg"
       iconType="addressBook"
       color="primary"
       variant="contained">
-      text
+      <Text size="xl" color="white">
+        Text
+      </Text>
+    </Button>
+    <Button
+      size="lg"
+      iconType="addressBook"
+      color="secondary"
+      variant="bordered">
+      <Text size="xl" color="secondary">
+        Text
+      </Text>
     </Button>
   </>
 );

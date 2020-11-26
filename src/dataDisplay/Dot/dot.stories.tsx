@@ -12,7 +12,7 @@ export default {
 
 export const DotWithText = (): React.ReactElement => (
   <Dot color="primary">
-    <Text size="sm" color="white">
+    <Text size="xl" color="white">
       1
     </Text>
   </Dot>
