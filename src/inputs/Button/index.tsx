@@ -3,7 +3,7 @@ import ButtonMUI from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 
-import theme, { ThemeButtonSize } from '../../theme';
+import theme, { ThemeButtonSize, ThemeIconSize } from '../../theme';
 import { Icon, IconType } from '../../dataDisplay/Icon';
 
 enum Variant {
@@ -13,10 +13,11 @@ enum Variant {
 }
 export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   children: React.ReactNode;
-  iconType?: keyof IconType;
   size: ThemeButtonSize;
   color: 'primary' | 'secondary' | 'error';
   variant?: keyof typeof Variant;
+  iconType?: keyof IconType;
+  iconSize?: ThemeIconSize;
 }
 
 type HoverColor = 'primaryHover' | 'secondaryHover' | 'errorHover';
@@ -29,6 +30,7 @@ const Button = ({
   children,
   iconType,
   size,
+  iconSize = 'md',
   color,
   variant,
   ...rest
@@ -92,8 +94,7 @@ const Button = ({
     <BootstrapButton {...rest}>
       {iconType && (
         <StyledIcon
-          size="md"
-          /* size={iconSize} */
+          size={iconSize}
           color={variant === Variant.contained ? 'white' : color}
           type={iconType}
         />

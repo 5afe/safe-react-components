@@ -127,3 +127,29 @@ export const withIcon = (): React.ReactElement => (
     </Button>
   </>
 );
+
+export const withIconSize = (): React.ReactElement => (
+  <>
+    <Button
+      variant="bordered"
+      size="lg"
+      iconType="addressBook"
+      color="primary"
+      onClick={() => alert('click')}>
+      <Text size="xl" color="primary">
+        Text
+      </Text>
+    </Button>
+    <Button
+      variant="bordered"
+      iconType="addressBook"
+      iconSize="sm"
+      size="lg"
+      color="primary"
+      onClick={() => alert('click')}>
+      <Text size="xl" color="primary">
+        Text
+      </Text>
+    </Button>
+  </>
+);
