@@ -32,8 +32,12 @@ export const SimpleButton = (): React.ReactElement => (
       </Text>
     </Button>
 
-    <Button size="md" iconType="addressBook" color="primary" variant="bordered">
-      <Text size="xl" color="primary">
+    <Button
+      size="md"
+      iconType="addressBook"
+      color="secondary"
+      variant="bordered">
+      <Text size="xl" color="secondary">
         Text
       </Text>
     </Button>
@@ -79,6 +83,11 @@ export const Sizes = (): React.ReactElement => (
         Text
       </Text>
     </Button>
+    <Button size="lg" color="secondary" variant="bordered">
+      <Text size="xl" color="secondary">
+        Text
+      </Text>
+    </Button>
   </Wrapper>
 );
 
@@ -104,6 +113,15 @@ export const withIcon = (): React.ReactElement => (
       color="primary"
       variant="contained">
       <Text size="xl" color="white">
+        Text
+      </Text>
+    </Button>
+    <Button
+      size="lg"
+      iconType="addressBook"
+      color="secondary"
+      variant="bordered">
+      <Text size="xl" color="secondary">
         Text
       </Text>
     </Button>

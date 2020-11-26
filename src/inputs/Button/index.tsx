@@ -70,12 +70,14 @@ const Button = ({
   const BootstrapButton = withStyles({
     root: {
       height: theme.buttons.size[size].height,
+      minWidth: theme.buttons.size[size].minWidth,
       padding: theme.buttons.size[size].padding,
       fontFamily: theme.fonts.fontFamily,
       color: getColor(),
       'text-transform': 'capitalize',
       'background-color': getBackgroundColor(),
       border: getBorder(),
+      'border-radius': '8px',
       '&:hover': {
         'background-color': getBackgroundColor(true),
       },
@@ -91,6 +93,7 @@ const Button = ({
       {iconType && (
         <StyledIcon
           size="md"
+          /* size={iconSize} */
           color={variant === Variant.contained ? 'white' : color}
           type={iconType}
         />
