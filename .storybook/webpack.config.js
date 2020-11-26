@@ -11,6 +11,16 @@ module.exports = ({ config }) => {
     ]
   });
 
+  config.module.rules = config.module.rules.map(rule => {
+    if (rule.test && rule.test.toString().includes('woff')) {
+      return {
+        ...rule,
+        test: /\.(svg|ico|jpg|jpeg|png|gif|webp|cur|ani|pdf)(\?.*)?$/
+      }
+    }
+    return rule
+  })
+
   config.module.rules.push({
     test: /\.(woff|woff2|eot|ttf)$/,
     use: [
