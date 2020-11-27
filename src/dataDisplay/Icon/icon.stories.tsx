@@ -88,6 +88,7 @@ export const Icons = (): React.ReactElement => {
     'resync',
     'rocket',
     'scan',
+    'safe',
     'search',
     'sendAgain',
     'sent',

@@ -57,6 +57,7 @@ import requiredConfirmations from './images/requiredConfirmations';
 import restricted from './images/restricted';
 import resync from './images/resync';
 import rocket from './images/rocket';
+import safe from './images/safe';
 import scan from './images/scan';
 import search from './images/search';
 import sendAgain from './images/sendAgain';
@@ -151,6 +152,7 @@ const icons = {
   restricted,
   resync,
   rocket,
+  safe,
   scan,
   search,
   sendAgain,
