@@ -52,7 +52,6 @@ const Button = ({
       case Variant.contained:
         return isHover ? theme.colors.secondary : theme.colors.primary;
       case Variant.outlined:
-        return isHover ? theme.colors.background : theme.colors.white;
       case Variant.bordered:
         return isHover ? theme.colors.background : theme.colors.white;
     }
