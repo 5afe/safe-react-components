@@ -20,7 +20,7 @@ export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   iconSize?: ThemeIconSize;
 }
 
-type HoverColor = 'primaryHover' | 'secondaryHover' | 'errorHover';
+type HoverColor = 'secondary' | 'secondaryHover' | 'errorHover';
 
 const StyledIcon = styled(Icon)`
   margin-right: 5px;
@@ -50,12 +50,11 @@ const Button = ({
   const getBackgroundColor = (isHover?: boolean) => {
     switch (variant) {
       case Variant.contained:
-        return isHover
-          ? theme.colors[`${color}Hover` as HoverColor]
-          : theme.colors[color];
+        return isHover ? theme.colors.secondary : theme.colors.primary;
       case Variant.outlined:
+        return isHover ? theme.colors.background : theme.colors.white;
       case Variant.bordered:
-        return theme.colors.white;
+        return isHover ? theme.colors.background : theme.colors.white;
     }
   };
 
@@ -65,7 +64,7 @@ const Button = ({
       case Variant.outlined:
         return 'none';
       case Variant.bordered:
-        return `1px solid ${theme.colors[color]}`;
+        return `2px solid ${theme.colors[color]}`;
     }
   };
 

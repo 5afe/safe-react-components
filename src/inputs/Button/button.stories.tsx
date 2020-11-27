@@ -61,10 +61,10 @@ export const DisabledButton = (): React.ReactElement => (
     <Button
       size="md"
       iconType="addressBook"
-      color="primary"
+      color="secondary"
       variant="bordered"
       disabled>
-      <Text size="xl" color="primary">
+      <Text size="xl" color="secondary">
         Text
       </Text>
     </Button>
@@ -134,9 +134,9 @@ export const withIconSize = (): React.ReactElement => (
       variant="bordered"
       size="lg"
       iconType="addressBook"
-      color="primary"
+      color="secondary"
       onClick={() => alert('click')}>
-      <Text size="xl" color="primary">
+      <Text size="xl" color="secondary">
         Text
       </Text>
     </Button>
@@ -145,9 +145,9 @@ export const withIconSize = (): React.ReactElement => (
       iconType="addressBook"
       iconSize="sm"
       size="lg"
-      color="primary"
+      color="secondary"
       onClick={() => alert('click')}>
-      <Text size="xl" color="primary">
+      <Text size="xl" color="secondary">
         Text
       </Text>
     </Button>
