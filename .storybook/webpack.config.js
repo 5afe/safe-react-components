@@ -11,6 +11,8 @@ module.exports = ({ config }) => {
     ]
   });
 
+  // There was a problem with the fonts not being loaded
+  // I took the fix from here: https://github.com/storybookjs/storybook/issues/5936#issuecomment-532902187
   config.module.rules = config.module.rules.map(rule => {
     if (rule.test && rule.test.toString().includes('woff')) {
       return {
