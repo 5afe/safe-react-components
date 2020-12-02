@@ -45,8 +45,7 @@ export const CardDisabled = (): React.ReactElement => (
       iconType="safe"
       color="secondary"
       variant="bordered"
-      iconSize="sm"
-      disabled>
+      iconSize="sm">
       <Text size="xl" color="secondary">
         Load Safe
       </Text>
