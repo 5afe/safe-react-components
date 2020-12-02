@@ -25,17 +25,17 @@ const Disabled = styled.div`
 
 type Props = {
   className?: string;
-  isDisabled?: boolean;
+  disabled?: boolean;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const Card: React.FC<Props> = ({
   className,
   children,
-  isDisabled,
+  disabled,
   ...rest
 }): React.ReactElement => (
   <StyledCard className={className} {...rest}>
-    {isDisabled && <Disabled />}
+    {disabled && <Disabled />}
     {children}
   </StyledCard>
 );
