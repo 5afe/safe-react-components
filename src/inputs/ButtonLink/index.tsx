@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { ThemeColors, ThemeTextSize } from '../../theme';
+import { ThemeColors, ThemeTextSize, ThemeIconSize } from '../../theme';
 import { Icon, IconType } from '../../dataDisplay/Icon';
 import { Text } from '../../index';
 
 export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   iconType?: keyof IconType;
+  iconSize?: ThemeIconSize;
   textSize?: ThemeTextSize;
   color: ThemeColors;
   children: React.ReactNode;
@@ -27,18 +28,23 @@ const StyledButtonLink = styled.button<Props>`
   }
 `;
 
+const StyledText = styled(Text)`
+  margin: 0 4px;
+`;
+
 const ButtonLink = ({
   iconType,
+  iconSize = 'md',
   children,
   textSize = 'lg',
   ...rest
 }: Props): React.ReactElement => {
   return (
     <StyledButtonLink {...rest}>
-      {iconType && <Icon size="md" color={rest.color} type={iconType} />}
-      <Text size={textSize} color={rest.color}>
+      {iconType && <Icon size={iconSize} color={rest.color} type={iconType} />}
+      <StyledText size={textSize} color={rest.color}>
         {children}
-      </Text>
+      </StyledText>
     </StyledButtonLink>
   );
 };
