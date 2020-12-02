@@ -33,7 +33,7 @@ export const SimpleCard = (): React.ReactElement => (
 );
 
 export const CardDisabled = (): React.ReactElement => (
-  <Card isDisabled>
+  <Card disabled>
     <Dot color="primary">
       <Text size="xl" color="white">
         1
