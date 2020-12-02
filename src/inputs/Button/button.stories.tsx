@@ -153,3 +153,32 @@ export const withIconSize = (): React.ReactElement => (
     </Button>
   </>
 );
+
+export const withCustomComponent = (): React.ReactElement => {
+  /* eslint-disable react/display-name */
+  const Link = React.forwardRef<
+    HTMLAnchorElement,
+    { children: React.ReactNode }
+  >((props, ref) => {
+    return (
+      <a {...props} ref={ref}>
+        {props.children}
+      </a>
+    );
+  });
+
+  return (
+    <Button
+      variant="bordered"
+      iconType="addressBook"
+      iconSize="sm"
+      size="lg"
+      color="secondary"
+      component={Link}
+      to="some_url">
+      <Text size="xl" color="secondary">
+        Button as Link
+      </Text>
+    </Button>
+  );
+};

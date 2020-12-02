@@ -18,6 +18,9 @@ export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   variant?: keyof typeof Variant;
   iconType?: keyof IconType;
   iconSize?: ThemeIconSize;
+  component?: React.ReactNode;
+  // for compatibility with react-router-dom Link
+  to?: string;
 }
 
 type HoverColor = 'secondary' | 'secondaryHover' | 'errorHover';
