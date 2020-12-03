@@ -14,7 +14,6 @@ const StyledCard = styled.div`
 
 const Disabled = styled.div`
   opacity: 0.5;
-  pointer-events: none;
   position: absolute;
   height: 100%;
   width: 100%;
