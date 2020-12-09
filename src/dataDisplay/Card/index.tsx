@@ -8,7 +8,6 @@ const StyledCard = styled.div`
   border-radius: 8px;
   padding: 24px;
   background-color: ${({ theme }) => theme.colors.white};
-  z-index: 1;
   position: relative;
 `;
 
@@ -18,7 +17,7 @@ const Disabled = styled.div`
   height: 100%;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.white};
-  z-index: 999;
+  z-index: 1;
   top: 0;
   left: 0;
 `;
