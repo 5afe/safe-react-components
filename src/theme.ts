@@ -1,8 +1,8 @@
 const theme = {
   buttons: {
     size: {
-      md: { height: '36px', padding: '0 16px' },
-      lg: { height: '52px', padding: '0 25px' },
+      md: { height: '36px', minWidth: '130px', padding: '0 24px' },
+      lg: { height: '52px', minWidth: '240px', padding: '0 48px' },
     },
   },
   colors: {

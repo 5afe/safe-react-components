@@ -8,11 +8,5 @@ declare module '*.svg' {
   export default src;
 }
 
-declare module '*.woff2' {
-  import React = require('react');
-
-  export const ReactComponent: React.SFC<React.SVGProps<SVGSVGElement>>;
-
-  const src: string;
-  export default src;
-}
+declare module '*.ttf';
+declare module '*.woff2';

@@ -1,5 +1,6 @@
 export { default as Card } from './Card';
 export { default as Divider } from './Divider';
+export { default as Dot } from './Dot';
 export { default as FixedIcon } from './FixedIcon';
 export { default as FixedDialog } from './FixedDialog';
 export * from './Icon';

@@ -1,6 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Button from './index';
+import { Text } from '../../index';
 
 export default {
   title: 'Inputs/Button',
@@ -10,42 +12,83 @@ export default {
   },
 };
 
+const Wrapper = styled.div`
+  > * {
+    margin-right: 5px;
+  }
+`;
+
 export const SimpleButton = (): React.ReactElement => (
   <>
-    <div>
-      <Button size="md" color="primary" variant="contained">
-        text
-      </Button>
-      <Button size="md" color="secondary" variant="contained">
-        text
-      </Button>
-      <Button size="md" color="error" variant="contained">
-        text
-      </Button>
-    </div>
-    <div>
-      <Button size="md" color="primary" variant="outlined">
-        text
-      </Button>
-      <Button size="md" color="secondary" variant="outlined">
-        text
-      </Button>
-      <Button size="md" color="error" variant="outlined">
-        text
-      </Button>
-    </div>
+    <Button size="md" color="primary" variant="contained">
+      <Text size="xl" color="white">
+        Text
+      </Text>
+    </Button>
+
+    <Button size="md" color="primary" variant="outlined">
+      <Text size="xl" color="primary">
+        Text
+      </Text>
+    </Button>
+
+    <Button
+      size="md"
+      iconType="addressBook"
+      color="secondary"
+      variant="bordered">
+      <Text size="xl" color="secondary">
+        Text
+      </Text>
+    </Button>
+  </>
+);
+
+export const DisabledButton = (): React.ReactElement => (
+  <>
+    <Button size="md" color="primary" variant="contained" disabled>
+      <Text size="xl" color="white">
+        Text
+      </Text>
+    </Button>
+
+    <Button size="md" color="primary" variant="outlined" disabled>
+      <Text size="xl" color="primary">
+        Text
+      </Text>
+    </Button>
+
+    <Button
+      size="md"
+      iconType="addressBook"
+      color="secondary"
+      variant="bordered"
+      disabled>
+      <Text size="xl" color="secondary">
+        Text
+      </Text>
+    </Button>
   </>
 );
 
 export const Sizes = (): React.ReactElement => (
-  <>
+  <Wrapper>
     <Button size="md" color="primary" variant="contained">
-      text
+      <Text size="xl" color="white">
+        Text
+      </Text>
     </Button>
     <Button size="lg" color="primary" variant="contained">
-      some text
+      <Text size="xl" color="white">
+        Text
+      </Text>
     </Button>
-  </>
+    <Button size="lg" color="secondary" variant="bordered">
+      <Text size="xl" color="secondary">
+        Text
+      </Text>
+    </Button>
+  </Wrapper>
 );
 
 export const withIcon = (): React.ReactElement => (
@@ -55,17 +98,87 @@ export const withIcon = (): React.ReactElement => (
       iconType="addressBook"
       color="primary"
       onClick={() => alert('click')}>
-      text
+      <Text size="xl" color="primary">
+        Text
+      </Text>
     </Button>
     <Button size="lg" iconType="addressBook" color="error" variant="outlined">
-      text
+      <Text size="xl" color="error">
+        Text
+      </Text>
     </Button>
     <Button
       size="lg"
       iconType="addressBook"
       color="primary"
       variant="contained">
-      text
+      <Text size="xl" color="white">
+        Text
+      </Text>
+    </Button>
+    <Button
+      size="lg"
+      iconType="addressBook"
+      color="secondary"
+      variant="bordered">
+      <Text size="xl" color="secondary">
+        Text
+      </Text>
     </Button>
   </>
 );
+
+export const withIconSize = (): React.ReactElement => (
+  <>
+    <Button
+      variant="bordered"
+      size="lg"
+      iconType="addressBook"
+      color="secondary"
+      onClick={() => alert('click')}>
+      <Text size="xl" color="secondary">
+        Text
+      </Text>
+    </Button>
+    <Button
+      variant="bordered"
+      iconType="addressBook"
+      iconSize="sm"
+      size="lg"
+      color="secondary"
+      onClick={() => alert('click')}>
+      <Text size="xl" color="secondary">
+        Text
+      </Text>
+    </Button>
+  </>
+);
+
+export const withCustomComponent = (): React.ReactElement => {
+  /* eslint-disable react/display-name */
+  const Link = React.forwardRef<
+    HTMLAnchorElement,
+    { children: React.ReactNode }
+  >((props, ref) => {
+    return (
+      <a {...props} ref={ref}>
+        {props.children}
+      </a>
+    );
+  });
+
+  return (
+    <Button
+      variant="bordered"
+      iconType="addressBook"
+      iconSize="sm"
+      size="lg"
+      color="secondary"
+      component={Link}
+      to="some_url">
+      <Text size="xl" color="secondary">
+        Button as Link
+      </Text>
+    </Button>
+  );
+};
