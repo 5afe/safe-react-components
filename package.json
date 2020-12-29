@@ -22,12 +22,13 @@
   "author": "Gnosis (https://gnosis.pm)",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/icons": "^4.11.2",
     "classnames": "^2.2.6",
     "polished": "^3.6.7",
     "react-media": "^1.10.0"
   },
   "devDependencies": {
-    "@material-ui/core": "^4.11.0",
+    "@material-ui/core": "^4.11.2",
     "@storybook/addon-actions": "^6.1.0",
     "@storybook/addon-docs": "^6.1.0",
     "@storybook/addon-links": "^6.1.0",
