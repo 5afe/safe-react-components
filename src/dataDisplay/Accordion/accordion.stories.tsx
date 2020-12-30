@@ -7,7 +7,7 @@ export default {
   title: 'Data Display/Accordion',
   component: Accordion,
   parameters: {
-    componentSubtitle: 'Useful to wrap content inside a styled container.',
+    componentSubtitle: 'Expansion panels with Summary and Detail content.',
   },
 };
 
