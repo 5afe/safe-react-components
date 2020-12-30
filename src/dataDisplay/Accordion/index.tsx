@@ -16,6 +16,7 @@ export const StyledAccordion = styled(AccordionMUI)<AccordionProps>`
       compact ? '2px solid ' + theme.colors.separator : 'none'};
     border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
     margin-bottom: ${({ compact }) => (compact ? '16px' : '0')};
+    overflow: hidden;
 
     &:before {
       height: 0;
@@ -38,6 +39,7 @@ export const AccordionSummary = styled(AccordionSummaryMUI)<AccordionProps>`
     }
     &:hover {
       background-color: ${({ theme }) => theme.colors.background};
+      border-radius: ${({ compact }) => (compact ? '8px' : '0')};
     }
     .MuiAccordionSummary-content {
       &.Mui-expanded {
