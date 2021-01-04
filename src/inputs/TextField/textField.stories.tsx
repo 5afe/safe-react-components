@@ -27,6 +27,21 @@ export const SimpleTextField = (): React.ReactElement => {
   );
 };
 
+export const SimpleNumberField = (): React.ReactElement => {
+  const [value, setValue] = useState<string>('');
+  return (
+    <form noValidate autoComplete="off" onSubmit={onSubmit}>
+      <TextField
+        id="standard-name"
+        label="Name"
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        input={{ type: 'number', min: 5, max: 10, step: 1 }}
+      />
+    </form>
+  );
+};
+
 export const Error = (): React.ReactElement => {
   const [value, setValue] = useState<string>('some incorrect value');
   return (
