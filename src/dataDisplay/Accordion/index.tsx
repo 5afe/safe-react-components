@@ -2,8 +2,9 @@ import React, { ReactNode, ReactElement } from 'react';
 import AccordionMUI from '@material-ui/core/Accordion';
 import AccordionSummaryMUI from '@material-ui/core/AccordionSummary';
 import AccordionDetailsMUI from '@material-ui/core/AccordionDetails';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import styled from 'styled-components';
+
+import FixedIcon from '../FixedIcon';
 
 type AccordionProps = {
   compact?: boolean;
@@ -50,6 +51,9 @@ export const AccordionSummary = styled(AccordionSummaryMUI)<AccordionProps>`
         margin: 0;
       }
     }
+    .MuiIconButton-root {
+      font-size: 0;
+    }
   }
 `;
 export const AccordionDetails = styled(AccordionDetailsMUI)``;
@@ -84,7 +88,7 @@ const Accordion = ({
         onChange?.(event, expanded, id);
       }}>
       <AccordionSummary
-        expandIcon={<ExpandMoreIcon />}
+        expandIcon={<FixedIcon type="chevronDown" />}
         aria-controls="panel1a-content"
         id="panel1a-header">
         {summaryContent}
