@@ -45,22 +45,11 @@ type CustomTabsProps = TabsProps<
 const CustomTabs = ({ variantStyle, ...rest }: CustomTabsProps) => {
   const CustomTabsMui = withStyles({
     root: {
-      backgroundColor:
-        variantStyle === 'contained' ? theme.colors.white : theme.colors.white,
       borderRadius: variantStyle === 'contained' ? '8px 8px 0 0' : 'inherit',
 
       '& .MuiTabs-indicator': {
         backgroundColor:
           variantStyle === 'outlined' ? theme.colors.primary : 'transparent',
-      },
-      '& .MuiTab-wrapper svg': {
-        marginTop: '4px',
-      },
-      '& .MuiTab-root.Mui-selected': {
-        backgroundColor:
-          variantStyle === 'contained'
-            ? theme.colors.inputField
-            : theme.colors.white,
       },
       '& .MuiTab-textColorInherit.Mui-selected p': {
         color: theme.colors.primary,
