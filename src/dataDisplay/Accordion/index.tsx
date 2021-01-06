@@ -1,16 +1,19 @@
-import React, { ReactNode, ReactElement } from 'react';
-import AccordionMUI from '@material-ui/core/Accordion';
-import AccordionSummaryMUI from '@material-ui/core/AccordionSummary';
-import AccordionDetailsMUI from '@material-ui/core/AccordionDetails';
+import React, { ReactElement } from 'react';
+import AccordionMUI, {
+  AccordionProps as AccordionMUIProps,
+} from '@material-ui/core/Accordion';
+import AccordionSummaryMUI, {
+  AccordionSummaryProps as AccordionSummaryMUIProps,
+} from '@material-ui/core/AccordionSummary';
 import styled from 'styled-components';
 
 import FixedIcon from '../FixedIcon';
 
-type AccordionProps = {
+type StyledAccordionProps = AccordionMUIProps & {
   compact?: boolean;
 };
 
-export const StyledAccordion = styled(AccordionMUI)<AccordionProps>`
+const StyledAccordion = styled(AccordionMUI)<StyledAccordionProps>`
   &.MuiAccordion-root {
     border-radius: ${({ compact }) => (compact ? '8px' : '0')};
     border: ${({ compact, theme }) =>
@@ -30,20 +33,29 @@ export const StyledAccordion = styled(AccordionMUI)<AccordionProps>`
     &.Mui-expanded {
       margin: ${({ compact }) => (compact ? '0 0 16px 0' : '0')};
     }
+
+    & .MuiAccordionSummary-root {
+      &.Mui-expanded {
+        margin-bottom: ${({ compact }) => (compact ? '16px' : '0')};
+      }
+
+      &:hover {
+        border-radius: ${({ compact }) => (compact ? '8px' : '0')};
+      }
+    }
   }
 `;
-export const AccordionSummary = styled(AccordionSummaryMUI)<AccordionProps>`
+
+const StyledAccordionSummary = styled(AccordionSummaryMUI)`
   &.MuiAccordionSummary-root {
     &.Mui-expanded {
       min-height: 48px;
       border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
-      margin-bottom: ${({ compact }) => (compact ? '16px' : '0')};
       background-color: ${({ theme }) => theme.colors.background};
     }
 
     &:hover {
       background-color: ${({ theme }) => theme.colors.background};
-      border-radius: ${({ compact }) => (compact ? '8px' : '0')};
     }
 
     .MuiAccordionSummary-content {
@@ -57,46 +69,31 @@ export const AccordionSummary = styled(AccordionSummaryMUI)<AccordionProps>`
     }
   }
 `;
-export const AccordionDetails = styled(AccordionDetailsMUI)``;
 
-type Props = {
-  compact?: boolean;
-  id?: string;
-  onChange?: (
-    event: React.ChangeEvent<Record<string, unknown>>,
-    expanded: boolean,
-    id?: string
-  ) => void;
-  summaryContent: ReactNode;
-  detailsContent: ReactNode;
-};
-
-const Accordion = ({
+export const Accordion = ({
   compact,
-  id,
-  onChange,
-  summaryContent,
-  detailsContent,
+  children,
   ...props
-}: Props): ReactElement => {
+}: StyledAccordionProps): ReactElement => {
   return (
-    <StyledAccordion
-      square
-      elevation={0}
-      compact={compact}
-      {...props}
-      onChange={(event, expanded) => {
-        onChange?.(event, expanded, id);
-      }}>
-      <AccordionSummary
-        expandIcon={<FixedIcon type="chevronDown" />}
-        aria-controls="panel1a-content"
-        id="panel1a-header">
-        {summaryContent}
-      </AccordionSummary>
-      <AccordionDetails>{detailsContent}</AccordionDetails>
+    <StyledAccordion square elevation={0} compact={compact} {...props}>
+      {children}
     </StyledAccordion>
   );
 };
 
-export default Accordion;
+export const AccordionSummary = ({
+  children,
+  ...props
+}: AccordionSummaryMUIProps): ReactElement => {
+  return (
+    <StyledAccordionSummary
+      expandIcon={<FixedIcon type="chevronDown" />}
+      {...props}>
+      {children}
+    </StyledAccordionSummary>
+  );
+};
+
+export { default as AccordionActions } from '@material-ui/core/AccordionActions';
+export { default as AccordionDetails } from '@material-ui/core/AccordionDetails';
