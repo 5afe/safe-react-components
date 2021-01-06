@@ -53,6 +53,7 @@ export const AccordionSummary = styled(AccordionSummaryMUI)<AccordionProps>`
     }
     .MuiIconButton-root {
       font-size: 0;
+      padding: 16px;
     }
   }
 `;
