@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Accordion from './index';
+import { Accordion, AccordionSummary, AccordionDetails } from './index';
 import { Card, Text, IconText } from '../../index';
 
 export default {
@@ -13,54 +13,54 @@ export default {
 
 export const SimpleAccordion = (): React.ReactElement => (
   <Card>
-    <Accordion
-      summaryContent={
+    <Accordion>
+      <AccordionSummary>
         <IconText
           iconSize="sm"
           textSize="xl"
           iconType="code"
           text="Transaction 1"
         />
-      }
-      detailsContent={
+      </AccordionSummary>
+      <AccordionDetails>
         <Text size="lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </Text>
-      }
-    />
-    <Accordion
-      summaryContent={
+      </AccordionDetails>
+    </Accordion>
+    <Accordion>
+      <AccordionSummary>
         <IconText
           iconSize="sm"
           textSize="xl"
           iconType="code"
           text="Transaction 2"
         />
-      }
-      detailsContent={
+      </AccordionSummary>
+      <AccordionDetails>
         <Text size="lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </Text>
-      }
-    />
-    <Accordion
-      summaryContent={
+      </AccordionDetails>
+    </Accordion>
+    <Accordion>
+      <AccordionSummary>
         <IconText
           iconSize="sm"
           textSize="xl"
           iconType="code"
           text="Transaction 3"
         />
-      }
-      detailsContent={
+      </AccordionSummary>
+      <AccordionDetails>
         <Text size="lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </Text>
-      }
-    />
+      </AccordionDetails>
+    </Accordion>
   </Card>
 );
 
@@ -73,39 +73,53 @@ export const CompactAccordion = (): React.ReactElement => (
       alignItems: 'center',
       flexDirection: 'column',
     }}>
-    <Accordion
-      compact
-      summaryContent={
+    <Accordion compact>
+      <AccordionSummary>
         <IconText
           iconSize="sm"
           textSize="xl"
           iconType="code"
           text="Transaction 1"
         />
-      }
-      detailsContent={
+      </AccordionSummary>
+      <AccordionDetails>
         <Text size="lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </Text>
-      }
-    />
-    <Accordion
-      compact
-      summaryContent={
+      </AccordionDetails>
+    </Accordion>
+    <Accordion compact>
+      <AccordionSummary>
         <IconText
           iconSize="sm"
           textSize="xl"
           iconType="code"
           text="Transaction 2"
         />
-      }
-      detailsContent={
+      </AccordionSummary>
+      <AccordionDetails>
         <Text size="lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </Text>
-      }
-    />
+      </AccordionDetails>
+    </Accordion>
+    <Accordion compact>
+      <AccordionSummary>
+        <IconText
+          iconSize="sm"
+          textSize="xl"
+          iconType="code"
+          text="Transaction 3"
+        />
+      </AccordionSummary>
+      <AccordionDetails>
+        <Text size="lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </Text>
+      </AccordionDetails>
+    </Accordion>
   </div>
 );

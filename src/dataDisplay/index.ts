@@ -1,5 +1,5 @@
 export { default as Card } from './Card';
-export { default as Accordion } from './Accordion';
+export * from './Accordion';
 export { default as Divider } from './Divider';
 export { default as Dot } from './Dot';
 export { default as FixedIcon } from './FixedIcon';
