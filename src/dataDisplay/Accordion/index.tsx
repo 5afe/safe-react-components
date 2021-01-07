@@ -34,14 +34,8 @@ const StyledAccordion = styled(AccordionMUI)<StyledAccordionProps>`
       margin: ${({ compact }) => (compact ? '0 0 16px 0' : '0')};
     }
 
-    & .MuiAccordionSummary-root {
-      &.Mui-expanded {
-        margin-bottom: ${({ compact }) => (compact ? '16px' : '0')};
-      }
-
-      &:hover {
-        border-radius: ${({ compact }) => (compact ? '8px' : '0')};
-      }
+    .MuiAccordionDetails-root {
+      padding: 16px;
     }
   }
 `;
