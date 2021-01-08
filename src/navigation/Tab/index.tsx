@@ -28,9 +28,9 @@ export type Props = {
 };
 
 const TabWrapper = styled.div<{ variant: Variant }>`
-  border-bottom: ${({ variant, theme }) =>
+  box-shadow: ${({ variant, theme }) =>
     variant === 'outlined'
-      ? '1px solid ' + theme.colors.overlay.color
+      ? 'inset 0 -2px 0' + theme.colors.overlay.color
       : 'none'};
 `;
 
