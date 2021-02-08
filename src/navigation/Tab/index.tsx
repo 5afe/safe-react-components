@@ -75,6 +75,7 @@ const CustomTab = ({ variantStyle, ...rest }: CustomTabProps) => {
   const CustomTabMui = withStyles({
     root: {
       fontFamily: theme.fonts.fontFamily,
+      letterSpacing: '1px',
       backgroundColor:
         variantStyle === 'contained' ? theme.colors.white : 'inherit',
       border:
