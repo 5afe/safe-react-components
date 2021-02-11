@@ -32,6 +32,12 @@ const customTooltip = ({
         ? (theme.colors[textColor] as string)
         : theme.colors.text,
     },
+    arrow: {
+      color: backgroundColor
+        ? (theme.colors[backgroundColor] as string)
+        : theme.colors.overlay.color,
+      boxShadow: 'transparent',
+    },
   }))(MUITooltip);
 
 type Props = {

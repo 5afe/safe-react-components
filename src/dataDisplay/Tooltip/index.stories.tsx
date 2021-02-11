@@ -25,3 +25,11 @@ export const CustomColor = (): React.ReactElement => {
     </Tooltip>
   );
 };
+
+export const CustomColorAndArrow = (): React.ReactElement => {
+  return (
+    <Tooltip title="Some text" backgroundColor="rinkeby" placement="left" arrow>
+      <span>hover me</span>
+    </Tooltip>
+  );
+};
