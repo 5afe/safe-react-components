@@ -7,15 +7,10 @@ import theme, { ThemeColors } from '../../theme';
 
 type TooltipColors = {
   backgroundColor?: ThemeColors;
-  borderColor?: ThemeColors;
   textColor?: ThemeColors;
 };
 
-const customTooltip = ({
-  backgroundColor,
-  borderColor,
-  textColor,
-}: TooltipColors) =>
+const customTooltip = ({ backgroundColor, textColor }: TooltipColors) =>
   withStyles(() => ({
     popper: {
       zIndex: 2001,
@@ -24,10 +19,8 @@ const customTooltip = ({
       backgroundColor: backgroundColor
         ? (theme.colors[backgroundColor] as string)
         : theme.colors.overlay.color,
-      border: `1px solid ${
-        borderColor ? (theme.colors[borderColor] as string) : theme.colors.icon
-      }`,
       boxShadow: `1px 2px 4px ${rgba(theme.colors.shadow.color, 0.08)}`,
+      border: 'none',
       color: textColor
         ? (theme.colors[textColor] as string)
         : theme.colors.text,
@@ -36,7 +29,10 @@ const customTooltip = ({
       color: backgroundColor
         ? (theme.colors[backgroundColor] as string)
         : theme.colors.overlay.color,
-      boxShadow: 'transparent',
+      border: 'none',
+      '&::before': {
+        boxShadow: `1px 2px 4px ${rgba(theme.colors.shadow.color, 0.08)}`,
+      },
     },
   }))(MUITooltip);
 
@@ -48,14 +44,12 @@ type Props = {
 export const Tooltip = ({
   title,
   backgroundColor,
-  borderColor,
   textColor,
   children,
   ...rest
 }: Props & TooltipProps): ReactElement => {
   const StyledTooltip = customTooltip({
     backgroundColor,
-    borderColor,
     textColor,
   });
 

@@ -20,7 +20,7 @@ export const Basic = (): React.ReactElement => {
 
 export const CustomColor = (): React.ReactElement => {
   return (
-    <Tooltip title="Some text" backgroundColor="rinkeby">
+    <Tooltip title="Some text" backgroundColor="rinkeby" arrow>
       <span>hover me</span>
     </Tooltip>
   );
@@ -28,7 +28,7 @@ export const CustomColor = (): React.ReactElement => {
 
 export const CustomColorAndArrow = (): React.ReactElement => {
   return (
-    <Tooltip title="Some text" backgroundColor="rinkeby" placement="left" arrow>
+    <Tooltip title="Some text" backgroundColor="white" placement="left" arrow>
       <span>hover me</span>
     </Tooltip>
   );
