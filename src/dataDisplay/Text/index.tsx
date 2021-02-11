@@ -36,7 +36,7 @@ const StyledTooltip = withStyles(() => ({
   },
   arrow: {
     color: theme.colors.white,
-    boxShadow: `0px 0px 10px ${rgba(theme.colors.shadow.color, 0.2)}`,
+    boxShadow: 'transparent',
   },
 }))(Tooltip);
 
