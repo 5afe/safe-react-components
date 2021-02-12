@@ -1,16 +1,18 @@
 import React, { ReactElement } from 'react';
 import MUITooltip, { TooltipProps } from '@material-ui/core/Tooltip';
 import { withStyles } from '@material-ui/core/styles';
-import { rgba } from 'polished';
+import { padding, rgba } from 'polished';
 
 import theme, { ThemeColors } from '../../theme';
 
 type TooltipColors = {
   backgroundColor?: ThemeColors;
   textColor?: ThemeColors;
+  padding?: string;
+  /* textSize?: string; */
 };
 
-const customTooltip = ({ backgroundColor, textColor }: TooltipColors) =>
+const customTooltip = ({ backgroundColor, textColor, padding }: TooltipColors) =>
   withStyles(() => ({
     popper: {
       zIndex: 2001,
@@ -24,6 +26,12 @@ const customTooltip = ({ backgroundColor, textColor }: TooltipColors) =>
       color: textColor
         ? (theme.colors[textColor] as string)
         : theme.colors.text,
+      padding: ${({ padding }) => (padding ? '8px' : '16px')},
+
+      /* fontSize: theme.text.size.lg.fontSize,
+      lineHeight: theme.text.size.lg.lineHeight,
+      padding: '12px',
+      borderRadius: '8px', */
     },
     arrow: {
       color: backgroundColor
@@ -45,12 +53,14 @@ export const Tooltip = ({
   title,
   backgroundColor,
   textColor,
+  padding,
   children,
   ...rest
 }: Props & TooltipProps): ReactElement => {
   const StyledTooltip = customTooltip({
     backgroundColor,
     textColor,
+    padding,
   });
 
   return (
