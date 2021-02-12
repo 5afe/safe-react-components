@@ -28,7 +28,15 @@ export const CustomColor = (): React.ReactElement => {
 
 export const CustomColorAndArrow = (): React.ReactElement => {
   return (
-    <Tooltip title="Some text" backgroundColor="white" placement="left" padding arrow>
+    <Tooltip title="Some text" backgroundColor="primary" placement="left" arrow>
+      <span>hover me</span>
+    </Tooltip>
+  );
+};
+
+export const CustomSize = (): React.ReactElement => {
+  return (
+    <Tooltip title="Some text" size="lg" arrow>
       <span>hover me</span>
     </Tooltip>
   );
