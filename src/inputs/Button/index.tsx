@@ -2,7 +2,7 @@ import React, { ReactElement, ReactNode } from 'react';
 import ButtonMUI, {
   ButtonProps as ButtonMUIProps,
 } from '@material-ui/core/Button';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import theme, { Theme, ThemeButtonSize, ThemeIconSize } from '../../theme';
 import { Icon, IconType, Props as IconProps } from '../../dataDisplay';
@@ -11,12 +11,14 @@ const StyledIcon = styled(Icon)<IconProps>`
   margin-right: 5px;
 `;
 
+type Colors = 'primary' | 'secondary' | 'error';
+type Variations = 'bordered' | 'contained' | 'outlined';
 type Overwrite<T, U> = Pick<T, Exclude<keyof T, keyof U>> & U;
 type StyledButtonProps = Overwrite<
   ButtonMUIProps,
   {
-    color?: 'primary' | 'secondary' | 'error';
-    variant?: 'bordered' | 'contained' | 'outlined';
+    color?: Colors;
+    variant?: Variations;
     size: ThemeButtonSize;
     iconType?: keyof IconType;
     iconSize?: ThemeIconSize;
@@ -37,14 +39,94 @@ const getSize = ({
 const getColors = ({ theme }: { theme: Theme }): Theme['colors'] =>
   theme.colors;
 
+const customStyles = {
+  primary: {
+    contained: css`
+      color: ${(props) => getColors(props).white};
+      background-color: ${(props) => getColors(props).primary};
+
+      &:hover {
+        background-color: ${(props) => getColors(props).secondary};
+      }
+    `,
+    outlined: css`
+      color: ${(props) => getColors(props).primary};
+      background-color: transparent;
+
+      &:hover {
+        background-color: ${(props) => getColors(props).primaryHover};
+      }
+    `,
+    bordered: css`
+      color: ${(props) => getColors(props).primary};
+      background-color: transparent;
+
+      &:hover {
+        background-color: ${(props) => getColors(props).primaryHover};
+      }
+      border: 2px solid ${(props) => getColors(props).primary};
+    `,
+  },
+  secondary: {
+    contained: css`
+      color: ${(props) => getColors(props).white};
+      background-color: ${(props) => getColors(props).secondary};
+
+      &:hover {
+        background-color: ${(props) => getColors(props).secondaryHover};
+      }
+    `,
+    outlined: css`
+      color: ${(props) => getColors(props).secondary};
+      background-color: transparent;
+
+      &:hover {
+        background-color: ${(props) => getColors(props).secondaryHover};
+      }
+    `,
+    bordered: css`
+      color: ${(props) => getColors(props).secondary};
+      background-color: transparent;
+
+      &:hover {
+        background-color: ${(props) => getColors(props).secondaryHover};
+      }
+
+      border: 2px solid ${(props) => getColors(props).secondary};
+    `,
+  },
+  error: {
+    primary: css`
+      color: ${(props) => getColors(props).white};
+      background-color: ${(props) => getColors(props).error};
+
+      &:hover {
+        background-color: ${(props) => getColors(props).errorHover};
+      }
+    `,
+    outlined: css`
+      color: ${(props) => getColors(props).error};
+      background-color: transparent;
+
+      &:hover {
+        background-color: ${(props) => getColors(props).errorHover};
+      }
+    `,
+    bordered: css`
+      color: ${(props) => getColors(props).error};
+      background-color: transparent;
+
+      &:hover {
+        background-color: ${(props) => getColors(props).errorHover};
+      }
+
+      border: 2px solid ${(props) => getColors(props).error};
+    `,
+  },
+};
+
 const StyledButton = styled(ButtonMUI)<StyledButtonProps>`
-  height: ${({
-    theme,
-    size,
-  }: {
-    theme: Theme;
-    size: StyledButtonProps['size'];
-  }) => theme.buttons.size[size].height};
+  height: ${({ theme, size }: any) => theme.buttons.size[size].height};
   &.MuiButton-root {
     min-width: ${(props) => getSize(props).minWidth};
     padding: ${(props) => getSize(props).padding};
@@ -53,89 +135,11 @@ const StyledButton = styled(ButtonMUI)<StyledButtonProps>`
     border-radius: 8px;
   }
 
-  &:hover {
-    color: ${(props) => getColors(props).white} !important;
-  }
-
-  // these are set as the default values
-  &.primary {
-    color: ${(props) => getColors(props).white};
-    background-color: ${(props) => getColors(props).primary};
-
-    &.contained {
-      &:hover {
-        background-color: ${(props) => getColors(props).secondary};
-      }
-    }
-
-    &.outlined,
-    &.bordered {
-      color: ${(props) => getColors(props).primary};
-      background-color: transparent;
-
-      &:hover {
-        background-color: ${(props) => getColors(props).primaryHover};
-      }
-    }
-
-    &.bordered {
-      border: 2px solid ${(props) => getColors(props).primary};
-    }
-  }
-
-  &.secondary {
-    &.contained {
-      color: ${(props) => getColors(props).white};
-      background-color: ${(props) => getColors(props).secondary};
-
-      &:hover {
-        background-color: ${(props) => getColors(props).secondaryHover};
-      }
-    }
-
-    &.outlined,
-    &.bordered {
-      color: ${(props) => getColors(props).secondary};
-      background-color: transparent;
-
-      &:hover {
-        background-color: ${(props) => getColors(props).secondaryHover};
-      }
-    }
-
-    &.bordered {
-      border: 2px solid ${(props) => getColors(props).secondary};
-    }
-  }
-
-  &.error {
-    &.contained {
-      color: ${(props) => getColors(props).white};
-      background-color: ${(props) => getColors(props).error};
-
-      &:hover {
-        background-color: ${(props) => getColors(props).errorHover};
-      }
-    }
-
-    &.outlined,
-    &.bordered {
-      color: ${(props) => getColors(props).error};
-      background-color: transparent;
-
-      &:hover {
-        background-color: ${(props) => getColors(props).errorHover};
-      }
-    }
-
-    &.bordered {
-      border: 2px solid ${(props) => getColors(props).error};
-    }
-  }
-
   &:disabled {
     opacity: ${(props) => getColors(props).disabled.opacity};
   }
+
+  ${(props) => customStyles['primary']['contained']}
 `;
 
 export const Button = ({

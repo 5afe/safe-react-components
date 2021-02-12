@@ -51,7 +51,7 @@ export const SimpleButton = (): React.ReactElement => (
 
 export const DisabledButton = (): React.ReactElement => (
   <>
-    <Button size="md" disabled>
+    <Button size="md" disabled className="ads">
       Text
     </Button>
     <Button size="md" color="secondary" disabled>
