@@ -12,14 +12,25 @@ type TooltipProps = {
   backgroundColor?: ThemeColors;
   textColor?: ThemeColors;
   padding?: string;
+  border?: string;
 };
 
 const getPaddingBySize = (size: ThemeTooltipSize): string => {
   switch (size) {
     case 'lg':
-      return '16px';
+      return '8px 16px';
     default:
-      return '8px';
+      return '4px 8px';
+  }
+};
+
+const getBorderBySize = (size: ThemeTooltipSize): string => {
+  switch (size) {
+    case 'lg':
+      return 'none';
+    default:
+      return `1px solid #D4D5D3`;
+    /* ${({ theme }) => theme.colors.separator} */
   }
 };
 
@@ -50,13 +61,13 @@ const customTooltip = ({
       backgroundColor: backgroundColor
         ? (theme.colors[backgroundColor] as string)
         : theme.colors.overlay.color,
-      boxShadow: `1px 2px 4px ${rgba(theme.colors.shadow.color, 0.08)}`,
-      border: 'none',
+      boxShadow: `1px 2px 10px ${rgba(theme.colors.shadow.color, 0.18)}`,
+      border: getBorderBySize(size),
       color: textColor
         ? (theme.colors[textColor] as string)
         : theme.colors.text,
-      borderRadius: '8px',
-
+      borderRadius: '4px',
+      fontFamily: theme.fonts.fontFamily,
       padding: getPaddingBySize(size),
       fontSize: getFontInfoBySize(size).fontSize,
       lineHeight: getFontInfoBySize(size).lineHeight,
@@ -68,7 +79,7 @@ const customTooltip = ({
       border: 'none',
 
       '&::before': {
-        boxShadow: `1px 2px 4px ${rgba(theme.colors.shadow.color, 0.08)}`,
+        boxShadow: `1px 2px 10px ${rgba(theme.colors.shadow.color, 0.18)}`,
       },
     },
   }))(MUITooltip);

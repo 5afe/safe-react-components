@@ -36,7 +36,7 @@ export const CustomColorAndArrow = (): React.ReactElement => {
 
 export const CustomSize = (): React.ReactElement => {
   return (
-    <Tooltip title="Some text" size="lg" arrow>
+    <Tooltip title="Some text" backgroundColor="white" size="lg" arrow>
       <span>hover me</span>
     </Tooltip>
   );
