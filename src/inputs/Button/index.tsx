@@ -1,108 +1,165 @@
-import React from 'react';
-import ButtonMUI from '@material-ui/core/Button';
-import { withStyles } from '@material-ui/core/styles';
+import React, { ReactElement, ReactNode } from 'react';
+import ButtonMUI, {
+  ButtonProps as ButtonMUIProps,
+} from '@material-ui/core/Button';
 import styled from 'styled-components';
 
-import theme, { ThemeButtonSize, ThemeIconSize } from '../../theme';
-import { Icon, IconType } from '../../dataDisplay/Icon';
+import theme, { Theme, ThemeButtonSize, ThemeIconSize } from '../../theme';
+import { Icon, IconType, Props as IconProps } from '../../dataDisplay';
 
-enum Variant {
-  outlined = 'outlined',
-  bordered = 'bordered',
-  contained = 'contained',
-}
-export interface Props extends React.ComponentPropsWithoutRef<'button'> {
-  children: React.ReactNode;
-  size: ThemeButtonSize;
-  color: 'primary' | 'secondary' | 'error';
-  variant?: keyof typeof Variant;
-  iconType?: keyof IconType;
-  iconSize?: ThemeIconSize;
-  component?: React.ReactNode;
-  // for compatibility with react-router-dom Link
-  to?: string;
-}
-
-type HoverColor = 'secondary' | 'secondaryHover' | 'errorHover';
-
-const StyledIcon = styled(Icon)`
+const StyledIcon = styled(Icon)<IconProps>`
   margin-right: 5px;
 `;
 
-const Button = ({
+type Overwrite<T, U> = Pick<T, Exclude<keyof T, keyof U>> & U;
+type StyledButtonProps = Overwrite<
+  ButtonMUIProps,
+  {
+    color?: 'primary' | 'secondary' | 'error';
+    variant?: 'bordered' | 'contained' | 'outlined';
+    size: ThemeButtonSize;
+    iconType?: keyof IconType;
+    iconSize?: ThemeIconSize;
+    component?: ReactNode;
+    // for compatibility with react-router-dom Link
+    to?: string;
+  }
+>;
+
+const getSize = ({
+  theme,
+  size,
+}: {
+  theme: Theme;
+  size: StyledButtonProps['size'];
+}): Theme['buttons']['size']['lg' | 'md'] => theme.buttons.size[size];
+
+const getColors = ({ theme }: { theme: Theme }): Theme['colors'] =>
+  theme.colors;
+
+const StyledButton = styled(ButtonMUI)<StyledButtonProps>`
+  height: ${({
+    theme,
+    size,
+  }: {
+    theme: Theme;
+    size: StyledButtonProps['size'];
+  }) => theme.buttons.size[size].height};
+  &.MuiButton-root {
+    min-width: ${(props) => getSize(props).minWidth};
+    padding: ${(props) => getSize(props).padding};
+    font-family: ${theme.fonts.fontFamily};
+    text-transform: none;
+    border-radius: 8px;
+  }
+
+  &:hover {
+    color: ${(props) => getColors(props).white} !important;
+  }
+
+  // these are set as the default values
+  &.primary {
+    color: ${(props) => getColors(props).white};
+    background-color: ${(props) => getColors(props).primary};
+
+    &.contained {
+      &:hover {
+        background-color: ${(props) => getColors(props).secondary};
+      }
+    }
+
+    &.outlined,
+    &.bordered {
+      color: ${(props) => getColors(props).primary};
+      background-color: transparent;
+
+      &:hover {
+        background-color: ${(props) => getColors(props).primaryHover};
+      }
+    }
+
+    &.bordered {
+      border: 2px solid ${(props) => getColors(props).primary};
+    }
+  }
+
+  &.secondary {
+    &.contained {
+      color: ${(props) => getColors(props).white};
+      background-color: ${(props) => getColors(props).secondary};
+
+      &:hover {
+        background-color: ${(props) => getColors(props).secondaryHover};
+      }
+    }
+
+    &.outlined,
+    &.bordered {
+      color: ${(props) => getColors(props).secondary};
+      background-color: transparent;
+
+      &:hover {
+        background-color: ${(props) => getColors(props).secondaryHover};
+      }
+    }
+
+    &.bordered {
+      border: 2px solid ${(props) => getColors(props).secondary};
+    }
+  }
+
+  &.error {
+    &.contained {
+      color: ${(props) => getColors(props).white};
+      background-color: ${(props) => getColors(props).error};
+
+      &:hover {
+        background-color: ${(props) => getColors(props).errorHover};
+      }
+    }
+
+    &.outlined,
+    &.bordered {
+      color: ${(props) => getColors(props).error};
+      background-color: transparent;
+
+      &:hover {
+        background-color: ${(props) => getColors(props).errorHover};
+      }
+    }
+
+    &.bordered {
+      border: 2px solid ${(props) => getColors(props).error};
+    }
+  }
+
+  &:disabled {
+    opacity: ${(props) => getColors(props).disabled.opacity};
+  }
+`;
+
+export const Button = ({
   children,
   iconType,
-  size,
   iconSize = 'md',
-  color,
-  variant,
-  ...rest
-}: Props): React.ReactElement => {
-  const getColor = (isDisabled?: boolean) => {
-    switch (variant) {
-      case Variant.contained:
-        return theme.colors.white;
-      case Variant.outlined:
-      case Variant.bordered:
-        return isDisabled
-          ? theme.colors[`${color}Hover` as HoverColor]
-          : theme.colors[color];
-    }
-  };
-
-  const getBackgroundColor = (isHover?: boolean) => {
-    switch (variant) {
-      case Variant.contained:
-        return isHover ? theme.colors.secondary : theme.colors.primary;
-      case Variant.outlined:
-      case Variant.bordered:
-        return isHover ? theme.colors.background : theme.colors.white;
-    }
-  };
-
-  const getBorder = () => {
-    switch (variant) {
-      case Variant.contained:
-      case Variant.outlined:
-        return 'none';
-      case Variant.bordered:
-        return `2px solid ${theme.colors[color]}`;
-    }
-  };
-
-  const BootstrapButton = withStyles({
-    root: {
-      height: theme.buttons.size[size].height,
-      minWidth: theme.buttons.size[size].minWidth,
-      padding: theme.buttons.size[size].padding,
-      fontFamily: theme.fonts.fontFamily,
-      color: getColor(),
-      'text-transform': 'capitalize',
-      'background-color': getBackgroundColor(),
-      border: getBorder(),
-      'border-radius': '8px',
-      '&:hover': {
-        'background-color': getBackgroundColor(true),
-      },
-      '&:disabled': {
-        opacity: theme.colors.disabled.opacity,
-        color: getColor(true),
-      },
-    },
-  })(ButtonMUI);
-
+  color = 'primary',
+  variant = 'contained',
+  ...props
+}: StyledButtonProps): ReactElement => {
   return (
-    <BootstrapButton {...rest}>
-      {iconType && (
-        <StyledIcon
-          size={iconSize}
-          color={variant === Variant.contained ? 'white' : color}
-          type={iconType}
-        />
-      )}
-      {children}
-    </BootstrapButton>
+    <>
+      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+      {/* @ts-ignore */}
+      <StyledButton className={`${color} ${variant}`} {...props}>
+        {iconType && (
+          <StyledIcon
+            size={iconSize}
+            color={variant === 'contained' ? 'white' : color}
+            type={iconType}
+          />
+        )}
+        {children}
+      </StyledButton>
+    </>
   );
 };
-
-export default Button;

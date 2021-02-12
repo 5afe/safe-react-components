@@ -172,7 +172,7 @@ const icons = {
 export type IconType = typeof icons;
 export type IconTypes = keyof IconType;
 
-type Props = {
+export type Props = {
   type: IconTypes;
   size: ThemeIconSize;
   color?: ThemeColors;
