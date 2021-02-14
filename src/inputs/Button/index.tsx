@@ -1,45 +1,53 @@
-import React, { ReactElement, ReactNode } from 'react';
+import React, { ReactElement, ReactNode, HTMLAttributes } from 'react';
 import ButtonMUI, {
   ButtonProps as ButtonMUIProps,
 } from '@material-ui/core/Button';
-import styled, { css } from 'styled-components';
+import styled, {
+  css,
+  DefaultTheme,
+  FlattenInterpolation,
+  ThemeProps,
+} from 'styled-components';
 
 import theme, { Theme, ThemeButtonSize, ThemeIconSize } from '../../theme';
 import { Icon, IconType, Props as IconProps } from '../../dataDisplay';
+
+type Colors = 'primary' | 'secondary' | 'error';
+type Variations = 'bordered' | 'contained' | 'outlined';
+
+type CustomButtonMuiProps = Omit<ButtonMUIProps, 'size' | 'color' | 'variant'>;
+type LocalProps = {
+  children?: ReactNode;
+  color?: Colors;
+  disabled?: boolean;
+  variant?: Variations;
+  size: ThemeButtonSize;
+  iconType?: keyof IconType;
+  iconSize?: ThemeIconSize;
+  // for compatibility with react-router-dom Link
+  to?: string;
+};
+
+type Props = {
+  buttonMuiProps?: CustomButtonMuiProps;
+} & LocalProps &
+  HTMLAttributes<HTMLButtonElement>;
 
 const StyledIcon = styled(Icon)<IconProps>`
   margin-right: 5px;
 `;
 
-type Colors = 'primary' | 'secondary' | 'error';
-type Variations = 'bordered' | 'contained' | 'outlined';
-type Overwrite<T, U> = Pick<T, Exclude<keyof T, keyof U>> & U;
-type StyledButtonProps = Overwrite<
-  ButtonMUIProps,
-  {
-    color?: Colors;
-    variant?: Variations;
-    size: ThemeButtonSize;
-    iconType?: keyof IconType;
-    iconSize?: ThemeIconSize;
-    component?: ReactNode;
-    // for compatibility with react-router-dom Link
-    to?: string;
-  }
->;
-
-const getSize = ({
-  theme,
-  size,
-}: {
-  theme: Theme;
-  size: StyledButtonProps['size'];
-}): Theme['buttons']['size']['lg' | 'md'] => theme.buttons.size[size];
+const getSize = (theme: Theme, size: ThemeButtonSize) =>
+  theme.buttons.size[size];
 
 const getColors = ({ theme }: { theme: Theme }): Theme['colors'] =>
   theme.colors;
 
-const customStyles = {
+const customStyles: {
+  [key in Colors]: {
+    [key in Variations]: FlattenInterpolation<ThemeProps<DefaultTheme>>;
+  };
+} = {
   primary: {
     contained: css`
       color: ${(props) => getColors(props).white};
@@ -96,7 +104,7 @@ const customStyles = {
     `,
   },
   error: {
-    primary: css`
+    contained: css`
       color: ${(props) => getColors(props).white};
       background-color: ${(props) => getColors(props).error};
 
@@ -125,36 +133,49 @@ const customStyles = {
   },
 };
 
-const StyledButton = styled(ButtonMUI)<StyledButtonProps>`
-  height: ${({ theme, size }: any) => theme.buttons.size[size].height};
-  &.MuiButton-root {
-    min-width: ${(props) => getSize(props).minWidth};
-    padding: ${(props) => getSize(props).padding};
-    font-family: ${theme.fonts.fontFamily};
-    text-transform: none;
-    border-radius: 8px;
-  }
+const StyledButton = styled(ButtonMUI)<{ localProps: LocalProps }>`
+  && {
+    height: ${({ theme, localProps }) =>
+      theme.buttons.size[localProps.size].height};
+    &.MuiButton-root {
+      min-width: ${({ theme, localProps }) =>
+        getSize(theme, localProps.size).minWidth};
+      padding: ${({ theme, localProps }) =>
+        getSize(theme, localProps.size).padding};
+      font-family: ${theme.fonts.fontFamily};
+      text-transform: none;
+      border-radius: 8px;
+    }
 
-  &:disabled {
-    opacity: ${(props) => getColors(props).disabled.opacity};
-  }
+    &:disabled {
+      opacity: ${(props) => getColors(props).disabled.opacity};
+    }
 
-  ${(props) => customStyles['primary']['contained']}
+    ${({ localProps }) => {
+      if (localProps.color !== undefined && localProps.variant !== undefined) {
+        return customStyles[localProps.color][localProps.variant];
+      }
+    }}
+  }
 `;
 
 export const Button = ({
   children,
-  iconType,
-  iconSize = 'md',
   color = 'primary',
   variant = 'contained',
-  ...props
-}: StyledButtonProps): ReactElement => {
+  iconType,
+  iconSize = 'md',
+  buttonMuiProps,
+  ...rest
+}: Props): ReactElement => {
   return (
     <>
       {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
       {/* @ts-ignore */}
-      <StyledButton className={`${color} ${variant}`} {...props}>
+      <StyledButton
+        className={`${color} ${variant}`}
+        {...buttonMuiProps}
+        localProps={{ color, variant, ...rest }}>
         {iconType && (
           <StyledIcon
             size={iconSize}
