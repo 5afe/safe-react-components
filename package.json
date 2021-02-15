@@ -73,8 +73,8 @@
   },
   "peerDependencies": {
     "@material-ui/core": "4.X.X",
-    "react": "16.x.x",
-    "react-dom": "16.x.x",
+    "react": "16.x.x || 17.x.x",
+    "react-dom": "16.x.x || 17.x.x",
     "styled-components": "5.x.x"
   },
   "eslintConfig": {
