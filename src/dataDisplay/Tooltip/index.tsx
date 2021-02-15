@@ -1,16 +1,57 @@
 import React, { ReactElement } from 'react';
-import MUITooltip, { TooltipProps } from '@material-ui/core/Tooltip';
+import MUITooltip, {
+  TooltipProps as TooltipPropsMui,
+} from '@material-ui/core/Tooltip';
 import { withStyles } from '@material-ui/core/styles';
 import { rgba } from 'polished';
 
-import theme, { ThemeColors } from '../../theme';
+import theme, { ThemeColors, ThemeTooltipSize } from '../../theme';
 
-type TooltipColors = {
+type TooltipProps = {
+  size?: ThemeTooltipSize;
   backgroundColor?: ThemeColors;
   textColor?: ThemeColors;
+  padding?: string;
+  border?: string;
 };
 
-const customTooltip = ({ backgroundColor, textColor }: TooltipColors) =>
+const getPaddingBySize = (size: ThemeTooltipSize): string => {
+  switch (size) {
+    case 'lg':
+      return '8px 16px';
+    default:
+      return '4px 8px';
+  }
+};
+
+const getBorderBySize = (size: ThemeTooltipSize): string => {
+  switch (size) {
+    case 'lg':
+      return 'none';
+    default:
+      return `1px solid ${theme.colors.separator}`;
+  }
+};
+
+const getFontInfoBySize = (
+  size: ThemeTooltipSize
+): {
+  fontSize: string;
+  lineHeight: string;
+} => {
+  switch (size) {
+    case 'lg':
+      return theme.text.size.lg;
+    default:
+      return theme.text.size.md;
+  }
+};
+
+const customTooltip = ({
+  backgroundColor,
+  textColor,
+  size = 'md',
+}: TooltipProps) =>
   withStyles(() => ({
     popper: {
       zIndex: 2001,
@@ -19,19 +60,25 @@ const customTooltip = ({ backgroundColor, textColor }: TooltipColors) =>
       backgroundColor: backgroundColor
         ? (theme.colors[backgroundColor] as string)
         : theme.colors.overlay.color,
-      boxShadow: `1px 2px 4px ${rgba(theme.colors.shadow.color, 0.08)}`,
-      border: 'none',
+      boxShadow: `1px 2px 10px ${rgba(theme.colors.shadow.color, 0.18)}`,
+      border: getBorderBySize(size),
       color: textColor
         ? (theme.colors[textColor] as string)
         : theme.colors.text,
+      borderRadius: '4px',
+      fontFamily: theme.fonts.fontFamily,
+      padding: getPaddingBySize(size),
+      fontSize: getFontInfoBySize(size).fontSize,
+      lineHeight: getFontInfoBySize(size).lineHeight,
     },
     arrow: {
       color: backgroundColor
         ? (theme.colors[backgroundColor] as string)
         : theme.colors.overlay.color,
       border: 'none',
+
       '&::before': {
-        boxShadow: `1px 2px 4px ${rgba(theme.colors.shadow.color, 0.08)}`,
+        boxShadow: `1px 2px 10px ${rgba(theme.colors.shadow.color, 0.18)}`,
       },
     },
   }))(MUITooltip);
@@ -39,18 +86,20 @@ const customTooltip = ({ backgroundColor, textColor }: TooltipColors) =>
 type Props = {
   title: string;
   children: ReactElement;
-} & TooltipColors;
+} & TooltipProps;
 
 export const Tooltip = ({
   title,
   backgroundColor,
   textColor,
   children,
+  size,
   ...rest
-}: Props & TooltipProps): ReactElement => {
+}: Props & TooltipPropsMui): ReactElement => {
   const StyledTooltip = customTooltip({
     backgroundColor,
     textColor,
+    size,
   });
 
   return (
