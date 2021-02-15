@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Tooltip from '@material-ui/core/Tooltip';
-import { withStyles } from '@material-ui/core/styles';
+
+import { Tooltip } from '../..';
 
 import add from './images/add';
 import addressBook from './images/addressBook';
@@ -72,9 +72,8 @@ import transactionsInactive from './images/transactionsInactive';
 import unlocked from './images/unlocked';
 import userEdit from './images/userEdit';
 import wallet from './images/wallet';
-import { rgba } from 'polished';
 
-import theme, { ThemeColors, ThemeIconSize } from '../../theme';
+import { ThemeColors, ThemeIconSize } from '../../theme';
 
 const StyledIcon = styled.span<{ color?: ThemeColors }>`
   display: inline-flex;
@@ -84,18 +83,6 @@ const StyledIcon = styled.span<{ color?: ThemeColors }>`
       color ? theme.colors[color] : theme.colors.icon};
   }
 `;
-
-const StyledTooltip = withStyles(() => ({
-  popper: {
-    zIndex: 2001,
-  },
-  tooltip: {
-    backgroundColor: theme.colors.overlay.color,
-    border: `1px solid ${theme.colors.icon}`,
-    boxShadow: `1px 2px 4px ${rgba(theme.colors.shadow.color, 0.08)}`,
-    color: theme.colors.text,
-  },
-}))(Tooltip);
 
 const icons = {
   add,
@@ -199,8 +186,8 @@ export const Icon = ({
   return tooltip === undefined ? (
     IconElement
   ) : (
-    <StyledTooltip title={tooltip} placement="top">
+    <Tooltip title={tooltip} placement="top">
       {IconElement}
-    </StyledTooltip>
+    </Tooltip>
   );
 };
