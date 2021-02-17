@@ -15,7 +15,13 @@ import { Icon, IconType, Props as IconProps } from '../../dataDisplay';
 type Colors = 'primary' | 'secondary' | 'error';
 type Variations = 'bordered' | 'contained' | 'outlined';
 
-type CustomButtonMuiProps = Omit<ButtonMUIProps, 'size' | 'color' | 'variant'>;
+type CustomButtonMuiProps = Omit<
+  ButtonMUIProps,
+  'size' | 'color' | 'variant'
+> & {
+  to?: string;
+  component?: ReactNode;
+};
 type LocalProps = {
   children?: ReactNode;
   color?: Colors;
