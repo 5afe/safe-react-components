@@ -9,12 +9,7 @@ import styled, {
   ThemeProps,
 } from 'styled-components';
 
-import theme, {
-  Theme,
-  ThemeButtonSize,
-  ThemeColors,
-  ThemeIconSize,
-} from '../../theme';
+import theme, { ThemeButtonSize, ThemeIconSize } from '../../theme';
 import { Icon, IconType, Props as IconProps } from '../../dataDisplay';
 
 type Colors = 'primary' | 'secondary' | 'error';
@@ -24,18 +19,14 @@ type CustomButtonMuiProps = Omit<ButtonMUIProps, 'size' | 'color' | 'variant'>;
 type LocalProps = {
   children?: ReactNode;
   color?: Colors;
-  disabled?: boolean;
   variant?: Variations;
   size: ThemeButtonSize;
   iconType?: keyof IconType;
   iconSize?: ThemeIconSize;
-  // for compatibility with react-router-dom Link
-  to?: string;
 };
 
-type Props = {
-  buttonMuiProps?: CustomButtonMuiProps;
-} & LocalProps &
+type Props = LocalProps &
+  CustomButtonMuiProps &
   HTMLAttributes<HTMLButtonElement>;
 
 const StyledIcon = styled(Icon)<IconProps>`
@@ -243,24 +234,19 @@ export const Button = ({
   children,
   color = 'primary',
   variant = 'contained',
+  size,
   iconType,
   iconSize = 'md',
-  buttonMuiProps,
-  disabled,
-  ...rest
+  // We need destructuring all LocalProps, remaining props are for CustomButtonMuiProps
+  ...buttonMuiProps
 }: Props): ReactElement => {
   return (
-    <>
-      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
-      {/* @ts-ignore */}
-      <StyledButton
-        className={`${color} ${variant}`}
-        {...buttonMuiProps}
-        disabled={disabled}
-        localProps={{ color, variant, ...rest }}>
-        {iconType && <StyledIcon size={iconSize} type={iconType} />}
-        {children}
-      </StyledButton>
-    </>
+    <StyledButton
+      className={`${color} ${variant}`}
+      {...buttonMuiProps}
+      localProps={{ color, variant, size }}>
+      {iconType && <StyledIcon size={iconSize} type={iconType} />}
+      {children}
+    </StyledButton>
   );
 };
