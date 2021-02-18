@@ -1,108 +1,258 @@
-import React from 'react';
-import ButtonMUI from '@material-ui/core/Button';
-import { withStyles } from '@material-ui/core/styles';
-import styled from 'styled-components';
+import React, { ReactElement, ReactNode, HTMLAttributes } from 'react';
+import ButtonMUI, {
+  ButtonProps as ButtonMUIProps,
+} from '@material-ui/core/Button';
+import styled, {
+  css,
+  DefaultTheme,
+  FlattenInterpolation,
+  ThemeProps,
+} from 'styled-components';
 
 import theme, { ThemeButtonSize, ThemeIconSize } from '../../theme';
-import { Icon, IconType } from '../../dataDisplay/Icon';
+import { Icon, IconType, Props as IconProps } from '../../dataDisplay';
 
-enum Variant {
-  outlined = 'outlined',
-  bordered = 'bordered',
-  contained = 'contained',
-}
-export interface Props extends React.ComponentPropsWithoutRef<'button'> {
-  children: React.ReactNode;
+type Colors = 'primary' | 'secondary' | 'error';
+type Variations = 'bordered' | 'contained' | 'outlined';
+
+type CustomButtonMuiProps = Omit<
+  ButtonMUIProps,
+  'size' | 'color' | 'variant'
+> & {
+  to?: string;
+  component?: ReactNode;
+};
+type LocalProps = {
+  children?: ReactNode;
+  color?: Colors;
+  variant?: Variations;
   size: ThemeButtonSize;
-  color: 'primary' | 'secondary' | 'error';
-  variant?: keyof typeof Variant;
   iconType?: keyof IconType;
   iconSize?: ThemeIconSize;
-  component?: React.ReactNode;
-  // for compatibility with react-router-dom Link
-  to?: string;
-}
+};
 
-type HoverColor = 'secondary' | 'secondaryHover' | 'errorHover';
+type Props = LocalProps &
+  CustomButtonMuiProps &
+  HTMLAttributes<HTMLButtonElement>;
 
-const StyledIcon = styled(Icon)`
+const StyledIcon = styled(Icon)<IconProps>`
   margin-right: 5px;
 `;
 
-const Button = ({
-  children,
-  iconType,
-  size,
-  iconSize = 'md',
-  color,
-  variant,
-  ...rest
-}: Props): React.ReactElement => {
-  const getColor = (isDisabled?: boolean) => {
-    switch (variant) {
-      case Variant.contained:
-        return theme.colors.white;
-      case Variant.outlined:
-      case Variant.bordered:
-        return isDisabled
-          ? theme.colors[`${color}Hover` as HoverColor]
-          : theme.colors[color];
-    }
+const customStyles: {
+  [key in Colors]: {
+    [key in Variations]: FlattenInterpolation<ThemeProps<DefaultTheme>>;
   };
+} = {
+  primary: {
+    contained: css`
+      color: ${({ theme }) => theme.colors.white};
+      background-color: ${({ theme }) => theme.colors.primary};
 
-  const getBackgroundColor = (isHover?: boolean) => {
-    switch (variant) {
-      case Variant.contained:
-        return isHover ? theme.colors.secondary : theme.colors.primary;
-      case Variant.outlined:
-      case Variant.bordered:
-        return isHover ? theme.colors.background : theme.colors.white;
-    }
-  };
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.primaryHover};
+      }
+    `,
+    outlined: css`
+      color: ${({ theme }) => theme.colors.primary};
+      background-color: transparent;
+      path.icon-color {
+        fill: ${({ theme }) => theme.colors.primary};
+      }
 
-  const getBorder = () => {
-    switch (variant) {
-      case Variant.contained:
-      case Variant.outlined:
-        return 'none';
-      case Variant.bordered:
-        return `2px solid ${theme.colors[color]}`;
-    }
-  };
+      &.Mui-disabled {
+        color: ${({ theme }) => theme.colors.primary};
+      }
 
-  const BootstrapButton = withStyles({
-    root: {
-      height: theme.buttons.size[size].height,
-      minWidth: theme.buttons.size[size].minWidth,
-      padding: theme.buttons.size[size].padding,
-      fontFamily: theme.fonts.fontFamily,
-      color: getColor(),
-      'text-transform': 'capitalize',
-      'background-color': getBackgroundColor(),
-      border: getBorder(),
-      'border-radius': '8px',
-      '&:hover': {
-        'background-color': getBackgroundColor(true),
-      },
-      '&:disabled': {
-        opacity: theme.colors.disabled.opacity,
-        color: getColor(true),
-      },
-    },
-  })(ButtonMUI);
+      &:hover {
+        color: ${({ theme }) => theme.colors.primaryHover};
+        path.icon-color {
+          fill: ${({ theme }) => theme.colors.primaryHover};
+        }
+        background-color: transparent;
+      }
+    `,
+    bordered: css`
+      color: ${({ theme }) => theme.colors.primary};
+      background-color: transparent;
+      border: 2px solid ${({ theme }) => theme.colors.primary};
+      path.icon-color {
+        fill: ${({ theme }) => theme.colors.primary};
+      }
 
-  return (
-    <BootstrapButton {...rest}>
-      {iconType && (
-        <StyledIcon
-          size={iconSize}
-          color={variant === Variant.contained ? 'white' : color}
-          type={iconType}
-        />
-      )}
-      {children}
-    </BootstrapButton>
-  );
+      &.Mui-disabled {
+        color: ${({ theme }) => theme.colors.primary};
+      }
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.white};
+        path.icon-color {
+          fill: ${({ theme }) => theme.colors.white};
+        }
+        background-color: ${({ theme }) => theme.colors.primaryHover};
+        border: 2px solid ${({ theme }) => theme.colors.primaryHover};
+      }
+    `,
+  },
+  secondary: {
+    contained: css`
+      color: ${({ theme }) => theme.colors.white};
+      background-color: ${({ theme }) => theme.colors.secondary};
+      path.icon-color {
+        color: ${({ theme }) => theme.colors.white};
+      }
+
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.secondaryHover};
+        path.icon-color {
+          color: ${({ theme }) => theme.colors.white};
+        }
+      }
+    `,
+    outlined: css`
+      color: ${({ theme }) => theme.colors.secondary};
+      background-color: transparent;
+      path.icon-color {
+        fill: ${({ theme }) => theme.colors.secondary};
+      }
+
+      &.Mui-disabled {
+        color: ${({ theme }) => theme.colors.secondary};
+      }
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.secondaryHover};
+        path.icon-color {
+          fill: ${({ theme }) => theme.colors.secondaryHover};
+        }
+        background-color: transparent;
+      }
+    `,
+    bordered: css`
+      color: ${({ theme }) => theme.colors.secondary};
+      background-color: transparent;
+      border: 2px solid ${({ theme }) => theme.colors.secondary};
+      path.icon-color {
+        fill: ${({ theme }) => theme.colors.secondary};
+      }
+
+      &.Mui-disabled {
+        color: ${({ theme }) => theme.colors.secondary};
+      }
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.white};
+        path.icon-color {
+          fill: ${({ theme }) => theme.colors.white};
+        }
+        background-color: ${({ theme }) => theme.colors.secondaryHover};
+        border: 2px solid ${({ theme }) => theme.colors.secondaryHover};
+      }
+    `,
+  },
+  error: {
+    contained: css`
+      color: ${({ theme }) => theme.colors.white};
+      background-color: ${({ theme }) => theme.colors.error};
+
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.errorHover};
+      }
+    `,
+    outlined: css`
+      color: ${({ theme }) => theme.colors.error};
+      background-color: transparent;
+      path.icon-color {
+        fill: ${({ theme }) => theme.colors.error};
+      }
+
+      &.Mui-disabled {
+        color: ${({ theme }) => theme.colors.error};
+      }
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.errorHover};
+        path.icon-color {
+          fill: ${({ theme }) => theme.colors.errorHover};
+        }
+        background-color: transparent;
+      }
+    `,
+    bordered: css`
+      color: ${({ theme }) => theme.colors.error};
+      background-color: transparent;
+      border: 2px solid ${({ theme }) => theme.colors.error};
+      path.icon-color {
+        fill: ${({ theme }) => theme.colors.error};
+      }
+
+      &.Mui-disabled {
+        color: ${({ theme }) => theme.colors.error};
+      }
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.white};
+        path.icon-color {
+          fill: ${({ theme }) => theme.colors.white};
+        }
+        background-color: ${({ theme }) => theme.colors.errorHover};
+        border: 2px solid ${({ theme }) => theme.colors.errorHover};
+      }
+    `,
+  },
 };
 
-export default Button;
+const StyledButton = styled(ButtonMUI)<{ localProps: LocalProps }>`
+  && {
+    height: ${({ theme, localProps }) =>
+      theme.buttons.size[localProps.size].height};
+    &.MuiButton-root {
+      min-width: ${({ theme, localProps: { size } }) =>
+        theme.buttons.size[size].minWidth};
+      padding: ${({ theme, localProps: { size } }) =>
+        theme.buttons.size[size].padding};
+      font-family: ${theme.fonts.fontFamily};
+      text-transform: none;
+      border-radius: 8px;
+    }
+
+    &.Mui-disabled {
+      color: ${({ theme }) => theme.colors.white};
+    }
+
+    path.icon-color {
+      fill: ${({ theme }) => theme.colors.white};
+    }
+
+    &:disabled {
+      opacity: ${({ theme }) => theme.colors.disabled.opacity};
+    }
+
+    ${({ localProps }) => {
+      if (localProps.color !== undefined && localProps.variant !== undefined) {
+        return customStyles[localProps.color][localProps.variant];
+      }
+    }}
+  }
+`;
+
+export const Button = ({
+  children,
+  color = 'primary',
+  variant = 'contained',
+  size,
+  iconType,
+  iconSize = 'md',
+  // We need destructuring all LocalProps, remaining props are for CustomButtonMuiProps
+  ...buttonMuiProps
+}: Props): ReactElement => {
+  return (
+    <StyledButton
+      className={`${color} ${variant}`}
+      {...buttonMuiProps}
+      localProps={{ color, variant, size }}>
+      {iconType && <StyledIcon size={iconSize} type={iconType} />}
+      {children}
+    </StyledButton>
+  );
+};
