@@ -20,6 +20,7 @@ import settingsChange from './images/settingsChange';
 import creatingInProgress from './images/creatingInProgress';
 import notOwner from './images/notOwner';
 import notConnected from './images/notConnected';
+import networkError from './images/networkError';
 
 const icons = {
   arrowSort,
@@ -42,6 +43,7 @@ const icons = {
   creatingInProgress,
   notOwner,
   notConnected,
+  networkError,
 };
 
 export type IconType = typeof icons;

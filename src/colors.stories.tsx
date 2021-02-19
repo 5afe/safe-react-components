@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { parseToHsl } from 'polished';
+import { getLuminance } from '@material-ui/core/styles/colorManipulator';
 
 import { Text, theme } from './index';
 
@@ -26,7 +26,7 @@ const ColorDisplay = styled.div<{ color: string }>`
 `;
 
 export default {
-  title: 'Colors',
+  title: 'Utils/Colors',
 };
 
 export const ColorsSample = (): React.ReactElement => {
@@ -44,7 +44,7 @@ export const ColorsSample = (): React.ReactElement => {
     }, [])
     .sort(
       ({ code: colorA }, { code: colorB }) =>
-        parseToHsl(colorA).lightness - parseToHsl(colorB).lightness
+        getLuminance(colorA) - getLuminance(colorB)
     );
 
   return (

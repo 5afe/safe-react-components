@@ -19,7 +19,13 @@ export const Horizontal = (): React.ReactElement => (
 );
 
 export const Vertical = (): React.ReactElement => (
-  <div style={{ display: 'flex' }}>
+  <div
+    style={{
+      display: 'flex',
+      height: '150px',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}>
     <div>Some content</div>
     <Divider orientation="vertical" />
     <div>Some content2</div>

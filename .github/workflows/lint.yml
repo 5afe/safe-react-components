@@ -1,4 +1,4 @@
-name: 'my-workflow'
+name: 'Lint check'
 on: [pull_request]
 
 jobs:
@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: bradennapier/eslint-plus-action@v3.4.0
+      - uses: gnosis/safe-react-eslint-plus-action@main

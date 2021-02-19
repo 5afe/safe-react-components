@@ -78,7 +78,7 @@ function TextField({
       <CustomTextField
         {...rest}
         {...customProps}
-        {...inputRest}
+        inputProps={inputRest}
         className={className}
         size={undefined}
         name={name}

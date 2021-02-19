@@ -1,8 +1,8 @@
 const theme = {
   buttons: {
     size: {
-      md: { height: '36px', padding: '0 16px' },
-      lg: { height: '52px', padding: '0 25px' },
+      md: { height: '36px', minWidth: '130px', padding: '0 24px' },
+      lg: { height: '52px', minWidth: '240px', padding: '0 48px' },
     },
   },
   colors: {
@@ -125,17 +125,24 @@ const theme = {
       },
     },
   },
+  tooltip: {
+    size: {
+      md: '',
+      lg: '',
+    },
+  },
 };
 
 export type Theme = typeof theme;
 
+export type ThemeButtonSize = keyof Theme['buttons']['size'];
 export type ThemeColors = keyof Theme['colors'];
+export type ThemeIdenticonSize = keyof Theme['identicon']['size'];
 export type ThemeIconSize = keyof Theme['icons']['size'];
+export type ThemeLoaderSize = keyof Theme['loader']['size'];
+export type ThemeStatusDotSize = keyof Theme['statusDot']['size'];
 export type ThemeTextSize = keyof Theme['text']['size'];
 export type ThemeTitleSize = keyof Theme['title']['size'];
-export type ThemeStatusDotSize = keyof Theme['statusDot']['size'];
-export type ThemeLoaderSize = keyof Theme['loader']['size'];
-export type ThemeButtonSize = keyof Theme['buttons']['size'];
-export type ThemeIdenticonSize = keyof Theme['identicon']['size'];
+export type ThemeTooltipSize = keyof Theme['tooltip']['size'];
 
 export default theme;

@@ -6,15 +6,15 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../src/theme';
 import GlobalStyles from '../src/global';
 
-addDecorator(storyFn => (
-  <ThemeProvider theme={theme}>
+addDecorator((storyFn) => (
+  <>
     <GlobalStyles />
-    {storyFn()}
-  </ThemeProvider>
+    <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
+  </>
 ));
 
 addParameters({
   options: {
-    showRoots: false
-  }
+    showRoots: false,
+  },
 });

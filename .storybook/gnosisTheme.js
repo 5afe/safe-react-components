@@ -10,11 +10,7 @@ export default create({
   appBg: 'white',
   appContentBg: 'white',
   appBorderColor: 'grey',
-  appBorderRadius: 4,
-
-  // Typography
-  fontBase: '"Roboto", sans-serif',
-  fontCode: 'monospace',
+  appBorderRadius: 4,  
 
   // Text colors
   textColor: '#333333',

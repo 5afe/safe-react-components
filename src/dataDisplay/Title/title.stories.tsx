@@ -25,3 +25,14 @@ export const WithSizes = (): React.ReactElement => {
     </>
   );
 };
+
+export const Bold = (): React.ReactElement => (
+  <>
+    <Title size="lg" strong>
+      Title LG
+    </Title>
+    <Title size="md" strong>
+      Title MD
+    </Title>
+  </>
+);

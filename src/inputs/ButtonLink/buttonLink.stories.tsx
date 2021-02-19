@@ -15,3 +15,14 @@ export const SimpleButtonLink = (): React.ReactElement => (
     Some text
   </ButtonLink>
 );
+
+export const IconSize = (): React.ReactElement => (
+  <>
+    <ButtonLink color="primary" iconType="add" iconSize="sm">
+      Small Icon
+    </ButtonLink>
+    <ButtonLink color="primary" iconType="add" iconSize="md">
+      Big Icon
+    </ButtonLink>
+  </>
+);
