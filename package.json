@@ -23,7 +23,6 @@
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.6",
-    "polished": "^3.6.7",
     "react-media": "^1.10.0"
   },
   "devDependencies": {
