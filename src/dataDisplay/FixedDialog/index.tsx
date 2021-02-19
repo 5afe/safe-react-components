@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { rgba } from 'polished';
+import { fade } from '@material-ui/core/styles/colorManipulator';
 
 import { Title, ModalFooterConfirmation } from '../../index';
 
@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }) => rgba(theme.colors.overlay.color, 0.8)};
+  background-color: ${({ theme }) => fade(theme.colors.overlay.color, 0.8)};
 `;
 
 const Wrapper = styled.div`

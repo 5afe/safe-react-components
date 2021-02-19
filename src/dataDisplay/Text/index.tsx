@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Tooltip from '@material-ui/core/Tooltip';
 import { withStyles } from '@material-ui/core/styles';
-import { rgba } from 'polished';
+import { fade } from '@material-ui/core/styles/colorManipulator';
 
 import theme, { ThemeTextSize, ThemeColors } from '../../theme';
 
@@ -32,7 +32,7 @@ const StyledTooltip = withStyles(() => ({
   tooltip: {
     backgroundColor: theme.colors.white,
     color: theme.colors.text,
-    boxShadow: `0px 0px 10px ${rgba(theme.colors.shadow.color, 0.2)}`,
+    boxShadow: `0px 0px 10px ${fade(theme.colors.shadow.color, 0.2)}`,
   },
   arrow: {
     color: theme.colors.white,
