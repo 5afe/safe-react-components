@@ -29,7 +29,7 @@ const getBorderBySize = (size: ThemeTooltipSize): string => {
     case 'lg':
       return 'none';
     default:
-      return `1px solid ${theme.colors.separator}`;
+      return `1px solid ${theme.colors.icon}`;
   }
 };
 
