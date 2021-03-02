@@ -50,6 +50,7 @@ const CopyToClipboardBtn = ({
   return (
     <StyledButton
       className={className}
+      type="button"
       onClick={onButtonClick}
       onKeyDown={onKeyDown}
       onMouseLeave={onButtonBlur}>
