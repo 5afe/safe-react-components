@@ -9,7 +9,10 @@ import addressBookAdd from './images/addressBookAdd';
 import alert from './images/alert';
 import allowances from './images/allowances';
 import apps from './images/apps';
+import arrowUp from './images/arrowUp';
+import arrowRight from './images/arrowRight';
 import arrowDown from './images/arrowDown';
+import arrowLeft from './images/arrowLeft';
 import assets from './images/assets';
 import awaitingConfirmations from './images/awaitingConfirmations';
 import camera from './images/camera';
@@ -91,7 +94,10 @@ const icons = {
   alert,
   allowances,
   apps,
+  arrowUp,
+  arrowLeft,
   arrowDown,
+  arrowRight,
   assets,
   awaitingConfirmations,
   camera,
