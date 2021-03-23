@@ -71,6 +71,8 @@ const theme = {
       sm: '16px',
       md: '32px',
       lg: '40px',
+      xl: '48px',
+      xxl: '60px',
     },
   },
   loader: {

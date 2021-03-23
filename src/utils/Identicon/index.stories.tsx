@@ -17,6 +17,8 @@ export const sizes = (): React.ReactElement => {
       <Identicon address="thisIsAnExample" size="sm" />
       <Identicon address="thisIsAnExample" size="md" />
       <Identicon address="thisIsAnExample" size="lg" />
+      <Identicon address="thisIsAnExample" size="xl" />
+      <Identicon address="thisIsAnExample" size="xxl" />
     </>
   );
 };
