@@ -2,6 +2,8 @@ import React, { ReactElement, ReactNode, HTMLAttributes } from 'react';
 import ButtonMUI, {
   ButtonProps as ButtonMUIProps,
 } from '@material-ui/core/Button';
+import { fade } from '@material-ui/core/styles/colorManipulator';
+
 import styled, {
   css,
   DefaultTheme,
@@ -223,7 +225,7 @@ const StyledButton = styled(ButtonMUI)<{ localProps: LocalProps }>`
         theme.text.size[localProps.textSize ?? 'xl'].lineHeight};
       text-transform: none;
       border-radius: 8px;
-      box-shadow: 1px 2px 10px 0 rgba(40, 54, 61, 0.18);
+      box-shadow: 1px 2px 10px ${fade(theme.colors.shadow.color, 0.18)};
       letter-spacing: 0;
     }
 

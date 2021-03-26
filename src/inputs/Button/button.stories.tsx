@@ -17,8 +17,19 @@ const Wrapper = styled.div`
   }
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  button {
+    margin: 10px;
+  }
+`;
+
 export const SimpleButton = (): React.ReactElement => (
-  <>
+  <ButtonContainer>
     <Button size="md">Text</Button>
     <Button size="md" color="secondary">
       Text
@@ -46,7 +57,7 @@ export const SimpleButton = (): React.ReactElement => (
     <Button size="md" color="error" variant="bordered">
       Text
     </Button>
-  </>
+  </ButtonContainer>
 );
 
 export const DisabledButton = (): React.ReactElement => (
