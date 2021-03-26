@@ -8,14 +8,17 @@ import styled, {
   FlattenInterpolation,
   ThemeProps,
 } from 'styled-components';
+
 import theme, {
   ThemeButtonSize,
   ThemeIconSize,
   ThemeTextSize,
 } from '../../theme';
 import { Icon, IconType, Props as IconProps } from '../../dataDisplay';
+
 type Colors = 'primary' | 'secondary' | 'error';
 type Variations = 'bordered' | 'contained' | 'outlined';
+
 type CustomButtonMuiProps = Omit<
   ButtonMUIProps,
   'size' | 'color' | 'variant'
@@ -32,12 +35,15 @@ type LocalProps = {
   iconType?: keyof IconType;
   iconSize?: ThemeIconSize;
 };
+
 type Props = LocalProps &
   CustomButtonMuiProps &
   HTMLAttributes<HTMLButtonElement>;
+
 const StyledIcon = styled(Icon)<IconProps>`
   margin-right: 5px;
 `;
+
 const customStyles: {
   [key in Colors]: {
     [key in Variations]: FlattenInterpolation<ThemeProps<DefaultTheme>>;
@@ -47,7 +53,8 @@ const customStyles: {
     contained: css`
       color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.primary};
-      ​ &:hover {
+
+      &:hover {
         background-color: ${({ theme }) => theme.colors.primaryHover};
       }
     `,
@@ -57,10 +64,12 @@ const customStyles: {
       path.icon-color {
         fill: ${({ theme }) => theme.colors.primary};
       }
-      ​ &.Mui-disabled {
+
+      &.Mui-disabled {
         color: ${({ theme }) => theme.colors.primary};
       }
-      ​ &:hover {
+
+      &:hover {
         color: ${({ theme }) => theme.colors.primaryHover};
         path.icon-color {
           fill: ${({ theme }) => theme.colors.primaryHover};
@@ -75,10 +84,12 @@ const customStyles: {
       path.icon-color {
         fill: ${({ theme }) => theme.colors.primary};
       }
-      ​ &.Mui-disabled {
+
+      &.Mui-disabled {
         color: ${({ theme }) => theme.colors.primary};
       }
-      ​ &:hover {
+
+      &:hover {
         color: ${({ theme }) => theme.colors.white};
         path.icon-color {
           fill: ${({ theme }) => theme.colors.white};
@@ -95,7 +106,8 @@ const customStyles: {
       path.icon-color {
         color: ${({ theme }) => theme.colors.white};
       }
-      ​ &:hover {
+
+      &:hover {
         background-color: ${({ theme }) => theme.colors.secondaryHover};
         path.icon-color {
           color: ${({ theme }) => theme.colors.white};
@@ -108,10 +120,12 @@ const customStyles: {
       path.icon-color {
         fill: ${({ theme }) => theme.colors.secondary};
       }
-      ​ &.Mui-disabled {
+
+      &.Mui-disabled {
         color: ${({ theme }) => theme.colors.secondary};
       }
-      ​ &:hover {
+
+      &:hover {
         color: ${({ theme }) => theme.colors.secondaryHover};
         path.icon-color {
           fill: ${({ theme }) => theme.colors.secondaryHover};
@@ -126,10 +140,12 @@ const customStyles: {
       path.icon-color {
         fill: ${({ theme }) => theme.colors.secondary};
       }
-      ​ &.Mui-disabled {
+
+      &.Mui-disabled {
         color: ${({ theme }) => theme.colors.secondary};
       }
-      ​ &:hover {
+
+      &:hover {
         color: ${({ theme }) => theme.colors.white};
         path.icon-color {
           fill: ${({ theme }) => theme.colors.white};
@@ -143,7 +159,8 @@ const customStyles: {
     contained: css`
       color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.error};
-      ​ &:hover {
+
+      &:hover {
         background-color: ${({ theme }) => theme.colors.errorHover};
       }
     `,
@@ -153,10 +170,12 @@ const customStyles: {
       path.icon-color {
         fill: ${({ theme }) => theme.colors.error};
       }
-      ​ &.Mui-disabled {
+
+      &.Mui-disabled {
         color: ${({ theme }) => theme.colors.error};
       }
-      ​ &:hover {
+
+      &:hover {
         color: ${({ theme }) => theme.colors.errorHover};
         path.icon-color {
           fill: ${({ theme }) => theme.colors.errorHover};
@@ -171,10 +190,12 @@ const customStyles: {
       path.icon-color {
         fill: ${({ theme }) => theme.colors.error};
       }
-      ​ &.Mui-disabled {
+
+      &.Mui-disabled {
         color: ${({ theme }) => theme.colors.error};
       }
-      ​ &:hover {
+
+      &:hover {
         color: ${({ theme }) => theme.colors.white};
         path.icon-color {
           fill: ${({ theme }) => theme.colors.white};
@@ -185,6 +206,7 @@ const customStyles: {
     `,
   },
 };
+
 const StyledButton = styled(ButtonMUI)<{ localProps: LocalProps }>`
   && {
     height: ${({ theme, localProps }) =>
@@ -202,19 +224,19 @@ const StyledButton = styled(ButtonMUI)<{ localProps: LocalProps }>`
       text-transform: none;
       border-radius: 8px;
     }
-​
+
     &.Mui-disabled {
       color: ${({ theme }) => theme.colors.white};
     }
-​
+
     path.icon-color {
       fill: ${({ theme }) => theme.colors.white};
     }
-​
+
     &:disabled {
       opacity: ${({ theme }) => theme.colors.disabled.opacity};
     }
-​
+
     ${({ localProps }) => {
       if (localProps.color !== undefined && localProps.variant !== undefined) {
         return customStyles[localProps.color][localProps.variant];
@@ -222,6 +244,7 @@ const StyledButton = styled(ButtonMUI)<{ localProps: LocalProps }>`
     }}
   }
 `;
+
 export const Button = ({
   children,
   color = 'primary',
