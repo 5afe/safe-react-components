@@ -223,6 +223,8 @@ const StyledButton = styled(ButtonMUI)<{ localProps: LocalProps }>`
         theme.text.size[localProps.textSize ?? 'xl'].lineHeight};
       text-transform: none;
       border-radius: 8px;
+      box-shadow: 1px 2px 10px 0 rgba(40, 54, 61, 0.18);
+      letter-spacing: 0;
     }
 
     &.Mui-disabled {
