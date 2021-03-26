@@ -106,6 +106,8 @@ const customStyles: {
     contained: css`
       color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.secondary};
+      box-shadow: 1px 2px 10px ${fade(theme.colors.shadow.color, 0.18)};
+
       path.icon-color {
         color: ${({ theme }) => theme.colors.white};
       }
@@ -162,6 +164,7 @@ const customStyles: {
     contained: css`
       color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.error};
+      box-shadow: 1px 2px 10px ${fade(theme.colors.shadow.color, 0.18)};
 
       &:hover {
         background-color: ${({ theme }) => theme.colors.errorHover};
