@@ -77,7 +77,7 @@ const customStyles: {
         path.icon-color {
           fill: ${({ theme }) => theme.colors.primaryHover};
         }
-        background-color: transparent;
+        background-color: ${({ theme }) => theme.colors.background};
       }
     `,
     bordered: css`
@@ -135,7 +135,7 @@ const customStyles: {
         path.icon-color {
           fill: ${({ theme }) => theme.colors.secondaryHover};
         }
-        background-color: transparent;
+        background-color: ${({ theme }) => theme.colors.background};
       }
     `,
     bordered: css`
@@ -186,7 +186,7 @@ const customStyles: {
         path.icon-color {
           fill: ${({ theme }) => theme.colors.errorHover};
         }
-        background-color: transparent;
+        background-color: ${({ theme }) => theme.colors.background};
       }
     `,
     bordered: css`
