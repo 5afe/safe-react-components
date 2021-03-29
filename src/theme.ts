@@ -16,6 +16,7 @@ const theme = {
 
     error: '#DB3A3D',
     errorHover: '#C31717',
+    errorTooltip: '#ffe6ea',
 
     text: '#001428',
     icon: '#B2B5B2',
