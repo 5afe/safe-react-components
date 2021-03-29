@@ -11,14 +11,14 @@ export default {
   },
 };
 
-const Wrapper = styled.div`
-  > * {
-    margin-right: 5px;
+const ButtonContainer = styled.div`
+  button {
+    margin: 10px;
   }
 `;
 
 export const SimpleButton = (): React.ReactElement => (
-  <>
+  <ButtonContainer>
     <Button size="md">Text</Button>
     <Button size="md" color="secondary">
       Text
@@ -46,11 +46,11 @@ export const SimpleButton = (): React.ReactElement => (
     <Button size="md" color="error" variant="bordered">
       Text
     </Button>
-  </>
+  </ButtonContainer>
 );
 
 export const DisabledButton = (): React.ReactElement => (
-  <>
+  <ButtonContainer>
     <Button size="md" disabled className="ads">
       Text
     </Button>
@@ -80,18 +80,18 @@ export const DisabledButton = (): React.ReactElement => (
     <Button size="md" color="error" variant="bordered" disabled>
       Text
     </Button>
-  </>
+  </ButtonContainer>
 );
 
 export const Sizes = (): React.ReactElement => (
-  <Wrapper>
+  <ButtonContainer>
     <Button size="md">Text</Button>
     <Button size="lg">Text</Button>
-  </Wrapper>
+  </ButtonContainer>
 );
 
 export const withIcon = (): React.ReactElement => (
-  <>
+  <ButtonContainer>
     <Button size="lg" iconType="addressBook">
       Text
     </Button>
@@ -129,11 +129,11 @@ export const withIcon = (): React.ReactElement => (
     <Button size="lg" iconType="addressBook" color="error" variant="bordered">
       Text
     </Button>
-  </>
+  </ButtonContainer>
 );
 
 export const withIconSize = (): React.ReactElement => (
-  <>
+  <ButtonContainer>
     <Button
       variant="bordered"
       size="md"
@@ -149,7 +149,7 @@ export const withIconSize = (): React.ReactElement => (
       color="secondary">
       Text
     </Button>
-  </>
+  </ButtonContainer>
 );
 
 export const withCustomComponent = (): React.ReactElement => {

@@ -2,6 +2,8 @@ import React, { ReactElement, ReactNode, HTMLAttributes } from 'react';
 import ButtonMUI, {
   ButtonProps as ButtonMUIProps,
 } from '@material-ui/core/Button';
+import { fade } from '@material-ui/core/styles/colorManipulator';
+
 import styled, {
   css,
   DefaultTheme,
@@ -9,7 +11,11 @@ import styled, {
   ThemeProps,
 } from 'styled-components';
 
-import theme, { ThemeButtonSize, ThemeIconSize } from '../../theme';
+import theme, {
+  ThemeButtonSize,
+  ThemeIconSize,
+  ThemeTextSize,
+} from '../../theme';
 import { Icon, IconType, Props as IconProps } from '../../dataDisplay';
 
 type Colors = 'primary' | 'secondary' | 'error';
@@ -27,6 +33,7 @@ type LocalProps = {
   color?: Colors;
   variant?: Variations;
   size: ThemeButtonSize;
+  textSize?: ThemeTextSize;
   iconType?: keyof IconType;
   iconSize?: ThemeIconSize;
 };
@@ -48,6 +55,7 @@ const customStyles: {
     contained: css`
       color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.primary};
+      box-shadow: 1px 2px 10px ${fade(theme.colors.shadow.color, 0.18)};
 
       &:hover {
         background-color: ${({ theme }) => theme.colors.primaryHover};
@@ -98,6 +106,8 @@ const customStyles: {
     contained: css`
       color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.secondary};
+      box-shadow: 1px 2px 10px ${fade(theme.colors.shadow.color, 0.18)};
+
       path.icon-color {
         color: ${({ theme }) => theme.colors.white};
       }
@@ -154,6 +164,7 @@ const customStyles: {
     contained: css`
       color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.error};
+      box-shadow: 1px 2px 10px ${fade(theme.colors.shadow.color, 0.18)};
 
       &:hover {
         background-color: ${({ theme }) => theme.colors.errorHover};
@@ -212,8 +223,13 @@ const StyledButton = styled(ButtonMUI)<{ localProps: LocalProps }>`
       padding: ${({ theme, localProps: { size } }) =>
         theme.buttons.size[size].padding};
       font-family: ${theme.fonts.fontFamily};
+      font-size: ${({ theme, localProps }) =>
+        theme.text.size[localProps.textSize ?? 'xl'].fontSize};
+      line-height: ${({ theme, localProps }) =>
+        theme.text.size[localProps.textSize ?? 'xl'].lineHeight};
       text-transform: none;
       border-radius: 8px;
+      letter-spacing: 0;
     }
 
     &.Mui-disabled {
@@ -241,6 +257,7 @@ export const Button = ({
   color = 'primary',
   variant = 'contained',
   size,
+  textSize = 'xl',
   iconType,
   iconSize = 'md',
   // We need destructuring all LocalProps, remaining props are for CustomButtonMuiProps
@@ -250,7 +267,7 @@ export const Button = ({
     <StyledButton
       className={`${color} ${variant}`}
       {...buttonMuiProps}
-      localProps={{ color, variant, size }}>
+      localProps={{ color, variant, size, textSize }}>
       {iconType && <StyledIcon size={iconSize} type={iconType} />}
       {children}
     </StyledButton>
