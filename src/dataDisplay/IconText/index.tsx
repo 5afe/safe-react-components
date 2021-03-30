@@ -12,7 +12,7 @@ type Props = {
   color?: ThemeColors;
   text: string;
   className?: string;
-  icon?: 'left' | 'right';
+  iconSide?: 'left' | 'right';
 };
 
 const StyledIconText = styled.div`
@@ -32,11 +32,11 @@ const IconText = ({
   textSize,
   iconType,
   text,
-  icon = 'left',
+  iconSide = 'left',
   color,
   className,
 }: Props): React.ReactElement => {
-  return icon === 'right' ? (
+  return iconSide === 'right' ? (
     <StyledIconText className={className}>
       <Text size={textSize} color={color}>
         {text}

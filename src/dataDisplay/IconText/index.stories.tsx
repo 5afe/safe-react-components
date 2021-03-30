@@ -30,14 +30,14 @@ export const IconPosition = (): React.ReactElement => {
         textSize="sm"
         iconType="add"
         text="Some text"
-        icon="right"
+        iconSide="right"
       />
       <IconText
         iconSize="sm"
         textSize="xl"
         iconType="add"
         text="Some text"
-        icon="right"
+        iconSide="right"
       />
 
       <IconText
@@ -45,14 +45,14 @@ export const IconPosition = (): React.ReactElement => {
         textSize="sm"
         iconType="add"
         text="Some text"
-        icon="right"
+        iconSide="right"
       />
       <IconText
         iconSize="md"
         textSize="xl"
         iconType="add"
         text="Some text"
-        icon="right"
+        iconSide="right"
       />
     </>
   );
