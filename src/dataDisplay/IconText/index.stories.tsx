@@ -21,3 +21,39 @@ export const Sizes = (): React.ReactElement => {
     </>
   );
 };
+
+export const IconPosition = (): React.ReactElement => {
+  return (
+    <>
+      <IconText
+        iconSize="sm"
+        textSize="sm"
+        iconType="add"
+        text="Some text"
+        icon="right"
+      />
+      <IconText
+        iconSize="sm"
+        textSize="xl"
+        iconType="add"
+        text="Some text"
+        icon="right"
+      />
+
+      <IconText
+        iconSize="md"
+        textSize="sm"
+        iconType="add"
+        text="Some text"
+        icon="right"
+      />
+      <IconText
+        iconSize="md"
+        textSize="xl"
+        iconType="add"
+        text="Some text"
+        icon="right"
+      />
+    </>
+  );
+};

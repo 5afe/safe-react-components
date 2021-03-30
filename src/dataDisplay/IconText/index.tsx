@@ -12,6 +12,7 @@ type Props = {
   color?: ThemeColors;
   text: string;
   className?: string;
+  icon?: 'left' | 'right';
 };
 
 const StyledIconText = styled.div`
@@ -31,15 +32,25 @@ const IconText = ({
   textSize,
   iconType,
   text,
+  icon = 'left',
   color,
   className,
-}: Props): React.ReactElement => (
-  <StyledIconText className={className}>
-    <Icon size={iconSize} type={iconType} color={color} />
-    <Text size={textSize} color={color}>
-      {text}
-    </Text>
-  </StyledIconText>
-);
+}: Props): React.ReactElement => {
+  return icon === 'right' ? (
+    <StyledIconText className={className}>
+      <Text size={textSize} color={color}>
+        {text}
+      </Text>
+      <Icon size={iconSize} type={iconType} color={color} />
+    </StyledIconText>
+  ) : (
+    <StyledIconText className={className}>
+      <Icon size={iconSize} type={iconType} color={color} />
+      <Text size={textSize} color={color}>
+        {text}
+      </Text>
+    </StyledIconText>
+  );
+};
 
 export default IconText;
