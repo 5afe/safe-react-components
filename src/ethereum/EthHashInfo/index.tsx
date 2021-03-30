@@ -52,7 +52,7 @@ type Props = {
   name?: string;
   textColor?: ThemeColors;
   textSize?: ThemeTextSize;
-  withAvatar?: boolean | string;
+  withAvatar?: boolean | string | undefined;
   avatarSize?: ThemeIdenticonSize;
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
