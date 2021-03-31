@@ -18,7 +18,7 @@ const StyledContainer = styled.div`
   align-items: center;
 `;
 
-const IdenticonContainer = styled.div`
+const AvatarContainer = styled.div`
   display: flex;
   margin-right: 8px;
 `;
@@ -39,15 +39,22 @@ const AddressContainer = styled.div`
   }
 `;
 
+const StyledImg = styled.img<{ size: ThemeIdenticonSize }>`
+  height: ${({ size, theme }) => theme.identicon.size[size]};
+  width: ${({ size, theme }) => theme.identicon.size[size]};
+  border-radius: 50%;
+`;
+
 type Props = {
+  className?: string;
   hash: string;
+  shortenHash?: number;
+  name?: string;
   textColor?: ThemeColors;
   textSize?: ThemeTextSize;
-  identiconSize?: ThemeIdenticonSize;
-  shortenHash?: number;
-  className?: string;
-  name?: string;
-  showIdenticon?: boolean;
+  showAvatar?: boolean;
+  customAvatar?: string;
+  avatarSize?: ThemeIdenticonSize;
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
   explorerUrl?: ExplorerInfo;
@@ -58,19 +65,24 @@ const EthHashInfo = ({
   name,
   textColor = 'text',
   textSize = 'lg',
-  identiconSize = 'md',
   className,
   shortenHash,
-  showIdenticon,
+  showAvatar,
+  customAvatar,
+  avatarSize = 'md',
   showCopyBtn,
   menuItems,
   explorerUrl,
 }: Props): React.ReactElement => (
   <StyledContainer className={className}>
-    {showIdenticon && (
-      <IdenticonContainer>
-        <Identicon address={hash} size={identiconSize} />
-      </IdenticonContainer>
+    {showAvatar && (
+      <AvatarContainer>
+        {customAvatar ? (
+          <StyledImg src={customAvatar} size={avatarSize} />
+        ) : (
+          <Identicon address={hash} size={avatarSize} />
+        )}
+      </AvatarContainer>
     )}
 
     <InfoContainer>
