@@ -76,10 +76,11 @@ import unlocked from './images/unlocked';
 import userEdit from './images/userEdit';
 import wallet from './images/wallet';
 
-import { ThemeColors, ThemeIconSize } from '../../theme';
+import { ThemeColors, ThemeIconSize, ThemeMargin } from '../../theme';
 
-const StyledIcon = styled.span<{ color?: ThemeColors }>`
+const StyledIcon = styled.span<{ color?: ThemeColors; margin?: ThemeMargin }>`
   display: inline-flex;
+  margin: 0 ${({ theme }) => theme.margin.xs}; /* TODO review this */
 
   .icon-color {
     fill: ${({ theme, color }) =>
@@ -168,6 +169,7 @@ export type IconTypes = keyof IconType;
 export type Props = {
   type: IconTypes;
   size: ThemeIconSize;
+  margin?: ThemeMargin;
   color?: ThemeColors;
   tooltip?: string;
   className?: string;
@@ -180,12 +182,13 @@ export type Props = {
 export const Icon = ({
   type,
   size,
+  margin,
   color,
   tooltip,
   className,
 }: Props): React.ReactElement => {
   const IconElement = (
-    <StyledIcon color={color} className={className}>
+    <StyledIcon color={color} margin={margin} className={className}>
       {icons[type][size]}
     </StyledIcon>
   );

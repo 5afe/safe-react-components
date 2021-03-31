@@ -115,6 +115,7 @@ const Tab = ({
       return (
         <IconText
           iconSize="sm"
+          margin="md"
           iconType={item.icon}
           textSize="sm"
           color={selectedTab === item.id ? 'primary' : 'text'}

@@ -1,13 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { ThemeColors, ThemeIconSize, ThemeTextSize } from '../../theme';
+import {
+  ThemeColors,
+  ThemeIconSize,
+  ThemeMargin,
+  ThemeTextSize,
+} from '../../theme';
 import { Icon, IconType } from '../Icon';
 import Text from '../Text';
 
 type Props = {
   iconType: keyof IconType;
   iconSize: ThemeIconSize;
+  margin: ThemeMargin;
   textSize: ThemeTextSize;
   color?: ThemeColors;
   text: string;
@@ -19,9 +25,9 @@ const StyledIconText = styled.div`
   display: flex;
   align-items: center;
 
-  p {
+  /* p {
     margin-left: 6px;
-  }
+  } */
 `;
 
 /**
@@ -29,6 +35,7 @@ const StyledIconText = styled.div`
  */
 const IconText = ({
   iconSize,
+  margin = 'md',
   textSize,
   iconType,
   text,
@@ -41,11 +48,11 @@ const IconText = ({
       <Text size={textSize} color={color}>
         {text}
       </Text>
-      <Icon size={iconSize} type={iconType} color={color} />
+      <Icon size={iconSize} margin={margin} type={iconType} color={color} />
     </StyledIconText>
   ) : (
     <StyledIconText className={className}>
-      <Icon size={iconSize} type={iconType} color={color} />
+      <Icon size={iconSize} margin={margin} type={iconType} color={color} />
       <Text size={textSize} color={color}>
         {text}
       </Text>

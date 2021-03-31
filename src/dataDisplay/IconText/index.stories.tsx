@@ -13,11 +13,35 @@ export default {
 export const Sizes = (): React.ReactElement => {
   return (
     <>
-      <IconText iconSize="sm" textSize="sm" iconType="add" text="Some text" />
-      <IconText iconSize="sm" textSize="xl" iconType="add" text="Some text" />
+      <IconText
+        iconSize="sm"
+        margin="md"
+        textSize="sm"
+        iconType="add"
+        text="Some text"
+      />
+      <IconText
+        iconSize="sm"
+        margin="md"
+        textSize="xl"
+        iconType="add"
+        text="Some text"
+      />
 
-      <IconText iconSize="md" textSize="sm" iconType="add" text="Some text" />
-      <IconText iconSize="md" textSize="xl" iconType="add" text="Some text" />
+      <IconText
+        iconSize="md"
+        margin="md"
+        textSize="sm"
+        iconType="add"
+        text="Some text"
+      />
+      <IconText
+        iconSize="md"
+        margin="xxl"
+        textSize="xl"
+        iconType="add"
+        text="Some text"
+      />
     </>
   );
 };
@@ -27,6 +51,7 @@ export const IconPosition = (): React.ReactElement => {
     <>
       <IconText
         iconSize="sm"
+        margin="md"
         textSize="sm"
         iconType="add"
         text="Some text"
@@ -34,6 +59,7 @@ export const IconPosition = (): React.ReactElement => {
       />
       <IconText
         iconSize="sm"
+        margin="md"
         textSize="xl"
         iconType="add"
         text="Some text"
@@ -42,6 +68,7 @@ export const IconPosition = (): React.ReactElement => {
 
       <IconText
         iconSize="md"
+        margin="md"
         textSize="sm"
         iconType="add"
         text="Some text"
@@ -49,6 +76,7 @@ export const IconPosition = (): React.ReactElement => {
       />
       <IconText
         iconSize="md"
+        margin="md"
         textSize="xl"
         iconType="add"
         text="Some text"
