@@ -52,7 +52,8 @@ type Props = {
   name?: string;
   textColor?: ThemeColors;
   textSize?: ThemeTextSize;
-  withAvatar?: boolean | string | undefined;
+  showAvatar?: boolean;
+  customAvatar?: string;
   avatarSize?: ThemeIdenticonSize;
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
@@ -66,19 +67,20 @@ const EthHashInfo = ({
   textSize = 'lg',
   className,
   shortenHash,
-  withAvatar,
+  showAvatar,
+  customAvatar,
   avatarSize = 'md',
   showCopyBtn,
   menuItems,
   explorerUrl,
 }: Props): React.ReactElement => (
   <StyledContainer className={className}>
-    {withAvatar && (
+    {showAvatar && (
       <AvatarContainer>
-        {typeof withAvatar === 'boolean' ? (
-          <Identicon address={hash} size={avatarSize} />
+        {customAvatar ? (
+          <StyledImg src={customAvatar} size={avatarSize} />
         ) : (
-          <StyledImg src={withAvatar as string} size={avatarSize} />
+          <Identicon address={hash} size={avatarSize} />
         )}
       </AvatarContainer>
     )}

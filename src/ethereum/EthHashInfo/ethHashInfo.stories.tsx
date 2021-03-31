@@ -26,13 +26,14 @@ export const WithName = (): React.ReactElement => (
 );
 
 export const WithDefaultAvatar = (): React.ReactElement => (
-  <EthHashInfo hash={hash} withAvatar shortenHash={4} />
+  <EthHashInfo hash={hash} showAvatar shortenHash={4} />
 );
 
 export const WithCustomAvatar = (): React.ReactElement => (
   <EthHashInfo
     hash={hash}
-    withAvatar="https://gnosis-safe-token-logos.s3.amazonaws.com/0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa.png"
+    showAvatar
+    customAvatar="https://gnosis-safe-token-logos.s3.amazonaws.com/0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa.png"
     shortenHash={4}
   />
 );
@@ -41,7 +42,7 @@ export const WithButtons = (): React.ReactElement => (
   <EthHashInfo
     hash={hash}
     name="Owner 1"
-    withAvatar
+    showAvatar
     showCopyBtn
     explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
     shortenHash={4}
@@ -57,7 +58,7 @@ export const WithMenu = (): React.ReactElement => {
     <EthHashInfo
       hash={hash}
       name="Owner 1"
-      withAvatar
+      showAvatar
       showCopyBtn
       menuItems={items}
       shortenHash={4}
