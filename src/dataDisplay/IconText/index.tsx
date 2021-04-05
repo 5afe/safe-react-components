@@ -25,12 +25,8 @@ const StyledIconText = styled.div<{ margin: ThemeMargin }>`
   display: flex;
   align-items: center;
   svg {
-    margin: 0 ${({ theme }) => theme.margin.xs};
+    margin: 0 ${({ theme, margin }) => theme.margin[margin]};
   }
-`;
-
-const StyledIcon = styled(Icon)`
-  /* margin: 20px; */
 `;
 
 /**
@@ -38,7 +34,7 @@ const StyledIcon = styled(Icon)`
  */
 const IconText = ({
   iconSize,
-  margin = 'md',
+  margin = 'xs',
   textSize,
   iconType,
   text,
@@ -51,11 +47,11 @@ const IconText = ({
       <Text size={textSize} color={color}>
         {text}
       </Text>
-      <StyledIcon size={iconSize} type={iconType} color={color} />
+      <Icon size={iconSize} type={iconType} color={color} />
     </StyledIconText>
   ) : (
     <StyledIconText className={className} margin={margin}>
-      <StyledIcon size={iconSize} type={iconType} color={color} />
+      <Icon size={iconSize} type={iconType} color={color} />
       <Text size={textSize} color={color}>
         {text}
       </Text>

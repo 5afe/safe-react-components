@@ -55,7 +55,8 @@ const theme = {
     fontFamilyCode: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`,
   },
   margin: {
-    xs: '4px',
+    xxs: '4px',
+    xs: '6px',
     sm: '8px',
     md: '12px',
     lg: '16px',
