@@ -20,5 +20,5 @@ export const loader = (): React.ReactElement => (
 );
 
 export const withColor = (): React.ReactElement => (
-  <Loader size="md" color="rinkeby" />
+  <Loader size="sm" color="pending" />
 );
