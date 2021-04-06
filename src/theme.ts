@@ -30,6 +30,7 @@ const theme = {
     background: '#F7F5F5',
     white: '#ffffff',
     warning: '#FFC05F',
+    pending: '#E8663D',
 
     disabled: {
       opacity: 0.5,
