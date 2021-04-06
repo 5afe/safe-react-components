@@ -78,7 +78,8 @@ const theme = {
   },
   loader: {
     size: {
-      xs: '10px',
+      xxs: '10px',
+      xs: '16px',
       sm: '30px',
       md: '50px',
       lg: '70px',
