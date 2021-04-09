@@ -30,6 +30,7 @@ const theme = {
     background: '#F7F5F5',
     white: '#ffffff',
     warning: '#FFC05F',
+    pending: '#E8663D',
 
     disabled: {
       opacity: 0.5,
@@ -78,7 +79,8 @@ const theme = {
   },
   loader: {
     size: {
-      xs: '10px',
+      xxs: '10px',
+      xs: '16px',
       sm: '30px',
       md: '50px',
       lg: '70px',
