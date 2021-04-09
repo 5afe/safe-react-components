@@ -9,17 +9,21 @@ import styled from 'styled-components';
 
 import FixedIcon from '../FixedIcon';
 
-type StyledAccordionProps = AccordionMUIProps & {
+type AccordionProps = AccordionMUIProps & {
   compact?: boolean;
+};
+
+type StyledAccordionProps = AccordionMUIProps & {
+  $compact?: AccordionProps['compact'];
 };
 
 const StyledAccordion = styled(AccordionMUI)<StyledAccordionProps>`
   &.MuiAccordion-root {
-    border-radius: ${({ compact }) => (compact ? '8px' : '0')};
-    border: ${({ compact, theme }) =>
-      compact ? '2px solid ' + theme.colors.separator : 'none'};
+    border-radius: ${({ $compact }) => ($compact ? '8px' : '0')};
+    border: ${({ $compact, theme }) =>
+      $compact ? '2px solid ' + theme.colors.separator : 'none'};
     border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
-    margin-bottom: ${({ compact }) => (compact ? '16px' : '0')};
+    margin-bottom: ${({ $compact }) => ($compact ? '16px' : '0')};
     overflow: hidden;
 
     &:before {
@@ -31,7 +35,7 @@ const StyledAccordion = styled(AccordionMUI)<StyledAccordionProps>`
     }
 
     &.Mui-expanded {
-      margin: ${({ compact }) => (compact ? '0 0 16px 0' : '0')};
+      margin: ${({ $compact }) => ($compact ? '0 0 16px 0' : '0')};
     }
 
     .MuiAccordionDetails-root {
@@ -68,9 +72,9 @@ export const Accordion = ({
   compact,
   children,
   ...props
-}: StyledAccordionProps): ReactElement => {
+}: AccordionProps): ReactElement => {
   return (
-    <StyledAccordion square elevation={0} compact={compact} {...props}>
+    <StyledAccordion square elevation={0} $compact={compact} {...props}>
       {children}
     </StyledAccordion>
   );

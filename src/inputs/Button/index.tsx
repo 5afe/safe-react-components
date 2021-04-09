@@ -213,20 +213,20 @@ const customStyles: {
   },
 };
 
-const StyledButton = styled(ButtonMUI)<{ localProps: LocalProps }>`
+const StyledButton = styled(ButtonMUI)<{ $localProps: LocalProps }>`
   && {
-    height: ${({ theme, localProps }) =>
-      theme.buttons.size[localProps.size].height};
+    height: ${({ theme, $localProps }) =>
+      theme.buttons.size[$localProps.size].height};
     &.MuiButton-root {
-      min-width: ${({ theme, localProps: { size } }) =>
+      min-width: ${({ theme, $localProps: { size } }) =>
         theme.buttons.size[size].minWidth};
-      padding: ${({ theme, localProps: { size } }) =>
+      padding: ${({ theme, $localProps: { size } }) =>
         theme.buttons.size[size].padding};
       font-family: ${theme.fonts.fontFamily};
-      font-size: ${({ theme, localProps }) =>
-        theme.text.size[localProps.textSize ?? 'xl'].fontSize};
-      line-height: ${({ theme, localProps }) =>
-        theme.text.size[localProps.textSize ?? 'xl'].lineHeight};
+      font-size: ${({ theme, $localProps }) =>
+        theme.text.size[$localProps.textSize ?? 'xl'].fontSize};
+      line-height: ${({ theme, $localProps }) =>
+        theme.text.size[$localProps.textSize ?? 'xl'].lineHeight};
       text-transform: none;
       border-radius: 8px;
       letter-spacing: 0;
@@ -244,9 +244,12 @@ const StyledButton = styled(ButtonMUI)<{ localProps: LocalProps }>`
       opacity: ${({ theme }) => theme.colors.disabled.opacity};
     }
 
-    ${({ localProps }) => {
-      if (localProps.color !== undefined && localProps.variant !== undefined) {
-        return customStyles[localProps.color][localProps.variant];
+    ${({ $localProps }) => {
+      if (
+        $localProps.color !== undefined &&
+        $localProps.variant !== undefined
+      ) {
+        return customStyles[$localProps.color][$localProps.variant];
       }
     }}
   }
@@ -267,7 +270,7 @@ export const Button = ({
     <StyledButton
       className={`${color} ${variant}`}
       {...buttonMuiProps}
-      localProps={{ color, variant, size, textSize }}>
+      $localProps={{ color, variant, size, textSize }}>
       {iconType && <StyledIcon size={iconSize} type={iconType} />}
       {children}
     </StyledButton>
