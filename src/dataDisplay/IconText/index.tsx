@@ -13,7 +13,7 @@ import Text from '../Text';
 type Props = {
   iconType: keyof IconType;
   iconSize: ThemeIconSize;
-  margin: ThemeMargin;
+  margin?: ThemeMargin;
   textSize: ThemeTextSize;
   color?: ThemeColors;
   text: string;
