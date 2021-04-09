@@ -21,11 +21,19 @@ type Props = {
   iconSide?: 'left' | 'right';
 };
 
-const StyledIconText = styled.div<{ margin: ThemeMargin }>`
+const LeftIconText = styled.div<{ margin: ThemeMargin }>`
   display: flex;
   align-items: center;
   svg {
-    margin: 0 ${({ theme, margin }) => theme.margin[margin]};
+    margin: 0 ${({ theme, margin }) => theme.margin[margin]} 0 0;
+  }
+`;
+
+const RightIconText = styled.div<{ margin: ThemeMargin }>`
+  display: flex;
+  align-items: center;
+  svg {
+    margin: 0 0 0 ${({ theme, margin }) => theme.margin[margin]};
   }
 `;
 
@@ -43,19 +51,19 @@ const IconText = ({
   className,
 }: Props): React.ReactElement => {
   return iconSide === 'right' ? (
-    <StyledIconText className={className} margin={margin}>
+    <RightIconText className={className} margin={margin}>
       <Text size={textSize} color={color}>
         {text}
       </Text>
       <Icon size={iconSize} type={iconType} color={color} />
-    </StyledIconText>
+    </RightIconText>
   ) : (
-    <StyledIconText className={className} margin={margin}>
+    <LeftIconText className={className} margin={margin}>
       <Icon size={iconSize} type={iconType} color={color} />
       <Text size={textSize} color={color}>
         {text}
       </Text>
-    </StyledIconText>
+    </LeftIconText>
   );
 };
 
