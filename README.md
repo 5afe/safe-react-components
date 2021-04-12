@@ -103,6 +103,18 @@ export default App;
 
 You can find documentation and examples of all our components in this [storybook](https://components.gnosis-safe.io/).
 
+## Local development
+
+To develop on your local machine, install the dependencies (including the peer dependencies):
+```
+yarn
+```
+
+Launch the Storybook:
+```
+yarn storybook
+```
+
 ## Testing
 
 Snapshot tests are generated automatically from the Storybook stories using the [StoryShots addon](https://github.com/storybookjs/storybook/tree/master/addons/storyshots/storyshots-core).
