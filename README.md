@@ -105,14 +105,18 @@ You can find documentation and examples of all our components in this [storybook
 
 ## Testing
 
-Snapshot tests are generated automatically from the Storybook stories.
+Snapshot tests are generated automatically from the Storybook stories using the [StoryShots addon](https://github.com/storybookjs/storybook/tree/master/addons/storyshots/storyshots-core).
 
 To run the tests locally:
 ```
-yarn test --watch
+yarn test
 ```
 
-Press `U` to update the snapshots.
+Alternatively, run `yarn test --watch` to re-run the tests for each modification you do.
+Before you commit your changes, you need to update the snapshots and commit them as well. To do so, run `yarn test -u`.
+When the command finishes, the resulting snapshots will be the new baseline.
+
+If you want to add a new Jest test, make sure to put a file with the `.test.tsx` extension into the same directory as the corresponding component.
 
 ## Examples
 

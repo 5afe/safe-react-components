@@ -17,6 +17,7 @@
     "build-storybook": "build-storybook --docs",
     "storybook": "start-storybook -p 9009 --docs",
     "lint:check": "eslint './src/**/*.{js,jsx,ts,tsx}'",
+    "prettier": "prettier -w",
     "test": "jest tests/storybook.test.js",
     "prepare": "yarn build"
   },
@@ -101,7 +102,9 @@
     ]
   },
   "jest": {
-    "setupFilesAfterEnv": ["<rootDir>/tests/jest-runtime.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/jest-runtime.js"
+    ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy",
       "\\.(css|less)$": "identity-obj-proxy"
