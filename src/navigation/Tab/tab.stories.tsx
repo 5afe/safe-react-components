@@ -28,22 +28,7 @@ export const SimpleTab = (): React.ReactElement => {
         selectedTab={selected}
         variant="outlined"
         items={items}
-      />
-      {selected}
-    </>
-  );
-};
-
-export const TabContained = (): React.ReactElement => {
-  const [selected, setSelected] = useState('3');
-
-  return (
-    <>
-      <Tab
-        onChange={setSelected}
-        selectedTab={selected}
-        variant="contained"
-        items={items}
+        fullWidth
       />
       {selected}
     </>
