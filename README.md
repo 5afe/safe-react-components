@@ -103,6 +103,17 @@ export default App;
 
 You can find documentation and examples of all our components in this [storybook](https://components.gnosis-safe.io/).
 
+## Testing
+
+Snapshot tests are generated automatically from the Storybook stories.
+
+To run the tests locally:
+```
+yarn test --watch
+```
+
+Press `U` to update the snapshots.
+
 ## Examples
 
 At Gnosis we have developed some example Safe Apps. Here is the [repository](https://github.com/gnosis/safe-react-apps).
