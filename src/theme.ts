@@ -55,6 +55,15 @@ const theme = {
     fontFamily: `'Averta', 'Roboto', 'Helvetica Neue', 'Arial', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', '-apple-system', 'BlinkMacSystemFont', sans-serif`,
     fontFamilyCode: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`,
   },
+  margin: {
+    xxs: '4px',
+    xs: '6px',
+    sm: '8px',
+    md: '12px',
+    lg: '16px',
+    xl: '20px',
+    xxl: '24px',
+  },
   icons: {
     size: {
       sm: '16',
@@ -144,6 +153,7 @@ export type ThemeButtonSize = keyof Theme['buttons']['size'];
 export type ThemeColors = keyof Theme['colors'];
 export type ThemeIdenticonSize = keyof Theme['identicon']['size'];
 export type ThemeIconSize = keyof Theme['icons']['size'];
+export type ThemeMargin = keyof Theme['margin'];
 export type ThemeLoaderSize = keyof Theme['loader']['size'];
 export type ThemeStatusDotSize = keyof Theme['statusDot']['size'];
 export type ThemeTextSize = keyof Theme['text']['size'];
