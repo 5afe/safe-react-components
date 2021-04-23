@@ -65,3 +65,12 @@ export const WithMenu = (): React.ReactElement => {
     />
   );
 };
+
+export const WithAvatarAndText = (): React.ReactElement => (
+  <EthHashInfo
+    hash={hash}
+    showHash={false}
+    name="Owner 1"
+    showAvatar
+  />
+);
