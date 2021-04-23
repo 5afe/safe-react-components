@@ -13,6 +13,7 @@ import Text from '../Text';
 type Props = {
   iconType: keyof IconType;
   iconSize: ThemeIconSize;
+  iconColor?: ThemeColors;
   margin?: ThemeMargin;
   textSize: ThemeTextSize;
   color?: ThemeColors;
@@ -45,6 +46,7 @@ const IconText = ({
   margin = 'xs',
   textSize,
   iconType,
+  iconColor,
   text,
   iconSide = 'left',
   color,
@@ -55,11 +57,11 @@ const IconText = ({
       <Text size={textSize} color={color}>
         {text}
       </Text>
-      <Icon size={iconSize} type={iconType} color={color} />
+      <Icon size={iconSize} type={iconType} color={iconColor} />
     </RightIconText>
   ) : (
     <LeftIconText className={className} margin={margin}>
-      <Icon size={iconSize} type={iconType} color={color} />
+      <Icon size={iconSize} type={iconType} color={iconColor} />
       <Text size={textSize} color={color}>
         {text}
       </Text>
