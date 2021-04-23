@@ -42,12 +42,12 @@ const AddressContainer = styled.div`
 const StyledImg = styled.img<{ size: ThemeIdenticonSize }>`
   height: ${({ size, theme }) => theme.identicon.size[size]};
   width: ${({ size, theme }) => theme.identicon.size[size]};
-  border-radius: 50%;
 `;
 
 type Props = {
   className?: string;
   hash: string;
+  showHash?: boolean;
   shortenHash?: number;
   name?: string;
   textColor?: ThemeColors;
@@ -62,6 +62,7 @@ type Props = {
 
 const EthHashInfo = ({
   hash,
+  showHash = true,
   name,
   textColor = 'text',
   textSize = 'lg',
@@ -92,11 +93,13 @@ const EthHashInfo = ({
         </Text>
       )}
       <AddressContainer>
-        <Text size={textSize} color={textColor}>
-          {shortenHash
-            ? textShortener(hash, shortenHash + 2, shortenHash)
-            : hash}
-        </Text>
+        {showHash && (
+          <Text size={textSize} color={textColor}>
+            {shortenHash
+              ? textShortener(hash, shortenHash + 2, shortenHash)
+              : hash}
+          </Text>
+        )}
         {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
         {explorerUrl && <ExplorerButton explorerUrl={explorerUrl} />}
         {menuItems && <EllipsisMenu menuItems={menuItems} />}
