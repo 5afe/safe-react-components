@@ -1,4 +1,4 @@
-import React, { SyntheticEvent } from 'react';
+import React, { useState, SyntheticEvent } from 'react';
 import styled from 'styled-components';
 
 import {
@@ -77,18 +77,24 @@ const EthHashInfo = ({
   menuItems,
   explorerUrl,
 }: Props): React.ReactElement => {
+  const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
+
   const setAppImageFallback = (
     error: SyntheticEvent<HTMLImageElement, Event>
   ): void => {
-    error.currentTarget.onerror = null;
-    error.currentTarget.src = customAvatarFallback || '';
+    if (customAvatarFallback && !fallbackToIdenticon) {
+      error.currentTarget.onerror = null;
+      error.currentTarget.src = customAvatarFallback;
+    } else {
+      setFallbackToIdenticon(true);
+    }
   };
 
   return (
     <StyledContainer className={className}>
       {showAvatar && (
         <AvatarContainer>
-          {customAvatar ? (
+          {!fallbackToIdenticon && customAvatar ? (
             <StyledImg
               src={customAvatar}
               size={avatarSize}

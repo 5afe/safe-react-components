@@ -5926,8 +5926,73 @@ exports[`Storyshots Ethereum/Eth hash Info With Custom Avatar 1`] = `
   >
     <img
       className="sc-bBrOnJ jPNRUi"
+      onError={[Function]}
       size="md"
       src="https://gnosis-safe-token-logos.s3.amazonaws.com/0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa.png"
+    />
+  </div>
+  <div
+    className="sc-jNMdTA gJUNtj"
+  >
+    <div
+      className="sc-dOSReg cTzfaq"
+    >
+      <p
+        className="sc-crrsfI fiKdgY"
+        color="text"
+        size="lg"
+      >
+        0x6990...ba4f
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Ethereum/Eth hash Info With Custom Avatar Fallback 1`] = `
+<div
+  className="sc-eggNIi bGtkep"
+>
+  <div
+    className="sc-cTkwdZ kJbbRd"
+  >
+    <img
+      className="sc-bBrOnJ jPNRUi"
+      onError={[Function]}
+      size="md"
+      src="https://no-file.png"
+    />
+  </div>
+  <div
+    className="sc-jNMdTA gJUNtj"
+  >
+    <div
+      className="sc-dOSReg cTzfaq"
+    >
+      <p
+        className="sc-crrsfI fiKdgY"
+        color="text"
+        size="lg"
+      >
+        0x6990...ba4f
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Ethereum/Eth hash Info With Custom Avatar Fallback Identicon 1`] = `
+<div
+  className="sc-eggNIi bGtkep"
+>
+  <div
+    className="sc-cTkwdZ kJbbRd"
+  >
+    <img
+      className="sc-bBrOnJ jPNRUi"
+      onError={[Function]}
+      size="md"
+      src="https://no-file.png"
     />
   </div>
   <div

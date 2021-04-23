@@ -38,6 +38,25 @@ export const WithCustomAvatar = (): React.ReactElement => (
   />
 );
 
+export const WithCustomAvatarFallback = (): React.ReactElement => (
+  <EthHashInfo
+    hash={hash}
+    showAvatar
+    customAvatar="https://no-file.png"
+    customAvatarFallback="https://gnosis-safe-token-logos.s3.amazonaws.com/0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa.png"
+    shortenHash={4}
+  />
+);
+
+export const WithCustomAvatarFallbackIdenticon = (): React.ReactElement => (
+  <EthHashInfo
+    hash={hash}
+    showAvatar
+    customAvatar="https://no-file.png"
+    shortenHash={4}
+  />
+);
+
 export const WithButtons = (): React.ReactElement => (
   <EthHashInfo
     hash={hash}
