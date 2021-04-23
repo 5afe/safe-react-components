@@ -93,11 +93,13 @@ const EthHashInfo = ({
         </Text>
       )}
       <AddressContainer>
-        {showHash && <Text size={textSize} color={textColor}>
-          {shortenHash
-            ? textShortener(hash, shortenHash + 2, shortenHash)
-            : hash}
-        </Text>}
+        {showHash && (
+          <Text size={textSize} color={textColor}>
+            {shortenHash
+              ? textShortener(hash, shortenHash + 2, shortenHash)
+              : hash}
+          </Text>
+        )}
         {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
         {explorerUrl && <ExplorerButton explorerUrl={explorerUrl} />}
         {menuItems && <EllipsisMenu menuItems={menuItems} />}
