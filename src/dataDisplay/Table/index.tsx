@@ -145,21 +145,18 @@ export const Table = ({
           );
 
           return (
-            <>
+            <React.Fragment key={row.id}>
               <TableRow
                 hover
-                key={row.id}
                 selected={selectedRowIds.has(row.id)}
                 onClick={() => onRowClick(row.id)}>
-                {rowCells.map((c, index) => {
-                  return (
-                    <TableCell
-                      key={c.id || index}
-                      align={c.alignment || TableAlignment.left}>
-                      {c.content}
-                    </TableCell>
-                  );
-                })}
+                {rowCells.map((c, index) => (
+                  <TableCell
+                    key={c.id || `cell${index}`}
+                    align={c.alignment || TableAlignment.left}>
+                    {c.content}
+                  </TableCell>
+                ))}
               </TableRow>
 
               {/* Collapsible content */}
@@ -177,7 +174,7 @@ export const Table = ({
                   </TableCell>
                 </TableRow>
               )}
-            </>
+            </React.Fragment>
           );
         })}
       </TableBody>
