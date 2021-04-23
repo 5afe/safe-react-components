@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { SyntheticEvent } from 'react';
 import styled from 'styled-components';
 
 import {
@@ -12,6 +12,8 @@ import {
 import { textShortener } from '../../utils/strings';
 import { ThemeTextSize, ThemeColors, ThemeIdenticonSize } from '../../theme';
 import { ExplorerInfo } from '../../typings/misc';
+
+import asd from 'src/utils/modals/ManageListModal/appsIcon.svg';
 
 const StyledContainer = styled.div`
   display: flex;
@@ -60,6 +62,13 @@ type Props = {
   explorerUrl?: ExplorerInfo;
 };
 
+export const setAppImageFallback = (
+  error: SyntheticEvent<HTMLImageElement, Event>
+): void => {
+  error.currentTarget.onerror = null;
+  error.currentTarget.src = asd;
+};
+
 const EthHashInfo = ({
   hash,
   showHash = true,
@@ -79,7 +88,7 @@ const EthHashInfo = ({
     {showAvatar && (
       <AvatarContainer>
         {customAvatar ? (
-          <StyledImg src={customAvatar} size={avatarSize} />
+          <StyledImg src={customAvatar} size={avatarSize} onerror={onerror} />
         ) : (
           <Identicon address={hash} size={avatarSize} />
         )}
