@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, SyntheticEvent } from 'react';
 import styled from 'styled-components';
 
 import {
@@ -54,6 +54,7 @@ type Props = {
   textSize?: ThemeTextSize;
   showAvatar?: boolean;
   customAvatar?: string;
+  customAvatarFallback?: string;
   avatarSize?: ThemeIdenticonSize;
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
@@ -70,42 +71,62 @@ const EthHashInfo = ({
   shortenHash,
   showAvatar,
   customAvatar,
+  customAvatarFallback,
   avatarSize = 'md',
   showCopyBtn,
   menuItems,
   explorerUrl,
-}: Props): React.ReactElement => (
-  <StyledContainer className={className}>
-    {showAvatar && (
-      <AvatarContainer>
-        {customAvatar ? (
-          <StyledImg src={customAvatar} size={avatarSize} />
-        ) : (
-          <Identicon address={hash} size={avatarSize} />
-        )}
-      </AvatarContainer>
-    )}
+}: Props): React.ReactElement => {
+  const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
+  const [fallbackSrc, setFallabckSrc] = useState<undefined | string>(undefined);
 
-    <InfoContainer>
-      {name && (
-        <Text size={textSize} color={textColor}>
-          {name}
-        </Text>
+  const setAppImageFallback = (
+    error: SyntheticEvent<HTMLImageElement, Event>
+  ): void => {
+    if (customAvatarFallback && !fallbackToIdenticon) {
+      setFallabckSrc(customAvatarFallback);
+    } else {
+      setFallbackToIdenticon(true);
+    }
+  };
+
+  return (
+    <StyledContainer className={className}>
+      {showAvatar && (
+        <AvatarContainer>
+          {!fallbackToIdenticon && customAvatar ? (
+            <StyledImg
+              src={fallbackSrc || customAvatar}
+              size={avatarSize}
+              onError={setAppImageFallback}
+            />
+          ) : (
+            <Identicon address={hash} size={avatarSize} />
+          )}
+        </AvatarContainer>
       )}
-      <AddressContainer>
-        {showHash && (
+
+      <InfoContainer>
+        {name && (
           <Text size={textSize} color={textColor}>
-            {shortenHash
-              ? textShortener(hash, shortenHash + 2, shortenHash)
-              : hash}
+            {name}
           </Text>
         )}
-        {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
-        {explorerUrl && <ExplorerButton explorerUrl={explorerUrl} />}
-        {menuItems && <EllipsisMenu menuItems={menuItems} />}
-      </AddressContainer>
-    </InfoContainer>
-  </StyledContainer>
-);
+        <AddressContainer>
+          {showHash && (
+            <Text size={textSize} color={textColor}>
+              {shortenHash
+                ? textShortener(hash, shortenHash + 2, shortenHash)
+                : hash}
+            </Text>
+          )}
+          {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
+          {explorerUrl && <ExplorerButton explorerUrl={explorerUrl} />}
+          {menuItems && <EllipsisMenu menuItems={menuItems} />}
+        </AddressContainer>
+      </InfoContainer>
+    </StyledContainer>
+  );
+};
 
 export default EthHashInfo;
