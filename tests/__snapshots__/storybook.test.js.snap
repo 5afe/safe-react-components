@@ -4943,6 +4943,162 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
 </div>
 `;
 
+exports[`Storyshots Data Display/Icon Text Color 1`] = `
+Array [
+  .c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 .icon-color {
+  fill: #FFC05F;
+}
+
+.c2 {
+  font-family: 'Averta','Roboto','Helvetica Neue','Arial','Segoe UI','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','-apple-system','BlinkMacSystemFont',sans-serif;
+  color: #DB3A3D;
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: start;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 svg {
+  margin: 0 8px 0 0;
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+      color="warning"
+    >
+      <svg
+        height="16"
+        viewBox="0 0 17 16"
+        width="17"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M0 0H16V16H0z"
+          />
+          <path
+            className="icon-color"
+            d="M8 5.996c.553 0 1 .447 1 1v.998c0 .553-.447 1-1 1-.552 0-1-.447-1-1v-.998c0-.553.448-1 1-1M8 9.895c.607 0 1.101.492 1.101 1.1 0 .607-.494 1.1-1.1 1.1-.608 0-1.1-.493-1.1-1.1 0-.608.492-1.1 1.1-1.1"
+          />
+          <path
+            className="icon-color"
+            d="M8 0c-.383 0-.766.193-.975.581L.133 13.373c-.396.734.138 1.624.974 1.624h13.786c.836 0 1.37-.89.974-1.624L8.974.581C8.766.193 8.384 0 8 0m0 3l5.386 9.997H2.613L8 3"
+          />
+        </g>
+      </svg>
+    </span>
+    <p
+      className="c2"
+      color="error"
+      size="xl"
+    >
+      Alert message
+    </p>
+  </div>,
+  .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c2 .icon-color {
+  fill: #008C73;
+}
+
+.c1 {
+  font-family: 'Averta','Roboto','Helvetica Neue','Arial','Segoe UI','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','-apple-system','BlinkMacSystemFont',sans-serif;
+  color: #001428;
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: start;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 svg {
+  margin: 0 0 0 8px;
+}
+
+<div
+    className="c0"
+  >
+    <p
+      className="c1"
+      color="text"
+      size="xl"
+    >
+      External link
+    </p>
+    <span
+      className="c2"
+      color="primary"
+    >
+      <svg
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M0 0H16V16H0z"
+          />
+          <path
+            className="icon-color"
+            d="M13 13v-2c0-.552.448-1 1-1s1 .448 1 1v2c0 1.105-.895 2-2 2H3c-1.105 0-2-.895-2-2V3c0-1.105.895-2 2-2h2c.552 0 1 .448 1 1s-.448 1-1 1H3v10h10z"
+            fillRule="nonzero"
+          />
+          <path
+            className="icon-color"
+            d="M11.586 3H9c-.552 0-1-.448-1-1s.448-1 1-1h5c.276 0 .526.112.707.293.181.18.293.43.293.707v5c0 .552-.448 1-1 1s-1-.448-1-1V4.414l-6.243 6.243c-.39.39-1.023.39-1.414 0-.39-.39-.39-1.024 0-1.414L11.586 3z"
+          />
+        </g>
+      </svg>
+    </span>
+  </div>,
+]
+`;
+
 exports[`Storyshots Data Display/Icon Text Icon Margin 1`] = `
 Array [
   .c1 {
@@ -12908,18 +13064,7 @@ Array [
 }
 
 .c2 .icon-color {
-  fill: #001428;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c4 .icon-color {
-  fill: #008C73;
+  fill: #B2B5B2;
 }
 
 .c3 {
@@ -12932,7 +13077,7 @@ Array [
   text-align: start;
 }
 
-.c5 {
+.c4 {
   font-family: 'Averta','Roboto','Helvetica Neue','Arial','Segoe UI','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','-apple-system','BlinkMacSystemFont',sans-serif;
   color: #008C73;
   margin: 0;
@@ -13022,7 +13167,6 @@ Array [
               >
                 <span
                   className="c2"
-                  color="text"
                 >
                   <svg
                     height="16"
@@ -13087,7 +13231,6 @@ Array [
               >
                 <span
                   className="c2"
-                  color="text"
                 >
                   <svg
                     height="16"
@@ -13146,8 +13289,7 @@ Array [
                 className="c1"
               >
                 <span
-                  className="c4"
-                  color="primary"
+                  className="c2"
                 >
                   <svg
                     height="16"
@@ -13179,7 +13321,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="c5"
+                  className="c4"
                   color="primary"
                   size="sm"
                 >
@@ -13220,7 +13362,6 @@ Array [
               >
                 <span
                   className="c2"
-                  color="text"
                 >
                   <svg
                     height="16"
@@ -13299,18 +13440,7 @@ Array [
 }
 
 .c2 .icon-color {
-  fill: #001428;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c4 .icon-color {
-  fill: #008C73;
+  fill: #B2B5B2;
 }
 
 .c3 {
@@ -13323,7 +13453,7 @@ Array [
   text-align: start;
 }
 
-.c5 {
+.c4 {
   font-family: 'Averta','Roboto','Helvetica Neue','Arial','Segoe UI','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','-apple-system','BlinkMacSystemFont',sans-serif;
   color: #008C73;
   margin: 0;
@@ -13413,7 +13543,6 @@ Array [
               >
                 <span
                   className="c2"
-                  color="text"
                 >
                   <svg
                     height="16"
@@ -13478,7 +13607,6 @@ Array [
               >
                 <span
                   className="c2"
-                  color="text"
                 >
                   <svg
                     height="16"
@@ -13537,8 +13665,7 @@ Array [
                 className="c1"
               >
                 <span
-                  className="c4"
-                  color="primary"
+                  className="c2"
                 >
                   <svg
                     height="16"
@@ -13570,7 +13697,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="c5"
+                  className="c4"
                   color="primary"
                   size="sm"
                 >
@@ -13611,7 +13738,6 @@ Array [
               >
                 <span
                   className="c2"
-                  color="text"
                 >
                   <svg
                     height="16"
@@ -13690,18 +13816,7 @@ Array [
 }
 
 .c2 .icon-color {
-  fill: #001428;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c4 .icon-color {
-  fill: #008C73;
+  fill: #B2B5B2;
 }
 
 .c3 {
@@ -13714,7 +13829,7 @@ Array [
   text-align: start;
 }
 
-.c5 {
+.c4 {
   font-family: 'Averta','Roboto','Helvetica Neue','Arial','Segoe UI','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','-apple-system','BlinkMacSystemFont',sans-serif;
   color: #008C73;
   margin: 0;
@@ -13792,7 +13907,6 @@ Array [
               >
                 <span
                   className="c2"
-                  color="text"
                 >
                   <svg
                     height="16"
@@ -13857,7 +13971,6 @@ Array [
               >
                 <span
                   className="c2"
-                  color="text"
                 >
                   <svg
                     height="16"
@@ -13916,8 +14029,7 @@ Array [
                 className="c1"
               >
                 <span
-                  className="c4"
-                  color="primary"
+                  className="c2"
                 >
                   <svg
                     height="16"
@@ -13949,7 +14061,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="c5"
+                  className="c4"
                   color="primary"
                   size="sm"
                 >
@@ -13990,7 +14102,6 @@ Array [
               >
                 <span
                   className="c2"
-                  color="text"
                 >
                   <svg
                     height="16"
