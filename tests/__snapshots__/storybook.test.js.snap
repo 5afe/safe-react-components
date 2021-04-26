@@ -5960,7 +5960,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Custom Avatar Fallback 1`] = `
       className="sc-bBrOnJ jPNRUi"
       onError={[Function]}
       size="md"
-      src="https://no-file.png"
+      src="https://broken.png"
     />
   </div>
   <div
