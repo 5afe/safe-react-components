@@ -42,8 +42,8 @@ export const WithCustomAvatarFallback = (): React.ReactElement => (
   <EthHashInfo
     hash={hash}
     showAvatar
-    customAvatar="https://no-file.png"
-    customAvatarFallback="https://gnosis-safe-token-logos.s3.amazonaws.com/0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa.png"
+    customAvatar="https://broken.png"
+    customAvatarFallback="https://gnosis-safe-token-logos.s3.amazonaws.com/0x6810e776880C02933D47DB1b9fc05908e5386b96.png"
     shortenHash={4}
   />
 );

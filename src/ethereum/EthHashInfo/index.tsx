@@ -78,13 +78,13 @@ const EthHashInfo = ({
   explorerUrl,
 }: Props): React.ReactElement => {
   const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
+  const [fallbackSrc, setFallabckSrc] = useState<undefined | string>(undefined);
 
   const setAppImageFallback = (
     error: SyntheticEvent<HTMLImageElement, Event>
   ): void => {
     if (customAvatarFallback && !fallbackToIdenticon) {
-      error.currentTarget.onerror = null;
-      error.currentTarget.src = customAvatarFallback;
+      setFallabckSrc(customAvatarFallback);
     } else {
       setFallbackToIdenticon(true);
     }
@@ -96,7 +96,7 @@ const EthHashInfo = ({
         <AvatarContainer>
           {!fallbackToIdenticon && customAvatar ? (
             <StyledImg
-              src={customAvatar}
+              src={fallbackSrc || customAvatar}
               size={avatarSize}
               onError={setAppImageFallback}
             />
