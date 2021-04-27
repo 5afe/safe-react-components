@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import theme from '../../theme';
 
 export interface Props {
-  label: React.ReactNode | string;
+  label: React.ReactNode;
   checked: boolean;
   name: string;
   onChange: (
