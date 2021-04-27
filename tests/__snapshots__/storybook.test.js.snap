@@ -1573,13 +1573,13 @@ exports[`Storyshots Data Display/FixedDialog Simple Fixed Dialog 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: rgba(232,231,230,0.8);
 }
 
 .c1 {
   width: 400px;
   background-color: #ffffff;
   border-radius: 8px;
+  box-shadow: 1px 2px 10px 0 rgba(40,54,61,0.18);
 }
 
 .c1 '&:focus': {
@@ -1591,26 +1591,28 @@ exports[`Storyshots Data Display/FixedDialog Simple Fixed Dialog 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #ffffff;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 16px 24px;
   border-bottom: 2px solid #E8E7E6;
+  height: 74px;
+  box-sizing: border-box;
 }
 
 .c4 {
   max-height: 460px;
-  background-color: #ffffff;
   overflow-y: auto;
   padding: 16px 24px;
 }
 
 .c5 {
-  background-color: #ffffff;
   border-top: 2px solid #E8E7E6;
-  padding: 16px 24px;
 }
 
 .c3 {
@@ -1623,9 +1625,8 @@ exports[`Storyshots Data Display/FixedDialog Simple Fixed Dialog 1`] = `
 
 .c7.c7 {
   height: 36px;
-  color: #ffffff;
-  background-color: #001428;
-  box-shadow: 1px 2px 10px rgba(40,54,61,0.18);
+  color: #008C73;
+  background-color: transparent;
 }
 
 .c7.c7.MuiButton-root {
@@ -1655,15 +1656,20 @@ exports[`Storyshots Data Display/FixedDialog Simple Fixed Dialog 1`] = `
 }
 
 .c7.c7 path.icon-color {
-  color: #ffffff;
+  fill: #008C73;
+}
+
+.c7.c7.Mui-disabled {
+  color: #008C73;
 }
 
 .c7.c7:hover {
-  background-color: #5D6D74;
+  color: #005546;
+  background-color: #F7F5F5;
 }
 
 .c7.c7:hover path.icon-color {
-  color: #ffffff;
+  fill: #005546;
 }
 
 .c8.c8 {
@@ -1708,10 +1714,19 @@ exports[`Storyshots Data Display/FixedDialog Simple Fixed Dialog 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 84px;
+}
+
+.c6 button:first-child {
+  margin-right: 16px;
 }
 
 <div
@@ -1743,7 +1758,7 @@ exports[`Storyshots Data Display/FixedDialog Simple Fixed Dialog 1`] = `
         className="c6"
       >
         <button
-          className="MuiButtonBase-root MuiButton-root MuiButton-text c7 secondary contained"
+          className="MuiButtonBase-root MuiButton-root MuiButton-text c7 primary outlined"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -15139,9 +15154,8 @@ exports[`Storyshots Utils/Modals/ManageList Simple Modal 1`] = `
 exports[`Storyshots Utils/Modals/utils/FooterConfirmation Modal Footer 1`] = `
 .c1.c1 {
   height: 36px;
-  color: #ffffff;
-  background-color: #001428;
-  box-shadow: 1px 2px 10px rgba(40,54,61,0.18);
+  color: #008C73;
+  background-color: transparent;
 }
 
 .c1.c1.MuiButton-root {
@@ -15171,15 +15185,20 @@ exports[`Storyshots Utils/Modals/utils/FooterConfirmation Modal Footer 1`] = `
 }
 
 .c1.c1 path.icon-color {
-  color: #ffffff;
+  fill: #008C73;
+}
+
+.c1.c1.Mui-disabled {
+  color: #008C73;
 }
 
 .c1.c1:hover {
-  background-color: #5D6D74;
+  color: #005546;
+  background-color: #F7F5F5;
 }
 
 .c1.c1:hover path.icon-color {
-  color: #ffffff;
+  fill: #005546;
 }
 
 .c2.c2 {
@@ -15224,17 +15243,26 @@ exports[`Storyshots Utils/Modals/utils/FooterConfirmation Modal Footer 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 84px;
+}
+
+.c0 button:first-child {
+  margin-right: 16px;
 }
 
 <div
   className="c0"
 >
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text c1 secondary contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text c1 primary outlined"
     disabled={false}
     onBlur={[Function]}
     onClick={[Function]}
@@ -15287,9 +15315,8 @@ exports[`Storyshots Utils/Modals/utils/FooterConfirmation Modal Footer 1`] = `
 exports[`Storyshots Utils/Modals/utils/FooterConfirmation Ok Disabled 1`] = `
 .c1.c1 {
   height: 36px;
-  color: #ffffff;
-  background-color: #001428;
-  box-shadow: 1px 2px 10px rgba(40,54,61,0.18);
+  color: #008C73;
+  background-color: transparent;
 }
 
 .c1.c1.MuiButton-root {
@@ -15319,15 +15346,20 @@ exports[`Storyshots Utils/Modals/utils/FooterConfirmation Ok Disabled 1`] = `
 }
 
 .c1.c1 path.icon-color {
-  color: #ffffff;
+  fill: #008C73;
+}
+
+.c1.c1.Mui-disabled {
+  color: #008C73;
 }
 
 .c1.c1:hover {
-  background-color: #5D6D74;
+  color: #005546;
+  background-color: #F7F5F5;
 }
 
 .c1.c1:hover path.icon-color {
-  color: #ffffff;
+  fill: #005546;
 }
 
 .c2.c2 {
@@ -15372,17 +15404,26 @@ exports[`Storyshots Utils/Modals/utils/FooterConfirmation Ok Disabled 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 84px;
+}
+
+.c0 button:first-child {
+  margin-right: 16px;
 }
 
 <div
   className="c0"
 >
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text c1 secondary contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text c1 primary outlined"
     disabled={false}
     onBlur={[Function]}
     onClick={[Function]}

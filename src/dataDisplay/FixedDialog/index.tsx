@@ -9,13 +9,14 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }) => fade(theme.colors.overlay.color, 0.8)};
 `;
 
 const Wrapper = styled.div`
   width: 400px;
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: 8px;
+  box-shadow: 1px 2px 10px 0
+    ${({ theme }) => fade(theme.colors.shadow.color, 0.18)};
 
   '&:focus': {
     outline: 'none';
@@ -24,24 +25,23 @@ const Wrapper = styled.div`
 
 const TitleSection = styled.div`
   display: flex;
-  background-color: ${({ theme }) => theme.colors.white};
   justify-content: space-between;
+  align-items: center;
   padding: 16px 24px;
   border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
+  height: 74px;
+  box-sizing: border-box;
 `;
 
 const BodySection = styled.div<{ withoutBodyPadding?: boolean }>`
   max-height: 460px;
-  background-color: ${({ theme }) => theme.colors.white};
   overflow-y: auto;
   padding: ${({ withoutBodyPadding }) =>
     withoutBodyPadding ? '0' : '16px 24px'};
 `;
 
 const FooterSection = styled.div`
-  background-color: ${({ theme }) => theme.colors.white};
   border-top: 2px solid ${({ theme }) => theme.colors.separator};
-  padding: 16px 24px;
 `;
 
 type Props = {
