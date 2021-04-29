@@ -108,3 +108,30 @@ export const IconMargin = (): React.ReactElement => {
     </>
   );
 };
+
+export const Color = (): React.ReactElement => {
+  return (
+    <>
+      <IconText
+        iconSize="sm"
+        margin="sm"
+        textSize="xl"
+        iconType="alert"
+        iconColor="warning"
+        text="Alert message"
+        iconSide="left"
+        color="error"
+      />
+      <IconText
+        iconSize="sm"
+        margin="sm"
+        textSize="xl"
+        iconType="externalLink"
+        iconColor="primary"
+        text="External link"
+        iconSide="right"
+        color="text"
+      />
+    </>
+  );
+};
