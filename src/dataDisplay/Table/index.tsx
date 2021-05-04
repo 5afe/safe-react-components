@@ -111,7 +111,7 @@ export const Table = ({
   sortedByHeaderId,
   sortDirection,
   onRowClick = () => undefined,
-  onHeaderClick = () => undefined,
+  onHeaderClick,
 }: Props): React.ReactElement => (
   <TableContainer component={Paper} elevation={3}>
     <TableMui className={className}>
@@ -123,12 +123,16 @@ export const Table = ({
               <TableCell
                 key={header.id}
                 align={header.alignment || TableAlignment.left}>
-                <TableSortLabel
-                  active={sortedByHeaderId === header.id}
-                  direction={sortDirection}
-                  onClick={() => onHeaderClick(header.id)}>
-                  {header.label}
-                </TableSortLabel>
+                {onHeaderClick ? (
+                  <TableSortLabel
+                    active={sortedByHeaderId === header.id}
+                    direction={sortDirection}
+                    onClick={() => onHeaderClick(header.id)}>
+                    {header.label}
+                  </TableSortLabel>
+                ) : (
+                  header.label
+                )}
               </TableCell>
             ))}
           </TableRow>

@@ -6019,144 +6019,28 @@ exports[`Storyshots Data Display/Table Collapsible 1`] = `
           className="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft"
           scope="col"
         >
-          <span
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiTableSortLabel-root"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex={0}
-          >
-            col1
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
+          col1
         </th>
         <th
           aria-sort={null}
           className="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
           scope="col"
         >
-          <span
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiTableSortLabel-root"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex={0}
-          >
-            col2
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
+          col2
         </th>
         <th
           aria-sort={null}
           className="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
           scope="col"
         >
-          <span
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiTableSortLabel-root"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex={0}
-          >
-            col3
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
+          col3
         </th>
         <th
           aria-sort={null}
           className="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft"
           scope="col"
         >
-          <span
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiTableSortLabel-root"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex={0}
-          >
-            
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
+          
         </th>
       </tr>
     </thead>
@@ -6373,108 +6257,21 @@ exports[`Storyshots Data Display/Table Simple Table 1`] = `
           className="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft"
           scope="col"
         >
-          <span
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiTableSortLabel-root"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex={0}
-          >
-            col1
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
+          col1
         </th>
         <th
           aria-sort={null}
           className="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
           scope="col"
         >
-          <span
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiTableSortLabel-root"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex={0}
-          >
-            col2
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
+          col2
         </th>
         <th
           aria-sort={null}
           className="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
           scope="col"
         >
-          <span
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiTableSortLabel-root"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex={0}
-          >
-            col3
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-              />
-            </svg>
-          </span>
+          col3
         </th>
       </tr>
     </thead>
