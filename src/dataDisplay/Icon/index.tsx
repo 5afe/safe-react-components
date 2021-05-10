@@ -31,6 +31,7 @@ import devicePassword from './images/devicePassword';
 import edit from './images/edit';
 import error from './images/error';
 import eth from './images/eth';
+import exportImg from './images/export';
 import externalLink from './images/externalLink';
 import eye from './images/eye';
 import eyeOff from './images/eyeOff';
@@ -39,6 +40,7 @@ import fingerPrint from './images/fingerPrint';
 import fuelIndicator from './images/fuelIndicator';
 import getInTouch from './images/getInTouch';
 import home from './images/home';
+import importImg from './images/import';
 import info from './images/info';
 import knowledge from './images/knowledge';
 import licenses from './images/licenses';
@@ -116,6 +118,7 @@ const icons = {
   edit,
   error,
   eth,
+  exportImg,
   externalLink,
   eye,
   eyeOff,
@@ -124,6 +127,7 @@ const icons = {
   fuelIndicator,
   getInTouch,
   home,
+  importImg,
   info,
   knowledge,
   licenses,
