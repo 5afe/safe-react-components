@@ -11,8 +11,18 @@ const StyledButton = styled.button`
   padding: 0;
   font: inherit;
   cursor: pointer;
-  outline-color: ${({ theme }) => theme.colors.separator};
-  display: flex;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out;
+  outline-color: transparent;
+  height: 24px;
+  width: 24px;
+  span {
+    display: flex;
+    justify-content: center;
+  }
+  :hover {
+    background-color: ${({ theme }) => theme.colors.inputField};
+  }
 `;
 
 type Props = {
