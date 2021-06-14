@@ -16,10 +16,9 @@ const StyledButton = styled.button`
   outline-color: transparent;
   height: 24px;
   width: 24px;
-  span {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
   :hover {
     background-color: ${({ theme }) => theme.colors.inputField};
   }
