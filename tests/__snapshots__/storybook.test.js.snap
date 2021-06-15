@@ -7298,10 +7298,7 @@ exports[`Storyshots Ethereum/Eth hash Info Address 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c2 *:not(:first-child) {
-  margin-left: 8px;
+  gap: 4px;
 }
 
 <div
@@ -7382,10 +7379,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Avatar And Text 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c5 *:not(:first-child) {
-  margin-left: 8px;
+  gap: 4px;
 }
 
 .c2 {
@@ -7491,18 +7485,38 @@ exports[`Storyshots Ethereum/Eth hash Info With Buttons 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c5 *:not(:first-child) {
-  margin-left: 8px;
+  gap: 4px;
 }
 
 .c8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  outline-color: #E8E7E6;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  outline-color: transparent;
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8:hover {
+  background-color: #F0EFEE;
 }
 
 .c2 {
@@ -7518,11 +7532,28 @@ exports[`Storyshots Ethereum/Eth hash Info With Buttons 1`] = `
   padding: 0;
   font: inherit;
   cursor: pointer;
-  outline-color: #E8E7E6;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  outline-color: transparent;
+  height: 24px;
+  width: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6:hover {
+  background-color: #E8E7E6;
 }
 
 <div
@@ -7707,10 +7738,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Custom Avatar 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c4 *:not(:first-child) {
-  margin-left: 8px;
+  gap: 4px;
 }
 
 .c2 {
@@ -7806,10 +7834,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Custom Avatar Fallback 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c4 *:not(:first-child) {
-  margin-left: 8px;
+  gap: 4px;
 }
 
 .c2 {
@@ -7905,10 +7930,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Custom Avatar Fallback Identicon
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c4 *:not(:first-child) {
-  margin-left: 8px;
+  gap: 4px;
 }
 
 .c2 {
@@ -8004,10 +8026,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Default Avatar 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c4 *:not(:first-child) {
-  margin-left: 8px;
+  gap: 4px;
 }
 
 .c2 {
@@ -8104,7 +8123,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Menu 1`] = `
 }
 
 .c9:hover {
-  background-color: #F0EFEE;
+  background-color: #E8E7E6;
 }
 
 .c0 {
@@ -8153,10 +8172,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Menu 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c5 *:not(:first-child) {
-  margin-left: 8px;
+  gap: 4px;
 }
 
 .c2 {
@@ -8172,11 +8188,28 @@ exports[`Storyshots Ethereum/Eth hash Info With Menu 1`] = `
   padding: 0;
   font: inherit;
   cursor: pointer;
-  outline-color: #E8E7E6;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  outline-color: transparent;
+  height: 24px;
+  width: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6:hover {
+  background-color: #E8E7E6;
 }
 
 <div
@@ -8442,10 +8475,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Name 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c3 *:not(:first-child) {
-  margin-left: 8px;
+  gap: 4px;
 }
 
 <div
@@ -8525,10 +8555,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Short Address 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c2 *:not(:first-child) {
-  margin-left: 8px;
+  gap: 4px;
 }
 
 <div
@@ -8587,11 +8614,34 @@ Array [
 }
 
 .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  outline-color: #E8E7E6;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  outline-color: transparent;
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  background-color: #F0EFEE;
 }
 
 <a
@@ -8675,11 +8725,34 @@ Array [
 }
 
 .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  outline-color: #E8E7E6;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  outline-color: transparent;
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  background-color: #F0EFEE;
 }
 
 <a
@@ -14866,11 +14939,28 @@ exports[`Storyshots Utils/CopyToClipboardBtn Copy 1`] = `
   padding: 0;
   font: inherit;
   cursor: pointer;
-  outline-color: #E8E7E6;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  outline-color: transparent;
+  height: 24px;
+  width: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  background-color: #E8E7E6;
 }
 
 <button
@@ -15874,7 +15964,7 @@ exports[`Storyshots navigation/EllipsisMenu Simple Ellipsis Menu 1`] = `
 }
 
 .c1:hover {
-  background-color: #F0EFEE;
+  background-color: #E8E7E6;
 }
 
 <div
