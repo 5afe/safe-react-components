@@ -33,10 +33,7 @@ const InfoContainer = styled.div`
 const AddressContainer = styled.div`
   display: flex;
   align-items: center;
-
-  *:not(:first-child) {
-    margin-left: 8px;
-  }
+  gap: 4px;
 `;
 
 const StyledImg = styled.img<{ size: ThemeIdenticonSize }>`
