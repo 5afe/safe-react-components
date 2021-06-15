@@ -42,7 +42,7 @@ const IconWrapper = styled.button`
   }
 
   :hover {
-    background-color: ${({ theme }) => theme.colors.inputField};
+    background-color: ${({ theme }) => theme.colors.separator};
   }
 `;
 

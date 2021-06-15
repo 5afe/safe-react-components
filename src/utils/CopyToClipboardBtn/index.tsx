@@ -20,7 +20,7 @@ const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
   :hover {
-    background-color: ${({ theme }) => theme.colors.inputField};
+    background-color: ${({ theme }) => theme.colors.separator};
   }
 `;
 
