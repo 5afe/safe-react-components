@@ -4,13 +4,13 @@
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/gnosis/safe-react-components?sort=semver)
 ![GitHub](https://img.shields.io/github/license/gnosis/safe-react-components)
 
-This repository contains a set of React components written in typescript.
+This repository contains a set of React components written in TypeScript.
 
-These components are being used to build the [Safe Multisig](https://github.com/gnosis/safe-react) web and desktop app.
+These components are being used to build the [Gnosis Safe](https://github.com/gnosis/safe-react) web and desktop app.
 
-As Safe Multisig allows to integrate third party applications ("Safe Apps"), these components can also be used to build Safe Apps with the following benefits:
+As Gnosis Safe allows to integrate third party applications ("Safe Apps"), these components can also be used to build Safe Apps with the following benefits:
 
-- **Native feel:** Build your Safe Apps with a similar style as the one used Safe-multisig. This makes your Safe Apps feel almost like a native feature of the Safe Multisig.
+- **Native feel:** Build your Safe Apps with a similar style as the one used by Gnosis Safe. This makes your Safe Apps feel almost like a native feature of the Gnosis Safe.
 - **Responsive:** Most of the components will are optimized to render properly in different resolutions.
 - **Blockchain-focused:** Some components solve common blockchain-related problems like inputs for ETH addresses and bigNumbers, identicon images, and more.
 - **Save time:** No need to build all components from scratch.
@@ -45,9 +45,9 @@ export default () => (
 );
 ```
 
-### Using the same fonts as Safe-multisig
+### Using the same fonts as Gnosis Safe
 
-If you want your app to have the same fonts as the one used by Safe Multisig you need to do the following.
+If you want your Safe App to have the same fonts as the one used by Gnosis Safe you need to do the following.
 
 ```js
 import { createGlobalStyle } from 'styled-components';
@@ -70,8 +70,8 @@ export default GlobalStyle;
 And then include it in the root of your Safe App.
 
 ```js
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 import GlobalStyles from './global';
 
 import App from './App';
@@ -87,7 +87,7 @@ ReactDOM.render(
 
 ## Using the components
 
-You can import every component exported from @gnosis.pm/safe-react-components in the same way.
+You can import every component exported from `@gnosis.pm/safe-react-components` in the same way.
 
 ```js
 import { Text } from '@gnosis.pm/safe-react-components';
