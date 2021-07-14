@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Breadcrumb from './index';
-import { Text } from '../../index';
 
 export default {
   title: 'navigation/Breadcrumb',
@@ -11,11 +10,17 @@ export default {
   },
 };
 
-export const Breadcrumbs = (): React.ReactElement => <Breadcrumb />;
+export const Breadcrumbs = (): React.ReactElement => (
+  <Breadcrumb
+    iconType="addressBook"
+    mainLevelText="Address Book"
+    subLevelsList={['Second Level']}
+  />
+);
 
 export const SubSection = (): React.ReactElement => (
-  <>
-    <Breadcrumb />
-    <Text size="sm">dss</Text>
-  </>
+  <Breadcrumb
+    iconType="addressBook"
+    mainLevelText="Address Book"
+    subLevelsList={['Second Level', 'Third Level', 'Fourth Level']} />
 );

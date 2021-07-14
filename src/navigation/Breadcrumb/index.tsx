@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import theme from '../../theme';
-import { Icon } from '../../dataDisplay/Icon';
+import { Icon, IconTypes } from '../../dataDisplay/Icon';
 import Text from '../../dataDisplay/Text';
 import Link from '../../inputs/Link';
 
@@ -20,33 +19,48 @@ const StyledLink = styled(Link)`
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 800;
-  margin: 0 6px 0 6px;
+  margin: 0 5px;
+  cursor: text;
 `;
 
 const StyledText = styled(Text)`
   font-family: ${({ theme }) => theme.fonts.fontFamily};
   text-transform: uppercase;
   font-weight: normal;
-  margin: 0 6px 0 6px;
+  margin: 0 5px;
 `;
 
 type Props = {
-  children: React.ReactNode;
+  iconType: IconTypes;
+  mainLevelText: string;
+  subLevelsList?: string[];
+  separator?: string;
   className?: string;
 };
 
-const Breadcrumb = ({ className }: Props): React.ReactElement => (
+const Breadcrumb = ({
+  iconType,
+  mainLevelText,
+  subLevelsList,
+  separator = '/',
+  className,
+}: Props): React.ReactElement => (
   <Wrapper className={className}>
-    <Icon type="addressBook" size="sm" color="primary" />
+    <Icon type={iconType} size="sm" color="primary" />
     <StyledLink size="md" color="primary">
-      Address Book
+      {mainLevelText}
     </StyledLink>
-    <Text size="md" color="placeHolder">
-      (3)
-    </Text>
-    <StyledText size="md" color="placeHolder">
-     / Second Level
-    </StyledText>
+    {subLevelsList &&
+      subLevelsList.map((subLevelText) => (
+        <>
+          <Text size="md" color="placeHolder">
+            {separator}
+          </Text>
+          <StyledText size="md" color="placeHolder">
+            {subLevelText}
+          </StyledText>
+        </>
+      ))}
   </Wrapper>
 );
 
