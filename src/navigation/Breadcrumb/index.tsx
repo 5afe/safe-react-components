@@ -77,7 +77,7 @@ type Props = {
   className?: string;
 };
 
-const Breadcrumb = ({
+export const Breadcrumb = ({
   children,
   separator = '/',
   className,
@@ -97,5 +97,3 @@ const Breadcrumb = ({
     })}
   </Wrapper>
 );
-
-export default Breadcrumb;
