@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Icon, IconTypes } from '../../dataDisplay/Icon';
 import Text from '../../dataDisplay/Text';
 import Link from '../../inputs/Link';
+import { ThemeColors } from '../../theme';
 
 const Wrapper = styled.div`
   padding: 16px 0;
@@ -14,53 +15,86 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const ElementWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: auto 5px;
+`;
+
 const StyledLink = styled(Link)`
   font-family: ${({ theme }) => theme.fonts.fontFamily};
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 800;
-  margin: 0 5px;
   cursor: text;
+  margin: auto 5px;
 `;
 
 const StyledText = styled(Text)`
   font-family: ${({ theme }) => theme.fonts.fontFamily};
   text-transform: uppercase;
   font-weight: normal;
-  margin: 0 5px;
+  margin: auto 5px;
 `;
 
+type BreadcrumbElementProps = {
+  iconType?: IconTypes;
+  text: string;
+  counter?: string;
+  color?: ThemeColors;
+};
+
+export const BreadcrumbElement = ({
+  iconType,
+  text,
+  counter,
+  color = 'primary',
+}: BreadcrumbElementProps): React.ReactElement => {
+  return (
+    <ElementWrapper>
+      {iconType && <Icon type={iconType} size="sm" color={color} />}
+      {color === 'primary' ? (
+        <StyledLink size="md" color={color}>
+          {text}
+        </StyledLink>
+      ) : (
+        <StyledText size="md" color={color}>
+          {text}
+        </StyledText>
+      )}
+      {counter && (
+        <Text size="md" color="placeHolder">
+          ({counter})
+        </Text>
+      )}
+    </ElementWrapper>
+  );
+};
+
 type Props = {
-  iconType: IconTypes;
-  mainLevelText: string;
-  subLevelsList?: string[];
+  children: React.ReactNode;
   separator?: string;
   className?: string;
 };
 
 const Breadcrumb = ({
-  iconType,
-  mainLevelText,
-  subLevelsList,
+  children,
   separator = '/',
   className,
 }: Props): React.ReactElement => (
   <Wrapper className={className}>
-    <Icon type={iconType} size="sm" color="primary" />
-    <StyledLink size="md" color="primary">
-      {mainLevelText}
-    </StyledLink>
-    {subLevelsList &&
-      subLevelsList.map((subLevelText) => (
+    {React.Children.map(children, (child, index) => {
+      return (
         <>
-          <Text size="md" color="placeHolder">
-            {separator}
-          </Text>
-          <StyledText size="md" color="placeHolder">
-            {subLevelText}
-          </StyledText>
+          {index > 0 && (
+            <Text size="md" color="placeHolder">
+              {separator}
+            </Text>
+          )}
+          {child}
         </>
-      ))}
+      );
+    })}
   </Wrapper>
 );
 

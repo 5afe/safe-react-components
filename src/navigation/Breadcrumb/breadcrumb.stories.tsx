@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Breadcrumb from './index';
+import Breadcrumb, { BreadcrumbElement } from './index';
 
 export default {
   title: 'navigation/Breadcrumb',
@@ -11,16 +11,45 @@ export default {
 };
 
 export const Breadcrumbs = (): React.ReactElement => (
-  <Breadcrumb
-    iconType="addressBook"
-    mainLevelText="Address Book"
-    subLevelsList={['Second Level']}
-  />
+  <Breadcrumb>
+    <BreadcrumbElement text="Address Book" iconType="addressBook" counter="8" />
+    <BreadcrumbElement text="Second Level" color="placeHolder" />
+  </Breadcrumb>
+);
+
+export const RootElementAlone = (): React.ReactElement => (
+  <Breadcrumb>
+    <BreadcrumbElement text="Transactions" iconType="transactionsInactive" />
+  </Breadcrumb>
+);
+
+export const Counter = (): React.ReactElement => (
+  <Breadcrumb>
+    <BreadcrumbElement text="Address Book" iconType="addressBook" counter="8" />
+  </Breadcrumb>
 );
 
 export const SubSection = (): React.ReactElement => (
-  <Breadcrumb
-    iconType="addressBook"
-    mainLevelText="Address Book"
-    subLevelsList={['Second Level', 'Third Level', 'Fourth Level']} />
+  <Breadcrumb>
+    <BreadcrumbElement text="Assets" iconType="assets" />
+    <BreadcrumbElement text="Coins" color="placeHolder" />
+  </Breadcrumb>
+);
+
+export const FullOptions = (): React.ReactElement => (
+  <Breadcrumb>
+    <BreadcrumbElement text="First level" iconType="addressBook" counter="8" />
+    <BreadcrumbElement
+      text="Second level"
+      iconType="addressBook"
+      counter="8"
+      color="placeHolder"
+    />
+    <BreadcrumbElement
+      text="Third level"
+      iconType="addressBook"
+      counter="8"
+      color="placeHolder"
+    />
+  </Breadcrumb>
 );
