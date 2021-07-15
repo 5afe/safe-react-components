@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, SyntheticEvent } from 'react';
 import styled from 'styled-components';
 
 import {
@@ -18,7 +18,7 @@ const StyledContainer = styled.div`
   align-items: center;
 `;
 
-const IdenticonContainer = styled.div`
+const AvatarContainer = styled.div`
   display: flex;
   margin-right: 8px;
 `;
@@ -33,21 +33,26 @@ const InfoContainer = styled.div`
 const AddressContainer = styled.div`
   display: flex;
   align-items: center;
+  gap: 4px;
+`;
 
-  *:not(:first-child) {
-    margin-left: 8px;
-  }
+const StyledImg = styled.img<{ size: ThemeIdenticonSize }>`
+  height: ${({ size, theme }) => theme.identicon.size[size]};
+  width: ${({ size, theme }) => theme.identicon.size[size]};
 `;
 
 type Props = {
+  className?: string;
   hash: string;
+  showHash?: boolean;
+  shortenHash?: number;
+  name?: string;
   textColor?: ThemeColors;
   textSize?: ThemeTextSize;
-  identiconSize?: ThemeIdenticonSize;
-  shortenHash?: number;
-  className?: string;
-  name?: string;
-  showIdenticon?: boolean;
+  showAvatar?: boolean;
+  customAvatar?: string;
+  customAvatarFallback?: string;
+  avatarSize?: ThemeIdenticonSize;
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
   explorerUrl?: ExplorerInfo;
@@ -55,42 +60,70 @@ type Props = {
 
 const EthHashInfo = ({
   hash,
+  showHash = true,
   name,
   textColor = 'text',
   textSize = 'lg',
-  identiconSize = 'md',
   className,
   shortenHash,
-  showIdenticon,
+  showAvatar,
+  customAvatar,
+  customAvatarFallback,
+  avatarSize = 'md',
   showCopyBtn,
   menuItems,
   explorerUrl,
-}: Props): React.ReactElement => (
-  <StyledContainer className={className}>
-    {showIdenticon && (
-      <IdenticonContainer>
-        <Identicon address={hash} size={identiconSize} />
-      </IdenticonContainer>
-    )}
+}: Props): React.ReactElement => {
+  const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
+  const [fallbackSrc, setFallabckSrc] = useState<undefined | string>(undefined);
 
-    <InfoContainer>
-      {name && (
-        <Text size={textSize} color={textColor}>
-          {name}
-        </Text>
+  const setAppImageFallback = (
+    error: SyntheticEvent<HTMLImageElement, Event>
+  ): void => {
+    if (customAvatarFallback && !fallbackToIdenticon) {
+      setFallabckSrc(customAvatarFallback);
+    } else {
+      setFallbackToIdenticon(true);
+    }
+  };
+
+  return (
+    <StyledContainer className={className}>
+      {showAvatar && (
+        <AvatarContainer>
+          {!fallbackToIdenticon && customAvatar ? (
+            <StyledImg
+              src={fallbackSrc || customAvatar}
+              size={avatarSize}
+              onError={setAppImageFallback}
+            />
+          ) : (
+            <Identicon address={hash} size={avatarSize} />
+          )}
+        </AvatarContainer>
       )}
-      <AddressContainer>
-        <Text size={textSize} color={textColor}>
-          {shortenHash
-            ? textShortener(hash, shortenHash + 2, shortenHash)
-            : hash}
-        </Text>
-        {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
-        {explorerUrl && <ExplorerButton explorerUrl={explorerUrl} />}
-        {menuItems && <EllipsisMenu menuItems={menuItems} />}
-      </AddressContainer>
-    </InfoContainer>
-  </StyledContainer>
-);
+
+      <InfoContainer>
+        {name && (
+          <Text size={textSize} color={textColor}>
+            {name}
+          </Text>
+        )}
+        <AddressContainer>
+          {showHash && (
+            <Text size={textSize} color={textColor}>
+              {shortenHash
+                ? textShortener(hash, shortenHash + 2, shortenHash)
+                : hash}
+            </Text>
+          )}
+          {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
+          {explorerUrl && <ExplorerButton explorerUrl={explorerUrl} />}
+          {menuItems && <EllipsisMenu menuItems={menuItems} />}
+        </AddressContainer>
+      </InfoContainer>
+    </StyledContainer>
+  );
+};
 
 export default EthHashInfo;

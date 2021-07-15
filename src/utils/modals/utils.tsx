@@ -5,7 +5,13 @@ import { Button } from '../../index';
 
 const FooterWrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  height: 84px;
+
+  button:first-child {
+    margin-right: 16px;
+  }
 `;
 
 type Props = {
@@ -25,7 +31,11 @@ export const ModalFooterConfirmation = ({
 }: Props): React.ReactElement => {
   return (
     <FooterWrapper>
-      <Button size="md" color="secondary" onClick={handleCancel}>
+      <Button
+        size="md"
+        color="primary"
+        variant="outlined"
+        onClick={handleCancel}>
         {cancelText}
       </Button>
       <Button

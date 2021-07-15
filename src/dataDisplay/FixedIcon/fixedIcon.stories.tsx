@@ -75,8 +75,8 @@ export const IconsWhite = (): React.ReactElement => {
 
   return (
     <Wrapper>
-      {iconsWhite.map((iconsWhite) => (
-        <GreenBoxColor key="index">
+      {iconsWhite.map((iconsWhite, index) => (
+        <GreenBoxColor key={index}>
           <FixedIcon type={iconsWhite} />
           {iconsWhite}
         </GreenBoxColor>

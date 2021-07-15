@@ -28,7 +28,7 @@ export const Icons = (): React.ReactElement => {
     width: 140px;
     height: 140px;
     border: 1px solid ${({ theme }) => theme.colors.background};
-    font-family: 'Averta', sans-serif;
+    font-family: ${({ theme }) => theme.fonts.fontFamily};
     font-size: 14px;
   `;
 
@@ -39,7 +39,10 @@ export const Icons = (): React.ReactElement => {
     'alert',
     'allowances',
     'apps',
+    'arrowUp',
+    'arrowRight',
     'arrowDown',
+    'arrowLeft',
     'assets',
     'awaitingConfirmations',
     'camera',
@@ -58,6 +61,7 @@ export const Icons = (): React.ReactElement => {
     'edit',
     'error',
     'eth',
+    'exportImg',
     'externalLink',
     'eye',
     'eyeOff',
@@ -66,6 +70,7 @@ export const Icons = (): React.ReactElement => {
     'fuelIndicator',
     'getInTouch',
     'home',
+    'importImg',
     'info',
     'knowledge',
     'licenses',
@@ -88,6 +93,7 @@ export const Icons = (): React.ReactElement => {
     'resync',
     'rocket',
     'scan',
+    'safe',
     'search',
     'sendAgain',
     'sent',

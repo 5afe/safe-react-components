@@ -1,8 +1,8 @@
 const theme = {
   buttons: {
     size: {
-      md: { height: '36px', padding: '0 16px' },
-      lg: { height: '52px', padding: '0 25px' },
+      md: { height: '36px', minWidth: '130px', padding: '0 24px' },
+      lg: { height: '52px', minWidth: '240px', padding: '0 48px' },
     },
   },
   colors: {
@@ -16,6 +16,7 @@ const theme = {
 
     error: '#DB3A3D',
     errorHover: '#C31717',
+    errorTooltip: '#ffe6ea',
 
     text: '#001428',
     icon: '#B2B5B2',
@@ -29,6 +30,7 @@ const theme = {
     background: '#F7F5F5',
     white: '#ffffff',
     warning: '#FFC05F',
+    pending: '#E8663D',
 
     disabled: {
       opacity: 0.5,
@@ -53,6 +55,15 @@ const theme = {
     fontFamily: `'Averta', 'Roboto', 'Helvetica Neue', 'Arial', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', '-apple-system', 'BlinkMacSystemFont', sans-serif`,
     fontFamilyCode: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`,
   },
+  margin: {
+    xxs: '4px',
+    xs: '6px',
+    sm: '8px',
+    md: '12px',
+    lg: '16px',
+    xl: '20px',
+    xxl: '24px',
+  },
   icons: {
     size: {
       sm: '16',
@@ -71,11 +82,14 @@ const theme = {
       sm: '16px',
       md: '32px',
       lg: '40px',
+      xl: '48px',
+      xxl: '60px',
     },
   },
   loader: {
     size: {
-      xs: '10px',
+      xxs: '10px',
+      xs: '16px',
       sm: '30px',
       md: '50px',
       lg: '70px',
@@ -125,17 +139,25 @@ const theme = {
       },
     },
   },
+  tooltip: {
+    size: {
+      md: '',
+      lg: '',
+    },
+  },
 };
 
 export type Theme = typeof theme;
 
+export type ThemeButtonSize = keyof Theme['buttons']['size'];
 export type ThemeColors = keyof Theme['colors'];
+export type ThemeIdenticonSize = keyof Theme['identicon']['size'];
 export type ThemeIconSize = keyof Theme['icons']['size'];
+export type ThemeMargin = keyof Theme['margin'];
+export type ThemeLoaderSize = keyof Theme['loader']['size'];
+export type ThemeStatusDotSize = keyof Theme['statusDot']['size'];
 export type ThemeTextSize = keyof Theme['text']['size'];
 export type ThemeTitleSize = keyof Theme['title']['size'];
-export type ThemeStatusDotSize = keyof Theme['statusDot']['size'];
-export type ThemeLoaderSize = keyof Theme['loader']['size'];
-export type ThemeButtonSize = keyof Theme['buttons']['size'];
-export type ThemeIdenticonSize = keyof Theme['identicon']['size'];
+export type ThemeTooltipSize = keyof Theme['tooltip']['size'];
 
 export default theme;

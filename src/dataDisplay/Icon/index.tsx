@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Tooltip from '@material-ui/core/Tooltip';
-import { withStyles } from '@material-ui/core/styles';
+
+import { Tooltip } from '../..';
 
 import add from './images/add';
 import addressBook from './images/addressBook';
@@ -9,7 +9,10 @@ import addressBookAdd from './images/addressBookAdd';
 import alert from './images/alert';
 import allowances from './images/allowances';
 import apps from './images/apps';
+import arrowUp from './images/arrowUp';
+import arrowRight from './images/arrowRight';
 import arrowDown from './images/arrowDown';
+import arrowLeft from './images/arrowLeft';
 import assets from './images/assets';
 import awaitingConfirmations from './images/awaitingConfirmations';
 import camera from './images/camera';
@@ -28,6 +31,7 @@ import devicePassword from './images/devicePassword';
 import edit from './images/edit';
 import error from './images/error';
 import eth from './images/eth';
+import exportImg from './images/export';
 import externalLink from './images/externalLink';
 import eye from './images/eye';
 import eyeOff from './images/eyeOff';
@@ -36,6 +40,7 @@ import fingerPrint from './images/fingerPrint';
 import fuelIndicator from './images/fuelIndicator';
 import getInTouch from './images/getInTouch';
 import home from './images/home';
+import importImg from './images/import';
 import info from './images/info';
 import knowledge from './images/knowledge';
 import licenses from './images/licenses';
@@ -57,6 +62,7 @@ import requiredConfirmations from './images/requiredConfirmations';
 import restricted from './images/restricted';
 import resync from './images/resync';
 import rocket from './images/rocket';
+import safe from './images/safe';
 import scan from './images/scan';
 import search from './images/search';
 import sendAgain from './images/sendAgain';
@@ -71,9 +77,8 @@ import transactionsInactive from './images/transactionsInactive';
 import unlocked from './images/unlocked';
 import userEdit from './images/userEdit';
 import wallet from './images/wallet';
-import { rgba } from 'polished';
 
-import theme, { ThemeColors, ThemeIconSize } from '../../theme';
+import { ThemeColors, ThemeIconSize } from '../../theme';
 
 const StyledIcon = styled.span<{ color?: ThemeColors }>`
   display: inline-flex;
@@ -84,18 +89,6 @@ const StyledIcon = styled.span<{ color?: ThemeColors }>`
   }
 `;
 
-const StyledTooltip = withStyles(() => ({
-  popper: {
-    zIndex: 2001,
-  },
-  tooltip: {
-    backgroundColor: theme.colors.overlay.color,
-    border: `1px solid ${theme.colors.icon}`,
-    boxShadow: `1px 2px 4px ${rgba(theme.colors.shadow.color, 0.08)}`,
-    color: theme.colors.text,
-  },
-}))(Tooltip);
-
 const icons = {
   add,
   addressBook,
@@ -103,7 +96,10 @@ const icons = {
   alert,
   allowances,
   apps,
+  arrowUp,
+  arrowLeft,
   arrowDown,
+  arrowRight,
   assets,
   awaitingConfirmations,
   camera,
@@ -122,6 +118,7 @@ const icons = {
   edit,
   error,
   eth,
+  exportImg,
   externalLink,
   eye,
   eyeOff,
@@ -130,6 +127,7 @@ const icons = {
   fuelIndicator,
   getInTouch,
   home,
+  importImg,
   info,
   knowledge,
   licenses,
@@ -151,6 +149,7 @@ const icons = {
   restricted,
   resync,
   rocket,
+  safe,
   scan,
   search,
   sendAgain,
@@ -170,7 +169,7 @@ const icons = {
 export type IconType = typeof icons;
 export type IconTypes = keyof IconType;
 
-type Props = {
+export type Props = {
   type: IconTypes;
   size: ThemeIconSize;
   color?: ThemeColors;
@@ -197,8 +196,8 @@ export const Icon = ({
   return tooltip === undefined ? (
     IconElement
   ) : (
-    <StyledTooltip title={tooltip} placement="top">
+    <Tooltip title={tooltip} placement="top">
       {IconElement}
-    </StyledTooltip>
+    </Tooltip>
   );
 };
