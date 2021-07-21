@@ -7,6 +7,7 @@ import Link from '../../inputs/Link';
 import { ThemeColors } from '../../theme';
 
 const Wrapper = styled.div`
+  padding: 16px 0;
   box-sizing: border-box;
   max-height: 54px;
   display: flex;
