@@ -7,7 +7,6 @@ import Link from '../../inputs/Link';
 import { ThemeColors } from '../../theme';
 
 const Wrapper = styled.div`
-  padding: 16px 0;
   box-sizing: border-box;
   max-height: 54px;
   display: flex;
@@ -37,6 +36,22 @@ const StyledText = styled(Text)`
   margin: auto 5px;
 `;
 
+type BreadcrumbTextProps = {
+  text: string;
+  color: ThemeColors;
+};
+
+const BreadcrumbText = ({ text, color }: BreadcrumbTextProps) =>
+  color === 'primary' ? (
+    <StyledLink size="md" color={color}>
+      {text}
+    </StyledLink>
+  ) : (
+    <StyledText size="md" color={color}>
+      {text}
+    </StyledText>
+  );
+
 type BreadcrumbElementProps = {
   iconType?: IconTypes;
   text: string;
@@ -53,15 +68,7 @@ export const BreadcrumbElement = ({
   return (
     <ElementWrapper>
       {iconType && <Icon type={iconType} size="sm" color={color} />}
-      {color === 'primary' ? (
-        <StyledLink size="md" color={color}>
-          {text}
-        </StyledLink>
-      ) : (
-        <StyledText size="md" color={color}>
-          {text}
-        </StyledText>
-      )}
+      <BreadcrumbText {...{ text, color }} />
       {counter && (
         <Text size="md" color="placeHolder">
           ({counter})
