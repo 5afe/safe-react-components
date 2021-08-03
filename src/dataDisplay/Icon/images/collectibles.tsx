@@ -27,7 +27,7 @@ export default {
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
-      viewBox="0 0 24 24">
+      viewBox="-3 -3 30 30">
       <defs>
         <path id="prefix__a" d="M0 0L23.984 0 23.984 22.002 0 22.002z" />
       </defs>
