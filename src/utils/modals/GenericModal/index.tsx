@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from '@material-ui/core/Modal';
 import { makeStyles } from '@material-ui/core/styles';
-import { fade } from '@material-ui/core/styles/colorManipulator';
+import { alpha } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import cn from 'classnames';
 import Media from 'react-media';
@@ -66,7 +66,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     overflowY: 'scroll',
-    background: fade(theme.colors.overlay.color, theme.colors.overlay.opacity),
+    background: alpha(theme.colors.overlay.color, theme.colors.overlay.opacity),
   },
 
   paper: {
