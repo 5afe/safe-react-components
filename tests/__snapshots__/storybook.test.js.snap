@@ -200,7 +200,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
       </div>
     </div>
     <div
-      className="MuiCollapse-container MuiCollapse-hidden"
+      className="MuiCollapse-root MuiCollapse-hidden"
       style={
         Object {
           "minHeight": "0px",
@@ -330,7 +330,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
       </div>
     </div>
     <div
-      className="MuiCollapse-container MuiCollapse-hidden"
+      className="MuiCollapse-root MuiCollapse-hidden"
       style={
         Object {
           "minHeight": "0px",
@@ -460,7 +460,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
       </div>
     </div>
     <div
-      className="MuiCollapse-container MuiCollapse-hidden"
+      className="MuiCollapse-root MuiCollapse-hidden"
       style={
         Object {
           "minHeight": "0px",
@@ -694,7 +694,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
       </div>
     </div>
     <div
-      className="MuiCollapse-container MuiCollapse-hidden"
+      className="MuiCollapse-root MuiCollapse-hidden"
       style={
         Object {
           "minHeight": "0px",
@@ -824,7 +824,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
       </div>
     </div>
     <div
-      className="MuiCollapse-container MuiCollapse-hidden"
+      className="MuiCollapse-root MuiCollapse-hidden"
       style={
         Object {
           "minHeight": "0px",
@@ -954,7 +954,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
       </div>
     </div>
     <div
-      className="MuiCollapse-container MuiCollapse-hidden"
+      className="MuiCollapse-root MuiCollapse-hidden"
       style={
         Object {
           "minHeight": "0px",
@@ -11934,7 +11934,7 @@ exports[`Storyshots Inputs/TextField End Adornment 1`] = `
         value=""
       />
       <div
-        className="MuiInputAdornment-root MuiInputAdornment-filled MuiInputAdornment-positionEnd"
+        className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled"
       >
         <span
           className="c1"
@@ -12268,7 +12268,7 @@ exports[`Storyshots Inputs/TextField Start Adornment 1`] = `
       onClick={[Function]}
     >
       <div
-        className="MuiInputAdornment-root MuiInputAdornment-filled MuiInputAdornment-positionStart"
+        className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-filled"
       >
         <span
           className="c1"
