@@ -24,7 +24,6 @@
   "author": "Gnosis (https://gnosis.pm)",
   "license": "MIT",
   "dependencies": {
-    "classnames": "^2.2.6",
     "react-media": "^1.10.0"
   },
   "devDependencies": {

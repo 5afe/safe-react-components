@@ -3,7 +3,6 @@ import Modal from '@material-ui/core/Modal';
 import { makeStyles } from '@material-ui/core/styles';
 import { alpha } from '@material-ui/core/styles';
 import styled from 'styled-components';
-import cn from 'classnames';
 import Media from 'react-media';
 
 import theme from '../../../theme';
@@ -99,7 +98,7 @@ const GenericModal = ({
 
   return (
     <Modal open className={classes.modal}>
-      <div className={cn(classes.paper)}>
+      <div className={classes.paper}>
         <TitleSection>
           <Title size="xs" withoutMargin>
             {title}
