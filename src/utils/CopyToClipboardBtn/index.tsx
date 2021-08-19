@@ -53,8 +53,9 @@ const CopyToClipboardBtn = ({
     copy();
   };
 
-  const onButtonBlur = (): number =>
+  const onButtonBlur = (): void => {
     setTimeout((): void => setClicked(false), 300);
+  };
 
   return (
     <StyledButton
