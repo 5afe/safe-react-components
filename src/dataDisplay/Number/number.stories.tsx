@@ -8,12 +8,23 @@ export default {
   parameters: {
     componentSubtitle: 'Localized number formatting',
   },
-  args: {
-    showDecimals: true,
-    showThousandSeparators: false,
-    decimalPlaces: 'As many as present in given `value`.',
-  },
 };
+
+export const formatNumberFunction = (): React.ReactElement => (
+  <>
+    Based upon the exported{' '}
+    <code>
+      formatNumber(value,{' '}
+      {`{roundingType,
+  showDecimals,
+  decimalPlaces,
+  showThousandSeparators,
+  currency}`}
+      )
+    </code>{' '}
+    function.
+  </>
+);
 
 export const SimpleNumber = (): React.ReactElement => (
   <Number value="1234324.234" decimalPlaces={2} showThousandSeparators />
