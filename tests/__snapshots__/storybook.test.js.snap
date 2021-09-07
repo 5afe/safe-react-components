@@ -6047,6 +6047,25 @@ exports[`Storyshots Data Display/Number Currency 1`] = `"€1.99"`;
 
 exports[`Storyshots Data Display/Number Decimal Place Removal 1`] = `"123"`;
 
+exports[`Storyshots Data Display/Number Format Number Function 1`] = `
+Array [
+  "Based upon the exported",
+  " ",
+  <code>
+    formatNumber(value,
+     
+    {roundingType,
+  showDecimals,
+  decimalPlaces,
+  showThousandSeparators,
+  currency}
+    )
+  </code>,
+  " ",
+  "function.",
+]
+`;
+
 exports[`Storyshots Data Display/Number Restricted Number Of Decimals 1`] = `"3.14"`;
 
 exports[`Storyshots Data Display/Number Rounded Numbers 1`] = `
