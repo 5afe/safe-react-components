@@ -1,16 +1,16 @@
 import React from 'react';
+import { RequireAtLeastOne } from '../../typings/utilities';
 
 const DEFAULT_SHOW_DECIMALS = true;
 const DEFAULT_SHOW_THOUSAND_SEPARATORS = false;
 
-type FormatNumberOptions = {
+type FormatNumberOptions = RequireAtLeastOne<{
   roundingType?: 'up' | 'down';
   showDecimals?: boolean;
   decimalPlaces?: number;
   showThousandSeparators?: boolean;
   currency?: string;
-  as?: 'p' | 'span';
-};
+}>;
 
 export const formatNumber = (
   value: string,
@@ -53,14 +53,11 @@ type Props = {
 
 const Number = ({
   value,
-  as: Component = 'span',
   showDecimals = DEFAULT_SHOW_DECIMALS,
   showThousandSeparators = DEFAULT_SHOW_THOUSAND_SEPARATORS,
   ...rest
 }: Props): React.ReactElement => (
-  <Component>
-    {formatNumber(value, { showDecimals, showThousandSeparators, ...rest })}
-  </Component>
+  <>{formatNumber(value, { showDecimals, showThousandSeparators, ...rest })}</>
 );
 
 export default Number;
