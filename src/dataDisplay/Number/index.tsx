@@ -12,6 +12,20 @@ type FormatNumberOptions = RequireAtLeastOne<{
   currency?: string;
 }>;
 
+/**
+ * Custom number formatter that returns a localized string
+ *
+ * @param {string} value - number to be formatted
+ *
+ * @param {Object} options - number formatting options
+ * @param {string='up','down'} [options.roundingType] - ceiling/floor number
+ * @param {boolean} [options.showDecimals=true] - show or remove decimal places
+ * @param {number} [options.decimalPlaces] - set number of decimal places
+ * @param {boolean} [options.showThousandSeparators=false] - show or hide thousand groupings
+ * @param {string} [options.currency] - currency to return
+ *
+ * @returns {string} - formatted number/currency
+ */
 export const formatNumber = (
   value: string,
   options: FormatNumberOptions
