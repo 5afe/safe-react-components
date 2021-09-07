@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Number from './index';
 
 export default {
@@ -13,42 +12,16 @@ export default {
 export const formatNumberFunction = (): React.ReactElement => (
   <>
     Based upon the exported{' '}
-    <code>
-      formatNumber(value,{' '}
-      {`{roundingType,
-  showDecimals,
-  decimalPlaces,
-  showThousandSeparators,
-  currency}`}
-      )
-    </code>{' '}
-    function.
+    <code>formatGnosisNumber(value, {`{currency, showSign}`})</code> function.
   </>
 );
 
 export const SimpleNumber = (): React.ReactElement => (
-  <Number value="1234324.234" decimalPlaces={2} showThousandSeparators />
-);
-
-export const ThousandSeparators = (): React.ReactElement => (
-  <Number value="999999.99" showThousandSeparators />
-);
-
-export const RestrictedNumberOfDecimals = (): React.ReactElement => (
-  <Number value="3.14159265359" decimalPlaces={2} />
-);
-
-export const DecimalPlaceRemoval = (): React.ReactElement => (
-  <Number value="123.456" showDecimals={false} />
-);
-
-export const RoundedNumbers = (): React.ReactElement => (
-  <p>
-    This number is rounded up: <Number value="99.99" roundingType="up" />. This
-    number is rounded down: <Number value="99.99" roundingType="down" />.
-  </p>
+  <Number value="1234324.234" />
 );
 
 export const Currency = (): React.ReactElement => (
-  <Number value="1.99" currency="EUR" />
+  <Number value="999999.99" currency="EUR" />
 );
+
+export const LargeNumber = (): React.ReactElement => <Number value="10e14" />;
