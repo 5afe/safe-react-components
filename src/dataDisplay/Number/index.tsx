@@ -60,7 +60,7 @@ export const formatGnosisNumber = (
     );
   } else {
     const isAbbreviated = number >= 10e7;
-    const format = {
+    const format: Intl.NumberFormatOptions = {
       maximumFractionDigits: currency
         ? 2 // Currencies only have two decimals
         : number < 10e2
