@@ -26,7 +26,7 @@ export const formatGnosisNumber = (
   const formatNumber = (
     number: number,
     format: IntlFormatNumberOptions,
-    prefix: string = ''
+    prefix = ''
   ) => {
     return (
       (prefix && showSign ? `${prefix} ` : prefix) + // Add space if displaying +/- signs
