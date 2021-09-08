@@ -5,11 +5,16 @@ describe('formatGnosisNumber', () => {
   const numberFormatSpy = jest.spyOn(Intl, 'NumberFormat');
 
   const setLocale = (locale: string) =>
-    numberFormatSpy.mockImplementationOnce(
+    numberFormatSpy.mockImplementation(
       (_, options) => new NumberFormat(locale, options)
     );
 
   beforeEach(() => {
+    // Prevent tests failing on non-English environments
+    setLocale('en-GB');
+  });
+
+  afterEach(() => {
     jest.clearAllMocks();
   });
 
@@ -65,7 +70,9 @@ describe('formatGnosisNumber', () => {
   });
 
   it('should then be >999T', () => {
-    expect(formatGnosisNumber('9999999999999999999999999999999')).toBe('>999T');
+    expect(formatGnosisNumber('88888888888888888888888888888888888')).toBe(
+      '>999T'
+    );
   });
 
   it("should use thousand and decimal separators based on user's locale", () => {
@@ -91,6 +98,17 @@ describe('formatGnosisNumber', () => {
     expect(formatGnosisNumber('-10000000', { showSign: true })).toBe(
       '-10,000,000'
     );
+
+    expect(
+      formatGnosisNumber('88888888888888888888888888888888888', {
+        showSign: true,
+      })
+    ).toBe('> +999T');
+    expect(
+      formatGnosisNumber('-88888888888888888888888888888888888', {
+        showSign: true,
+      })
+    ).toBe('> -999T');
 
     /**
      * When there is a +/- prefix to the amount (e.g. +0.00001 or -0.00001)

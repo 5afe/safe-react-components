@@ -1,16 +1,16 @@
 import React from 'react';
 
-type FormatNumberOptions = {
+// https://github.com/gnosis/safe/wiki/How-to-format-amounts
+const DEFAULT_SHOW_SIGN = false;
+
+type Options = {
   currency?: string;
   showSign?: boolean;
 };
 
-const DEFAULT_SHOW_SIGN = false;
-
-// https://github.com/gnosis/safe/wiki/How-to-format-amounts
 export const formatGnosisNumber = (
   value: string,
-  { currency, showSign = DEFAULT_SHOW_SIGN }: FormatNumberOptions = {}
+  { currency, showSign = DEFAULT_SHOW_SIGN }: Options = {}
 ): string => {
   const number = +value;
 
@@ -18,62 +18,77 @@ export const formatGnosisNumber = (
     return value;
   }
 
-  const baseFormat = {
-    signDisplay: showSign ? 'always' : 'auto', // Positive symbol
-    ...(currency && {
-      currency,
-      style: 'currency',
-    }),
-  };
-
-  const maxNumber = 10e14 - 1; // 999T
-  const isMaxNumber = number >= maxNumber;
-  const isSmallNumber = number < 0.00001 && number > -0.00001;
-
-  if (isMaxNumber) {
-    const format = { ...baseFormat, notation: 'compact' };
-
-    return '>' + new Intl.NumberFormat([], format).format(maxNumber);
-  } else if (isSmallNumber) {
-    const lessThan = showSign ? '< ' : '<';
-    const format = {
-      ...baseFormat,
-      minimumFractionDigits: 5,
+  const formatNumber = (
+    number: number,
+    format: Intl.NumberFormatOptions,
+    prefix: string = ''
+  ) => {
+    const baseFormat: Intl.NumberFormatOptions = {
+      signDisplay: showSign ? 'always' : 'auto', // Positive symbol
+      ...(currency && {
+        currency,
+        style: 'currency',
+      }),
     };
 
     return (
-      lessThan +
-      new Intl.NumberFormat([], format).format(number > 0 ? 0.00001 : -0.00001)
+      (showSign && prefix ? `${prefix} ` : prefix) + // Add space if displaying +/- signs
+      new Intl.NumberFormat([], {
+        ...baseFormat,
+        ...format,
+      }).format(number)
+    );
+  };
+
+  const isSmallNumber = number < 0.00001 && number > -0.00001; // <0.00001
+  const isMaxNumber = (number >= 10e14 || number <= -10e14) && !isSmallNumber; // >999T
+  const isPositive = number > 0;
+
+  if (isSmallNumber) {
+    // <0.00001
+    return formatNumber(
+      isPositive ? 0.00001 : -0.00001,
+      { minimumFractionDigits: 5 },
+      '<'
+    );
+  } else if (isMaxNumber) {
+    // >999T
+    return formatNumber(
+      isPositive ? 999e12 : -999e12,
+      { notation: 'compact' },
+      '>'
     );
   } else {
     const isAbbreviated = number >= 10e7;
     const format = {
-      ...baseFormat,
       maximumFractionDigits: currency
-        ? 2
+        ? 2 // Currencies only have two decimals
         : number < 10e2
-        ? 5
+        ? 5 // 100.00001
         : number < 10e3
-        ? 4
+        ? 4 // 1,000.0001
         : number < 10e4
-        ? 3
+        ? 3 // 10,000.001
         : number < 10e5
-        ? 2
+        ? 2 // 100,000.01
         : number < 10e6
-        ? 1
-        : number < 10e7
-        ? 0
-        : 3, // M, B, T,
-      ...(isAbbreviated && { minimumFractionDigits: 3, notation: 'compact' }), // 100.001M, 100.001B, etc.
+        ? 1 // 1,000,000.1
+        : isAbbreviated
+        ? 3 // 100.001M, 100.001B, 100.001T
+        : 0, // >999T
+      ...(isAbbreviated && {
+        minimumFractionDigits: 3,
+        notation: 'compact',
+      }),
     };
 
-    return new Intl.NumberFormat([], format).format(number);
+    return formatNumber(number, format);
   }
 };
 
 type Props = {
   value: string;
-} & FormatNumberOptions;
+} & Options;
 
 const Number = ({
   value,
