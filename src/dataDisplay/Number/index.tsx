@@ -32,7 +32,7 @@ export const formatGnosisNumber = (
     };
 
     return (
-      (showSign && prefix ? `${prefix} ` : prefix) + // Add space if displaying +/- signs
+      (prefix && showSign ? `${prefix} ` : prefix) + // Add space if displaying +/- signs
       new Intl.NumberFormat([], {
         ...baseFormat,
         ...format,

@@ -14,10 +14,6 @@ describe('formatGnosisNumber', () => {
     setLocale('en-GB');
   });
 
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
-
   it('cuts off after the 5th decimal, no matter how many decimals there are', () => {
     expect(formatGnosisNumber('0.123456')).toBe('0.12346');
   });
@@ -84,7 +80,8 @@ describe('formatGnosisNumber', () => {
   it('should localize k, M, B, T', () => {
     setLocale('de-DE');
 
-    expect(formatGnosisNumber('100001111')).toBe('100,001 Mio.');
+    // Intl.NumberFormat returns a non-breaking space
+    expect(formatGnosisNumber('100001111')).toBe('100,001\xa0Mio.');
   });
 
   it('should display <0.00001 for amounts small than 0.00001', () => {
@@ -126,6 +123,6 @@ describe('formatGnosisNumber', () => {
   it('should show currency correctly', () => {
     setLocale('de-DE');
 
-    expect(formatGnosisNumber('99.99', { currency: 'EUR' })).toBe('99,99 €');
+    expect(formatGnosisNumber('99.99', { currency: 'EUR' })).toBe('99,99\xa0€');
   });
 });
