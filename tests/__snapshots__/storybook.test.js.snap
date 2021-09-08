@@ -6043,44 +6043,24 @@ exports[`Storyshots Data Display/Layout Simple Layout 1`] = `
 </div>
 `;
 
-exports[`Storyshots Data Display/Number Currency 1`] = `"€1.99"`;
-
-exports[`Storyshots Data Display/Number Decimal Place Removal 1`] = `"123"`;
+exports[`Storyshots Data Display/Number Currency 1`] = `"€999,999.99"`;
 
 exports[`Storyshots Data Display/Number Format Number Function 1`] = `
 Array [
   "Based upon the exported",
   " ",
   <code>
-    formatNumber(value,
-     
-    {roundingType,
-  showDecimals,
-  decimalPlaces,
-  showThousandSeparators,
-  currency}
+    formatGnosisNumber(value, 
+    {currency, showSign}
     )
   </code>,
-  " ",
-  "function.",
+  " function.",
 ]
 `;
 
-exports[`Storyshots Data Display/Number Restricted Number Of Decimals 1`] = `"3.14"`;
+exports[`Storyshots Data Display/Number Large Number 1`] = `">999T"`;
 
-exports[`Storyshots Data Display/Number Rounded Numbers 1`] = `
-<p>
-  This number is rounded up: 
-  100
-  . This number is rounded down: 
-  99
-  .
-</p>
-`;
-
-exports[`Storyshots Data Display/Number Simple Number 1`] = `"1,234,324.23"`;
-
-exports[`Storyshots Data Display/Number Thousand Separators 1`] = `"999,999.99"`;
+exports[`Storyshots Data Display/Number Simple Number 1`] = `"1,234,324.2"`;
 
 exports[`Storyshots Data Display/Table Collapsible 1`] = `
 .c0 {
