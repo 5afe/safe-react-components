@@ -3,14 +3,19 @@ import React from 'react';
 // https://github.com/gnosis/safe/wiki/How-to-format-amounts
 const DEFAULT_SHOW_SIGN = false;
 
-type Options = {
+type FormatOptions = {
   currency?: string;
   showSign?: boolean;
 };
 
+type IntlFormatNumberOptions = Intl.NumberFormatOptions & {
+  notation?: 'compact'; // M, B, T
+  signDisplay?: 'always' | 'auto'; // +/-
+};
+
 export const formatGnosisNumber = (
   value: string,
-  { currency, showSign = DEFAULT_SHOW_SIGN }: Options = {}
+  { currency, showSign = DEFAULT_SHOW_SIGN }: FormatOptions = {}
 ): string => {
   const number = +value;
 
@@ -20,21 +25,17 @@ export const formatGnosisNumber = (
 
   const formatNumber = (
     number: number,
-    format: Intl.NumberFormatOptions,
+    format: IntlFormatNumberOptions,
     prefix: string = ''
   ) => {
-    const baseFormat: Intl.NumberFormatOptions = {
-      signDisplay: showSign ? 'always' : 'auto', // Positive symbol
-      ...(currency && {
-        currency,
-        style: 'currency',
-      }),
-    };
-
     return (
       (prefix && showSign ? `${prefix} ` : prefix) + // Add space if displaying +/- signs
       new Intl.NumberFormat([], {
-        ...baseFormat,
+        signDisplay: showSign ? 'always' : 'auto', // Positive symbol
+        ...(currency && {
+          currency,
+          style: 'currency',
+        }),
         ...format,
       }).format(number)
     );
@@ -60,7 +61,7 @@ export const formatGnosisNumber = (
     );
   } else {
     const isAbbreviated = number >= 10e7;
-    const format: Intl.NumberFormatOptions = {
+    const format: IntlFormatNumberOptions = {
       maximumFractionDigits: currency
         ? 2 // Currencies only have two decimals
         : number < 10e2
@@ -88,14 +89,14 @@ export const formatGnosisNumber = (
 
 type Props = {
   value: string;
-} & Options;
+} & FormatOptions;
 
 const Number = ({
   value,
   currency,
-  showSign: plusMinus = DEFAULT_SHOW_SIGN,
+  showSign = DEFAULT_SHOW_SIGN,
 }: Props): React.ReactElement => (
-  <>{formatGnosisNumber(value, { currency, showSign: plusMinus })}</>
+  <>{formatGnosisNumber(value, { currency, showSign })}</>
 );
 
 export default Number;
