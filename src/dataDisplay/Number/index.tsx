@@ -28,28 +28,37 @@ export const formatGnosisNumber = (
     format: IntlFormatNumberOptions,
     prefix = ''
   ) => {
-    return (
-      (prefix && showSign ? `${prefix} ` : prefix) + // Add space if displaying +/- signs
-      new Intl.NumberFormat([], {
-        signDisplay: showSign ? 'always' : 'auto', // Positive symbol
-        ...(currency && {
-          currency,
-          style: 'currency',
-        }),
-        ...format,
-      }).format(number)
-    );
+    // > or < prefix
+    const shouldDisplaySign = prefix && showSign;
+    const prefixWithSpace = `${prefix} `;
+    const sign = shouldDisplaySign ? prefixWithSpace : prefix;
+
+    const formattedNumber = new Intl.NumberFormat([], {
+      signDisplay: showSign ? 'always' : 'auto', // Positive symbol
+      ...(currency && {
+        currency,
+        style: 'currency',
+      }),
+      ...format,
+    }).format(number);
+
+    return `${sign}${formattedNumber}`;
   };
 
-  const isSmallNumber = number < 0.00001 && number > -0.00001; // <0.00001
-  const isMaxNumber = (number >= 10e14 || number <= -10e14) && !isSmallNumber; // >999T
+  const smallestNumber = 10e-6;
+  const maxNumber = 10e14;
+
+  const isSmallNumber = number < smallestNumber && number > -smallestNumber; // <0.00001
+  const isMaxNumber =
+    (number >= maxNumber || number <= -maxNumber) && !isSmallNumber; // >999T
   const isPositive = number > 0;
 
   if (isSmallNumber) {
+    const minimumFractionDigits = 5;
     // <0.00001
     return formatNumber(
-      isPositive ? 0.00001 : -0.00001,
-      { minimumFractionDigits: 5 },
+      isPositive ? smallestNumber : -smallestNumber,
+      { minimumFractionDigits },
       '<'
     );
   } else if (isMaxNumber) {
