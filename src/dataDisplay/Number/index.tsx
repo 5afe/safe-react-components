@@ -1,7 +1,6 @@
 import React from 'react';
 
 // https://github.com/gnosis/safe/wiki/How-to-format-amounts
-const DEFAULT_SHOW_SIGN = false;
 
 type FormatOptions = {
   currency?: string;
@@ -13,6 +12,10 @@ type IntlFormatNumberOptions = Intl.NumberFormatOptions & {
   signDisplay?: 'always' | 'auto'; // +/-
 };
 
+const DEFAULT_SHOW_SIGN = false;
+const BIGGEST_NUMBER = 10e14;
+const SMALLEST_NUMBER = 10e-6;
+const SMALLEST_NUMBER_MINIMUM_FRACTION_DIGITS = 5;
 export const formatGnosisNumber = (
   value: string,
   { currency, showSign = DEFAULT_SHOW_SIGN }: FormatOptions = {}
@@ -23,18 +26,24 @@ export const formatGnosisNumber = (
     return value;
   }
 
+  const isSmallNumber = number < SMALLEST_NUMBER && number > -SMALLEST_NUMBER; // <0.00001
+  const isMaxNumber =
+    (number >= BIGGEST_NUMBER || number <= -BIGGEST_NUMBER) && !isSmallNumber; // >999T
+  const isPositive = number > 0;
+
   const formatNumber = (
     number: number,
     format: IntlFormatNumberOptions,
     prefix = ''
   ) => {
-    // > or < prefix
-    const shouldDisplaySign = prefix && showSign;
-    const prefixWithSpace = `${prefix} `;
-    const sign = shouldDisplaySign ? prefixWithSpace : prefix;
+    // Add space after prefix (if displaying sign)
+    const shouldDisplayPrefix = prefix && showSign;
+    if (shouldDisplayPrefix) {
+      prefix = `${prefix} `;
+    }
 
     const formattedNumber = new Intl.NumberFormat([], {
-      signDisplay: showSign ? 'always' : 'auto', // Positive symbol
+      signDisplay: showSign ? 'always' : 'auto', // Add positive symbol
       ...(currency && {
         currency,
         style: 'currency',
@@ -42,23 +51,14 @@ export const formatGnosisNumber = (
       ...format,
     }).format(number);
 
-    return `${sign}${formattedNumber}`;
+    return `${prefix}${formattedNumber}`;
   };
 
-  const smallestNumber = 10e-6;
-  const maxNumber = 10e14;
-
-  const isSmallNumber = number < smallestNumber && number > -smallestNumber; // <0.00001
-  const isMaxNumber =
-    (number >= maxNumber || number <= -maxNumber) && !isSmallNumber; // >999T
-  const isPositive = number > 0;
-
   if (isSmallNumber) {
-    const minimumFractionDigits = 5;
     // <0.00001
     return formatNumber(
-      isPositive ? smallestNumber : -smallestNumber,
-      { minimumFractionDigits },
+      isPositive ? SMALLEST_NUMBER : -SMALLEST_NUMBER,
+      { minimumFractionDigits: SMALLEST_NUMBER_MINIMUM_FRACTION_DIGITS },
       '<'
     );
   } else if (isMaxNumber) {
