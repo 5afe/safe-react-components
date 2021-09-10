@@ -25,7 +25,7 @@ export const formatAmount = (
   { currency, showSign = DEFAULT_SHOW_SIGN }: FormatOptions = {}
 ): string => {
   try {
-    let number = isString(value) ? +value : value;
+    const number = isString(value) ? +value : value;
 
     if (isNaN(number)) {
       throw new Error();

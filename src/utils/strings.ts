@@ -24,5 +24,5 @@ export const textShortener = (
   return `${textStart}${separator}${textEnd}`;
 };
 
-export const isString = (value: any): value is string =>
+export const isString = (value: unknown): value is string =>
   typeof value === 'string';
