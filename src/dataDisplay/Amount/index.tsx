@@ -15,6 +15,7 @@ type IntlFormatNumberOptions = Intl.NumberFormatOptions & {
 const DEFAULT_SHOW_SIGN = false;
 
 const MAX_NUMBER = 10e14;
+const MAX_NUMBER_SHOWN = 999e12;
 const SMALLEST_NUMBER_SHOWN = 10e-6; // 0.00001
 const SMALLEST_NUMBER_MINIMUM_FRACTION_DIGITS = 5;
 
@@ -73,7 +74,7 @@ export const formatAmount = (
     } else if (isMaxNumber) {
       // >999T
       return formatNumber(
-        Math.sign(number) * 999e12, // Positive or negative
+        Math.sign(number) * MAX_NUMBER_SHOWN, // Positive or negative
         { notation: 'compact' },
         isPositive ? '>' : '<'
       );
