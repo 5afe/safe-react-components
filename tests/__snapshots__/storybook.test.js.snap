@@ -988,6 +988,25 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
 </div>
 `;
 
+exports[`Storyshots Data Display/Amount Currency 1`] = `"€999,999.99"`;
+
+exports[`Storyshots Data Display/Amount Format Number Function 1`] = `
+Array [
+  "Based upon the exported",
+  " ",
+  <code>
+    formatAmount(value, 
+    {currency, showSign}
+    )
+  </code>,
+  " function.",
+]
+`;
+
+exports[`Storyshots Data Display/Amount Large Number 1`] = `">999T"`;
+
+exports[`Storyshots Data Display/Amount Simple Number 1`] = `"1,234,324.2"`;
+
 exports[`Storyshots Data Display/Card Card Disabled 1`] = `
 .c0 {
   box-shadow: 1px 2px 10px 0 rgba(40,54,61,0.18);
@@ -6042,25 +6061,6 @@ exports[`Storyshots Data Display/Layout Simple Layout 1`] = `
   </div>
 </div>
 `;
-
-exports[`Storyshots Data Display/Number Currency 1`] = `"€999,999.99"`;
-
-exports[`Storyshots Data Display/Number Format Number Function 1`] = `
-Array [
-  "Based upon the exported",
-  " ",
-  <code>
-    formatGnosisNumber(value, 
-    {currency, showSign}
-    )
-  </code>,
-  " function.",
-]
-`;
-
-exports[`Storyshots Data Display/Number Large Number 1`] = `">999T"`;
-
-exports[`Storyshots Data Display/Number Simple Number 1`] = `"1,234,324.2"`;
 
 exports[`Storyshots Data Display/Table Collapsible 1`] = `
 .c0 {

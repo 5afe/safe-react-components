@@ -1,4 +1,5 @@
 import React from 'react';
+import { isString } from '../../utils/strings';
 
 // https://github.com/gnosis/safe/wiki/How-to-format-amounts
 
@@ -23,10 +24,8 @@ export const formatAmount = (
   value: string | number,
   { currency, showSign = DEFAULT_SHOW_SIGN }: FormatOptions = {}
 ): string => {
-  const isString = typeof value === 'string';
-
   try {
-    let number = isString ? +value : value;
+    let number = isString(value) ? +value : value;
 
     if (isNaN(number)) {
       throw new Error();
@@ -106,7 +105,7 @@ export const formatAmount = (
       return formatNumber(number, format);
     }
   } catch {
-    return isString ? value : value.toString();
+    return isString(value) ? value : value.toString();
   }
 };
 
