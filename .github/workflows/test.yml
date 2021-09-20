@@ -14,7 +14,9 @@ jobs:
         uses: styfle/cancel-workflow-action@0.8.0
         with:
           access_token: ${{ github.token }}
-      - uses: actions/checkout@v2
+
+      - name: Checkout
+        uses: actions/checkout@v2
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -22,13 +24,13 @@ jobs:
           node-version: 14
 
       - name: Yarn cache
-      - uses: actions/cache@v2
+        uses: actions/cache@v2
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Yarn install
-      - run: |
+        run: |
           mkdir .yarncache
           yarn install --cache-folder ./.yarncache --frozen-lockfile
           rm -rf .yarncache
