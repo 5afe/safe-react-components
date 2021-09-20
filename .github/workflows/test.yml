@@ -42,5 +42,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           test-command: 'npm run test:ci -- --outputFile=/home/runner/work/_actions/mattallty/jest-github-action/v1/dist/jest.results.json'
-          changes-only: true
-          coverage-comment: true
+          coverage-comment: false
