@@ -21721,6 +21721,11 @@ exports[`Storyshots navigation/Menu Loader 1`] = `
     className="c1"
     color="primary"
   >
+    <p
+      className="c2 c3"
+      color="primary"
+      size="lg"
+    >
       Item 1
     </p>
   </button>
