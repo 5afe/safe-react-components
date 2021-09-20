@@ -28,7 +28,7 @@ export const formatAmount = (
     const number = isString(value) ? +value : value;
 
     if (isNaN(number)) {
-      throw new Error();
+      throw new Error('The provided amount is not a number.');
     }
 
     const formatNumber = (
