@@ -15161,6 +15161,69 @@ exports[`Storyshots Inputs/Button Sizes 1`] = `
 </div>
 `;
 
+exports[`Storyshots Inputs/Button Test Button 1`] = `
+.c0.c0 {
+  height: 36px;
+  color: #ffffff;
+  background-color: #008C73;
+  box-shadow: 1px 2px 10px rgba(40,54,61,0.18);
+}
+
+.c0.c0.MuiButton-root {
+  min-width: 130px;
+  padding: 0 24px;
+  font-family: 'Averta','Roboto','Helvetica Neue','Arial','Segoe UI','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','-apple-system','BlinkMacSystemFont',sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: none;
+  border-radius: 8px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.c0.c0.Mui-disabled {
+  color: #ffffff;
+}
+
+.c0.c0 path.icon-color {
+  fill: #ffffff;
+}
+
+.c0.c0:disabled {
+  opacity: 0.5;
+}
+
+.c0.c0:hover {
+  background-color: #005546;
+}
+
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-text c0 primary contained"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Text
+  </span>
+</button>
+`;
+
 exports[`Storyshots Inputs/Button With Custom Component 1`] = `
 .c1 {
   display: -webkit-inline-box;

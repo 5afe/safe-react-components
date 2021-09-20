@@ -17,6 +17,10 @@ const ButtonContainer = styled.div`
   }
 `;
 
+export const TestButton = (): React.ReactElement => (
+  <Button size="md">Text</Button>
+);
+
 export const SimpleButton = (): React.ReactElement => (
   <ButtonContainer>
     <Button size="md">Text</Button>
