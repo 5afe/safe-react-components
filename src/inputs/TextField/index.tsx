@@ -14,6 +14,7 @@ type Props = {
   startAdornment?: React.ReactElement;
   endAdornment?: React.ReactElement;
   className?: string;
+  color?: 'primary' | 'secondary';
 };
 
 const CustomTextField = styled((props: TextFieldProps & Props) => (
@@ -83,7 +84,7 @@ function TextField({
     },
     disabled: readOnly,
     readOnly: readOnly,
-    color: 'primary',
+    color: 'primary' as const,
   };
 
   return <CustomTextField {...rest} {...customProps} className={className} />;
