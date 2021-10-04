@@ -1,41 +1,48 @@
 import React from 'react';
 import TextFieldMui, { TextFieldProps } from '@material-ui/core/TextField';
-import InputAdornment from '@material-ui/core/InputAdornment';
+import { InputBaseProps, InputAdornment } from '@material-ui/core';
 import styled from 'styled-components';
 
-type Props = {
-  value: string;
-  label: string;
+type CustomTextFieldInputProps = Pick<
+  InputBaseProps,
+  | 'inputProps'
+  | 'startAdornment'
+  | 'endAdornment'
+  | 'error'
+  | 'disabled'
+  | 'readOnly'
+>;
+type CustomTextFieldProps = Omit<
+  TextFieldProps,
+  'InputProps' | 'variant' | 'onChange'
+> & {
   readOnly?: boolean;
+  startAdornment?: React.ReactElement;
+  endAdornment?: React.ReactElement;
+  InputProps?: CustomTextFieldInputProps;
+  // Final Form 'FieldProps' types: https://final-form.org/docs/react-final-form/types/FieldProps
   meta?: {
     error?: string;
   };
-  input?: React.InputHTMLAttributes<HTMLInputElement>; // added for compatibility with react-final-form
-  startAdornment?: React.ReactElement;
-  endAdornment?: React.ReactElement;
-  className?: string;
-  color?: 'primary' | 'secondary';
 };
 
-const CustomTextField = styled((props: TextFieldProps & Props) => (
+type CustomTextFieldWithInputProps = CustomTextFieldProps & {
+  input: InputBaseProps['inputProps'];
+  onChange: never;
+};
+// If onChange prop is passed, do not allow it in the input attribute object
+type CustomTextFieldWithOnChangeProps = CustomTextFieldProps & {
+  onChange: TextFieldProps['onChange'];
+  input?: Omit<InputBaseProps['inputProps'], 'onChange'>;
+};
+
+type ConditionalTextFieldProps =
+  | CustomTextFieldWithInputProps
+  | CustomTextFieldWithOnChangeProps;
+
+const CustomTextField = styled((props: CustomTextFieldProps) => (
   <TextFieldMui {...props} />
-)).attrs((props) => {
-  if (props.input) {
-    const { name, value, ...inputRest } = props.input;
-    return {
-      input: props.input,
-      name,
-      value,
-      inputProps: inputRest,
-      onChange: undefined,
-    };
-  } else {
-    return {
-      value: props.value,
-      onChange: props.onChange,
-    };
-  }
-})<Props>`
+))<CustomTextFieldProps>`
   && {
     width: 400px;
 
@@ -61,33 +68,38 @@ const CustomTextField = styled((props: TextFieldProps & Props) => (
 `;
 
 function TextField({
+  input: inputProps,
   meta,
-  readOnly,
   label,
+  InputProps,
+  readOnly,
   startAdornment,
   endAdornment,
-  className,
   ...rest
-}: Props): React.ReactElement {
-  const customProps = {
-    error: meta && !!meta.error,
-    label: (meta && meta.error) || label,
-    variant: 'filled' as const,
-    InputProps: {
-      readOnly,
-      startAdornment: startAdornment ? (
-        <InputAdornment position="start">{startAdornment}</InputAdornment>
-      ) : null,
-      endAdornment: endAdornment ? (
-        <InputAdornment position="end">{endAdornment}</InputAdornment>
-      ) : null,
-    },
+}: ConditionalTextFieldProps): React.ReactElement {
+  const customInputProps: InputBaseProps = {
+    ...InputProps,
+    inputProps,
+    startAdornment: startAdornment ? (
+      <InputAdornment position="start">{startAdornment}</InputAdornment>
+    ) : null,
+    endAdornment: endAdornment ? (
+      <InputAdornment position="end">{endAdornment}</InputAdornment>
+    ) : null,
+    readOnly,
     disabled: readOnly,
-    readOnly: readOnly,
-    color: 'primary' as const,
   };
-
-  return <CustomTextField {...rest} {...customProps} className={className} />;
+  return (
+    <CustomTextField
+      {...rest}
+      error={meta && !!meta.error}
+      label={(meta && meta.error) || label}
+      InputProps={customInputProps}
+      size={undefined}
+      color="primary"
+      readOnly
+    />
+  );
 }
 
 export default TextField;
