@@ -14,11 +14,27 @@ type Props = {
   startAdornment?: React.ReactElement;
   endAdornment?: React.ReactElement;
   className?: string;
-} & React.InputHTMLAttributes<HTMLInputElement>;
+};
 
-const CustomTextField = styled((props: TextFieldProps) => (
+const CustomTextField = styled((props: TextFieldProps & Props) => (
   <TextFieldMui {...props} />
-))<Props>`
+)).attrs((props) => {
+  if (props.input) {
+    const { name, value, ...inputRest } = props.input;
+    return {
+      input: props.input,
+      name,
+      value,
+      inputProps: inputRest,
+      onChange: undefined,
+    };
+  } else {
+    return {
+      value: props.value,
+      onChange: props.onChange,
+    };
+  }
+})<Props>`
   && {
     width: 400px;
 
@@ -44,9 +60,6 @@ const CustomTextField = styled((props: TextFieldProps) => (
 `;
 
 function TextField({
-  input,
-  value,
-  onChange,
   meta,
   readOnly,
   label,
@@ -70,36 +83,10 @@ function TextField({
     },
     disabled: readOnly,
     readOnly: readOnly,
+    color: 'primary',
   };
 
-  if (input) {
-    const { name, value, ...inputRest } = input;
-    return (
-      <CustomTextField
-        {...rest}
-        {...customProps}
-        inputProps={inputRest}
-        className={className}
-        size={undefined}
-        name={name}
-        checked={!!value}
-        color="primary"
-        value={value as string}
-      />
-    );
-  }
-
-  return (
-    <CustomTextField
-      {...rest}
-      size={undefined}
-      {...customProps}
-      className={className}
-      value={value}
-      color="primary"
-      onChange={onChange}
-    />
-  );
+  return <CustomTextField {...rest} {...customProps} className={className} />;
 }
 
 export default TextField;
