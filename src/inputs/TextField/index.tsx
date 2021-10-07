@@ -1,48 +1,25 @@
 import React from 'react';
-import TextFieldMui, { TextFieldProps } from '@material-ui/core/TextField';
+import TextFieldMui, {
+  StandardTextFieldProps,
+  TextFieldProps,
+} from '@material-ui/core/TextField';
 import { InputBaseProps, InputAdornment } from '@material-ui/core';
 import styled from 'styled-components';
 
-type CustomTextFieldInputProps = Pick<
-  InputBaseProps,
-  | 'inputProps'
-  | 'startAdornment'
-  | 'endAdornment'
-  | 'error'
-  | 'disabled'
-  | 'readOnly'
->;
-type CustomTextFieldProps = Omit<
-  TextFieldProps,
-  'InputProps' | 'variant' | 'onChange'
-> & {
+type Props = Omit<TextFieldProps, 'InputProps' | 'variant' | 'error'> & {
   readOnly?: boolean;
   startAdornment?: React.ReactElement;
   endAdornment?: React.ReactElement;
-  InputProps?: CustomTextFieldInputProps;
+  input?: Omit<StandardTextFieldProps['inputProps'], 'onChange'>;
   // Final Form 'FieldProps' types: https://final-form.org/docs/react-final-form/types/FieldProps
   meta?: {
     error?: string;
   };
 };
 
-type CustomTextFieldWithInputProps = CustomTextFieldProps & {
-  input: InputBaseProps['inputProps'];
-  onChange: never;
-};
-// If onChange prop is passed, do not allow it in the input attribute object
-type CustomTextFieldWithOnChangeProps = CustomTextFieldProps & {
-  onChange: TextFieldProps['onChange'];
-  input?: Omit<InputBaseProps['inputProps'], 'onChange'>;
-};
-
-type ConditionalTextFieldProps =
-  | CustomTextFieldWithInputProps
-  | CustomTextFieldWithOnChangeProps;
-
-const CustomTextField = styled((props: CustomTextFieldProps) => (
+const CustomTextField = styled((props: TextFieldProps) => (
   <TextFieldMui {...props} />
-))<CustomTextFieldProps>`
+))<Props>`
   && {
     width: 400px;
 
@@ -55,14 +32,14 @@ const CustomTextField = styled((props: CustomTextFieldProps) => (
     }
 
     .MuiFormLabel-root.Mui-focused {
-      color: ${({ theme, error }) =>
-        error ? theme.colors.error : theme.colors.primary};
+      color: ${({ theme, meta }) =>
+        meta?.error ? theme.colors.error : theme.colors.primary};
     }
 
     .MuiFilledInput-underline:after {
       border-bottom: 2px solid
-        ${({ theme, error }) =>
-          error ? theme.colors.error : theme.colors.primary};
+        ${({ theme, meta }) =>
+          meta?.error ? theme.colors.error : theme.colors.primary};
     }
   }
 `;
@@ -71,14 +48,12 @@ function TextField({
   input: inputProps,
   meta,
   label,
-  InputProps,
   readOnly,
   startAdornment,
   endAdornment,
   ...rest
-}: ConditionalTextFieldProps): React.ReactElement {
+}: Props): React.ReactElement {
   const customInputProps: InputBaseProps = {
-    ...InputProps,
     inputProps,
     startAdornment: startAdornment ? (
       <InputAdornment position="start">{startAdornment}</InputAdornment>
