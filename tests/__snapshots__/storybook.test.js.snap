@@ -16667,7 +16667,7 @@ exports[`Storyshots Inputs/TextField End Adornment 1`] = `
 }
 
 .c0.c0 .MuiFilledInput-input {
-  cursor: not-allowed;
+  cursor: auto;
 }
 
 .c0.c0 .MuiFilledInput-root {
@@ -16689,7 +16689,6 @@ exports[`Storyshots Inputs/TextField End Adornment 1`] = `
 >
   <div
     className="MuiFormControl-root MuiTextField-root c0"
-    readOnly={true}
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -16760,7 +16759,7 @@ exports[`Storyshots Inputs/TextField Error 1`] = `
 }
 
 .c0.c0 .MuiFilledInput-input {
-  cursor: not-allowed;
+  cursor: auto;
 }
 
 .c0.c0 .MuiFilledInput-root {
@@ -16782,7 +16781,6 @@ exports[`Storyshots Inputs/TextField Error 1`] = `
 >
   <div
     className="MuiFormControl-root MuiTextField-root c0"
-    readOnly={true}
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-error Mui-error MuiFormLabel-filled"
@@ -16821,7 +16819,7 @@ exports[`Storyshots Inputs/TextField Read Only 1`] = `
 }
 
 .c0.c0 .MuiFilledInput-input {
-  cursor: not-allowed;
+  cursor: auto;
 }
 
 .c0.c0 .MuiFilledInput-root {
@@ -16843,7 +16841,6 @@ exports[`Storyshots Inputs/TextField Read Only 1`] = `
 >
   <div
     className="MuiFormControl-root MuiTextField-root c0"
-    readOnly={true}
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
@@ -16854,14 +16851,14 @@ exports[`Storyshots Inputs/TextField Read Only 1`] = `
       Name
     </label>
     <div
-      className="MuiInputBase-root MuiInput-root MuiInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl MuiInput-formControl"
+      className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       onClick={[Function]}
     >
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled"
-        disabled={true}
+        className="MuiInputBase-input MuiInput-input"
+        disabled={false}
         id="standard-name"
         onAnimationStart={[Function]}
         onBlur={[Function]}
@@ -16883,7 +16880,7 @@ exports[`Storyshots Inputs/TextField Simple Number Field 1`] = `
 }
 
 .c0.c0 .MuiFilledInput-input {
-  cursor: not-allowed;
+  cursor: auto;
 }
 
 .c0.c0 .MuiFilledInput-root {
@@ -16905,7 +16902,6 @@ exports[`Storyshots Inputs/TextField Simple Number Field 1`] = `
 >
   <div
     className="MuiFormControl-root MuiTextField-root c0"
-    readOnly={true}
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -16947,7 +16943,7 @@ exports[`Storyshots Inputs/TextField Simple Text Field 1`] = `
 }
 
 .c0.c0 .MuiFilledInput-input {
-  cursor: not-allowed;
+  cursor: auto;
 }
 
 .c0.c0 .MuiFilledInput-root {
@@ -16969,7 +16965,6 @@ exports[`Storyshots Inputs/TextField Simple Text Field 1`] = `
 >
   <div
     className="MuiFormControl-root MuiTextField-root c0"
-    readOnly={true}
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -17019,7 +17014,7 @@ exports[`Storyshots Inputs/TextField Start Adornment 1`] = `
 }
 
 .c0.c0 .MuiFilledInput-input {
-  cursor: not-allowed;
+  cursor: auto;
 }
 
 .c0.c0 .MuiFilledInput-root {
@@ -17041,7 +17036,6 @@ exports[`Storyshots Inputs/TextField Start Adornment 1`] = `
 >
   <div
     className="MuiFormControl-root MuiTextField-root c0"
-    readOnly={true}
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
