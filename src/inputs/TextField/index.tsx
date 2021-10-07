@@ -53,8 +53,7 @@ function TextField({
   endAdornment,
   ...rest
 }: Props): React.ReactElement {
-  const customInputProps: InputBaseProps = {
-    inputProps,
+  const customInputBaseProps: InputBaseProps = {
     startAdornment: startAdornment ? (
       <InputAdornment position="start">{startAdornment}</InputAdornment>
     ) : null,
@@ -62,17 +61,15 @@ function TextField({
       <InputAdornment position="end">{endAdornment}</InputAdornment>
     ) : null,
     readOnly,
-    disabled: readOnly,
   };
   return (
     <CustomTextField
       {...rest}
-      error={meta && !!meta.error}
-      label={(meta && meta.error) || label}
-      InputProps={customInputProps}
-      size={undefined}
+      error={!!meta?.error}
+      label={meta?.error || label}
+      InputProps={customInputBaseProps}
+      inputProps={inputProps}
       color="primary"
-      readOnly
     />
   );
 }
