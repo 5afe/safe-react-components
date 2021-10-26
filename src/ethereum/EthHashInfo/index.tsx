@@ -1,4 +1,4 @@
-import React, { useState, SyntheticEvent } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import {
@@ -56,6 +56,7 @@ type Props = {
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
   explorerUrl?: ExplorerInfo;
+  prefix?: string;
 };
 
 const EthHashInfo = ({
@@ -73,13 +74,12 @@ const EthHashInfo = ({
   showCopyBtn,
   menuItems,
   explorerUrl,
+  prefix,
 }: Props): React.ReactElement => {
   const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
   const [fallbackSrc, setFallabckSrc] = useState<undefined | string>(undefined);
 
-  const setAppImageFallback = (
-    error: SyntheticEvent<HTMLImageElement, Event>
-  ): void => {
+  const setAppImageFallback = (): void => {
     if (customAvatarFallback && !fallbackToIdenticon) {
       setFallabckSrc(customAvatarFallback);
     } else {
@@ -112,6 +112,11 @@ const EthHashInfo = ({
         <AddressContainer>
           {showHash && (
             <Text size={textSize} color={textColor}>
+              {prefix && (
+                <Text size={textSize} as={'span'} strong={true}>
+                  {prefix}
+                </Text>
+              )}
               {shortenHash
                 ? textShortener(hash, shortenHash + 2, shortenHash)
                 : hash}
