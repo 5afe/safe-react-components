@@ -56,7 +56,7 @@ type Props = {
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
   explorerUrl?: ExplorerInfo;
-  prefix?: string;
+  shortName?: string;
 };
 
 const EthHashInfo = ({
@@ -74,7 +74,7 @@ const EthHashInfo = ({
   showCopyBtn,
   menuItems,
   explorerUrl,
-  prefix,
+  shortName,
 }: Props): React.ReactElement => {
   const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
   const [fallbackSrc, setFallabckSrc] = useState<undefined | string>(undefined);
@@ -112,9 +112,9 @@ const EthHashInfo = ({
         <AddressContainer>
           {showHash && (
             <Text size={textSize} color={textColor}>
-              {prefix && (
-                <Text size={textSize} as={'span'} strong={true}>
-                  {prefix}
+              {shortName && (
+                <Text size={textSize} as="span" strong>
+                  {shortName}:
                 </Text>
               )}
               {shortenHash

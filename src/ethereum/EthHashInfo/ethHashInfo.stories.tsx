@@ -70,7 +70,7 @@ export const WithButtons = (): React.ReactElement => (
 
 export const WithPrefixAndShort = (): React.ReactElement => (
   <EthHashInfo
-    prefix="matic:"
+    shortName="matic"
     hash={hash}
     name="Owner 1"
     showAvatar
@@ -82,7 +82,7 @@ export const WithPrefixAndShort = (): React.ReactElement => (
 
 export const WithPrefix = (): React.ReactElement => (
   <EthHashInfo
-    prefix="xdai:"
+    shortName="xdai"
     hash={hash}
     name="Owner 1"
     showAvatar
