@@ -68,6 +68,29 @@ export const WithButtons = (): React.ReactElement => (
   />
 );
 
+export const WithPrefixAndShort = (): React.ReactElement => (
+  <EthHashInfo
+    shortName="matic"
+    hash={hash}
+    name="Owner 1"
+    showAvatar
+    showCopyBtn
+    explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
+    shortenHash={4}
+  />
+);
+
+export const WithPrefix = (): React.ReactElement => (
+  <EthHashInfo
+    shortName="xdai"
+    hash={hash}
+    name="Owner 1"
+    showAvatar
+    showCopyBtn
+    explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
+  />
+);
+
 export const WithMenu = (): React.ReactElement => {
   const items: EllipsisMenuItem[] = [
     { label: 'Send again', disabled: true, onClick: console.log },
