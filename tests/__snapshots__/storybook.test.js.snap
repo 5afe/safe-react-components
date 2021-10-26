@@ -13472,7 +13472,8 @@ exports[`Storyshots Ethereum/Eth hash Info With Prefix 1`] = `
           className="c6"
           size="lg"
         >
-          xdai:
+          xdai
+          :
         </span>
         0x69904ff6d6100799344E5C9A2806936318F6ba4f
       </p>
@@ -13752,7 +13753,8 @@ exports[`Storyshots Ethereum/Eth hash Info With Prefix And Short 1`] = `
           className="c6"
           size="lg"
         >
-          matic:
+          matic
+          :
         </span>
         0x6990...ba4f
       </p>
