@@ -68,7 +68,7 @@ export const WithButtons = (): React.ReactElement => (
   />
 );
 
-export const WithPrefixAndShort = (): React.ReactElement => (
+export const WithShortNameAndShort = (): React.ReactElement => (
   <EthHashInfo
     shortName="matic"
     hash={hash}
@@ -80,7 +80,7 @@ export const WithPrefixAndShort = (): React.ReactElement => (
   />
 );
 
-export const WithPrefix = (): React.ReactElement => (
+export const WithShortName = (): React.ReactElement => (
   <EthHashInfo
     shortName="xdai"
     hash={hash}
@@ -88,6 +88,17 @@ export const WithPrefix = (): React.ReactElement => (
     showAvatar
     showCopyBtn
     explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
+  />
+);
+
+export const WithShortNameToCopy = (): React.ReactElement => (
+  <EthHashInfo
+    hash={hash}
+    name="Owner 1"
+    showAvatar
+    showCopyBtn
+    explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
+    shortNameToCopy="rin"
   />
 );
 
