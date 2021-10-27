@@ -57,6 +57,7 @@ type Props = {
   menuItems?: EllipsisMenuItem[];
   explorerUrl?: ExplorerInfo;
   shortName?: string;
+  textToCopy?: string;
 };
 
 const EthHashInfo = ({
@@ -75,6 +76,7 @@ const EthHashInfo = ({
   menuItems,
   explorerUrl,
   shortName,
+  textToCopy,
 }: Props): React.ReactElement => {
   const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
   const [fallbackSrc, setFallabckSrc] = useState<undefined | string>(undefined);
@@ -122,7 +124,9 @@ const EthHashInfo = ({
                 : hash}
             </Text>
           )}
-          {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
+          {showCopyBtn && (
+            <CopyToClipboardBtn textToCopy={textToCopy || hash} />
+          )}
           {explorerUrl && <ExplorerButton explorerUrl={explorerUrl} />}
           {menuItems && <EllipsisMenu menuItems={menuItems} />}
         </AddressContainer>
