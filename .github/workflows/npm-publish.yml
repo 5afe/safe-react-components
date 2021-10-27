@@ -14,7 +14,23 @@ jobs:
         with:
           fetch-depth: 0
 
-      - run: npm install
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Yarn cache
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Yarn install
+        run: |
+          mkdir .yarncache
+          yarn install --cache-folder ./.yarncache --frozen-lockfile
+          rm -rf .yarncache
+          yarn cache clean
 
       - name: Extract version
         id: version
