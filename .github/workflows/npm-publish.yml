@@ -3,7 +3,7 @@ name: NPM Package
 on:
   push:
     branches:
-      - publish-npm-package-on-version-update
+      - main
 
 jobs:
   publish-npm:
