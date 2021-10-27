@@ -18,15 +18,15 @@ const explorerUrlAlt = `Show details on Etherscan`;
 export const Address = (): React.ReactElement => <EthHashInfo hash={hash} />;
 
 export const WithShortAddress = (): React.ReactElement => (
-  <EthHashInfo hash={hash} shortenHash={4} shortName="xdai" />
+  <EthHashInfo hash={hash} shortenHash={4} />
 );
 
 export const WithName = (): React.ReactElement => (
-  <EthHashInfo hash={hash} name="Owner 1" shortName="xdai" />
+  <EthHashInfo hash={hash} name="Owner 1" />
 );
 
 export const WithDefaultAvatar = (): React.ReactElement => (
-  <EthHashInfo hash={hash} showAvatar shortenHash={4} shortName="xdai" />
+  <EthHashInfo hash={hash} showAvatar shortenHash={4} />
 );
 
 export const WithCustomAvatar = (): React.ReactElement => (
@@ -35,7 +35,6 @@ export const WithCustomAvatar = (): React.ReactElement => (
     showAvatar
     customAvatar="https://gnosis-safe-token-logos.s3.amazonaws.com/0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa.png"
     shortenHash={4}
-    shortName="xdai"
   />
 );
 
@@ -46,7 +45,6 @@ export const WithCustomAvatarFallback = (): React.ReactElement => (
     customAvatar="https://broken.png"
     customAvatarFallback="https://gnosis-safe-token-logos.s3.amazonaws.com/0x6810e776880C02933D47DB1b9fc05908e5386b96.png"
     shortenHash={4}
-    shortName="xdai"
   />
 );
 
@@ -56,7 +54,6 @@ export const WithCustomAvatarFallbackIdenticon = (): React.ReactElement => (
     showAvatar
     customAvatar="https://no-file.png"
     shortenHash={4}
-    shortName="xdai"
   />
 );
 
@@ -68,7 +65,6 @@ export const WithButtons = (): React.ReactElement => (
     showCopyBtn
     explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
     shortenHash={4}
-    shortName="xdai"
   />
 );
 
@@ -81,7 +77,7 @@ export const WithShowShortNameAndShortHash = (): React.ReactElement => (
     showCopyBtn
     explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
     shortenHash={4}
-    shouldShowSortName
+    shouldShowShortName
   />
 );
 
@@ -93,7 +89,20 @@ export const WithShowShortName = (): React.ReactElement => (
     showAvatar
     showCopyBtn
     explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
-    shouldShowSortName
+    shouldShowShortName
+  />
+);
+
+export const WithShowAndCopyShortName = (): React.ReactElement => (
+  <EthHashInfo
+    hash={hash}
+    name="Owner 1"
+    showAvatar
+    showCopyBtn
+    explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
+    shortName="arb"
+    shouldShowShortName
+    shouldCopyShortName
   />
 );
 
@@ -122,17 +131,10 @@ export const WithMenu = (): React.ReactElement => {
       showCopyBtn
       menuItems={items}
       shortenHash={4}
-      shortName="xdai"
     />
   );
 };
 
 export const WithAvatarAndText = (): React.ReactElement => (
-  <EthHashInfo
-    hash={hash}
-    showHash={false}
-    name="Owner 1"
-    showAvatar
-    shortName="xdai"
-  />
+  <EthHashInfo hash={hash} showHash={false} name="Owner 1" showAvatar />
 );
