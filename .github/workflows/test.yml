@@ -1,10 +1,6 @@
 name: Unit tests
 on:
   pull_request:
-  push:
-    branches:
-      - master
-      - development
 
 jobs:
   test:
