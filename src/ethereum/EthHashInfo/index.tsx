@@ -56,8 +56,26 @@ type Props = {
   showCopyBtn?: boolean;
   menuItems?: EllipsisMenuItem[];
   explorerUrl?: ExplorerInfo;
-  shortName?: string;
 };
+
+type ShortNameProps =
+  | {
+      shouldShowShortName: true;
+      shouldCopyShortName?: boolean;
+      shortName: string;
+    }
+  | {
+      shouldShowShortName?: boolean;
+      shouldCopyShortName: true;
+      shortName: string;
+    }
+  | {
+      shouldShowShortName?: never;
+      shouldCopyShortName?: never;
+      shortName?: string;
+    };
+
+type EthHashInfoProps = Props & ShortNameProps;
 
 const EthHashInfo = ({
   hash,
@@ -75,7 +93,9 @@ const EthHashInfo = ({
   menuItems,
   explorerUrl,
   shortName,
-}: Props): React.ReactElement => {
+  shouldShowShortName,
+  shouldCopyShortName,
+}: EthHashInfoProps): React.ReactElement => {
   const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
   const [fallbackSrc, setFallabckSrc] = useState<undefined | string>(undefined);
 
@@ -112,7 +132,7 @@ const EthHashInfo = ({
         <AddressContainer>
           {showHash && (
             <Text size={textSize} color={textColor}>
-              {shortName && (
+              {shouldShowShortName && (
                 <Text size={textSize} as="span" strong>
                   {shortName}:
                 </Text>
@@ -122,7 +142,11 @@ const EthHashInfo = ({
                 : hash}
             </Text>
           )}
-          {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
+          {showCopyBtn && (
+            <CopyToClipboardBtn
+              textToCopy={shouldCopyShortName ? `${shortName}:${hash}` : hash}
+            />
+          )}
           {explorerUrl && <ExplorerButton explorerUrl={explorerUrl} />}
           {menuItems && <EllipsisMenu menuItems={menuItems} />}
         </AddressContainer>

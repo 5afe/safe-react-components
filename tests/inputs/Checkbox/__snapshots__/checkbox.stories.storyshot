@@ -9,7 +9,7 @@ exports[`Storyshots Inputs/Checkbox Simple Checkbox 1`] = `
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-46 MuiCheckbox-root Component-root-45 PrivateSwitchBase-checked-47 Mui-checked"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-58 MuiCheckbox-root Component-root-57 PrivateSwitchBase-checked-59 Mui-checked"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -28,7 +28,7 @@ exports[`Storyshots Inputs/Checkbox Simple Checkbox 1`] = `
       >
         <input
           checked={true}
-          className="PrivateSwitchBase-input-49"
+          className="PrivateSwitchBase-input-61"
           data-indeterminate={false}
           disabled={false}
           name="checkbox"
@@ -65,7 +65,7 @@ exports[`Storyshots Inputs/Checkbox With Error 1`] = `
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-51 MuiCheckbox-root Component-root-50"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-63 MuiCheckbox-root Component-root-62"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -84,7 +84,7 @@ exports[`Storyshots Inputs/Checkbox With Error 1`] = `
       >
         <input
           checked={false}
-          className="PrivateSwitchBase-input-54"
+          className="PrivateSwitchBase-input-66"
           data-indeterminate={false}
           disabled={false}
           name="checkboxWithError"
