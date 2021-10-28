@@ -60,13 +60,13 @@ type Props = {
 
 type ShortNameProps =
   | {
-      shouldShowShortName: true;
+      shouldShowShortName: boolean;
       shouldCopyShortName?: boolean;
       shortName: string;
     }
   | {
       shouldShowShortName?: boolean;
-      shouldCopyShortName: true;
+      shouldCopyShortName: boolean;
       shortName: string;
     }
   | {
