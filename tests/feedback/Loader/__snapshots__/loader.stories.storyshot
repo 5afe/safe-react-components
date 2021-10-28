@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Feedback/Loader Loader 1`] = `
+Array [
+  <div
+    className="MuiCircularProgress-root sc-jJMGnK hvTLGn MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+    role="progressbar"
+    style={
+      Object {
+        "height": "16px",
+        "width": "16px",
+      }
+    }
+  >
+    <svg
+      className="MuiCircularProgress-svg"
+      viewBox="22 22 44 44"
+    >
+      <circle
+        className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+        cx={44}
+        cy={44}
+        fill="none"
+        r={20.2}
+        strokeWidth={3.6}
+        style={Object {}}
+      />
+    </svg>
+  </div>,
+  <div
+    className="MuiCircularProgress-root sc-jJMGnK hvTLGn MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+    role="progressbar"
+    style={
+      Object {
+        "height": "30px",
+        "width": "30px",
+      }
+    }
+  >
+    <svg
+      className="MuiCircularProgress-svg"
+      viewBox="22 22 44 44"
+    >
+      <circle
+        className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+        cx={44}
+        cy={44}
+        fill="none"
+        r={20.2}
+        strokeWidth={3.6}
+        style={Object {}}
+      />
+    </svg>
+  </div>,
+  <div
+    className="MuiCircularProgress-root sc-jJMGnK hvTLGn MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+    role="progressbar"
+    style={
+      Object {
+        "height": "50px",
+        "width": "50px",
+      }
+    }
+  >
+    <svg
+      className="MuiCircularProgress-svg"
+      viewBox="22 22 44 44"
+    >
+      <circle
+        className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+        cx={44}
+        cy={44}
+        fill="none"
+        r={20.2}
+        strokeWidth={3.6}
+        style={Object {}}
+      />
+    </svg>
+  </div>,
+  <div
+    className="MuiCircularProgress-root sc-jJMGnK hvTLGn MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+    role="progressbar"
+    style={
+      Object {
+        "height": "70px",
+        "width": "70px",
+      }
+    }
+  >
+    <svg
+      className="MuiCircularProgress-svg"
+      viewBox="22 22 44 44"
+    >
+      <circle
+        className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+        cx={44}
+        cy={44}
+        fill="none"
+        r={20.2}
+        strokeWidth={3.6}
+        style={Object {}}
+      />
+    </svg>
+  </div>,
+]
+`;
+
+exports[`Storyshots Feedback/Loader With Color 1`] = `
+<div
+  className="MuiCircularProgress-root sc-jJMGnK jQidAW MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+  role="progressbar"
+  style={
+    Object {
+      "height": "30px",
+      "width": "30px",
+    }
+  }
+>
+  <svg
+    className="MuiCircularProgress-svg"
+    viewBox="22 22 44 44"
+  >
+    <circle
+      className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+      cx={44}
+      cy={44}
+      fill="none"
+      r={20.2}
+      strokeWidth={3.6}
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;

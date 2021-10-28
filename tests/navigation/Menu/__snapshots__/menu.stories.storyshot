@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots navigation/Menu Loader 1`] = `
+<div
+  className="sc-cBoqAE jCLXHF"
+>
+  <button
+    className="sc-cxNHIi cZRdNE"
+    color="primary"
+  >
+    <p
+      className="sc-crzoAE eAMoyv sc-lmgQwP iRbvqn"
+      color="primary"
+      size="lg"
+    >
+      Item 1
+    </p>
+  </button>
+  <button
+    className="sc-cxNHIi hyVEtQ"
+    color="error"
+  >
+    <span
+      className="sc-iqAclL kerxfE"
+      color="error"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M0 0H24V24H0z"
+          />
+          <path
+            className="icon-color"
+            d="M10 18.01c.553 0 1-.447 1-1v-6c0-.553-.447-1-1-1-.553 0-1 .447-1 1v6c0 .553.447 1 1 1M14.001 18.01c.553 0 1-.447 1-1v-6c0-.553-.447-1-1-1-.553 0-1 .447-1 1v6c0 .553.447 1 1 1"
+          />
+          <path
+            className="icon-color"
+            d="M16.513 19.55c-.013.255-.258.454-.497.452H7.969c-.23-.026-.461-.196-.474-.458L6.847 8h10.287l-.621 11.55zM9.997 4.617c0-.334.283-.616.617-.616h2.768c.34 0 .617.277.617.616V6H9.997V4.616zM20 6h-1.738c-.006 0-.012-.005-.02-.005-.011-.001-.021.005-.034.005h-2.21V4.616C15.999 3.174 14.827 2 13.383 2h-2.768C9.17 2 7.997 3.174 7.997 4.616V6H4c-.552 0-1 .447-1 1 0 .553.448 1 1 1h.845l.653 11.647c.063 1.31 1.16 2.356 2.44 2.356l.054-.001h8.057c1.3 0 2.399-1.044 2.462-2.348L19.137 8H20c.553 0 1-.447 1-1 0-.553-.447-1-1-1z"
+          />
+        </g>
+      </svg>
+    </span>
+    <p
+      className="sc-crzoAE iLAaff sc-lmgQwP iRbvqn"
+      color="error"
+      size="lg"
+    >
+      Item 2
+    </p>
+  </button>
+</div>
+`;

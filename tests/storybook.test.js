@@ -1,9 +1,9 @@
 import initStoryshots, {
-  snapshotWithOptions,
+  multiSnapshotWithOptions,
 } from '@storybook/addon-storyshots';
 
 initStoryshots({
-  test: snapshotWithOptions({
+  test: multiSnapshotWithOptions({
     createNodeMock: (element) => {
       if (element.type === 'div') {
         return document.createElement('div');

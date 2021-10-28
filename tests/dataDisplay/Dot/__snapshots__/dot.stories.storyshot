@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Data Display/Dot Dot With Icon 1`] = `
+<div
+  className="sc-gKAaRy kqSEMt"
+  color="rinkeby"
+>
+  <span
+    className="sc-iqAclL ilHmhf"
+    color="white"
+  >
+    <svg
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M0 0H16V16H0z"
+        />
+        <path
+          className="icon-color"
+          d="M6 13.003c-.267 0-.522-.105-.709-.293L1.292 8.706c-.39-.39-.39-1.024.001-1.415.391-.389 1.024-.39 1.415.001L6 10.588l7.296-7.295c.391-.39 1.023-.39 1.414 0 .391.391.391 1.023 0 1.414L6.706 12.71c-.187.188-.44.293-.707.293"
+        />
+      </g>
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Data Display/Dot Dot With Text 1`] = `
+<div
+  className="sc-gKAaRy hHycnu"
+  color="primary"
+>
+  <p
+    className="sc-crzoAE cDTggs"
+    color="white"
+    size="xl"
+  >
+    1
+  </p>
+</div>
+`;
