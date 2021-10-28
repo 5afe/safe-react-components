@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Inputs/Switch Switch Input 1`] = `
+<span
+  className="MuiSwitch-root sc-kLojOw eilJil"
+>
+  <span
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-67 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-68 Mui-checked"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={null}
+  >
+    <span
+      className="MuiIconButton-label"
+    >
+      <input
+        checked={true}
+        className="PrivateSwitchBase-input-70 MuiSwitch-input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        className="MuiSwitch-thumb"
+      />
+    </span>
+  </span>
+  <span
+    className="MuiSwitch-track"
+  />
+</span>
+`;

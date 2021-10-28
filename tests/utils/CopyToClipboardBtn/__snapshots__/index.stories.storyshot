@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Utils/CopyToClipboardBtn Copy 1`] = `
+<button
+  className="sc-laZMeE GhNCJ"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  onMouseLeave={[Function]}
+  type="button"
+>
+  <span
+    aria-describedby={null}
+    className="sc-iqAclL hWlKVA"
+    color="icon"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onTouchEnd={[Function]}
+    onTouchStart={[Function]}
+    title="Copy to clipboard"
+  >
+    <svg
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M0 0H16V16H0z"
+        />
+        <path
+          className="icon-color"
+          d="M10 10h3V3H8v1c1.105 0 2 .895 2 2v4zM6 4V3c0-1.105.895-2 2-2h5c1.105 0 2 .895 2 2v7c0 1.105-.895 2-2 2h-3v1c0 1.105-.895 2-2 2H3c-1.105 0-2-.895-2-2V6c0-1.105.895-2 2-2h3zM3 6v7h5V6H3z"
+          fillRule="nonzero"
+        />
+      </g>
+    </svg>
+  </span>
+</button>
+`;

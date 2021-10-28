@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Data Display/FixedDialog Simple Fixed Dialog 1`] = `
+<div
+  className="sc-iCoGMd fva-DWL"
+>
+  <div
+    className="sc-fujyAs cJUgal"
+  >
+    <div
+      className="sc-pNWdM fMOVdF"
+    >
+      <h5
+        className="sc-kfYoZR RqzCO"
+      >
+        Legal Disclaimer
+      </h5>
+    </div>
+    <div
+      className="sc-jrsJWt usTMn"
+    >
+      <div>
+        Some Body
+      </div>
+    </div>
+    <div
+      className="sc-kEqXSa lmXlYJ"
+    >
+      <div
+        className="sc-jHNicF fSyGrq"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwajpm fbcszT primary outlined"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Cancel
+          </span>
+        </button>
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwajpm dQVIuE primary contained"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Confirm
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

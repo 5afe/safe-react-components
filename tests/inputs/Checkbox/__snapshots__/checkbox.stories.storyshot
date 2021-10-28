@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Inputs/Checkbox Simple Checkbox 1`] = `
+<fieldset
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormControlLabel-root"
+  >
+    <span
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-58 MuiCheckbox-root Component-root-57 PrivateSwitchBase-checked-59 Mui-checked"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <input
+          checked={true}
+          className="PrivateSwitchBase-input-61"
+          data-indeterminate={false}
+          disabled={false}
+          name="checkbox"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+          />
+        </svg>
+      </span>
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Some checkbox
+    </span>
+  </label>
+</fieldset>
+`;
+
+exports[`Storyshots Inputs/Checkbox With Error 1`] = `
+<fieldset
+  className="MuiFormControl-root"
+>
+  <label
+    className="MuiFormControlLabel-root"
+  >
+    <span
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-63 MuiCheckbox-root Component-root-62"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <input
+          checked={false}
+          className="PrivateSwitchBase-input-66"
+          data-indeterminate={false}
+          disabled={false}
+          name="checkboxWithError"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+          />
+        </svg>
+      </span>
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Some checkbox
+    </span>
+  </label>
+  <p
+    className="MuiFormHelperText-root sc-iJCRrE bXGMzN"
+  >
+    required
+  </p>
+</fieldset>
+`;

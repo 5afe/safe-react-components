@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Data Display/Divider Horizontal 1`] = `
+Array [
+  <div>
+    Some content
+  </div>,
+  <div
+    className="sc-eCApnc jsMSuU"
+  />,
+  <div>
+    Some content2
+  </div>,
+]
+`;
+
+exports[`Storyshots Data Display/Divider Vertical 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "height": "150px",
+      "justifyContent": "center",
+    }
+  }
+>
+  <div>
+    Some content
+  </div>
+  <div
+    className="sc-jSFjdj dRqwzs"
+  />
+  <div>
+    Some content2
+  </div>
+</div>
+`;

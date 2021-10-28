@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots inputs/Link Default 1`] = `
+<a
+  className="sc-giAqHp gZyfxW"
+  href="#"
+>
+  Some text
+</a>
+`;
+
+exports[`Storyshots inputs/Link With Color 1`] = `
+<a
+  className="sc-giAqHp caidDC"
+  color="error"
+  href="#"
+>
+  Some text
+</a>
+`;
+
+exports[`Storyshots inputs/Link With Custom Child 1`] = `
+<a
+  className="sc-giAqHp gZOWYc"
+  href="#"
+  size="lg"
+>
+  <div
+    className="sc-daBunf gmoFgg"
+  >
+    <span
+      className="sc-iqAclL hWlKVA"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M0 0H24V24H0z"
+          />
+          <path
+            className="icon-color"
+            d="M11.999 8.002c.552 0 1 .447 1 1v4c0 .552-.448 1-1 1-.553 0-1-.448-1-1v-4c0-.553.447-1 1-1M11.999 15.752c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25.56-1.25 1.25-1.25"
+          />
+          <path
+            className="icon-color"
+            d="M12 2c-.502 0-1.004.25-1.283.752L1.187 19.83C.644 20.804 1.352 22 2.47 22H21.53c1.119 0 1.826-1.196 1.283-2.17l-9.53-17.078C13.004 2.25 12.503 2 12 2m0 2.554l8.624 15.454H3.377L12 4.554"
+          />
+        </g>
+      </svg>
+    </span>
+    Some text
+  </div>
+</a>
+`;
+
+exports[`Storyshots inputs/Link With Custom Size 1`] = `
+<a
+  className="sc-giAqHp gZOWYc"
+  href="#"
+  size="lg"
+>
+  Some text
+</a>
+`;
