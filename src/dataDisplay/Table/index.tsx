@@ -37,6 +37,7 @@ export type TableHeader = {
   id: string;
   alignment?: TableAlignment;
   label: string;
+  hideSortIcon?: boolean;
 };
 
 type RowCells = {
@@ -134,7 +135,8 @@ export const Table = ({
                   <TableSortLabel
                     active={sortedByHeaderId === header.id}
                     direction={sortDirection}
-                    onClick={() => onHeaderClick(header.id)}>
+                    onClick={() => onHeaderClick(header.id)}
+                    hideSortIcon={header.hideSortIcon}>
                     {header.label}
                   </TableSortLabel>
                 ) : (
