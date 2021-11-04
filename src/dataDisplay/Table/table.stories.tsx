@@ -16,6 +16,7 @@ const headerCells = [
   {
     id: 'col1',
     label: 'col1',
+    hideSortIcon: true,
   },
   {
     id: 'col2',
@@ -26,6 +27,7 @@ const headerCells = [
     id: 'col3',
     alignment: TableAlignment.right,
     label: 'col3',
+    hideSortIcon: true,
   },
 ];
 
