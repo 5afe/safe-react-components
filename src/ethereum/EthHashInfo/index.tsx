@@ -1,4 +1,4 @@
-import React, { useState, SyntheticEvent } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import {
@@ -58,6 +58,25 @@ type Props = {
   explorerUrl?: ExplorerInfo;
 };
 
+type ShortNameProps =
+  | {
+      shouldShowShortName: boolean;
+      shouldCopyShortName?: boolean;
+      shortName: string;
+    }
+  | {
+      shouldShowShortName?: boolean;
+      shouldCopyShortName: boolean;
+      shortName: string;
+    }
+  | {
+      shouldShowShortName?: never;
+      shouldCopyShortName?: never;
+      shortName?: string;
+    };
+
+type EthHashInfoProps = Props & ShortNameProps;
+
 const EthHashInfo = ({
   hash,
   showHash = true,
@@ -73,13 +92,14 @@ const EthHashInfo = ({
   showCopyBtn,
   menuItems,
   explorerUrl,
-}: Props): React.ReactElement => {
+  shortName,
+  shouldShowShortName,
+  shouldCopyShortName,
+}: EthHashInfoProps): React.ReactElement => {
   const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
   const [fallbackSrc, setFallabckSrc] = useState<undefined | string>(undefined);
 
-  const setAppImageFallback = (
-    error: SyntheticEvent<HTMLImageElement, Event>
-  ): void => {
+  const setAppImageFallback = (): void => {
     if (customAvatarFallback && !fallbackToIdenticon) {
       setFallabckSrc(customAvatarFallback);
     } else {
@@ -112,12 +132,21 @@ const EthHashInfo = ({
         <AddressContainer>
           {showHash && (
             <Text size={textSize} color={textColor}>
+              {shouldShowShortName && (
+                <Text size={textSize} as="span" strong>
+                  {shortName}:
+                </Text>
+              )}
               {shortenHash
                 ? textShortener(hash, shortenHash + 2, shortenHash)
                 : hash}
             </Text>
           )}
-          {showCopyBtn && <CopyToClipboardBtn textToCopy={hash} />}
+          {showCopyBtn && (
+            <CopyToClipboardBtn
+              textToCopy={shouldCopyShortName ? `${shortName}:${hash}` : hash}
+            />
+          )}
           {explorerUrl && <ExplorerButton explorerUrl={explorerUrl} />}
           {menuItems && <EllipsisMenu menuItems={menuItems} />}
         </AddressContainer>

@@ -1,0 +1,69 @@
+name: NPM Package
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Yarn cache
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Yarn install
+        run: |
+          mkdir .yarncache
+          yarn install --cache-folder ./.yarncache --frozen-lockfile
+          rm -rf .yarncache
+          yarn cache clean
+
+      - name: Extract version
+        id: version
+        run: |
+          OLD_VERSION=$(npm show @gnosis.pm/safe-react-components version)
+          NEW_VERSION=$(node -p 'require("./package.json").version')
+          if [ $NEW_VERSION != $OLD_VERSION ]; then
+            echo "New version $NEW_VERSION detected"
+            echo "::set-output name=version::v$NEW_VERSION"
+            git log "v$OLD_VERSION"..HEAD --pretty=format:"* %s" > CHANGELOG.md
+          else
+            echo "Version $OLD_VERSION hasn't changed, skipping the release"
+            exit 1
+          fi
+
+      - name: Publish to NPM
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create a git tag
+        run: git tag $NEW_VERSION && git push --tags
+        env:
+          NEW_VERSION: ${{ steps.version.outputs.version }}
+
+      - name: GitHub release
+        uses: actions/create-release@v1
+        id: create_release
+        with:
+          draft: false
+          prerelease: false
+          release_name: ${{ steps.version.outputs.version }}
+          tag_name: ${{ steps.version.outputs.version }}
+          body_path: CHANGELOG.md
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

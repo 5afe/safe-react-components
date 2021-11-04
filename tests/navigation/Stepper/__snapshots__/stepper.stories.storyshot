@@ -1,0 +1,640 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
+<div
+  className="MuiPaper-root MuiStepper-root MuiStepper-horizontal MuiPaper-elevation0"
+>
+  <div
+    className="MuiStep-root MuiStep-horizontal MuiStep-completed"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-horizontal"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv hXCxud"
+          disabled={false}
+        >
+          <span
+            className="sc-iqAclL ilHmhf"
+            color="white"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+              >
+                <path
+                  d="M0 0H16V16H0z"
+                />
+                <path
+                  className="icon-color"
+                  d="M6 13.003c-.267 0-.522-.105-.709-.293L1.292 8.706c-.39-.39-.39-1.024.001-1.415.391-.389 1.024-.39 1.415.001L6 10.588l7.296-7.295c.391-.39 1.023-.39 1.414 0 .391.391.391 1.023 0 1.414L6.706 12.71c-.187.188-.44.293-.707.293"
+                />
+              </g>
+            </svg>
+          </span>
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiStepLabel-completed MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN deClOU"
+          >
+            Transaction submitted
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-horizontal MuiStepConnector-active"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-horizontal"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-horizontal"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv hXCxud"
+          disabled={false}
+        >
+          2
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiStepLabel-active MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN fyRAJv"
+          >
+            Validating transaction
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-horizontal Mui-disabled"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-horizontal"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv jhooOR"
+          disabled={true}
+        >
+          3
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN fbNXGr"
+          >
+            Deploying smart contract
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-horizontal Mui-disabled"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-horizontal"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv jhooOR"
+          disabled={true}
+        >
+          4
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN fbNXGr"
+          >
+            Generating your Safe
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-horizontal Mui-disabled"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineHorizontal"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-horizontal"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv jhooOR"
+          disabled={true}
+        >
+          5
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN fbNXGr"
+          >
+            Result
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
+<div
+  className="MuiPaper-root MuiStepper-root MuiStepper-vertical MuiPaper-elevation0"
+>
+  <div
+    className="MuiStep-root MuiStep-vertical MuiStep-completed"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-vertical"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv hXCxud"
+          disabled={false}
+        >
+          <span
+            className="sc-iqAclL ilHmhf"
+            color="white"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+              >
+                <path
+                  d="M0 0H16V16H0z"
+                />
+                <path
+                  className="icon-color"
+                  d="M6 13.003c-.267 0-.522-.105-.709-.293L1.292 8.706c-.39-.39-.39-1.024.001-1.415.391-.389 1.024-.39 1.415.001L6 10.588l7.296-7.295c.391-.39 1.023-.39 1.414 0 .391.391.391 1.023 0 1.414L6.706 12.71c-.187.188-.44.293-.707.293"
+                />
+              </g>
+            </svg>
+          </span>
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiStepLabel-completed MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN deClOU"
+          >
+            Transaction submitted
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-vertical MuiStepConnector-active"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineVertical"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-vertical"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-vertical"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv iDwlTl"
+          disabled={false}
+        >
+          2
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiStepLabel-active MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN kLtJHP"
+          >
+            Validating transaction
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-vertical Mui-disabled"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineVertical"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-vertical"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-vertical Mui-disabled"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv jhooOR"
+          disabled={true}
+        >
+          3
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN fbNXGr"
+          >
+            Deploying smart contract
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-vertical Mui-disabled"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineVertical"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-vertical"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-vertical Mui-disabled"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv jhooOR"
+          disabled={true}
+        >
+          4
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN fbNXGr"
+          >
+            Generating your Safe
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-vertical Mui-disabled"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineVertical"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-vertical"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-vertical Mui-disabled"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv jhooOR"
+          disabled={true}
+        >
+          5
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN fbNXGr"
+          >
+            Result
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Navigation/Stepper Stepper 1`] = `
+<div
+  className="MuiPaper-root MuiStepper-root MuiStepper-vertical MuiPaper-elevation0"
+>
+  <div
+    className="MuiStep-root MuiStep-vertical MuiStep-completed"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-vertical"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv hXCxud"
+          disabled={false}
+        >
+          <span
+            className="sc-iqAclL ilHmhf"
+            color="white"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+              >
+                <path
+                  d="M0 0H16V16H0z"
+                />
+                <path
+                  className="icon-color"
+                  d="M6 13.003c-.267 0-.522-.105-.709-.293L1.292 8.706c-.39-.39-.39-1.024.001-1.415.391-.389 1.024-.39 1.415.001L6 10.588l7.296-7.295c.391-.39 1.023-.39 1.414 0 .391.391.391 1.023 0 1.414L6.706 12.71c-.187.188-.44.293-.707.293"
+                />
+              </g>
+            </svg>
+          </span>
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiStepLabel-completed MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN deClOU"
+          >
+            Transaction submitted
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-vertical MuiStepConnector-active"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineVertical"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-vertical"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-vertical"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv hXCxud"
+          disabled={false}
+        >
+          2
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiStepLabel-active MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN fyRAJv"
+          >
+            Validating transaction
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-vertical Mui-disabled"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineVertical"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-vertical"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-vertical Mui-disabled"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv jhooOR"
+          disabled={true}
+        >
+          3
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN fbNXGr"
+          >
+            Deploying smart contract
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-vertical Mui-disabled"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineVertical"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-vertical"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-vertical Mui-disabled"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv jhooOR"
+          disabled={true}
+        >
+          4
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN fbNXGr"
+          >
+            Generating your Safe
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    className="MuiStepConnector-root MuiStepConnector-vertical Mui-disabled"
+  >
+    <span
+      className="MuiStepConnector-line MuiStepConnector-lineVertical"
+    />
+  </div>
+  <div
+    className="MuiStep-root MuiStep-vertical"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-vertical Mui-disabled"
+    >
+      <span
+        className="MuiStepLabel-iconContainer"
+      >
+        <div
+          className="sc-hiKfDv jhooOR"
+          disabled={true}
+        >
+          5
+        </div>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          <p
+            className="sc-gXfVKN fbNXGr"
+          >
+            Result
+          </p>
+        </span>
+      </span>
+    </span>
+  </div>
+</div>
+`;

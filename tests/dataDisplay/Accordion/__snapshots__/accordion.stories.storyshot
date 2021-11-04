@@ -1,0 +1,803 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "100%",
+      "justifyContent": "center",
+    }
+  }
+>
+  <div
+    className="MuiPaper-root MuiAccordion-root sc-dlnjwi kKZEzZ MuiPaper-elevation0"
+  >
+    <div
+      aria-disabled={false}
+      aria-expanded={false}
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="MuiAccordionSummary-content"
+      >
+        <div
+          className="sc-dIsUp jJoLmt"
+        >
+          <span
+            className="sc-iqAclL hWlKVA"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+              >
+                <path
+                  d="M0 0H16V16H0z"
+                />
+                <path
+                  className="icon-color"
+                  d="M3.413 7.994l3.293-3.286c.391-.39.392-1.023.002-1.414s-1.022-.392-1.413-.002L1.294 7.284c-.391.39-.392 1.024-.002 1.415l4.002 4.01c.39.391 1.022.392 1.413.002.39-.39.39-1.024 0-1.415L3.414 7.994zM12.585 7.995l-3.292 3.297c-.39.391-.39 1.025 0 1.415.391.39 1.024.39 1.414 0l4-4.006c.39-.39.39-1.024-.001-1.415l-3.993-3.993c-.39-.39-1.024-.39-1.414 0-.39.391-.39 1.025 0 1.415l3.286 3.287z"
+                  fillRule="nonzero"
+                />
+              </g>
+            </svg>
+          </span>
+          <p
+            className="sc-crzoAE UIyUn"
+            size="xl"
+          >
+            Transaction 1
+          </p>
+        </div>
+      </div>
+      <div
+        aria-disabled={false}
+        aria-hidden={true}
+        className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role={null}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <span>
+            <svg
+              height="7"
+              viewBox="0 0 12 7"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.709 6.709c-.195.195-.452.292-.71.29-.257.002-.514-.095-.71-.29l-.046-.05L.292 1.706c-.39-.39-.39-1.025 0-1.414.389-.39 1.025-.39 1.414 0l4.293 4.294L10.293.292c.389-.39 1.025-.39 1.414 0 .389.389.389 1.025 0 1.414L6.763 6.649l-.054.06z"
+                fill="#B2B5B2"
+                fillRule="evenodd"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-root MuiCollapse-hidden"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            role="region"
+          >
+            <div
+              className="MuiAccordionDetails-root"
+            >
+              <p
+                className="sc-crzoAE bvSnYT"
+                size="lg"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiAccordion-root sc-dlnjwi kKZEzZ MuiPaper-elevation0"
+  >
+    <div
+      aria-disabled={false}
+      aria-expanded={false}
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="MuiAccordionSummary-content"
+      >
+        <div
+          className="sc-dIsUp jJoLmt"
+        >
+          <span
+            className="sc-iqAclL hWlKVA"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+              >
+                <path
+                  d="M0 0H16V16H0z"
+                />
+                <path
+                  className="icon-color"
+                  d="M3.413 7.994l3.293-3.286c.391-.39.392-1.023.002-1.414s-1.022-.392-1.413-.002L1.294 7.284c-.391.39-.392 1.024-.002 1.415l4.002 4.01c.39.391 1.022.392 1.413.002.39-.39.39-1.024 0-1.415L3.414 7.994zM12.585 7.995l-3.292 3.297c-.39.391-.39 1.025 0 1.415.391.39 1.024.39 1.414 0l4-4.006c.39-.39.39-1.024-.001-1.415l-3.993-3.993c-.39-.39-1.024-.39-1.414 0-.39.391-.39 1.025 0 1.415l3.286 3.287z"
+                  fillRule="nonzero"
+                />
+              </g>
+            </svg>
+          </span>
+          <p
+            className="sc-crzoAE UIyUn"
+            size="xl"
+          >
+            Transaction 2
+          </p>
+        </div>
+      </div>
+      <div
+        aria-disabled={false}
+        aria-hidden={true}
+        className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role={null}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <span>
+            <svg
+              height="7"
+              viewBox="0 0 12 7"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.709 6.709c-.195.195-.452.292-.71.29-.257.002-.514-.095-.71-.29l-.046-.05L.292 1.706c-.39-.39-.39-1.025 0-1.414.389-.39 1.025-.39 1.414 0l4.293 4.294L10.293.292c.389-.39 1.025-.39 1.414 0 .389.389.389 1.025 0 1.414L6.763 6.649l-.054.06z"
+                fill="#B2B5B2"
+                fillRule="evenodd"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-root MuiCollapse-hidden"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            role="region"
+          >
+            <div
+              className="MuiAccordionDetails-root"
+            >
+              <p
+                className="sc-crzoAE bvSnYT"
+                size="lg"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiAccordion-root sc-dlnjwi kKZEzZ MuiPaper-elevation0"
+  >
+    <div
+      aria-disabled={false}
+      aria-expanded={false}
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="MuiAccordionSummary-content"
+      >
+        <div
+          className="sc-dIsUp jJoLmt"
+        >
+          <span
+            className="sc-iqAclL hWlKVA"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+              >
+                <path
+                  d="M0 0H16V16H0z"
+                />
+                <path
+                  className="icon-color"
+                  d="M3.413 7.994l3.293-3.286c.391-.39.392-1.023.002-1.414s-1.022-.392-1.413-.002L1.294 7.284c-.391.39-.392 1.024-.002 1.415l4.002 4.01c.39.391 1.022.392 1.413.002.39-.39.39-1.024 0-1.415L3.414 7.994zM12.585 7.995l-3.292 3.297c-.39.391-.39 1.025 0 1.415.391.39 1.024.39 1.414 0l4-4.006c.39-.39.39-1.024-.001-1.415l-3.993-3.993c-.39-.39-1.024-.39-1.414 0-.39.391-.39 1.025 0 1.415l3.286 3.287z"
+                  fillRule="nonzero"
+                />
+              </g>
+            </svg>
+          </span>
+          <p
+            className="sc-crzoAE UIyUn"
+            size="xl"
+          >
+            Transaction 3
+          </p>
+        </div>
+      </div>
+      <div
+        aria-disabled={false}
+        aria-hidden={true}
+        className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role={null}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <span>
+            <svg
+              height="7"
+              viewBox="0 0 12 7"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.709 6.709c-.195.195-.452.292-.71.29-.257.002-.514-.095-.71-.29l-.046-.05L.292 1.706c-.39-.39-.39-1.025 0-1.414.389-.39 1.025-.39 1.414 0l4.293 4.294L10.293.292c.389-.39 1.025-.39 1.414 0 .389.389.389 1.025 0 1.414L6.763 6.649l-.054.06z"
+                fill="#B2B5B2"
+                fillRule="evenodd"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-root MuiCollapse-hidden"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            role="region"
+          >
+            <div
+              className="MuiAccordionDetails-root"
+            >
+              <p
+                className="sc-crzoAE bvSnYT"
+                size="lg"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
+<div
+  className="sc-bdnxRM dLzDRg"
+>
+  <div
+    className="MuiPaper-root MuiAccordion-root sc-dlnjwi hfQwRj MuiPaper-elevation0"
+  >
+    <div
+      aria-disabled={false}
+      aria-expanded={false}
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="MuiAccordionSummary-content"
+      >
+        <div
+          className="sc-dIsUp jJoLmt"
+        >
+          <span
+            className="sc-iqAclL hWlKVA"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+              >
+                <path
+                  d="M0 0H16V16H0z"
+                />
+                <path
+                  className="icon-color"
+                  d="M3.413 7.994l3.293-3.286c.391-.39.392-1.023.002-1.414s-1.022-.392-1.413-.002L1.294 7.284c-.391.39-.392 1.024-.002 1.415l4.002 4.01c.39.391 1.022.392 1.413.002.39-.39.39-1.024 0-1.415L3.414 7.994zM12.585 7.995l-3.292 3.297c-.39.391-.39 1.025 0 1.415.391.39 1.024.39 1.414 0l4-4.006c.39-.39.39-1.024-.001-1.415l-3.993-3.993c-.39-.39-1.024-.39-1.414 0-.39.391-.39 1.025 0 1.415l3.286 3.287z"
+                  fillRule="nonzero"
+                />
+              </g>
+            </svg>
+          </span>
+          <p
+            className="sc-crzoAE UIyUn"
+            size="xl"
+          >
+            Transaction 1
+          </p>
+        </div>
+      </div>
+      <div
+        aria-disabled={false}
+        aria-hidden={true}
+        className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role={null}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <span>
+            <svg
+              height="7"
+              viewBox="0 0 12 7"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.709 6.709c-.195.195-.452.292-.71.29-.257.002-.514-.095-.71-.29l-.046-.05L.292 1.706c-.39-.39-.39-1.025 0-1.414.389-.39 1.025-.39 1.414 0l4.293 4.294L10.293.292c.389-.39 1.025-.39 1.414 0 .389.389.389 1.025 0 1.414L6.763 6.649l-.054.06z"
+                fill="#B2B5B2"
+                fillRule="evenodd"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-root MuiCollapse-hidden"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            role="region"
+          >
+            <div
+              className="MuiAccordionDetails-root"
+            >
+              <p
+                className="sc-crzoAE bvSnYT"
+                size="lg"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiAccordion-root sc-dlnjwi hfQwRj MuiPaper-elevation0"
+  >
+    <div
+      aria-disabled={false}
+      aria-expanded={false}
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="MuiAccordionSummary-content"
+      >
+        <div
+          className="sc-dIsUp jJoLmt"
+        >
+          <span
+            className="sc-iqAclL hWlKVA"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+              >
+                <path
+                  d="M0 0H16V16H0z"
+                />
+                <path
+                  className="icon-color"
+                  d="M3.413 7.994l3.293-3.286c.391-.39.392-1.023.002-1.414s-1.022-.392-1.413-.002L1.294 7.284c-.391.39-.392 1.024-.002 1.415l4.002 4.01c.39.391 1.022.392 1.413.002.39-.39.39-1.024 0-1.415L3.414 7.994zM12.585 7.995l-3.292 3.297c-.39.391-.39 1.025 0 1.415.391.39 1.024.39 1.414 0l4-4.006c.39-.39.39-1.024-.001-1.415l-3.993-3.993c-.39-.39-1.024-.39-1.414 0-.39.391-.39 1.025 0 1.415l3.286 3.287z"
+                  fillRule="nonzero"
+                />
+              </g>
+            </svg>
+          </span>
+          <p
+            className="sc-crzoAE UIyUn"
+            size="xl"
+          >
+            Transaction 2
+          </p>
+        </div>
+      </div>
+      <div
+        aria-disabled={false}
+        aria-hidden={true}
+        className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role={null}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <span>
+            <svg
+              height="7"
+              viewBox="0 0 12 7"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.709 6.709c-.195.195-.452.292-.71.29-.257.002-.514-.095-.71-.29l-.046-.05L.292 1.706c-.39-.39-.39-1.025 0-1.414.389-.39 1.025-.39 1.414 0l4.293 4.294L10.293.292c.389-.39 1.025-.39 1.414 0 .389.389.389 1.025 0 1.414L6.763 6.649l-.054.06z"
+                fill="#B2B5B2"
+                fillRule="evenodd"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-root MuiCollapse-hidden"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            role="region"
+          >
+            <div
+              className="MuiAccordionDetails-root"
+            >
+              <p
+                className="sc-crzoAE bvSnYT"
+                size="lg"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiAccordion-root sc-dlnjwi hfQwRj MuiPaper-elevation0"
+  >
+    <div
+      aria-disabled={false}
+      aria-expanded={false}
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="MuiAccordionSummary-content"
+      >
+        <div
+          className="sc-dIsUp jJoLmt"
+        >
+          <span
+            className="sc-iqAclL hWlKVA"
+          >
+            <svg
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                fillRule="evenodd"
+              >
+                <path
+                  d="M0 0H16V16H0z"
+                />
+                <path
+                  className="icon-color"
+                  d="M3.413 7.994l3.293-3.286c.391-.39.392-1.023.002-1.414s-1.022-.392-1.413-.002L1.294 7.284c-.391.39-.392 1.024-.002 1.415l4.002 4.01c.39.391 1.022.392 1.413.002.39-.39.39-1.024 0-1.415L3.414 7.994zM12.585 7.995l-3.292 3.297c-.39.391-.39 1.025 0 1.415.391.39 1.024.39 1.414 0l4-4.006c.39-.39.39-1.024-.001-1.415l-3.993-3.993c-.39-.39-1.024-.39-1.414 0-.39.391-.39 1.025 0 1.415l3.286 3.287z"
+                  fillRule="nonzero"
+                />
+              </g>
+            </svg>
+          </span>
+          <p
+            className="sc-crzoAE UIyUn"
+            size="xl"
+          >
+            Transaction 3
+          </p>
+        </div>
+      </div>
+      <div
+        aria-disabled={false}
+        aria-hidden={true}
+        className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role={null}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <span>
+            <svg
+              height="7"
+              viewBox="0 0 12 7"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.709 6.709c-.195.195-.452.292-.71.29-.257.002-.514-.095-.71-.29l-.046-.05L.292 1.706c-.39-.39-.39-1.025 0-1.414.389-.39 1.025-.39 1.414 0l4.293 4.294L10.293.292c.389-.39 1.025-.39 1.414 0 .389.389.389 1.025 0 1.414L6.763 6.649l-.054.06z"
+                fill="#B2B5B2"
+                fillRule="evenodd"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-root MuiCollapse-hidden"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            role="region"
+          >
+            <div
+              className="MuiAccordionDetails-root"
+            >
+              <p
+                className="sc-crzoAE bvSnYT"
+                size="lg"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

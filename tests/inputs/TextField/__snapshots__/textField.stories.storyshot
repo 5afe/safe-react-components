@@ -1,0 +1,309 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Inputs/TextField End Adornment 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-iklJeh jbirHe"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+      data-shrink={false}
+      htmlFor="standard-name"
+      id="standard-name-label"
+    >
+      Name
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
+        disabled={false}
+        id="standard-name"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value=""
+      />
+      <div
+        className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+      >
+        <span
+          className="sc-iqAclL hWlKVA"
+        >
+          <svg
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
+            >
+              <path
+                d="M0 0H24V24H0z"
+              />
+              <path
+                className="icon-color"
+                d="M14.998 5c-3.865 0-7 3.134-7 7s3.135 7 7 7c3.866 0 7-3.134 7-7s-3.134-7-7-7m0 2c2.758 0 5 2.242 5 5s-2.242 5-5 5c-2.757 0-5-2.242-5-5s2.243-5 5-5"
+              />
+              <path
+                className="icon-color"
+                d="M6.804 5.358C3.96 6.295 2 8.955 2 11.996c0 3.04 1.96 5.701 4.804 6.638.525.173 1.09-.113 1.263-.637.173-.525-.113-1.09-.637-1.263C5.399 16.066 4 14.166 4 11.996c0-2.17 1.399-4.07 3.43-4.738.524-.173.81-.738.637-1.263-.173-.524-.738-.81-1.263-.637z"
+                fillRule="nonzero"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextField Error 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-iklJeh jbirHe"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-error Mui-error MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="standard-name"
+      id="standard-name-label"
+    >
+      Some error
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root MuiInput-underline Mui-error Mui-error MuiInputBase-formControl MuiInput-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={true}
+        autoFocus={false}
+        className="MuiInputBase-input MuiInput-input"
+        disabled={false}
+        id="standard-name"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="some incorrect value"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextField Read Only 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-iklJeh jbirHe"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="standard-name"
+      id="standard-name-label"
+    >
+      Name
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiInput-input"
+        disabled={false}
+        id="standard-name"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        readOnly={true}
+        required={false}
+        type="text"
+        value="some value readOnly"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextField Simple Number Field 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-iklJeh jbirHe"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+      data-shrink={false}
+      htmlFor="standard-name"
+      id="standard-name-label"
+    >
+      Name
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiInput-input"
+        disabled={false}
+        id="standard-name"
+        max={10}
+        min={5}
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        step={1}
+        type="number"
+        value=""
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextField Simple Text Field 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-iklJeh jbirHe"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+      data-shrink={false}
+      htmlFor="standard-name"
+      id="standard-name-label"
+    >
+      Name
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiInput-input"
+        disabled={false}
+        id="standard-name"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextField Start Adornment 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-iklJeh jbirHe"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+      data-shrink={true}
+      htmlFor="standard-name"
+      id="standard-name-label"
+    >
+      Name
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart"
+      onClick={[Function]}
+    >
+      <div
+        className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+      >
+        <span
+          className="sc-iqAclL hWlKVA"
+        >
+          <svg
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
+            >
+              <path
+                d="M0 0H24V24H0z"
+              />
+              <path
+                className="icon-color"
+                d="M14.998 5c-3.865 0-7 3.134-7 7s3.135 7 7 7c3.866 0 7-3.134 7-7s-3.134-7-7-7m0 2c2.758 0 5 2.242 5 5s-2.242 5-5 5c-2.757 0-5-2.242-5-5s2.243-5 5-5"
+              />
+              <path
+                className="icon-color"
+                d="M6.804 5.358C3.96 6.295 2 8.955 2 11.996c0 3.04 1.96 5.701 4.804 6.638.525.173 1.09-.113 1.263-.637.173-.525-.113-1.09-.637-1.263C5.399 16.066 4 14.166 4 11.996c0-2.17 1.399-4.07 3.43-4.738.524-.173.81-.738.637-1.263-.173-.524-.738-.81-1.263-.637z"
+                fillRule="nonzero"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart"
+        disabled={false}
+        id="standard-name"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</form>
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Data Display/Layout Simple Layout 1`] = `
+<div
+  className="sc-ksluID ceKLgp"
+>
+  <div
+    className="sc-hBMUJo jELqkz"
+  >
+    Title
+  </div>
+  <div
+    className="sc-fnVZcZ lfqAXZ"
+  >
+    Navbar
+  </div>
+  <div
+    className="sc-fFSPTT iklQag"
+  >
+    Body
+  </div>
+  <div
+    className="sc-bkbkJK LxGzc"
+  >
+    footer
+  </div>
+</div>
+`;

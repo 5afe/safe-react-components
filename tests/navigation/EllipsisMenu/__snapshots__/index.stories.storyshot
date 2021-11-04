@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots navigation/EllipsisMenu Simple Ellipsis Menu 1`] = `
+<div
+  className="sc-cTJkRt kuAvaY"
+  onClick={[Function]}
+  onTouchEnd={[Function]}
+>
+  <button
+    className="sc-dPaNzc bRsDYK"
+    onClick={[Function]}
+  >
+    <span>
+      <svg
+        height="4"
+        viewBox="0 0 16 4"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="#B2B5B2"
+          fillRule="evenodd"
+        >
+          <circle
+            cx="2"
+            cy="2"
+            r="2"
+          />
+          <circle
+            cx="8"
+            cy="2"
+            r="2"
+          />
+          <circle
+            cx="14"
+            cy="2"
+            r="2"
+          />
+        </g>
+      </svg>
+    </span>
+  </button>
+  <div
+    className="MuiPopover-root sc-efHYUO caBusQ"
+    onKeyDown={[Function]}
+    role="presentation"
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "visibility": "hidden",
+        "zIndex": 1300,
+      }
+    }
+  >
+    <div
+      data-test="sentinelStart"
+      tabIndex={0}
+    />
+    <div
+      className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "scale(0.75, 0.5625)",
+          "visibility": "hidden",
+        }
+      }
+      tabIndex="-1"
+    >
+      <ul
+        className="MuiList-root MuiMenu-list MuiList-padding"
+        onKeyDown={[Function]}
+        role="menu"
+        tabIndex={-1}
+      >
+        <div
+          className="sc-jNnpgg frEOMH"
+          tabIndex={0}
+        >
+          <li
+            aria-disabled={true}
+            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters Mui-disabled MuiListItem-button Mui-disabled"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="menuitem"
+            tabIndex={-1}
+          >
+            Item 1
+          </li>
+        </div>
+        <div
+          className="sc-jNnpgg frEOMH"
+        >
+          <li
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="menuitem"
+            tabIndex={-1}
+          >
+            Item 2
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabIndex={0}
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Data Display/Text Bold 1`] = `
+<p
+  className="sc-crzoAE bsijYz"
+  size="sm"
+>
+  Some Text...
+</p>
+`;
+
+exports[`Storyshots Data Display/Text Centered 1`] = `
+<p
+  className="sc-crzoAE dkvTHi"
+  size="sm"
+>
+  Some Text...
+</p>
+`;
+
+exports[`Storyshots Data Display/Text Custom Color 1`] = `
+<p
+  className="sc-crzoAE ezHljt"
+  color="primary"
+  size="sm"
+>
+  Some Text...
+</p>
+`;
+
+exports[`Storyshots Data Display/Text Custom Size 1`] = `
+Array [
+  <p
+    className="sc-crzoAE hzFUtR"
+    size="sm"
+  >
+    Some Text...
+  </p>,
+  <p
+    className="sc-crzoAE fwaroE"
+    size="md"
+  >
+    Some Text...
+  </p>,
+  <p
+    className="sc-crzoAE bvSnYT"
+    size="lg"
+  >
+    Some Text...
+  </p>,
+  <p
+    className="sc-crzoAE UIyUn"
+    size="xl"
+  >
+    Some Text...
+  </p>,
+]
+`;
+
+exports[`Storyshots Data Display/Text Paragraph Element 1`] = `
+Array [
+  <p
+    className="sc-crzoAE hzFUtR"
+    size="sm"
+  >
+    Paragraph element is by default
+  </p>,
+  <p
+    className="sc-crzoAE hzFUtR"
+    size="sm"
+  >
+    Some Text...
+  </p>,
+]
+`;
+
+exports[`Storyshots Data Display/Text Simple Texttext 1`] = `
+<p
+  className="sc-crzoAE hzFUtR"
+  size="sm"
+>
+  Some Text...
+</p>
+`;
+
+exports[`Storyshots Data Display/Text Span Element 1`] = `
+Array [
+  <span
+    className="sc-crzoAE hzFUtR"
+    size="sm"
+  >
+    This are span elements.
+  </span>,
+  <span
+    className="sc-crzoAE hzFUtR"
+    size="sm"
+  >
+    Some Text in a span...
+  </span>,
+]
+`;
+
+exports[`Storyshots Data Display/Text With Tooltip 1`] = `
+<span
+  aria-describedby={null}
+  className="sc-crzoAE ezHljt"
+  color="primary"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+  onTouchEnd={[Function]}
+  onTouchStart={[Function]}
+  size="sm"
+  title="some other text"
+>
+  Some Text...
+</span>
+`;
