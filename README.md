@@ -1,8 +1,7 @@
 # safe-react-components
 
-![Badge](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/gnosis/safe-react-components?sort=semver)
-![GitHub](https://img.shields.io/github/license/gnosis/safe-react-components)
+[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://components.gnosis-safe.io/)
+[![npm](https://img.shields.io/npm/v/@gnosis.pm/safe-react-components)](https://www.npmjs.com/package/@gnosis.pm/safe-react-components)
 
 This repository contains a set of React components written in TypeScript.
 
