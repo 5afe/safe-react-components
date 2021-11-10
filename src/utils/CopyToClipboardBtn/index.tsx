@@ -27,11 +27,16 @@ const StyledButton = styled.button`
 type Props = {
   textToCopy: string;
   className?: string;
+  iconType?: Parameters<typeof Icon>[0]['type'];
+  tooltip?: string;
+  tooltipAfterCopy?: string;
 };
 
 const CopyToClipboardBtn = ({
   className,
   textToCopy,
+  iconType = 'copy',
+  tooltip = 'Copy to clipboard',
 }: Props): React.ReactElement => {
   const [clicked, setClicked] = useState<boolean>(false);
 
@@ -67,8 +72,8 @@ const CopyToClipboardBtn = ({
       <Icon
         size="sm"
         color="icon"
-        type="copy"
-        tooltip={clicked ? 'Copied' : 'Copy to clipboard'}
+        type={iconType}
+        tooltip={clicked ? 'Copied' : tooltip}
       />
     </StyledButton>
   );
