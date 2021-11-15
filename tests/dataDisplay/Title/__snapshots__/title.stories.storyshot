@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Data Display/Title Bold 1`] = `
+Array [
+  <h2
+    className="sc-dIvrsQ SoywD"
+  >
+    Title LG
+  </h2>,
+  <h3
+    className="sc-hHEiqL kxGwVw"
+  >
+    Title MD
+  </h3>,
+]
+`;
+
+exports[`Storyshots Data Display/Title Simple Title 1`] = `
+<h2
+  className="sc-dIvrsQ hvGVxh"
+>
+  Title LG
+</h2>
+`;
+
+exports[`Storyshots Data Display/Title With Sizes 1`] = `
+Array [
+  <h1
+    className="sc-iemWCZ kBhNMf"
+  >
+    Title XL
+  </h1>,
+  <h2
+    className="sc-dIvrsQ hvGVxh"
+  >
+    Title LG
+  </h2>,
+  <h3
+    className="sc-hHEiqL kRRLWK"
+  >
+    Title MD
+  </h3>,
+  <h4
+    className="sc-dlMDgC kuCyUn"
+  >
+    Title SM
+  </h4>,
+  <h5
+    className="sc-kfYoZR ilVsuP"
+  >
+    Title XS
+  </h5>,
+]
+`;

@@ -2,7 +2,7 @@ import React, { ReactElement, ReactNode, HTMLAttributes } from 'react';
 import ButtonMUI, {
   ButtonProps as ButtonMUIProps,
 } from '@material-ui/core/Button';
-import { fade } from '@material-ui/core/styles/colorManipulator';
+import { alpha } from '@material-ui/core/styles';
 
 import styled, {
   css,
@@ -55,7 +55,7 @@ const customStyles: {
     contained: css`
       color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.primary};
-      box-shadow: 1px 2px 10px ${fade(theme.colors.shadow.color, 0.18)};
+      box-shadow: 1px 2px 10px ${alpha(theme.colors.shadow.color, 0.18)};
 
       &:hover {
         background-color: ${({ theme }) => theme.colors.primaryHover};
@@ -106,7 +106,7 @@ const customStyles: {
     contained: css`
       color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.secondary};
-      box-shadow: 1px 2px 10px ${fade(theme.colors.shadow.color, 0.18)};
+      box-shadow: 1px 2px 10px ${alpha(theme.colors.shadow.color, 0.18)};
 
       path.icon-color {
         color: ${({ theme }) => theme.colors.white};
@@ -164,7 +164,7 @@ const customStyles: {
     contained: css`
       color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.error};
-      box-shadow: 1px 2px 10px ${fade(theme.colors.shadow.color, 0.18)};
+      box-shadow: 1px 2px 10px ${alpha(theme.colors.shadow.color, 0.18)};
 
       &:hover {
         background-color: ${({ theme }) => theme.colors.errorHover};

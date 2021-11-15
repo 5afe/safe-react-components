@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Data Display/Card Card Disabled 1`] = `
+<div
+  className="sc-bdnxRM dLzDRg"
+>
+  <div
+    className="sc-gtsrHT hVABEH"
+  />
+  <div
+    className="sc-gKAaRy hHycnu"
+    color="primary"
+  >
+    <p
+      className="sc-crzoAE cDTggs"
+      color="white"
+      size="xl"
+    >
+      1
+    </p>
+  </div>
+  <h5
+    className="sc-kfYoZR ilVsuP"
+  >
+    Some text
+  </h5>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwajpm SioJh secondary bordered"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      <span
+        className="sc-iqAclL hWlKVA sc-bCwfaz cWDlJU"
+      >
+        <svg
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M0 0H16V16H0z"
+            />
+            <path
+              d="M13 3c1.054 0 1.918.816 1.994 1.85l.005.15v6c0 1.054-.815 1.918-1.85 1.994l-.148.007c0 .512-.386.935-.884.993l-.117.007c-.552 0-1-.448-1-1H5c0 .512-.386.935-.883.993L4 14.001c-.553 0-1-.448-1-1-1.054-.001-1.919-.817-1.995-1.852L1 11V5c0-1.053.816-1.917 1.85-1.994L3 3h10zm0 2H3v6h10V5z"
+              fill="#B2B5B2"
+            />
+            <path
+              d="M10.49 6.5c-.827 0-1.5.672-1.5 1.5s.673 1.5 1.5 1.5c.83 0 1.5-.672 1.5-1.5s-.67-1.5-1.5-1.5"
+              fill="#B2B5B2"
+            />
+          </g>
+        </svg>
+      </span>
+      <p
+        className="sc-crzoAE UIyUn"
+        color="secondary"
+        size="xl"
+      >
+        Load Safe
+      </p>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Data Display/Card Simple Card 1`] = `
+<div
+  className="sc-bdnxRM dLzDRg"
+>
+  <div
+    className="sc-gKAaRy hHycnu"
+    color="primary"
+  >
+    <p
+      className="sc-crzoAE cDTggs"
+      color="white"
+      size="xl"
+    >
+      1
+    </p>
+  </div>
+  <h5
+    className="sc-kfYoZR ilVsuP"
+  >
+    Some text
+  </h5>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwajpm SioJh secondary bordered"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      <span
+        className="sc-iqAclL hWlKVA sc-bCwfaz cWDlJU"
+      >
+        <svg
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M0 0H16V16H0z"
+            />
+            <path
+              d="M13 3c1.054 0 1.918.816 1.994 1.85l.005.15v6c0 1.054-.815 1.918-1.85 1.994l-.148.007c0 .512-.386.935-.884.993l-.117.007c-.552 0-1-.448-1-1H5c0 .512-.386.935-.883.993L4 14.001c-.553 0-1-.448-1-1-1.054-.001-1.919-.817-1.995-1.852L1 11V5c0-1.053.816-1.917 1.85-1.994L3 3h10zm0 2H3v6h10V5z"
+              fill="#B2B5B2"
+            />
+            <path
+              d="M10.49 6.5c-.827 0-1.5.672-1.5 1.5s.673 1.5 1.5 1.5c.83 0 1.5-.672 1.5-1.5s-.67-1.5-1.5-1.5"
+              fill="#B2B5B2"
+            />
+          </g>
+        </svg>
+      </span>
+      <p
+        className="sc-crzoAE UIyUn"
+        color="secondary"
+        size="xl"
+      >
+        Load Safe
+      </p>
+    </span>
+  </button>
+</div>
+`;

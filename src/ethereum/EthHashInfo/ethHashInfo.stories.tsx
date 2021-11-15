@@ -68,6 +68,56 @@ export const WithButtons = (): React.ReactElement => (
   />
 );
 
+export const WithShowShortNameAndShortHash = (): React.ReactElement => (
+  <EthHashInfo
+    shortName="matic"
+    hash={hash}
+    name="Owner 1"
+    showAvatar
+    showCopyBtn
+    explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
+    shortenHash={4}
+    shouldShowShortName
+  />
+);
+
+export const WithShowShortName = (): React.ReactElement => (
+  <EthHashInfo
+    shortName="xdai"
+    hash={hash}
+    name="Owner 1"
+    showAvatar
+    showCopyBtn
+    explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
+    shouldShowShortName
+  />
+);
+
+export const WithShowAndCopyShortName = (): React.ReactElement => (
+  <EthHashInfo
+    hash={hash}
+    name="Owner 1"
+    showAvatar
+    showCopyBtn
+    explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
+    shortName="arb"
+    shouldShowShortName
+    shouldCopyShortName
+  />
+);
+
+export const WithCopyShortName = (): React.ReactElement => (
+  <EthHashInfo
+    hash={hash}
+    name="Owner 1"
+    showAvatar
+    showCopyBtn
+    explorerUrl={() => ({ alt: explorerUrlAlt, url: explorerUrl })}
+    shortName="rin"
+    shouldCopyShortName
+  />
+);
+
 export const WithMenu = (): React.ReactElement => {
   const items: EllipsisMenuItem[] = [
     { label: 'Send again', disabled: true, onClick: console.log },

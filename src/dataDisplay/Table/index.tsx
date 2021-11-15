@@ -37,6 +37,7 @@ export type TableHeader = {
   id: string;
   alignment?: TableAlignment;
   label: string;
+  hideSortIcon?: boolean;
 };
 
 type RowCells = {
@@ -61,6 +62,8 @@ type Props = {
   sortDirection?: TableSortDirection;
   onHeaderClick?: (id: string) => void;
   onRowClick?: (id: string) => void;
+  isStickyHeader?: boolean;
+  maxHeight?: number;
 };
 
 const getHeaders = (
@@ -106,6 +109,8 @@ export const Table = ({
   rows,
   headers,
   isCollapsible = false,
+  isStickyHeader = false,
+  maxHeight,
   className,
   selectedRowIds = new Set(),
   sortedByHeaderId,
@@ -113,8 +118,11 @@ export const Table = ({
   onRowClick = () => undefined,
   onHeaderClick,
 }: Props): React.ReactElement => (
-  <TableContainer component={Paper} elevation={3}>
-    <TableMui className={className}>
+  <TableContainer
+    style={maxHeight ? { maxHeight: maxHeight } : undefined}
+    component={Paper}
+    elevation={3}>
+    <TableMui stickyHeader={isStickyHeader} className={className}>
       {/* HEADER CELLS */}
       {headers && (
         <TableHead>
@@ -127,7 +135,8 @@ export const Table = ({
                   <TableSortLabel
                     active={sortedByHeaderId === header.id}
                     direction={sortDirection}
-                    onClick={() => onHeaderClick(header.id)}>
+                    onClick={() => onHeaderClick(header.id)}
+                    hideSortIcon={header.hideSortIcon}>
                     {header.label}
                   </TableSortLabel>
                 ) : (

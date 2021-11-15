@@ -1,0 +1,441 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gAUHTP"
+    spellCheck={false}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-disabled Mui-disabled MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="address"
+      id="address-label"
+    >
+      Address
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input Mui-disabled Mui-disabled"
+        disabled={true}
+        id="address"
+        name="address"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="0x123"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gTdbjz"
+    spellCheck={false}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="address"
+      id="address-label"
+    >
+      Address
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        disabled={false}
+        id="address"
+        name="address"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="0x123"
+      />
+      <div
+        className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled"
+      >
+        <div
+          className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+          role="progressbar"
+          style={
+            Object {
+              "height": "16px",
+              "width": "16px",
+            }
+          }
+        >
+          <svg
+            className="MuiCircularProgress-svg"
+            viewBox="22 22 44 44"
+          >
+            <circle
+              className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+              cx={44}
+              cy={44}
+              fill="none"
+              r={20.2}
+              strokeWidth={3.6}
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gTdbjz"
+    spellCheck={false}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="address"
+      id="address-label"
+    >
+      Address
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        disabled={false}
+        id="address"
+        name="address"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="0x123"
+      />
+      <div
+        className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root sc-daBunf ibGpDW"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gTdbjz"
+    spellCheck={false}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="address"
+      id="address-label"
+    >
+      Address
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        id="address"
+        name="address"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="rin:0x123"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-dsXzNU epPxxU"
+    spellCheck={false}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-error Mui-error MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="address"
+      id="address-label"
+    >
+      Address
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-error Mui-error MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-describedby="address-helper-text"
+        aria-invalid={true}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        id="address"
+        name="address"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="0x123"
+      />
+    </div>
+    <p
+      className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error MuiFormHelperText-filled"
+      id="address-helper-text"
+    >
+      Invalid Address
+    </p>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/AddressInput Address Input With Network Prefix 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gTdbjz"
+    spellCheck={false}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="prefixed-address"
+      id="prefixed-address-label"
+    >
+      Prefixed Address
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        id="prefixed-address"
+        name="prefixed-address"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
+      />
+    </div>
+  </div>
+  <pre>
+    Address: 
+    0x83eC7B0506556a7749306D69681aDbDbd08f0769
+  </pre>
+</form>
+`;
+
+exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gTdbjz"
+    spellCheck={false}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="address"
+      id="address-label"
+    >
+      Address
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        id="address"
+        name="address"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="0x123"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-dsXzNU epPxxU"
+    spellCheck={false}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-error Mui-error MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="safeAddress"
+      id="safeAddress-label"
+    >
+      Safe Address
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-error Mui-error MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-describedby="safeAddress-helper-text"
+        aria-invalid={true}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        id="safeAddress"
+        name="safeAddress"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="0x83eC7B0506556a7749306D69681aDbDbd08f0769"
+      />
+    </div>
+    <p
+      className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error MuiFormHelperText-filled"
+      id="safeAddress-helper-text"
+    >
+      Address given is not a valid Safe address
+    </p>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-dsXzNU eLWWsU"
+    spellCheck={false}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      data-shrink={true}
+      htmlFor="address-input"
+      id="address-input-label"
+    >
+      Address
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel"
+        disabled={false}
+        id="address-input"
+        name="address"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Ethereum address"
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</form>
+`;

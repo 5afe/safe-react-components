@@ -2,8 +2,7 @@ import React, { ReactElement } from 'react';
 import MUITooltip, {
   TooltipProps as TooltipPropsMui,
 } from '@material-ui/core/Tooltip';
-import { withStyles } from '@material-ui/core/styles';
-import { fade } from '@material-ui/core/styles/colorManipulator';
+import { withStyles, alpha } from '@material-ui/core/styles';
 
 import theme, { ThemeColors, ThemeTooltipSize } from '../../theme';
 
@@ -60,7 +59,7 @@ const customTooltip = ({
       backgroundColor: backgroundColor
         ? (theme.colors[backgroundColor] as string)
         : theme.colors.overlay.color,
-      boxShadow: `1px 2px 10px ${fade(theme.colors.shadow.color, 0.18)}`,
+      boxShadow: `1px 2px 10px ${alpha(theme.colors.shadow.color, 0.18)}`,
       border: getBorderBySize(size),
       color: textColor
         ? (theme.colors[textColor] as string)
@@ -78,7 +77,7 @@ const customTooltip = ({
       border: 'none',
 
       '&::before': {
-        boxShadow: `1px 2px 10px ${fade(theme.colors.shadow.color, 0.18)}`,
+        boxShadow: `1px 2px 10px ${alpha(theme.colors.shadow.color, 0.18)}`,
       },
     },
   }))(MUITooltip);

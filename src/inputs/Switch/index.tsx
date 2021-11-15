@@ -1,7 +1,7 @@
 import React from 'react';
 import SwitchMui from '@material-ui/core/Switch';
 import styled from 'styled-components';
-import { fade } from '@material-ui/core/styles/colorManipulator';
+import { alpha } from '@material-ui/core/styles';
 
 const StyledSwitch = styled(({ ...rest }) => <SwitchMui {...rest} />)`
   && {
@@ -12,7 +12,7 @@ const StyledSwitch = styled(({ ...rest }) => <SwitchMui {...rest} />)`
     }
 
     .MuiSwitch-colorSecondary.Mui-checked:hover {
-      background-color: ${({ theme }) => fade(theme.colors.primary, 0.08)};
+      background-color: ${({ theme }) => alpha(theme.colors.primary, 0.08)};
     }
 
     .Mui-checked + .MuiSwitch-track {

@@ -13,3 +13,7 @@ export default {
 export const Copy = (): React.ReactElement => (
   <CopyToClipboardBtn textToCopy="some value" />
 );
+
+export const CopyWithDifferentLogo = (): React.ReactElement => (
+  <CopyToClipboardBtn textToCopy="some value" iconType="share" />
+);

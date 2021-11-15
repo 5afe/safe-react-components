@@ -1,10 +1,6 @@
 name: Unit tests
 on:
   pull_request:
-  push:
-    branches:
-      - master
-      - development
 
 jobs:
   test:
@@ -14,21 +10,32 @@ jobs:
         uses: styfle/cancel-workflow-action@0.8.0
         with:
           access_token: ${{ github.token }}
-      - uses: actions/checkout@v2
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: 14
 
-      - uses: actions/cache@v2
+      - name: Yarn cache
+        uses: actions/cache@v2
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
-      - run: |
+      - name: Yarn install
+        run: |
           mkdir .yarncache
           yarn install --cache-folder ./.yarncache --frozen-lockfile
           rm -rf .yarncache
           yarn cache clean
 
-      - run: yarn test
+      - name: Run tests
+        uses: mattallty/jest-github-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          test-command: 'npm run test:ci -- --outputFile=/home/runner/work/_actions/mattallty/jest-github-action/v1/dist/jest.results.json'
+          coverage-comment: false

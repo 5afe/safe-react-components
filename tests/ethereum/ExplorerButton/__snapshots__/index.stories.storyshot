@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Ethereum/Explorer Button Simple Explorer Button 1`] = `
+Array [
+  <p
+    className="sc-crzoAE fwaroE sc-kHWWYL biMHPd"
+    size="md"
+  >
+    An Address example
+  </p>,
+  <br />,
+  <a
+    aria-label="Show details on Etherscan"
+    className="sc-jgPyTC lddBYR"
+    href="https://etherscan.io/address/0xda6786379ff88729264d31d472fa917f5e561443"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span
+      aria-describedby={null}
+      className="sc-iqAclL hWlKVA"
+      color="icon"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      title="Show details on Etherscan"
+    >
+      <svg
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M0 0H16V16H0z"
+          />
+          <path
+            className="icon-color"
+            d="M13 13v-2c0-.552.448-1 1-1s1 .448 1 1v2c0 1.105-.895 2-2 2H3c-1.105 0-2-.895-2-2V3c0-1.105.895-2 2-2h2c.552 0 1 .448 1 1s-.448 1-1 1H3v10h10z"
+            fillRule="nonzero"
+          />
+          <path
+            className="icon-color"
+            d="M11.586 3H9c-.552 0-1-.448-1-1s.448-1 1-1h5c.276 0 .526.112.707.293.181.18.293.43.293.707v5c0 .552-.448 1-1 1s-1-.448-1-1V4.414l-6.243 6.243c-.39.39-1.023.39-1.414 0-.39-.39-.39-1.024 0-1.414L11.586 3z"
+          />
+        </g>
+      </svg>
+    </span>
+  </a>,
+  <br />,
+  <p
+    className="sc-crzoAE fwaroE sc-kHWWYL biMHPd"
+    size="md"
+  >
+    A Transaction example
+  </p>,
+  <br />,
+  <a
+    aria-label="Show details on Etherscan"
+    className="sc-jgPyTC lddBYR"
+    href="https://blockscout.com/poa/xdai/address/0x72d9E579f691D62aA7e0703840db6dd2fa9fAE21"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span
+      aria-describedby={null}
+      className="sc-iqAclL hWlKVA"
+      color="icon"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      title="Show details on BlockScout"
+    >
+      <svg
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M0 0H16V16H0z"
+          />
+          <path
+            className="icon-color"
+            d="M13 13v-2c0-.552.448-1 1-1s1 .448 1 1v2c0 1.105-.895 2-2 2H3c-1.105 0-2-.895-2-2V3c0-1.105.895-2 2-2h2c.552 0 1 .448 1 1s-.448 1-1 1H3v10h10z"
+            fillRule="nonzero"
+          />
+          <path
+            className="icon-color"
+            d="M11.586 3H9c-.552 0-1-.448-1-1s.448-1 1-1h5c.276 0 .526.112.707.293.181.18.293.43.293.707v5c0 .552-.448 1-1 1s-1-.448-1-1V4.414l-6.243 6.243c-.39.39-1.023.39-1.414 0-.39-.39-.39-1.024 0-1.414L11.586 3z"
+          />
+        </g>
+      </svg>
+    </span>
+  </a>,
+]
+`;

@@ -25,3 +25,6 @@ export const textShortener = (
 };
 
 export const trimSpaces = (value = ''): string => value.trim();
+
+export const isString = (value: unknown): value is string =>
+  typeof value === 'string';

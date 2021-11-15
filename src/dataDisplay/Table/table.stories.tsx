@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Table, TableAlignment, TableSortDirection } from './index';
+import { Table, TableAlignment, TableRow, TableSortDirection } from './index';
 import { Icon } from '../../';
 
 export default {
@@ -16,6 +16,7 @@ const headerCells = [
   {
     id: 'col1',
     label: 'col1',
+    hideSortIcon: true,
   },
   {
     id: 'col2',
@@ -26,6 +27,7 @@ const headerCells = [
     id: 'col3',
     alignment: TableAlignment.right,
     label: 'col3',
+    hideSortIcon: true,
   },
 ];
 
@@ -135,6 +137,36 @@ export const Collapsible = (): React.ReactElement => {
       rows={rows}
       selectedRowIds={selectedRowIds}
       onRowClick={onRowClick}
+    />
+  );
+};
+
+export const FixedHeader = (): React.ReactElement => {
+  const manyRows: TableRow[] = Array.from(new Array<string>(100).keys()).map(
+    (val, idx) => ({
+      id: idx.toString(),
+      collapsibleContent: <div>content {idx}</div>,
+      cells: [
+        {
+          content: <Icon type="addressBook" size="sm" />,
+        },
+        {
+          content: idx.toString(),
+          alignment: TableAlignment.right,
+        },
+        {
+          content: `Row #${idx}`,
+          alignment: TableAlignment.right,
+        },
+      ],
+    })
+  );
+  return (
+    <Table
+      isStickyHeader={true}
+      maxHeight={300}
+      headers={headerCells}
+      rows={manyRows}
     />
   );
 };

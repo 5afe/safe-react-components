@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { fade } from '@material-ui/core/styles/colorManipulator';
+import { alpha } from '@material-ui/core/styles';
 
 import { Title, ModalFooterConfirmation } from '../../index';
 
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: 8px;
   box-shadow: 1px 2px 10px 0
-    ${({ theme }) => fade(theme.colors.shadow.color, 0.18)};
+    ${({ theme }) => alpha(theme.colors.shadow.color, 0.18)};
 
   '&:focus': {
     outline: 'none';
