@@ -23,3 +23,5 @@ export const textShortener = (
 
   return `${textStart}${separator}${textEnd}`;
 };
+
+export const trimSpaces = (value = ''): string => value.trim();
