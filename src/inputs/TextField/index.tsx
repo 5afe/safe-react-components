@@ -70,6 +70,7 @@ function TextField({
       InputProps={customInputBaseProps}
       inputProps={inputProps}
       color="primary"
+      variant="filled"
     />
   );
 }

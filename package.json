@@ -25,7 +25,6 @@
   "author": "Gnosis (https://gnosis.pm)",
   "license": "MIT",
   "dependencies": {
-    "classnames": "^2.2.6",
     "web3-utils": "^1.6.0",
     "react-media": "^1.10.0"
   },

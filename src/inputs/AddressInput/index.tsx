@@ -87,7 +87,6 @@ function AddressInput({
       try {
         setIsLoadingENSResolution(true);
         const address = (await getAddressFromDomain?.(ENSName)) as string;
-        console.log('resolvedAddress: ', address);
         onChangeAddress(address);
         setPrefix(showNetworkPrefix ? networkPrefix : '');
       } catch (e) {
