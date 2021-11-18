@@ -5,7 +5,7 @@ import {
   isHexStrict,
 } from 'web3-utils';
 
-export function getAddressWithoutNetworkPrefix(address = ''): string {
+const getAddressWithoutNetworkPrefix = (address = ''): string => {
   const hasPrefix = address.includes(':');
 
   if (!hasPrefix) {
@@ -15,26 +15,25 @@ export function getAddressWithoutNetworkPrefix(address = ''): string {
   const [, ...addressWithoutNetworkPrefix] = address.split(':');
 
   return addressWithoutNetworkPrefix.join('');
-}
+};
 
-export function getNetworkPrefix(address = ''): string {
+const getNetworkPrefix = (address = ''): string => {
   const splitAddress = address.split(':');
   const hasPrefixDefined = splitAddress.length > 1;
   const [prefix] = splitAddress;
   return hasPrefixDefined ? prefix : '';
-}
+};
 
-export function addNetworkPrefix(
+const addNetworkPrefix = (
   address: string,
   prefix: string | undefined
-): string {
+): string => {
   return !!prefix ? `${prefix}:${address}` : address;
-}
+};
 
-export const checksumAddress = (address: string): string =>
-  toChecksumAddress(address);
+const checksumAddress = (address: string): string => toChecksumAddress(address);
 
-export const isChecksumAddress = (address?: string): boolean => {
+const isChecksumAddress = (address?: string): boolean => {
   if (address) {
     return checkAddressChecksum(address);
   }
@@ -42,7 +41,7 @@ export const isChecksumAddress = (address?: string): boolean => {
   return false;
 };
 
-export const isValidAddress = (address?: string): boolean => {
+const isValidAddress = (address?: string): boolean => {
   if (address) {
     // `isAddress` do not require the string to start with `0x`
     // `isHexStrict` ensures the address to start with `0x` aside from being a valid hex string
@@ -54,4 +53,14 @@ export const isValidAddress = (address?: string): boolean => {
 
 // Based on https://docs.ens.domains/dapp-developer-guide/resolving-names
 // [...] a correct integration of ENS treats any dot-separated name as a potential ENS name [...]
-export const isValidEnsName = (name: string): boolean => name.includes('.');
+const isValidEnsName = (name: string): boolean => name.includes('.');
+
+export {
+  getAddressWithoutNetworkPrefix,
+  getNetworkPrefix,
+  addNetworkPrefix,
+  checksumAddress,
+  isChecksumAddress,
+  isValidAddress,
+  isValidEnsName,
+};
