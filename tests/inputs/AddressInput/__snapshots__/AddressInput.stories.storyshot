@@ -306,6 +306,49 @@ exports[`Storyshots Inputs/AddressInput Address Input With Network Prefix 1`] = 
 </form>
 `;
 
+exports[`Storyshots Inputs/AddressInput Address Input With Validation 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK TQQay"
+    spellCheck={false}
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="address"
+      id="address-label"
+    >
+      Address
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        id="address"
+        name="address"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Ethereum address"
+        required={false}
+        type="text"
+        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
+      />
+    </div>
+  </div>
+</form>
+`;
+
 exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
 <form
   autoComplete="off"

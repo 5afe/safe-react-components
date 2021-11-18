@@ -1,0 +1,619 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Inputs/TextFieldInput Custom CSS Text Field 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK TQQay sc-fuISkM izYzyG"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="Focus me! :D"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK dZDLCy"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-disabled Mui-disabled MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input Mui-disabled Mui-disabled"
+        disabled={true}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="this field is disabled"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK fJRZyJ"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      data-shrink={true}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        disabled={false}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value=""
+      />
+      <div
+        className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-hiddenLabel MuiInputAdornment-filled"
+      >
+        <span
+          className="sc-iqAclL hWlKVA"
+        >
+          <svg
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
+            >
+              <path
+                d="M0 0H24V24H0z"
+              />
+              <path
+                className="icon-color"
+                d="M14.998 5c-3.865 0-7 3.134-7 7s3.135 7 7 7c3.866 0 7-3.134 7-7s-3.134-7-7-7m0 2c2.758 0 5 2.242 5 5s-2.242 5-5 5c-2.757 0-5-2.242-5-5s2.243-5 5-5"
+              />
+              <path
+                className="icon-color"
+                d="M6.804 5.358C3.96 6.295 2 8.955 2 11.996c0 3.04 1.96 5.701 4.804 6.638.525.173 1.09-.113 1.263-.637.173-.525-.113-1.09-.637-1.263C5.399 16.066 4 14.166 4 11.996c0-2.17 1.399-4.07 3.43-4.738.524-.173.81-.738.637-1.263-.173-.524-.738-.81-1.263-.637z"
+                fillRule="nonzero"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK TQQay"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="standard-NumberTextFieldInput"
+      id="standard-NumberTextFieldInput-label"
+    >
+      Number
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        id="standard-NumberTextFieldInput"
+        name="NumberTextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="number"
+        value="100"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Simple Text Field 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK fJRZyJ"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      data-shrink={true}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel"
+        disabled={false}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="TextFieldInput with default values"
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK fJRZyJ"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      data-shrink={true}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-adornedStart MuiFilledInput-adornedStart"
+      onClick={[Function]}
+    >
+      <div
+        className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-hiddenLabel MuiInputAdornment-filled"
+      >
+        <span
+          className="sc-iqAclL hWlKVA"
+        >
+          <svg
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
+            >
+              <path
+                d="M0 0H24V24H0z"
+              />
+              <path
+                className="icon-color"
+                d="M14.998 5c-3.865 0-7 3.134-7 7s3.135 7 7 7c3.866 0 7-3.134 7-7s-3.134-7-7-7m0 2c2.758 0 5 2.242 5 5s-2.242 5-5 5c-2.757 0-5-2.242-5-5s2.243-5 5-5"
+              />
+              <path
+                className="icon-color"
+                d="M6.804 5.358C3.96 6.295 2 8.955 2 11.996c0 3.04 1.96 5.701 4.804 6.638.525.173 1.09-.113 1.263-.637.173-.525-.113-1.09-.637-1.263C5.399 16.066 4 14.166 4 11.996c0-2.17 1.399-4.07 3.43-4.738.524-.173.81-.738.637-1.263-.173-.524-.738-.81-1.263-.637z"
+                fillRule="nonzero"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedStart MuiFilledInput-inputAdornedStart"
+        disabled={false}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Text Field With Errors 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK cHOFKQ"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-error Mui-error MuiFormLabel-filled"
+      data-shrink={true}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-error Mui-error MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-describedby="standard-TextFieldInput-helper-text"
+        aria-invalid={true}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value="this field has an error"
+      />
+    </div>
+    <p
+      className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error MuiFormHelperText-filled"
+      id="standard-TextFieldInput-helper-text"
+    >
+      this field has an error
+    </p>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    <span
+      className="MuiSwitch-root sc-kLojOw eilJil"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-75 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-76 Mui-checked"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={true}
+            className="PrivateSwitchBase-input-78 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+    An Error is present
+  </p>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    <span
+      className="MuiSwitch-root sc-kLojOw kBATVx"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-75 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={false}
+            className="PrivateSwitchBase-input-78 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+     Hide Label
+  </p>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    <span
+      className="MuiSwitch-root sc-kLojOw kBATVx"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-75 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={false}
+            className="PrivateSwitchBase-input-78 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+    Show Errors in The Label
+  </p>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK byJZpO"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled Mui-error Mui-error"
+      data-shrink={false}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-error Mui-error MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-describedby="standard-TextFieldInput-helper-text"
+        aria-invalid={true}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input"
+        disabled={false}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="You can visually hide the label"
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+    <p
+      className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error"
+      id="standard-TextFieldInput-helper-text"
+    >
+      This field has an error
+    </p>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Hide Label: 
+    <span
+      className="MuiSwitch-root sc-kLojOw eilJil"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-79 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-80 Mui-checked"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={true}
+            className="PrivateSwitchBase-input-82 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+  </p>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK fJRZyJ"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      data-shrink={true}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel"
+        disabled={false}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="You can visually hide the label"
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</form>
+`;
