@@ -1,9 +1,17 @@
 module.exports = ({ config }) => {
   config.module.rules.push({
-    test: /\.(ts|tsx)$/,
+    test: /\.(ts|js)x?$/,
+    exclude: [/node_modules/],
     use: [
       {
-        loader: require.resolve('awesome-typescript-loader')
+        loader: require.resolve('babel-loader'),
+        options: {
+          presets: [
+            '@babel/preset-env',
+            '@babel/preset-react',
+            '@babel/preset-typescript',
+          ],
+        },
       },
       {
         loader: require.resolve('react-docgen-typescript-loader')
