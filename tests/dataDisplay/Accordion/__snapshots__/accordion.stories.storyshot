@@ -13,12 +13,12 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
   }
 >
   <div
-    className="MuiPaper-root MuiAccordion-root sc-dlnjwi kKZEzZ MuiPaper-elevation0"
+    className="MuiPaper-root MuiAccordion-root sc-dkPtRN fOBLTn MuiPaper-elevation0"
   >
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}
@@ -38,10 +38,10 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
         className="MuiAccordionSummary-content"
       >
         <div
-          className="sc-dIsUp jJoLmt"
+          className="sc-egiyK cgERpw"
         >
           <span
-            className="sc-iqAclL hWlKVA"
+            className="sc-iqseJM iJclAE"
           >
             <svg
               height="16"
@@ -65,7 +65,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
             </svg>
           </span>
           <p
-            className="sc-crzoAE UIyUn"
+            className="sc-crHmcD dtIzoT"
             size="xl"
           >
             Transaction 1
@@ -131,7 +131,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
               className="MuiAccordionDetails-root"
             >
               <p
-                className="sc-crzoAE bvSnYT"
+                className="sc-crHmcD duwBpz"
                 size="lg"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -143,12 +143,12 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
     </div>
   </div>
   <div
-    className="MuiPaper-root MuiAccordion-root sc-dlnjwi kKZEzZ MuiPaper-elevation0"
+    className="MuiPaper-root MuiAccordion-root sc-dkPtRN fOBLTn MuiPaper-elevation0"
   >
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}
@@ -168,10 +168,10 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
         className="MuiAccordionSummary-content"
       >
         <div
-          className="sc-dIsUp jJoLmt"
+          className="sc-egiyK cgERpw"
         >
           <span
-            className="sc-iqAclL hWlKVA"
+            className="sc-iqseJM iJclAE"
           >
             <svg
               height="16"
@@ -195,7 +195,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
             </svg>
           </span>
           <p
-            className="sc-crzoAE UIyUn"
+            className="sc-crHmcD dtIzoT"
             size="xl"
           >
             Transaction 2
@@ -261,7 +261,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
               className="MuiAccordionDetails-root"
             >
               <p
-                className="sc-crzoAE bvSnYT"
+                className="sc-crHmcD duwBpz"
                 size="lg"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -273,12 +273,12 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
     </div>
   </div>
   <div
-    className="MuiPaper-root MuiAccordion-root sc-dlnjwi kKZEzZ MuiPaper-elevation0"
+    className="MuiPaper-root MuiAccordion-root sc-dkPtRN fOBLTn MuiPaper-elevation0"
   >
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}
@@ -298,10 +298,10 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
         className="MuiAccordionSummary-content"
       >
         <div
-          className="sc-dIsUp jJoLmt"
+          className="sc-egiyK cgERpw"
         >
           <span
-            className="sc-iqAclL hWlKVA"
+            className="sc-iqseJM iJclAE"
           >
             <svg
               height="16"
@@ -325,7 +325,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
             </svg>
           </span>
           <p
-            className="sc-crzoAE UIyUn"
+            className="sc-crHmcD dtIzoT"
             size="xl"
           >
             Transaction 3
@@ -391,7 +391,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
               className="MuiAccordionDetails-root"
             >
               <p
-                className="sc-crzoAE bvSnYT"
+                className="sc-crHmcD duwBpz"
                 size="lg"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -407,15 +407,15 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
 
 exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
 <div
-  className="sc-bdnxRM dLzDRg"
+  className="sc-bdvvtL elqPhe"
 >
   <div
-    className="MuiPaper-root MuiAccordion-root sc-dlnjwi hfQwRj MuiPaper-elevation0"
+    className="MuiPaper-root MuiAccordion-root sc-dkPtRN fIyA-dh MuiPaper-elevation0"
   >
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}
@@ -435,10 +435,10 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
         className="MuiAccordionSummary-content"
       >
         <div
-          className="sc-dIsUp jJoLmt"
+          className="sc-egiyK cgERpw"
         >
           <span
-            className="sc-iqAclL hWlKVA"
+            className="sc-iqseJM iJclAE"
           >
             <svg
               height="16"
@@ -462,7 +462,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
             </svg>
           </span>
           <p
-            className="sc-crzoAE UIyUn"
+            className="sc-crHmcD dtIzoT"
             size="xl"
           >
             Transaction 1
@@ -528,7 +528,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
               className="MuiAccordionDetails-root"
             >
               <p
-                className="sc-crzoAE bvSnYT"
+                className="sc-crHmcD duwBpz"
                 size="lg"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -540,12 +540,12 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
     </div>
   </div>
   <div
-    className="MuiPaper-root MuiAccordion-root sc-dlnjwi hfQwRj MuiPaper-elevation0"
+    className="MuiPaper-root MuiAccordion-root sc-dkPtRN fIyA-dh MuiPaper-elevation0"
   >
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}
@@ -565,10 +565,10 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
         className="MuiAccordionSummary-content"
       >
         <div
-          className="sc-dIsUp jJoLmt"
+          className="sc-egiyK cgERpw"
         >
           <span
-            className="sc-iqAclL hWlKVA"
+            className="sc-iqseJM iJclAE"
           >
             <svg
               height="16"
@@ -592,7 +592,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
             </svg>
           </span>
           <p
-            className="sc-crzoAE UIyUn"
+            className="sc-crHmcD dtIzoT"
             size="xl"
           >
             Transaction 2
@@ -658,7 +658,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
               className="MuiAccordionDetails-root"
             >
               <p
-                className="sc-crzoAE bvSnYT"
+                className="sc-crHmcD duwBpz"
                 size="lg"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -670,12 +670,12 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
     </div>
   </div>
   <div
-    className="MuiPaper-root MuiAccordion-root sc-dlnjwi hfQwRj MuiPaper-elevation0"
+    className="MuiPaper-root MuiAccordion-root sc-dkPtRN fIyA-dh MuiPaper-elevation0"
   >
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKFxyN fbAoUH"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}
@@ -695,10 +695,10 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
         className="MuiAccordionSummary-content"
       >
         <div
-          className="sc-dIsUp jJoLmt"
+          className="sc-egiyK cgERpw"
         >
           <span
-            className="sc-iqAclL hWlKVA"
+            className="sc-iqseJM iJclAE"
           >
             <svg
               height="16"
@@ -722,7 +722,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
             </svg>
           </span>
           <p
-            className="sc-crzoAE UIyUn"
+            className="sc-crHmcD dtIzoT"
             size="xl"
           >
             Transaction 3
@@ -788,7 +788,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
               className="MuiAccordionDetails-root"
             >
               <p
-                className="sc-crzoAE bvSnYT"
+                className="sc-crHmcD duwBpz"
                 size="lg"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.

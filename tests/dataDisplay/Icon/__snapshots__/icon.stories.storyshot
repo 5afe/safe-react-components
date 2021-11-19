@@ -3,7 +3,7 @@
 exports[`Storyshots Data Display/Icon Custom Color 1`] = `
 Array [
   <span
-    className="sc-iqAclL csKvIw"
+    className="sc-iqseJM bmGbk"
     color="primary"
   >
     <svg
@@ -32,7 +32,7 @@ Array [
     </svg>
   </span>,
   <span
-    className="sc-iqAclL kerxfE"
+    className="sc-iqseJM cqxqBM"
     color="error"
   >
     <svg
@@ -61,7 +61,7 @@ Array [
     </svg>
   </span>,
   <span
-    className="sc-iqAclL dYNzQL"
+    className="sc-iqseJM hMTWWn"
     color="rinkeby"
   >
     <svg
@@ -95,7 +95,7 @@ Array [
 exports[`Storyshots Data Display/Icon Custom Size 1`] = `
 Array [
   <span
-    className="sc-iqAclL hWlKVA"
+    className="sc-iqseJM iJclAE"
   >
     <svg
       height="16"
@@ -123,7 +123,7 @@ Array [
     </svg>
   </span>,
   <span
-    className="sc-iqAclL hWlKVA"
+    className="sc-iqseJM iJclAE"
   >
     <svg
       height="24"
@@ -155,13 +155,13 @@ Array [
 
 exports[`Storyshots Data Display/Icon Icons 1`] = `
 <div
-  className="sc-jQAxuV dxTkOc"
+  className="sc-jQrDum fnaPUn"
 >
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -191,10 +191,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     add
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -220,10 +220,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     addressBook
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -248,10 +248,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     addressBookAdd
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -280,10 +280,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     alert
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -308,10 +308,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     allowances
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -345,10 +345,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     apps
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -374,10 +374,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     arrowUp
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -403,10 +403,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     arrowRight
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -431,10 +431,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     arrowDown
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -460,10 +460,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     arrowLeft
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -493,10 +493,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     assets
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -525,10 +525,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     awaitingConfirmations
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -559,10 +559,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     camera
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -593,10 +593,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     chain
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -621,10 +621,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     check
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -655,10 +655,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     circleCheck
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -688,10 +688,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     circleCross
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -721,10 +721,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     circleDropdown
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -749,10 +749,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     code
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -788,10 +788,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     collectibles
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -817,10 +817,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     copy
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -845,10 +845,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     cross
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -877,10 +877,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     currency
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -909,10 +909,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     delete
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -943,10 +943,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     devicePassword
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -971,10 +971,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     edit
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1013,10 +1013,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     error
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1041,10 +1041,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     eth
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1069,10 +1069,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     exportImg
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1102,10 +1102,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     externalLink
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1134,10 +1134,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     eye
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1166,10 +1166,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     eyeOff
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1194,10 +1194,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     filledCross
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1234,10 +1234,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     fingerPrint
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1269,10 +1269,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     fuelIndicator
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1297,10 +1297,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     getInTouch
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1326,10 +1326,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     home
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1354,10 +1354,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     importImg
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1396,10 +1396,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     info
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1424,10 +1424,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     knowledge
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1456,10 +1456,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     licenses
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1484,10 +1484,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     loadSafe
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1516,10 +1516,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     locked
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1548,10 +1548,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     mobileConfirm
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1580,10 +1580,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     noInternet
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1608,10 +1608,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     owners
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1637,10 +1637,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     paste
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1666,10 +1666,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     paymentToken
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1695,10 +1695,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     privacyPolicy
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1769,10 +1769,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     qrCode
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1803,10 +1803,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     question
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1831,10 +1831,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     rateApp
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1864,10 +1864,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     received
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1898,10 +1898,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     recover
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1926,10 +1926,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     replaceOwner
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1954,10 +1954,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     requiredConfirmations
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -1982,10 +1982,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     restricted
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2010,10 +2010,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     resync
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2039,10 +2039,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     rocket
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2076,10 +2076,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     scan
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2113,10 +2113,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     safe
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2141,10 +2141,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     search
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2175,10 +2175,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     sendAgain
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2208,10 +2208,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     sent
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2240,10 +2240,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     serverError
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2268,10 +2268,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     settings
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2301,10 +2301,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     settingsChange
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2330,10 +2330,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     settingsTool
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2359,10 +2359,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     share
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2387,10 +2387,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     termsOfUse
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2415,10 +2415,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     transactionsInactive
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2447,10 +2447,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     unlocked
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2475,10 +2475,10 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     userEdit
   </div>
   <div
-    className="sc-fuISkM fmClrj"
+    className="sc-fvxzrP kJywYj"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -2509,7 +2509,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
 exports[`Storyshots Data Display/Icon With Tooltip 1`] = `
 <span
   aria-describedby={null}
-  className="sc-iqAclL csKvIw"
+  className="sc-iqseJM bmGbk"
   color="primary"
   onBlur={[Function]}
   onFocus={[Function]}
