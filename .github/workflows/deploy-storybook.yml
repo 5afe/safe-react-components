@@ -69,7 +69,7 @@ jobs:
         uses: mshick/add-pr-comment@v1
         with:
           message: |
-            :books:[Storybook review](${{ env.REVIEW_FEATURE_URL }})
+            :books: [Storybook review](${{ env.REVIEW_FEATURE_URL }})
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           repo-token-user-login: 'github-actions[bot]'
         if: success() && github.event.number
