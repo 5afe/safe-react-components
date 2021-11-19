@@ -1,3 +1,4 @@
+/* eslint @typescript-eslint/no-loss-of-precision: 0 */
 import { formatAmount } from '.';
 
 describe('formatAmount', () => {
