@@ -7,7 +7,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp ipukqW"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp kYzoik"
     spellCheck={false}
   >
     <label
@@ -50,7 +50,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp LbrVu"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
     spellCheck={false}
   >
     <label
@@ -122,7 +122,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp LbrVu"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
     spellCheck={false}
   >
     <label
@@ -179,7 +179,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp LbrVu"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
     spellCheck={false}
   >
     <label
@@ -222,7 +222,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp kkqAtM"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp laNQiK"
     spellCheck={false}
   >
     <label
@@ -272,7 +272,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Network Prefix 1`] = 
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp LbrVu"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
     spellCheck={false}
   >
     <label
@@ -319,7 +319,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Validation 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp LbrVu"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
     spellCheck={false}
   >
     <label
@@ -362,7 +362,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp LbrVu"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
     spellCheck={false}
   >
     <label
@@ -405,7 +405,7 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp kkqAtM"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp laNQiK"
     spellCheck={false}
   >
     <label
@@ -502,7 +502,7 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
     Show Network Prefix (rin)
   </p>
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp LbrVu"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
     spellCheck={false}
   >
     <label

@@ -7,7 +7,7 @@ exports[`Storyshots Inputs/TextFieldInput Custom CSS Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp LbrVu sc-fvxzrP eWJijy"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI sc-fvxzrP eWJijy"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
@@ -87,7 +87,7 @@ exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp ipukqW"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp kYzoik"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-disabled Mui-disabled MuiFormLabel-filled"
@@ -128,7 +128,7 @@ exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp vKmSl"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp gNEEiH"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
@@ -201,7 +201,7 @@ exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp LbrVu"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
@@ -242,7 +242,7 @@ exports[`Storyshots Inputs/TextFieldInput Simple Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp vKmSl"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp gNEEiH"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
@@ -284,7 +284,7 @@ exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp vKmSl"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp gNEEiH"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
@@ -357,7 +357,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp kkqAtM"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp laNQiK"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-error Mui-error MuiFormLabel-filled"
@@ -531,7 +531,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     Show Errors in The Label
   </p>
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp jOsIxG"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp ciqoWk"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled Mui-error Mui-error"
@@ -622,7 +622,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
     </span>
   </p>
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp vKmSl"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp gNEEiH"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"

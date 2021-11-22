@@ -61,11 +61,6 @@ const TextField = styled(
       cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'auto')};
     }
 
-    .MuiFormLabel-root.Mui-focused {
-      color: ${({ theme, error }) =>
-        error ? theme.colors.error : theme.colors.primary};
-    }
-
     .MuiInputLabel-filled {
       color: ${({ theme, error, disabled }) =>
         error
