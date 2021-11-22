@@ -44,23 +44,16 @@ function AddressInput({
 
   const throttle = useThrottle();
 
-  // checksum valid addresses
-  useEffect(() => {
-    if (isValidAddress(address) && !isChecksumAddress(address)) {
-      onChangeAddress(checksumAddress(address));
-    }
-  }, [address, onChangeAddress]);
-
   // ENS resolution
   useEffect(() => {
     const resolveDomainName = async (ENSName: string) => {
       try {
         setIsLoadingENSResolution(true);
         const address = (await getAddressFromDomain?.(ENSName)) as string;
-        onChangeAddress(address);
+        onChangeAddress(checksumValidAddress(address));
         setPrefix(showNetworkPrefix ? networkPrefix : '');
       } catch (e) {
-        onChangeAddress(ENSName);
+        onChangeAddress(checksumValidAddress(ENSName));
         setPrefix('');
       } finally {
         setIsLoadingENSResolution(false);
@@ -105,10 +98,10 @@ function AddressInput({
 
     if (isValidPrefix) {
       setPrefix(prefix);
-      onChangeAddress(address);
+      onChangeAddress(checksumValidAddress(address));
     } else {
       setPrefix('');
-      onChangeAddress(value);
+      onChangeAddress(checksumValidAddress(value));
     }
   };
 
@@ -145,4 +138,13 @@ function LoaderSpinnerAdornment() {
       <CircularProgress size="16px" />
     </InputAdornment>
   );
+}
+
+// we only checksum valid addresses
+function checksumValidAddress(address: string) {
+  if (isValidAddress(address) && !isChecksumAddress(address)) {
+    return checksumAddress(address);
+  }
+
+  return address;
 }
