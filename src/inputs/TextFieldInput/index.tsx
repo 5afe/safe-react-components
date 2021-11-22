@@ -6,7 +6,7 @@ export type TextFieldInputProps = {
   id?: string;
   name: string;
   label: string;
-  error?: string | undefined;
+  error?: string;
   helperText?: string | undefined;
   hiddenLabel?: boolean | undefined;
   showErrorsInTheLabel?: boolean | undefined;
