@@ -38,6 +38,45 @@ exports[`Storyshots Inputs/TextFieldInput Custom CSS Text Field 1`] = `
       />
     </div>
   </div>
+  <pre
+    style={
+      Object {
+        "backgroundColor": "lightgrey",
+        "borderRadius": "4px",
+      }
+    }
+  >
+    
+         const StyledTextField = styled(TextFieldInput)\`
+         && {
+           .MuiFilledInput-root {
+             background-color: lightgreen;
+             width: 200px;
+             transition: width 1s ease-out;
+           }
+     
+           .MuiFilledInput-root.Mui-focused {
+             width: 400px;
+           }
+     
+           .MuiFormLabel-root.Mui-focused {
+             color: \${({ error, theme }) =&gt;
+               error ? theme.colors.error : 'darkgreen'};
+           }
+     
+           .MuiInputLabel-filled {
+             color: \${({ theme, error }) =&gt;
+               error ? theme.colors.error : 'purple'};
+           }
+     
+           .MuiFilledInput-underline:after {
+             border-bottom: 2px solid
+               \${({ theme, error }) =&gt; (error ? theme.colors.error : 'orange')};
+           }
+         }
+       \`;
+      
+  </pre>
 </form>
 `;
 
