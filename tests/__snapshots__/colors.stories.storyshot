@@ -2,423 +2,423 @@
 
 exports[`Storyshots Utils/Colors Colors Sample 1`] = `
 <div
-  className="sc-amiJK gtHMbU"
+  className="sc-ZOtfp gbWCDo"
 >
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg imYFnM"
+      className="sc-hmjpVf kBHbMj"
       color="#001428"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       secondary
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #001428
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg imYFnM"
+      className="sc-hmjpVf kBHbMj"
       color="#001428"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       text
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #001428
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg bhMmmN"
+      className="sc-hmjpVf fwhjni"
       color="#005546"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       primaryHover
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #005546
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg ilXUhz"
+      className="sc-hmjpVf gQJaJY"
       color="#C31717"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       errorHover
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #C31717
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg cCDcWv"
+      className="sc-hmjpVf hJsrQg"
       color="#5D6D74"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       secondaryHover
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #5D6D74
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg cCDcWv"
+      className="sc-hmjpVf hJsrQg"
       color="#5D6D74"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       placeHolder
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #5D6D74
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg derzLc"
+      className="sc-hmjpVf fTQMHP"
       color="#DB3A3D"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       error
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #DB3A3D
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg iTytmQ"
+      className="sc-hmjpVf fcWHBv"
       color="#008C73"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       primary
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #008C73
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg kljRZ"
+      className="sc-hmjpVf jGvTES"
       color="#E8663D"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       pending
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #E8663D
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg kfhNUX"
+      className="sc-hmjpVf bFBikk"
       color="#E8673C"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       rinkeby
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #E8673C
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg eASJVM"
+      className="sc-hmjpVf bXGsLL"
       color="#B2B5B2"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       secondaryLight
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #B2B5B2
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg eASJVM"
+      className="sc-hmjpVf bXGsLL"
       color="#B2B5B2"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       icon
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #B2B5B2
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg jUqHtf"
+      className="sc-hmjpVf kvQDRo"
       color="#A1D2CA"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       primaryLight
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #A1D2CA
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg bHxBWf"
+      className="sc-hmjpVf hJVpyo"
       color="#FFC05F"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       warning
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #FFC05F
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg clVASZ"
+      className="sc-hmjpVf bTQhpS"
       color="#D4D5D3"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       tag
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #D4D5D3
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg biidIr"
+      className="sc-hmjpVf fRTixw"
       color="#E8E7E6"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       separator
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #E8E7E6
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg dxjIMF"
+      className="sc-hmjpVf enQyKm"
       color="#FBE5C5"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       pendingTagHover
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #FBE5C5
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg dbMDCI"
+      className="sc-hmjpVf fJiCTL"
       color="#FFE6EA"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       errorTooltip
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #FFE6EA
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg kGqJtu"
+      className="sc-hmjpVf dOcjPN"
       color="#F0EFEE"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       inputField
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #F0EFEE
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg jcRjPa"
+      className="sc-hmjpVf halRNZ"
       color="#F7F5F5"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       background
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #F7F5F5
     </p>
   </div>
   <div
-    className="sc-jOFryr jiexmA"
+    className="sc-jOxtWs eMDHuU"
   >
     <div
-      className="sc-hmbstg ftqNMn"
+      className="sc-hmjpVf a-DKjk"
       color="#FFFFFF"
     />
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       white
     </p>
     <p
-      className="sc-crzoAE iNTLtH"
+      className="sc-crHmcD kMPEWD"
       size="md"
     >
       #FFFFFF

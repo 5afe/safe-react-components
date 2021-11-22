@@ -3,11 +3,11 @@
 exports[`Storyshots inputs/ButtonLink Icon Size 1`] = `
 Array [
   <button
-    className="sc-cxNHIi cZRdNE"
+    className="sc-cxpSdN ceusFQ"
     color="primary"
   >
     <span
-      className="sc-iqAclL csKvIw"
+      className="sc-iqseJM bmGbk"
       color="primary"
     >
       <svg
@@ -36,7 +36,7 @@ Array [
       </svg>
     </span>
     <p
-      className="sc-crzoAE eAMoyv sc-lmgQwP iRbvqn"
+      className="sc-crHmcD xHqyf sc-llYSUQ kLChpe"
       color="primary"
       size="lg"
     >
@@ -44,11 +44,11 @@ Array [
     </p>
   </button>,
   <button
-    className="sc-cxNHIi cZRdNE"
+    className="sc-cxpSdN ceusFQ"
     color="primary"
   >
     <span
-      className="sc-iqAclL csKvIw"
+      className="sc-iqseJM bmGbk"
       color="primary"
     >
       <svg
@@ -77,7 +77,7 @@ Array [
       </svg>
     </span>
     <p
-      className="sc-crzoAE eAMoyv sc-lmgQwP iRbvqn"
+      className="sc-crHmcD xHqyf sc-llYSUQ kLChpe"
       color="primary"
       size="lg"
     >
@@ -89,11 +89,11 @@ Array [
 
 exports[`Storyshots inputs/ButtonLink Simple Button Link 1`] = `
 <button
-  className="sc-cxNHIi cZRdNE"
+  className="sc-cxpSdN ceusFQ"
   color="primary"
 >
   <span
-    className="sc-iqAclL csKvIw"
+    className="sc-iqseJM bmGbk"
     color="primary"
   >
     <svg
@@ -122,7 +122,7 @@ exports[`Storyshots inputs/ButtonLink Simple Button Link 1`] = `
     </svg>
   </span>
   <p
-    className="sc-crzoAE eAMoyv sc-lmgQwP iRbvqn"
+    className="sc-crHmcD xHqyf sc-llYSUQ kLChpe"
     color="primary"
     size="lg"
   >

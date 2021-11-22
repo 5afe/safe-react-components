@@ -2,17 +2,17 @@
 
 exports[`Storyshots Data Display/Card Card Disabled 1`] = `
 <div
-  className="sc-bdnxRM dLzDRg"
+  className="sc-bdvvtL elqPhe"
 >
   <div
-    className="sc-gtsrHT hVABEH"
+    className="sc-gsDKAQ jDyIox"
   />
   <div
-    className="sc-gKAaRy hHycnu"
+    className="sc-gKclnd fWVfID"
     color="primary"
   >
     <p
-      className="sc-crzoAE cDTggs"
+      className="sc-crHmcD dsNHnM"
       color="white"
       size="xl"
     >
@@ -20,12 +20,12 @@ exports[`Storyshots Data Display/Card Card Disabled 1`] = `
     </p>
   </div>
   <h5
-    className="sc-kfYoZR ilVsuP"
+    className="sc-kfPuZi evetWI"
   >
     Some text
   </h5>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwajpm SioJh secondary bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV eZDxfk secondary bordered"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -45,7 +45,7 @@ exports[`Storyshots Data Display/Card Card Disabled 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqAclL hWlKVA sc-bCwfaz cWDlJU"
+        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
       >
         <svg
           height="16"
@@ -72,7 +72,7 @@ exports[`Storyshots Data Display/Card Card Disabled 1`] = `
         </svg>
       </span>
       <p
-        className="sc-crzoAE UIyUn"
+        className="sc-crHmcD dtIzoT"
         color="secondary"
         size="xl"
       >
@@ -85,14 +85,14 @@ exports[`Storyshots Data Display/Card Card Disabled 1`] = `
 
 exports[`Storyshots Data Display/Card Simple Card 1`] = `
 <div
-  className="sc-bdnxRM dLzDRg"
+  className="sc-bdvvtL elqPhe"
 >
   <div
-    className="sc-gKAaRy hHycnu"
+    className="sc-gKclnd fWVfID"
     color="primary"
   >
     <p
-      className="sc-crzoAE cDTggs"
+      className="sc-crHmcD dsNHnM"
       color="white"
       size="xl"
     >
@@ -100,12 +100,12 @@ exports[`Storyshots Data Display/Card Simple Card 1`] = `
     </p>
   </div>
   <h5
-    className="sc-kfYoZR ilVsuP"
+    className="sc-kfPuZi evetWI"
   >
     Some text
   </h5>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwajpm SioJh secondary bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV eZDxfk secondary bordered"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -125,7 +125,7 @@ exports[`Storyshots Data Display/Card Simple Card 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqAclL hWlKVA sc-bCwfaz cWDlJU"
+        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
       >
         <svg
           height="16"
@@ -152,7 +152,7 @@ exports[`Storyshots Data Display/Card Simple Card 1`] = `
         </svg>
       </span>
       <p
-        className="sc-crzoAE UIyUn"
+        className="sc-crHmcD dtIzoT"
         color="secondary"
         size="xl"
       >

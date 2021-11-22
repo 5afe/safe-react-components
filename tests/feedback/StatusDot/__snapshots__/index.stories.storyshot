@@ -3,13 +3,13 @@
 exports[`Storyshots Feedback/StatusDot Simple Status Dot 1`] = `
 Array [
   <div
-    className="sc-hOPeYd JTwTP"
+    className="sc-hOGkXu lbGTDt"
     color="rinkeby"
     size="sm"
   />,
   <br />,
   <div
-    className="sc-hOPeYd VFcWT"
+    className="sc-hOGkXu laPRYp"
     color="rinkeby"
     size="md"
   />,
