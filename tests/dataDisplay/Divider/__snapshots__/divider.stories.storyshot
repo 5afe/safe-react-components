@@ -6,7 +6,7 @@ Array [
     Some content
   </div>,
   <div
-    className="sc-eCApnc jsMSuU"
+    className="sc-eCImPb eUnHhB"
   />,
   <div>
     Some content2
@@ -29,7 +29,7 @@ exports[`Storyshots Data Display/Divider Vertical 1`] = `
     Some content
   </div>
   <div
-    className="sc-jSFjdj dRqwzs"
+    className="sc-jRQBWg llepXb"
   />
   <div>
     Some content2

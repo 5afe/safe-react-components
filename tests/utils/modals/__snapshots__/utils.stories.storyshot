@@ -2,10 +2,10 @@
 
 exports[`Storyshots Utils/Modals/utils/FooterConfirmation Modal Footer 1`] = `
 <div
-  className="sc-amiJK tcUoO"
+  className="sc-ZOtfp eSFgdu"
 >
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwajpm fbcszT primary outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV hmsnQe primary outlined"
     disabled={false}
     onBlur={[Function]}
     onClick={[Function]}
@@ -29,7 +29,7 @@ exports[`Storyshots Utils/Modals/utils/FooterConfirmation Modal Footer 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwajpm dQVIuE primary contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV primary contained"
     disabled={false}
     onBlur={[Function]}
     onClick={[Function]}
@@ -57,10 +57,10 @@ exports[`Storyshots Utils/Modals/utils/FooterConfirmation Modal Footer 1`] = `
 
 exports[`Storyshots Utils/Modals/utils/FooterConfirmation Ok Disabled 1`] = `
 <div
-  className="sc-amiJK tcUoO"
+  className="sc-ZOtfp eSFgdu"
 >
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwajpm fbcszT primary outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV hmsnQe primary outlined"
     disabled={false}
     onBlur={[Function]}
     onClick={[Function]}
@@ -84,7 +84,7 @@ exports[`Storyshots Utils/Modals/utils/FooterConfirmation Ok Disabled 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwajpm dQVIuE primary contained Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV primary contained Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onClick={[Function]}

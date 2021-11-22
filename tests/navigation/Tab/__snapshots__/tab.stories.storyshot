@@ -3,7 +3,7 @@
 exports[`Storyshots Navigation/Tab Simple Tab 1`] = `
 Array [
   <div
-    className="sc-efHYUO eNVa-dl"
+    className="sc-efQSVx djjPph"
   >
     <div
       className="MuiTabs-root WithStyles(ForwardRef(Tabs))-root-83"
@@ -59,10 +59,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -90,7 +90,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE hzFUtR"
+                  className="sc-crHmcD dtryax"
                   color="text"
                   size="sm"
                 >
@@ -123,10 +123,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -149,7 +149,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE hzFUtR"
+                  className="sc-crHmcD dtryax"
                   color="text"
                   size="sm"
                 >
@@ -182,10 +182,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -217,7 +217,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE ezHljt"
+                  className="sc-crHmcD gBuWTd"
                   color="primary"
                   size="sm"
                 >
@@ -254,10 +254,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -281,7 +281,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE hzFUtR"
+                  className="sc-crHmcD dtryax"
                   color="text"
                   size="sm"
                 >
@@ -329,7 +329,7 @@ Array [
 exports[`Storyshots Navigation/Tab Tab Contained 1`] = `
 Array [
   <div
-    className="sc-efHYUO bLzHiW"
+    className="sc-efQSVx elQLWu"
   >
     <div
       className="MuiTabs-root WithStyles(ForwardRef(Tabs))-root-93"
@@ -385,10 +385,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -416,7 +416,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE hzFUtR"
+                  className="sc-crHmcD dtryax"
                   color="text"
                   size="sm"
                 >
@@ -449,10 +449,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -475,7 +475,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE hzFUtR"
+                  className="sc-crHmcD dtryax"
                   color="text"
                   size="sm"
                 >
@@ -508,10 +508,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -543,7 +543,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE ezHljt"
+                  className="sc-crHmcD gBuWTd"
                   color="primary"
                   size="sm"
                 >
@@ -580,10 +580,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -607,7 +607,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE hzFUtR"
+                  className="sc-crHmcD dtryax"
                   color="text"
                   size="sm"
                 >
@@ -655,7 +655,7 @@ Array [
 exports[`Storyshots Navigation/Tab Tab Contained Full 1`] = `
 Array [
   <div
-    className="sc-efHYUO bLzHiW"
+    className="sc-efQSVx elQLWu"
   >
     <div
       className="MuiTabs-root WithStyles(ForwardRef(Tabs))-root-103"
@@ -699,10 +699,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -730,7 +730,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE hzFUtR"
+                  className="sc-crHmcD dtryax"
                   color="text"
                   size="sm"
                 >
@@ -763,10 +763,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -789,7 +789,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE hzFUtR"
+                  className="sc-crHmcD dtryax"
                   color="text"
                   size="sm"
                 >
@@ -822,10 +822,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -857,7 +857,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE ezHljt"
+                  className="sc-crHmcD gBuWTd"
                   color="primary"
                   size="sm"
                 >
@@ -894,10 +894,10 @@ Array [
               className="MuiTab-wrapper"
             >
               <div
-                className="sc-dIsUp lmaRco"
+                className="sc-egiyK fyscgV"
               >
                 <span
-                  className="sc-iqAclL hWlKVA"
+                  className="sc-iqseJM iJclAE"
                 >
                   <svg
                     height="16"
@@ -921,7 +921,7 @@ Array [
                   </svg>
                 </span>
                 <p
-                  className="sc-crzoAE hzFUtR"
+                  className="sc-crHmcD dtryax"
                   color="text"
                   size="sm"
                 >

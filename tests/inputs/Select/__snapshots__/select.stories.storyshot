@@ -6,7 +6,7 @@ exports[`Storyshots Inputs/Select Simple Select 1`] = `
     className="MuiFormControl-root"
   >
     <div
-      className="MuiInputBase-root MuiInput-root MuiInput-underline sc-bYwzuL kNypSa MuiInputBase-formControl MuiInput-formControl"
+      className="MuiInputBase-root MuiInput-root MuiInput-underline sc-bYoBSM dNRdPa MuiInputBase-formControl MuiInput-formControl"
       onClick={[Function]}
     >
       <div

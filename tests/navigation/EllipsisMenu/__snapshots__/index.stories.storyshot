@@ -2,12 +2,12 @@
 
 exports[`Storyshots navigation/EllipsisMenu Simple Ellipsis Menu 1`] = `
 <div
-  className="sc-jNnpgg tGggW"
+  className="sc-jObWnj eAkdFj"
   onClick={[Function]}
   onTouchEnd={[Function]}
 >
   <button
-    className="sc-bBjRSN eeMWvx"
+    className="sc-bBHHxi dcKqLO"
     onClick={[Function]}
   >
     <span>
@@ -41,7 +41,7 @@ exports[`Storyshots navigation/EllipsisMenu Simple Ellipsis Menu 1`] = `
     </span>
   </button>
   <div
-    className="MuiPopover-root sc-cTJkRt bcUCAc"
+    className="MuiPopover-root sc-cTAqQK hSKxhO"
     onKeyDown={[Function]}
     role="presentation"
     style={
@@ -78,7 +78,7 @@ exports[`Storyshots navigation/EllipsisMenu Simple Ellipsis Menu 1`] = `
         tabIndex={-1}
       >
         <div
-          className="sc-dPaNzc hFLjFf"
+          className="sc-dPiLbb ebbATn"
           tabIndex={0}
         >
           <li
@@ -103,7 +103,7 @@ exports[`Storyshots navigation/EllipsisMenu Simple Ellipsis Menu 1`] = `
           </li>
         </div>
         <div
-          className="sc-dPaNzc hFLjFf"
+          className="sc-dPiLbb ebbATn"
         >
           <li
             aria-disabled={false}

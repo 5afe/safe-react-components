@@ -2,14 +2,14 @@
 
 exports[`Storyshots navigation/Menu Loader 1`] = `
 <div
-  className="sc-ciSkZP jxvMUO"
+  className="sc-cidDSM NA-dXl"
 >
   <button
-    className="sc-cxNHIi cZRdNE"
+    className="sc-cxpSdN ceusFQ"
     color="primary"
   >
     <p
-      className="sc-crzoAE eAMoyv sc-lmgQwP iRbvqn"
+      className="sc-crHmcD xHqyf sc-llYSUQ kLChpe"
       color="primary"
       size="lg"
     >
@@ -17,11 +17,11 @@ exports[`Storyshots navigation/Menu Loader 1`] = `
     </p>
   </button>
   <button
-    className="sc-cxNHIi hyVEtQ"
+    className="sc-cxpSdN htLFPg"
     color="error"
   >
     <span
-      className="sc-iqAclL kerxfE"
+      className="sc-iqseJM cqxqBM"
       color="error"
     >
       <svg
@@ -49,7 +49,7 @@ exports[`Storyshots navigation/Menu Loader 1`] = `
       </svg>
     </span>
     <p
-      className="sc-crzoAE iLAaff sc-lmgQwP iRbvqn"
+      className="sc-crHmcD eBHMfv sc-llYSUQ kLChpe"
       color="error"
       size="lg"
     >

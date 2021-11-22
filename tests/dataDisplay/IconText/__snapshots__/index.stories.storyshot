@@ -3,10 +3,10 @@
 exports[`Storyshots Data Display/Icon Text Color 1`] = `
 Array [
   <div
-    className="sc-dIsUp MeUTz"
+    className="sc-egiyK koKhJq"
   >
     <span
-      className="sc-iqAclL eXekar"
+      className="sc-iqseJM gabjDn"
       color="warning"
     >
       <svg
@@ -34,7 +34,7 @@ Array [
       </svg>
     </span>
     <p
-      className="sc-crzoAE fKYsQH"
+      className="sc-crHmcD eaxXaP"
       color="error"
       size="xl"
     >
@@ -42,17 +42,17 @@ Array [
     </p>
   </div>,
   <div
-    className="sc-bqGGPW dloCGY"
+    className="sc-bqiRlB VteSZ"
   >
     <p
-      className="sc-crzoAE UIyUn"
+      className="sc-crHmcD dtIzoT"
       color="text"
       size="xl"
     >
       External link
     </p>
     <span
-      className="sc-iqAclL csKvIw"
+      className="sc-iqseJM bmGbk"
       color="primary"
     >
       <svg
@@ -87,10 +87,10 @@ Array [
 exports[`Storyshots Data Display/Icon Text Icon Margin 1`] = `
 Array [
   <div
-    className="sc-dIsUp lmaRco"
+    className="sc-egiyK fyscgV"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -118,23 +118,23 @@ Array [
       </svg>
     </span>
     <p
-      className="sc-crzoAE fwaroE"
+      className="sc-crHmcD dPdEko"
       size="md"
     >
       Some text
     </p>
   </div>,
   <div
-    className="sc-bqGGPW bMalYr"
+    className="sc-bqiRlB hWJdoq"
   >
     <p
-      className="sc-crzoAE UIyUn"
+      className="sc-crHmcD dtIzoT"
       size="xl"
     >
       Some text
     </p>
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -168,16 +168,16 @@ Array [
 exports[`Storyshots Data Display/Icon Text Icon Position 1`] = `
 Array [
   <div
-    className="sc-bqGGPW btTmJG"
+    className="sc-bqiRlB kttyuD"
   >
     <p
-      className="sc-crzoAE hzFUtR"
+      className="sc-crHmcD dtryax"
       size="sm"
     >
       Some text
     </p>
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="16"
@@ -206,16 +206,16 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-bqGGPW btTmJG"
+    className="sc-bqiRlB kttyuD"
   >
     <p
-      className="sc-crzoAE UIyUn"
+      className="sc-crHmcD dtIzoT"
       size="xl"
     >
       Some text
     </p>
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="16"
@@ -244,16 +244,16 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-bqGGPW btTmJG"
+    className="sc-bqiRlB kttyuD"
   >
     <p
-      className="sc-crzoAE hzFUtR"
+      className="sc-crHmcD dtryax"
       size="sm"
     >
       Some text
     </p>
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -282,16 +282,16 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-bqGGPW btTmJG"
+    className="sc-bqiRlB kttyuD"
   >
     <p
-      className="sc-crzoAE UIyUn"
+      className="sc-crHmcD dtIzoT"
       size="xl"
     >
       Some text
     </p>
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -325,10 +325,10 @@ Array [
 exports[`Storyshots Data Display/Icon Text Sizes 1`] = `
 Array [
   <div
-    className="sc-dIsUp jJoLmt"
+    className="sc-egiyK cgERpw"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="16"
@@ -356,17 +356,17 @@ Array [
       </svg>
     </span>
     <p
-      className="sc-crzoAE hzFUtR"
+      className="sc-crHmcD dtryax"
       size="sm"
     >
       Some text
     </p>
   </div>,
   <div
-    className="sc-dIsUp jJoLmt"
+    className="sc-egiyK cgERpw"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="16"
@@ -394,17 +394,17 @@ Array [
       </svg>
     </span>
     <p
-      className="sc-crzoAE UIyUn"
+      className="sc-crHmcD dtIzoT"
       size="xl"
     >
       Some text
     </p>
   </div>,
   <div
-    className="sc-dIsUp jJoLmt"
+    className="sc-egiyK cgERpw"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -432,17 +432,17 @@ Array [
       </svg>
     </span>
     <p
-      className="sc-crzoAE hzFUtR"
+      className="sc-crHmcD dtryax"
       size="sm"
     >
       Some text
     </p>
   </div>,
   <div
-    className="sc-dIsUp jJoLmt"
+    className="sc-egiyK cgERpw"
   >
     <span
-      className="sc-iqAclL hWlKVA"
+      className="sc-iqseJM iJclAE"
     >
       <svg
         height="24"
@@ -470,7 +470,7 @@ Array [
       </svg>
     </span>
     <p
-      className="sc-crzoAE UIyUn"
+      className="sc-crHmcD dtIzoT"
       size="xl"
     >
       Some text

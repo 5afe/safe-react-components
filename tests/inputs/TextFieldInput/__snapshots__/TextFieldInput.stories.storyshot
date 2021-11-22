@@ -7,7 +7,7 @@ exports[`Storyshots Inputs/TextFieldInput Custom CSS Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJMGnK TQQay sc-fuISkM izYzyG"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp LbrVu sc-fvxzrP eWJijy"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
@@ -48,7 +48,7 @@ exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJMGnK dZDLCy"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp ipukqW"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-disabled Mui-disabled MuiFormLabel-filled"
@@ -89,7 +89,7 @@ exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJMGnK fJRZyJ"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp vKmSl"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
@@ -122,7 +122,7 @@ exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
         className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-hiddenLabel MuiInputAdornment-filled"
       >
         <span
-          className="sc-iqAclL hWlKVA"
+          className="sc-iqseJM iJclAE"
         >
           <svg
             height="24"
@@ -162,7 +162,7 @@ exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJMGnK TQQay"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp LbrVu"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
@@ -203,7 +203,7 @@ exports[`Storyshots Inputs/TextFieldInput Simple Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJMGnK fJRZyJ"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp vKmSl"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
@@ -245,7 +245,7 @@ exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJMGnK fJRZyJ"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp vKmSl"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
@@ -263,7 +263,7 @@ exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
         className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-hiddenLabel MuiInputAdornment-filled"
       >
         <span
-          className="sc-iqAclL hWlKVA"
+          className="sc-iqseJM iJclAE"
         >
           <svg
             height="24"
@@ -318,7 +318,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJMGnK cHOFKQ"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp kkqAtM"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-error Mui-error MuiFormLabel-filled"
@@ -369,7 +369,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     className="MuiTypography-root MuiTypography-body1"
   >
     <span
-      className="MuiSwitch-root sc-kLojOw eilJil"
+      className="MuiSwitch-root sc-kLwhqv ckEIHj"
     >
       <span
         aria-disabled={false}
@@ -411,7 +411,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     className="MuiTypography-root MuiTypography-body1"
   >
     <span
-      className="MuiSwitch-root sc-kLojOw kBATVx"
+      className="MuiSwitch-root sc-kLwhqv eEUkNP"
     >
       <span
         aria-disabled={false}
@@ -453,7 +453,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     className="MuiTypography-root MuiTypography-body1"
   >
     <span
-      className="MuiSwitch-root sc-kLojOw kBATVx"
+      className="MuiSwitch-root sc-kLwhqv eEUkNP"
     >
       <span
         aria-disabled={false}
@@ -492,7 +492,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     Show Errors in The Label
   </p>
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJMGnK byJZpO"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp jOsIxG"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled Mui-error Mui-error"
@@ -545,7 +545,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
   >
     Hide Label: 
     <span
-      className="MuiSwitch-root sc-kLojOw eilJil"
+      className="MuiSwitch-root sc-kLwhqv ckEIHj"
     >
       <span
         aria-disabled={false}
@@ -583,7 +583,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
     </span>
   </p>
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJMGnK fJRZyJ"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp vKmSl"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"

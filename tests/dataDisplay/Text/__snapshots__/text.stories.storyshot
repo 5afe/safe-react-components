@@ -2,7 +2,7 @@
 
 exports[`Storyshots Data Display/Text Bold 1`] = `
 <p
-  className="sc-crzoAE bsijYz"
+  className="sc-crHmcD jViPiX"
   size="sm"
 >
   Some Text...
@@ -11,7 +11,7 @@ exports[`Storyshots Data Display/Text Bold 1`] = `
 
 exports[`Storyshots Data Display/Text Centered 1`] = `
 <p
-  className="sc-crzoAE dkvTHi"
+  className="sc-crHmcD dUWTha"
   size="sm"
 >
   Some Text...
@@ -20,7 +20,7 @@ exports[`Storyshots Data Display/Text Centered 1`] = `
 
 exports[`Storyshots Data Display/Text Custom Color 1`] = `
 <p
-  className="sc-crzoAE ezHljt"
+  className="sc-crHmcD gBuWTd"
   color="primary"
   size="sm"
 >
@@ -31,25 +31,25 @@ exports[`Storyshots Data Display/Text Custom Color 1`] = `
 exports[`Storyshots Data Display/Text Custom Size 1`] = `
 Array [
   <p
-    className="sc-crzoAE hzFUtR"
+    className="sc-crHmcD dtryax"
     size="sm"
   >
     Some Text...
   </p>,
   <p
-    className="sc-crzoAE fwaroE"
+    className="sc-crHmcD dPdEko"
     size="md"
   >
     Some Text...
   </p>,
   <p
-    className="sc-crzoAE bvSnYT"
+    className="sc-crHmcD duwBpz"
     size="lg"
   >
     Some Text...
   </p>,
   <p
-    className="sc-crzoAE UIyUn"
+    className="sc-crHmcD dtIzoT"
     size="xl"
   >
     Some Text...
@@ -60,13 +60,13 @@ Array [
 exports[`Storyshots Data Display/Text Paragraph Element 1`] = `
 Array [
   <p
-    className="sc-crzoAE hzFUtR"
+    className="sc-crHmcD dtryax"
     size="sm"
   >
     Paragraph element is by default
   </p>,
   <p
-    className="sc-crzoAE hzFUtR"
+    className="sc-crHmcD dtryax"
     size="sm"
   >
     Some Text...
@@ -76,7 +76,7 @@ Array [
 
 exports[`Storyshots Data Display/Text Simple Texttext 1`] = `
 <p
-  className="sc-crzoAE hzFUtR"
+  className="sc-crHmcD dtryax"
   size="sm"
 >
   Some Text...
@@ -86,13 +86,13 @@ exports[`Storyshots Data Display/Text Simple Texttext 1`] = `
 exports[`Storyshots Data Display/Text Span Element 1`] = `
 Array [
   <span
-    className="sc-crzoAE hzFUtR"
+    className="sc-crHmcD dtryax"
     size="sm"
   >
     This are span elements.
   </span>,
   <span
-    className="sc-crzoAE hzFUtR"
+    className="sc-crHmcD dtryax"
     size="sm"
   >
     Some Text in a span...
@@ -103,7 +103,7 @@ Array [
 exports[`Storyshots Data Display/Text With Tooltip 1`] = `
 <span
   aria-describedby={null}
-  className="sc-crzoAE ezHljt"
+  className="sc-crHmcD gBuWTd"
   color="primary"
   onBlur={[Function]}
   onFocus={[Function]}

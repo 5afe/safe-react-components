@@ -35,9 +35,9 @@ export const ColorsSample = (): React.ReactElement => {
       if (typeof (theme.colors as Record<string, unknown>)[name] === 'string') {
         acc.push({
           name,
-          code: ((theme.colors as Record<string, unknown>)[
-            name
-          ] as string).toUpperCase(),
+          code: (
+            (theme.colors as Record<string, unknown>)[name] as string
+          ).toUpperCase(),
         });
       }
       return acc;
