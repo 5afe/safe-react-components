@@ -2,7 +2,7 @@
 
 exports[`Storyshots Utils/CopyToClipboardBtn Copy 1`] = `
 <button
-  className="sc-laZMeE GhNCJ"
+  className="sc-iNiQyp cVPbvB"
   onClick={[Function]}
   onKeyDown={[Function]}
   onMouseLeave={[Function]}
@@ -46,7 +46,7 @@ exports[`Storyshots Utils/CopyToClipboardBtn Copy 1`] = `
 
 exports[`Storyshots Utils/CopyToClipboardBtn Copy With Different Logo 1`] = `
 <button
-  className="sc-laZMeE GhNCJ"
+  className="sc-iNiQyp cVPbvB"
   onClick={[Function]}
   onKeyDown={[Function]}
   onMouseLeave={[Function]}

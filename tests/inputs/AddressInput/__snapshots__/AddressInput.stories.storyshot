@@ -7,7 +7,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gAUHTP"
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK dZDLCy"
     spellCheck={false}
   >
     <label
@@ -33,9 +33,10 @@ exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
+        placeholder="Ethereum address"
         required={false}
         type="text"
-        value="0x123"
+        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
   </div>
@@ -49,7 +50,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gTdbjz"
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK TQQay"
     spellCheck={false}
   >
     <label
@@ -75,9 +76,10 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
+        placeholder="Ethereum address"
         required={false}
         type="text"
-        value="0x123"
+        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
       <div
         className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled"
@@ -120,7 +122,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gTdbjz"
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK TQQay"
     spellCheck={false}
   >
     <label
@@ -146,9 +148,10 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
+        placeholder="Ethereum address"
         required={false}
         type="text"
-        value="0x123"
+        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
       <div
         className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled"
@@ -176,7 +179,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gTdbjz"
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK TQQay"
     spellCheck={false}
   >
     <label
@@ -202,9 +205,10 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
+        placeholder="Ethereum address"
         required={false}
         type="text"
-        value="rin:0x123"
+        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
   </div>
@@ -218,7 +222,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-dsXzNU epPxxU"
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK cHOFKQ"
     spellCheck={false}
   >
     <label
@@ -245,9 +249,10 @@ exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
+        placeholder="Ethereum address"
         required={false}
         type="text"
-        value="0x123"
+        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
     <p
@@ -267,7 +272,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Network Prefix 1`] = 
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gTdbjz"
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK TQQay"
     spellCheck={false}
   >
     <label
@@ -293,6 +298,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Network Prefix 1`] = 
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
+        placeholder="Ethereum address"
         required={false}
         type="text"
         value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
@@ -300,7 +306,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Network Prefix 1`] = 
     </div>
   </div>
   <pre>
-    Address: 
+    Address in the state: 
     0x83eC7B0506556a7749306D69681aDbDbd08f0769
   </pre>
 </form>
@@ -356,7 +362,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-dsXzNU gTdbjz"
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK TQQay"
     spellCheck={false}
   >
     <label
@@ -382,9 +388,10 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
+        placeholder="Ethereum address"
         required={false}
         type="text"
-        value="0x123"
+        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
   </div>
@@ -398,7 +405,7 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-dsXzNU epPxxU"
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK cHOFKQ"
     spellCheck={false}
   >
     <label
@@ -425,9 +432,10 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
+        placeholder="Ethereum address"
         required={false}
         type="text"
-        value="0x83eC7B0506556a7749306D69681aDbDbd08f0769"
+        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
     <p
@@ -446,17 +454,64 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
   noValidate={true}
   onSubmit={[Function]}
 >
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+    style={
+      Object {
+        "marginBottom": "16px",
+      }
+    }
+  >
+    <span
+      className="MuiSwitch-root sc-kLojOw eilJil"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-57 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-58 Mui-checked"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={true}
+            className="PrivateSwitchBase-input-60 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+    Show Network Prefix (rin)
+  </p>
   <div
-    className="MuiFormControl-root MuiTextField-root sc-dsXzNU eLWWsU"
+    className="MuiFormControl-root MuiTextField-root sc-jJMGnK TQQay"
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
       data-shrink={true}
       htmlFor="address-input"
       id="address-input-label"
     >
-      Address
+      Ethereum Address
     </label>
     <div
       className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
@@ -465,7 +520,7 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel"
+        className="MuiInputBase-input MuiFilledInput-input"
         disabled={false}
         id="address-input"
         name="address"
@@ -476,9 +531,45 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value=""
+        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
   </div>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+    style={
+      Object {
+        "marginTop": "24px",
+      }
+    }
+  >
+    Address value in the State:
+     
+  </p>
+  <pre
+    style={
+      Object {
+        "backgroundColor": "lightgrey",
+        "borderRadius": "4px",
+        "display": "inline-block",
+        "margin": "0",
+        "marginLeft": "8px",
+        "minWidth": "500px",
+        "padding": "8px",
+      }
+    }
+  >
+    0x83eC7B0506556a7749306D69681aDbDbd08f0769
+  </pre>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+    style={
+      Object {
+        "marginTop": "16px",
+      }
+    }
+  >
+    You can use ENS names (like safe.test) with the getAddressFromDomain prop
+  </p>
 </form>
 `;

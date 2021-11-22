@@ -2,10 +2,10 @@
 
 exports[`Storyshots navigation/Breadcrumb Breadcrumbs 1`] = `
 <div
-  className="sc-ciSkZP eyAhli"
+  className="sc-jcwpoC fquoHA"
 >
   <div
-    className="sc-jcwpoC tWYIb"
+    className="sc-carFqZ fgUauM"
   >
     <span
       className="sc-iqAclL csKvIw"
@@ -33,7 +33,7 @@ exports[`Storyshots navigation/Breadcrumb Breadcrumbs 1`] = `
       </svg>
     </span>
     <a
-      className="sc-giAqHp gZyfxW sc-carFqZ kFspHF"
+      className="sc-giAqHp gZyfxW sc-iTVJFM gOGtSu"
       color="primary"
       size="md"
     >
@@ -57,10 +57,10 @@ exports[`Storyshots navigation/Breadcrumb Breadcrumbs 1`] = `
     /
   </p>
   <div
-    className="sc-jcwpoC tWYIb"
+    className="sc-carFqZ fgUauM"
   >
     <p
-      className="sc-crzoAE iKEuEX sc-iTVJFM hlMyma"
+      className="sc-crzoAE iKEuEX sc-iBzEeX hFcSzF"
       color="placeHolder"
       size="md"
     >
@@ -72,10 +72,10 @@ exports[`Storyshots navigation/Breadcrumb Breadcrumbs 1`] = `
 
 exports[`Storyshots navigation/Breadcrumb Counter 1`] = `
 <div
-  className="sc-ciSkZP eyAhli"
+  className="sc-jcwpoC fquoHA"
 >
   <div
-    className="sc-jcwpoC tWYIb"
+    className="sc-carFqZ fgUauM"
   >
     <span
       className="sc-iqAclL csKvIw"
@@ -103,7 +103,7 @@ exports[`Storyshots navigation/Breadcrumb Counter 1`] = `
       </svg>
     </span>
     <a
-      className="sc-giAqHp gZyfxW sc-carFqZ kFspHF"
+      className="sc-giAqHp gZyfxW sc-iTVJFM gOGtSu"
       color="primary"
       size="md"
     >
@@ -124,10 +124,10 @@ exports[`Storyshots navigation/Breadcrumb Counter 1`] = `
 
 exports[`Storyshots navigation/Breadcrumb Full Options 1`] = `
 <div
-  className="sc-ciSkZP eyAhli"
+  className="sc-jcwpoC fquoHA"
 >
   <div
-    className="sc-jcwpoC tWYIb"
+    className="sc-carFqZ fgUauM"
   >
     <span
       className="sc-iqAclL csKvIw"
@@ -155,7 +155,7 @@ exports[`Storyshots navigation/Breadcrumb Full Options 1`] = `
       </svg>
     </span>
     <a
-      className="sc-giAqHp gZyfxW sc-carFqZ kFspHF"
+      className="sc-giAqHp gZyfxW sc-iTVJFM gOGtSu"
       color="primary"
       size="md"
     >
@@ -179,7 +179,7 @@ exports[`Storyshots navigation/Breadcrumb Full Options 1`] = `
     /
   </p>
   <div
-    className="sc-jcwpoC tWYIb"
+    className="sc-carFqZ fgUauM"
   >
     <span
       className="sc-iqAclL OivPn"
@@ -207,7 +207,7 @@ exports[`Storyshots navigation/Breadcrumb Full Options 1`] = `
       </svg>
     </span>
     <p
-      className="sc-crzoAE iKEuEX sc-iTVJFM hlMyma"
+      className="sc-crzoAE iKEuEX sc-iBzEeX hFcSzF"
       color="placeHolder"
       size="md"
     >
@@ -231,7 +231,7 @@ exports[`Storyshots navigation/Breadcrumb Full Options 1`] = `
     /
   </p>
   <div
-    className="sc-jcwpoC tWYIb"
+    className="sc-carFqZ fgUauM"
   >
     <span
       className="sc-iqAclL OivPn"
@@ -259,7 +259,7 @@ exports[`Storyshots navigation/Breadcrumb Full Options 1`] = `
       </svg>
     </span>
     <p
-      className="sc-crzoAE iKEuEX sc-iTVJFM hlMyma"
+      className="sc-crzoAE iKEuEX sc-iBzEeX hFcSzF"
       color="placeHolder"
       size="md"
     >
@@ -280,10 +280,10 @@ exports[`Storyshots navigation/Breadcrumb Full Options 1`] = `
 
 exports[`Storyshots navigation/Breadcrumb Root Element Alone 1`] = `
 <div
-  className="sc-ciSkZP eyAhli"
+  className="sc-jcwpoC fquoHA"
 >
   <div
-    className="sc-jcwpoC tWYIb"
+    className="sc-carFqZ fgUauM"
   >
     <span
       className="sc-iqAclL csKvIw"
@@ -310,7 +310,7 @@ exports[`Storyshots navigation/Breadcrumb Root Element Alone 1`] = `
       </svg>
     </span>
     <a
-      className="sc-giAqHp gZyfxW sc-carFqZ kFspHF"
+      className="sc-giAqHp gZyfxW sc-iTVJFM gOGtSu"
       color="primary"
       size="md"
     >
@@ -322,10 +322,10 @@ exports[`Storyshots navigation/Breadcrumb Root Element Alone 1`] = `
 
 exports[`Storyshots navigation/Breadcrumb Sub Section 1`] = `
 <div
-  className="sc-ciSkZP eyAhli"
+  className="sc-jcwpoC fquoHA"
 >
   <div
-    className="sc-jcwpoC tWYIb"
+    className="sc-carFqZ fgUauM"
   >
     <span
       className="sc-iqAclL csKvIw"
@@ -357,7 +357,7 @@ exports[`Storyshots navigation/Breadcrumb Sub Section 1`] = `
       </svg>
     </span>
     <a
-      className="sc-giAqHp gZyfxW sc-carFqZ kFspHF"
+      className="sc-giAqHp gZyfxW sc-iTVJFM gOGtSu"
       color="primary"
       size="md"
     >
@@ -372,10 +372,10 @@ exports[`Storyshots navigation/Breadcrumb Sub Section 1`] = `
     /
   </p>
   <div
-    className="sc-jcwpoC tWYIb"
+    className="sc-carFqZ fgUauM"
   >
     <p
-      className="sc-crzoAE iKEuEX sc-iTVJFM hlMyma"
+      className="sc-crzoAE iKEuEX sc-iBzEeX hFcSzF"
       color="placeHolder"
       size="md"
     >
