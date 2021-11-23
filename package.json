@@ -25,6 +25,7 @@
   "author": "Gnosis (https://gnosis.pm)",
   "license": "MIT",
   "dependencies": {
+    "web3-utils": "^1.6.0",
     "react-media": "^1.10.0"
   },
   "devDependencies": {
@@ -33,6 +34,7 @@
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
     "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.0",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-docs": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",

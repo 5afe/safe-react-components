@@ -14,7 +14,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw fMPzgy"
+          className="sc-gWXbKe cfMllU"
           disabled={false}
         >
           <span
@@ -50,7 +50,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiStepLabel-completed MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe cOwFWJ"
+            className="sc-cCcXHH gIKMce"
           >
             Transaction submitted
           </p>
@@ -75,7 +75,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw fMPzgy"
+          className="sc-gWXbKe cfMllU"
           disabled={false}
         >
           2
@@ -88,7 +88,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiStepLabel-active MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe oKZJW"
+            className="sc-cCcXHH hCoGid"
           >
             Validating transaction
           </p>
@@ -113,7 +113,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw dWcoMW"
+          className="sc-gWXbKe biyjpw"
           disabled={true}
         >
           3
@@ -126,7 +126,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe jxYqdW"
+            className="sc-cCcXHH lbBRHV"
           >
             Deploying smart contract
           </p>
@@ -151,7 +151,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw dWcoMW"
+          className="sc-gWXbKe biyjpw"
           disabled={true}
         >
           4
@@ -164,7 +164,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe jxYqdW"
+            className="sc-cCcXHH lbBRHV"
           >
             Generating your Safe
           </p>
@@ -189,7 +189,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw dWcoMW"
+          className="sc-gWXbKe biyjpw"
           disabled={true}
         >
           5
@@ -202,7 +202,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe jxYqdW"
+            className="sc-cCcXHH lbBRHV"
           >
             Result
           </p>
@@ -227,7 +227,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw fMPzgy"
+          className="sc-gWXbKe cfMllU"
           disabled={false}
         >
           <span
@@ -263,7 +263,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiStepLabel-completed MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe cOwFWJ"
+            className="sc-cCcXHH gIKMce"
           >
             Transaction submitted
           </p>
@@ -288,7 +288,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw egZsda"
+          className="sc-gWXbKe fxoWhA"
           disabled={false}
         >
           2
@@ -301,7 +301,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiStepLabel-active MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe bVACCW"
+            className="sc-cCcXHH gUfCdJ"
           >
             Validating transaction
           </p>
@@ -326,7 +326,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw dWcoMW"
+          className="sc-gWXbKe biyjpw"
           disabled={true}
         >
           3
@@ -339,7 +339,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe jxYqdW"
+            className="sc-cCcXHH lbBRHV"
           >
             Deploying smart contract
           </p>
@@ -364,7 +364,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw dWcoMW"
+          className="sc-gWXbKe biyjpw"
           disabled={true}
         >
           4
@@ -377,7 +377,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe jxYqdW"
+            className="sc-cCcXHH lbBRHV"
           >
             Generating your Safe
           </p>
@@ -402,7 +402,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw dWcoMW"
+          className="sc-gWXbKe biyjpw"
           disabled={true}
         >
           5
@@ -415,7 +415,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe jxYqdW"
+            className="sc-cCcXHH lbBRHV"
           >
             Result
           </p>
@@ -440,7 +440,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw fMPzgy"
+          className="sc-gWXbKe cfMllU"
           disabled={false}
         >
           <span
@@ -476,7 +476,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiStepLabel-completed MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe cOwFWJ"
+            className="sc-cCcXHH gIKMce"
           >
             Transaction submitted
           </p>
@@ -501,7 +501,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw fMPzgy"
+          className="sc-gWXbKe cfMllU"
           disabled={false}
         >
           2
@@ -514,7 +514,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiStepLabel-active MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe oKZJW"
+            className="sc-cCcXHH hCoGid"
           >
             Validating transaction
           </p>
@@ -539,7 +539,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw dWcoMW"
+          className="sc-gWXbKe biyjpw"
           disabled={true}
         >
           3
@@ -552,7 +552,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe jxYqdW"
+            className="sc-cCcXHH lbBRHV"
           >
             Deploying smart contract
           </p>
@@ -577,7 +577,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw dWcoMW"
+          className="sc-gWXbKe biyjpw"
           disabled={true}
         >
           4
@@ -590,7 +590,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe jxYqdW"
+            className="sc-cCcXHH lbBRHV"
           >
             Generating your Safe
           </p>
@@ -615,7 +615,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-hiCibw dWcoMW"
+          className="sc-gWXbKe biyjpw"
           disabled={true}
         >
           5
@@ -628,7 +628,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
           className="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
         >
           <p
-            className="sc-gWXbKe jxYqdW"
+            className="sc-cCcXHH lbBRHV"
           >
             Result
           </p>

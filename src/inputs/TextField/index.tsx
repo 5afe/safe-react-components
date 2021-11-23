@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import TextFieldMui, {
   StandardTextFieldProps,
   TextFieldProps,
@@ -44,6 +44,9 @@ const CustomTextField = styled((props: TextFieldProps) => (
   }
 `;
 
+/**
+ * @deprecated This TextField Component is coupled to React Final Form use TextFieldInput instead
+ */
 function TextField({
   input: inputProps,
   meta,
@@ -62,6 +65,13 @@ function TextField({
     ) : null,
     readOnly,
   };
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'development') {
+      console.warn('TextField is deprecated, use TextFieldInput instead');
+    }
+  }, []);
+
   return (
     <CustomTextField
       {...rest}
@@ -70,6 +80,7 @@ function TextField({
       InputProps={customInputBaseProps}
       inputProps={inputProps}
       color="primary"
+      variant="filled"
     />
   );
 }
