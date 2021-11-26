@@ -1,4 +1,11 @@
-import React, { ReactElement, useState, ChangeEvent, useEffect } from 'react';
+import React, {
+  ReactElement,
+  useState,
+  ChangeEvent,
+  useEffect,
+  useCallback,
+  useRef,
+} from 'react';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
@@ -37,24 +44,44 @@ function AddressInput({
   getAddressFromDomain,
   showLoadingSpinner,
   InputProps,
+  inputProps,
   ...rest
 }: AddressInputProps): ReactElement {
-  const [prefix, setPrefix] = useState(networkPrefix);
   const [isLoadingENSResolution, setIsLoadingENSResolution] = useState(false);
-
+  const inputRef = useRef<HTMLInputElement>();
   const throttle = useThrottle();
 
-  // ENS resolution
+  const updateInputValue = useCallback(
+    (value = '', addNetworkPrefix = false) => {
+      if (inputRef.current) {
+        const checksumAddress = checksumValidAddress(value);
+        inputRef.current.value = addNetworkPrefix
+          ? addPrefix(checksumAddress, networkPrefix, showNetworkPrefix)
+          : checksumAddress;
+      }
+    },
+    [networkPrefix, showNetworkPrefix]
+  );
+
+  // checksum valid Address
+  const updateAddress = useCallback(
+    (value = '') => {
+      onChangeAddress(checksumValidAddress(value));
+    },
+    [onChangeAddress]
+  );
+
+  // ENS name resolution
   useEffect(() => {
     const resolveDomainName = async (ENSName: string) => {
       try {
         setIsLoadingENSResolution(true);
         const address = (await getAddressFromDomain?.(ENSName)) as string;
-        onChangeAddress(checksumValidAddress(address));
-        setPrefix(showNetworkPrefix ? networkPrefix : '');
+        // TODO: ADD PREFIX HERE ??? SEE PREFERENCES
+        updateAddress(address);
+        updateInputValue(address, true);
       } catch (e) {
-        onChangeAddress(checksumValidAddress(ENSName));
-        setPrefix('');
+        updateAddress(ENSName);
       } finally {
         setIsLoadingENSResolution(false);
       }
@@ -68,26 +95,33 @@ function AddressInput({
   }, [
     address,
     getAddressFromDomain,
-    networkPrefix,
-    showNetworkPrefix,
-    onChangeAddress,
+    updateAddress,
     throttle,
+    updateInputValue,
   ]);
 
-  // Network prefix
+  // if address changes from outside (like QRs code) we update the input value
   useEffect(() => {
-    setPrefix(networkPrefix);
-  }, [networkPrefix]);
+    const inputValue = inputRef.current?.value;
+    const inputWithoutPrefix = getAddressWithoutNetworkPrefix(inputValue);
+    const addressWithoutPrefix = getAddressWithoutNetworkPrefix(address);
+    const hasNewValue = inputWithoutPrefix !== addressWithoutPrefix;
 
-  useEffect(() => {
-    if (showNetworkPrefix) {
-      setPrefix(networkPrefix);
-    } else {
-      setPrefix('');
+    if (hasNewValue) {
+      updateInputValue(address);
+
+      const prefix = getNetworkPrefix(address);
+      const isValidPrefix = prefix === networkPrefix;
+      if (isValidPrefix) {
+        updateAddress(addressWithoutPrefix);
+      } else {
+        updateAddress(address);
+      }
     }
-  }, [showNetworkPrefix, networkPrefix]);
+  }, [address, updateAddress, networkPrefix, updateInputValue]);
 
-  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+  // we update the address in the state without the valid prefix when user inputs a value
+  function onChange(e: ChangeEvent<HTMLInputElement>) {
     const value = trimSpaces(e.target.value);
 
     const prefix = getNetworkPrefix(value);
@@ -97,22 +131,18 @@ function AddressInput({
       value.includes(':') && !value.startsWith(':') && prefix === networkPrefix;
 
     if (isValidPrefix) {
-      setPrefix(prefix);
-      onChangeAddress(checksumValidAddress(address));
+      updateAddress(address);
     } else {
-      setPrefix('');
-      onChangeAddress(checksumValidAddress(value));
+      updateAddress(value);
     }
-  };
-
-  const value = addNetworkPrefix(address, prefix);
+  }
 
   const isLoading = isLoadingENSResolution || showLoadingSpinner;
 
   return (
     <TextFieldInput
       name={name}
-      value={value}
+      defaultValue={addPrefix(address, networkPrefix, showNetworkPrefix)}
       disabled={disabled || isLoadingENSResolution}
       onChange={onChange}
       InputProps={{
@@ -123,6 +153,10 @@ function AddressInput({
         ) : (
           InputProps?.endAdornment
         ),
+      }}
+      inputProps={{
+        ...inputProps,
+        ref: inputRef,
       }}
       spellCheck={false}
       {...rest}
@@ -144,6 +178,28 @@ function LoaderSpinnerAdornment() {
 function checksumValidAddress(address: string) {
   if (isValidAddress(address) && !isChecksumAddress(address)) {
     return checksumAddress(address);
+  }
+
+  return address;
+}
+
+// we try to add the network prefix by default
+function addPrefix(
+  address: string,
+  networkPrefix: string | undefined,
+  showNetworkPrefix = false
+): string {
+  if (!address) {
+    return '';
+  }
+
+  if (showNetworkPrefix && networkPrefix) {
+    const hasPrefix = !!getNetworkPrefix(address);
+
+    // if the address has not prefix we add it by default
+    if (!hasPrefix) {
+      return addNetworkPrefix(address, networkPrefix);
+    }
   }
 
   return address;

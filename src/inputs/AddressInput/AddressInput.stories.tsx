@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, ChangeEvent } from 'react';
 import { InputAdornment } from '@material-ui/core';
 import styled from 'styled-components';
 import CheckCircle from '@material-ui/icons/CheckCircle';
 import { Typography } from '@material-ui/core';
+import QrReader from 'react-qr-reader';
 
 import AddressInput from './index';
 import { isValidAddress } from '../../utils/address';
 import { Switch } from '..';
+import { Icon } from '../..';
 
 export default {
   title: 'Inputs/AddressInput',
@@ -52,18 +54,7 @@ export const SimpleAddressInput = (): React.ReactElement => {
       <Typography style={{ marginTop: '24px' }}>
         Address value in the State:{' '}
       </Typography>
-      <pre
-        style={{
-          display: 'inline-block',
-          backgroundColor: 'lightgrey',
-          marginLeft: '8px',
-          margin: '0',
-          padding: '8px',
-          minWidth: '500px',
-          borderRadius: '4px',
-        }}>
-        {address || ' '}
-      </pre>
+      <CodeFormat>{address}</CodeFormat>
       <Typography style={{ marginTop: '16px' }}>
         You can use ENS names (like safe.test) with the getAddressFromDomain
         prop
@@ -168,6 +159,7 @@ export const AddressInputWithENSResolution = (): React.ReactElement => {
         onChangeAddress={(address) => setAddress(address)}
         getAddressFromDomain={getAddressFromDomain}
       />
+      <CodeFormat>{address || ' '}</CodeFormat>
     </form>
   );
 };
@@ -317,7 +309,80 @@ export const AddressInputWithErrors = (): React.ReactElement => {
   );
 };
 
+export const LoadAddressInputFromQR = (): React.ReactElement => {
+  const [address, setAddress] = useState<string>('');
+  const [openModal, setOpenModal] = useState(false);
+  const [networkPrefix, setNetworkPrefix] = useState('rin');
+
+  // TODO: ADD A SELECTOR FOR NETWORK
+
+  return (
+    <div>
+      <select
+        onChange={(e: ChangeEvent<HTMLSelectElement>) =>
+          setNetworkPrefix(e.target.value)
+        }>
+        <option value={'eth'}>Mainnet</option>
+        <option value={'rin'}>Rinkeby</option>
+        <option value={'vt'}>Volta</option>
+      </select>
+      <form
+        noValidate
+        autoComplete="off"
+        onSubmit={onSubmit}
+        style={{ display: 'flex' }}>
+        <AddressInput
+          label="Address"
+          name="address"
+          placeholder={'Ethereum address'}
+          address={address}
+          onChangeAddress={(address) => setAddress(address)}
+          networkPrefix={networkPrefix}
+          // networkPrefix="rin"
+          showNetworkPrefix
+        />
+        <div style={{ marginTop: '12px' }}>
+          <div
+            onClick={() => setOpenModal((openModal) => !openModal)}
+            style={{ marginLeft: '12px' }}>
+            <Icon size="md" type="qrCode" />
+          </div>
+        </div>
+      </form>
+      <CodeFormat>{address || ' '}</CodeFormat>
+      {openModal && (
+        <QrReader
+          delay={300}
+          onError={() => {
+            console.log('error:');
+          }}
+          onScan={(value) => {
+            if (value) {
+              setAddress(value);
+              setOpenModal(false);
+            }
+          }}
+          onImageLoad={(address) => setAddress(address)}
+          style={{ width: '50%', margin: '0 auto' }}
+        />
+      )}
+    </div>
+  );
+};
+
 const CheckIconAddressAdornment = styled(CheckCircle)`
   color: #03ae60;
   height: 20px;
 `;
+
+const CodeFormat = styled.pre`
+  display: inline-block;
+  background-color: lightgrey;
+  margin: 0;
+  margin-top: 8px;
+  padding: 8px;
+  min-width: 500px;
+  border-radius: 4px;
+`;
+
+// TODO: Add an example with react final form
