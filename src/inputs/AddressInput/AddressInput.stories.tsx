@@ -1,8 +1,14 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { InputAdornment } from '@material-ui/core';
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  InputAdornment,
+  Typography,
+  IconButton,
+} from '@material-ui/core';
 import styled from 'styled-components';
 import CheckCircle from '@material-ui/icons/CheckCircle';
-import { Typography, IconButton } from '@material-ui/core';
 import QrReader from 'react-qr-reader';
 
 import AddressInput from './index';
@@ -21,9 +27,9 @@ export default {
 const onSubmit = (e: React.FormEvent) => e.preventDefault();
 
 const networks = [
-  { id: 'eth', label: 'Mainnet' },
-  { id: 'rin', label: 'Rinkeby' },
-  { id: 'vt', label: 'Volta' },
+  { id: 'eth', label: 'Mainnet (eth:)' },
+  { id: 'rin', label: 'Rinkeby (rin:)' },
+  { id: 'vt', label: 'Volta (vt:)' },
 ];
 
 export const SimpleAddressInput = (): React.ReactElement => {
@@ -40,6 +46,10 @@ export const SimpleAddressInput = (): React.ReactElement => {
 
   const [showErrors, setShowErrors] = useState<boolean>(true);
 
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  const [isDisabled, setIsDisabled] = useState<boolean>(false);
+
   const inValidAddressError = !isValidAddress(address) ? 'Invalid Address' : '';
   const inValidNetworkError = address.includes(':')
     ? 'The chain prefix must match the current network'
@@ -48,7 +58,7 @@ export const SimpleAddressInput = (): React.ReactElement => {
   const error =
     address && showErrors ? inValidNetworkError || inValidAddressError : '';
 
-  // ENS Resolution
+  // fake ENS Resolution
   const getAddressFromDomain = () =>
     new Promise<string>((resolve) => {
       setTimeout(
@@ -57,12 +67,9 @@ export const SimpleAddressInput = (): React.ReactElement => {
       );
     });
 
-  // TODO: ADD A showLoadingSpinner STATE
-  console.log('currentNetworkPrefix: ', currentNetworkPrefix);
-
   return (
     <div>
-      <Typography>Network Settings</Typography>
+      <StyledText>Network Settings:</StyledText>
       <Typography>
         <Switch checked={showNetworkPrefix} onChange={setShowNetworkPrefix} />
         Show Network Prefix
@@ -74,15 +81,22 @@ export const SimpleAddressInput = (): React.ReactElement => {
           setCurrentNetworkPrefix(networkPrefix);
         }}
       />
-
-      <Typography style={{ marginBottom: '16px' }}>
+      <StyledText>
         <Switch checked={showErrors} onChange={setShowErrors} />
         Show Errors
-      </Typography>
-      <Typography style={{ marginBottom: '16px' }}>
+      </StyledText>
+      <StyledText>
+        <Switch checked={isLoading} onChange={setIsLoading} />
+        Show Loading spinner (also disables the Input)
+      </StyledText>
+      <StyledText>
+        <Switch checked={isDisabled} onChange={setIsDisabled} />
+        Input disabled
+      </StyledText>
+      <StyledText>
         <Switch checked={hiddenLabel} onChange={setHiddenLabel} />
         Hidden Input Label (only works when empty input value)
-      </Typography>
+      </StyledText>
       <form
         noValidate
         autoComplete="off"
@@ -97,6 +111,8 @@ export const SimpleAddressInput = (): React.ReactElement => {
           getAddressFromDomain={getAddressFromDomain}
           hiddenLabel={hiddenLabel}
           error={error}
+          showLoadingSpinner={isLoading}
+          disabled={isDisabled || isLoading}
           networkPrefix={currentNetworkPrefix}
           showNetworkPrefix={showNetworkPrefix}
         />
@@ -107,70 +123,33 @@ export const SimpleAddressInput = (): React.ReactElement => {
         </IconButton>
       </form>
       {/* Address In the State */}
-      <Typography>Address In the State:</Typography>
+      <StyledText>Address In the State:</StyledText>
       <CodeFormat>{address || ' '}</CodeFormat>
-      {openQRModal && (
-        <QrReader
-          delay={300}
-          onError={() => {
-            console.log('error:');
-          }}
-          onScan={(value) => {
-            if (value) {
-              setAddress(value);
-              setOpenQRModal(false);
-            }
-          }}
-          onImageLoad={(address) => setAddress(address)}
-          style={{ width: '50%', margin: '0 auto' }}
-        />
-      )}
+      {/* Load QR Code Dialog */}
+      <Dialog
+        onClose={() => setOpenQRModal(false)}
+        aria-labelledby="Load Address from QR Code Dialog"
+        open={openQRModal}>
+        <DialogTitle>Load Address from QR Code</DialogTitle>
+        <DialogContent style={{ minWidth: '500px' }}>
+          <QrReader
+            delay={300}
+            onError={() => {
+              console.log('error:');
+            }}
+            onScan={(value) => {
+              if (value) {
+                setAddress(value);
+                setOpenQRModal(false);
+              }
+            }}
+            onImageLoad={(address) => setAddress(address)}
+          />
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
-
-// export const SimpleAddressInput = (): React.ReactElement => {
-//   const [address, setAddress] = useState<string>(
-//     '0x83eC7B0506556a7749306D69681aDbDbd08f0769'
-//   );
-//   const [showNetworkPrefix, setShowNetworkPrefix] = useState<boolean>(true);
-
-//   const getAddressFromDomain = () =>
-//     new Promise<string>((resolve) => {
-//       setTimeout(
-//         () => resolve('0x83eC7B0506556a7749306D69681aDbDbd08f0769'),
-//         1200
-//       );
-//     });
-
-//   return (
-//     <form noValidate autoComplete="off" onSubmit={onSubmit}>
-//       <Typography style={{ marginBottom: '16px' }}>
-//         <Switch checked={showNetworkPrefix} onChange={setShowNetworkPrefix} />
-//         Show Network Prefix (rin)
-//       </Typography>
-//       <AddressInput
-//         id={'address-input'}
-//         label="Ethereum Address"
-//         name="address"
-//         placeholder={'Ethereum address'}
-//         showNetworkPrefix={showNetworkPrefix}
-//         networkPrefix={'rin'}
-//         address={address}
-//         onChangeAddress={(address) => setAddress(address)}
-//         getAddressFromDomain={getAddressFromDomain}
-//       />
-//       <Typography style={{ marginTop: '24px' }}>
-//         Address value in the State:{' '}
-//       </Typography>
-//       <CodeFormat>{address}</CodeFormat>
-//       <Typography style={{ marginTop: '16px' }}>
-//         You can use ENS names (like safe.test) with the getAddressFromDomain
-//         prop
-//       </Typography>
-//     </form>
-//   );
-// };
 
 export const AddressInputWithNetworkPrefix = (): React.ReactElement => {
   const [address, setAddress] = useState<string>(
@@ -188,7 +167,9 @@ export const AddressInputWithNetworkPrefix = (): React.ReactElement => {
         address={address}
         onChangeAddress={(address) => setAddress(address)}
       />
-      <pre>Address in the state: {address}</pre>
+      {/* Address In the State */}
+      <StyledText>Address In the State:</StyledText>
+      <CodeFormat>{address || ' '}</CodeFormat>
     </form>
   );
 };
@@ -214,7 +195,6 @@ export const AddressInputWithValidation = (): React.ReactElement => {
         name="address"
         placeholder={'Ethereum address'}
         networkPrefix="rin"
-        showNetworkPrefix={false}
         error={hasError ? error : ''}
         address={address}
         onChangeAddress={(address) => setAddress(address)}
@@ -234,11 +214,14 @@ export const AddressInputWithoutPrefix = (): React.ReactElement => {
         label="Address"
         name="address"
         placeholder={'Ethereum address'}
-        networkPrefix="rin"
-        showNetworkPrefix={false}
+        // networkPrefix="rin"
+        // showNetworkPrefix={false}
         address={address}
         onChangeAddress={(address) => setAddress(address)}
       />
+      {/* Address In the State */}
+      <StyledText>Address In the State:</StyledText>
+      <CodeFormat>{address || ' '}</CodeFormat>
     </form>
   );
 };
@@ -248,6 +231,7 @@ export const AddressInputWithENSResolution = (): React.ReactElement => {
     '0x83eC7B0506556a7749306D69681aDbDbd08f0769'
   );
 
+  // Fake ENS Resolution
   const getAddressFromDomain = () =>
     new Promise<string>((resolve) => {
       setTimeout(
@@ -268,6 +252,8 @@ export const AddressInputWithENSResolution = (): React.ReactElement => {
         onChangeAddress={(address) => setAddress(address)}
         getAddressFromDomain={getAddressFromDomain}
       />
+      {/* Address In the State */}
+      <StyledText>Address In the State:</StyledText>
       <CodeFormat>{address || ' '}</CodeFormat>
     </form>
   );
@@ -321,6 +307,9 @@ export const SafeAddressInputValidation = (): React.ReactElement => {
           ),
         }}
       />
+      {/* Address In the State */}
+      <StyledText>Address In the State:</StyledText>
+      <CodeFormat>{address || ' '}</CodeFormat>
     </form>
   );
 };
@@ -433,4 +422,8 @@ const CodeFormat = styled.pre`
   border-radius: 4px;
 `;
 
-// TODO: Add an example with react final form
+const StyledText = styled(Typography)`
+  && {
+    margin-top: 8px;
+  }
+`;

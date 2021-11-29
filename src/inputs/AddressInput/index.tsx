@@ -66,14 +66,6 @@ function AddressInput({
     [networkPrefix, showNetworkPrefix]
   );
 
-  // // we update the input prefix if showNetworkPrefix changes
-  // useEffect(() => {
-  //   const inputValue = inputRef.current.value;
-  //   const inputValueWitoutPrefix = getAddressWithoutNetworkPrefix(inputValue);
-  //   // DO THIS ONLY ON VALID PREFIX CASES
-  //   inputRef.current.value = inputValueWitoutPrefix;
-  // }, [showNetworkPrefix]);
-
   // ENS name resolution
   useEffect(() => {
     const resolveDomainName = async (ENSName: string) => {
@@ -156,7 +148,6 @@ function AddressInput({
     <TextFieldInput
       name={name}
       hiddenLabel={!inputRef.current.value && hiddenLabel}
-      value={inputRef.current.value}
       disabled={disabled || isLoadingENSResolution}
       onChange={onChange}
       InputProps={{
