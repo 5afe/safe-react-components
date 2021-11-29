@@ -48,6 +48,7 @@ const CustomTextField = styled((props: TextFieldProps) => (
  * @deprecated This TextField Component is coupled to React Final Form use TextFieldInput instead
  */
 function TextField({
+  className,
   input: inputProps,
   meta,
   label,
@@ -75,6 +76,7 @@ function TextField({
   return (
     <CustomTextField
       {...rest}
+      className={className}
       error={!!meta?.error}
       label={meta?.error || label}
       InputProps={customInputBaseProps}
