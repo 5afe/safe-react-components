@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent } from 'react';
+import React, { useState, useEffect, useCallback, ChangeEvent } from 'react';
 import { InputAdornment } from '@material-ui/core';
 import styled from 'styled-components';
 import CheckCircle from '@material-ui/icons/CheckCircle';
@@ -315,10 +315,12 @@ export const LoadAddressInputFromQR = (): React.ReactElement => {
   const [networkPrefix, setNetworkPrefix] = useState('rin');
 
   // TODO: ADD A SELECTOR FOR NETWORK
+  const onChangeAddress = useCallback((address) => setAddress(address), []);
 
   return (
     <div>
       <select
+        defaultValue={'rin'}
         onChange={(e: ChangeEvent<HTMLSelectElement>) =>
           setNetworkPrefix(e.target.value)
         }>
@@ -336,7 +338,7 @@ export const LoadAddressInputFromQR = (): React.ReactElement => {
           name="address"
           placeholder={'Ethereum address'}
           address={address}
-          onChangeAddress={(address) => setAddress(address)}
+          onChangeAddress={onChangeAddress}
           networkPrefix={networkPrefix}
           // networkPrefix="rin"
           showNetworkPrefix
