@@ -38,29 +38,30 @@ function AddressInput({
   name,
   address,
   networkPrefix,
-  showNetworkPrefix,
+  showNetworkPrefix = true,
   disabled,
   onChangeAddress,
   getAddressFromDomain,
   showLoadingSpinner,
   InputProps,
   inputProps,
+  hiddenLabel = true,
   ...rest
 }: AddressInputProps): ReactElement {
   const [isLoadingENSResolution, setIsLoadingENSResolution] = useState(false);
-  const inputRef = useRef<HTMLInputElement>();
+  const defaulInputValue = addPrefix(address, networkPrefix, showNetworkPrefix);
+  const inputRef = useRef({ value: defaulInputValue });
   const throttle = useThrottle();
 
-  // we update the input value only in 2 cases: ENS resolution and Load QR code
-  // TODO: ALSO WHEN networkPrefix changes?
+  // we include the network prefix in the input if showNetworkPrefix=true
   const updateInputValue = useCallback(
-    (value = '', addNetworkPrefix = false) => {
-      if (inputRef.current) {
-        const checksumAddress = checksumValidAddress(value);
-        inputRef.current.value = addNetworkPrefix
-          ? addPrefix(checksumAddress, networkPrefix, showNetworkPrefix)
-          : checksumAddress;
-      }
+    (value = '') => {
+      const checksumAddress = checksumValidAddress(value);
+      inputRef.current.value = addPrefix(
+        checksumAddress,
+        networkPrefix,
+        showNetworkPrefix
+      );
     },
     [networkPrefix, showNetworkPrefix]
   );
@@ -71,10 +72,9 @@ function AddressInput({
       try {
         setIsLoadingENSResolution(true);
         const address = (await getAddressFromDomain?.(ENSName)) as string;
-        // TODO: ADD PREFIX HERE ??? CHECK SEE showNetworkPrefix PREFERENCES
         onChangeAddress(checksumValidAddress(address));
         // we also update the input value
-        updateInputValue(address, true);
+        updateInputValue(address);
       } catch (e) {
         onChangeAddress(ENSName);
       } finally {
@@ -97,7 +97,7 @@ function AddressInput({
 
   // if address or prefix changes from outside (Load a QR code) we also update the input value
   useEffect(() => {
-    const inputValue = inputRef.current?.value;
+    const inputValue = inputRef.current.value;
     const inputWithoutPrefix = getAddressWithoutNetworkPrefix(inputValue);
     const addressWithoutPrefix = getAddressWithoutNetworkPrefix(address);
     const inputPrefix = getNetworkPrefix(inputValue);
@@ -106,14 +106,13 @@ function AddressInput({
     const isNewAddressLoaded = inputWithoutPrefix !== addressWithoutPrefix;
     const isNewPrefixLoaded = addressPrefix && inputPrefix !== addressPrefix;
 
-    // we check if we load a new address (both prefixed and unprefixed)
+    // we check if we load a new address (both prefixed and unprefixed cases)
     if (isNewAddressLoaded || isNewPrefixLoaded) {
-      // we also update the input value
+      // we update the input value
       updateInputValue(address);
     }
   }, [address, updateInputValue]);
 
-  // TODO: REMOVE USE REF AND THIS USECALLBACK
   // we trim & checksum valid address typed by the user
   const updateAddressState = useCallback(
     (value) => {
@@ -124,8 +123,6 @@ function AddressInput({
 
       const isValidPrefix = networkPrefix === inputPrefix;
 
-      console.log('HOLIIII');
-
       if (isValidPrefix) {
         onChangeAddress(checksumValidAddress(inputWithoutPrefix));
       } else {
@@ -135,25 +132,23 @@ function AddressInput({
     [networkPrefix, onChangeAddress]
   );
 
-  // when networkPrefix changes (user switch the network) we update only the state
+  // when user switch the network we update the address state
   useEffect(() => {
-    updateAddressState(inputRef.current?.value);
-  }, [address, updateAddressState]);
+    updateAddressState(inputRef.current.value);
+  }, [networkPrefix, address, updateAddressState]);
 
+  // when user types we update the address state
   function onChange(e: ChangeEvent<HTMLInputElement>) {
     updateAddressState(e.target.value);
   }
 
   const isLoading = isLoadingENSResolution || showLoadingSpinner;
 
-  const defaultValue = addPrefix(address, networkPrefix, showNetworkPrefix);
-
   return (
     <TextFieldInput
       name={name}
-      // TODO: FIX THIS
-      // hiddenLabel={!inputRef.current?.value}
-      defaultValue={defaultValue}
+      hiddenLabel={!inputRef.current.value && hiddenLabel}
+      value={inputRef.current.value}
       disabled={disabled || isLoadingENSResolution}
       onChange={onChange}
       InputProps={{

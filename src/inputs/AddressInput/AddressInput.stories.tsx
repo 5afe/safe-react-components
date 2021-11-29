@@ -315,6 +315,10 @@ export const LoadAddressInputFromQR = (): React.ReactElement => {
   const [networkPrefix, setNetworkPrefix] = useState('rin');
 
   // TODO: ADD A SELECTOR FOR NETWORK
+  // TODO: ADD A hiddenLabel STATE
+  // TODO: ADD A showNetworkPrefix STATE
+  // TODO: ADD A showLoadingSpinner STATE
+
   const onChangeAddress = useCallback((address) => setAddress(address), []);
 
   return (
@@ -339,8 +343,8 @@ export const LoadAddressInputFromQR = (): React.ReactElement => {
           placeholder={'Ethereum address'}
           address={address}
           onChangeAddress={onChangeAddress}
+          // hiddenLabel={false}
           networkPrefix={networkPrefix}
-          // networkPrefix="rin"
           showNetworkPrefix
         />
         <div style={{ marginTop: '12px' }}>
