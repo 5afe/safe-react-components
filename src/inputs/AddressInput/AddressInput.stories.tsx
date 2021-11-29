@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useCallback, ChangeEvent } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { InputAdornment } from '@material-ui/core';
 import styled from 'styled-components';
 import CheckCircle from '@material-ui/icons/CheckCircle';
-import { Typography } from '@material-ui/core';
+import { Typography, IconButton } from '@material-ui/core';
 import QrReader from 'react-qr-reader';
 
 import AddressInput from './index';
 import { isValidAddress } from '../../utils/address';
-import { Switch } from '..';
+import { Select, Switch } from '..';
 import { Icon } from '../..';
 
 export default {
@@ -20,48 +20,157 @@ export default {
 
 const onSubmit = (e: React.FormEvent) => e.preventDefault();
 
+const networks = [
+  { id: 'eth', label: 'Mainnet' },
+  { id: 'rin', label: 'Rinkeby' },
+  { id: 'vt', label: 'Volta' },
+];
+
 export const SimpleAddressInput = (): React.ReactElement => {
-  const [address, setAddress] = useState<string>(
-    '0x83eC7B0506556a7749306D69681aDbDbd08f0769'
-  );
+  const [address, setAddress] = useState<string>('');
+  const onChangeAddress = useCallback((address) => setAddress(address), []);
+
+  const [currentNetworkPrefix, setCurrentNetworkPrefix] = useState('rin');
+
+  const [openQRModal, setOpenQRModal] = useState(false);
+
   const [showNetworkPrefix, setShowNetworkPrefix] = useState<boolean>(true);
 
+  const [hiddenLabel, setHiddenLabel] = useState<boolean>(true);
+
+  const [showErrors, setShowErrors] = useState<boolean>(true);
+
+  const inValidAddressError = !isValidAddress(address) ? 'Invalid Address' : '';
+  const inValidNetworkError = address.includes(':')
+    ? 'The chain prefix must match the current network'
+    : '';
+
+  const error =
+    address && showErrors ? inValidNetworkError || inValidAddressError : '';
+
+  // ENS Resolution
   const getAddressFromDomain = () =>
     new Promise<string>((resolve) => {
       setTimeout(
         () => resolve('0x83eC7B0506556a7749306D69681aDbDbd08f0769'),
-        1200
+        2000
       );
     });
 
+  // TODO: ADD A showLoadingSpinner STATE
+  console.log('currentNetworkPrefix: ', currentNetworkPrefix);
+
   return (
-    <form noValidate autoComplete="off" onSubmit={onSubmit}>
-      <Typography style={{ marginBottom: '16px' }}>
+    <div>
+      <Typography>Network Settings</Typography>
+      <Typography>
         <Switch checked={showNetworkPrefix} onChange={setShowNetworkPrefix} />
-        Show Network Prefix (rin)
+        Show Network Prefix
       </Typography>
-      <AddressInput
-        id={'address-input'}
-        label="Ethereum Address"
-        name="address"
-        placeholder={'Ethereum address'}
-        showNetworkPrefix={showNetworkPrefix}
-        networkPrefix={'rin'}
-        address={address}
-        onChangeAddress={(address) => setAddress(address)}
-        getAddressFromDomain={getAddressFromDomain}
+      <Select
+        items={networks}
+        activeItemId={currentNetworkPrefix}
+        onItemClick={(networkPrefix) => {
+          setCurrentNetworkPrefix(networkPrefix);
+        }}
       />
-      <Typography style={{ marginTop: '24px' }}>
-        Address value in the State:{' '}
+
+      <Typography style={{ marginBottom: '16px' }}>
+        <Switch checked={showErrors} onChange={setShowErrors} />
+        Show Errors
       </Typography>
-      <CodeFormat>{address}</CodeFormat>
-      <Typography style={{ marginTop: '16px' }}>
-        You can use ENS names (like safe.test) with the getAddressFromDomain
-        prop
+      <Typography style={{ marginBottom: '16px' }}>
+        <Switch checked={hiddenLabel} onChange={setHiddenLabel} />
+        Hidden Input Label (only works when empty input value)
       </Typography>
-    </form>
+      <form
+        noValidate
+        autoComplete="off"
+        onSubmit={onSubmit}
+        style={{ display: 'flex' }}>
+        <AddressInput
+          label="Address"
+          name="address"
+          placeholder={'Ethereum address'}
+          address={address}
+          onChangeAddress={onChangeAddress}
+          getAddressFromDomain={getAddressFromDomain}
+          hiddenLabel={hiddenLabel}
+          error={error}
+          networkPrefix={currentNetworkPrefix}
+          showNetworkPrefix={showNetworkPrefix}
+        />
+        <IconButton
+          onClick={() => setOpenQRModal((openModal) => !openModal)}
+          aria-label="load QR code">
+          <Icon size="md" type="qrCode" />
+        </IconButton>
+      </form>
+      {/* Address In the State */}
+      <Typography>Address In the State:</Typography>
+      <CodeFormat>{address || ' '}</CodeFormat>
+      {openQRModal && (
+        <QrReader
+          delay={300}
+          onError={() => {
+            console.log('error:');
+          }}
+          onScan={(value) => {
+            if (value) {
+              setAddress(value);
+              setOpenQRModal(false);
+            }
+          }}
+          onImageLoad={(address) => setAddress(address)}
+          style={{ width: '50%', margin: '0 auto' }}
+        />
+      )}
+    </div>
   );
 };
+
+// export const SimpleAddressInput = (): React.ReactElement => {
+//   const [address, setAddress] = useState<string>(
+//     '0x83eC7B0506556a7749306D69681aDbDbd08f0769'
+//   );
+//   const [showNetworkPrefix, setShowNetworkPrefix] = useState<boolean>(true);
+
+//   const getAddressFromDomain = () =>
+//     new Promise<string>((resolve) => {
+//       setTimeout(
+//         () => resolve('0x83eC7B0506556a7749306D69681aDbDbd08f0769'),
+//         1200
+//       );
+//     });
+
+//   return (
+//     <form noValidate autoComplete="off" onSubmit={onSubmit}>
+//       <Typography style={{ marginBottom: '16px' }}>
+//         <Switch checked={showNetworkPrefix} onChange={setShowNetworkPrefix} />
+//         Show Network Prefix (rin)
+//       </Typography>
+//       <AddressInput
+//         id={'address-input'}
+//         label="Ethereum Address"
+//         name="address"
+//         placeholder={'Ethereum address'}
+//         showNetworkPrefix={showNetworkPrefix}
+//         networkPrefix={'rin'}
+//         address={address}
+//         onChangeAddress={(address) => setAddress(address)}
+//         getAddressFromDomain={getAddressFromDomain}
+//       />
+//       <Typography style={{ marginTop: '24px' }}>
+//         Address value in the State:{' '}
+//       </Typography>
+//       <CodeFormat>{address}</CodeFormat>
+//       <Typography style={{ marginTop: '16px' }}>
+//         You can use ENS names (like safe.test) with the getAddressFromDomain
+//         prop
+//       </Typography>
+//     </form>
+//   );
+// };
 
 export const AddressInputWithNetworkPrefix = (): React.ReactElement => {
   const [address, setAddress] = useState<string>(
@@ -306,73 +415,6 @@ export const AddressInputWithErrors = (): React.ReactElement => {
         error={'Invalid Address'}
       />
     </form>
-  );
-};
-
-export const LoadAddressInputFromQR = (): React.ReactElement => {
-  const [address, setAddress] = useState<string>('');
-  const [openModal, setOpenModal] = useState(false);
-  const [networkPrefix, setNetworkPrefix] = useState('rin');
-
-  // TODO: ADD A SELECTOR FOR NETWORK
-  // TODO: ADD A hiddenLabel STATE
-  // TODO: ADD A showNetworkPrefix STATE
-  // TODO: ADD A showLoadingSpinner STATE
-
-  const onChangeAddress = useCallback((address) => setAddress(address), []);
-
-  return (
-    <div>
-      <select
-        defaultValue={'rin'}
-        onChange={(e: ChangeEvent<HTMLSelectElement>) =>
-          setNetworkPrefix(e.target.value)
-        }>
-        <option value={'eth'}>Mainnet</option>
-        <option value={'rin'}>Rinkeby</option>
-        <option value={'vt'}>Volta</option>
-      </select>
-      <form
-        noValidate
-        autoComplete="off"
-        onSubmit={onSubmit}
-        style={{ display: 'flex' }}>
-        <AddressInput
-          label="Address"
-          name="address"
-          placeholder={'Ethereum address'}
-          address={address}
-          onChangeAddress={onChangeAddress}
-          // hiddenLabel={false}
-          networkPrefix={networkPrefix}
-          showNetworkPrefix
-        />
-        <div style={{ marginTop: '12px' }}>
-          <div
-            onClick={() => setOpenModal((openModal) => !openModal)}
-            style={{ marginLeft: '12px' }}>
-            <Icon size="md" type="qrCode" />
-          </div>
-        </div>
-      </form>
-      <CodeFormat>{address || ' '}</CodeFormat>
-      {openModal && (
-        <QrReader
-          delay={300}
-          onError={() => {
-            console.log('error:');
-          }}
-          onScan={(value) => {
-            if (value) {
-              setAddress(value);
-              setOpenModal(false);
-            }
-          }}
-          onImageLoad={(address) => setAddress(address)}
-          style={{ width: '50%', margin: '0 auto' }}
-        />
-      )}
-    </div>
   );
 };
 

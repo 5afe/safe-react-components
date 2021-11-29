@@ -66,6 +66,14 @@ function AddressInput({
     [networkPrefix, showNetworkPrefix]
   );
 
+  // // we update the input prefix if showNetworkPrefix changes
+  // useEffect(() => {
+  //   const inputValue = inputRef.current.value;
+  //   const inputValueWitoutPrefix = getAddressWithoutNetworkPrefix(inputValue);
+  //   // DO THIS ONLY ON VALID PREFIX CASES
+  //   inputRef.current.value = inputValueWitoutPrefix;
+  // }, [showNetworkPrefix]);
+
   // ENS name resolution
   useEffect(() => {
     const resolveDomainName = async (ENSName: string) => {
@@ -189,7 +197,7 @@ function checksumValidAddress(address: string) {
   return address;
 }
 
-// we try to add the network prefix by default
+// we try to add the network prefix if its not present
 function addPrefix(
   address: string,
   networkPrefix: string | undefined,
