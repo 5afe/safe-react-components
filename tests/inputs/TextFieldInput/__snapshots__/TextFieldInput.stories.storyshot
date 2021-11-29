@@ -7,7 +7,7 @@ exports[`Storyshots Inputs/TextFieldInput Custom CSS Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI sc-fvxzrP eWJijy"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI sc-GEbAx kssrXb"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"

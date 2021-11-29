@@ -2,7 +2,7 @@
 
 exports[`Storyshots Inputs/Button Disabled Button 1`] = `
 <div
-  className="sc-jUosCB iCFwpT"
+  className="sc-fvxzrP gLQBqB"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV ads Mui-disabled Mui-disabled"
@@ -218,7 +218,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
 
 exports[`Storyshots Inputs/Button Simple Button 1`] = `
 <div
-  className="sc-jUosCB iCFwpT"
+  className="sc-fvxzrP gLQBqB"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV primary contained"
@@ -434,7 +434,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
 
 exports[`Storyshots Inputs/Button Sizes 1`] = `
 <div
-  className="sc-jUosCB iCFwpT"
+  className="sc-fvxzrP gLQBqB"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV primary contained"
@@ -538,7 +538,7 @@ exports[`Storyshots Inputs/Button With Custom Component 1`] = `
 
 exports[`Storyshots Inputs/Button With Icon 1`] = `
 <div
-  className="sc-jUosCB iCFwpT"
+  className="sc-fvxzrP gLQBqB"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV esbZNJ primary contained"
@@ -970,7 +970,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
 
 exports[`Storyshots Inputs/Button With Icon Size 1`] = `
 <div
-  className="sc-jUosCB iCFwpT"
+  className="sc-fvxzrP gLQBqB"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV jqMZKs secondary bordered"

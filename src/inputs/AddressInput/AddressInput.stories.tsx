@@ -95,7 +95,7 @@ export const SimpleAddressInput = (): React.ReactElement => {
       </StyledText>
       <StyledText>
         <Switch checked={hiddenLabel} onChange={setHiddenLabel} />
-        Hidden Input Label (only works when empty input value)
+        Hide AddressInput Label (Only when input is empty)
       </StyledText>
       <form
         noValidate

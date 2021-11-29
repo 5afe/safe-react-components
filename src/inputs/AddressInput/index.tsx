@@ -56,12 +56,14 @@ function AddressInput({
   // we include the network prefix in the input if showNetworkPrefix=true
   const updateInputValue = useCallback(
     (value = '') => {
-      const checksumAddress = checksumValidAddress(value);
-      inputRef.current.value = addPrefix(
-        checksumAddress,
-        networkPrefix,
-        showNetworkPrefix
-      );
+      if (inputRef.current) {
+        const checksumAddress = checksumValidAddress(value);
+        inputRef.current.value = addPrefix(
+          checksumAddress,
+          networkPrefix,
+          showNetworkPrefix
+        );
+      }
     },
     [networkPrefix, showNetworkPrefix]
   );
@@ -97,7 +99,7 @@ function AddressInput({
 
   // if address or prefix changes from outside (Load a QR code) we also update the input value
   useEffect(() => {
-    const inputValue = inputRef.current.value;
+    const inputValue = inputRef.current?.value;
     const inputWithoutPrefix = getAddressWithoutNetworkPrefix(inputValue);
     const addressWithoutPrefix = getAddressWithoutNetworkPrefix(address);
     const inputPrefix = getNetworkPrefix(inputValue);
@@ -134,7 +136,7 @@ function AddressInput({
 
   // when user switch the network we update the address state
   useEffect(() => {
-    updateAddressState(inputRef.current.value);
+    updateAddressState(inputRef.current?.value);
   }, [networkPrefix, address, updateAddressState]);
 
   // when user types we update the address state
@@ -144,10 +146,16 @@ function AddressInput({
 
   const isLoading = isLoadingENSResolution || showLoadingSpinner;
 
+  const [shrink, setshrink] = useState(!!defaulInputValue);
+
+  useEffect(() => {
+    setshrink(!!inputRef.current?.value);
+  }, [inputRef.current.value]);
+
   return (
     <TextFieldInput
       name={name}
-      hiddenLabel={!inputRef.current.value && hiddenLabel}
+      hiddenLabel={hiddenLabel && !shrink}
       disabled={disabled || isLoadingENSResolution}
       onChange={onChange}
       InputProps={{
@@ -162,6 +170,10 @@ function AddressInput({
       inputProps={{
         ...inputProps,
         ref: inputRef,
+      }}
+      InputLabelProps={{
+        ...rest.InputLabelProps,
+        shrink: shrink || hiddenLabel || undefined,
       }}
       spellCheck={false}
       {...rest}

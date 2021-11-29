@@ -11,7 +11,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-disabled Mui-disabled MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-disabled Mui-disabled"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -36,7 +36,6 @@ exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
   </div>
@@ -54,7 +53,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -79,7 +78,6 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
       <div
         className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled"
@@ -126,7 +124,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -151,7 +149,6 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
       <div
         className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled"
@@ -183,7 +180,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -208,10 +205,19 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
   </div>
+  <p
+    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+  >
+    Address In the State:
+  </p>
+  <pre
+    className="sc-jUosCB eSSjao"
+  >
+    0x83eC7B0506556a7749306D69681aDbDbd08f0769
+  </pre>
 </form>
 `;
 
@@ -226,7 +232,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-error Mui-error MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-error Mui-error"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -252,11 +258,10 @@ exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
     <p
-      className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error MuiFormHelperText-filled"
+      className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error"
       id="address-helper-text"
     >
       Invalid Address
@@ -276,7 +281,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Network Prefix 1`] = 
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
       data-shrink={true}
       htmlFor="prefixed-address"
       id="prefixed-address-label"
@@ -301,12 +306,17 @@ exports[`Storyshots Inputs/AddressInput Address Input With Network Prefix 1`] = 
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
   </div>
-  <pre>
-    Address in the state: 
+  <p
+    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+  >
+    Address In the State:
+  </p>
+  <pre
+    className="sc-jUosCB eSSjao"
+  >
     0x83eC7B0506556a7749306D69681aDbDbd08f0769
   </pre>
 </form>
@@ -323,7 +333,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Validation 1`] = `
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -348,7 +358,6 @@ exports[`Storyshots Inputs/AddressInput Address Input With Validation 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
   </div>
@@ -366,7 +375,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -391,10 +400,19 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
   </div>
+  <p
+    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+  >
+    Address In the State:
+  </p>
+  <pre
+    className="sc-jUosCB eSSjao"
+  >
+    0x83eC7B0506556a7749306D69681aDbDbd08f0769
+  </pre>
 </form>
 `;
 
@@ -409,7 +427,7 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-error Mui-error MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-error Mui-error"
       data-shrink={true}
       htmlFor="safeAddress"
       id="safeAddress-label"
@@ -435,32 +453,37 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
       />
     </div>
     <p
-      className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error MuiFormHelperText-filled"
+      className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error"
       id="safeAddress-helper-text"
     >
       Address given is not a valid Safe address
     </p>
   </div>
+  <p
+    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+  >
+    Address In the State:
+  </p>
+  <pre
+    className="sc-jUosCB eSSjao"
+  >
+    0x83eC7B0506556a7749306D69681aDbDbd08f0769
+  </pre>
 </form>
 `;
 
 exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
-<form
-  autoComplete="off"
-  noValidate={true}
-  onSubmit={[Function]}
->
+<div>
+  <p
+    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+  >
+    Network Settings:
+  </p>
   <p
     className="MuiTypography-root MuiTypography-body1"
-    style={
-      Object {
-        "marginBottom": "16px",
-      }
-    }
   >
     <span
       className="MuiSwitch-root sc-kLwhqv ckEIHj"
@@ -494,82 +517,397 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
             className="MuiSwitch-thumb"
           />
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </span>
       <span
         className="MuiSwitch-track"
       />
     </span>
-    Show Network Prefix (rin)
+    Show Network Prefix
   </p>
-  <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
-    spellCheck={false}
-  >
-    <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
-      data-shrink={true}
-      htmlFor="address-input"
-      id="address-input-label"
-    >
-      Ethereum Address
-    </label>
+  <div>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
-      onClick={[Function]}
+      className="MuiFormControl-root"
     >
-      <input
-        aria-invalid={false}
-        autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input"
-        disabled={false}
-        id="address-input"
-        name="address"
-        onAnimationStart={[Function]}
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        placeholder="Ethereum address"
-        required={false}
-        type="text"
-        value="rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769"
-      />
+      <div
+        className="MuiInputBase-root MuiInput-root MuiInput-underline sc-bYoBSM dNRdPa MuiInputBase-formControl MuiInput-formControl"
+        onClick={[Function]}
+      >
+        <div
+          aria-haspopup="listbox"
+          aria-labelledby="generic-select generic-select"
+          className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+          id="generic-select"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <div>
+            <p
+              className="sc-crHmcD dtryax"
+              color="text"
+              size="sm"
+            >
+              Rinkeby (rin:)
+            </p>
+          </div>
+        </div>
+        <input
+          aria-hidden={true}
+          className="MuiSelect-nativeInput"
+          onAnimationStart={[Function]}
+          onChange={[Function]}
+          required={false}
+          tabIndex={-1}
+          value="rin"
+        />
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSelect-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
     </div>
   </div>
   <p
-    className="MuiTypography-root MuiTypography-body1"
+    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+  >
+    <span
+      className="MuiSwitch-root sc-kLwhqv ckEIHj"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-57 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-58 Mui-checked"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={true}
+            className="PrivateSwitchBase-input-60 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+    Show Errors
+  </p>
+  <p
+    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+  >
+    <span
+      className="MuiSwitch-root sc-kLwhqv eEUkNP"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-57 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={false}
+            className="PrivateSwitchBase-input-60 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+    Show Loading spinner (also disables the Input)
+  </p>
+  <p
+    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+  >
+    <span
+      className="MuiSwitch-root sc-kLwhqv eEUkNP"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-57 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={false}
+            className="PrivateSwitchBase-input-60 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+    Input disabled
+  </p>
+  <p
+    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+  >
+    <span
+      className="MuiSwitch-root sc-kLwhqv ckEIHj"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-57 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-58 Mui-checked"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={true}
+            className="PrivateSwitchBase-input-60 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+    Hide AddressInput Label (Only when input is empty)
+  </p>
+  <form
+    autoComplete="off"
+    noValidate={true}
+    onSubmit={[Function]}
     style={
       Object {
-        "marginTop": "24px",
+        "display": "flex",
       }
     }
   >
-    Address value in the State:
-     
+    <div
+      className="MuiFormControl-root MuiTextField-root sc-jJoQJp gNEEiH"
+      spellCheck={false}
+    >
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+        data-shrink={true}
+        htmlFor="address"
+        id="address-label"
+      >
+        Address
+      </label>
+      <div
+        className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+        onClick={[Function]}
+      >
+        <input
+          aria-invalid={false}
+          autoFocus={false}
+          className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel"
+          disabled={false}
+          id="address"
+          name="address"
+          onAnimationStart={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Ethereum address"
+          required={false}
+          type="text"
+        />
+      </div>
+    </div>
+    <button
+      aria-label="load QR code"
+      className="MuiButtonBase-root MuiIconButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <span
+          className="sc-iqseJM iJclAE"
+        >
+          <svg
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
+            >
+              <path
+                d="M0 0H24V24H0z"
+              />
+              <path
+                className="icon-color"
+                d="M4 2h5c1.105 0 2 .895 2 2v5c0 1.105-.895 2-2 2H4c-1.105 0-2-.895-2-2V4c0-1.105.895-2 2-2zm0 2v5h5V4H4zM4 13h5c1.105 0 2 .895 2 2v5c0 1.105-.895 2-2 2H4c-1.105 0-2-.895-2-2v-5c0-1.105.895-2 2-2zm0 2v5h5v-5H4zM15 2h5c1.105 0 2 .895 2 2v5c0 1.105-.895 2-2 2h-5c-1.105 0-2-.895-2-2V4c0-1.105.895-2 2-2zm0 2v5h5V4h-5z"
+                fillRule="nonzero"
+              />
+              <rect
+                className="icon-color"
+                height="3"
+                rx=".5"
+                transform="matrix(-1 0 0 1 29 0)"
+                width="3"
+                x="13"
+                y="13"
+              />
+              <rect
+                className="icon-color"
+                height="3"
+                rx=".5"
+                transform="matrix(-1 0 0 1 41 0)"
+                width="3"
+                x="19"
+                y="13"
+              />
+              <rect
+                className="icon-color"
+                height="3"
+                rx=".5"
+                transform="matrix(-1 0 0 1 35 0)"
+                width="3"
+                x="16"
+                y="16"
+              />
+              <rect
+                className="icon-color"
+                height="3"
+                rx=".5"
+                transform="matrix(-1 0 0 1 41 0)"
+                width="3"
+                x="19"
+                y="19"
+              />
+              <rect
+                className="icon-color"
+                height="3"
+                rx=".5"
+                transform="matrix(-1 0 0 1 29 0)"
+                width="3"
+                x="13"
+                y="19"
+              />
+            </g>
+          </svg>
+        </span>
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </form>
+  <p
+    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+  >
+    Address In the State:
   </p>
   <pre
-    style={
-      Object {
-        "backgroundColor": "lightgrey",
-        "borderRadius": "4px",
-        "display": "inline-block",
-        "margin": "0",
-        "marginLeft": "8px",
-        "minWidth": "500px",
-        "padding": "8px",
-      }
-    }
+    className="sc-jUosCB eSSjao"
   >
-    0x83eC7B0506556a7749306D69681aDbDbd08f0769
+     
   </pre>
-  <p
-    className="MuiTypography-root MuiTypography-body1"
-    style={
-      Object {
-        "marginTop": "16px",
-      }
-    }
-  >
-    You can use ENS names (like safe.test) with the getAddressFromDomain prop
-  </p>
-</form>
+</div>
 `;
