@@ -70,36 +70,34 @@ function AddressInput({
     [networkPrefix, showNetworkPrefix]
   );
 
+  const resolveDomainName = useCallback(async () => {
+    const isEnsName = isValidEnsName(address);
+
+    if (isEnsName && getAddressFromDomain) {
+      try {
+        setIsLoadingENSResolution(true);
+        const resolvedAddress = await getAddressFromDomain(address);
+        onChangeAddress(checksumValidAddress(resolvedAddress));
+        // we update the input value
+        updateInputValue(resolvedAddress);
+      } catch (e) {
+        onChangeAddress(address);
+      } finally {
+        setIsLoadingENSResolution(false);
+      }
+    }
+  }, [address, getAddressFromDomain, onChangeAddress, updateInputValue]);
+
   // ENS name resolution
   useEffect(() => {
-    const resolveDomainName = async () => {
-      const isEnsName = isValidEnsName(address);
-
-      if (isEnsName && getAddressFromDomain) {
-        try {
-          setIsLoadingENSResolution(true);
-          const resolvedAddress = await getAddressFromDomain(address);
-          onChangeAddress(checksumValidAddress(resolvedAddress));
-          // we update the input value
-          updateInputValue(resolvedAddress);
-        } catch (e) {
-          onChangeAddress(address);
-        } finally {
-          setIsLoadingENSResolution(false);
-        }
-      }
-    };
-
     if (getAddressFromDomain) {
       throttle(resolveDomainName, customENSThrottleDelay);
     }
   }, [
-    address,
     getAddressFromDomain,
-    onChangeAddress,
-    throttle,
-    updateInputValue,
+    resolveDomainName,
     customENSThrottleDelay,
+    throttle,
   ]);
 
   // if address changes from outside (Like Loaded from a QR code) we update the input value

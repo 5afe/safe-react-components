@@ -23,6 +23,29 @@ export default {
   parameters: {
     componentSubtitle: 'Address field input with several variants',
   },
+  argTypes: {
+    showNetworkPrefix: {
+      control: { type: 'boolean' },
+      defaultValue: true,
+    },
+
+    hiddenLabel: {
+      control: { type: 'boolean' },
+      defaultValue: true,
+    },
+    disabled: {
+      control: { type: 'boolean' },
+      defaultValue: false,
+    },
+    isLoading: {
+      control: { type: 'boolean' },
+      defaultValue: false,
+    },
+    showErrors: {
+      control: { type: 'boolean' },
+      defaultValue: true,
+    },
+  },
 };
 
 const onSubmit = (e: React.FormEvent) => e.preventDefault();
@@ -33,23 +56,25 @@ const networks = [
   { id: 'vt', label: 'Volta (vt:)' },
 ];
 
-export const SimpleAddressInput = (): React.ReactElement => {
+export const SimpleAddressInput = ({
+  hiddenLabel,
+  isDisabled,
+  isLoading,
+  showNetworkPrefix,
+  showErrors,
+}: {
+  hiddenLabel: boolean;
+  isDisabled: boolean;
+  isLoading: boolean;
+  showNetworkPrefix: boolean;
+  showErrors: boolean;
+}): React.ReactElement => {
   const [address, setAddress] = useState<string>('');
   const onChangeAddress = useCallback((address) => setAddress(address), []);
 
   const [currentNetworkPrefix, setCurrentNetworkPrefix] = useState('rin');
 
   const [openQRModal, setOpenQRModal] = useState(false);
-
-  const [showNetworkPrefix, setShowNetworkPrefix] = useState<boolean>(true);
-
-  const [hiddenLabel, setHiddenLabel] = useState<boolean>(true);
-
-  const [showErrors, setShowErrors] = useState<boolean>(true);
-
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-
-  const [isDisabled, setIsDisabled] = useState<boolean>(false);
 
   const inValidAddressError = !isValidAddress(address) ? 'Invalid Address' : '';
   const inValidNetworkError = address.includes(':')
@@ -71,10 +96,6 @@ export const SimpleAddressInput = (): React.ReactElement => {
   return (
     <div>
       <StyledText>Network Settings:</StyledText>
-      <Typography>
-        <Switch checked={showNetworkPrefix} onChange={setShowNetworkPrefix} />
-        Show Network Prefix
-      </Typography>
       <Select
         items={networks}
         activeItemId={currentNetworkPrefix}
@@ -82,27 +103,11 @@ export const SimpleAddressInput = (): React.ReactElement => {
           setCurrentNetworkPrefix(networkPrefix);
         }}
       />
-      <StyledText>
-        <Switch checked={showErrors} onChange={setShowErrors} />
-        Show Errors
-      </StyledText>
-      <StyledText>
-        <Switch checked={isLoading} onChange={setIsLoading} />
-        Show Loading spinner (also disables the Input)
-      </StyledText>
-      <StyledText>
-        <Switch checked={isDisabled} onChange={setIsDisabled} />
-        Input disabled
-      </StyledText>
-      <StyledText>
-        <Switch checked={hiddenLabel} onChange={setHiddenLabel} />
-        Hide AddressInput Label (Only when input is empty)
-      </StyledText>
       <form
         noValidate
         autoComplete="off"
         onSubmit={onSubmit}
-        style={{ display: 'flex' }}>
+        style={{ display: 'flex', margin: '12px 0px' }}>
         <AddressInput
           label="Address"
           name="address"
@@ -113,7 +118,7 @@ export const SimpleAddressInput = (): React.ReactElement => {
           hiddenLabel={hiddenLabel}
           error={error}
           showLoadingSpinner={isLoading}
-          disabled={isDisabled || isLoading}
+          disabled={isDisabled}
           networkPrefix={currentNetworkPrefix}
           showNetworkPrefix={showNetworkPrefix}
         />
