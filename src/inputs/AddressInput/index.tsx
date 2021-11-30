@@ -31,6 +31,7 @@ type AddressInputProps = {
   disabled?: boolean;
   onChangeAddress: (address: string) => void;
   getAddressFromDomain?: (name: string) => Promise<string>;
+  customENSThrottleDelay?: number;
   showLoadingSpinner?: boolean;
 } & TextFieldInputProps;
 
@@ -42,6 +43,7 @@ function AddressInput({
   disabled,
   onChangeAddress,
   getAddressFromDomain,
+  customENSThrottleDelay,
   showLoadingSpinner,
   InputProps,
   inputProps,
@@ -53,7 +55,7 @@ function AddressInput({
   const inputRef = useRef({ value: defaulInputValue });
   const throttle = useThrottle();
 
-  // we include the network prefix in the input if showNetworkPrefix=true
+  // we checksum & include the network prefix in the input if showNetworkPrefix is set to true
   const updateInputValue = useCallback(
     (value = '') => {
       if (inputRef.current) {
@@ -70,24 +72,26 @@ function AddressInput({
 
   // ENS name resolution
   useEffect(() => {
-    const resolveDomainName = async (ENSName: string) => {
-      try {
-        setIsLoadingENSResolution(true);
-        const address = (await getAddressFromDomain?.(ENSName)) as string;
-        onChangeAddress(checksumValidAddress(address));
-        // we also update the input value
-        updateInputValue(address);
-      } catch (e) {
-        onChangeAddress(ENSName);
-      } finally {
-        setIsLoadingENSResolution(false);
+    const resolveDomainName = async () => {
+      const isEnsName = isValidEnsName(address);
+
+      if (isEnsName && getAddressFromDomain) {
+        try {
+          setIsLoadingENSResolution(true);
+          const resolvedAddress = await getAddressFromDomain(address);
+          onChangeAddress(checksumValidAddress(resolvedAddress));
+          // we update the input value
+          updateInputValue(resolvedAddress);
+        } catch (e) {
+          onChangeAddress(address);
+        } finally {
+          setIsLoadingENSResolution(false);
+        }
       }
     };
 
-    const isEnsName = isValidEnsName(address);
-
-    if (isEnsName && getAddressFromDomain) {
-      throttle(() => resolveDomainName(address));
+    if (getAddressFromDomain) {
+      throttle(resolveDomainName, customENSThrottleDelay);
     }
   }, [
     address,
@@ -95,9 +99,10 @@ function AddressInput({
     onChangeAddress,
     throttle,
     updateInputValue,
+    customENSThrottleDelay,
   ]);
 
-  // if address or prefix changes from outside (Load a QR code) we also update the input value
+  // if address changes from outside (Like Loaded from a QR code) we update the input value
   useEffect(() => {
     const inputValue = inputRef.current?.value;
     const inputWithoutPrefix = getAddressWithoutNetworkPrefix(inputValue);
@@ -115,7 +120,7 @@ function AddressInput({
     }
   }, [address, updateInputValue]);
 
-  // we trim & checksum valid address typed by the user
+  // we trim, checksum & remove valid network prefix when a valid address is typed by the user
   const updateAddressState = useCallback(
     (value) => {
       const inputValue = trimSpaces(value);
@@ -126,6 +131,7 @@ function AddressInput({
       const isValidPrefix = networkPrefix === inputPrefix;
 
       if (isValidPrefix) {
+        // if the valid network prefix is present, we remove it from the address state
         onChangeAddress(checksumValidAddress(inputWithoutPrefix));
       } else {
         onChangeAddress(checksumValidAddress(inputValue));
