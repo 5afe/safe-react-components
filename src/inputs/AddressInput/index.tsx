@@ -47,7 +47,7 @@ function AddressInput({
   showLoadingSpinner,
   InputProps,
   inputProps,
-  hiddenLabel = true,
+  hiddenLabel = false,
   ...rest
 }: AddressInputProps): ReactElement {
   const [isLoadingENSResolution, setIsLoadingENSResolution] = useState(false);
