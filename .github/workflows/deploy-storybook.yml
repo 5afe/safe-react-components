@@ -1,8 +1,11 @@
-name: Deploy storybook for every pull request
+name: Deploy storybook
 
 on:
   # Pull request hook without any config. Launches for every pull request
   pull_request:
+  # Launches build when release is published
+  release:
+    types: [published]
 
 env:
   REPO_NAME_ALPHANUMERIC: safereactcomponents
@@ -17,14 +20,14 @@ jobs:
         uses: styfle/cancel-workflow-action@0.9.1
         with:
           access_token: ${{ github.token }}
-
+      
       - uses: actions/checkout@v2
 
       - name: Node.js setup
         uses: actions/setup-node@v2
         with:
           node-version: 14
-
+      
       - uses: actions/cache@v2
         with:
           path: '**/node_modules'
@@ -72,3 +75,12 @@ jobs:
         if: success() && github.event.number
         env:
           REVIEW_FEATURE_URL: https://pr${{ github.event.number }}--safereactcomponents.review.gnosisdev.com
+
+
+      # Script to prepare production deployments
+      - run: bash ./scripts/github/prepare_production_deployment.sh
+        if: success() && startsWith(github.ref, 'refs/tags/v')
+        env:
+          PROD_DEPLOYMENT_HOOK_TOKEN: ${{ secrets.PROD_DEPLOYMENT_HOOK_TOKEN }}
+          PROD_DEPLOYMENT_HOOK_URL: ${{ secrets.PROD_DEPLOYMENT_HOOK_URL }}
+          VERSION_TAG: ${{ github.event.release.tag_name }}

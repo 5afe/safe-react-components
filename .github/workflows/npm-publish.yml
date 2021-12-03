@@ -60,38 +60,10 @@ jobs:
         uses: actions/create-release@v1
         id: create_release
         with:
-          draft: false
+          draft: true
           prerelease: false
           release_name: ${{ steps.version.outputs.version }}
           tag_name: ${{ steps.version.outputs.version }}
           body_path: CHANGELOG.md
         env:
           GITHUB_TOKEN: ${{ github.token }}
-
-      # Deploy storybook after Publish to NPM
-      - name: Env dependencies setup
-        if: success()
-        run: |
-          sudo apt-get update
-          sudo apt-get -y install python3-pip python3-dev
-          pip install awscli --upgrade --user
-
-      - name: Build storybook
-        if: success()
-        run: yarn build-storybook
-
-      - name: Configure AWS credentials
-        if: success()
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
-
-      # Script to prepare production deployments
-      - run: bash ./scripts/github/prepare_production_deployment.sh
-        if: success()
-        env:
-          PROD_DEPLOYMENT_HOOK_TOKEN: ${{ secrets.PROD_DEPLOYMENT_HOOK_TOKEN }}
-          PROD_DEPLOYMENT_HOOK_URL: ${{ secrets.PROD_DEPLOYMENT_HOOK_URL }}
-          VERSION_TAG: ${{ steps.version.outputs.version }}
