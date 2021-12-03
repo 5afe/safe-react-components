@@ -387,7 +387,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Simple Address Valida
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp gNEEiH"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
     spellCheck={false}
   >
     <label
@@ -405,7 +405,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Simple Address Valida
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel"
+        className="MuiInputBase-input MuiFilledInput-input"
         disabled={false}
         id="address"
         name="address"
@@ -427,7 +427,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Simple Address Valida
   <pre
     className="sc-jUosCB eSSjao"
   >
-     
+    0x123...
   </pre>
 </form>
 `;

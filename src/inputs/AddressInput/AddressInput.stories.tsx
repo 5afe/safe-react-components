@@ -70,7 +70,6 @@ export const SimpleAddressInput = ({
   showErrors: boolean;
 }): React.ReactElement => {
   const [address, setAddress] = useState<string>('');
-  const onChangeAddress = useCallback((address) => setAddress(address), []);
 
   const [currentNetworkPrefix, setCurrentNetworkPrefix] = useState('rin');
 
@@ -85,13 +84,16 @@ export const SimpleAddressInput = ({
     address && showErrors ? inValidNetworkError || inValidAddressError : '';
 
   // fake ENS Resolution
-  const getAddressFromDomain = () =>
-    new Promise<string>((resolve) => {
-      setTimeout(
-        () => resolve('0x83eC7B0506556a7749306D69681aDbDbd08f0769'),
-        2000
-      );
-    });
+  const getAddressFromDomain = useCallback(
+    () =>
+      new Promise<string>((resolve) => {
+        setTimeout(
+          () => resolve('0x83eC7B0506556a7749306D69681aDbDbd08f0769'),
+          2000
+        );
+      }),
+    []
+  );
 
   return (
     <div>
@@ -113,7 +115,7 @@ export const SimpleAddressInput = ({
           name="address"
           placeholder={'Ethereum address'}
           address={address}
-          onChangeAddress={onChangeAddress}
+          onChangeAddress={setAddress}
           getAddressFromDomain={getAddressFromDomain}
           hiddenLabel={hiddenLabel}
           error={error}
@@ -161,7 +163,6 @@ export const AddressInputWithENSResolution = (): React.ReactElement => {
   const [address, setAddress] = useState<string>('');
   const [showError, setShowError] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
-  const onChangeAddress = useCallback((address) => setAddress(address), []);
 
   const [customENSThrottleDelay, setCustomENSThrottleDelay] = useState<
     number | undefined
@@ -213,7 +214,7 @@ export const AddressInputWithENSResolution = (): React.ReactElement => {
           address={address}
           helperText={'Type safe.test to check ENS resolution!'}
           disabled={!customENSThrottleDelay}
-          onChangeAddress={onChangeAddress}
+          onChangeAddress={setAddress}
           getAddressFromDomain={getAddressFromDomain}
           customENSThrottleDelay={customENSThrottleDelay}
         />
@@ -251,7 +252,6 @@ export const AddressInputWithENSResolution = (): React.ReactElement => {
 
 export const SafeAddressInputValidation = (): React.ReactElement => {
   const [address, setAddress] = useState<string>('');
-  const onChangeAddress = useCallback((address) => setAddress(address), []);
   const [isValidSafeAddress, setIsValidSafeAddress] = useState<boolean>(false);
   const [showLoadingSpinner, setShowLoadingSpinner] = useState<boolean>(false);
 
@@ -296,7 +296,7 @@ export const SafeAddressInputValidation = (): React.ReactElement => {
         showNetworkPrefix={false}
         error={showError ? error : ''}
         address={address}
-        onChangeAddress={onChangeAddress}
+        onChangeAddress={setAddress}
         showLoadingSpinner={showLoadingSpinner}
         InputProps={{
           endAdornment: isValidSafeAddress && (
@@ -315,8 +315,7 @@ export const SafeAddressInputValidation = (): React.ReactElement => {
 
 export const AddressInputWithSimpleAddressValidation =
   (): React.ReactElement => {
-    const [address, setAddress] = useState<string>('');
-    const onChangeAddress = useCallback((address) => setAddress(address), []);
+    const [address, setAddress] = useState<string>('0x123...');
     const [hasError, setHasError] = useState<boolean>();
 
     useEffect(() => {
@@ -334,7 +333,7 @@ export const AddressInputWithSimpleAddressValidation =
           networkPrefix="rin"
           error={hasError ? error : ''}
           address={address}
-          onChangeAddress={onChangeAddress}
+          onChangeAddress={setAddress}
         />
         {/* Address In the State */}
         <StyledText>Address In the State:</StyledText>
@@ -347,7 +346,6 @@ export const AddressInputWithoutPrefix = (): React.ReactElement => {
   const [address, setAddress] = useState<string>(
     '0x83eC7B0506556a7749306D69681aDbDbd08f0769'
   );
-  const onChangeAddress = useCallback((address) => setAddress(address), []);
 
   return (
     <form noValidate autoComplete="off" onSubmit={onSubmit}>
@@ -356,7 +354,7 @@ export const AddressInputWithoutPrefix = (): React.ReactElement => {
         name="address"
         placeholder={'Ethereum address'}
         address={address}
-        onChangeAddress={onChangeAddress}
+        onChangeAddress={setAddress}
       />
       {/* Address In the State */}
       <StyledText>Address In the State:</StyledText>
@@ -369,7 +367,6 @@ export const AddressInputLoading = (): React.ReactElement => {
   const [address, setAddress] = useState<string>(
     '0x83eC7B0506556a7749306D69681aDbDbd08f0769'
   );
-  const onChangeAddress = useCallback((address) => setAddress(address), []);
 
   return (
     <form noValidate autoComplete="off" onSubmit={onSubmit}>
@@ -377,11 +374,11 @@ export const AddressInputLoading = (): React.ReactElement => {
         label="Address"
         name="address"
         networkPrefix="rin"
-        showNetworkPrefix={false}
+        showNetworkPrefix
         placeholder={'Ethereum address'}
         showLoadingSpinner
         address={address}
-        onChangeAddress={onChangeAddress}
+        onChangeAddress={setAddress}
       />
     </form>
   );
@@ -391,7 +388,6 @@ export const AddressInputWithAdornment = (): React.ReactElement => {
   const [address, setAddress] = useState<string>(
     '0x83eC7B0506556a7749306D69681aDbDbd08f0769'
   );
-  const onChangeAddress = useCallback((address) => setAddress(address), []);
 
   return (
     <form noValidate autoComplete="off" onSubmit={onSubmit}>
@@ -399,7 +395,7 @@ export const AddressInputWithAdornment = (): React.ReactElement => {
         label="Address"
         name="address"
         networkPrefix="rin"
-        showNetworkPrefix={false}
+        showNetworkPrefix
         showLoadingSpinner={false}
         placeholder={'Ethereum address'}
         InputProps={{
@@ -410,7 +406,7 @@ export const AddressInputWithAdornment = (): React.ReactElement => {
           ),
         }}
         address={address}
-        onChangeAddress={onChangeAddress}
+        onChangeAddress={setAddress}
       />
     </form>
   );
@@ -420,7 +416,6 @@ export const AddressInputDisabled = (): React.ReactElement => {
   const [address, setAddress] = useState<string>(
     '0x83eC7B0506556a7749306D69681aDbDbd08f0769'
   );
-  const onChangeAddress = useCallback((address) => setAddress(address), []);
 
   return (
     <form noValidate autoComplete="off" onSubmit={onSubmit}>
@@ -428,12 +423,12 @@ export const AddressInputDisabled = (): React.ReactElement => {
         label="Address"
         name="address"
         networkPrefix="rin"
-        showNetworkPrefix={false}
+        showNetworkPrefix
         showLoadingSpinner={false}
         disabled
         placeholder={'Ethereum address'}
         address={address}
-        onChangeAddress={onChangeAddress}
+        onChangeAddress={setAddress}
       />
     </form>
   );
@@ -443,7 +438,6 @@ export const AddressInputWithErrors = (): React.ReactElement => {
   const [address, setAddress] = useState<string>(
     '0x83eC7B0506556a7749306D69681aDbDbd08f0769'
   );
-  const onChangeAddress = useCallback((address) => setAddress(address), []);
 
   return (
     <form noValidate autoComplete="off" onSubmit={onSubmit}>
@@ -455,7 +449,7 @@ export const AddressInputWithErrors = (): React.ReactElement => {
         placeholder={'Ethereum address'}
         showLoadingSpinner={false}
         address={address}
-        onChangeAddress={onChangeAddress}
+        onChangeAddress={setAddress}
         error={'Invalid Address'}
       />
     </form>
