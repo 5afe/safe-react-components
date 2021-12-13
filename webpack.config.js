@@ -3,9 +3,9 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: { index: './src/index.ts', xDataGrid: './src/dataDisplay/DataTable' },
   output: {
-    filename: 'index.min.js',
+    filename: '[name].min.js',
     sourceMapFilename: '[file].map',
     path: path.join(__dirname, '/dist'),
     libraryTarget: 'umd',
