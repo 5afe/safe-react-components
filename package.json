@@ -25,7 +25,6 @@
   "author": "Gnosis (https://gnosis.pm)",
   "license": "MIT",
   "dependencies": {
-    "@mui/x-data-grid": "4.0.2",
     "react-media": "^1.10.0",
     "web3-utils": "^1.6.0"
   },
@@ -71,6 +70,7 @@
     "rimraf": "^3.0.2",
     "storybook-addon-react-docgen": "^1.2.42",
     "styled-components": "^5.3.3",
+    "@mui/x-data-grid": "4.0.2",
     "ts-loader": "^8.2.0",
     "typescript": "^4.5.0",
     "url-loader": "^4.1.1",
