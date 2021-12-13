@@ -121,7 +121,8 @@ export const Table = ({
   <TableContainer
     style={maxHeight ? { maxHeight: maxHeight } : undefined}
     component={Paper}
-    elevation={3}>
+    elevation={3}
+  >
     <TableMui stickyHeader={isStickyHeader} className={className}>
       {/* HEADER CELLS */}
       {headers && (
@@ -130,13 +131,15 @@ export const Table = ({
             {getHeaders(headers || [], isCollapsible).map((header) => (
               <TableCell
                 key={header.id}
-                align={header.alignment || TableAlignment.left}>
+                align={header.alignment || TableAlignment.left}
+              >
                 {onHeaderClick ? (
                   <TableSortLabel
                     active={sortedByHeaderId === header.id}
                     direction={sortDirection}
                     onClick={() => onHeaderClick(header.id)}
-                    hideSortIcon={header.hideSortIcon}>
+                    hideSortIcon={header.hideSortIcon}
+                  >
                     {header.label}
                   </TableSortLabel>
                 ) : (
@@ -162,11 +165,13 @@ export const Table = ({
               <TableRow
                 hover
                 selected={selectedRowIds.has(row.id)}
-                onClick={() => onRowClick(row.id)}>
+                onClick={() => onRowClick(row.id)}
+              >
                 {rowCells.map((c, index) => (
                   <TableCell
                     key={c.id || `cell${index}`}
-                    align={c.alignment || TableAlignment.left}>
+                    align={c.alignment || TableAlignment.left}
+                  >
                     {c.content}
                   </TableCell>
                 ))}
@@ -177,11 +182,13 @@ export const Table = ({
                 <TableRow>
                   <TableCell
                     colSpan={rowCells.length}
-                    style={{ paddingBottom: 0, paddingTop: 0 }}>
+                    style={{ paddingBottom: 0, paddingTop: 0 }}
+                  >
                     <Collapse
                       in={selectedRowIds.has(row.id)}
                       timeout="auto"
-                      unmountOnExit>
+                      unmountOnExit
+                    >
                       <Box margin={1}>{row.collapsibleContent}</Box>
                     </Collapse>
                   </TableCell>

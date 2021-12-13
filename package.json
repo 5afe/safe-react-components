@@ -25,8 +25,9 @@
   "author": "Gnosis (https://gnosis.pm)",
   "license": "MIT",
   "dependencies": {
-    "web3-utils": "^1.6.0",
-    "react-media": "^1.10.0"
+    "@mui/x-data-grid": "4.0.2",
+    "react-media": "^1.10.0",
+    "web3-utils": "^1.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -53,7 +54,6 @@
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
     "copy-webpack-plugin": "^6.3.0",
-    "react-qr-reader": "2.2.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -67,6 +67,7 @@
     "prettier": "^2.4.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-qr-reader": "2.2.1",
     "rimraf": "^3.0.2",
     "storybook-addon-react-docgen": "^1.2.42",
     "styled-components": "^5.3.3",
@@ -79,6 +80,7 @@
   },
   "peerDependencies": {
     "@material-ui/core": "4.X.X",
+    "@mui/x-data-grid": "^4.X.X",
     "react": "16.x.x || 17.x.x",
     "react-dom": "16.x.x || 17.x.x",
     "styled-components": "5.x.x"

@@ -10,3 +10,4 @@ declare module '*.svg' {
 
 declare module '*.ttf';
 declare module '*.woff2';
+declare module 'react-qr-reader';
