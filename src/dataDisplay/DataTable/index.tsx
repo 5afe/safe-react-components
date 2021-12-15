@@ -11,33 +11,36 @@ const DataTable = (props: DataGridProps): React.ReactElement => {
 };
 
 const useStyles = makeStyles({
+  root: {
+    '&.MuiDataGrid-root .MuiDataGrid-row.Mui-selected,&.MuiDataGrid-root  .MuiDataGrid-row.Mui-selected:hover':
+      {
+        backgroundColor: 'transparent',
+      },
+    '&.MuiDataGrid-root .MuiDataGrid-cell:focus,&.MuiDataGrid-root .MuiDataGrid-cell:focus-within,&.MuiDataGrid-cellCheckbox:focus':
+      {
+        backgroundColor: alpha(theme.colors.primary, 0.05),
+        outline: 'none',
+      },
+    '&.MuiDataGrid-root .MuiDataGrid-columnHeader:focus,&.MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within':
+      {
+        backgroundColor: alpha(theme.colors.primary, 0.05),
+        outline: 'none',
+      },
+  },
   row: {
     '&:hover': {
       backgroundColor: 'transparent !important',
-    },
-    '&.MuiDataGrid-row.Mui-selected,&.MuiDataGrid-row.Mui-selected:hover': {
-      backgroundColor: 'transparent',
     },
   },
   cell: {
     '&.MuiDataGrid-cellCheckbox .Mui-checked': {
       color: theme.colors.primary,
     },
-    '&.MuiDataGrid-cell:focus,&.MuiDataGrid-cell:focus-within,&.MuiDataGrid-cellCheckbox:focus':
-      {
-        backgroundColor: alpha(theme.colors.primary, 0.05),
-        outline: 'none',
-      },
   },
   columnHeader: {
     '&.MuiDataGrid-columnHeader .Mui-checked': {
       color: theme.colors.primary,
     },
-    '&.MuiDataGrid-columnHeader:focus,&.MuiDataGrid-columnHeader:focus-within':
-      {
-        backgroundColor: alpha(theme.colors.primary, 0.05),
-        outline: 'none',
-      },
   },
 });
 
