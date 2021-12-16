@@ -16,12 +16,7 @@ const useStyles = makeStyles({
       {
         backgroundColor: 'transparent',
       },
-    '&.MuiDataGrid-root .MuiDataGrid-cell:focus,&.MuiDataGrid-root .MuiDataGrid-cell:focus-within,&.MuiDataGrid-cellCheckbox:focus':
-      {
-        backgroundColor: alpha(theme.colors.primary, 0.05),
-        outline: 'none',
-      },
-    '&.MuiDataGrid-root .MuiDataGrid-columnHeader:focus,&.MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within':
+    '&.MuiDataGrid-root .MuiDataGrid-cell:focus,&.MuiDataGrid-root .MuiDataGrid-cell:focus-within,&.MuiDataGrid-cellCheckbox:focus,&.MuiDataGrid-root .MuiDataGrid-columnHeader:focus,&.MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within':
       {
         backgroundColor: alpha(theme.colors.primary, 0.05),
         outline: 'none',
