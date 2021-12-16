@@ -145,13 +145,13 @@ export const SimpleAddressInput = ({
             onError={() => {
               console.log('error:');
             }}
-            onScan={(value) => {
+            onScan={(value: string) => {
               if (value) {
                 setAddress(value);
                 setOpenQRModal(false);
               }
             }}
-            onImageLoad={(address) => setAddress(address)}
+            onImageLoad={(address: string) => setAddress(address)}
           />
         </DialogContent>
       </Dialog>

@@ -17,7 +17,7 @@ export default {
   },
 };
 
-const columns = [
+const COLUMN_CONFIG = [
   {
     field: 'asset',
     headerName: 'Asset',
@@ -55,15 +55,27 @@ const generateTestData = (howMany: number): GridRowsProp => {
   return testData;
 };
 
-const rows = generateTestData(20);
-
 export const DataGrid = (): React.ReactElement => {
   return (
     <DataTable
-      rows={rows}
-      columns={columns}
+      rows={generateTestData(5)}
+      columns={COLUMN_CONFIG}
+      checkboxSelection
+      hideFooter
+      autoHeight
+      density={GridDensityTypes.Comfortable}
+    />
+  );
+};
+
+export const PaginatedDataGrid = (): React.ReactElement => {
+  return (
+    <DataTable
+      rows={generateTestData(20)}
+      columns={COLUMN_CONFIG}
       pageSize={5}
       rowsPerPageOptions={[5]}
+      disableColumnMenu
       checkboxSelection
       autoHeight
       density={GridDensityTypes.Comfortable}
