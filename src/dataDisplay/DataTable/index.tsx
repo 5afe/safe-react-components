@@ -11,28 +11,25 @@ const DataTable = (props: DataGridProps): React.ReactElement => {
 };
 
 const useStyles = makeStyles({
-  root: {
-    '&.MuiDataGrid-root .MuiDataGrid-row.Mui-selected,&.MuiDataGrid-root  .MuiDataGrid-row.Mui-selected:hover':
-      {
-        backgroundColor: 'transparent',
-      },
-    '&.MuiDataGrid-root .MuiDataGrid-cell:focus,&.MuiDataGrid-root .MuiDataGrid-cell:focus-within,&.MuiDataGrid-cellCheckbox:focus,&.MuiDataGrid-root .MuiDataGrid-columnHeader:focus,&.MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within':
-      {
-        backgroundColor: alpha(theme.colors.primary, 0.05),
-        outline: 'none',
-      },
-  },
   row: {
-    '&:hover': {
+    '&:hover, &.Mui-selected': {
       backgroundColor: 'transparent !important',
     },
   },
   cell: {
+    '&:focus,&:focus-within,&.MuiDataGrid-cellCheckbox:focus': {
+      backgroundColor: alpha(theme.colors.primary, 0.05),
+      outline: 'none !important',
+    },
     '&.MuiDataGrid-cellCheckbox .Mui-checked': {
       color: theme.colors.primary,
     },
   },
   columnHeader: {
+    '&:focus,&:focus-within': {
+      backgroundColor: alpha(theme.colors.primary, 0.05),
+      outline: 'none !important',
+    },
     '&.MuiDataGrid-columnHeader .Mui-checked': {
       color: theme.colors.primary,
     },
