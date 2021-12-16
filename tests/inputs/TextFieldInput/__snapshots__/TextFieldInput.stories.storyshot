@@ -412,7 +412,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-75 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-76 Mui-checked"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-79 Mui-checked"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -431,7 +431,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
         >
           <input
             checked={true}
-            className="PrivateSwitchBase-input-78 MuiSwitch-input"
+            className="PrivateSwitchBase-input-81 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -454,7 +454,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-75 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiSwitch-switchBase MuiSwitch-colorSecondary"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -473,7 +473,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-78 MuiSwitch-input"
+            className="PrivateSwitchBase-input-81 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -496,7 +496,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-75 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiSwitch-switchBase MuiSwitch-colorSecondary"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -515,7 +515,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-78 MuiSwitch-input"
+            className="PrivateSwitchBase-input-81 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -588,7 +588,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-79 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-80 Mui-checked"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-82 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-83 Mui-checked"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -607,7 +607,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
         >
           <input
             checked={true}
-            className="PrivateSwitchBase-input-82 MuiSwitch-input"
+            className="PrivateSwitchBase-input-85 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />

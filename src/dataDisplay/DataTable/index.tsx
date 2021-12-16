@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { DataGrid as DataGridMui, DataGridProps } from '@mui/x-data-grid';
 import { alpha } from '@material-ui/core/styles/colorManipulator';
+import { DataGrid as DataGridMui, DataGridProps } from '@mui/x-data-grid';
 import theme from '../../theme';
 
 const DataTable = (props: DataGridProps): React.ReactElement => {
