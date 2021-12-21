@@ -1,4 +1,4 @@
-name: NPM Package
+name: Release
 
 on:
   push:
@@ -14,24 +14,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-
-      - name: Yarn cache
-        uses: actions/cache@v2
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-
-      - name: Yarn install
-        run: |
-          mkdir .yarncache
-          yarn install --cache-folder ./.yarncache --frozen-lockfile
-          rm -rf .yarncache
-          yarn cache clean
-
       - name: Extract version
         id: version
         run: |
@@ -46,17 +28,14 @@ jobs:
             exit 1
           fi
 
-      - name: Publish to NPM
-        uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-
       - name: Create a git tag
+        if: success()
         run: git tag $NEW_VERSION && git push --tags
         env:
           NEW_VERSION: ${{ steps.version.outputs.version }}
 
       - name: GitHub release
+        if: success()
         uses: actions/create-release@v1
         id: create_release
         with:
