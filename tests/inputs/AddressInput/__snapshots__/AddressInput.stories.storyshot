@@ -183,7 +183,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-57 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-63 MuiSwitch-switchBase MuiSwitch-colorSecondary"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -202,7 +202,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-60 MuiSwitch-input"
+            className="PrivateSwitchBase-input-66 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />

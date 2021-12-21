@@ -19,7 +19,5 @@
     "jsx": "react"
   },
   "include": ["src"],
-  "exclude": [
-    "node_modules", "**/*.stories.ts", "**/*.stories.tsx"
-  ]
+  "exclude": ["node_modules", "**/*.stories.tsx", "**/*.stories.ts"]
 }
