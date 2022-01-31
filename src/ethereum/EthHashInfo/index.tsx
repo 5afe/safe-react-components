@@ -125,7 +125,7 @@ const EthHashInfo = ({
 
       <InfoContainer>
         {name && (
-          <Text size={textSize} color={textColor}>
+          <Text size={textSize} color={textColor} strong>
             {name}
           </Text>
         )}
