@@ -47,6 +47,7 @@ type Props = {
   showHash?: boolean;
   shortenHash?: number;
   name?: string;
+  boldName?: boolean;
   textColor?: ThemeColors;
   textSize?: ThemeTextSize;
   showAvatar?: boolean;
@@ -81,6 +82,7 @@ const EthHashInfo = ({
   hash,
   showHash = true,
   name,
+  boldName = false,
   textColor = 'text',
   textSize = 'lg',
   className,
@@ -125,7 +127,7 @@ const EthHashInfo = ({
 
       <InfoContainer>
         {name && (
-          <Text size={textSize} color={textColor} strong>
+          <Text size={textSize} color={textColor} strong={boldName}>
             {name}
           </Text>
         )}
