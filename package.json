@@ -80,6 +80,7 @@
   },
   "peerDependencies": {
     "@material-ui/core": "4.X.X",
+    "@material-ui/lab": "^4.0.0-alpha.60",
     "@mui/x-data-grid": "^4.X.X",
     "react": "16.x.x || 17.x.x",
     "react-dom": "16.x.x || 17.x.x",
