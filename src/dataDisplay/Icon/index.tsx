@@ -39,6 +39,7 @@ import filledCross from './images/filledCross';
 import fingerPrint from './images/fingerPrint';
 import fuelIndicator from './images/fuelIndicator';
 import getInTouch from './images/getInTouch';
+import gift from './images/gift';
 import home from './images/home';
 import importImg from './images/import';
 import info from './images/info';
@@ -126,6 +127,7 @@ const icons = {
   fingerPrint,
   fuelIndicator,
   getInTouch,
+  gift,
   home,
   importImg,
   info,
