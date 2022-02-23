@@ -15,7 +15,6 @@ import {
   inputStyles,
   errorStyles,
 } from '../TextFieldInput/styles';
-import { SelectFieldProps } from 'material-ui';
 
 export type SelectItem = {
   id: string;
@@ -143,6 +142,14 @@ const StyledSelect = styled(SelectMUI)`
 
     .MuiSelect-selectMenu {
       font-family: ${(props) => props.theme.fonts.fontFamily};
+    }
+
+    && {
+      fieldset {
+        border: 1px solid
+          ${({ theme, value }) =>
+            value ? theme.colors.inputFilled : theme.colors.inputDisabled};
+      }
     }
   }
 `;

@@ -31,7 +31,6 @@ export const SimpleSelect = (): React.ReactElement => {
       name="default-select"
       items={items}
       activeItemId={activeItemId}
-      disabled={true}
       onItemClick={(id) => {
         setActiveItemId(id);
       }}
