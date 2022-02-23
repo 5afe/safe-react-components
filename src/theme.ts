@@ -32,6 +32,11 @@ const theme = {
     warning: '#FFC05F',
     pending: '#E8663D',
 
+    inputText: '#383E42',
+    inputPlaceholder: '#B2BBC0',
+    inputBorder: '#EEEFF0',
+    inputBorderHover: '#B2BBC0',
+
     disabled: {
       opacity: 0.5,
     },

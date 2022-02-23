@@ -100,54 +100,6 @@ const StyledTextField = styled(TextFieldInput)`
   }
 `;
 
-export const CustomCSSTextField = (): React.ReactElement => {
-  const [value, setValue] = useState<string>('Focus me! :D');
-
-  return (
-    <form noValidate autoComplete="off" onSubmit={onSubmit}>
-      <StyledTextField
-        id="standard-TextFieldInput"
-        label="TextFieldInput"
-        name="TextFieldInput"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
-      <pre style={{ backgroundColor: 'lightgrey', borderRadius: '4px' }}>
-        {`
-         const StyledTextField = styled(TextFieldInput)\`
-         && {
-           .MuiFilledInput-root {
-             background-color: lightgreen;
-             width: 200px;
-             transition: width 1s ease-out;
-           }
-     
-           .MuiFilledInput-root.Mui-focused {
-             width: 400px;
-           }
-     
-           .MuiFormLabel-root.Mui-focused {
-             color: \${({ error, theme }) =>
-               error ? theme.colors.error : 'darkgreen'};
-           }
-     
-           .MuiInputLabel-filled {
-             color: \${({ theme, error }) =>
-               error ? theme.colors.error : 'purple'};
-           }
-     
-           .MuiFilledInput-underline:after {
-             border-bottom: 2px solid
-               \${({ theme, error }) => (error ? theme.colors.error : 'orange')};
-           }
-         }
-       \`;
-      `}
-      </pre>
-    </form>
-  );
-};
-
 export const TextFieldWithErrors = (): React.ReactElement => {
   const [value, setValue] = useState<string>('this field has an error');
 

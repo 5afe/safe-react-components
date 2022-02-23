@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import TextFieldMui, { TextFieldProps } from '@material-ui/core/TextField';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export type TextFieldInputProps = {
   id?: string;
@@ -15,11 +15,12 @@ export type TextFieldInputProps = {
 function TextFieldInput({
   id,
   name,
+  label,
   error = '',
   helperText,
   value,
-  hiddenLabel = !value,
-  showErrorsInTheLabel = true,
+  hiddenLabel,
+  showErrorsInTheLabel,
   ...rest
 }: TextFieldInputProps): ReactElement {
   const hasError = !!error;
@@ -28,16 +29,17 @@ function TextFieldInput({
     <TextField
       id={id || name}
       name={name}
+      label={showErrorsInTheLabel && hasError ? error : label}
       value={value}
       helperText={hasError ? error : helperText}
       error={hasError}
       color="primary"
-      variant="filled"
+      variant="outlined"
       hiddenLabel={hiddenLabel}
       showErrorsInTheLabel={showErrorsInTheLabel}
       InputLabelProps={{
         ...rest.InputLabelProps,
-        shrink: hiddenLabel || (error && showErrorsInTheLabel) || undefined,
+        shrink: hiddenLabel || undefined,
       }}
       {...rest}
     />
@@ -70,25 +72,19 @@ const TextField = styled(
           : theme.colors.primary};
     }
 
-    .MuiFilledInput-underline:before {
-      border-bottom: 0;
-    }
-
-    .MuiFilledInput-underline:after {
-      border-bottom: 2px solid
-        ${({ theme, error }) =>
-          error ? theme.colors.error : theme.colors.primary};
-    }
-
-    .MuiInputBase-input {
-      text-overflow: ellipsis;
-      letter-spacing: 0.5px;
+    .MuiFormLabel-root {
+      color: ${({ theme }) => theme.colors.inputPlaceholder};
+      &.MuiInputLabel-shrink {
+        color: ${({ error, theme }) =>
+          error ? theme.colors.error : theme.colors.inputText};
+      }
     }
 
     .MuiInputLabel-root {
-      ${({ hiddenLabel, error, showErrorsInTheLabel }) =>
-        hiddenLabel || (error && showErrorsInTheLabel)
+      ${({ hiddenLabel }) =>
+        hiddenLabel
           ? `border: 0;
+      border: 2px solid red;    
       clip: rect(0 0 0 0);
       height: 1px;
       margin: -1px;
@@ -97,18 +93,62 @@ const TextField = styled(
       position: absolute;
       width: 1px;`
           : ''}
+
+      .MuiInputBase-input {
+        text-overflow: ellipsis;
+        letter-spacing: 0.5px;
+        ${({ error, showErrorsInTheLabel }) =>
+          error && showErrorsInTheLabel ? ' padding: 27px 12px 10px;' : ''}
+      }
+    }
+
+    .MuiInputBase-root {
+      color: ${({ error, theme }) =>
+        error ? theme.colors.error : theme.colors.inputText};
+      input {
+        &::placeholder {
+          opacity: 1;
+          color: ${({ theme }) => theme.colors.inputPlaceholder};
+        }
+      }
+    }
+
+    .MuiOutlinedInput-root {
+      .MuiOutlinedInput-notchedOutline {
+        ${({ hiddenLabel }) => (hiddenLabel ? 'top: 0' : '')};
+        transition: border-color 0.2s ease-in-out;
+        border: 2px solid
+          ${({ error, disabled, theme, value }) =>
+            error
+              ? theme.colors.error
+              : disabled
+              ? theme.colors.inputBorder
+              : value
+              ? theme.colors.inputBorderHover
+              : theme.colors.inputBorder};
+
+        border-radius: 6px;
+
+        legend {
+          display: ${({ hiddenLabel }) => (hiddenLabel ? 'none' : 'block')};
+        }
+      }
+      &:hover,
+      &.Mui-focused {
+        .MuiOutlinedInput-notchedOutline {
+          border-color: ${({ error, theme, disabled }) =>
+            error
+              ? theme.colors.error
+              : disabled
+              ? theme.colors.inputBorder
+              : theme.colors.inputBorderHover};
+        }
+      }
     }
 
     .MuiFormHelperText-root.Mui-error {
       ${({ error, showErrorsInTheLabel }) =>
-        error && showErrorsInTheLabel
-          ? `position: absolute; top: 5px; margin-left: 12px;`
-          : ''}
-    }
-
-    .MuiInputBase-input {
-      ${({ error, showErrorsInTheLabel }) =>
-        error && showErrorsInTheLabel ? ' padding: 27px 12px 10px;' : ''}
+        error && showErrorsInTheLabel ? `display: none` : ''}
     }
   }
 `;
