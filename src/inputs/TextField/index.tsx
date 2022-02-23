@@ -80,7 +80,7 @@ function TextField({
       InputProps={customInputBaseProps}
       inputProps={inputProps}
       color="primary"
-      variant="outlined"
+      variant="filled"
     />
   );
 }

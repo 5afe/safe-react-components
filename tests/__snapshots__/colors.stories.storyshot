@@ -48,6 +48,26 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     className="sc-hmjpVf bpMVWC"
   >
     <div
+      className="sc-eLwHnm cqrxcN"
+      color="#383E42"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputText
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #383E42
+    </p>
+  </div>
+  <div
+    className="sc-hmjpVf bpMVWC"
+  >
+    <div
       className="sc-eLwHnm diSWTI"
       color="#005546"
     />
@@ -248,6 +268,46 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     className="sc-hmjpVf bpMVWC"
   >
     <div
+      className="sc-eLwHnm kWcAhB"
+      color="#B2BBC0"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputPlaceholder
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #B2BBC0
+    </p>
+  </div>
+  <div
+    className="sc-hmjpVf bpMVWC"
+  >
+    <div
+      className="sc-eLwHnm kWcAhB"
+      color="#B2BBC0"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputBorderHover
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #B2BBC0
+    </p>
+  </div>
+  <div
+    className="sc-hmjpVf bpMVWC"
+  >
+    <div
       className="sc-eLwHnm iChVCa"
       color="#A1D2CA"
     />
@@ -362,6 +422,26 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
       size="md"
     >
       #FFE6EA
+    </p>
+  </div>
+  <div
+    className="sc-hmjpVf bpMVWC"
+  >
+    <div
+      className="sc-eLwHnm eNdQkj"
+      color="#EEEFF0"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputBorder
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #EEEFF0
     </p>
   </div>
   <div

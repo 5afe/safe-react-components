@@ -1,85 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Inputs/TextFieldInput Custom CSS Text Field 1`] = `
-<form
-  autoComplete="off"
-  noValidate={true}
-  onSubmit={[Function]}
->
-  <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI sc-gsNilK gDEnwG"
-  >
-    <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
-      data-shrink={true}
-      htmlFor="standard-TextFieldInput"
-      id="standard-TextFieldInput-label"
-    >
-      TextFieldInput
-    </label>
-    <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
-      onClick={[Function]}
-    >
-      <input
-        aria-invalid={false}
-        autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input"
-        disabled={false}
-        id="standard-TextFieldInput"
-        name="TextFieldInput"
-        onAnimationStart={[Function]}
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        required={false}
-        type="text"
-        value="Focus me! :D"
-      />
-    </div>
-  </div>
-  <pre
-    style={
-      Object {
-        "backgroundColor": "lightgrey",
-        "borderRadius": "4px",
-      }
-    }
-  >
-    
-         const StyledTextField = styled(TextFieldInput)\`
-         && {
-           .MuiFilledInput-root {
-             background-color: lightgreen;
-             width: 200px;
-             transition: width 1s ease-out;
-           }
-     
-           .MuiFilledInput-root.Mui-focused {
-             width: 400px;
-           }
-     
-           .MuiFormLabel-root.Mui-focused {
-             color: \${({ error, theme }) =&gt;
-               error ? theme.colors.error : 'darkgreen'};
-           }
-     
-           .MuiInputLabel-filled {
-             color: \${({ theme, error }) =&gt;
-               error ? theme.colors.error : 'purple'};
-           }
-     
-           .MuiFilledInput-underline:after {
-             border-bottom: 2px solid
-               \${({ theme, error }) =&gt; (error ? theme.colors.error : 'orange')};
-           }
-         }
-       \`;
-      
-  </pre>
-</form>
-`;
-
 exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
 <form
   autoComplete="off"
@@ -87,10 +7,10 @@ exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp kYzoik"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp hTeiFP"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-disabled Mui-disabled MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined Mui-disabled Mui-disabled MuiFormLabel-filled"
       data-shrink={true}
       htmlFor="standard-TextFieldInput"
       id="standard-TextFieldInput-label"
@@ -98,13 +18,13 @@ exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
       TextFieldInput
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-formControl"
       onClick={[Function]}
     >
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input Mui-disabled Mui-disabled"
+        className="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
         disabled={true}
         id="standard-TextFieldInput"
         name="TextFieldInput"
@@ -116,6 +36,18 @@ exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
         type="text"
         value="this field is disabled"
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-117 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-119 PrivateNotchedOutline-legendNotched-120"
+        >
+          <span>
+            TextFieldInput
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
 </form>
@@ -128,24 +60,24 @@ exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp gNEEiH"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp dfFfZx"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
-      data-shrink={true}
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+      data-shrink={false}
       htmlFor="standard-TextFieldInput"
       id="standard-TextFieldInput-label"
     >
       TextFieldInput
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
       onClick={[Function]}
     >
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
         disabled={false}
         id="standard-TextFieldInput"
         name="TextFieldInput"
@@ -158,7 +90,7 @@ exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
         value=""
       />
       <div
-        className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-hiddenLabel MuiInputAdornment-filled"
+        className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
       >
         <span
           className="sc-iqseJM iJclAE"
@@ -189,6 +121,18 @@ exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
           </svg>
         </span>
       </div>
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-121 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-123"
+        >
+          <span>
+            TextFieldInput
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
 </form>
@@ -201,10 +145,10 @@ exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp gzKwtz"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
       data-shrink={true}
       htmlFor="standard-NumberTextFieldInput"
       id="standard-NumberTextFieldInput-label"
@@ -212,13 +156,13 @@ exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
       Number
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
       onClick={[Function]}
     >
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input"
+        className="MuiInputBase-input MuiOutlinedInput-input"
         disabled={false}
         id="standard-NumberTextFieldInput"
         name="NumberTextFieldInput"
@@ -230,6 +174,18 @@ exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
         type="number"
         value="100"
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-125 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-127 PrivateNotchedOutline-legendNotched-128"
+        >
+          <span>
+            Number
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
 </form>
@@ -242,24 +198,24 @@ exports[`Storyshots Inputs/TextFieldInput Simple Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp gNEEiH"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp dfFfZx"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
-      data-shrink={true}
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+      data-shrink={false}
       htmlFor="standard-TextFieldInput"
       id="standard-TextFieldInput-label"
     >
       TextFieldInput
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
       onClick={[Function]}
     >
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel"
+        className="MuiInputBase-input MuiOutlinedInput-input"
         disabled={false}
         id="standard-TextFieldInput"
         name="TextFieldInput"
@@ -272,6 +228,18 @@ exports[`Storyshots Inputs/TextFieldInput Simple Text Field 1`] = `
         type="text"
         value=""
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-129 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-131"
+        >
+          <span>
+            TextFieldInput
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
 </form>
@@ -284,10 +252,10 @@ exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp gNEEiH"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp dfFfZx"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
       data-shrink={true}
       htmlFor="standard-TextFieldInput"
       id="standard-TextFieldInput-label"
@@ -295,11 +263,11 @@ exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
       TextFieldInput
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-adornedStart MuiFilledInput-adornedStart"
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart"
       onClick={[Function]}
     >
       <div
-        className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-hiddenLabel MuiInputAdornment-filled"
+        className="MuiInputAdornment-root MuiInputAdornment-positionStart"
       >
         <span
           className="sc-iqseJM iJclAE"
@@ -333,7 +301,7 @@ exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedStart MuiFilledInput-inputAdornedStart"
+        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart"
         disabled={false}
         id="standard-TextFieldInput"
         name="TextFieldInput"
@@ -345,6 +313,18 @@ exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
         type="text"
         value=""
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-133 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-135 PrivateNotchedOutline-legendNotched-136"
+        >
+          <span>
+            TextFieldInput
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
 </form>
@@ -357,10 +337,10 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp laNQiK"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp hXWVrL"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-error Mui-error MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined Mui-error Mui-error MuiFormLabel-filled"
       data-shrink={true}
       htmlFor="standard-TextFieldInput"
       id="standard-TextFieldInput-label"
@@ -368,14 +348,14 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors 1`] = `
       TextFieldInput
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-error Mui-error MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root Mui-error Mui-error MuiInputBase-formControl"
       onClick={[Function]}
     >
       <input
         aria-describedby="standard-TextFieldInput-helper-text"
         aria-invalid={true}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input"
+        className="MuiInputBase-input MuiOutlinedInput-input"
         disabled={false}
         id="standard-TextFieldInput"
         name="TextFieldInput"
@@ -387,6 +367,18 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors 1`] = `
         type="text"
         value="this field has an error"
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-137 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-139 PrivateNotchedOutline-legendNotched-140"
+        >
+          <span>
+            TextFieldInput
+          </span>
+        </legend>
+      </fieldset>
     </div>
     <p
       className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error MuiFormHelperText-filled"
@@ -412,7 +404,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-82 Mui-checked"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-141 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-142 Mui-checked"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -431,7 +423,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
         >
           <input
             checked={true}
-            className="PrivateSwitchBase-input-84 MuiSwitch-input"
+            className="PrivateSwitchBase-input-144 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -454,7 +446,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-141 MuiSwitch-switchBase MuiSwitch-colorSecondary"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -473,7 +465,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-84 MuiSwitch-input"
+            className="PrivateSwitchBase-input-144 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -496,7 +488,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-81 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-141 MuiSwitch-switchBase MuiSwitch-colorSecondary"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -515,7 +507,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-84 MuiSwitch-input"
+            className="PrivateSwitchBase-input-144 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -531,10 +523,10 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     Show Errors in The Label
   </p>
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp ciqoWk"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp hXWVrL"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled Mui-error Mui-error"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-error Mui-error"
       data-shrink={false}
       htmlFor="standard-TextFieldInput"
       id="standard-TextFieldInput-label"
@@ -542,14 +534,14 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
       TextFieldInput
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-error Mui-error MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root Mui-error Mui-error MuiInputBase-formControl"
       onClick={[Function]}
     >
       <input
         aria-describedby="standard-TextFieldInput-helper-text"
         aria-invalid={true}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input"
+        className="MuiInputBase-input MuiOutlinedInput-input"
         disabled={false}
         id="standard-TextFieldInput"
         name="TextFieldInput"
@@ -562,6 +554,18 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
         type="text"
         value=""
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-145 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-147"
+        >
+          <span>
+            TextFieldInput
+          </span>
+        </legend>
+      </fieldset>
     </div>
     <p
       className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error"
@@ -588,7 +592,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-85 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-86 Mui-checked"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-150 Mui-checked"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -607,7 +611,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
         >
           <input
             checked={true}
-            className="PrivateSwitchBase-input-88 MuiSwitch-input"
+            className="PrivateSwitchBase-input-152 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -622,10 +626,10 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
     </span>
   </p>
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp gNEEiH"
+    className="MuiFormControl-root MuiTextField-root sc-jJoQJp cXewNT"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
       data-shrink={true}
       htmlFor="standard-TextFieldInput"
       id="standard-TextFieldInput-label"
@@ -633,13 +637,13 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
       TextFieldInput
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
       onClick={[Function]}
     >
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel"
+        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel"
         disabled={false}
         id="standard-TextFieldInput"
         name="TextFieldInput"
@@ -652,6 +656,18 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
         type="text"
         value=""
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-153 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-155 PrivateNotchedOutline-legendNotched-156"
+        >
+          <span>
+            TextFieldInput
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
 </form>
