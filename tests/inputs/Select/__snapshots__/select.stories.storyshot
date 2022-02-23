@@ -1,54 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Inputs/Select Simple Select 1`] = `
-<div>
+<div
+  className="MuiFormControl-root sc-kLwhqv cNjiSN"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+    data-shrink={false}
+  >
+    generic-select
+  </label>
   <div
-    className="MuiFormControl-root"
+    className="MuiInputBase-root MuiOutlinedInput-root sc-bYoBSM czlNLr MuiInputBase-formControl"
+    onClick={[Function]}
   >
     <div
-      className="MuiInputBase-root MuiInput-root MuiInput-underline sc-bYoBSM dNRdPa MuiInputBase-formControl MuiInput-formControl"
-      onClick={[Function]}
+      aria-haspopup="listbox"
+      aria-labelledby="generic-select generic-select"
+      className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+      id="generic-select"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="button"
+      tabIndex={0}
     >
-      <div
-        aria-haspopup="listbox"
-        aria-labelledby="generic-select generic-select"
-        className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
-        id="generic-select"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onMouseDown={[Function]}
-        role="button"
-        tabIndex={0}
-      >
-        <span
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "&#8203;",
-            }
+      <span
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "&#8203;",
           }
-        />
-      </div>
-      <input
-        aria-hidden={true}
-        className="MuiSelect-nativeInput"
-        onAnimationStart={[Function]}
-        onChange={[Function]}
-        required={false}
-        tabIndex={-1}
-        value=""
+        }
       />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root MuiSelect-icon"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M7 10l5 5 5-5z"
-        />
-      </svg>
     </div>
+    <input
+      aria-hidden={true}
+      className="MuiSelect-nativeInput"
+      onAnimationStart={[Function]}
+      onChange={[Function]}
+      required={false}
+      tabIndex={-1}
+      value=""
+    />
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-113 MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        className="PrivateNotchedOutline-legendLabelled-115"
+      >
+        <span>
+          generic-select
+        </span>
+      </legend>
+    </fieldset>
   </div>
 </div>
 `;

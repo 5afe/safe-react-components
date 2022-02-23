@@ -2,7 +2,7 @@
 
 exports[`Storyshots Utils/Modals/utils/FooterConfirmation Modal Footer 1`] = `
 <div
-  className="sc-ZOtfp eSFgdu"
+  className="sc-jOxtWs fbPjTw"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV hmsnQe primary outlined"
@@ -57,7 +57,7 @@ exports[`Storyshots Utils/Modals/utils/FooterConfirmation Modal Footer 1`] = `
 
 exports[`Storyshots Utils/Modals/utils/FooterConfirmation Ok Disabled 1`] = `
 <div
-  className="sc-ZOtfp eSFgdu"
+  className="sc-jOxtWs fbPjTw"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV hmsnQe primary outlined"

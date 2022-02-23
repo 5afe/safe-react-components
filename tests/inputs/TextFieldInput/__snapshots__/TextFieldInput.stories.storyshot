@@ -7,7 +7,7 @@ exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp hTeiFP"
+    className="MuiFormControl-root MuiTextField-root sc-hiCibw kUXvib"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined Mui-disabled Mui-disabled MuiFormLabel-filled"
@@ -38,10 +38,10 @@ exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
       />
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-117 MuiOutlinedInput-notchedOutline"
+        className="PrivateNotchedOutline-root-121 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-119 PrivateNotchedOutline-legendNotched-120"
+          className="PrivateNotchedOutline-legendLabelled-123 PrivateNotchedOutline-legendNotched-124"
         >
           <span>
             TextFieldInput
@@ -60,7 +60,7 @@ exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp dfFfZx"
+    className="MuiFormControl-root MuiTextField-root sc-hiCibw cdprHs"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -123,10 +123,10 @@ exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
       </div>
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-121 MuiOutlinedInput-notchedOutline"
+        className="PrivateNotchedOutline-root-125 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-123"
+          className="PrivateNotchedOutline-legendLabelled-127"
         >
           <span>
             TextFieldInput
@@ -145,7 +145,7 @@ exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp gzKwtz"
+    className="MuiFormControl-root MuiTextField-root sc-hiCibw dorWeo"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
@@ -176,10 +176,10 @@ exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
       />
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-125 MuiOutlinedInput-notchedOutline"
+        className="PrivateNotchedOutline-root-129 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-127 PrivateNotchedOutline-legendNotched-128"
+          className="PrivateNotchedOutline-legendLabelled-131 PrivateNotchedOutline-legendNotched-132"
         >
           <span>
             Number
@@ -198,7 +198,7 @@ exports[`Storyshots Inputs/TextFieldInput Simple Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp dfFfZx"
+    className="MuiFormControl-root MuiTextField-root sc-hiCibw cdprHs"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -230,10 +230,10 @@ exports[`Storyshots Inputs/TextFieldInput Simple Text Field 1`] = `
       />
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-129 MuiOutlinedInput-notchedOutline"
+        className="PrivateNotchedOutline-root-133 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-131"
+          className="PrivateNotchedOutline-legendLabelled-135"
         >
           <span>
             TextFieldInput
@@ -252,7 +252,7 @@ exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp dfFfZx"
+    className="MuiFormControl-root MuiTextField-root sc-hiCibw cdprHs"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
@@ -315,10 +315,10 @@ exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
       />
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-133 MuiOutlinedInput-notchedOutline"
+        className="PrivateNotchedOutline-root-137 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-135 PrivateNotchedOutline-legendNotched-136"
+          className="PrivateNotchedOutline-legendLabelled-139 PrivateNotchedOutline-legendNotched-140"
         >
           <span>
             TextFieldInput
@@ -337,7 +337,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp hXWVrL"
+    className="MuiFormControl-root MuiTextField-root sc-hiCibw edDTca"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined Mui-error Mui-error MuiFormLabel-filled"
@@ -369,10 +369,10 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors 1`] = `
       />
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-137 MuiOutlinedInput-notchedOutline"
+        className="PrivateNotchedOutline-root-141 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-139 PrivateNotchedOutline-legendNotched-140"
+          className="PrivateNotchedOutline-legendLabelled-143 PrivateNotchedOutline-legendNotched-144"
         >
           <span>
             TextFieldInput
@@ -400,11 +400,11 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     className="MuiTypography-root MuiTypography-body1"
   >
     <span
-      className="MuiSwitch-root sc-kLwhqv ckEIHj"
+      className="MuiSwitch-root sc-ikJyIC jaRpaj"
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-141 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-142 Mui-checked"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-145 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-146 Mui-checked"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -423,7 +423,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
         >
           <input
             checked={true}
-            className="PrivateSwitchBase-input-144 MuiSwitch-input"
+            className="PrivateSwitchBase-input-148 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -442,11 +442,11 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     className="MuiTypography-root MuiTypography-body1"
   >
     <span
-      className="MuiSwitch-root sc-kLwhqv eEUkNP"
+      className="MuiSwitch-root sc-ikJyIC cPEayX"
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-141 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-145 MuiSwitch-switchBase MuiSwitch-colorSecondary"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -465,7 +465,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-144 MuiSwitch-input"
+            className="PrivateSwitchBase-input-148 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -484,11 +484,11 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     className="MuiTypography-root MuiTypography-body1"
   >
     <span
-      className="MuiSwitch-root sc-kLwhqv eEUkNP"
+      className="MuiSwitch-root sc-ikJyIC cPEayX"
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-141 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-145 MuiSwitch-switchBase MuiSwitch-colorSecondary"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -507,7 +507,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-144 MuiSwitch-input"
+            className="PrivateSwitchBase-input-148 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -523,7 +523,8 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
     Show Errors in The Label
   </p>
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp hXWVrL"
+    className="MuiFormControl-root MuiTextField-root sc-hiCibw datAfm"
+    showErrorsInTheLabel={false}
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-error Mui-error"
@@ -556,10 +557,10 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`
       />
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-145 MuiOutlinedInput-notchedOutline"
+        className="PrivateNotchedOutline-root-149 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-147"
+          className="PrivateNotchedOutline-legendLabelled-151"
         >
           <span>
             TextFieldInput
@@ -588,11 +589,11 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
   >
     Hide Label: 
     <span
-      className="MuiSwitch-root sc-kLwhqv ckEIHj"
+      className="MuiSwitch-root sc-ikJyIC jaRpaj"
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-150 Mui-checked"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-153 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-154 Mui-checked"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -611,7 +612,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
         >
           <input
             checked={true}
-            className="PrivateSwitchBase-input-152 MuiSwitch-input"
+            className="PrivateSwitchBase-input-156 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -626,7 +627,7 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
     </span>
   </p>
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp cXewNT"
+    className="MuiFormControl-root MuiTextField-root sc-hiCibw iOuZhZ"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
@@ -658,10 +659,10 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
       />
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-153 MuiOutlinedInput-notchedOutline"
+        className="PrivateNotchedOutline-root-157 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-155 PrivateNotchedOutline-legendNotched-156"
+          className="PrivateNotchedOutline-legendLabelled-159 PrivateNotchedOutline-legendNotched-160"
         >
           <span>
             TextFieldInput

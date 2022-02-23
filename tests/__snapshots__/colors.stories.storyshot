@@ -2,13 +2,13 @@
 
 exports[`Storyshots Utils/Colors Colors Sample 1`] = `
 <div
-  className="sc-jOxtWs bvrdSi"
+  className="sc-hmjpVf hqrjaA"
 >
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm datRXh"
+      className="sc-bTfYFJ cpqWXh"
       color="#001428"
     />
     <p
@@ -25,10 +25,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm datRXh"
+      className="sc-bTfYFJ cpqWXh"
       color="#001428"
     />
     <p
@@ -45,11 +45,11 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm cqrxcN"
-      color="#383E42"
+      className="sc-bTfYFJ bPCbXG"
+      color="#162D45"
     />
     <p
       className="sc-crHmcD kMPEWD"
@@ -61,14 +61,14 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
       className="sc-crHmcD kMPEWD"
       size="md"
     >
-      #383E42
+      #162D45
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm diSWTI"
+      className="sc-bTfYFJ cxQbTI"
       color="#005546"
     />
     <p
@@ -85,10 +85,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm jQuFO"
+      className="sc-bTfYFJ kIZOom"
       color="#C31717"
     />
     <p
@@ -105,10 +105,30 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm kYdnsS"
+      className="sc-bTfYFJ gwnUzL"
+      color="#566976"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputFilled
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #566976
+    </p>
+  </div>
+  <div
+    className="sc-eLwHnm hFUDOg"
+  >
+    <div
+      className="sc-bTfYFJ fzVvAC"
       color="#5D6D74"
     />
     <p
@@ -125,10 +145,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm kYdnsS"
+      className="sc-bTfYFJ fzVvAC"
       color="#5D6D74"
     />
     <p
@@ -145,30 +165,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm byjGYF"
-      color="#DB3A3D"
-    />
-    <p
-      className="sc-crHmcD kMPEWD"
-      size="md"
-    >
-      error
-    </p>
-    <p
-      className="sc-crHmcD kMPEWD"
-      size="md"
-    >
-      #DB3A3D
-    </p>
-  </div>
-  <div
-    className="sc-hmjpVf bpMVWC"
-  >
-    <div
-      className="sc-eLwHnm inwtuB"
+      className="sc-bTfYFJ fUjOUZ"
       color="#008C73"
     />
     <p
@@ -185,10 +185,50 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm kynsRs"
+      className="sc-bTfYFJ kaVvuI"
+      color="#F02525"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      error
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #F02525
+    </p>
+  </div>
+  <div
+    className="sc-eLwHnm hFUDOg"
+  >
+    <div
+      className="sc-bTfYFJ fUjOUZ"
+      color="#008C73"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputHover
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #008C73
+    </p>
+  </div>
+  <div
+    className="sc-eLwHnm hFUDOg"
+  >
+    <div
+      className="sc-bTfYFJ hmLENY"
       color="#E8663D"
     />
     <p
@@ -205,10 +245,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm jLuDYW"
+      className="sc-bTfYFJ gzSPVC"
       color="#E8673C"
     />
     <p
@@ -225,10 +265,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm pNmyt"
+      className="sc-bTfYFJ jxmdCd"
       color="#B2B5B2"
     />
     <p
@@ -245,10 +285,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm pNmyt"
+      className="sc-bTfYFJ jxmdCd"
       color="#B2B5B2"
     />
     <p
@@ -265,17 +305,17 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm kWcAhB"
+      className="sc-bTfYFJ jsdCzJ"
       color="#B2BBC0"
     />
     <p
       className="sc-crHmcD kMPEWD"
       size="md"
     >
-      inputPlaceholder
+      inputDefault
     </p>
     <p
       className="sc-crHmcD kMPEWD"
@@ -285,30 +325,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm kWcAhB"
-      color="#B2BBC0"
-    />
-    <p
-      className="sc-crHmcD kMPEWD"
-      size="md"
-    >
-      inputBorderHover
-    </p>
-    <p
-      className="sc-crHmcD kMPEWD"
-      size="md"
-    >
-      #B2BBC0
-    </p>
-  </div>
-  <div
-    className="sc-hmjpVf bpMVWC"
-  >
-    <div
-      className="sc-eLwHnm iChVCa"
+      className="sc-bTfYFJ gIqKdu"
       color="#A1D2CA"
     />
     <p
@@ -325,10 +345,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm fKxnxO"
+      className="sc-bTfYFJ glgbWK"
       color="#FFC05F"
     />
     <p
@@ -345,10 +365,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm kOwGsQ"
+      className="sc-bTfYFJ iGzNXE"
       color="#D4D5D3"
     />
     <p
@@ -365,10 +385,30 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm eMlyXe"
+      className="sc-bTfYFJ elTEDn"
+      color="#DADADA"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputDisabled
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #DADADA
+    </p>
+  </div>
+  <div
+    className="sc-eLwHnm hFUDOg"
+  >
+    <div
+      className="sc-bTfYFJ cEoGBS"
       color="#E8E7E6"
     />
     <p
@@ -385,10 +425,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm eixhyw"
+      className="sc-bTfYFJ fpOscU"
       color="#FBE5C5"
     />
     <p
@@ -405,10 +445,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm gTyZtN"
+      className="sc-bTfYFJ bKtKVx"
       color="#FFE6EA"
     />
     <p
@@ -425,30 +465,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm eNdQkj"
-      color="#EEEFF0"
-    />
-    <p
-      className="sc-crHmcD kMPEWD"
-      size="md"
-    >
-      inputBorder
-    </p>
-    <p
-      className="sc-crHmcD kMPEWD"
-      size="md"
-    >
-      #EEEFF0
-    </p>
-  </div>
-  <div
-    className="sc-hmjpVf bpMVWC"
-  >
-    <div
-      className="sc-eLwHnm iNlnpv"
+      className="sc-bTfYFJ gpwhdv"
       color="#F0EFEE"
     />
     <p
@@ -465,10 +485,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm fSHdET"
+      className="sc-bTfYFJ dKKljH"
       color="#F7F5F5"
     />
     <p
@@ -485,10 +505,10 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     </p>
   </div>
   <div
-    className="sc-hmjpVf bpMVWC"
+    className="sc-eLwHnm hFUDOg"
   >
     <div
-      className="sc-eLwHnm bHPuzq"
+      className="sc-bTfYFJ czorna"
       color="#FFFFFF"
     />
     <p

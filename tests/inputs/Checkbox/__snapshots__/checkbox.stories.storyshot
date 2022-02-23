@@ -110,7 +110,7 @@ exports[`Storyshots Inputs/Checkbox With Error 1`] = `
     </span>
   </label>
   <p
-    className="MuiFormHelperText-root sc-iJKOTD hpUlgc"
+    className="MuiFormHelperText-root sc-iJKOTD iBOiOF"
   >
     required
   </p>
