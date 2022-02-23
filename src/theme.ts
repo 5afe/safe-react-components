@@ -14,7 +14,7 @@ const theme = {
     secondaryLight: '#B2B5B2',
     secondaryHover: '#5D6D74',
 
-    error: '#DB3A3D',
+    error: '#F02525',
     errorHover: '#C31717',
     errorTooltip: '#ffe6ea',
 
@@ -32,10 +32,11 @@ const theme = {
     warning: '#FFC05F',
     pending: '#E8663D',
 
-    inputText: '#383E42',
-    inputPlaceholder: '#B2BBC0',
-    inputBorder: '#EEEFF0',
-    inputBorderHover: '#B2BBC0',
+    inputText: '#162D45',
+    inputDisabled: '#DADADA',
+    inputDefault: '#B2BBC0',
+    inputHover: '#008C73',
+    inputFilled: '#566976',
 
     disabled: {
       opacity: 0.5,

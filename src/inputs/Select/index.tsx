@@ -1,10 +1,15 @@
 import React from 'react';
 import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
 import SelectMUI from '@material-ui/core/Select';
 import styled from 'styled-components';
 
 import { Text } from '../../dataDisplay';
+import { FormControl, InputLabel } from '@material-ui/core';
+import {
+  inputLabelStyles,
+  inputStyles,
+  errorStyles,
+} from '../TextFieldInput/styles';
 
 const IconImg = styled.img`
   width: 20px;
@@ -12,29 +17,32 @@ const IconImg = styled.img`
 `;
 
 const StyledSelect = styled(SelectMUI)`
-  background-color: ${(props) => props.theme.colors.separator};
-  border-radius: 5px;
-  height: 56px;
-  width: 140px;
+  && {
+    width: 400px;
 
-  .MuiSelect-select {
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-  }
+    .MuiSelect-root {
+      background: #fff;
+    }
 
-  .MuiSelect-selectMenu {
-    font-family: ${(props) => props.theme.fonts.fontFamily};
-  }
+    .MuiSelect-select {
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+    }
 
-  &.MuiInput-underline:hover:not(.Mui-disabled):before {
-    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
-  }
-  &.MuiInput-underline:after {
-    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
+    .MuiSelect-selectMenu {
+      font-family: ${(props) => props.theme.fonts.fontFamily};
+    }
   }
 `;
 
+const StyledFormControl = styled(FormControl)`
+  && {
+    ${inputLabelStyles}
+    ${inputStyles}
+    ${errorStyles}
+  }
+`;
 export type SelectItem = {
   id: string;
   label: string;
@@ -82,43 +90,44 @@ function Select({
   };
 
   return (
-    <div>
-      <FormControl>
-        <StyledSelect
-          labelId={id ? id : 'generic-select'}
-          id={id ? id : 'generic-select'}
-          open={open}
-          onClose={handleClose}
-          onOpen={handleOpen}
-          value={activeItemId}
-          onChange={handleChange}
-          {...rest}>
-          {items.map((i) => {
-            return (
-              <MenuItem value={i.id} key={i.id}>
-                {i.iconUrl && (
-                  <IconImg
-                    alt={i.label}
-                    onError={onFallbackImage}
-                    src={i.iconUrl}
-                  />
-                )}
-                <div>
-                  <Text size="sm" color="text">
-                    {i.label}
+    <StyledFormControl variant="outlined">
+      <InputLabel>{id ? id : 'generic-select'}</InputLabel>
+      <StyledSelect
+        labelId={id ? id : 'generic-select'}
+        id={id ? id : 'generic-select'}
+        open={open}
+        onClose={handleClose}
+        onOpen={handleOpen}
+        value={activeItemId}
+        onChange={handleChange}
+        label={id ? id : 'generic-select'}
+        variant="outlined"
+        {...rest}>
+        {items.map((i) => {
+          return (
+            <MenuItem value={i.id} key={i.id}>
+              {i.iconUrl && (
+                <IconImg
+                  alt={i.label}
+                  onError={onFallbackImage}
+                  src={i.iconUrl}
+                />
+              )}
+              <div>
+                <Text size="sm" color="text">
+                  {i.label}
+                </Text>
+                {i.subLabel && (
+                  <Text size="sm" color="secondary" strong>
+                    {i.subLabel}
                   </Text>
-                  {i.subLabel && (
-                    <Text size="sm" color="secondary" strong>
-                      {i.subLabel}
-                    </Text>
-                  )}
-                </div>
-              </MenuItem>
-            );
-          })}
-        </StyledSelect>
-      </FormControl>
-    </div>
+                )}
+              </div>
+            </MenuItem>
+          );
+        })}
+      </StyledSelect>
+    </StyledFormControl>
   );
 }
 
