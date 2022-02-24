@@ -2,11 +2,11 @@
 
 exports[`Storyshots Inputs/Switch Switch Input 1`] = `
 <span
-  className="MuiSwitch-root sc-ikJyIC jaRpaj"
+  className="MuiSwitch-root sc-jJoQJp iXvNeM"
 >
   <span
     aria-disabled={false}
-    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-117 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-118 Mui-checked"
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-125 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-126 Mui-checked"
     onBlur={[Function]}
     onDragLeave={[Function]}
     onFocus={[Function]}
@@ -25,7 +25,7 @@ exports[`Storyshots Inputs/Switch Switch Input 1`] = `
     >
       <input
         checked={true}
-        className="PrivateSwitchBase-input-120 MuiSwitch-input"
+        className="PrivateSwitchBase-input-128 MuiSwitch-input"
         onChange={[Function]}
         type="checkbox"
       />

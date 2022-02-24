@@ -3,10 +3,10 @@
 exports[`Storyshots Navigation/Tab Simple Tab 1`] = `
 Array [
   <div
-    className="sc-cTAqQK GIphv"
+    className="sc-jObWnj hVMnVC"
   >
     <div
-      className="MuiTabs-root WithStyles(ForwardRef(Tabs))-root-161"
+      className="MuiTabs-root WithStyles(ForwardRef(Tabs))-root-173"
     >
       <div
         className="MuiTabs-scrollable"
@@ -37,7 +37,7 @@ Array [
         >
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-162 MuiTab-textColorInherit"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-174 MuiTab-textColorInherit"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -101,7 +101,7 @@ Array [
           </button>
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-163 MuiTab-textColorInherit"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-175 MuiTab-textColorInherit"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -160,7 +160,7 @@ Array [
           </button>
           <button
             aria-selected={true}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-164 MuiTab-textColorInherit Mui-selected"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-176 MuiTab-textColorInherit Mui-selected"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -226,13 +226,13 @@ Array [
               </div>
             </span>
             <span
-              className="PrivateTabIndicator-root-165 PrivateTabIndicator-colorSecondary-167 MuiTabs-indicator"
+              className="PrivateTabIndicator-root-177 PrivateTabIndicator-colorSecondary-179 MuiTabs-indicator"
               style={Object {}}
             />
           </button>
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-169 MuiTab-textColorInherit Mui-disabled Mui-disabled"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-181 MuiTab-textColorInherit Mui-disabled Mui-disabled"
             disabled={true}
             onBlur={[Function]}
             onClick={[Function]}
@@ -292,7 +292,7 @@ Array [
           </button>
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-170 MuiTab-textColorInherit"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-182 MuiTab-textColorInherit"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -329,10 +329,10 @@ Array [
 exports[`Storyshots Navigation/Tab Tab Contained 1`] = `
 Array [
   <div
-    className="sc-cTAqQK jVEsAo"
+    className="sc-jObWnj bbERZt"
   >
     <div
-      className="MuiTabs-root WithStyles(ForwardRef(Tabs))-root-171"
+      className="MuiTabs-root WithStyles(ForwardRef(Tabs))-root-183"
     >
       <div
         className="MuiTabs-scrollable"
@@ -363,7 +363,7 @@ Array [
         >
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-172 MuiTab-textColorInherit"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-184 MuiTab-textColorInherit"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -427,7 +427,7 @@ Array [
           </button>
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-173 MuiTab-textColorInherit"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-185 MuiTab-textColorInherit"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -486,7 +486,7 @@ Array [
           </button>
           <button
             aria-selected={true}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-174 MuiTab-textColorInherit Mui-selected"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-186 MuiTab-textColorInherit Mui-selected"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -552,13 +552,13 @@ Array [
               </div>
             </span>
             <span
-              className="PrivateTabIndicator-root-175 PrivateTabIndicator-colorSecondary-177 MuiTabs-indicator"
+              className="PrivateTabIndicator-root-187 PrivateTabIndicator-colorSecondary-189 MuiTabs-indicator"
               style={Object {}}
             />
           </button>
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-179 MuiTab-textColorInherit Mui-disabled Mui-disabled"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-191 MuiTab-textColorInherit Mui-disabled Mui-disabled"
             disabled={true}
             onBlur={[Function]}
             onClick={[Function]}
@@ -618,7 +618,7 @@ Array [
           </button>
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-180 MuiTab-textColorInherit"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-192 MuiTab-textColorInherit"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -655,10 +655,10 @@ Array [
 exports[`Storyshots Navigation/Tab Tab Contained Full 1`] = `
 Array [
   <div
-    className="sc-cTAqQK jVEsAo"
+    className="sc-jObWnj bbERZt"
   >
     <div
-      className="MuiTabs-root WithStyles(ForwardRef(Tabs))-root-181"
+      className="MuiTabs-root WithStyles(ForwardRef(Tabs))-root-193"
     >
       <div
         className="MuiTabs-scroller MuiTabs-fixed"
@@ -677,7 +677,7 @@ Array [
         >
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-182 MuiTab-textColorInherit MuiTab-fullWidth"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-194 MuiTab-textColorInherit MuiTab-fullWidth"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -741,7 +741,7 @@ Array [
           </button>
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-183 MuiTab-textColorInherit MuiTab-fullWidth"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-195 MuiTab-textColorInherit MuiTab-fullWidth"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -800,7 +800,7 @@ Array [
           </button>
           <button
             aria-selected={true}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-184 MuiTab-textColorInherit Mui-selected MuiTab-fullWidth"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-196 MuiTab-textColorInherit Mui-selected MuiTab-fullWidth"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -866,13 +866,13 @@ Array [
               </div>
             </span>
             <span
-              className="PrivateTabIndicator-root-185 PrivateTabIndicator-colorSecondary-187 MuiTabs-indicator"
+              className="PrivateTabIndicator-root-197 PrivateTabIndicator-colorSecondary-199 MuiTabs-indicator"
               style={Object {}}
             />
           </button>
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-189 MuiTab-textColorInherit Mui-disabled MuiTab-fullWidth Mui-disabled"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-201 MuiTab-textColorInherit Mui-disabled MuiTab-fullWidth Mui-disabled"
             disabled={true}
             onBlur={[Function]}
             onClick={[Function]}
@@ -932,7 +932,7 @@ Array [
           </button>
           <button
             aria-selected={false}
-            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-190 MuiTab-textColorInherit MuiTab-fullWidth"
+            className="MuiButtonBase-root MuiTab-root WithStyles(ForwardRef(Tab))-root-202 MuiTab-textColorInherit MuiTab-fullWidth"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}

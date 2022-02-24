@@ -13,21 +13,19 @@ export default {
   },
 };
 
-const onSubmit = (e: React.FormEvent) => e.preventDefault();
-
-export const SimpleTextField = (): React.ReactElement => {
+export const SimpleTextField = (args): React.ReactElement => {
   const [value, setValue] = useState<string>('');
+
   return (
-    <form noValidate autoComplete="off" onSubmit={onSubmit}>
-      <TextFieldInput
-        id="standard-TextFieldInput"
-        label="TextFieldInput"
-        name="TextFieldInput"
-        placeholder="TextFieldInput with default values"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
-    </form>
+    <TextFieldInput
+      id="standard-TextFieldInput"
+      label="TextFieldInput"
+      name="TextFieldInput"
+      placeholder="TextFieldInput with default values"
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+      {...args}
+    />
   );
 };
 
@@ -41,7 +39,7 @@ export const TextFieldWithErrorsInTheLabel = (): React.ReactElement => {
   const error = 'This field has an error';
 
   return (
-    <form noValidate autoComplete="off" onSubmit={onSubmit}>
+    <>
       <Typography>
         <Switch checked={hasError} onChange={setHasError} />
         An Error is present
@@ -67,7 +65,7 @@ export const TextFieldWithErrorsInTheLabel = (): React.ReactElement => {
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-    </form>
+    </>
   );
 };
 
@@ -77,48 +75,42 @@ export const TextFieldWithErrors = (): React.ReactElement => {
   const error = 'this field has an error';
 
   return (
-    <form noValidate autoComplete="off" onSubmit={onSubmit}>
-      <TextFieldInput
-        id="standard-TextFieldInput"
-        label="TextFieldInput"
-        name="TextFieldInput"
-        value={value}
-        error={error}
-        onChange={(e) => setValue(e.target.value)}
-      />
-    </form>
+    <TextFieldInput
+      id="standard-TextFieldInput"
+      label="TextFieldInput"
+      name="TextFieldInput"
+      value={value}
+      error={error}
+      onChange={(e) => setValue(e.target.value)}
+    />
   );
 };
 
 export const DisabledTextField = (): React.ReactElement => {
   const [value, setValue] = useState<string>('this field is disabled');
   return (
-    <form noValidate autoComplete="off" onSubmit={onSubmit}>
-      <TextFieldInput
-        id="standard-TextFieldInput"
-        label="TextFieldInput"
-        name="TextFieldInput"
-        value={value}
-        disabled
-        onChange={(e) => setValue(e.target.value)}
-      />
-    </form>
+    <TextFieldInput
+      id="standard-TextFieldInput"
+      label="TextFieldInput"
+      name="TextFieldInput"
+      value={value}
+      disabled
+      onChange={(e) => setValue(e.target.value)}
+    />
   );
 };
 
 export const NumberTextField = (): React.ReactElement => {
   const [value, setValue] = useState<string>('100');
   return (
-    <form noValidate autoComplete="off" onSubmit={onSubmit}>
-      <TextFieldInput
-        id="standard-NumberTextFieldInput"
-        label="Number"
-        name="NumberTextFieldInput"
-        value={value}
-        type="number"
-        onChange={(e) => setValue(e.target.value)}
-      />
-    </form>
+    <TextFieldInput
+      id="standard-NumberTextFieldInput"
+      label="Number"
+      name="NumberTextFieldInput"
+      value={value}
+      type="number"
+      onChange={(e) => setValue(e.target.value)}
+    />
   );
 };
 
@@ -126,22 +118,20 @@ export const StartAdornmentTextField = (): React.ReactElement => {
   const [value, setValue] = useState<string>('');
   // see https://mui.com/components/text-fields/#input-adornments for more details
   return (
-    <form noValidate autoComplete="off" onSubmit={onSubmit}>
-      <TextFieldInput
-        id="standard-TextFieldInput"
-        label="TextFieldInput"
-        name="TextFieldInput"
-        value={value}
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="start">
-              <Icon size="md" type="assets" />
-            </InputAdornment>
-          ),
-        }}
-        onChange={(e) => setValue(e.target.value)}
-      />
-    </form>
+    <TextFieldInput
+      id="standard-TextFieldInput"
+      label="TextFieldInput"
+      name="TextFieldInput"
+      value={value}
+      InputProps={{
+        startAdornment: (
+          <InputAdornment position="start">
+            <Icon size="md" type="assets" />
+          </InputAdornment>
+        ),
+      }}
+      onChange={(e) => setValue(e.target.value)}
+    />
   );
 };
 
@@ -149,22 +139,20 @@ export const EndAdornmentTextField = (): React.ReactElement => {
   const [value, setValue] = useState<string>('');
   // see https://mui.com/components/text-fields/#input-adornments for more details
   return (
-    <form noValidate autoComplete="off" onSubmit={onSubmit}>
-      <TextFieldInput
-        id="standard-TextFieldInput"
-        label="TextFieldInput"
-        name="TextFieldInput"
-        value={value}
-        InputProps={{
-          endAdornment: (
-            <InputAdornment position="end">
-              <Icon size="md" type="assets" />
-            </InputAdornment>
-          ),
-        }}
-        onChange={(e) => setValue(e.target.value)}
-      />
-    </form>
+    <TextFieldInput
+      id="standard-TextFieldInput"
+      label="TextFieldInput"
+      name="TextFieldInput"
+      value={value}
+      InputProps={{
+        endAdornment: (
+          <InputAdornment position="end">
+            <Icon size="md" type="assets" />
+          </InputAdornment>
+        ),
+      }}
+      onChange={(e) => setValue(e.target.value)}
+    />
   );
 };
 
@@ -172,7 +160,7 @@ export const TextFieldWithHiddenLabel = (): React.ReactElement => {
   const [value, setValue] = useState<string>('');
   const [hiddenLabel, setHiddenLabel] = useState<boolean>(true);
   return (
-    <form noValidate autoComplete="off" onSubmit={onSubmit}>
+    <>
       <Typography>
         Hide Label: <Switch checked={hiddenLabel} onChange={setHiddenLabel} />
       </Typography>
@@ -185,7 +173,7 @@ export const TextFieldWithHiddenLabel = (): React.ReactElement => {
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-    </form>
+    </>
   );
 };
 

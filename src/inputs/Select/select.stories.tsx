@@ -20,7 +20,7 @@ export default {
     componentSubtitle: 'Select Input.',
   },
   decorators: [
-    (Story) => (
+    (Story: any) => (
       <div style={{ width: '300px' }}>
         <Story />
       </div>
@@ -28,7 +28,7 @@ export default {
   ],
 };
 
-export const SimpleSelect = (): React.ReactElement => {
+export const SimpleSelect = (args): React.ReactElement => {
   const [activeItemId, setActiveItemId] = useState('');
 
   return (
@@ -43,6 +43,7 @@ export const SimpleSelect = (): React.ReactElement => {
         setActiveItemId(id);
       }}
       fallbackImage={'https://via.placeholder.com/32x32'} // image source or URL
+      {...args}
     />
   );
 };

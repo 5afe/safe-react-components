@@ -117,9 +117,9 @@ function Select({
           );
         })}
       </StyledSelect>
-      {helperText && (
+      {(helperText || (error && showErrorsInTheLabel)) && (
         <StyledFormHelperText error={hasError && !showErrorsInTheLabel}>
-          {helperText}
+          {helperText || error}
         </StyledFormHelperText>
       )}
     </StyledFormControl>
