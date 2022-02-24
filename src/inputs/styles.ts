@@ -9,7 +9,7 @@ export const inputLabelStyles = css<StyledTextFieldProps>`
   &:hover {
     .MuiInputLabel-root {
       &.MuiInputLabel-shrink:not(.Mui-focused):not(.Mui-disabled) {
-        color: ${({ theme }) => theme.colors.inputHover};
+        color: ${({ theme }) => theme.colors.primary};
         &.Mui-error {
           color: ${({ theme }) => theme.colors.error};
         }
@@ -74,7 +74,7 @@ export const inputStyles = css<StyledTextFieldProps>`
     }
     &:hover {
       .MuiOutlinedInput-notchedOutline {
-        border-color: ${({ theme }) => theme.colors.inputHover};
+        border-color: ${({ theme }) => theme.colors.primary};
       }
     }
     &.Mui-focused {

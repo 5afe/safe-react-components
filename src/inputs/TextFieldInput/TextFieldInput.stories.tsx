@@ -13,7 +13,7 @@ export default {
   },
 };
 
-export const SimpleTextField = (args): React.ReactElement => {
+export const SimpleTextField = (args: any): React.ReactElement => {
   const [value, setValue] = useState<string>('');
 
   return (

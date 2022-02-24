@@ -208,26 +208,6 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     className="sc-bTfYFJ itQCBQ"
   >
     <div
-      className="sc-kHOZwM fCkxYQ"
-      color="#008C73"
-    />
-    <p
-      className="sc-crHmcD kMPEWD"
-      size="md"
-    >
-      inputHover
-    </p>
-    <p
-      className="sc-crHmcD kMPEWD"
-      size="md"
-    >
-      #008C73
-    </p>
-  </div>
-  <div
-    className="sc-bTfYFJ itQCBQ"
-  >
-    <div
       className="sc-kHOZwM etNuEF"
       color="#E8663D"
     />

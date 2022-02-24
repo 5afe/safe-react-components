@@ -35,7 +35,6 @@ const theme = {
     inputText: '#162D45',
     inputDisabled: '#DADADA',
     inputDefault: '#B2BBC0',
-    inputHover: '#008C73',
     inputFilled: '#566976',
 
     disabled: {

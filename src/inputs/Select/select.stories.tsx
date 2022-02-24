@@ -22,7 +22,7 @@ export default {
     componentSubtitle: 'Select Input.',
   },
   decorators: [
-    (TheStory) => (
+    (TheStory: any) => (
       <div style={{ width: '300px' }}>
         <TheStory />
       </div>
