@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { Story } from '@storybook/react';
 import Select, { SelectItem } from './';
+import { SelectInputProps } from '@material-ui/core/Select/SelectInput';
 
 const items: Array<SelectItem> = [
   {
@@ -20,15 +22,17 @@ export default {
     componentSubtitle: 'Select Input.',
   },
   decorators: [
-    (Story: any) => (
+    (TheStory) => (
       <div style={{ width: '300px' }}>
-        <Story />
+        <TheStory />
       </div>
     ),
   ],
 };
 
-export const SimpleSelect = (args): React.ReactElement => {
+export const SimpleSelect: Story<SelectInputProps> = (
+  args
+): React.ReactElement => {
   const [activeItemId, setActiveItemId] = useState('');
 
   return (

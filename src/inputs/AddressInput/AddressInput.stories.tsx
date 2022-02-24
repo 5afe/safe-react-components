@@ -31,7 +31,7 @@ export default {
 
     hiddenLabel: {
       control: { type: 'boolean' },
-      defaultValue: true,
+      defaultValue: false,
     },
     disabled: {
       control: { type: 'boolean' },
@@ -119,6 +119,7 @@ export const SimpleAddressInput = ({
           address={address}
           onChangeAddress={setAddress}
           getAddressFromDomain={getAddressFromDomain}
+          hiddenLabel={hiddenLabel}
           error={error}
           showLoadingSpinner={isLoading}
           disabled={isDisabled}
