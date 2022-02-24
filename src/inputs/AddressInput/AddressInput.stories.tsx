@@ -119,7 +119,6 @@ export const SimpleAddressInput = ({
           address={address}
           onChangeAddress={setAddress}
           getAddressFromDomain={getAddressFromDomain}
-          hiddenLabel={hiddenLabel}
           error={error}
           showLoadingSpinner={isLoading}
           disabled={isDisabled}
