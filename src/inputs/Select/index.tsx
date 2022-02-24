@@ -10,11 +10,7 @@ import styled from 'styled-components';
 
 import { Text } from '../../dataDisplay';
 
-import {
-  inputLabelStyles,
-  inputStyles,
-  errorStyles,
-} from '../TextFieldInput/styles';
+import { inputLabelStyles, inputStyles, errorStyles } from '../styles';
 
 export type SelectItem = {
   id: string;

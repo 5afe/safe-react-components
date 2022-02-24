@@ -6,7 +6,7 @@ import {
   inputLabelStyles,
   inputStyles,
   StyledTextFieldProps,
-} from './styles';
+} from '../styles';
 
 export type TextFieldInputProps = {
   id?: string;
