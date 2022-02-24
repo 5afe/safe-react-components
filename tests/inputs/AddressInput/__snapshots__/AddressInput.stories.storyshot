@@ -7,11 +7,11 @@ exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp kYzoik"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe deKauR"
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-disabled Mui-disabled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined Mui-disabled Mui-disabled"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -19,13 +19,13 @@ exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
       Address
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-formControl"
       onClick={[Function]}
     >
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input Mui-disabled Mui-disabled"
+        className="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
         disabled={true}
         id="address"
         name="address"
@@ -36,7 +36,20 @@ exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
+        value=""
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-63 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-65 PrivateNotchedOutline-legendNotched-66"
+        >
+          <span>
+            Address
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
 </form>
@@ -49,11 +62,11 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -61,13 +74,13 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
       Address
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
       onClick={[Function]}
     >
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
         disabled={false}
         id="address"
         name="address"
@@ -78,9 +91,10 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
+        value=""
       />
       <div
-        className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled"
+        className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
       >
         <div
           className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
@@ -108,6 +122,18 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
           </svg>
         </div>
       </div>
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-67 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-69 PrivateNotchedOutline-legendNotched-70"
+        >
+          <span>
+            Address
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
 </form>
@@ -120,11 +146,11 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -132,13 +158,13 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
       Address
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
       onClick={[Function]}
     >
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
+        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
         disabled={false}
         id="address"
         name="address"
@@ -149,13 +175,14 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
+        value=""
       />
       <div
-        className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled"
+        className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root sc-cZMNgc hXynUB"
+          className="MuiSvgIcon-root sc-jQrDum kynMoW"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -164,6 +191,18 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
           />
         </svg>
       </div>
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-71 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-73 PrivateNotchedOutline-legendNotched-74"
+        >
+          <span>
+            Address
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
 </form>
@@ -176,14 +215,14 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
   onSubmit={[Function]}
 >
   <p
-    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
   >
     <span
-      className="MuiSwitch-root sc-kLwhqv eEUkNP"
+      className="MuiSwitch-root sc-jJoQJp xxohc"
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-63 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-75 MuiSwitch-switchBase MuiSwitch-colorSecondary"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -202,7 +241,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-66 MuiSwitch-input"
+            className="PrivateSwitchBase-input-78 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -228,11 +267,11 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
     }
   >
     <div
-      className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
+      className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
       spellCheck={false}
     >
       <label
-        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
         data-shrink={false}
         htmlFor="address"
         id="address-label"
@@ -240,14 +279,14 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
         Address with ENS
       </label>
       <div
-        className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+        className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
         onClick={[Function]}
       >
         <input
           aria-describedby="address-helper-text"
           aria-invalid={false}
           autoFocus={false}
-          className="MuiInputBase-input MuiFilledInput-input"
+          className="MuiInputBase-input MuiOutlinedInput-input"
           disabled={false}
           id="address"
           name="address"
@@ -258,7 +297,20 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
           placeholder="Type safe.test to check ENS resolution"
           required={false}
           type="text"
+          value=""
         />
+        <fieldset
+          aria-hidden={true}
+          className="PrivateNotchedOutline-root-79 MuiOutlinedInput-notchedOutline"
+        >
+          <legend
+            className="PrivateNotchedOutline-legendLabelled-81"
+          >
+            <span>
+              Address with ENS
+            </span>
+          </legend>
+        </fieldset>
       </div>
       <p
         className="MuiFormHelperText-root MuiFormHelperText-contained"
@@ -278,10 +330,10 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
     }
   >
     <div
-      className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
+      className="MuiFormControl-root MuiTextField-root sc-gWXbKe ciMulG"
     >
       <label
-        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-filled"
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
         data-shrink={true}
         htmlFor="customENSThrottleDelay"
         id="customENSThrottleDelay-label"
@@ -289,14 +341,14 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
         custom Delay (in milliseconds)
       </label>
       <div
-        className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+        className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
         onClick={[Function]}
       >
         <input
           aria-describedby="customENSThrottleDelay-helper-text"
           aria-invalid={false}
           autoFocus={false}
-          className="MuiInputBase-input MuiFilledInput-input"
+          className="MuiInputBase-input MuiOutlinedInput-input"
           disabled={false}
           id="customENSThrottleDelay"
           name="customENSThrottleDelay"
@@ -309,6 +361,18 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
           type="number"
           value={2000}
         />
+        <fieldset
+          aria-hidden={true}
+          className="PrivateNotchedOutline-root-79 MuiOutlinedInput-notchedOutline"
+        >
+          <legend
+            className="PrivateNotchedOutline-legendLabelled-81 PrivateNotchedOutline-legendNotched-82"
+          >
+            <span>
+              custom Delay (in milliseconds)
+            </span>
+          </legend>
+        </fieldset>
       </div>
       <p
         className="MuiFormHelperText-root MuiFormHelperText-contained MuiFormHelperText-filled"
@@ -319,12 +383,12 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
     </div>
   </div>
   <p
-    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
   >
     Address In the State:
   </p>
   <pre
-    className="sc-jUosCB eSSjao"
+    className="sc-fvxzrP gQXepa"
   >
      
   </pre>
@@ -338,11 +402,11 @@ exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp laNQiK"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-error Mui-error"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined Mui-error Mui-error"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -350,14 +414,14 @@ exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
       Address
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline Mui-error Mui-error MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root Mui-error Mui-error MuiInputBase-formControl"
       onClick={[Function]}
     >
       <input
         aria-describedby="address-helper-text"
         aria-invalid={true}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input"
+        className="MuiInputBase-input MuiOutlinedInput-input"
         disabled={false}
         id="address"
         name="address"
@@ -368,7 +432,20 @@ exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
+        value=""
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-83 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-85 PrivateNotchedOutline-legendNotched-86"
+        >
+          <span>
+            Address
+          </span>
+        </legend>
+      </fieldset>
     </div>
     <p
       className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error"
@@ -387,11 +464,11 @@ exports[`Storyshots Inputs/AddressInput Address Input With Simple Address Valida
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -399,13 +476,13 @@ exports[`Storyshots Inputs/AddressInput Address Input With Simple Address Valida
       Address
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
       onClick={[Function]}
     >
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input"
+        className="MuiInputBase-input MuiOutlinedInput-input"
         disabled={false}
         id="address"
         name="address"
@@ -416,16 +493,29 @@ exports[`Storyshots Inputs/AddressInput Address Input With Simple Address Valida
         placeholder="Ethereum address"
         required={false}
         type="text"
+        value=""
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-87 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-89 PrivateNotchedOutline-legendNotched-90"
+        >
+          <span>
+            Address
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
   <p
-    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
   >
     Address In the State:
   </p>
   <pre
-    className="sc-jUosCB eSSjao"
+    className="sc-fvxzrP gQXepa"
   >
     0x123...
   </pre>
@@ -439,11 +529,11 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
       data-shrink={true}
       htmlFor="address"
       id="address-label"
@@ -451,13 +541,13 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
       Address
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
       onClick={[Function]}
     >
       <input
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input"
+        className="MuiInputBase-input MuiOutlinedInput-input"
         disabled={false}
         id="address"
         name="address"
@@ -468,16 +558,29 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
+        value=""
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-91 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-93 PrivateNotchedOutline-legendNotched-94"
+        >
+          <span>
+            Address
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
   <p
-    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
   >
     Address In the State:
   </p>
   <pre
-    className="sc-jUosCB eSSjao"
+    className="sc-fvxzrP gQXepa"
   >
     0x83eC7B0506556a7749306D69681aDbDbd08f0769
   </pre>
@@ -491,29 +594,30 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
   onSubmit={[Function]}
 >
   <p
-    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
   >
     You can customize validations
   </p>
   <p
-    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
   >
     valid values:
   </p>
   <pre
-    className="sc-jUosCB eSSjao"
+    className="sc-fvxzrP gQXepa"
   >
     0x83eC7B0506556a7749306D69681aDbDbd08f0769 & rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769
   </pre>
   <p
-    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
   />
   <div
-    className="MuiFormControl-root MuiTextField-root sc-jJoQJp bqJZEI"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+    showErrorsInTheLabel={false}
     spellCheck={false}
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
       data-shrink={false}
       htmlFor="safeAddress"
       id="safeAddress-label"
@@ -521,14 +625,14 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
       Safe Address
     </label>
     <div
-      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
       onClick={[Function]}
     >
       <input
         aria-describedby="safeAddress-helper-text"
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiFilledInput-input"
+        className="MuiInputBase-input MuiOutlinedInput-input"
         disabled={false}
         id="safeAddress"
         name="safeAddress"
@@ -539,7 +643,20 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
         placeholder="Type the valid safe address"
         required={false}
         type="text"
+        value=""
       />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-95 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-97"
+        >
+          <span>
+            Safe Address
+          </span>
+        </legend>
+      </fieldset>
     </div>
     <p
       className="MuiFormHelperText-root MuiFormHelperText-contained"
@@ -549,12 +666,12 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
     </p>
   </div>
   <p
-    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
   >
     Address In the State:
   </p>
   <pre
-    className="sc-jUosCB eSSjao"
+    className="sc-fvxzrP gQXepa"
   >
      
   </pre>
@@ -564,60 +681,77 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
 exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
 <div>
   <p
-    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
   >
     Network Settings:
   </p>
-  <div>
+  <div
+    className="MuiFormControl-root sc-kLwhqv UVNmp"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
+      data-shrink={true}
+    >
+      Network
+    </label>
     <div
-      className="MuiFormControl-root"
+      className="MuiInputBase-root MuiOutlinedInput-root sc-bYoBSM hHIlXW MuiInputBase-formControl"
+      onClick={[Function]}
     >
       <div
-        className="MuiInputBase-root MuiInput-root MuiInput-underline sc-bYoBSM dNRdPa MuiInputBase-formControl MuiInput-formControl"
-        onClick={[Function]}
+        aria-haspopup="listbox"
+        aria-labelledby="mui-component-select-network"
+        className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+        id="mui-component-select-network"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <div
-          aria-haspopup="listbox"
-          aria-labelledby="generic-select generic-select"
-          className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
-          id="generic-select"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onMouseDown={[Function]}
-          role="button"
-          tabIndex={0}
-        >
-          <div>
-            <p
-              className="sc-crHmcD dtryax"
-              color="text"
-              size="sm"
-            >
-              Rinkeby (rin:)
-            </p>
-          </div>
+        <div>
+          <p
+            className="sc-crHmcD dtryax"
+            color="text"
+            size="sm"
+          >
+            Rinkeby (rin:)
+          </p>
         </div>
-        <input
-          aria-hidden={true}
-          className="MuiSelect-nativeInput"
-          onAnimationStart={[Function]}
-          onChange={[Function]}
-          required={false}
-          tabIndex={-1}
-          value="rin"
-        />
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root MuiSelect-icon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M7 10l5 5 5-5z"
-          />
-        </svg>
       </div>
+      <input
+        aria-hidden={true}
+        className="MuiSelect-nativeInput"
+        name="network"
+        onAnimationStart={[Function]}
+        onChange={[Function]}
+        required={false}
+        tabIndex={-1}
+        value="rin"
+      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-99 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-101 PrivateNotchedOutline-legendNotched-102"
+        >
+          <span>
+            generic-select
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
   <form
@@ -632,25 +766,25 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
     }
   >
     <div
-      className="MuiFormControl-root MuiTextField-root sc-jJoQJp gNEEiH"
+      className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
       spellCheck={false}
     >
       <label
-        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled"
-        data-shrink={true}
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+        data-shrink={false}
         htmlFor="address"
         id="address-label"
       >
         Address
       </label>
       <div
-        className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl"
+        className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
         onClick={[Function]}
       >
         <input
           aria-invalid={false}
           autoFocus={false}
-          className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel"
+          className="MuiInputBase-input MuiOutlinedInput-input"
           disabled={false}
           id="address"
           name="address"
@@ -661,7 +795,20 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
           placeholder="Ethereum address"
           required={false}
           type="text"
+          value=""
         />
+        <fieldset
+          aria-hidden={true}
+          className="PrivateNotchedOutline-root-99 MuiOutlinedInput-notchedOutline"
+        >
+          <legend
+            className="PrivateNotchedOutline-legendLabelled-101"
+          >
+            <span>
+              Address
+            </span>
+          </legend>
+        </fieldset>
       </div>
     </div>
     <button
@@ -762,12 +909,12 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
     </button>
   </form>
   <p
-    className="MuiTypography-root sc-jQrDum jLriAF MuiTypography-body1"
+    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
   >
     Address In the State:
   </p>
   <pre
-    className="sc-jUosCB eSSjao"
+    className="sc-fvxzrP gQXepa"
   >
      
   </pre>

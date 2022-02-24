@@ -31,7 +31,7 @@ export default {
 
     hiddenLabel: {
       control: { type: 'boolean' },
-      defaultValue: true,
+      defaultValue: false,
     },
     disabled: {
       control: { type: 'boolean' },
@@ -99,6 +99,8 @@ export const SimpleAddressInput = ({
     <div>
       <StyledText>Network Settings:</StyledText>
       <Select
+        name="network"
+        label="Network"
         items={networks}
         activeItemId={currentNetworkPrefix}
         onItemClick={(networkPrefix) => {

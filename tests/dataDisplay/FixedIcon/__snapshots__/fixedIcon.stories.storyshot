@@ -2,10 +2,10 @@
 
 exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
 <div
-  className="sc-bTfYFJ cbnUif"
+  className="sc-hOGkXu hAReHs"
 >
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -24,7 +24,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     arrowSort
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -42,7 +42,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     connectedRinkeby
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -60,7 +60,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     connectedWallet
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -79,7 +79,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     bullit
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -97,7 +97,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     dropdownArrowSmall
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -116,7 +116,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     arrowReceived
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -135,7 +135,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     arrowSent
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -171,7 +171,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     threeDots
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -205,7 +205,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     options
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -224,7 +224,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     plus
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -243,7 +243,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     chevronRight
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -262,7 +262,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     chevronLeft
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -281,7 +281,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     chevronUp
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -300,7 +300,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     chevronDown
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -319,7 +319,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     settingsChange
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -349,7 +349,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     creatingInProgress
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -395,7 +395,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     notOwner
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -433,7 +433,7 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
     notConnected
   </div>
   <div
-    className="sc-kHOZwM fIlulR"
+    className="sc-dtMgUX hEcQbi"
   >
     <span>
       <svg
@@ -481,10 +481,10 @@ exports[`Storyshots Data Display/FixedIcon Icons 1`] = `
 
 exports[`Storyshots Data Display/FixedIcon Icons White 1`] = `
 <div
-  className="sc-bTfYFJ cbnUif"
+  className="sc-hOGkXu hAReHs"
 >
   <div
-    className="sc-kHOZwM sc-bXTejn fIlulR dyGLSJ"
+    className="sc-dtMgUX sc-eGRUor hEcQbi jXVzJi"
   >
     <span>
       <svg
@@ -503,7 +503,7 @@ exports[`Storyshots Data Display/FixedIcon Icons White 1`] = `
     arrowSentWhite
   </div>
   <div
-    className="sc-kHOZwM sc-bXTejn fIlulR dyGLSJ"
+    className="sc-dtMgUX sc-eGRUor hEcQbi jXVzJi"
   >
     <span>
       <svg

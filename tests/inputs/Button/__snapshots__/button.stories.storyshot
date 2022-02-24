@@ -2,7 +2,7 @@
 
 exports[`Storyshots Inputs/Button Disabled Button 1`] = `
 <div
-  className="sc-fbyfCU bDrXRk"
+  className="sc-gsNilK ikuRBJ"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV ads Mui-disabled Mui-disabled"
@@ -51,7 +51,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV cdldxH error contained Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV gLvJHK error contained Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -121,7 +121,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV ikduBe error outlined Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV eyprPX error outlined Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -191,7 +191,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV gESDWc error bordered Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV VxziI error bordered Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -218,7 +218,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
 
 exports[`Storyshots Inputs/Button Simple Button 1`] = `
 <div
-  className="sc-fbyfCU bDrXRk"
+  className="sc-gsNilK ikuRBJ"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV primary contained"
@@ -267,7 +267,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV cdldxH error contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV gLvJHK error contained"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -337,7 +337,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV ikduBe error outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV eyprPX error outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -407,7 +407,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV gESDWc error bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV VxziI error bordered"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -434,7 +434,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
 
 exports[`Storyshots Inputs/Button Sizes 1`] = `
 <div
-  className="sc-fbyfCU bDrXRk"
+  className="sc-gsNilK ikuRBJ"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV primary contained"
@@ -538,7 +538,7 @@ exports[`Storyshots Inputs/Button With Custom Component 1`] = `
 
 exports[`Storyshots Inputs/Button With Icon 1`] = `
 <div
-  className="sc-fbyfCU bDrXRk"
+  className="sc-gsNilK ikuRBJ"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV esbZNJ primary contained"
@@ -635,7 +635,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV cfLoKH error contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV enyKwS error contained"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -777,7 +777,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV fGiiPy error outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV gPHhxD error outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -919,7 +919,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV cvzPjA error bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV diJxNI error bordered"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -970,7 +970,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
 
 exports[`Storyshots Inputs/Button With Icon Size 1`] = `
 <div
-  className="sc-fbyfCU bDrXRk"
+  className="sc-gsNilK ikuRBJ"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV jqMZKs secondary bordered"
