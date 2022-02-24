@@ -4,7 +4,6 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import { Icon } from '../..';
 import { Switch } from '..';
 import { Typography } from '@material-ui/core';
-import styled from 'styled-components';
 
 export default {
   title: 'Inputs/TextFieldInput',
@@ -71,34 +70,6 @@ export const TextFieldWithErrorsInTheLabel = (): React.ReactElement => {
     </form>
   );
 };
-
-const StyledTextField = styled(TextFieldInput)`
-  && {
-    .MuiFilledInput-root {
-      background-color: lightgreen;
-      width: 200px;
-      transition: width 1s ease-out;
-    }
-
-    .MuiFilledInput-root.Mui-focused {
-      width: 400px;
-    }
-
-    .MuiFormLabel-root.Mui-focused {
-      color: ${({ error, theme }) =>
-        error ? theme.colors.error : 'darkgreen'};
-    }
-
-    .MuiInputLabel-filled {
-      color: ${({ theme, error }) => (error ? theme.colors.error : 'purple')};
-    }
-
-    .MuiFilledInput-underline:after {
-      border-bottom: 2px solid
-        ${({ theme, error }) => (error ? theme.colors.error : 'orange')};
-    }
-  }
-`;
 
 export const TextFieldWithErrors = (): React.ReactElement => {
   const [value, setValue] = useState<string>('this field has an error');
@@ -215,5 +186,22 @@ export const TextFieldWithHiddenLabel = (): React.ReactElement => {
         onChange={(e) => setValue(e.target.value)}
       />
     </form>
+  );
+};
+
+export const FullWidthTextField = (): React.ReactElement => {
+  const [value, setValue] = useState<string>('');
+  return (
+    <div style={{ width: '300px' }}>
+      <TextFieldInput
+        id="standard-TextFieldInput"
+        label="TextFieldInput"
+        name="TextFieldInput"
+        placeholder="TextFieldInput with default values"
+        value={value}
+        fullWidth
+        onChange={(e) => setValue(e.target.value)}
+      />
+    </div>
   );
 };

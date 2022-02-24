@@ -138,6 +138,62 @@ exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
 </form>
 `;
 
+exports[`Storyshots Inputs/TextFieldInput Full Width Text Field 1`] = `
+<div
+  style={
+    Object {
+      "width": "500px",
+    }
+  }
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe sOeCB"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+      data-shrink={false}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiOutlinedInput-input"
+        disabled={false}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="TextFieldInput with default values"
+        required={false}
+        type="text"
+        value=""
+      />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-133 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-135"
+        >
+          <span>
+            TextFieldInput
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
 <form
   autoComplete="off"
