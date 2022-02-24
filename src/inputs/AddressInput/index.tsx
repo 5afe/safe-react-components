@@ -51,6 +51,7 @@ function AddressInput({
   ...rest
 }: AddressInputProps): ReactElement {
   const [isLoadingENSResolution, setIsLoadingENSResolution] = useState(false);
+  const [inputValue, setInputValue] = useState('');
   const defaulInputValue = addPrefix(address, networkPrefix, showNetworkPrefix);
   const inputRef = useRef({ value: defaulInputValue });
   const throttle = useThrottle();
@@ -126,14 +127,14 @@ function AddressInput({
       const inputPrefix = getNetworkPrefix(inputValue);
       const inputWithoutPrefix = getAddressWithoutNetworkPrefix(inputValue);
 
+      // if the valid network prefix is present, we remove it from the address state
       const isValidPrefix = networkPrefix === inputPrefix;
+      const checksumAddress = checksumValidAddress(
+        isValidPrefix ? inputWithoutPrefix : inputValue
+      );
 
-      if (isValidPrefix) {
-        // if the valid network prefix is present, we remove it from the address state
-        onChangeAddress(checksumValidAddress(inputWithoutPrefix));
-      } else {
-        onChangeAddress(checksumValidAddress(inputValue));
-      }
+      onChangeAddress(checksumAddress);
+      setInputValue(checksumAddress);
     },
     [networkPrefix, onChangeAddress]
   );
@@ -162,6 +163,7 @@ function AddressInput({
       hiddenLabel={hiddenLabel && !shrink}
       disabled={disabled || isLoadingENSResolution}
       onChange={onChange}
+      value={inputValue}
       InputProps={{
         ...InputProps,
         // if isLoading we show a custom loader adornment
