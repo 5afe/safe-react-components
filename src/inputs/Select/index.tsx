@@ -47,6 +47,7 @@ function Select({
   activeItemId,
   onItemClick,
   fallbackImage,
+  fullWidth,
   ...rest
 }: SelectProps): React.ReactElement {
   const [open, setOpen] = React.useState(false);
@@ -75,8 +76,8 @@ function Select({
   };
 
   return (
-    <StyledFormControl variant="outlined">
-      <InputLabel>
+    <StyledFormControl variant="outlined" fullWidth={fullWidth}>
+      <InputLabel error={!!error}>
         {showErrorsInTheLabel && hasError ? error : label}
       </InputLabel>
       <StyledSelect
@@ -116,7 +117,11 @@ function Select({
           );
         })}
       </StyledSelect>
-      {helperText && <StyledFormHelperText>{helperText}</StyledFormHelperText>}
+      {helperText && (
+        <StyledFormHelperText error={hasError && !showErrorsInTheLabel}>
+          {helperText}
+        </StyledFormHelperText>
+      )}
     </StyledFormControl>
   );
 }
@@ -128,8 +133,6 @@ const IconImg = styled.img`
 
 const StyledSelect = styled(SelectMUI)`
   && {
-    width: 400px;
-
     .MuiSelect-root {
       background: #fff;
     }
@@ -147,8 +150,12 @@ const StyledSelect = styled(SelectMUI)`
     && {
       fieldset {
         border: 1px solid
-          ${({ theme, value }) =>
-            value ? theme.colors.inputFilled : theme.colors.inputDisabled};
+          ${({ theme, value, error }) =>
+            error
+              ? theme.colors.error
+              : value
+              ? theme.colors.inputFilled
+              : theme.colors.inputDisabled};
       }
     }
   }
@@ -164,6 +171,8 @@ const StyledFormControl = styled(FormControl)`
 
 const StyledFormHelperText = styled(FormHelperText)`
   && {
+    font-family: ${(props) => props.theme.fonts.fontFamily};
   }
 `;
+
 export default Select;

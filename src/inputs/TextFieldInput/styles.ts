@@ -9,8 +9,10 @@ export const inputLabelStyles = css<StyledTextFieldProps>`
   &:hover {
     .MuiInputLabel-root {
       &.MuiInputLabel-shrink:not(.Mui-focused):not(.Mui-disabled) {
-        color: ${({ error, theme }) =>
-          error ? theme.colors.error : theme.colors.inputHover};
+        color: ${({ theme }) => theme.colors.inputHover};
+        &.Mui-error {
+          color: ${({ theme }) => theme.colors.error};
+        }
       }
     }
   }
@@ -19,8 +21,11 @@ export const inputLabelStyles = css<StyledTextFieldProps>`
     font-family: ${({ theme }) => theme.fonts.fontFamily};
     color: ${({ theme }) => theme.colors.inputText};
     &.MuiInputLabel-shrink {
-      color: ${({ error, theme }) =>
-        error ? theme.colors.error : theme.colors.inputText};
+      color: ${({ theme }) => theme.colors.inputText};
+
+      &.Mui-error {
+        color: ${({ theme }) => theme.colors.error};
+      }
     }
     &.Mui-disabled {
       color: ${({ theme }) => theme.colors.inputDisabled};
@@ -75,6 +80,11 @@ export const inputStyles = css<StyledTextFieldProps>`
     &.Mui-focused {
       .MuiOutlinedInput-notchedOutline {
         border-color: ${({ theme }) => theme.colors.inputFilled};
+      }
+      &.Mui-error {
+        .MuiOutlinedInput-notchedOutline {
+          border-color: ${({ theme }) => theme.colors.error};
+        }
       }
     }
     &.Mui-disabled {
