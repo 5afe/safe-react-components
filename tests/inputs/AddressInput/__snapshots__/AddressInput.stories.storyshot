@@ -758,12 +758,12 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
     }
   >
     <div
-      className="MuiFormControl-root MuiTextField-root sc-gWXbKe QENhr"
+      className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
       spellCheck={false}
     >
       <label
-        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
-        data-shrink={true}
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+        data-shrink={false}
         htmlFor="address"
         id="address-label"
       >
@@ -776,7 +776,7 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
         <input
           aria-invalid={false}
           autoFocus={false}
-          className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel"
+          className="MuiInputBase-input MuiOutlinedInput-input"
           disabled={false}
           id="address"
           name="address"
@@ -793,7 +793,7 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
           className="PrivateNotchedOutline-root-99 MuiOutlinedInput-notchedOutline"
         >
           <legend
-            className="PrivateNotchedOutline-legendLabelled-101 PrivateNotchedOutline-legendNotched-102"
+            className="PrivateNotchedOutline-legendLabelled-101"
           >
             <span>
               Address
