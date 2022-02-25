@@ -2,7 +2,7 @@
 
 exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
 <div
-  className="MuiFormControl-root MuiTextField-root sc-gWXbKe iXSnpx"
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe dwZvEp"
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined Mui-disabled Mui-disabled MuiFormLabel-filled"
@@ -49,7 +49,7 @@ exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
 
 exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
 <div
-  className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -135,7 +135,7 @@ exports[`Storyshots Inputs/TextFieldInput Full Width Text Field 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq MuiFormControl-fullWidth"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW MuiFormControl-fullWidth"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -182,9 +182,64 @@ exports[`Storyshots Inputs/TextFieldInput Full Width Text Field 1`] = `
 </div>
 `;
 
+exports[`Storyshots Inputs/TextFieldInput Helper Text 1`] = `
+<div
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+    data-shrink={false}
+    htmlFor="standard-TextFieldInput"
+    id="standard-TextFieldInput-label"
+  >
+    TextFieldInput
+  </label>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+    onClick={[Function]}
+  >
+    <input
+      aria-describedby="standard-TextFieldInput-helper-text"
+      aria-invalid={false}
+      autoFocus={false}
+      className="MuiInputBase-input MuiOutlinedInput-input"
+      disabled={false}
+      id="standard-TextFieldInput"
+      name="TextFieldInput"
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="TextFieldInput with default values"
+      required={false}
+      type="text"
+      value=""
+    />
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-141 MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        className="PrivateNotchedOutline-legendLabelled-143"
+      >
+        <span>
+          TextFieldInput
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-contained"
+    id="standard-TextFieldInput-helper-text"
+  >
+    This is a helper text
+  </p>
+</div>
+`;
+
 exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
 <div
-  className="MuiFormControl-root MuiTextField-root sc-gWXbKe ciMulG"
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe flGugG"
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
@@ -215,10 +270,10 @@ exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
     />
     <fieldset
       aria-hidden={true}
-      className="PrivateNotchedOutline-root-141 MuiOutlinedInput-notchedOutline"
+      className="PrivateNotchedOutline-root-145 MuiOutlinedInput-notchedOutline"
     >
       <legend
-        className="PrivateNotchedOutline-legendLabelled-143 PrivateNotchedOutline-legendNotched-144"
+        className="PrivateNotchedOutline-legendLabelled-147 PrivateNotchedOutline-legendNotched-148"
       >
         <span>
           Number
@@ -231,7 +286,7 @@ exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
 
 exports[`Storyshots Inputs/TextFieldInput Simple Text Field 1`] = `
 <div
-  className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -263,10 +318,10 @@ exports[`Storyshots Inputs/TextFieldInput Simple Text Field 1`] = `
     />
     <fieldset
       aria-hidden={true}
-      className="PrivateNotchedOutline-root-145 MuiOutlinedInput-notchedOutline"
+      className="PrivateNotchedOutline-root-149 MuiOutlinedInput-notchedOutline"
     >
       <legend
-        className="PrivateNotchedOutline-legendLabelled-147"
+        className="PrivateNotchedOutline-legendLabelled-151"
       >
         <span>
           TextFieldInput
@@ -279,7 +334,7 @@ exports[`Storyshots Inputs/TextFieldInput Simple Text Field 1`] = `
 
 exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
 <div
-  className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
@@ -342,10 +397,10 @@ exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
     />
     <fieldset
       aria-hidden={true}
-      className="PrivateNotchedOutline-root-149 MuiOutlinedInput-notchedOutline"
+      className="PrivateNotchedOutline-root-153 MuiOutlinedInput-notchedOutline"
     >
       <legend
-        className="PrivateNotchedOutline-legendLabelled-151 PrivateNotchedOutline-legendNotched-152"
+        className="PrivateNotchedOutline-legendLabelled-155 PrivateNotchedOutline-legendNotched-156"
       >
         <span>
           TextFieldInput
@@ -358,7 +413,7 @@ exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
 
 exports[`Storyshots Inputs/TextFieldInput Text Field With Errors 1`] = `
 <div
-  className="MuiFormControl-root MuiTextField-root sc-gWXbKe ciMulG"
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe bIHJuJ"
 >
   <label
     className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined Mui-error Mui-error MuiFormLabel-filled"
@@ -390,10 +445,10 @@ exports[`Storyshots Inputs/TextFieldInput Text Field With Errors 1`] = `
     />
     <fieldset
       aria-hidden={true}
-      className="PrivateNotchedOutline-root-153 MuiOutlinedInput-notchedOutline"
+      className="PrivateNotchedOutline-root-157 MuiOutlinedInput-notchedOutline"
     >
       <legend
-        className="PrivateNotchedOutline-legendLabelled-155 PrivateNotchedOutline-legendNotched-156"
+        className="PrivateNotchedOutline-legendLabelled-159 PrivateNotchedOutline-legendNotched-160"
       >
         <span>
           TextFieldInput
@@ -420,7 +475,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-158 Mui-checked"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-162 Mui-checked"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -439,7 +494,7 @@ Array [
         >
           <input
             checked={true}
-            className="PrivateSwitchBase-input-160 MuiSwitch-input"
+            className="PrivateSwitchBase-input-164 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -462,7 +517,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiSwitch-switchBase MuiSwitch-colorSecondary"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -481,7 +536,7 @@ Array [
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-160 MuiSwitch-input"
+            className="PrivateSwitchBase-input-164 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -504,7 +559,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiSwitch-switchBase MuiSwitch-colorSecondary"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -523,7 +578,7 @@ Array [
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-160 MuiSwitch-input"
+            className="PrivateSwitchBase-input-164 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -539,8 +594,7 @@ Array [
     Show Errors in The Label
   </p>,
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
-    showErrorsInTheLabel={false}
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe fynudp"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-error Mui-error"
@@ -573,10 +627,10 @@ Array [
       />
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-161 MuiOutlinedInput-notchedOutline"
+        className="PrivateNotchedOutline-root-165 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-163"
+          className="PrivateNotchedOutline-legendLabelled-167"
         >
           <span>
             TextFieldInput
@@ -605,7 +659,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-165 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-166 Mui-checked"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-169 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-170 Mui-checked"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -624,7 +678,7 @@ Array [
         >
           <input
             checked={true}
-            className="PrivateSwitchBase-input-168 MuiSwitch-input"
+            className="PrivateSwitchBase-input-172 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -639,7 +693,7 @@ Array [
     </span>
   </p>,
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe QENhr"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe giQUEX"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
@@ -671,10 +725,10 @@ Array [
       />
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-169 MuiOutlinedInput-notchedOutline"
+        className="PrivateNotchedOutline-root-173 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-171 PrivateNotchedOutline-legendNotched-172"
+          className="PrivateNotchedOutline-legendLabelled-175 PrivateNotchedOutline-legendNotched-176"
         >
           <span>
             TextFieldInput

@@ -1,11 +1,7 @@
 import { TextFieldProps } from '@material-ui/core';
 import { css } from 'styled-components';
 
-export type StyledTextFieldProps = {
-  showErrorsInTheLabel?: boolean | undefined;
-} & TextFieldProps;
-
-export const inputLabelStyles = css<StyledTextFieldProps>`
+export const inputLabelStyles = css<TextFieldProps>`
   &:hover {
     .MuiInputLabel-root {
       &.MuiInputLabel-shrink:not(.Mui-focused):not(.Mui-disabled) {
@@ -47,7 +43,7 @@ export const inputLabelStyles = css<StyledTextFieldProps>`
   }
 `;
 
-export const inputStyles = css<StyledTextFieldProps>`
+export const inputStyles = css<TextFieldProps>`
   .MuiOutlinedInput-root {
     font-family: ${({ theme }) => theme.fonts.fontFamily};
     color: ${({ theme }) => theme.colors.inputText};
@@ -72,11 +68,13 @@ export const inputStyles = css<StyledTextFieldProps>`
         display: ${({ hiddenLabel }) => (hiddenLabel ? 'none' : 'block')};
       }
     }
+
     &:hover {
       .MuiOutlinedInput-notchedOutline {
         border-color: ${({ theme }) => theme.colors.primary};
       }
     }
+
     &.Mui-focused {
       .MuiOutlinedInput-notchedOutline {
         border-color: ${({ theme }) => theme.colors.inputFilled};
@@ -93,9 +91,15 @@ export const inputStyles = css<StyledTextFieldProps>`
       }
     }
   }
+  .MuiFormLabel-filled
+    + .MuiOutlinedInput-root:not(:hover):not(.Mui-disabled)
+    .MuiOutlinedInput-notchedOutline {
+    border-color: ${({ theme, error }) =>
+      error ? theme.colors.error : theme.colors.inputFilled};
+  }
 `;
 
-export const errorStyles = css<StyledTextFieldProps>`
+export const errorStyles = css<TextFieldProps>`
   .Mui-error {
     &:hover,
     .Mui-focused {
@@ -105,12 +109,6 @@ export const errorStyles = css<StyledTextFieldProps>`
     }
     .MuiOutlinedInput-notchedOutline {
       border-color: ${({ theme }) => theme.colors.error};
-    }
-
-    .MuiFormHelperText-root.Mui-error {
-      font-family: ${({ theme }) => theme.fonts.fontFamily};
-      ${({ error, showErrorsInTheLabel }) =>
-        error && showErrorsInTheLabel ? `display: none` : ''}
     }
   }
 `;
