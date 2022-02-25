@@ -98,10 +98,8 @@ export const inputStyles = css<StyledTextFieldProps>`
   .MuiFormLabel-filled
     + .MuiOutlinedInput-root:not(:hover):not(.Mui-disabled)
     .MuiOutlinedInput-notchedOutline {
-    border-color: ${({ theme, error, ...rest }) => {
-      console.log({ theme, error, ...rest });
-      return error ? theme.colors.error : theme.colors.inputFilled;
-    }};
+    border-color: ${({ theme, error }) =>
+      error ? theme.colors.error : theme.colors.inputFilled};
   }
 `;
 
