@@ -9,7 +9,7 @@ exports[`Storyshots Inputs/Select Disabled Select 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root sc-kLwhqv ksYMUG MuiFormControl-fullWidth"
+    className="MuiFormControl-root sc-kLwhqv jgEbCK MuiFormControl-fullWidth"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-disabled Mui-disabled"
@@ -88,7 +88,7 @@ exports[`Storyshots Inputs/Select Error Select 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root sc-kLwhqv dxJMlq"
+    className="MuiFormControl-root sc-kLwhqv hrOGDS"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-error Mui-error"
@@ -171,7 +171,7 @@ exports[`Storyshots Inputs/Select Simple Select 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root sc-kLwhqv bLnoLt MuiFormControl-fullWidth"
+    className="MuiFormControl-root sc-kLwhqv hCASnh MuiFormControl-fullWidth"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"

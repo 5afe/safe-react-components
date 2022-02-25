@@ -1,12 +1,7 @@
 import React, { ReactElement } from 'react';
 import TextFieldMui, { TextFieldProps } from '@material-ui/core/TextField';
 import styled from 'styled-components';
-import {
-  errorStyles,
-  inputLabelStyles,
-  inputStyles,
-  StyledTextFieldProps,
-} from '../styles';
+import { errorStyles, inputLabelStyles, inputStyles } from '../styles';
 
 export type TextFieldInputProps = {
   id?: string;
@@ -37,12 +32,11 @@ function TextFieldInput({
       name={name}
       label={showErrorsInTheLabel && hasError ? error : label}
       value={value}
-      helperText={hasError ? error : helperText}
+      helperText={!showErrorsInTheLabel && hasError ? error : helperText}
       error={hasError}
       color="primary"
       variant="outlined"
       hiddenLabel={hiddenLabel}
-      showErrorsInTheLabel={showErrorsInTheLabel}
       InputLabelProps={{
         ...rest.InputLabelProps,
         shrink: hiddenLabel || undefined,
@@ -52,7 +46,7 @@ function TextFieldInput({
   );
 }
 
-const TextField = styled((props: StyledTextFieldProps) => (
+const TextField = styled((props: TextFieldProps) => (
   <TextFieldMui {...props} />
 ))<TextFieldProps>`
   && {

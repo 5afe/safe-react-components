@@ -193,3 +193,18 @@ export const FullWidthTextField = (): React.ReactElement => {
     </div>
   );
 };
+
+export const HelperText = (): React.ReactElement => {
+  const [value, setValue] = useState<string>('');
+  return (
+    <TextFieldInput
+      id="standard-TextFieldInput"
+      label="TextFieldInput"
+      name="TextFieldInput"
+      placeholder="TextFieldInput with default values"
+      value={value}
+      helperText="This is a helper text"
+      onChange={(e) => setValue(e.target.value)}
+    />
+  );
+};
