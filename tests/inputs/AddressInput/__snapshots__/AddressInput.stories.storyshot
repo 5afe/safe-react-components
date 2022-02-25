@@ -7,7 +7,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe deKauR"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe iXmoqd"
     spellCheck={false}
   >
     <label
@@ -36,7 +36,6 @@ exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value=""
       />
       <fieldset
         aria-hidden={true}
@@ -62,7 +61,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe isyZpW"
     spellCheck={false}
   >
     <label
@@ -91,7 +90,6 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value=""
       />
       <div
         className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
@@ -146,7 +144,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe isyZpW"
     spellCheck={false}
   >
     <label
@@ -175,7 +173,6 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value=""
       />
       <div
         className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
@@ -267,7 +264,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
     }
   >
     <div
-      className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+      className="MuiFormControl-root MuiTextField-root sc-gWXbKe isyZpW"
       spellCheck={false}
     >
       <label
@@ -297,7 +294,6 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
           placeholder="Type safe.test to check ENS resolution"
           required={false}
           type="text"
-          value=""
         />
         <fieldset
           aria-hidden={true}
@@ -330,7 +326,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
     }
   >
     <div
-      className="MuiFormControl-root MuiTextField-root sc-gWXbKe ciMulG"
+      className="MuiFormControl-root MuiTextField-root sc-gWXbKe keMErq"
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
@@ -402,7 +398,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe dUdlfd"
     spellCheck={false}
   >
     <label
@@ -432,7 +428,6 @@ exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value=""
       />
       <fieldset
         aria-hidden={true}
@@ -464,7 +459,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Simple Address Valida
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe isyZpW"
     spellCheck={false}
   >
     <label
@@ -493,7 +488,6 @@ exports[`Storyshots Inputs/AddressInput Address Input With Simple Address Valida
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value=""
       />
       <fieldset
         aria-hidden={true}
@@ -529,7 +523,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe isyZpW"
     spellCheck={false}
   >
     <label
@@ -558,7 +552,6 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
         placeholder="Ethereum address"
         required={false}
         type="text"
-        value=""
       />
       <fieldset
         aria-hidden={true}
@@ -612,7 +605,7 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
     className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
   />
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe isyZpW"
     showErrorsInTheLabel={false}
     spellCheck={false}
   >
@@ -643,7 +636,6 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
         placeholder="Type the valid safe address"
         required={false}
         type="text"
-        value=""
       />
       <fieldset
         aria-hidden={true}
@@ -686,7 +678,7 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
     Network Settings:
   </p>
   <div
-    className="MuiFormControl-root sc-kLwhqv UVNmp"
+    className="MuiFormControl-root sc-kLwhqv bLnoLt"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
@@ -766,7 +758,7 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
     }
   >
     <div
-      className="MuiFormControl-root MuiTextField-root sc-gWXbKe BaIDq"
+      className="MuiFormControl-root MuiTextField-root sc-gWXbKe isyZpW"
       spellCheck={false}
     >
       <label
@@ -795,7 +787,6 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
           placeholder="Ethereum address"
           required={false}
           type="text"
-          value=""
         />
         <fieldset
           aria-hidden={true}

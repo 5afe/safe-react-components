@@ -44,6 +44,7 @@ function Select({
   onItemClick,
   fallbackImage,
   fullWidth,
+  disabled,
   ...rest
 }: SelectProps): React.ReactElement {
   const [open, setOpen] = React.useState(false);
@@ -72,8 +73,12 @@ function Select({
   };
 
   return (
-    <StyledFormControl variant="outlined" fullWidth={fullWidth}>
-      <InputLabel error={!!error}>
+    <StyledFormControl
+      variant="outlined"
+      fullWidth={fullWidth}
+      error={hasError}
+      disabled={disabled}>
+      <InputLabel error={hasError} disabled={disabled}>
         {showErrorsInTheLabel && hasError ? error : label}
       </InputLabel>
       <StyledSelect
@@ -88,6 +93,7 @@ function Select({
         onChange={handleChange}
         label={id ? id : 'generic-select'}
         variant="outlined"
+        disabled={disabled}
         {...rest}>
         {items.map((i) => {
           return (

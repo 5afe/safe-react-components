@@ -72,11 +72,13 @@ export const inputStyles = css<StyledTextFieldProps>`
         display: ${({ hiddenLabel }) => (hiddenLabel ? 'none' : 'block')};
       }
     }
+
     &:hover {
       .MuiOutlinedInput-notchedOutline {
         border-color: ${({ theme }) => theme.colors.primary};
       }
     }
+
     &.Mui-focused {
       .MuiOutlinedInput-notchedOutline {
         border-color: ${({ theme }) => theme.colors.inputFilled};
@@ -92,6 +94,14 @@ export const inputStyles = css<StyledTextFieldProps>`
         border-color: ${({ theme }) => theme.colors.inputDisabled};
       }
     }
+  }
+  .MuiFormLabel-filled
+    + .MuiOutlinedInput-root:not(:hover):not(.Mui-disabled)
+    .MuiOutlinedInput-notchedOutline {
+    border-color: ${({ theme, error, ...rest }) => {
+      console.log({ theme, error, ...rest });
+      return error ? theme.colors.error : theme.colors.inputFilled;
+    }};
   }
 `;
 
