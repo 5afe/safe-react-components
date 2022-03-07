@@ -14,7 +14,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM hatiSA"
+          className="sc-cidDSM hbaafa"
           disabled={false}
         >
           <span
@@ -75,7 +75,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM hatiSA"
+          className="sc-cidDSM hbaafa"
           disabled={false}
         >
           2
@@ -113,7 +113,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM jSaYuY"
+          className="sc-cidDSM cDLNSm"
           disabled={true}
         >
           3
@@ -151,7 +151,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM jSaYuY"
+          className="sc-cidDSM cDLNSm"
           disabled={true}
         >
           4
@@ -189,7 +189,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM jSaYuY"
+          className="sc-cidDSM cDLNSm"
           disabled={true}
         >
           5
@@ -227,7 +227,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM hatiSA"
+          className="sc-cidDSM hbaafa"
           disabled={false}
         >
           <span
@@ -288,7 +288,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM gWLfUB"
+          className="sc-cidDSM YkVbP"
           disabled={false}
         >
           2
@@ -326,7 +326,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM jSaYuY"
+          className="sc-cidDSM cDLNSm"
           disabled={true}
         >
           3
@@ -364,7 +364,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM jSaYuY"
+          className="sc-cidDSM cDLNSm"
           disabled={true}
         >
           4
@@ -402,7 +402,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM jSaYuY"
+          className="sc-cidDSM cDLNSm"
           disabled={true}
         >
           5
@@ -440,7 +440,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM hatiSA"
+          className="sc-cidDSM hbaafa"
           disabled={false}
         >
           <span
@@ -501,7 +501,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM hatiSA"
+          className="sc-cidDSM hbaafa"
           disabled={false}
         >
           2
@@ -539,7 +539,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM jSaYuY"
+          className="sc-cidDSM cDLNSm"
           disabled={true}
         >
           3
@@ -577,7 +577,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM jSaYuY"
+          className="sc-cidDSM cDLNSm"
           disabled={true}
         >
           4
@@ -615,7 +615,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
         className="MuiStepLabel-iconContainer"
       >
         <div
-          className="sc-cidDSM jSaYuY"
+          className="sc-cidDSM cDLNSm"
           disabled={true}
         >
           5

@@ -75,7 +75,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
   </button>
   <br />
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV hmsnQe primary outlined Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV dxbJjo primary outlined Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -98,7 +98,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV ixuOni secondary outlined Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV ymcKY secondary outlined Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -121,7 +121,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV eyprPX error outlined Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV fofYct error outlined Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -291,7 +291,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
   </button>
   <br />
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV hmsnQe primary outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV dxbJjo primary outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -314,7 +314,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV ixuOni secondary outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV ymcKY secondary outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -337,7 +337,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV eyprPX error outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV fofYct error outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -683,7 +683,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
   </button>
   <br />
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV ekNbwO primary outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV iJzLqU primary outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -730,7 +730,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV gBIcgO secondary outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV lpuGLk secondary outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -777,7 +777,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV gPHhxD error outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV hHkoQp error outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}

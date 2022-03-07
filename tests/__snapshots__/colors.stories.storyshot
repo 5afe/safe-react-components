@@ -468,8 +468,8 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
     className="sc-bTfYFJ itQCBQ"
   >
     <div
-      className="sc-kHOZwM dEEZcu"
-      color="#F7F5F5"
+      className="sc-kHOZwM jZPnTU"
+      color="#F6F7F8"
     />
     <p
       className="sc-crHmcD kMPEWD"
@@ -481,7 +481,7 @@ exports[`Storyshots Utils/Colors Colors Sample 1`] = `
       className="sc-crHmcD kMPEWD"
       size="md"
     >
-      #F7F5F5
+      #F6F7F8
     </p>
   </div>
   <div
