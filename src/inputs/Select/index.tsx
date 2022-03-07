@@ -91,7 +91,7 @@ function Select({
         onOpen={handleOpen}
         value={activeItemId}
         onChange={handleChange}
-        label={id ? id : 'generic-select'}
+        label={label}
         variant="outlined"
         disabled={disabled}
         {...rest}>
