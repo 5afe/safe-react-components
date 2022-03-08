@@ -70,7 +70,7 @@ exports[`Storyshots Inputs/Select Disabled Select 1`] = `
           className="PrivateNotchedOutline-legendLabelled-115"
         >
           <span>
-            error-select
+            Select Token
           </span>
         </legend>
       </fieldset>
@@ -148,7 +148,7 @@ exports[`Storyshots Inputs/Select Error Select 1`] = `
           className="PrivateNotchedOutline-legendLabelled-119"
         >
           <span>
-            error-select
+            Select Token
           </span>
         </legend>
       </fieldset>
@@ -231,7 +231,7 @@ exports[`Storyshots Inputs/Select Simple Select 1`] = `
           className="PrivateNotchedOutline-legendLabelled-123"
         >
           <span>
-            simple-select
+            Select Token
           </span>
         </legend>
       </fieldset>

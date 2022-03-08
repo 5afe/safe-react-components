@@ -739,7 +739,7 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
           className="PrivateNotchedOutline-legendLabelled-101 PrivateNotchedOutline-legendNotched-102"
         >
           <span>
-            generic-select
+            Network
           </span>
         </legend>
       </fieldset>
