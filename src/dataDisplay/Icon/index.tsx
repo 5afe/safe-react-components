@@ -15,6 +15,8 @@ import arrowDown from './images/arrowDown';
 import arrowLeft from './images/arrowLeft';
 import assets from './images/assets';
 import awaitingConfirmations from './images/awaitingConfirmations';
+import bookmark from './images/bookmark';
+import bookmarkFilled from './images/bookmarkFilled';
 import camera from './images/camera';
 import chain from './images/chain';
 import check from './images/check';
@@ -88,6 +90,11 @@ const StyledIcon = styled.span<{ color?: ThemeColors }>`
     fill: ${({ theme, color }) =>
       color ? theme.colors[color] : theme.colors.icon};
   }
+
+  .icon-stroke {
+    stroke: ${({ theme, color }) =>
+      color ? theme.colors[color] : theme.colors.icon};
+  }
 `;
 
 const icons = {
@@ -103,6 +110,8 @@ const icons = {
   arrowRight,
   assets,
   awaitingConfirmations,
+  bookmark,
+  bookmarkFilled,
   camera,
   chain,
   check,
