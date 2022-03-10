@@ -94,7 +94,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Buttons 1`] = `
       >
         <span
           aria-describedby={null}
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
           color="icon"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -137,7 +137,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Buttons 1`] = `
       >
         <span
           aria-describedby={null}
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
           color="icon"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -220,7 +220,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Copy Short Name 1`] = `
       >
         <span
           aria-describedby={null}
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
           color="icon"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -263,7 +263,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Copy Short Name 1`] = `
       >
         <span
           aria-describedby={null}
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
           color="icon"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -473,7 +473,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Menu 1`] = `
       >
         <span
           aria-describedby={null}
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
           color="icon"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -746,7 +746,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Show And Copy Short Name 1`] = `
       >
         <span
           aria-describedby={null}
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
           color="icon"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -789,7 +789,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Show And Copy Short Name 1`] = `
       >
         <span
           aria-describedby={null}
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
           color="icon"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -879,7 +879,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Show Short Name 1`] = `
       >
         <span
           aria-describedby={null}
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
           color="icon"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -922,7 +922,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Show Short Name 1`] = `
       >
         <span
           aria-describedby={null}
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
           color="icon"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -1012,7 +1012,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Show Short Name And Short Hash 1
       >
         <span
           aria-describedby={null}
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
           color="icon"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -1055,7 +1055,7 @@ exports[`Storyshots Ethereum/Eth hash Info With Show Short Name And Short Hash 1
       >
         <span
           aria-describedby={null}
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
           color="icon"
           onBlur={[Function]}
           onFocus={[Function]}

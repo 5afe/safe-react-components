@@ -18,7 +18,7 @@ exports[`Storyshots Navigation/Stepper Orientation Horizontal 1`] = `
           disabled={false}
         >
           <span
-            className="sc-iqseJM lvDyr"
+            className="sc-iqseJM kNdvIY"
             color="white"
           >
             <svg
@@ -231,7 +231,7 @@ exports[`Storyshots Navigation/Stepper Step With Error 1`] = `
           disabled={false}
         >
           <span
-            className="sc-iqseJM lvDyr"
+            className="sc-iqseJM kNdvIY"
             color="white"
           >
             <svg
@@ -444,7 +444,7 @@ exports[`Storyshots Navigation/Stepper Stepper 1`] = `
           disabled={false}
         >
           <span
-            className="sc-iqseJM lvDyr"
+            className="sc-iqseJM kNdvIY"
             color="white"
           >
             <svg

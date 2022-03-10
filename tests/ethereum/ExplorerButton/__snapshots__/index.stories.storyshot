@@ -20,7 +20,7 @@ Array [
   >
     <span
       aria-describedby={null}
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
       color="icon"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -75,7 +75,7 @@ Array [
   >
     <span
       aria-describedby={null}
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
       color="icon"
       onBlur={[Function]}
       onFocus={[Function]}

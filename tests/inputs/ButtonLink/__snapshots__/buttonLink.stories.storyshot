@@ -7,7 +7,7 @@ Array [
     color="primary"
   >
     <span
-      className="sc-iqseJM bmGbk"
+      className="sc-iqseJM fdfdPg"
       color="primary"
     >
       <svg
@@ -48,7 +48,7 @@ Array [
     color="primary"
   >
     <span
-      className="sc-iqseJM bmGbk"
+      className="sc-iqseJM fdfdPg"
       color="primary"
     >
       <svg
@@ -93,7 +93,7 @@ exports[`Storyshots inputs/ButtonLink Simple Button Link 1`] = `
   color="primary"
 >
   <span
-    className="sc-iqseJM bmGbk"
+    className="sc-iqseJM fdfdPg"
     color="primary"
   >
     <svg
