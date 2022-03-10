@@ -12,7 +12,7 @@ export default {
         <path
           className="icon-color icon-stroke"
           d="M9 11L5 8.22222L1 11V2.11111C1 1.81643 1.12041 1.53381 1.33474 1.32544C1.54906 1.11706 1.83975 1 2.14286 1H7.85714C8.16025 1 8.45094 1.11706 8.66527 1.32544C8.87959 1.53381 9 1.81643 9 2.11111V11Z"
-          strokeWidth="1"
+          strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -30,7 +30,7 @@ export default {
         <path
           className="icon-color icon-stroke"
           d="M9 11L5 8.22222L1 11V2.11111C1 1.81643 1.12041 1.53381 1.33474 1.32544C1.54906 1.11706 1.83975 1 2.14286 1H7.85714C8.16025 1 8.45094 1.11706 8.66527 1.32544C8.87959 1.53381 9 1.81643 9 2.11111V11Z"
-          strokeWidth="1"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
