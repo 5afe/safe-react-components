@@ -39,7 +39,7 @@ exports[`Storyshots Inputs/TextField End Adornment 1`] = `
         className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-filled"
       >
         <span
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
         >
           <svg
             height="24"
@@ -261,7 +261,7 @@ exports[`Storyshots Inputs/TextField Start Adornment 1`] = `
         className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-filled"
       >
         <span
-          className="sc-iqseJM iJclAE"
+          className="sc-iqseJM drawdo"
         >
           <svg
             height="24"

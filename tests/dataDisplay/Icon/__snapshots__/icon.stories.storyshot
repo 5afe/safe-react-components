@@ -3,7 +3,7 @@
 exports[`Storyshots Data Display/Icon Custom Color 1`] = `
 Array [
   <span
-    className="sc-iqseJM bmGbk"
+    className="sc-iqseJM fdfdPg"
     color="primary"
   >
     <svg
@@ -32,7 +32,7 @@ Array [
     </svg>
   </span>,
   <span
-    className="sc-iqseJM jMvGCh"
+    className="sc-iqseJM lkPTMI"
     color="error"
   >
     <svg
@@ -61,7 +61,7 @@ Array [
     </svg>
   </span>,
   <span
-    className="sc-iqseJM hMTWWn"
+    className="sc-iqseJM jKIkMs"
     color="rinkeby"
   >
     <svg
@@ -95,7 +95,7 @@ Array [
 exports[`Storyshots Data Display/Icon Custom Size 1`] = `
 Array [
   <span
-    className="sc-iqseJM iJclAE"
+    className="sc-iqseJM drawdo"
   >
     <svg
       height="16"
@@ -123,7 +123,7 @@ Array [
     </svg>
   </span>,
   <span
-    className="sc-iqseJM iJclAE"
+    className="sc-iqseJM drawdo"
   >
     <svg
       height="24"
@@ -161,7 +161,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -194,7 +194,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -223,7 +223,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -251,7 +251,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -283,7 +283,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -311,7 +311,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -348,7 +348,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -377,7 +377,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -406,7 +406,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -434,7 +434,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -463,7 +463,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -496,7 +496,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -528,7 +528,65 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
+    >
+      <svg
+        fill="none"
+        height="24"
+        viewBox="0 0 12 12"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            className="icon-stroke"
+            d="M9 11L5 8.22222L1 11V2.11111C1 1.81643 1.12041 1.53381 1.33474 1.32544C1.54906 1.11706 1.83975 1 2.14286 1H7.85714C8.16025 1 8.45094 1.11706 8.66527 1.32544C8.87959 1.53381 9 1.81643 9 2.11111V11Z"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
+          />
+        </g>
+      </svg>
+    </span>
+    bookmark
+  </div>
+  <div
+    className="sc-dFtzxp chjzxj"
+  >
+    <span
+      className="sc-iqseJM drawdo"
+    >
+      <svg
+        fill="none"
+        height="24"
+        viewBox="0 0 12 12"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            className="icon-color icon-stroke"
+            d="M9 11L5 8.22222L1 11V2.11111C1 1.81643 1.12041 1.53381 1.33474 1.32544C1.54906 1.11706 1.83975 1 2.14286 1H7.85714C8.16025 1 8.45094 1.11706 8.66527 1.32544C8.87959 1.53381 9 1.81643 9 2.11111V11Z"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
+          />
+        </g>
+      </svg>
+    </span>
+    bookmarkFilled
+  </div>
+  <div
+    className="sc-dFtzxp chjzxj"
+  >
+    <span
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -562,7 +620,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -596,7 +654,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -624,7 +682,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -658,7 +716,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -691,7 +749,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -724,7 +782,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -752,7 +810,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -791,7 +849,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -820,7 +878,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -848,7 +906,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -880,7 +938,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -912,7 +970,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -946,7 +1004,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -974,7 +1032,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1016,7 +1074,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1044,7 +1102,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1072,7 +1130,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1105,7 +1163,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1137,7 +1195,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1169,7 +1227,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1197,7 +1255,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1237,7 +1295,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1272,7 +1330,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1300,7 +1358,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         fill="none"
@@ -1346,7 +1404,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1375,7 +1433,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1403,7 +1461,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1445,7 +1503,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1473,7 +1531,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1505,7 +1563,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1533,7 +1591,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1565,7 +1623,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1597,7 +1655,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1629,7 +1687,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1657,7 +1715,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1686,7 +1744,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1715,7 +1773,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1744,7 +1802,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1818,7 +1876,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1852,7 +1910,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1880,7 +1938,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1913,7 +1971,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1947,7 +2005,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -1975,7 +2033,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2003,7 +2061,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2031,7 +2089,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2059,7 +2117,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2088,7 +2146,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2125,7 +2183,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2162,7 +2220,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2190,7 +2248,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2224,7 +2282,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2257,7 +2315,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2289,7 +2347,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2317,7 +2375,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2350,7 +2408,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2379,7 +2437,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2408,7 +2466,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2436,7 +2494,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2464,7 +2522,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2496,7 +2554,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2524,7 +2582,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
     className="sc-dFtzxp chjzxj"
   >
     <span
-      className="sc-iqseJM iJclAE"
+      className="sc-iqseJM drawdo"
     >
       <svg
         height="24"
@@ -2555,7 +2613,7 @@ exports[`Storyshots Data Display/Icon Icons 1`] = `
 exports[`Storyshots Data Display/Icon With Tooltip 1`] = `
 <span
   aria-describedby={null}
-  className="sc-iqseJM bmGbk"
+  className="sc-iqseJM fdfdPg"
   color="primary"
   onBlur={[Function]}
   onFocus={[Function]}

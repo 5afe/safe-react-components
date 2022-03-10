@@ -10,7 +10,7 @@ exports[`Storyshots Utils/CopyToClipboardBtn Copy 1`] = `
 >
   <span
     aria-describedby={null}
-    className="sc-iqseJM iJclAE"
+    className="sc-iqseJM drawdo"
     color="icon"
     onBlur={[Function]}
     onFocus={[Function]}
@@ -54,7 +54,7 @@ exports[`Storyshots Utils/CopyToClipboardBtn Copy With Different Logo 1`] = `
 >
   <span
     aria-describedby={null}
-    className="sc-iqseJM iJclAE"
+    className="sc-iqseJM drawdo"
     color="icon"
     onBlur={[Function]}
     onFocus={[Function]}

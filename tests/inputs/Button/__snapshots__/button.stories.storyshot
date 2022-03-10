@@ -508,7 +508,7 @@ exports[`Storyshots Inputs/Button With Custom Component 1`] = `
     className="MuiButton-label"
   >
     <span
-      className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+      className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
     >
       <svg
         height="16"
@@ -561,7 +561,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
       >
         <svg
           height="24"
@@ -608,7 +608,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
       >
         <svg
           height="24"
@@ -655,7 +655,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
       >
         <svg
           height="24"
@@ -703,7 +703,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
       >
         <svg
           height="24"
@@ -750,7 +750,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
       >
         <svg
           height="24"
@@ -797,7 +797,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
       >
         <svg
           height="24"
@@ -845,7 +845,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
       >
         <svg
           height="24"
@@ -892,7 +892,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
       >
         <svg
           height="24"
@@ -939,7 +939,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
       >
         <svg
           height="24"
@@ -993,7 +993,7 @@ exports[`Storyshots Inputs/Button With Icon Size 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
       >
         <svg
           height="24"
@@ -1040,7 +1040,7 @@ exports[`Storyshots Inputs/Button With Icon Size 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM iJclAE sc-bBHxTw jBIXxL"
+        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
       >
         <svg
           height="16"
