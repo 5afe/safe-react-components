@@ -18,7 +18,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye jLnYUe"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}
@@ -148,7 +148,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye jLnYUe"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}
@@ -278,7 +278,7 @@ exports[`Storyshots Data Display/Accordion Compact Accordion 1`] = `
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye jLnYUe"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}
@@ -415,7 +415,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye jLnYUe"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}
@@ -545,7 +545,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye jLnYUe"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}
@@ -675,7 +675,7 @@ exports[`Storyshots Data Display/Accordion Simple Accordion 1`] = `
     <div
       aria-disabled={false}
       aria-expanded={false}
-      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye gBiUvy"
+      className="MuiButtonBase-root MuiAccordionSummary-root sc-hKwDye jLnYUe"
       onBlur={[Function]}
       onClick={[Function]}
       onDragLeave={[Function]}

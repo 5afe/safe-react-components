@@ -27,7 +27,7 @@ const theme = {
     rinkeby: '#E8673C',
     pendingTagHover: '#FBE5C5',
     tag: '#D4D5D3',
-    background: '#F7F5F5',
+    background: '#F6F7F8',
     white: '#ffffff',
     warning: '#FFC05F',
     pending: '#E8663D',

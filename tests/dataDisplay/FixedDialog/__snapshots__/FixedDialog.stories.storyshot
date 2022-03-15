@@ -30,7 +30,7 @@ exports[`Storyshots Data Display/FixedDialog Simple Fixed Dialog 1`] = `
         className="sc-hmjpVf AREoq"
       >
         <button
-          className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV hmsnQe primary outlined"
+          className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV dxbJjo primary outlined"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
