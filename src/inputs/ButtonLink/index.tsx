@@ -16,7 +16,7 @@ export interface Props extends React.ComponentPropsWithoutRef<'button'> {
 const StyledButtonLink = styled.button<Props>`
   background: transparent;
   border: none;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
   color: ${({ theme, color }) => theme['colors'][color]};
   font-family: ${({ theme }) => theme.fonts.fontFamily};

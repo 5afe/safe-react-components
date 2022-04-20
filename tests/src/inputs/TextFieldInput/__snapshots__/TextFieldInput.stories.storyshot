@@ -1,0 +1,741 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Inputs/TextFieldInput Disabled Text Field 1`] = `
+<div
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe dwZvEp"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined Mui-disabled Mui-disabled MuiFormLabel-filled"
+    data-shrink={true}
+    htmlFor="standard-TextFieldInput"
+    id="standard-TextFieldInput-label"
+  >
+    TextFieldInput
+  </label>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-formControl"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={false}
+      autoFocus={false}
+      className="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
+      disabled={true}
+      id="standard-TextFieldInput"
+      name="TextFieldInput"
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+      value="this field is disabled"
+    />
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-129 MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        className="PrivateNotchedOutline-legendLabelled-131 PrivateNotchedOutline-legendNotched-132"
+      >
+        <span>
+          TextFieldInput
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput End Adornment Text Field 1`] = `
+<div
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+    data-shrink={false}
+    htmlFor="standard-TextFieldInput"
+    id="standard-TextFieldInput-label"
+  >
+    TextFieldInput
+  </label>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={false}
+      autoFocus={false}
+      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+      disabled={false}
+      id="standard-TextFieldInput"
+      name="TextFieldInput"
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    <div
+      className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+    >
+      <span
+        className="sc-iqseJM drawdo"
+      >
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M0 0H24V24H0z"
+            />
+            <path
+              className="icon-color"
+              d="M14.998 5c-3.865 0-7 3.134-7 7s3.135 7 7 7c3.866 0 7-3.134 7-7s-3.134-7-7-7m0 2c2.758 0 5 2.242 5 5s-2.242 5-5 5c-2.757 0-5-2.242-5-5s2.243-5 5-5"
+            />
+            <path
+              className="icon-color"
+              d="M6.804 5.358C3.96 6.295 2 8.955 2 11.996c0 3.04 1.96 5.701 4.804 6.638.525.173 1.09-.113 1.263-.637.173-.525-.113-1.09-.637-1.263C5.399 16.066 4 14.166 4 11.996c0-2.17 1.399-4.07 3.43-4.738.524-.173.81-.738.637-1.263-.173-.524-.738-.81-1.263-.637z"
+              fillRule="nonzero"
+            />
+          </g>
+        </svg>
+      </span>
+    </div>
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-133 MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        className="PrivateNotchedOutline-legendLabelled-135"
+      >
+        <span>
+          TextFieldInput
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Full Width Text Field 1`] = `
+<div
+  style={
+    Object {
+      "width": "300px",
+    }
+  }
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW MuiFormControl-fullWidth"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+      data-shrink={false}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiOutlinedInput-input"
+        disabled={false}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="TextFieldInput with default values"
+        required={false}
+        type="text"
+        value=""
+      />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-137 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-139"
+        >
+          <span>
+            TextFieldInput
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Helper Text 1`] = `
+<div
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+    data-shrink={false}
+    htmlFor="standard-TextFieldInput"
+    id="standard-TextFieldInput-label"
+  >
+    TextFieldInput
+  </label>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+    onClick={[Function]}
+  >
+    <input
+      aria-describedby="standard-TextFieldInput-helper-text"
+      aria-invalid={false}
+      autoFocus={false}
+      className="MuiInputBase-input MuiOutlinedInput-input"
+      disabled={false}
+      id="standard-TextFieldInput"
+      name="TextFieldInput"
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="TextFieldInput with default values"
+      required={false}
+      type="text"
+      value=""
+    />
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-141 MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        className="PrivateNotchedOutline-legendLabelled-143"
+      >
+        <span>
+          TextFieldInput
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-contained"
+    id="standard-TextFieldInput-helper-text"
+  >
+    This is a helper text
+  </p>
+</div>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Number Text Field 1`] = `
+<div
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe flGugG"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
+    data-shrink={true}
+    htmlFor="standard-NumberTextFieldInput"
+    id="standard-NumberTextFieldInput-label"
+  >
+    Number
+  </label>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={false}
+      autoFocus={false}
+      className="MuiInputBase-input MuiOutlinedInput-input"
+      disabled={false}
+      id="standard-NumberTextFieldInput"
+      name="NumberTextFieldInput"
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="number"
+      value="100"
+    />
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-145 MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        className="PrivateNotchedOutline-legendLabelled-147 PrivateNotchedOutline-legendNotched-148"
+      >
+        <span>
+          Number
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Simple Text Field 1`] = `
+<div
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+    data-shrink={false}
+    htmlFor="standard-TextFieldInput"
+    id="standard-TextFieldInput-label"
+  >
+    TextFieldInput
+  </label>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={false}
+      autoFocus={false}
+      className="MuiInputBase-input MuiOutlinedInput-input"
+      disabled={false}
+      id="standard-TextFieldInput"
+      name="TextFieldInput"
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="TextFieldInput with default values"
+      required={false}
+      type="text"
+      value=""
+    />
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-149 MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        className="PrivateNotchedOutline-legendLabelled-151"
+      >
+        <span>
+          TextFieldInput
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Start Adornment Text Field 1`] = `
+<div
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
+    data-shrink={true}
+    htmlFor="standard-TextFieldInput"
+    id="standard-TextFieldInput-label"
+  >
+    TextFieldInput
+  </label>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart"
+    onClick={[Function]}
+  >
+    <div
+      className="MuiInputAdornment-root MuiInputAdornment-positionStart"
+    >
+      <span
+        className="sc-iqseJM drawdo"
+      >
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M0 0H24V24H0z"
+            />
+            <path
+              className="icon-color"
+              d="M14.998 5c-3.865 0-7 3.134-7 7s3.135 7 7 7c3.866 0 7-3.134 7-7s-3.134-7-7-7m0 2c2.758 0 5 2.242 5 5s-2.242 5-5 5c-2.757 0-5-2.242-5-5s2.243-5 5-5"
+            />
+            <path
+              className="icon-color"
+              d="M6.804 5.358C3.96 6.295 2 8.955 2 11.996c0 3.04 1.96 5.701 4.804 6.638.525.173 1.09-.113 1.263-.637.173-.525-.113-1.09-.637-1.263C5.399 16.066 4 14.166 4 11.996c0-2.17 1.399-4.07 3.43-4.738.524-.173.81-.738.637-1.263-.173-.524-.738-.81-1.263-.637z"
+              fillRule="nonzero"
+            />
+          </g>
+        </svg>
+      </span>
+    </div>
+    <input
+      aria-invalid={false}
+      autoFocus={false}
+      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart"
+      disabled={false}
+      id="standard-TextFieldInput"
+      name="TextFieldInput"
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+      value=""
+    />
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-153 MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        className="PrivateNotchedOutline-legendLabelled-155 PrivateNotchedOutline-legendNotched-156"
+      >
+        <span>
+          TextFieldInput
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Text Field With Errors 1`] = `
+<div
+  className="MuiFormControl-root MuiTextField-root sc-gWXbKe bIHJuJ"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined Mui-error Mui-error MuiFormLabel-filled"
+    data-shrink={true}
+    htmlFor="standard-TextFieldInput"
+    id="standard-TextFieldInput-label"
+  >
+    TextFieldInput
+  </label>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root Mui-error Mui-error MuiInputBase-formControl"
+    onClick={[Function]}
+  >
+    <input
+      aria-describedby="standard-TextFieldInput-helper-text"
+      aria-invalid={true}
+      autoFocus={false}
+      className="MuiInputBase-input MuiOutlinedInput-input"
+      disabled={false}
+      id="standard-TextFieldInput"
+      name="TextFieldInput"
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      type="text"
+      value="this field has an error"
+    />
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-157 MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        className="PrivateNotchedOutline-legendLabelled-159 PrivateNotchedOutline-legendNotched-160"
+      >
+        <span>
+          TextFieldInput
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+  <p
+    className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error MuiFormHelperText-filled"
+    id="standard-TextFieldInput-helper-text"
+  >
+    this field has an error
+  </p>
+</div>
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Text Field With Errors In The Label 1`] = `
+Array [
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    <span
+      className="MuiSwitch-root sc-jJoQJp iXvNeM"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-162 Mui-checked"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={true}
+            className="PrivateSwitchBase-input-164 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+    An Error is present
+  </p>,
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    <span
+      className="MuiSwitch-root sc-jJoQJp xxohc"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={false}
+            className="PrivateSwitchBase-input-164 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+     Hide Label
+  </p>,
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    <span
+      className="MuiSwitch-root sc-jJoQJp xxohc"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={false}
+            className="PrivateSwitchBase-input-164 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+    Show Errors in The Label
+  </p>,
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe fynudp"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-error Mui-error"
+      data-shrink={false}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root Mui-error Mui-error MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-describedby="standard-TextFieldInput-helper-text"
+        aria-invalid={true}
+        autoFocus={false}
+        className="MuiInputBase-input MuiOutlinedInput-input"
+        disabled={false}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="You can visually hide the label"
+        required={false}
+        type="text"
+        value=""
+      />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-165 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-167"
+        >
+          <span>
+            TextFieldInput
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+    <p
+      className="MuiFormHelperText-root MuiFormHelperText-contained Mui-error"
+      id="standard-TextFieldInput-helper-text"
+    >
+      This field has an error
+    </p>
+  </div>,
+]
+`;
+
+exports[`Storyshots Inputs/TextFieldInput Text Field With Hidden Label 1`] = `
+Array [
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Hide Label: 
+    <span
+      className="MuiSwitch-root sc-jJoQJp iXvNeM"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-169 MuiSwitch-switchBase MuiSwitch-colorSecondary PrivateSwitchBase-checked-170 Mui-checked"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={true}
+            className="PrivateSwitchBase-input-172 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track"
+      />
+    </span>
+  </p>,
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-gWXbKe giQUEX"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
+      data-shrink={true}
+      htmlFor="standard-TextFieldInput"
+      id="standard-TextFieldInput-label"
+    >
+      TextFieldInput
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel"
+        disabled={false}
+        id="standard-TextFieldInput"
+        name="TextFieldInput"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="You can visually hide the label"
+        required={false}
+        type="text"
+        value=""
+      />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-173 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-175 PrivateNotchedOutline-legendNotched-176"
+        >
+          <span>
+            TextFieldInput
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>,
+]
+`;

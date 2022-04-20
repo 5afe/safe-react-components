@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Data Display/Data Table Data Grid 1`] = `null`;
+
+exports[`Storyshots Data Display/Data Table Paginated Data Grid 1`] = `null`;

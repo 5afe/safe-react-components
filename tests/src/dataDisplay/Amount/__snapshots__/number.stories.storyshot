@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Data Display/Amount Currency 1`] = `"€999,999.99"`;
+
+exports[`Storyshots Data Display/Amount Format Number Function 1`] = `
+Array [
+  "Based upon the exported",
+  " ",
+  <code>
+    formatAmount(value, 
+    {currency, showSign}
+    )
+  </code>,
+  " function.",
+]
+`;
+
+exports[`Storyshots Data Display/Amount Large Number 1`] = `">999T"`;
+
+exports[`Storyshots Data Display/Amount Simple Number 1`] = `"1,234,324.2"`;

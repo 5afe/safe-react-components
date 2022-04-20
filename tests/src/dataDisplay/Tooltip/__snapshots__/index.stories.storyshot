@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Data Display/Tooltip Basic 1`] = `
+<span
+  aria-describedby={null}
+  className=""
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+  onTouchEnd={[Function]}
+  onTouchStart={[Function]}
+  title="Some text"
+>
+  hover me
+</span>
+`;
+
+exports[`Storyshots Data Display/Tooltip Custom Color 1`] = `
+<span
+  aria-describedby={null}
+  className=""
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+  onTouchEnd={[Function]}
+  onTouchStart={[Function]}
+  title="Some text"
+>
+  hover me
+</span>
+`;
+
+exports[`Storyshots Data Display/Tooltip Custom Color And Arrow 1`] = `
+<span
+  aria-describedby={null}
+  className=""
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+  onTouchEnd={[Function]}
+  onTouchStart={[Function]}
+  title="Some text"
+>
+  hover me
+</span>
+`;
+
+exports[`Storyshots Data Display/Tooltip Custom Size 1`] = `
+<span
+  aria-describedby={null}
+  className=""
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+  onTouchEnd={[Function]}
+  onTouchStart={[Function]}
+  title="Some text"
+>
+  hover me
+</span>
+`;
