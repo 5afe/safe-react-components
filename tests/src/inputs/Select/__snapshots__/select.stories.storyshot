@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Inputs/Select Disabled Select 1`] = `
+<div
+  style={
+    Object {
+      "width": "300px",
+    }
+  }
+>
+  <div
+    className="MuiFormControl-root sc-kLwhqv jgEbCK MuiFormControl-fullWidth"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-disabled Mui-disabled"
+      data-shrink={false}
+    >
+      Select Token
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root sc-bYoBSM jNmTHy Mui-disabled Mui-disabled MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <div
+        aria-disabled="true"
+        aria-haspopup="listbox"
+        aria-labelledby="error-select error-select"
+        className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled Mui-disabled"
+        id="error-select"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={null}
+        role="button"
+        tabIndex={null}
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+      </div>
+      <input
+        aria-hidden={true}
+        className="MuiSelect-nativeInput"
+        name="default-select"
+        onAnimationStart={[Function]}
+        onChange={[Function]}
+        required={false}
+        tabIndex={-1}
+        value=""
+      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined Mui-disabled"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-113 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-115"
+        >
+          <span>
+            Select Token
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Inputs/Select Error Select 1`] = `
+<div
+  style={
+    Object {
+      "width": "300px",
+    }
+  }
+>
+  <div
+    className="MuiFormControl-root sc-kLwhqv hrOGDS"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-error Mui-error"
+      data-shrink={false}
+    >
+      Select Token
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root sc-bYoBSM kuErgh Mui-error Mui-error MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <div
+        aria-haspopup="listbox"
+        aria-labelledby="error-select error-select"
+        className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+        id="error-select"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+      </div>
+      <input
+        aria-hidden={true}
+        className="MuiSelect-nativeInput"
+        name="default-select"
+        onAnimationStart={[Function]}
+        onChange={[Function]}
+        required={false}
+        tabIndex={-1}
+        value=""
+      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-117 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-119"
+        >
+          <span>
+            Select Token
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+    <p
+      className="MuiFormHelperText-root MuiFormHelperText-contained sc-ikJyIC gHHkpy Mui-error"
+    >
+      Something went wrong
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Inputs/Select Simple Select 1`] = `
+<div
+  style={
+    Object {
+      "width": "300px",
+    }
+  }
+>
+  <div
+    className="MuiFormControl-root sc-kLwhqv hCASnh MuiFormControl-fullWidth"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+      data-shrink={false}
+    >
+      Select Token
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root sc-bYoBSM jNmTHy MuiInputBase-formControl"
+      onClick={[Function]}
+    >
+      <div
+        aria-haspopup="listbox"
+        aria-labelledby="simple-select simple-select"
+        className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+        id="simple-select"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+      </div>
+      <input
+        aria-hidden={true}
+        className="MuiSelect-nativeInput"
+        name="default-select"
+        onAnimationStart={[Function]}
+        onChange={[Function]}
+        required={false}
+        tabIndex={-1}
+        value=""
+      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-121 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-123"
+        >
+          <span>
+            Select Token
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;

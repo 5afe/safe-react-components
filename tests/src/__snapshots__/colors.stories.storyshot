@@ -1,0 +1,508 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Utils/Colors Colors Sample 1`] = `
+<div
+  className="sc-eLwHnm jWtQKG"
+>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM llOSPE"
+      color="#001428"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      secondary
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #001428
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM llOSPE"
+      color="#001428"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      text
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #001428
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM iaRJcv"
+      color="#162D45"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputText
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #162D45
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM gYVKZd"
+      color="#005546"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      primaryHover
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #005546
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM cNLJuT"
+      color="#C31717"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      errorHover
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #C31717
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM cTXCCG"
+      color="#566976"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputFilled
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #566976
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM itMBIL"
+      color="#5D6D74"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      secondaryHover
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #5D6D74
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM itMBIL"
+      color="#5D6D74"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      placeHolder
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #5D6D74
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM fCkxYQ"
+      color="#008C73"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      primary
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #008C73
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM ftXdQt"
+      color="#F02525"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      error
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #F02525
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM etNuEF"
+      color="#E8663D"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      pending
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #E8663D
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM cZopiH"
+      color="#E8673C"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      rinkeby
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #E8673C
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM ksciIc"
+      color="#B2B5B2"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      secondaryLight
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #B2B5B2
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM ksciIc"
+      color="#B2B5B2"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      icon
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #B2B5B2
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM dpPWwg"
+      color="#B2BBC0"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputDefault
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #B2BBC0
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM ewewGz"
+      color="#A1D2CA"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      primaryLight
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #A1D2CA
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM hyHaIv"
+      color="#FFC05F"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      warning
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #FFC05F
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM ideZFp"
+      color="#D4D5D3"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      tag
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #D4D5D3
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM iCzgsq"
+      color="#DADADA"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputDisabled
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #DADADA
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM frKouX"
+      color="#E8E7E6"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      separator
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #E8E7E6
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM jothyV"
+      color="#FBE5C5"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      pendingTagHover
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #FBE5C5
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM iSWcoY"
+      color="#FFE6EA"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      errorTooltip
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #FFE6EA
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM fieyGO"
+      color="#F0EFEE"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      inputField
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #F0EFEE
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM jZPnTU"
+      color="#F6F7F8"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      background
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #F6F7F8
+    </p>
+  </div>
+  <div
+    className="sc-bTfYFJ itQCBQ"
+  >
+    <div
+      className="sc-kHOZwM lkAmyD"
+      color="#FFFFFF"
+    />
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      white
+    </p>
+    <p
+      className="sc-crHmcD kMPEWD"
+      size="md"
+    >
+      #FFFFFF
+    </p>
+  </div>
+</div>
+`;
