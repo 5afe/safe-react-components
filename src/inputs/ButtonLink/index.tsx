@@ -10,7 +10,7 @@ export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   iconSize?: ThemeIconSize;
   textSize?: ThemeTextSize;
   color: ThemeColors;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const StyledButtonLink = styled.button<Props>`
