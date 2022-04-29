@@ -2,7 +2,7 @@
 
 exports[`Storyshots inputs/Link Default 1`] = `
 <a
-  className="sc-giYglK emcDGo"
+  className="sc-gicCDI hhZMJW"
   href="#"
 >
   Some text
@@ -11,7 +11,7 @@ exports[`Storyshots inputs/Link Default 1`] = `
 
 exports[`Storyshots inputs/Link With Color 1`] = `
 <a
-  className="sc-giYglK vtWax"
+  className="sc-gicCDI jNHgvb"
   color="error"
   href="#"
 >
@@ -21,15 +21,15 @@ exports[`Storyshots inputs/Link With Color 1`] = `
 
 exports[`Storyshots inputs/Link With Custom Child 1`] = `
 <a
-  className="sc-giYglK enbeqy"
+  className="sc-gicCDI hiqEkc"
   href="#"
   size="lg"
 >
   <div
-    className="sc-bXTejn fIFbDe"
+    className="sc-eFWqGp fmYAUR"
   >
     <span
-      className="sc-iqseJM drawdo"
+      className="sc-iqcoie ddwUSn"
     >
       <svg
         height="24"
@@ -62,7 +62,7 @@ exports[`Storyshots inputs/Link With Custom Child 1`] = `
 
 exports[`Storyshots inputs/Link With Custom Size 1`] = `
 <a
-  className="sc-giYglK enbeqy"
+  className="sc-gicCDI hiqEkc"
   href="#"
   size="lg"
 >

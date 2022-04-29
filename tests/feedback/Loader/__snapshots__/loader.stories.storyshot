@@ -3,7 +3,7 @@
 exports[`Storyshots Feedback/Loader Loader 1`] = `
 Array [
   <div
-    className="MuiCircularProgress-root sc-cCcXHH iJyzIY MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+    className="MuiCircularProgress-root sc-cCsOjp hEmsfT MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
     role="progressbar"
     style={
       Object {
@@ -28,7 +28,7 @@ Array [
     </svg>
   </div>,
   <div
-    className="MuiCircularProgress-root sc-cCcXHH iJyzIY MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+    className="MuiCircularProgress-root sc-cCsOjp hEmsfT MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
     role="progressbar"
     style={
       Object {
@@ -53,7 +53,7 @@ Array [
     </svg>
   </div>,
   <div
-    className="MuiCircularProgress-root sc-cCcXHH iJyzIY MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+    className="MuiCircularProgress-root sc-cCsOjp hEmsfT MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
     role="progressbar"
     style={
       Object {
@@ -78,7 +78,7 @@ Array [
     </svg>
   </div>,
   <div
-    className="MuiCircularProgress-root sc-cCcXHH iJyzIY MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+    className="MuiCircularProgress-root sc-cCsOjp hEmsfT MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
     role="progressbar"
     style={
       Object {
@@ -107,7 +107,7 @@ Array [
 
 exports[`Storyshots Feedback/Loader With Color 1`] = `
 <div
-  className="MuiCircularProgress-root sc-cCcXHH hBTJGV MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+  className="MuiCircularProgress-root sc-cCsOjp dDQIdO MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
   role="progressbar"
   style={
     Object {

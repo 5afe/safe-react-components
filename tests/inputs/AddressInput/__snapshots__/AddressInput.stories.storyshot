@@ -7,7 +7,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Disabled 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe kexQVt"
+    className="MuiFormControl-root MuiTextField-root sc-gXmSlM cmvJSD"
     spellCheck={false}
   >
     <label
@@ -61,7 +61,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Loading 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+    className="MuiFormControl-root MuiTextField-root sc-gXmSlM cgSiqs"
     spellCheck={false}
   >
     <label
@@ -144,7 +144,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+    className="MuiFormControl-root MuiTextField-root sc-gXmSlM cgSiqs"
     spellCheck={false}
   >
     <label
@@ -179,7 +179,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Adornment 1`] = `
       >
         <svg
           aria-hidden={true}
-          className="MuiSvgIcon-root sc-jQrDum kynMoW"
+          className="MuiSvgIcon-root sc-fvNpTx gKikZD"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -212,10 +212,10 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
   onSubmit={[Function]}
 >
   <p
-    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
+    className="MuiTypography-root sc-HzFiz fjcjXV MuiTypography-body1"
   >
     <span
-      className="MuiSwitch-root sc-jJoQJp xxohc"
+      className="MuiSwitch-root sc-jIZahH cWwdgm"
     >
       <span
         aria-disabled={false}
@@ -264,7 +264,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
     }
   >
     <div
-      className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+      className="MuiFormControl-root MuiTextField-root sc-gXmSlM cgSiqs"
       spellCheck={false}
     >
       <label
@@ -326,7 +326,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
     }
   >
     <div
-      className="MuiFormControl-root MuiTextField-root sc-gWXbKe flGugG"
+      className="MuiFormControl-root MuiTextField-root sc-gXmSlM wkOlE"
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
@@ -379,12 +379,12 @@ exports[`Storyshots Inputs/AddressInput Address Input With ENS Resolution 1`] = 
     </div>
   </div>
   <p
-    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
+    className="MuiTypography-root sc-HzFiz fjcjXV MuiTypography-body1"
   >
     Address In the State:
   </p>
   <pre
-    className="sc-fvxzrP gQXepa"
+    className="sc-fctJkW bsvByn"
   >
      
   </pre>
@@ -398,7 +398,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Errors 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe fynudp"
+    className="MuiFormControl-root MuiTextField-root sc-gXmSlM fukARn"
     spellCheck={false}
   >
     <label
@@ -459,7 +459,7 @@ exports[`Storyshots Inputs/AddressInput Address Input With Simple Address Valida
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+    className="MuiFormControl-root MuiTextField-root sc-gXmSlM cgSiqs"
     spellCheck={false}
   >
     <label
@@ -504,12 +504,12 @@ exports[`Storyshots Inputs/AddressInput Address Input With Simple Address Valida
     </div>
   </div>
   <p
-    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
+    className="MuiTypography-root sc-HzFiz fjcjXV MuiTypography-body1"
   >
     Address In the State:
   </p>
   <pre
-    className="sc-fvxzrP gQXepa"
+    className="sc-fctJkW bsvByn"
   >
     0x123...
   </pre>
@@ -523,7 +523,7 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+    className="MuiFormControl-root MuiTextField-root sc-gXmSlM cgSiqs"
     spellCheck={false}
   >
     <label
@@ -568,12 +568,12 @@ exports[`Storyshots Inputs/AddressInput Address Input Without Prefix 1`] = `
     </div>
   </div>
   <p
-    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
+    className="MuiTypography-root sc-HzFiz fjcjXV MuiTypography-body1"
   >
     Address In the State:
   </p>
   <pre
-    className="sc-fvxzrP gQXepa"
+    className="sc-fctJkW bsvByn"
   >
     0x83eC7B0506556a7749306D69681aDbDbd08f0769
   </pre>
@@ -587,25 +587,25 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
   onSubmit={[Function]}
 >
   <p
-    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
+    className="MuiTypography-root sc-HzFiz fjcjXV MuiTypography-body1"
   >
     You can customize validations
   </p>
   <p
-    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
+    className="MuiTypography-root sc-HzFiz fjcjXV MuiTypography-body1"
   >
     valid values:
   </p>
   <pre
-    className="sc-fvxzrP gQXepa"
+    className="sc-fctJkW bsvByn"
   >
     0x83eC7B0506556a7749306D69681aDbDbd08f0769 & rin:0x83eC7B0506556a7749306D69681aDbDbd08f0769
   </pre>
   <p
-    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
+    className="MuiTypography-root sc-HzFiz fjcjXV MuiTypography-body1"
   />
   <div
-    className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+    className="MuiFormControl-root MuiTextField-root sc-gXmSlM cgSiqs"
     spellCheck={false}
   >
     <label
@@ -657,12 +657,12 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
     </p>
   </div>
   <p
-    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
+    className="MuiTypography-root sc-HzFiz fjcjXV MuiTypography-body1"
   >
     Address In the State:
   </p>
   <pre
-    className="sc-fvxzrP gQXepa"
+    className="sc-fctJkW bsvByn"
   >
      
   </pre>
@@ -672,12 +672,12 @@ exports[`Storyshots Inputs/AddressInput Safe Address Input Validation 1`] = `
 exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
 <div>
   <p
-    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
+    className="MuiTypography-root sc-HzFiz fjcjXV MuiTypography-body1"
   >
     Network Settings:
   </p>
   <div
-    className="MuiFormControl-root sc-kLwhqv hCASnh"
+    className="MuiFormControl-root sc-kLLXSd bQwjjs"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled"
@@ -686,7 +686,7 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
       Network
     </label>
     <div
-      className="MuiInputBase-root MuiOutlinedInput-root sc-bYoBSM hHIlXW MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root sc-bZkfAO eXAUNv MuiInputBase-formControl"
       onClick={[Function]}
     >
       <div
@@ -703,7 +703,7 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
       >
         <div>
           <p
-            className="sc-crHmcD dtryax"
+            className="sc-crXcEl bobcj"
             color="text"
             size="sm"
           >
@@ -757,7 +757,7 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
     }
   >
     <div
-      className="MuiFormControl-root MuiTextField-root sc-gWXbKe eRauOW"
+      className="MuiFormControl-root MuiTextField-root sc-gXmSlM cgSiqs"
       spellCheck={false}
     >
       <label
@@ -824,7 +824,7 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
         className="MuiIconButton-label"
       >
         <span
-          className="sc-iqseJM drawdo"
+          className="sc-iqcoie ddwUSn"
         >
           <svg
             height="24"
@@ -899,12 +899,12 @@ exports[`Storyshots Inputs/AddressInput Simple Address Input 1`] = `
     </button>
   </form>
   <p
-    className="MuiTypography-root sc-fbyfCU iNHYoN MuiTypography-body1"
+    className="MuiTypography-root sc-HzFiz fjcjXV MuiTypography-body1"
   >
     Address In the State:
   </p>
   <pre
-    className="sc-fvxzrP gQXepa"
+    className="sc-fctJkW bsvByn"
   >
      
   </pre>

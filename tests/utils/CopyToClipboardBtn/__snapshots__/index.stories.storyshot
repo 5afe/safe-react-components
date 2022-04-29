@@ -2,7 +2,7 @@
 
 exports[`Storyshots Utils/CopyToClipboardBtn Copy 1`] = `
 <button
-  className="sc-eJwWfJ hgcDqj"
+  className="sc-eKszNL gMspGP"
   onClick={[Function]}
   onKeyDown={[Function]}
   onMouseLeave={[Function]}
@@ -10,7 +10,7 @@ exports[`Storyshots Utils/CopyToClipboardBtn Copy 1`] = `
 >
   <span
     aria-describedby={null}
-    className="sc-iqseJM drawdo"
+    className="sc-iqcoie ddwUSn"
     color="icon"
     onBlur={[Function]}
     onFocus={[Function]}
@@ -46,7 +46,7 @@ exports[`Storyshots Utils/CopyToClipboardBtn Copy 1`] = `
 
 exports[`Storyshots Utils/CopyToClipboardBtn Copy With Different Logo 1`] = `
 <button
-  className="sc-eJwWfJ hgcDqj"
+  className="sc-eKszNL gMspGP"
   onClick={[Function]}
   onKeyDown={[Function]}
   onMouseLeave={[Function]}
@@ -54,7 +54,7 @@ exports[`Storyshots Utils/CopyToClipboardBtn Copy With Different Logo 1`] = `
 >
   <span
     aria-describedby={null}
-    className="sc-iqseJM drawdo"
+    className="sc-iqcoie ddwUSn"
     color="icon"
     onBlur={[Function]}
     onFocus={[Function]}

@@ -3,7 +3,7 @@
 exports[`Storyshots Ethereum/Explorer Button Simple Explorer Button 1`] = `
 Array [
   <p
-    className="sc-crHmcD dPdEko sc-cZMNgc iAlpBa"
+    className="sc-crXcEl ehLDTS sc-jTYCaT cnCXJz"
     size="md"
   >
     An Address example
@@ -11,7 +11,7 @@ Array [
   <br />,
   <a
     aria-label="Show details on Etherscan"
-    className="sc-iNGGcK eymDsK"
+    className="sc-iNWwEs jEtIBi"
     href="https://etherscan.io/address/0xda6786379ff88729264d31d472fa917f5e561443"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -20,7 +20,7 @@ Array [
   >
     <span
       aria-describedby={null}
-      className="sc-iqseJM drawdo"
+      className="sc-iqcoie ddwUSn"
       color="icon"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -58,7 +58,7 @@ Array [
   </a>,
   <br />,
   <p
-    className="sc-crHmcD dPdEko sc-cZMNgc iAlpBa"
+    className="sc-crXcEl ehLDTS sc-jTYCaT cnCXJz"
     size="md"
   >
     A Transaction example
@@ -66,7 +66,7 @@ Array [
   <br />,
   <a
     aria-label="Show details on Etherscan"
-    className="sc-iNGGcK eymDsK"
+    className="sc-iNWwEs jEtIBi"
     href="https://blockscout.com/poa/xdai/address/0x72d9E579f691D62aA7e0703840db6dd2fa9fAE21"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -75,7 +75,7 @@ Array [
   >
     <span
       aria-describedby={null}
-      className="sc-iqseJM drawdo"
+      className="sc-iqcoie ddwUSn"
       color="icon"
       onBlur={[Function]}
       onFocus={[Function]}
