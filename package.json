@@ -1,6 +1,6 @@
 {
   "name": "@gnosis.pm/safe-react-components",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "Gnosis UI components",
   "main": "dist/index.min.js",
   "typings": "dist/index.d.ts",
@@ -25,6 +25,9 @@
   "author": "Gnosis (https://gnosis.pm)",
   "license": "MIT",
   "dependencies": {
+    "@mui/material": "^5.6.3",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+    "@mui/styled-engine-sc": "^5.6.1",
     "react-media": "^1.10.0",
     "web3-utils": "^1.6.0"
   },
@@ -37,10 +40,10 @@
     "@material-ui/icons": "^4.11.0",
     "@mui/x-data-grid": "4.0.2",
     "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-controls": "^6.4.19",
     "@storybook/addon-docs": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
     "@storybook/addon-storyshots": "^6.3.12",
-    "@storybook/addon-controls": "^6.4.19",
     "@storybook/addons": "^6.3.12",
     "@storybook/react": "^6.3.12",
     "@testing-library/jest-dom": "^5.11.5",
@@ -71,13 +74,16 @@
     "react-qr-reader": "2.2.1",
     "rimraf": "^3.0.2",
     "storybook-addon-react-docgen": "^1.2.42",
-    "styled-components": "^5.3.3",
+    "styled-components": "^5.3.5",
     "ts-loader": "^8.2.0",
     "typescript": "^4.5.0",
     "url-loader": "^4.1.1",
     "webpack": "4.43.0",
     "webpack-cli": "^3.3.10",
     "webpack-node-externals": "^2.5.2"
+  },
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
   },
   "peerDependencies": {
     "@material-ui/core": "4.X.X",
