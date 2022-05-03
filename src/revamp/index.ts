@@ -7,7 +7,7 @@ import { default as useThemeMode } from './hooks/useThemeMode';
 import { default as safeTheme } from './theme/safeTheme';
 import { default as safeColors } from './theme/safeColors';
 
-export default {
+export {
   EthHashInfo,
   ExplorerButton,
   AddressInput,

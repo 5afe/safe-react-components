@@ -7,7 +7,4 @@ export * from './ethereum';
 export * from './utils';
 export * from './';
 
-// revamp
-export { default as revamp } from './revamp';
-
 export { default as theme } from './theme';

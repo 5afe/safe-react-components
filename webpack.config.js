@@ -3,13 +3,14 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/revamp/index.ts',
   output: {
     filename: 'index.min.js',
     sourceMapFilename: '[file].map',
     path: path.join(__dirname, '/dist'),
     libraryTarget: 'umd',
     library: JSON.stringify(require('./package.json').name),
+    globalObject: 'this',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -56,7 +57,6 @@ module.exports = {
         commonjs2: 'styled-components',
       },
     },
-    /@material-ui\/core\/.*/,
   ],
   node: {
     fs: 'empty',
