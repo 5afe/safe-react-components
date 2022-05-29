@@ -1,9 +1,5 @@
 import { Theme, PaletteMode } from '@mui/material';
-import {
-  createTheme,
-  responsiveFontSizes,
-  ThemeOptions,
-} from '@mui/material/styles';
+import { createTheme, ThemeOptions } from '@mui/material/styles';
 import safeColors from './safeColors';
 
 const secondaryLightPalette = {
@@ -92,20 +88,18 @@ const safeThemeOptions: ThemeOptions = {
   },
 };
 
-const safeTheme: Theme = responsiveFontSizes(createTheme(safeThemeOptions));
+const safeTheme: Theme = createTheme(safeThemeOptions);
 
 export default safeTheme;
 
 export const getSafeTheme = (mode: PaletteMode): Theme =>
-  responsiveFontSizes(
-    createTheme({
-      ...safeThemeOptions,
-      palette: {
-        ...safeThemeOptions.palette,
-        mode: mode,
-        // see more details in the docs https://mui.com/material-ui/customization/dark-mode/
-        secondary:
-          mode === 'light' ? secondaryLightPalette : secondaryDarkPalette,
-      },
-    })
-  );
+  createTheme({
+    ...safeThemeOptions,
+    palette: {
+      ...safeThemeOptions.palette,
+      mode: mode,
+      // see more details in the docs https://mui.com/material-ui/customization/dark-mode/
+      secondary:
+        mode === 'light' ? secondaryLightPalette : secondaryDarkPalette,
+    },
+  });
