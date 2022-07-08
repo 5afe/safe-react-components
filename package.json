@@ -13,7 +13,7 @@
   "scripts": {
     "types": "yarn tsc",
     "start": "rimraf dist && webpack --mode production --watch",
-    "build": "rimraf dist && webpack --mode development",
+    "build": "rimraf dist && webpack --mode production",
     "build-storybook": "build-storybook --docs",
     "storybook": "start-storybook -p 9009 --docs",
     "lint:check": "eslint './src/**/*.{js,jsx,ts,tsx}'",
