@@ -62,4 +62,7 @@ module.exports = {
     fs: 'empty',
     child_process: 'empty',
   },
+  optimization: {
+    minimize: false,
+  },
 };
