@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/revamp/index.ts',
@@ -19,13 +18,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.woff2$/,
-        use: {
-          loader: 'file-loader',
-          options: {},
-        },
-      },
-      {
         test: /\.(svg|png|jpg)$/i,
         use: {
           loader: 'url-loader',
@@ -41,7 +33,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [new CopyPlugin({ patterns: [{ from: 'src/fonts', to: 'fonts' }] })],
   externals: [
     {
       react: {
@@ -61,5 +52,8 @@ module.exports = {
   node: {
     fs: 'empty',
     child_process: 'empty',
+  },
+  optimization: {
+    minimize: false,
   },
 };

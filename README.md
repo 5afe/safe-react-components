@@ -44,46 +44,6 @@ export default () => (
 );
 ```
 
-### Using the same fonts as Gnosis Safe
-
-If you want your Safe App to have the same fonts as the one used by Gnosis Safe you need to do the following.
-
-```js
-import { createGlobalStyle } from 'styled-components';
-import avertaFont from '@gnosis.pm/safe-react-components/dist/fonts/averta-normal.woff2';
-import avertaBoldFont from '@gnosis.pm/safe-react-components/dist/fonts/averta-bold.woff2';
-
-const GlobalStyle = createGlobalStyle`
-    @font-face {
-        font-family: 'Averta';
-        font-display: swap;
-        src: local('Averta'), local('Averta Bold'),
-        url(${avertaFont}) format('woff2'),
-        url(${avertaBoldFont}) format('woff');
-    }
-`;
-
-export default GlobalStyle;
-```
-
-And then include it in the root of your Safe App.
-
-```js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import GlobalStyles from './global';
-
-import App from './App';
-
-ReactDOM.render(
-  <>
-    <GlobalStyles />
-    <App>
-  </>,
-  document.getElementById('root')
-);
-```
-
 ## Using the components
 
 You can import every component exported from `@gnosis.pm/safe-react-components` in the same way.

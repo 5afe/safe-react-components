@@ -143,7 +143,12 @@ function AddressInput({
 
   // when user switch the network we update the address state
   useEffect(() => {
-    updateAddressState(inputRef.current?.value);
+    // Because the `address` is going to change after we call `updateAddressState`
+    // To avoid calling `updateAddressState` twice, we check the value and the current address
+    const inputValue = inputRef.current?.value;
+    if (inputValue !== address) {
+      updateAddressState(inputRef.current?.value);
+    }
   }, [networkPrefix, address, updateAddressState]);
 
   // when user types we update the address state

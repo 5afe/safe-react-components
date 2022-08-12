@@ -22,18 +22,6 @@ module.exports = ({ config }) => {
   })
 
   config.module.rules.push({
-    test: /\.(woff|woff2|eot|ttf)$/,
-    use: [
-      {
-        loader: 'file-loader',
-        query: {
-          name: '[name].[ext]'
-        }
-      }
-    ]
-  });
-
-  config.module.rules.push({
     test: /\.(svg|png|jpg)$/i,
     use: [
       {
