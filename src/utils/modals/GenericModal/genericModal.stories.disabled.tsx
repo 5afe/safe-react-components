@@ -1,3 +1,5 @@
+//DISABLED FOR MIGRATION
+
 import React, { useState } from 'react';
 
 import GenericModal from './index';

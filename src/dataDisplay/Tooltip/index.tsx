@@ -101,9 +101,9 @@ export const Tooltip = ({
     size,
   });
 
-  return (
-    <StyledTooltip title={title} {...rest}>
-      {children}
-    </StyledTooltip>
+  return (<></>
+    // <StyledTooltip title={title} {...rest}>
+    //   {children}
+    // </StyledTooltip>
   );
 };

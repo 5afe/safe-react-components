@@ -53,10 +53,10 @@ const Text = ({
 
   return tooltip === undefined ? (
     TextElement
-  ) : (
-    <StyledTooltip title={tooltip} placement="bottom" arrow>
-      {TextElement}
-    </StyledTooltip>
+  ) : (<></>
+    // <StyledTooltip title={tooltip} placement="bottom" arrow>
+    //   {TextElement}
+    // </StyledTooltip>
   );
 };
 
