@@ -51,8 +51,12 @@ function AddressInput({
   ...rest
 }: AddressInputProps): ReactElement {
   const [isLoadingENSResolution, setIsLoadingENSResolution] = useState(false);
-  const defaulInputValue = addPrefix(address, networkPrefix, showNetworkPrefix);
-  const inputRef = useRef({ value: defaulInputValue });
+  const defaultInputValue = addPrefix(
+    address,
+    networkPrefix,
+    showNetworkPrefix
+  );
+  const inputRef = useRef({ value: defaultInputValue });
   const throttle = useThrottle();
 
   // we checksum & include the network prefix in the input if showNetworkPrefix is set to true
@@ -126,21 +130,25 @@ function AddressInput({
       const inputPrefix = getNetworkPrefix(inputValue);
       const inputWithoutPrefix = getAddressWithoutNetworkPrefix(inputValue);
 
+      // if the valid network prefix is present, we remove it from the address state
       const isValidPrefix = networkPrefix === inputPrefix;
+      const checksumAddress = checksumValidAddress(
+        isValidPrefix ? inputWithoutPrefix : inputValue
+      );
 
-      if (isValidPrefix) {
-        // if the valid network prefix is present, we remove it from the address state
-        onChangeAddress(checksumValidAddress(inputWithoutPrefix));
-      } else {
-        onChangeAddress(checksumValidAddress(inputValue));
-      }
+      onChangeAddress(checksumAddress);
     },
     [networkPrefix, onChangeAddress]
   );
 
   // when user switch the network we update the address state
   useEffect(() => {
-    updateAddressState(inputRef.current?.value);
+    // Because the `address` is going to change after we call `updateAddressState`
+    // To avoid calling `updateAddressState` twice, we check the value and the current address
+    const inputValue = inputRef.current?.value;
+    if (inputValue !== address) {
+      updateAddressState(inputRef.current?.value);
+    }
   }, [networkPrefix, address, updateAddressState]);
 
   // when user types we update the address state
@@ -150,7 +158,7 @@ function AddressInput({
 
   const isLoading = isLoadingENSResolution || showLoadingSpinner;
 
-  const [shrink, setshrink] = useState(!!defaulInputValue);
+  const [shrink, setshrink] = useState(!!defaultInputValue);
 
   useEffect(() => {
     setshrink(!!inputRef.current?.value);

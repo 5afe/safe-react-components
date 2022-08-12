@@ -24,7 +24,7 @@ const icon = (
         r="11"
         fill="#FFC05F"
         fillRule="nonzero"
-        stroke="#F7F5F5"
+        stroke="#F6F7F8"
         strokeWidth="4"
       />
     </g>

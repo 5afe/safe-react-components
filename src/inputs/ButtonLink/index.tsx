@@ -10,13 +10,13 @@ export interface Props extends React.ComponentPropsWithoutRef<'button'> {
   iconSize?: ThemeIconSize;
   textSize?: ThemeTextSize;
   color: ThemeColors;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const StyledButtonLink = styled.button<Props>`
   background: transparent;
   border: none;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
   color: ${({ theme, color }) => theme['colors'][color]};
   font-family: ${({ theme }) => theme.fonts.fontFamily};

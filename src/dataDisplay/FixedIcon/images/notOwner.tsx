@@ -10,7 +10,7 @@ const icon = (
       <path d="M0 0H108V96H0z" opacity=".557" />
       <g>
         <path
-          fill="#F7F5F5"
+          fill="#F6F7F8"
           d="M49 0c25.405 0 46 20.595 46 46S74.405 92 49 92 3 71.405 3 46 23.595 0 49 0"
           transform="translate(5 4)"
         />

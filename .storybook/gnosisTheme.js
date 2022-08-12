@@ -1,7 +1,8 @@
 import { create } from '@storybook/theming/create';
+import theme from '../src/theme.ts';
 
 export default create({
-  base: '#f7f5f5',
+  base: theme.colors.background,
 
   colorPrimary: '#008C73',
   colorSecondary: '#005546',
@@ -10,7 +11,7 @@ export default create({
   appBg: 'white',
   appContentBg: 'white',
   appBorderColor: 'grey',
-  appBorderRadius: 4,  
+  appBorderRadius: 4,
 
   // Text colors
   textColor: '#333333',

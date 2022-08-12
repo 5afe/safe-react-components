@@ -1,39 +1,16 @@
 import React from 'react';
 import MenuItem from '@material-ui/core/MenuItem';
+import SelectMUI, {
+  SelectProps as SelectMuiProps,
+} from '@material-ui/core/Select';
 import FormControl from '@material-ui/core/FormControl';
-import SelectMUI from '@material-ui/core/Select';
+import FormHelperText from '@material-ui/core/FormHelperText';
+import InputLabel from '@material-ui/core/InputLabel';
 import styled from 'styled-components';
 
 import { Text } from '../../dataDisplay';
 
-const IconImg = styled.img`
-  width: 20px;
-  margin-right: 10px;
-`;
-
-const StyledSelect = styled(SelectMUI)`
-  background-color: ${(props) => props.theme.colors.separator};
-  border-radius: 5px;
-  height: 56px;
-  width: 140px;
-
-  .MuiSelect-select {
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-  }
-
-  .MuiSelect-selectMenu {
-    font-family: ${(props) => props.theme.fonts.fontFamily};
-  }
-
-  &.MuiInput-underline:hover:not(.Mui-disabled):before {
-    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
-  }
-  &.MuiInput-underline:after {
-    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
-  }
-`;
+import { inputLabelStyles, inputStyles, errorStyles } from '../styles';
 
 export type SelectItem = {
   id: string;
@@ -42,23 +19,37 @@ export type SelectItem = {
   iconUrl?: string;
 };
 
-type Props = {
+type SelectProps = {
+  id?: string;
+  name: string;
+  label: string;
+  error?: string;
+  helperText?: string | undefined;
+  showErrorsInTheLabel?: boolean | undefined;
   items: Array<SelectItem>;
   activeItemId: string;
   onItemClick: (id: string) => void;
-  id?: string;
   fallbackImage?: string;
-};
+} & Omit<SelectMuiProps, 'error'>;
 
 function Select({
+  id,
+  name,
+  label,
+  error,
+  helperText,
+  showErrorsInTheLabel,
   items,
   activeItemId,
   onItemClick,
-  id,
   fallbackImage,
+  fullWidth,
+  disabled,
   ...rest
-}: Props): React.ReactElement {
+}: SelectProps): React.ReactElement {
   const [open, setOpen] = React.useState(false);
+
+  const hasError = !!error;
 
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     onItemClick(event.target.value as string);
@@ -82,44 +73,108 @@ function Select({
   };
 
   return (
-    <div>
-      <FormControl>
-        <StyledSelect
-          labelId={id ? id : 'generic-select'}
-          id={id ? id : 'generic-select'}
-          open={open}
-          onClose={handleClose}
-          onOpen={handleOpen}
-          value={activeItemId}
-          onChange={handleChange}
-          {...rest}>
-          {items.map((i) => {
-            return (
-              <MenuItem value={i.id} key={i.id}>
-                {i.iconUrl && (
-                  <IconImg
-                    alt={i.label}
-                    onError={onFallbackImage}
-                    src={i.iconUrl}
-                  />
-                )}
-                <div>
-                  <Text size="sm" color="text">
-                    {i.label}
+    <StyledFormControl
+      variant="outlined"
+      fullWidth={fullWidth}
+      error={hasError}
+      disabled={disabled}>
+      <InputLabel error={hasError} disabled={disabled}>
+        {showErrorsInTheLabel && hasError ? error : label}
+      </InputLabel>
+      <StyledSelect
+        id={id}
+        name={name}
+        labelId={id}
+        error={hasError}
+        open={open}
+        onClose={handleClose}
+        onOpen={handleOpen}
+        value={activeItemId}
+        onChange={handleChange}
+        label={label}
+        variant="outlined"
+        disabled={disabled}
+        {...rest}>
+        {items.map((i) => {
+          return (
+            <MenuItem value={i.id} key={i.id}>
+              {i.iconUrl && (
+                <IconImg
+                  alt={i.label}
+                  onError={onFallbackImage}
+                  src={i.iconUrl}
+                />
+              )}
+              <div>
+                <Text size="sm" color="text">
+                  {i.label}
+                </Text>
+                {i.subLabel && (
+                  <Text size="sm" color="secondary" strong>
+                    {i.subLabel}
                   </Text>
-                  {i.subLabel && (
-                    <Text size="sm" color="secondary" strong>
-                      {i.subLabel}
-                    </Text>
-                  )}
-                </div>
-              </MenuItem>
-            );
-          })}
-        </StyledSelect>
-      </FormControl>
-    </div>
+                )}
+              </div>
+            </MenuItem>
+          );
+        })}
+      </StyledSelect>
+      {(helperText || (error && showErrorsInTheLabel)) && (
+        <StyledFormHelperText error={hasError && !showErrorsInTheLabel}>
+          {helperText || error}
+        </StyledFormHelperText>
+      )}
+    </StyledFormControl>
   );
 }
+
+const IconImg = styled.img`
+  width: 20px;
+  margin-right: 10px;
+`;
+
+const StyledSelect = styled(SelectMUI)`
+  && {
+    .MuiSelect-root {
+      background: #fff;
+    }
+
+    .MuiSelect-select {
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+    }
+
+    .MuiSelect-selectMenu {
+      font-family: ${(props) => props.theme.fonts.fontFamily};
+    }
+
+    && {
+      fieldset {
+        border: 1px solid
+          ${({ theme, value, error }) =>
+            error
+              ? theme.colors.error
+              : value
+              ? theme.colors.inputFilled
+              : theme.colors.inputDisabled};
+      }
+    }
+  }
+`;
+
+const StyledFormControl = styled(FormControl)`
+  && {
+    ${inputLabelStyles}
+    ${inputStyles}
+    ${errorStyles}
+  }
+`;
+
+const StyledFormHelperText = styled(FormHelperText)`
+  && {
+    font-family: ${(props) => props.theme.fonts.fontFamily};
+  }
+`;
 
 export default Select;

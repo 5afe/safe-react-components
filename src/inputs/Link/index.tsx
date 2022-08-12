@@ -9,7 +9,7 @@ export interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 }
 
 const StyledLink = styled.a<Props>`
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
   color: ${({ theme, color = 'primary' }) => theme['colors'][color]};
   font-family: ${({ theme }) => theme.fonts.fontFamily};

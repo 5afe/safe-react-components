@@ -14,7 +14,7 @@ const theme = {
     secondaryLight: '#B2B5B2',
     secondaryHover: '#5D6D74',
 
-    error: '#DB3A3D',
+    error: '#F02525',
     errorHover: '#C31717',
     errorTooltip: '#ffe6ea',
 
@@ -27,10 +27,15 @@ const theme = {
     rinkeby: '#E8673C',
     pendingTagHover: '#FBE5C5',
     tag: '#D4D5D3',
-    background: '#F7F5F5',
+    background: '#F6F7F8',
     white: '#ffffff',
     warning: '#FFC05F',
     pending: '#E8663D',
+
+    inputText: '#162D45',
+    inputDisabled: '#DADADA',
+    inputDefault: '#B2BBC0',
+    inputFilled: '#566976',
 
     disabled: {
       opacity: 0.5,

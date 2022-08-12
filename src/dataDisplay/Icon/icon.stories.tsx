@@ -45,6 +45,8 @@ export const Icons = (): React.ReactElement => {
     'arrowLeft',
     'assets',
     'awaitingConfirmations',
+    'bookmark',
+    'bookmarkFilled',
     'camera',
     'chain',
     'check',
