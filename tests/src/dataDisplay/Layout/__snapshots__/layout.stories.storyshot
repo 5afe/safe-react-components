@@ -2,25 +2,25 @@
 
 exports[`Storyshots Data Display/Layout Simple Layout 1`] = `
 <div
-  className="sc-ksdxgE bGQYQw"
+  className="sc-ksZaOG iRUMeL"
 >
   <div
-    className="sc-hBUSln fYIuuR"
+    className="sc-hAZoDl fxQCIF"
   >
     Title
   </div>
   <div
-    className="sc-fotOHu fKEeAo"
+    className="sc-fnykZs idyEni"
   >
     Navbar
   </div>
   <div
-    className="sc-fFeiMQ hPiQnY"
+    className="sc-fEOsli kTnRgs"
   >
     Body
   </div>
   <div
-    className="sc-bkkeKt knMgim"
+    className="sc-bjUoiL eUdhCL"
   >
     footer
   </div>

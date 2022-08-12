@@ -2,11 +2,11 @@
 
 exports[`Storyshots Data Display/Dot Dot With Icon 1`] = `
 <div
-  className="sc-gKclnd jsaBuM"
+  className="sc-gKXOVf ccitmc"
   color="rinkeby"
 >
   <span
-    className="sc-iqseJM kNdvIY"
+    className="sc-iqcoie iPTwCT"
     color="white"
   >
     <svg
@@ -34,11 +34,11 @@ exports[`Storyshots Data Display/Dot Dot With Icon 1`] = `
 
 exports[`Storyshots Data Display/Dot Dot With Text 1`] = `
 <div
-  className="sc-gKclnd fWVfID"
+  className="sc-gKXOVf dNtNSX"
   color="primary"
 >
   <p
-    className="sc-crHmcD dsNHnM"
+    className="sc-crXcEl gJabbi"
     color="white"
     size="xl"
   >

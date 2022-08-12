@@ -3,12 +3,12 @@
 exports[`Storyshots Data Display/Title Bold 1`] = `
 Array [
   <h2
-    className="sc-dJjYzT BICnQ"
+    className="sc-dIouRR fmjqfO"
   >
     Title LG
   </h2>,
   <h3
-    className="sc-hGPBjI gVeVwM"
+    className="sc-hHLeRK fGjyUU"
   >
     Title MD
   </h3>,
@@ -17,7 +17,7 @@ Array [
 
 exports[`Storyshots Data Display/Title Simple Title 1`] = `
 <h2
-  className="sc-dJjYzT ePyJlm"
+  className="sc-dIouRR bIULfg"
 >
   Title LG
 </h2>
@@ -26,27 +26,27 @@ exports[`Storyshots Data Display/Title Simple Title 1`] = `
 exports[`Storyshots Data Display/Title With Sizes 1`] = `
 Array [
   <h1
-    className="sc-ieecCq eRfImj"
+    className="sc-idiyUo llSQrm"
   >
     Title XL
   </h1>,
   <h2
-    className="sc-dJjYzT ePyJlm"
+    className="sc-dIouRR bIULfg"
   >
     Title LG
   </h2>,
   <h3
-    className="sc-hGPBjI bccfEq"
+    className="sc-hHLeRK bOTeaW"
   >
     Title MD
   </h3>,
   <h4
-    className="sc-dlVxhl gpkdcP"
+    className="sc-dmRaPn jeOjOX"
   >
     Title SM
   </h4>,
   <h5
-    className="sc-kfPuZi evetWI"
+    className="sc-kgflAQ bPAENn"
   >
     Title XS
   </h5>,

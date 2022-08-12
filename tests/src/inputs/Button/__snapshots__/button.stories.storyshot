@@ -2,10 +2,10 @@
 
 exports[`Storyshots Inputs/Button Disabled Button 1`] = `
 <div
-  className="sc-gsNilK ikuRBJ"
+  className="sc-grREDI kzkpPU"
 >
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV ads Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn DUcJO ads Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -28,7 +28,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV fPqRxp secondary contained Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn gbnQum secondary contained Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -51,77 +51,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV gLvJHK error contained Mui-disabled Mui-disabled"
-    disabled={true}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={-1}
-    type="button"
-  >
-    <span
-      className="MuiButton-label"
-    >
-      Text
-    </span>
-  </button>
-  <br />
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV dxbJjo primary outlined Mui-disabled Mui-disabled"
-    disabled={true}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={-1}
-    type="button"
-  >
-    <span
-      className="MuiButton-label"
-    >
-      Text
-    </span>
-  </button>
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV ymcKY secondary outlined Mui-disabled Mui-disabled"
-    disabled={true}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={-1}
-    type="button"
-  >
-    <span
-      className="MuiButton-label"
-    >
-      Text
-    </span>
-  </button>
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV fofYct error outlined Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn djpsSV error contained Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -145,7 +75,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
   </button>
   <br />
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV jzLcck primary bordered Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn cKbPAT primary outlined Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -168,7 +98,7 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV jqMZKs secondary bordered Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn fToYxP secondary outlined Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -191,7 +121,77 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV VxziI error bordered Mui-disabled Mui-disabled"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn cYFNku error outlined Mui-disabled Mui-disabled"
+    disabled={true}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={-1}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Text
+    </span>
+  </button>
+  <br />
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn QUev primary bordered Mui-disabled Mui-disabled"
+    disabled={true}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={-1}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Text
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn HkBnX secondary bordered Mui-disabled Mui-disabled"
+    disabled={true}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={-1}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Text
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn dlTNBz error bordered Mui-disabled Mui-disabled"
     disabled={true}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -218,10 +218,10 @@ exports[`Storyshots Inputs/Button Disabled Button 1`] = `
 
 exports[`Storyshots Inputs/Button Simple Button 1`] = `
 <div
-  className="sc-gsNilK ikuRBJ"
+  className="sc-grREDI kzkpPU"
 >
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV primary contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn DUcJO primary contained"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -244,7 +244,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV fPqRxp secondary contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn gbnQum secondary contained"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -267,77 +267,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV gLvJHK error contained"
-    disabled={false}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
-  >
-    <span
-      className="MuiButton-label"
-    >
-      Text
-    </span>
-  </button>
-  <br />
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV dxbJjo primary outlined"
-    disabled={false}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
-  >
-    <span
-      className="MuiButton-label"
-    >
-      Text
-    </span>
-  </button>
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV ymcKY secondary outlined"
-    disabled={false}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
-  >
-    <span
-      className="MuiButton-label"
-    >
-      Text
-    </span>
-  </button>
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV fofYct error outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn djpsSV error contained"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -361,7 +291,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
   </button>
   <br />
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV jzLcck primary bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn cKbPAT primary outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -384,7 +314,7 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV jqMZKs secondary bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn fToYxP secondary outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -407,7 +337,77 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV VxziI error bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn cYFNku error outlined"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Text
+    </span>
+  </button>
+  <br />
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn QUev primary bordered"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Text
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn HkBnX secondary bordered"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Text
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn dlTNBz error bordered"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -434,10 +434,10 @@ exports[`Storyshots Inputs/Button Simple Button 1`] = `
 
 exports[`Storyshots Inputs/Button Sizes 1`] = `
 <div
-  className="sc-gsNilK ikuRBJ"
+  className="sc-grREDI kzkpPU"
 >
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV primary contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn DUcJO primary contained"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -460,7 +460,7 @@ exports[`Storyshots Inputs/Button Sizes 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV esbZNJ primary contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn hgLfNm primary contained"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -488,7 +488,7 @@ exports[`Storyshots Inputs/Button Sizes 1`] = `
 exports[`Storyshots Inputs/Button With Custom Component 1`] = `
 <a
   aria-disabled={false}
-  className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV eZDxfk secondary bordered"
+  className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn iWLSZn secondary bordered"
   onBlur={[Function]}
   onDragLeave={[Function]}
   onFocus={[Function]}
@@ -508,7 +508,7 @@ exports[`Storyshots Inputs/Button With Custom Component 1`] = `
     className="MuiButton-label"
   >
     <span
-      className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
+      className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
     >
       <svg
         height="16"
@@ -538,10 +538,10 @@ exports[`Storyshots Inputs/Button With Custom Component 1`] = `
 
 exports[`Storyshots Inputs/Button With Icon 1`] = `
 <div
-  className="sc-gsNilK ikuRBJ"
+  className="sc-grREDI kzkpPU"
 >
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV esbZNJ primary contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn hgLfNm primary contained"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -561,7 +561,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
+        className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
       >
         <svg
           height="24"
@@ -588,7 +588,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV cWkRjd secondary contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn kolfiG secondary contained"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -608,7 +608,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
+        className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
       >
         <svg
           height="24"
@@ -635,7 +635,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV enyKwS error contained"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn gcTDdN error contained"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -655,149 +655,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
-      >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M0 0H24V24H0z"
-            />
-            <path
-              className="icon-color"
-              d="M4 15V9H3c-.552 0-1-.448-1-1s.448-1 1-1h1V4c0-1.105.895-2 2-2h12c1.105 0 2 .895 2 2v16c0 1.105-.895 2-2 2H6c-1.105 0-2-.895-2-2v-3H3c-.552 0-1-.448-1-1s.448-1 1-1h1zm2 0h1c.552 0 1 .448 1 1s-.448 1-1 1H6v3h12V4H6v3h1c.552 0 1 .448 1 1s-.448 1-1 1H6v6z"
-              fillRule="nonzero"
-            />
-          </g>
-        </svg>
-      </span>
-      Text
-    </span>
-  </button>
-  <br />
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV iJzLqU primary outlined"
-    disabled={false}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
-  >
-    <span
-      className="MuiButton-label"
-    >
-      <span
-        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
-      >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M0 0H24V24H0z"
-            />
-            <path
-              className="icon-color"
-              d="M4 15V9H3c-.552 0-1-.448-1-1s.448-1 1-1h1V4c0-1.105.895-2 2-2h12c1.105 0 2 .895 2 2v16c0 1.105-.895 2-2 2H6c-1.105 0-2-.895-2-2v-3H3c-.552 0-1-.448-1-1s.448-1 1-1h1zm2 0h1c.552 0 1 .448 1 1s-.448 1-1 1H6v3h12V4H6v3h1c.552 0 1 .448 1 1s-.448 1-1 1H6v6z"
-              fillRule="nonzero"
-            />
-          </g>
-        </svg>
-      </span>
-      Text
-    </span>
-  </button>
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV lpuGLk secondary outlined"
-    disabled={false}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
-  >
-    <span
-      className="MuiButton-label"
-    >
-      <span
-        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
-      >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M0 0H24V24H0z"
-            />
-            <path
-              className="icon-color"
-              d="M4 15V9H3c-.552 0-1-.448-1-1s.448-1 1-1h1V4c0-1.105.895-2 2-2h12c1.105 0 2 .895 2 2v16c0 1.105-.895 2-2 2H6c-1.105 0-2-.895-2-2v-3H3c-.552 0-1-.448-1-1s.448-1 1-1h1zm2 0h1c.552 0 1 .448 1 1s-.448 1-1 1H6v3h12V4H6v3h1c.552 0 1 .448 1 1s-.448 1-1 1H6v6z"
-              fillRule="nonzero"
-            />
-          </g>
-        </svg>
-      </span>
-      Text
-    </span>
-  </button>
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV hHkoQp error outlined"
-    disabled={false}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
-  >
-    <span
-      className="MuiButton-label"
-    >
-      <span
-        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
+        className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
       >
         <svg
           height="24"
@@ -825,7 +683,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
   </button>
   <br />
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV dOQlbA primary bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn kIMwln primary outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -845,7 +703,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
+        className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
       >
         <svg
           height="24"
@@ -872,7 +730,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV eZDxfk secondary bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn etGbXv secondary outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -892,7 +750,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
+        className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
       >
         <svg
           height="24"
@@ -919,7 +777,7 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV diJxNI error bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn hqISUi error outlined"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -939,7 +797,149 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
+        className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
+      >
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M0 0H24V24H0z"
+            />
+            <path
+              className="icon-color"
+              d="M4 15V9H3c-.552 0-1-.448-1-1s.448-1 1-1h1V4c0-1.105.895-2 2-2h12c1.105 0 2 .895 2 2v16c0 1.105-.895 2-2 2H6c-1.105 0-2-.895-2-2v-3H3c-.552 0-1-.448-1-1s.448-1 1-1h1zm2 0h1c.552 0 1 .448 1 1s-.448 1-1 1H6v3h12V4H6v3h1c.552 0 1 .448 1 1s-.448 1-1 1H6v6z"
+              fillRule="nonzero"
+            />
+          </g>
+        </svg>
+      </span>
+      Text
+    </span>
+  </button>
+  <br />
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn krXqKz primary bordered"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      <span
+        className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
+      >
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M0 0H24V24H0z"
+            />
+            <path
+              className="icon-color"
+              d="M4 15V9H3c-.552 0-1-.448-1-1s.448-1 1-1h1V4c0-1.105.895-2 2-2h12c1.105 0 2 .895 2 2v16c0 1.105-.895 2-2 2H6c-1.105 0-2-.895-2-2v-3H3c-.552 0-1-.448-1-1s.448-1 1-1h1zm2 0h1c.552 0 1 .448 1 1s-.448 1-1 1H6v3h12V4H6v3h1c.552 0 1 .448 1 1s-.448 1-1 1H6v6z"
+              fillRule="nonzero"
+            />
+          </g>
+        </svg>
+      </span>
+      Text
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn iWLSZn secondary bordered"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      <span
+        className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
+      >
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M0 0H24V24H0z"
+            />
+            <path
+              className="icon-color"
+              d="M4 15V9H3c-.552 0-1-.448-1-1s.448-1 1-1h1V4c0-1.105.895-2 2-2h12c1.105 0 2 .895 2 2v16c0 1.105-.895 2-2 2H6c-1.105 0-2-.895-2-2v-3H3c-.552 0-1-.448-1-1s.448-1 1-1h1zm2 0h1c.552 0 1 .448 1 1s-.448 1-1 1H6v3h12V4H6v3h1c.552 0 1 .448 1 1s-.448 1-1 1H6v6z"
+              fillRule="nonzero"
+            />
+          </g>
+        </svg>
+      </span>
+      Text
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn gFDTQr error bordered"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      <span
+        className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
       >
         <svg
           height="24"
@@ -970,10 +970,10 @@ exports[`Storyshots Inputs/Button With Icon 1`] = `
 
 exports[`Storyshots Inputs/Button With Icon Size 1`] = `
 <div
-  className="sc-gsNilK ikuRBJ"
+  className="sc-grREDI kzkpPU"
 >
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV jqMZKs secondary bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn HkBnX secondary bordered"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -993,7 +993,7 @@ exports[`Storyshots Inputs/Button With Icon Size 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
+        className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
       >
         <svg
           height="24"
@@ -1020,7 +1020,7 @@ exports[`Storyshots Inputs/Button With Icon Size 1`] = `
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV eZDxfk secondary bordered"
+    className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn iWLSZn secondary bordered"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -1040,7 +1040,7 @@ exports[`Storyshots Inputs/Button With Icon Size 1`] = `
       className="MuiButton-label"
     >
       <span
-        className="sc-iqseJM drawdo sc-bBHxTw jBIXxL"
+        className="sc-iqcoie ddwUSn sc-bBrHrO kgyLpx"
       >
         <svg
           height="16"

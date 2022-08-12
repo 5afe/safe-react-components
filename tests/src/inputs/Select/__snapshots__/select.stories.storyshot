@@ -9,7 +9,7 @@ exports[`Storyshots Inputs/Select Disabled Select 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root sc-kLwhqv jgEbCK MuiFormControl-fullWidth"
+    className="MuiFormControl-root sc-kLLXSd bsaNFD MuiFormControl-fullWidth"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-disabled Mui-disabled"
@@ -18,7 +18,7 @@ exports[`Storyshots Inputs/Select Disabled Select 1`] = `
       Select Token
     </label>
     <div
-      className="MuiInputBase-root MuiOutlinedInput-root sc-bYoBSM jNmTHy Mui-disabled Mui-disabled MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root sc-bZkfAO eKhxEH Mui-disabled Mui-disabled MuiInputBase-formControl"
       onClick={[Function]}
     >
       <div
@@ -88,7 +88,7 @@ exports[`Storyshots Inputs/Select Error Select 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root sc-kLwhqv hrOGDS"
+    className="MuiFormControl-root sc-kLLXSd fMRhXP"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined Mui-error Mui-error"
@@ -97,7 +97,7 @@ exports[`Storyshots Inputs/Select Error Select 1`] = `
       Select Token
     </label>
     <div
-      className="MuiInputBase-root MuiOutlinedInput-root sc-bYoBSM kuErgh Mui-error Mui-error MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root sc-bZkfAO bnVNAc Mui-error Mui-error MuiInputBase-formControl"
       onClick={[Function]}
     >
       <div
@@ -154,7 +154,7 @@ exports[`Storyshots Inputs/Select Error Select 1`] = `
       </fieldset>
     </div>
     <p
-      className="MuiFormHelperText-root MuiFormHelperText-contained sc-ikJyIC gHHkpy Mui-error"
+      className="MuiFormHelperText-root MuiFormHelperText-contained sc-ikZpkk kvLDXn Mui-error"
     >
       Something went wrong
     </p>
@@ -171,7 +171,7 @@ exports[`Storyshots Inputs/Select Simple Select 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root sc-kLwhqv hCASnh MuiFormControl-fullWidth"
+    className="MuiFormControl-root sc-kLLXSd bQwjjs MuiFormControl-fullWidth"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -180,7 +180,7 @@ exports[`Storyshots Inputs/Select Simple Select 1`] = `
       Select Token
     </label>
     <div
-      className="MuiInputBase-root MuiOutlinedInput-root sc-bYoBSM jNmTHy MuiInputBase-formControl"
+      className="MuiInputBase-root MuiOutlinedInput-root sc-bZkfAO eKhxEH MuiInputBase-formControl"
       onClick={[Function]}
     >
       <div
