@@ -2,7 +2,7 @@
 
 exports[`Storyshots Utils/Modals/Generic Simple Modal 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV primary contained"
+  className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn DUcJO primary contained"
   disabled={false}
   onBlur={[Function]}
   onClick={[Function]}

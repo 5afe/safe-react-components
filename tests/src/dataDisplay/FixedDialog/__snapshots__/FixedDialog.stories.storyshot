@@ -2,35 +2,35 @@
 
 exports[`Storyshots Data Display/FixedDialog Simple Fixed Dialog 1`] = `
 <div
-  className="sc-iCfMLu caivIn"
+  className="sc-iBkjds kNQlPc"
 >
   <div
-    className="sc-furwcr gyGGRb"
+    className="sc-ftvSup jbMNNs"
   >
     <div
-      className="sc-pVTFL jLUwvS"
+      className="sc-papXJ bPkNKD"
     >
       <h5
-        className="sc-kfPuZi hcrztx"
+        className="sc-kgflAQ czomju"
       >
         Legal Disclaimer
       </h5>
     </div>
     <div
-      className="sc-jrQzAO la-DQZn"
+      className="sc-jqUVSM ejiBqK"
     >
       <div>
         Some Body
       </div>
     </div>
     <div
-      className="sc-kDTinF fsokzJ"
+      className="sc-kDDrLX eUcdwE"
     >
       <div
-        className="sc-hmjpVf AREoq"
+        className="sc-hlnMnd cTMZSS"
       >
         <button
-          className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV dxbJjo primary outlined"
+          className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn cKbPAT primary outlined"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -54,7 +54,7 @@ exports[`Storyshots Data Display/FixedDialog Simple Fixed Dialog 1`] = `
           </span>
         </button>
         <button
-          className="MuiButtonBase-root MuiButton-root MuiButton-text sc-iwjdpV bPRbzV primary contained"
+          className="MuiButtonBase-root MuiButton-root MuiButton-text sc-ivTmOn DUcJO primary contained"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}

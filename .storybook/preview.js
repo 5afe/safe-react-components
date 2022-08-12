@@ -4,11 +4,9 @@ import { addParameters } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 
 import theme from '../src/theme';
-import GlobalStyles from '../src/global';
 
 addDecorator((storyFn) => (
   <>
-    <GlobalStyles />
     <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
   </>
 ));
