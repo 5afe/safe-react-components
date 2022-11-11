@@ -37,6 +37,8 @@ const theme = {
     inputDefault: '#B2BBC0',
     inputFilled: '#566976',
 
+    cantoGreen: '#06fc99',
+
     disabled: {
       opacity: 0.5,
     },
