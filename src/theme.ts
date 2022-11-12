@@ -29,6 +29,7 @@ const theme = {
     tag: '#60fc99',
     background: '#000',
     white: '#ffffff',
+    black: '#000000',
     warning: '#FFC05F',
     pending: '#E8663D',
 

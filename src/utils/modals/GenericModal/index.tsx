@@ -33,7 +33,8 @@ const TitleSection = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 16px 24px;
-  border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
+  border: 2px solid ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.black};
 `;
 
 const BodySection = styled.div<{
@@ -44,11 +45,14 @@ const BodySection = styled.div<{
   overflow-y: auto;
   padding: ${({ withoutBodyPadding }) =>
     withoutBodyPadding ? '0' : '16px 24px'};
+  border: 2px solid ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.black};
 `;
 
 const FooterSection = styled.div`
-  border-top: 2px solid ${({ theme }) => theme.colors.separator};
   padding: 16px 24px;
+  border: 2px solid ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.black};
 `;
 
 export type GenericModalProps = {
