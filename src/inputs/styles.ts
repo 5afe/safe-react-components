@@ -14,7 +14,7 @@ export const inputLabelStyles = css<TextFieldProps>`
   }
 
   .MuiInputLabel-root {
-    font-family: ${({ theme }) => theme.fonts.fontFamily};
+    font-family: monospace;
     color: ${({ theme }) => theme.colors.inputText};
     &.MuiInputLabel-shrink {
       color: ${({ theme }) => theme.colors.inputText};
@@ -45,7 +45,7 @@ export const inputLabelStyles = css<TextFieldProps>`
 
 export const inputStyles = css<TextFieldProps>`
   .MuiOutlinedInput-root {
-    font-family: ${({ theme }) => theme.fonts.fontFamily};
+    font-family: monospace;
     color: ${({ theme }) => theme.colors.inputText};
     /* Input */
     .MuiOutlinedInput-input {

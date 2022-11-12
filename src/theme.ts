@@ -6,28 +6,28 @@ const theme = {
     },
   },
   colors: {
-    primary: '#008C73',
-    primaryLight: '#A1D2CA',
-    primaryHover: '#005546',
+    primary: '#60fc99',
+    primaryLight: '#60fc99',
+    primaryHover: '#60fc99',
 
-    secondary: '#001428',
-    secondaryLight: '#B2B5B2',
-    secondaryHover: '#5D6D74',
+    secondary: '#60fc99',
+    secondaryLight: '#60fc99',
+    secondaryHover: '#60fc99',
 
     error: '#F02525',
     errorHover: '#C31717',
     errorTooltip: '#ffe6ea',
 
-    text: '#001428',
-    icon: '#B2B5B2',
-    placeHolder: '#5D6D74',
-    inputField: '#F0EFEE',
+    text: '#60fc99',
+    icon: '#60fc99',
+    placeHolder: '#60fc99',
+    inputField: '#60fc99',
 
-    separator: '#E8E7E6',
+    separator: '#60fc99',
     rinkeby: '#E8673C',
     pendingTagHover: '#FBE5C5',
-    tag: '#D4D5D3',
-    background: '#F6F7F8',
+    tag: '#60fc99',
+    background: '#000',
     white: '#ffffff',
     warning: '#FFC05F',
     pending: '#E8663D',
@@ -42,7 +42,7 @@ const theme = {
     },
     overlay: {
       opacity: 0.75,
-      color: '#E8E7E6',
+      color: '#000',
     },
     shadow: {
       blur: '18px',
@@ -57,8 +57,8 @@ const theme = {
     },
   },
   fonts: {
-    fontFamily: `'Averta', 'Roboto', 'Helvetica Neue', 'Arial', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', '-apple-system', 'BlinkMacSystemFont', sans-serif`,
-    fontFamilyCode: `source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace`,
+    fontFamily: 'monospace',
+    fontFamilyCode: `monospace`,
   },
   margin: {
     xxs: '4px',

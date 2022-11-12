@@ -4,28 +4,28 @@ import theme from '../src/theme.ts';
 export default create({
   base: theme.colors.background,
 
-  colorPrimary: '#008C73',
-  colorSecondary: '#005546',
+  colorPrimary: '#60fc99',
+  colorSecondary: '#60fc99',
 
   // UI
-  appBg: 'white',
-  appContentBg: 'white',
-  appBorderColor: 'grey',
+  appBg: 'black',
+  appContentBg: 'black',
+  appBorderColor: '#60fc99',
   appBorderRadius: 4,
 
   // Text colors
-  textColor: '#333333',
-  textInverseColor: 'rgba(255,255,255,0.9)',
+  textColor: '#60fc99',
+  textInverseColor: '#60fc99',
 
   // Toolbar default and active colors
-  barTextColor: 'silver',
-  barSelectedColor: 'black',
-  barBg: 'silver',
+  barTextColor: '#60fc99',
+  barSelectedColor: '#60fc99',
+  barBg: 'black',
 
   // Form colors
-  inputBg: 'white',
-  inputBorder: 'silver',
-  inputTextColor: 'black',
+  inputBg: 'black',
+  inputBorder: '#60fc99',
+  inputTextColor: '#60fc99',
   inputBorderRadius: 4,
 
   brandTitle: 'Gnosis theme',

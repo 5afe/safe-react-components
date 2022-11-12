@@ -146,7 +146,7 @@ const StyledSelect = styled(SelectMUI)`
     }
 
     .MuiSelect-selectMenu {
-      font-family: ${(props) => props.theme.fonts.fontFamily};
+      font-family: monospace;
     }
 
     && {
@@ -173,7 +173,7 @@ const StyledFormControl = styled(FormControl)`
 
 const StyledFormHelperText = styled(FormHelperText)`
   && {
-    font-family: ${(props) => props.theme.fonts.fontFamily};
+    font-family: monospace;
   }
 `;
 

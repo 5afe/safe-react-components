@@ -222,7 +222,7 @@ const StyledButton = styled(ButtonMUI)<{ $localProps: LocalProps }>`
         theme.buttons.size[size].minWidth};
       padding: ${({ theme, $localProps: { size } }) =>
         theme.buttons.size[size].padding};
-      font-family: ${theme.fonts.fontFamily};
+      font-family: monospace;
       font-size: ${({ theme, $localProps }) =>
         theme.text.size[$localProps.textSize ?? 'xl'].fontSize};
       line-height: ${({ theme, $localProps }) =>

@@ -56,12 +56,12 @@ const customTooltip = ({
       zIndex: 2001,
     },
     tooltip: {
-      backgroundColor: backgroundColor
+      backgroundColor: 'primary'
         ? (theme.colors[backgroundColor] as string)
         : theme.colors.overlay.color,
       boxShadow: `1px 2px 10px ${alpha(theme.colors.shadow.color, 0.18)}`,
       border: getBorderBySize(size),
-      color: textColor
+      color: "#000"
         ? (theme.colors[textColor] as string)
         : theme.colors.text,
       borderRadius: '4px',
@@ -71,7 +71,7 @@ const customTooltip = ({
       lineHeight: getFontInfoBySize(size).lineHeight,
     },
     arrow: {
-      color: backgroundColor
+      color: "#000"
         ? (theme.colors[backgroundColor] as string)
         : theme.colors.overlay.color,
       border: 'none',

@@ -459,7 +459,7 @@ export const AddressInputWithErrors = (): React.ReactElement => {
 };
 
 const CheckIconAddressAdornment = styled(CheckCircle)`
-  color: #03ae60;
+  color: #60fc99;
   height: 20px;
 `;
 

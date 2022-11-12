@@ -22,7 +22,7 @@ const ElementWrapper = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-  font-family: ${({ theme }) => theme.fonts.fontFamily};
+  font-family: monospace;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 800;
@@ -31,7 +31,7 @@ const StyledLink = styled(Link)`
 `;
 
 const StyledText = styled(Text)`
-  font-family: ${({ theme }) => theme.fonts.fontFamily};
+  font-family: monospace;
   text-transform: uppercase;
   font-weight: normal;
   margin: auto 5px;

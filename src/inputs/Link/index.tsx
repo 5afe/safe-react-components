@@ -12,7 +12,7 @@ const StyledLink = styled.a<Props>`
   text-decoration: none;
   cursor: pointer;
   color: ${({ theme, color = 'primary' }) => theme['colors'][color]};
-  font-family: ${({ theme }) => theme.fonts.fontFamily};
+  font-family: monospace;
   font-size: ${({ size = 'md', theme }) => theme.text.size[size].fontSize};
 `;
 

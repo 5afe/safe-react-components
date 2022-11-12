@@ -17,7 +17,7 @@ type Props = {
 };
 
 const StyledText = styled.p<Props>`
-  font-family: ${({ theme }) => theme.fonts.fontFamily};
+  font-family: monospace;
   color: ${({ color, theme }) =>
     color ? theme.colors[color] : theme.colors.text};
   margin: 0;
