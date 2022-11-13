@@ -17,11 +17,11 @@ type StyledAccordionProps = AccordionMUIProps & {
   $compact?: AccordionProps['compact'];
 };
 
-const StyledAccordion = styled(AccordionMUI)<StyledAccordionProps>`
+const StyledAccordion = styled(AccordionMUI) <StyledAccordionProps>`
   &.MuiAccordion-root {
+    background-color: ${({ theme }) => theme.colors.background};
     border-radius: ${({ $compact }) => ($compact ? '8px' : '0')};
-    border: ${({ $compact, theme }) =>
-      $compact ? '2px solid ' + theme.colors.separator : 'none'};
+    border: ${({ $compact, theme }) => $compact ? '2px solid ' + theme.colors.separator : 'none'};
     border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
     margin-bottom: ${({ $compact }) => ($compact ? '16px' : '0')};
     overflow: hidden;
@@ -46,6 +46,7 @@ const StyledAccordion = styled(AccordionMUI)<StyledAccordionProps>`
 
 const StyledAccordionSummary = styled(AccordionSummaryMUI)`
   &.MuiAccordionSummary-root {
+    background-color: ${({ theme }) => theme.colors.background};
     &.Mui-expanded {
       min-height: 48px;
       border-bottom: 2px solid ${({ theme }) => theme.colors.separator};
