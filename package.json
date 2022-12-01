@@ -1,6 +1,6 @@
 {
   "name": "@neobase-one/safe-react-components",
-  "version": "1.0.4-canto",
+  "version": "1.0.5-canto",
   "description": "Gnosis UI components",
   "main": "dist/index.min.js",
   "typings": "dist/index.d.ts",

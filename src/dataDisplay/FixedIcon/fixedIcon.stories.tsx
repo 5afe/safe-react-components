@@ -26,7 +26,7 @@ const IconBox = styled.div`
   width: 140px;
   height: 140px;
   border: 1px solid ${({ theme }) => theme.colors.background};
-  font-family: monospace;
+  font-family: 'modeSeven', monospace;
   font-size: 14px;
 `;
 

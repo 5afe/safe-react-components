@@ -22,16 +22,16 @@ const ElementWrapper = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-  font-family: monospace;
+  font-family: 'modeSeven', monospace;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 800;
+  font-weight: normal;
   cursor: text;
   margin: auto 5px;
 `;
 
 const StyledText = styled(Text)`
-  font-family: monospace;
+  font-family: 'modeSeven', monospace;
   text-transform: uppercase;
   font-weight: normal;
   margin: auto 5px;

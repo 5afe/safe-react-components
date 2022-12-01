@@ -15,7 +15,7 @@ const SearchInput = styled.input`
   border: none;
   background-color: transparent;
   box-shadow: none;
-  font-family: monospace;
+  font-family: 'modeSeven', monospace;
   width: 250px;
 
   :focus {

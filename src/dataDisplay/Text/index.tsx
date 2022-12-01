@@ -17,11 +17,11 @@ type Props = {
 };
 
 const StyledText = styled.p<Props>`
-  font-family: monospace;
+  font-family: 'modeSeven', monospace;
   color: ${({ color, theme }) =>
     color ? theme.colors[color] : theme.colors.text};
   margin: 0;
-  font-weight: ${({ strong }) => (strong ? 'bold' : 'normal')};
+  font-weight: normal;
   font-size: ${({ size, theme }) => theme.text.size[size].fontSize};
   line-height: ${({ size, theme }) => theme.text.size[size].lineHeight};
   text-align: ${({ center }) => (center ? 'center' : 'start')};
