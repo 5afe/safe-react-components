@@ -3,6 +3,7 @@ import gnosisTheme from './gnosisTheme';
 
 
 addons.setConfig({
+  disableTelemetry: true,
   enableShortcuts: false,
   showNav: true,
   showPanel: false,

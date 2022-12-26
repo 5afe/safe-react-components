@@ -50,6 +50,10 @@ export const SimpleDemo = (): React.ReactElement => {
               <Typography variant="h4">H4 Title</Typography>
               <Typography variant="h5">H5 Title</Typography>
               <Typography variant="h6">H6 Title</Typography>
+              <Typography variant="body1">Body 1</Typography>
+              <Typography variant="body2">Body 2</Typography>
+              <Typography variant="caption">caption</Typography>
+              <Typography variant="overline">overline</Typography>
               <Typography>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatum cum expedita, officiis fugiat et veritatis recusandae
@@ -100,6 +104,8 @@ export const SimpleDemo = (): React.ReactElement => {
               </Button>
             </Stack>
 
+            {/* Select demo */}
+            <Typography variant="h5">Select</Typography>
             <Stack spacing={2} direction="row" maxWidth={150}>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">Currency</InputLabel>

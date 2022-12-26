@@ -5,13 +5,5 @@ import { default as AddressInput } from './components/AddressInput/AddressInput'
 import { default as useThemeMode } from './hooks/useThemeMode';
 
 import { default as safeTheme } from './theme/safeTheme';
-import { default as safeColors } from './theme/safeColors';
 
-export {
-  EthHashInfo,
-  ExplorerButton,
-  AddressInput,
-  useThemeMode,
-  safeTheme,
-  safeColors,
-};
+export { EthHashInfo, ExplorerButton, AddressInput, useThemeMode, safeTheme };

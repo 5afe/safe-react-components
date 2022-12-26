@@ -321,7 +321,7 @@ export const AddressInputWithSimpleAddressValidation =
     const [hasError, setHasError] = useState<boolean>();
 
     useEffect(() => {
-      setHasError(address && !isValidAddress(address));
+      setHasError(!!address && !isValidAddress(address));
     }, [address]);
 
     const error = 'Invalid Address';
