@@ -1,13 +1,13 @@
 import React from 'react';
 import { addDecorator } from '@storybook/react';
 import { addParameters } from '@storybook/react';
-import { ThemeProvider } from 'styled-components';
 
-import theme from '../src/theme';
+import { getSafeTheme } from '../src/theme/safeTheme.tsx';
+import { ThemeProvider } from '@mui/material';
 
 addDecorator((storyFn) => (
   <>
-    <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
+    <ThemeProvider theme={getSafeTheme('light')}>{storyFn()}</ThemeProvider>
   </>
 ));
 

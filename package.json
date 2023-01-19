@@ -1,14 +1,14 @@
 {
-  "name": "@gnosis.pm/safe-react-components",
+  "name": "@safe-global/safe-react-components",
   "version": "2.0.1",
-  "description": "Gnosis UI components",
+  "description": "Safe UI components",
   "main": "dist/index.min.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "keywords": [
-    "Gnosis"
+    "Safe"
   ],
   "scripts": {
     "types": "yarn tsc",
@@ -22,7 +22,7 @@
     "test:ci": "yarn test --ci --coverage --json --watchAll=false --testLocationInResults --runInBand",
     "prepare": "yarn build"
   },
-  "author": "Gnosis (https://gnosis.pm)",
+  "author": "Safe (https://app.safe.global)",
   "license": "MIT",
   "dependencies": {
     "react-media": "^1.10.0",
@@ -111,10 +111,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gnosis/safe-react-components.git"
+    "url": "git+https://github.com/safe-global/safe-react-components.git"
   },
   "bugs": {
-    "url": "https://github.com/gnosis/safe-react-components/issues"
+    "url": "https://github.com/safe-global/safe-react-components/issues"
   },
-  "homepage": "https://github.com/gnosis/safe-react-components#readme"
+  "homepage": "https://github.com/safe-global/safe-react-components#readme"
 }

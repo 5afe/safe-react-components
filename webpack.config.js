@@ -2,7 +2,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/revamp/index.ts',
+  entry: './src/index.ts',
   output: {
     filename: 'index.min.js',
     sourceMapFilename: '[file].map',

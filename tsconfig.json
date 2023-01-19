@@ -18,6 +18,6 @@
     "noEmit": false,
     "jsx": "react"
   },
-  "include": ["src/revamp"],
+  "include": ["src/components"],
   "exclude": ["node_modules", "**/*.stories.tsx", "**/*.stories.ts"]
 }
