@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { PaletteMode, Theme } from '@mui/material';
 
-import { getSafeTheme } from '../theme/safeTheme';
+import createSafeTheme from '../theme/safeTheme';
 
 type useThemeModeType = (initialThemeMode?: PaletteMode) => {
   theme: Theme;
@@ -23,7 +23,7 @@ const useThemeMode: useThemeModeType = (
     );
   }, []);
 
-  const theme = React.useMemo(() => getSafeTheme(themeMode), [themeMode]);
+  const theme = React.useMemo(() => createSafeTheme(themeMode), [themeMode]);
 
   return {
     theme,

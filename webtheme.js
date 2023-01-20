@@ -1,68 +1,64 @@
-import { alpha, Theme, PaletteMode } from '@mui/material';
-import { createTheme, Shadows } from '@mui/material/styles';
+import { alpha, createTheme } from '@mui/material/styles'
+import type { Shadows } from '@mui/material/styles'
+import type {} from '@mui/x-date-pickers/themeAugmentation'
 
-import palette from './colors';
-import darkPalette from './colors-dark';
-
-export const base = 8;
+import palette from './colors'
+import darkPalette from './colors-dark'
+import { base } from './spacings'
 
 declare module '@mui/material/styles' {
   // Custom color palettes
   interface Palette {
-    border: Palette['primary'];
-    logo: Palette['primary'];
-    backdrop: Palette['primary'];
-    static: Palette['primary'];
+    border: Palette['primary']
+    logo: Palette['primary']
+    backdrop: Palette['primary']
+    static: Palette['primary']
   }
   interface PaletteOptions {
-    border: PaletteOptions['primary'];
-    logo: PaletteOptions['primary'];
-    backdrop: PaletteOptions['primary'];
-    static: PaletteOptions['primary'];
+    border: PaletteOptions['primary']
+    logo: PaletteOptions['primary']
+    backdrop: PaletteOptions['primary']
+    static: PaletteOptions['primary']
   }
 
   interface TypeBackground {
-    main: string;
-    light: string;
+    main: string
+    light: string
   }
 
   // Custom color properties
   interface PaletteColor {
-    background?: string;
+    background?: string
   }
   interface SimplePaletteColorOptions {
-    background?: string;
+    background?: string
   }
 }
 
 declare module '@mui/material/SvgIcon' {
   interface SvgIconPropsColorOverrides {
     // SvgIconPropsColorOverrides['primary'] doesn't work
-    border: unknown;
+    border: unknown
   }
 }
 
 declare module '@mui/material/Button' {
   interface ButtonPropsSizeOverrides {
-    stretched: true;
+    stretched: true
   }
 
   interface ButtonPropsColorOverrides {
-    background: true;
-  }
-  interface ButtonPropsVariantOverrides {
-    danger: true;
+    background: true
   }
 }
 
-const createSafeTheme = (mode: PaletteMode): Theme => {
-  const isDarkMode = mode === 'dark';
-  const colors = isDarkMode ? darkPalette : palette;
-  const shadowColor = colors.primary.light;
+const initTheme = (darkMode: boolean) => {
+  const colors = darkMode ? darkPalette : palette
+  const shadowColor = colors.primary.light
 
   return createTheme({
     palette: {
-      mode: isDarkMode ? 'dark' : 'light',
+      mode: darkMode ? 'dark' : 'light',
       ...colors,
     },
     spacing: base,
@@ -71,18 +67,10 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
     },
     shadows: [
       'none',
-      isDarkMode
-        ? `0 0 2px ${shadowColor}`
-        : `0 1px 4px ${shadowColor}0a, 0 4px 10px ${shadowColor}14`,
-      isDarkMode
-        ? `0 0 2px ${shadowColor}`
-        : `0 1px 4px ${shadowColor}0a, 0 4px 10px ${shadowColor}14`,
-      isDarkMode
-        ? `0 0 2px ${shadowColor}`
-        : `0 2px 20px ${shadowColor}0a, 0 8px 32px ${shadowColor}14`,
-      isDarkMode
-        ? `0 0 2px ${shadowColor}`
-        : `0 8px 32px ${shadowColor}0a, 0 24px 60px ${shadowColor}14`,
+      darkMode ? `0 0 2px ${shadowColor}` : `0 1px 4px ${shadowColor}0a, 0 4px 10px ${shadowColor}14`,
+      darkMode ? `0 0 2px ${shadowColor}` : `0 1px 4px ${shadowColor}0a, 0 4px 10px ${shadowColor}14`,
+      darkMode ? `0 0 2px ${shadowColor}` : `0 2px 20px ${shadowColor}0a, 0 8px 32px ${shadowColor}14`,
+      darkMode ? `0 0 2px ${shadowColor}` : `0 8px 32px ${shadowColor}0a, 0 24px 60px ${shadowColor}14`,
       ...Array(20).fill('none'),
     ] as Shadows,
     typography: {
@@ -502,10 +490,10 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
       },
       MuiSwitch: {
         defaultProps: {
-          color: isDarkMode ? undefined : 'success',
+          color: darkMode ? undefined : 'success',
         },
         styleOverrides: {
-          thumb: () => ({
+          thumb: ({ theme }) => ({
             boxShadow:
               '0px 2px 6px -1px rgba(0, 0, 0, 0.2), 0px 1px 4px rgba(0, 0, 0, 0.14), 0px 1px 4px rgba(0, 0, 0, 0.14)',
           }),
@@ -529,7 +517,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
         },
       },
     },
-  });
-};
+  })
+}
 
-export default createSafeTheme;
+export default initTheme
