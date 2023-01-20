@@ -1,21 +1,51 @@
 import React from 'react';
-import { ThemeProvider } from '@mui/system';
 
-import EthHashInfo from './EthHashInfo';
-import safeTheme from '../../theme/safeTheme';
+import CopyIcon from '@mui/icons-material/FileCopy';
 
-export const EthHashInfoDemo = (): React.ReactElement => {
-  return (
-    <ThemeProvider theme={safeTheme}>
-      <EthHashInfo />
-    </ThemeProvider>
-  );
-};
+import EthHashInfo from './';
 
 export default {
   title: 'Components/EthHashInfo',
-  component: EthHashInfoDemo,
+  component: EthHashInfo,
   parameters: {
     componentSubtitle: 'Demo of the new EthHashInfo component',
   },
+};
+
+export const Simple = (): React.ReactElement => {
+  return <EthHashInfo address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D" />;
+};
+
+export const Prefixed = (): React.ReactElement => {
+  return (
+    <EthHashInfo
+      prefix="eth"
+      address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"
+    />
+  );
+};
+
+export const withCopyButton = (): React.ReactElement => {
+  return (
+    <EthHashInfo
+      prefix="eth"
+      address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"
+      icon={
+        <img src="https://avatars.githubusercontent.com/u/25136207?s=200&v=4" />
+      }
+      copyButton={<CopyIcon />}
+    />
+  );
+};
+
+export const withIcon = (): React.ReactElement => {
+  return (
+    <EthHashInfo
+      prefix="eth"
+      address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"
+      icon={
+        <img src="https://avatars.githubusercontent.com/u/25136207?s=200&v=4" />
+      }
+    />
+  );
 };

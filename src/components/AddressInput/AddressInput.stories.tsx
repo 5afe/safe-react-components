@@ -1,15 +1,9 @@
 import React from 'react';
-import { ThemeProvider } from '@mui/system';
 
-import AddressInput from './AddressInput';
-import safeTheme from '../../theme/safeTheme';
+import AddressInput from '.';
 
 export const AddressInputDemo = (): React.ReactElement => {
-  return (
-    <ThemeProvider theme={safeTheme}>
-      <AddressInput />
-    </ThemeProvider>
-  );
+  return <AddressInput />;
 };
 
 export default {

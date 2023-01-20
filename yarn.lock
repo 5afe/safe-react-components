@@ -1577,13 +1577,6 @@
     react-is "^16.8.0 || ^17.0.0"
     react-transition-group "^4.4.0"
 
-"@material-ui/icons@^4.11.3":
-  version "4.11.3"
-  resolved "https://registry.yarnpkg.com/@material-ui/icons/-/icons-4.11.3.tgz#b0693709f9b161ce9ccde276a770d968484ecff1"
-  integrity sha512-IKHlyx6LDh8n19vzwH5RtHIOHl9Tu90aAAxcbWME6kp4dmvODM3UvOHJeMIDzUbd4muuJKHmlNoBN+mDY4XkBA==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-
 "@material-ui/styles@^4.11.5":
   version "4.11.5"
   resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.11.5.tgz#19f84457df3aafd956ac863dbe156b1d88e2bbfb"
@@ -1702,6 +1695,13 @@
   version "5.11.2"
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.11.2.tgz#0ff8066bee7e9654fd978cb671e9c12c9d2a65b7"
   integrity sha512-ztLQELdSSuJFXezng8g5eCzy8mogtzMM8JcfG3HIGgUJ2RlAiBXI2Qe0adKmrJlF4FMat8vTaTeoiRNBZH4t1Q==
+
+"@mui/icons-material@^5.8.4":
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.11.0.tgz#9ea6949278b2266d2683866069cd43009eaf6464"
+  integrity sha512-I2LaOKqO8a0xcLGtIozC9xoXjZAto5G5gh0FYUMAlbsIHNHIjn4Xrw9rvjY20vZonyiGrZNMAlAXYkY6JvhF6A==
+  dependencies:
+    "@babel/runtime" "^7.20.6"
 
 "@mui/material@^5.11.2":
   version "5.11.2"

@@ -1,6 +1,6 @@
-import { default as EthHashInfo } from './components/EthHashInfo/EthHashInfo';
-import { default as ExplorerButton } from './components/ExplorerButton/ExplorerButton';
-import { default as AddressInput } from './components/AddressInput/AddressInput';
+import { default as EthHashInfo } from './components/EthHashInfo';
+import { default as ExplorerButton } from './components/ExplorerButton';
+import { default as AddressInput } from './components/AddressInput';
 
 import { default as useThemeMode } from './hooks/useThemeMode';
 
