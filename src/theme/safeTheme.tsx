@@ -4,6 +4,9 @@ import { createTheme, Shadows } from '@mui/material/styles';
 import palette from './colors';
 import darkPalette from './colors-dark';
 
+// import DMSans from '../assets/fonts/dm-sans-v11-latin-ext-regular.woff2';
+// import DMSans700 from '../assets/fonts/dm-sans-v11-latin-ext-700.woff2';
+
 export const base = 8;
 
 declare module '@mui/material/styles' {
@@ -528,6 +531,21 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
           }),
         },
       },
+      // MuiCssBaseline: {
+      //   styleOverrides: `
+      //     @font-face {
+      //       font-family: 'DM Sans';
+      //       font-display: swap;
+      //       font-weight: 400;
+      //       src: url(${DMSans}) format('woff2');
+      //     }
+      //     @font-face {
+      //       font-family: 'DM Sans';
+      //       font-display: swap;
+      //       font-weight: bold;
+      //       src: url(${DMSans700}) format('woff2');
+      //     }`,
+      // },
     },
   });
 };

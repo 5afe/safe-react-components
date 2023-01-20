@@ -43,10 +43,6 @@ module.exports = {
         commonjs: 'react-dom',
         commonjs2: 'react-dom',
       },
-      'styled-components': {
-        commonjs: 'styled-components',
-        commonjs2: 'styled-components',
-      },
     },
   ],
   node: {

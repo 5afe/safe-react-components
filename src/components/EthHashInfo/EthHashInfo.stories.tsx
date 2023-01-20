@@ -1,7 +1,6 @@
 import React from 'react';
 
 import CopyIcon from '@mui/icons-material/FileCopy';
-import { Button } from '@mui/material';
 import EthHashInfo from './';
 
 export default {
@@ -14,10 +13,6 @@ export default {
 
 export const Simple = (): React.ReactElement => {
   return <EthHashInfo address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D" />;
-};
-
-export const ButtonComp = (): React.ReactElement => {
-  return <Button variant="contained">Button</Button>;
 };
 
 export const Prefixed = (): React.ReactElement => {
