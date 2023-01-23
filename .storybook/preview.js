@@ -2,7 +2,13 @@ import React from 'react';
 import { addDecorator } from '@storybook/react';
 import { addParameters } from '@storybook/react';
 
-import { Stack, ThemeProvider, Typography, IconButton } from '@mui/material';
+import {
+  Stack,
+  ThemeProvider,
+  Typography,
+  IconButton,
+  CssBaseline,
+} from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 
@@ -14,6 +20,7 @@ addDecorator((storyFn) => {
 
   return (
     <ThemeProvider theme={createSafeTheme(themeMode)}>
+      <CssBaseline />
       <Stack spacing={2} direction="row" alignItems="center">
         {/* dark mode switch */}
         <Typography>{themeMode} mode</Typography>

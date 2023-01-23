@@ -21,18 +21,26 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(svg|png|jpg)$/i,
-        use: {
-          loader: 'url-loader',
-          options: {},
-        },
-      },
-      {
         test: /\.(ts|js)x?$/,
         exclude: [/node_modules/],
         use: {
           loader: 'ts-loader',
         },
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        type: 'asset/resource',
+        generator: {
+          filename: '[name][ext][query]',
+        },
+      },
+      {
+        test: /\.(svg|png|jpg)$/i,
+        type: 'asset/inline',
       },
     ],
   },

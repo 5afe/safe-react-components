@@ -41,6 +41,5 @@ const storyBookTheme = create({
 
   brandTitle: 'Safe theme',
   brandUrl: 'https://app.safe.global',
-  brandImage: 'https://miro.medium.com/max/1060/1*DZopze1Xtir7mZHraVNZ_w.png',
   brandImage: logoSvg,
 });

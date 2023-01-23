@@ -10,4 +10,5 @@ module.exports = {
     '@storybook/addon-links',
     'storybook-addon-react-docgen',
   ],
+  staticDirs: ['../src/assets/fonts'],
 };
