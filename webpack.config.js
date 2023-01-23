@@ -4,14 +4,17 @@ const path = require('path');
 module.exports = {
   entry: './src/index.ts',
   output: {
+    path: path.join(__dirname, '/dist'),
     filename: 'index.min.js',
     sourceMapFilename: '[file].map',
-    path: path.join(__dirname, '/dist'),
     libraryTarget: 'umd',
     library: JSON.stringify(require('./package.json').name),
     globalObject: 'this',
   },
   resolve: {
+    fallback: {
+      fs: false,
+    },
     extensions: ['.ts', '.tsx', '.js'],
   },
   devtool: 'source-map',
@@ -45,10 +48,6 @@ module.exports = {
       },
     },
   ],
-  node: {
-    fs: 'empty',
-    child_process: 'empty',
-  },
   optimization: {
     minimize: false,
   },
