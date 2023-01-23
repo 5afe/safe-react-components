@@ -7,6 +7,8 @@ import {
   ThemeProvider,
   Typography,
   IconButton,
+  Card,
+  CardContent,
   CssBaseline,
 } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
@@ -21,18 +23,21 @@ addDecorator((storyFn) => {
   return (
     <ThemeProvider theme={createSafeTheme(themeMode)}>
       <CssBaseline />
-      <Stack spacing={2} direction="row" alignItems="center">
-        {/* dark mode switch */}
-        <Typography>{themeMode} mode</Typography>
-        <IconButton onClick={switchThemeMode} color="inherit">
-          {themeMode === 'light' ? (
-            <Brightness4Icon /> // light theme mode icon
-          ) : (
-            <Brightness7Icon /> // dark theme mode icon
-          )}
-        </IconButton>
-      </Stack>
-      {storyFn()}
+      <Card>
+        <CardContent>
+          <Stack direction="row" alignItems="center" sx={{ mb: 2 }}>
+            {/* dark mode switch */}
+            <IconButton onClick={switchThemeMode} color="inherit" sx={{ p: 0 }}>
+              {themeMode === 'light' ? (
+                <Brightness4Icon /> // light theme mode icon
+              ) : (
+                <Brightness7Icon /> // dark theme mode icon
+              )}
+            </IconButton>
+          </Stack>
+          {storyFn()}
+        </CardContent>
+      </Card>
     </ThemeProvider>
   );
 });

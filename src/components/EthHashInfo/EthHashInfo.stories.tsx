@@ -1,6 +1,5 @@
 import React from 'react';
 
-import CopyIcon from '@mui/icons-material/FileCopy';
 import EthHashInfo from './';
 
 export default {
@@ -17,34 +16,25 @@ export const Simple = (): React.ReactElement => {
 
 export const Prefixed = (): React.ReactElement => {
   return (
-    <EthHashInfo
-      prefix="eth"
-      address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"
-    />
+    <>
+      <EthHashInfo
+        showPrefix
+        prefix="eth"
+        shortAddress={false}
+        address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"
+      />
+    </>
   );
 };
 
 export const withCopyButton = (): React.ReactElement => {
   return (
     <EthHashInfo
+      showPrefix
       prefix="eth"
       address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"
-      icon={
-        <img src="https://avatars.githubusercontent.com/u/25136207?s=200&v=4" />
-      }
-      copyButton={<CopyIcon />}
-    />
-  );
-};
-
-export const withIcon = (): React.ReactElement => {
-  return (
-    <EthHashInfo
-      prefix="eth"
-      address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"
-      icon={
-        <img src="https://avatars.githubusercontent.com/u/25136207?s=200&v=4" />
-      }
+      showCopyButton
+      copyPrefix
     />
   );
 };
