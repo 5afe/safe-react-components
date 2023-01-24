@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Storyshots revamp/Components/AddressInput Address Input Demo 1`] = `
-<div>
-  TODO: AddressInput
-</div>
-`;

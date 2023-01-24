@@ -8,6 +8,7 @@ import type { ReactElement } from 'react';
 import Identicon from './Identicon';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import CopyAddressButton from './CopyAddressButton';
+import ExplorerButton, { ExplorerButtonProps } from '../ExplorerButton';
 
 type EthHashInfoProps = {
   address: string;
@@ -23,6 +24,7 @@ type EthHashInfoProps = {
   hasExplorer?: boolean;
   avatarSize?: number;
   children?: React.ReactNode;
+  ExplorerButtonProps?: ExplorerButtonProps;
 };
 
 const EthHashInfo = ({
@@ -37,6 +39,7 @@ const EthHashInfo = ({
   name,
   showCopyButton,
   hasExplorer,
+  ExplorerButtonProps,
   children,
 }: EthHashInfoProps): ReactElement => {
   const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
@@ -83,6 +86,7 @@ const EthHashInfo = ({
               <span>{shortAddress ? shortenAddress(address) : address}</span>
             )}
           </Typography>
+
           {showCopyButton && (
             <CopyAddressButton
               prefix={prefix}
@@ -91,7 +95,10 @@ const EthHashInfo = ({
             />
           )}
 
-          {/* {hasExplorer && <ExplorerLink address={address} />} */}
+          {hasExplorer && ExplorerButtonProps && (
+            <ExplorerButton {...ExplorerButtonProps} />
+          )}
+
           {children}
         </AddressContainer>
       </Box>

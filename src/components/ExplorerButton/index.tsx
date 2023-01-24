@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react';
 import { IconButton, Tooltip, SvgIcon } from '@mui/material';
+import LinkIcon from './LinkIcon';
 
-type ExplorerButtonProps = {
+export type ExplorerButtonProps = {
   title: string;
   href: string;
 };

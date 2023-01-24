@@ -4,6 +4,7 @@ const path = require('path');
 module.exports = {
   entry: './src/index.ts',
   output: {
+    publicPath: '',
     path: path.join(__dirname, '/dist'),
     filename: 'index.min.js',
     sourceMapFilename: '[file].map',
@@ -29,7 +30,15 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [
+          'isomorphic-style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
+          },
+        ],
       },
       {
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
