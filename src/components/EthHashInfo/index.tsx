@@ -22,6 +22,7 @@ type EthHashInfoProps = {
   customAvatar?: string;
   hasExplorer?: boolean;
   avatarSize?: number;
+  children?: React.ReactNode;
 };
 
 const EthHashInfo = ({
@@ -36,6 +37,7 @@ const EthHashInfo = ({
   name,
   showCopyButton,
   hasExplorer,
+  children,
 }: EthHashInfoProps): ReactElement => {
   const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
   const shouldPrefix = ethers.utils.isAddress(address);
@@ -90,6 +92,7 @@ const EthHashInfo = ({
           )}
 
           {/* {hasExplorer && <ExplorerLink address={address} />} */}
+          {children}
         </AddressContainer>
       </Box>
     </Container>
