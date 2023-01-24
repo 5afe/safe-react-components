@@ -52,7 +52,7 @@ const CopyButton = ({
           <SvgIcon
             component={CopyIcon}
             inheritViewBox
-            color="success"
+            color="border"
             fontSize="small"
           />
         )}

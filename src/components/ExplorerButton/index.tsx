@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
 import { IconButton, Tooltip, SvgIcon } from '@mui/material';
-import LinkIcon from './LinkIcon';
 
 type ExplorerButtonProps = {
   title: string;
@@ -25,7 +24,9 @@ const ExplorerButton = ({
           inheritViewBox
           color="primary"
           sx={{
-            fill: ({ palette }) => palette.success.main,
+            '& path': {
+              fill: ({ palette }) => palette.border.main,
+            },
           }}
           fontSize="small"
         />

@@ -32,18 +32,14 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-      },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         type: 'asset/resource',
         generator: {
           filename: '[name][ext][query]',
         },
       },
       {
-        test: /\.(svg|png|jpg)$/i,
+        test: /\.(png|jpg)$/i,
         type: 'asset/inline',
       },
     ],
