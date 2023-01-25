@@ -1,5 +1,5 @@
 import React from 'react';
-import { createSvgIcon } from '@mui/material/utils';
+import createSvgIcon from '@mui/material/utils/createSvgIcon';
 
 const CopyIcon = createSvgIcon(
   <path

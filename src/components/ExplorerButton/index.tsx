@@ -1,5 +1,8 @@
 import React, { ReactElement } from 'react';
-import { IconButton, Tooltip, SvgIcon } from '@mui/material';
+import IconButton from '@mui/material/IconButton';
+import SvgIcon from '@mui/material/SvgIcon';
+import Tooltip from '@mui/material/Tooltip';
+
 import LinkIcon from './LinkIcon';
 
 export type ExplorerButtonProps = {

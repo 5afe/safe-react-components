@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { Box, Typography, useTheme } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import React, { useState, ReactElement } from 'react';
+import { useTheme } from '@mui/material';
+import styled from '@mui/system/styled';
+import Box from '@mui/system/Box';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { ethers } from 'ethers';
 
 import { shortenAddress } from './utils';
 
-import type { ReactElement } from 'react';
 import Identicon from './Identicon';
-import useMediaQuery from '@mui/material/useMediaQuery';
 import CopyAddressButton from './CopyAddressButton';
 import ExplorerButton, { ExplorerButtonProps } from '../ExplorerButton';
 
@@ -68,25 +68,24 @@ const EthHashInfo = ({
 
       <Box overflow="hidden">
         {name && (
-          <Typography
-            variant="body2"
-            component="div"
+          <Box
+            sx={{ typography: 'body2' }}
             textOverflow="ellipsis"
             overflow="hidden"
             title={name}>
             {name}
-          </Typography>
+          </Box>
         )}
 
         <AddressContainer>
-          <Typography fontWeight="inherit" fontSize="inherit">
+          <Box fontWeight="inherit" fontSize="inherit">
             {showPrefix && shouldPrefix && prefix && <b>{prefix}:</b>}
             {isMobile ? (
               <span>{shortenAddress(address)}</span>
             ) : (
               <span>{shortAddress ? shortenAddress(address) : address}</span>
             )}
-          </Typography>
+          </Box>
 
           {showCopyButton && (
             <CopyAddressButton
@@ -107,12 +106,12 @@ const EthHashInfo = ({
   );
 };
 
-const Container = styled('div')`
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  line-height: 1.4;
-`;
+const Container = styled('div')({
+  display: 'flex',
+  alignItems: 'center',
+  gap: '0.5em',
+  lineHeight: 1.4,
+});
 
 const AvatarContainer = styled('div')<{ size?: number }>(({ size }) => ({
   flexShrink: 0,

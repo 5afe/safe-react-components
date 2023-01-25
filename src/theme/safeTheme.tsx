@@ -5,6 +5,7 @@ import palette from './colors';
 import darkPalette from './colors-dark';
 
 export const base = 8;
+const font = 'DM Sans, sans-serif';
 
 declare module '@mui/material/styles' {
   // Custom color palettes
@@ -37,7 +38,6 @@ declare module '@mui/material/styles' {
 
 declare module '@mui/material/SvgIcon' {
   export interface SvgIconPropsColorOverrides {
-    // SvgIconPropsColorOverrides['primary'] doesn't work
     border: unknown;
   }
 }
@@ -86,7 +86,7 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
       ...Array(20).fill('none'),
     ] as Shadows,
     typography: {
-      fontFamily: 'DM Sans, sans-serif',
+      fontFamily: font,
       h1: {
         fontSize: '32px',
         lineHeight: '36px',
@@ -130,6 +130,11 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
       },
     },
     components: {
+      MuiTypography: {
+        defaultProps: {
+          fontFamily: font,
+        },
+      },
       MuiTableCell: {
         styleOverrides: {
           head: ({ theme }) => ({

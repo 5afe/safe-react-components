@@ -1,11 +1,14 @@
-import type { ReactNode } from 'react';
 import React, {
   ReactElement,
+  ReactNode,
   SyntheticEvent,
   useCallback,
   useState,
 } from 'react';
-import { IconButton, SvgIcon, Tooltip } from '@mui/material';
+import IconButton from '@mui/material/IconButton';
+import SvgIcon from '@mui/material/SvgIcon';
+import Tooltip from '@mui/material/Tooltip';
+
 import CopyIcon from './CopyIcon';
 
 const CopyButton = ({
