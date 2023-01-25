@@ -1,7 +1,7 @@
 import React, { ReactElement, CSSProperties, useMemo } from 'react';
 import makeBlockie from 'ethereum-blockies-base64';
 import Skeleton from '@mui/material/Skeleton';
-import styled from '@mui/system/styled';
+import { styled } from '@mui/material';
 
 type IdenticonProps = {
   address: string;
