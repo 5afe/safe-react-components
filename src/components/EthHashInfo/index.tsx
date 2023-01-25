@@ -1,6 +1,6 @@
 import React, { useState, ReactElement } from 'react';
 import { useTheme } from '@mui/material';
-import { styled } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import Box from '@mui/system/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { ethers } from 'ethers';
