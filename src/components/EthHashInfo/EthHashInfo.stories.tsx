@@ -13,17 +13,21 @@ export default {
 export const Simple = (): React.ReactElement => {
   return (
     <EthHashInfo
-      showPrefix
-      prefix="eth"
-      address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"
-      showCopyButton
-      copyPrefix
-      hasExplorer
-      ExplorerButtonProps={{
-        title: 'View on goerli.etherscan,io',
-        href: 'https://goerli.etherscan.io/address/0x51A099ac1BF46D471110AA8974024Bfe518Fd6C4',
-      }}
+      address="0x0000000000000000000000000000000000005AFE"
+      customAvatar=""
     />
+    // <EthHashInfo
+    //   showPrefix
+    //   prefix="eth"
+    //   address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"
+    //   showCopyButton
+    //   copyPrefix
+    //   hasExplorer
+    //   ExplorerButtonProps={{
+    //     title: 'View on goerli.etherscan,io',
+    //     href: 'https://goerli.etherscan.io/address/0x51A099ac1BF46D471110AA8974024Bfe518Fd6C4',
+    //   }}
+    // />
   );
 };
 

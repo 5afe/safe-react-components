@@ -18,6 +18,6 @@
     "noEmit": false,
     "jsx": "react"
   },
-  "include": ["src/components", "src/custom.d.ts"],
+  "include": ["src/components", "src/types/global.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "**/*.stories.tsx", "**/*.stories.ts"]
 }

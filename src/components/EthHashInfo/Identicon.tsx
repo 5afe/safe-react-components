@@ -3,7 +3,7 @@ import type { ReactElement, CSSProperties } from 'react';
 import { useMemo } from 'react';
 import makeBlockie from 'ethereum-blockies-base64';
 import Skeleton from '@mui/material/Skeleton';
-import { styled } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
 type IdenticonProps = {
   address: string;
@@ -27,7 +27,7 @@ const Identicon = ({ address, size = 40 }: IdenticonProps): ReactElement => {
   return !style ? (
     <Skeleton variant="circular" width={size} height={size} />
   ) : (
-    <IdenticonContainer style={style} />
+    <IdenticonContainer className="icon" style={style} />
   );
 };
 

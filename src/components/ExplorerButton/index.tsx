@@ -23,12 +23,7 @@ const ExplorerButton = ({
         <SvgIcon
           component={LinkIcon}
           inheritViewBox
-          color="primary"
-          sx={{
-            '& path': {
-              fill: ({ palette }) => palette.border.main,
-            },
-          }}
+          color="border"
           fontSize="small"
         />
       </IconButton>

@@ -8,49 +8,49 @@ export const base = 8;
 
 declare module '@mui/material/styles' {
   // Custom color palettes
-  interface Palette {
+  export interface Palette {
     border: Palette['primary'];
     logo: Palette['primary'];
     backdrop: Palette['primary'];
     static: Palette['primary'];
   }
-  interface PaletteOptions {
+  export interface PaletteOptions {
     border: PaletteOptions['primary'];
     logo: PaletteOptions['primary'];
     backdrop: PaletteOptions['primary'];
     static: PaletteOptions['primary'];
   }
 
-  interface TypeBackground {
+  export interface TypeBackground {
     main: string;
     light: string;
   }
 
   // Custom color properties
-  interface PaletteColor {
+  export interface PaletteColor {
     background?: string;
   }
-  interface SimplePaletteColorOptions {
+  export interface SimplePaletteColorOptions {
     background?: string;
   }
 }
 
 declare module '@mui/material/SvgIcon' {
-  interface SvgIconPropsColorOverrides {
+  export interface SvgIconPropsColorOverrides {
     // SvgIconPropsColorOverrides['primary'] doesn't work
     border: unknown;
   }
 }
 
 declare module '@mui/material/Button' {
-  interface ButtonPropsSizeOverrides {
+  export interface ButtonPropsSizeOverrides {
     stretched: true;
   }
 
-  interface ButtonPropsColorOverrides {
+  export interface ButtonPropsColorOverrides {
     background: true;
   }
-  interface ButtonPropsVariantOverrides {
+  export interface ButtonPropsVariantOverrides {
     danger: true;
   }
 }

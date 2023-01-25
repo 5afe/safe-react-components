@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Box, styled, Typography, useTheme } from '@mui/material';
+import { Box, Typography, useTheme } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import { ethers } from 'ethers';
 
 import { shortenAddress } from './utils';
