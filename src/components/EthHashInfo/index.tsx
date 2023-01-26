@@ -11,7 +11,7 @@ import Identicon from './Identicon';
 import CopyAddressButton from './CopyAddressButton';
 import ExplorerButton, { ExplorerButtonProps } from '../ExplorerButton';
 
-type EthHashInfoProps = {
+export type EthHashInfoProps = {
   address: string;
   chainId?: string;
   name?: string | null;

@@ -1,5 +1,9 @@
 import { alpha, Theme, PaletteMode } from '@mui/material';
-import { createTheme, Shadows } from '@mui/material/styles';
+import {
+  createTheme,
+  PaletteColorOptions,
+  Shadows,
+} from '@mui/material/styles';
 
 import palette from './colors';
 import darkPalette from './colors-dark';

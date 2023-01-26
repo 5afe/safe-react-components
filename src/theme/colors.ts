@@ -1,4 +1,4 @@
-const palette = {
+const lightPalette = {
   text: {
     primary: '#121312',
     secondary: '#A1A3A7',
@@ -62,4 +62,4 @@ const palette = {
   },
 };
 
-export default palette;
+export default lightPalette;

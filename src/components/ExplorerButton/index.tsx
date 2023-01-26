@@ -3,6 +3,8 @@ import IconButton from '@mui/material/IconButton';
 import SvgIcon from '@mui/material/SvgIcon';
 import Tooltip from '@mui/material/Tooltip';
 
+import usePalette from '../../hooks/usePalette';
+
 import LinkIcon from './LinkIcon';
 
 export type ExplorerButtonProps = {
@@ -14,6 +16,8 @@ const ExplorerButton = ({
   title,
   href,
 }: ExplorerButtonProps): ReactElement | null => {
+  const palette = usePalette();
+
   if (!href) return null;
 
   return (
@@ -26,8 +30,13 @@ const ExplorerButton = ({
         <SvgIcon
           component={LinkIcon}
           inheritViewBox
-          color="border"
-          fontSize="small"
+          sx={{
+            width: '1rem',
+            height: '1rem',
+            '& path': {
+              fill: palette.border.main,
+            },
+          }}
         />
       </IconButton>
     </Tooltip>

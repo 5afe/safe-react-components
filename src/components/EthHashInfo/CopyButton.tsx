@@ -9,6 +9,8 @@ import IconButton from '@mui/material/IconButton';
 import SvgIcon from '@mui/material/SvgIcon';
 import Tooltip from '@mui/material/Tooltip';
 
+import usePalette from '../../hooks/usePalette';
+
 import CopyIcon from './CopyIcon';
 
 const CopyButton = ({
@@ -25,6 +27,7 @@ const CopyButton = ({
   ariaLabel?: string;
   onCopy?: () => void;
 }): ReactElement => {
+  const palette = usePalette();
   const [tooltipText, setTooltipText] = useState(initialToolTipText);
 
   const handleCopy = useCallback(
@@ -49,14 +52,20 @@ const CopyButton = ({
       <IconButton
         aria-label={initialToolTipText}
         onClick={handleCopy}
-        size="small"
-        className={className}>
+        className={className}
+        size="small">
         {children ?? (
           <SvgIcon
             component={CopyIcon}
             inheritViewBox
-            color="border"
-            fontSize="small"
+            fontSize="inherit"
+            sx={{
+              width: '1rem',
+              height: '1rem',
+              '& path': {
+                fill: palette.border.main,
+              },
+            }}
           />
         )}
       </IconButton>
