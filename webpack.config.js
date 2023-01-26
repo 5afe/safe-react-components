@@ -14,6 +14,10 @@ module.exports = {
     globalObject: 'this',
   },
   resolve: {
+    alias: {
+      react: path.resolve('./node_modules/react'),
+      '@mui/material': path.resolve('./node_modules/@mui/material'),
+    },
     fallback: {
       fs: false,
     },
