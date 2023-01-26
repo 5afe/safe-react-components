@@ -4,7 +4,6 @@
   "description": "Safe UI components",
   "main": "dist/index.min.js",
   "typings": "dist/index.d.ts",
-  "private": "false",
   "files": [
     "dist"
   ],
