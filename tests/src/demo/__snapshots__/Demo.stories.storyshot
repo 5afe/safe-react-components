@@ -50,57 +50,57 @@ exports[`Storyshots Demo Simple Demo 1`] = `
     >
       <div>
         <h1
-          className="MuiTypography-root MuiTypography-h1 css-1dh7d8x-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-h1 css-kq9gd6-MuiTypography-root"
         >
           H1 Title
         </h1>
         <h2
-          className="MuiTypography-root MuiTypography-h2 css-rf20d3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-h2 css-5zup6l-MuiTypography-root"
         >
           H2 Title
         </h2>
         <h3
-          className="MuiTypography-root MuiTypography-h3 css-aklxrh-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-h3 css-1bblwp6-MuiTypography-root"
         >
           H3 Title
         </h3>
         <h4
-          className="MuiTypography-root MuiTypography-h4 css-igrt7u-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-h4 css-smrg7t-MuiTypography-root"
         >
           H4 Title
         </h4>
         <h5
-          className="MuiTypography-root MuiTypography-h5 css-1lv070m-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-h5 css-15z2c8k-MuiTypography-root"
         >
           H5 Title
         </h5>
         <h6
-          className="MuiTypography-root MuiTypography-h6 css-dh47xt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-h6 css-1frzm8t-MuiTypography-root"
         >
           H6 Title
         </h6>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-1pqjor9-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-1nnrg7r-MuiTypography-root"
         >
           Body 1
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body2 css-ceebrx-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body2 css-489xq6-MuiTypography-root"
         >
           Body 2
         </p>
         <span
-          className="MuiTypography-root MuiTypography-caption css-1t5o3c5-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-caption css-m7gw7m-MuiTypography-root"
         >
           caption
         </span>
         <span
-          className="MuiTypography-root MuiTypography-overline css-e3kj93-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-overline css-1tz1cdi-MuiTypography-root"
         >
           overline
         </span>
         <p
-          className="MuiTypography-root MuiTypography-body1 css-1pqjor9-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 css-1nnrg7r-MuiTypography-root"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cum expedita, officiis fugiat et veritatis recusandae voluptate eligendi tempora laudantium. Molestias aliquam eveniet eum iure rem exercitationem quibusdam eos quae!
         </p>
@@ -109,7 +109,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
         className="css-1dpyoso-MuiStack-root"
       >
         <h5
-          className="MuiTypography-root MuiTypography-h5 css-1lv070m-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-h5 css-15z2c8k-MuiTypography-root"
         >
           TextField
         </h5>
@@ -157,7 +157,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
         </div>
       </div>
       <h5
-        className="MuiTypography-root MuiTypography-h5 css-1lv070m-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-h5 css-15z2c8k-MuiTypography-root"
       >
         Buttons
       </h5>
@@ -284,7 +284,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
           />
         </button>
         <button
-          className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-1925w19-MuiButtonBase-root-MuiButton-root"
+          className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-1ded5lr-MuiButtonBase-root-MuiButton-root"
           disabled={false}
           onBlur={[Function]}
           onContextMenu={[Function]}
@@ -381,7 +381,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
         </button>
       </div>
       <h5
-        className="MuiTypography-root MuiTypography-h5 css-1lv070m-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-h5 css-15z2c8k-MuiTypography-root"
       >
         Select
       </h5>
@@ -457,7 +457,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
         className="css-1dpyoso-MuiStack-root"
       >
         <h5
-          className="MuiTypography-root MuiTypography-h5 css-1lv070m-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-h5 css-15z2c8k-MuiTypography-root"
         >
           Tooltip
         </h5>
