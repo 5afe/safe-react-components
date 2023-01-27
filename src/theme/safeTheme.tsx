@@ -1,12 +1,8 @@
 import { alpha, Theme, PaletteMode } from '@mui/material';
-import {
-  createTheme,
-  PaletteColorOptions,
-  Shadows,
-} from '@mui/material/styles';
+import { createTheme, Shadows } from '@mui/material/styles';
 
-import palette from './colors';
-import darkPalette from './colors-dark';
+import palette from './lightPalette';
+import darkPalette from './darkPalette';
 
 export const base = 8;
 const font = 'DM Sans, sans-serif';

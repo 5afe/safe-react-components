@@ -26,12 +26,11 @@ addDecorator((storyFn) => {
       <Card>
         <CardContent>
           <Stack direction="row" alignItems="center" sx={{ mb: 2 }}>
-            {/* dark mode switch */}
             <IconButton onClick={switchThemeMode} color="inherit" sx={{ p: 0 }}>
               {themeMode === 'light' ? (
-                <Brightness4Icon /> // light theme mode icon
+                <Brightness4Icon />
               ) : (
-                <Brightness7Icon /> // dark theme mode icon
+                <Brightness7Icon />
               )}
             </IconButton>
           </Stack>

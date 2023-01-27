@@ -1,7 +1,7 @@
 import './assets/fonts/fonts.css';
 
-import darkPalette from './theme/colors-dark';
-import lightPalette from './theme/colors';
+import darkPalette from './theme/darkPalette';
+import lightPalette from './theme/lightPalette';
 
 import {
   default as EthHashInfo,

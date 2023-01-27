@@ -1,15 +1,15 @@
-import React from 'react';
+import * as React from 'react';
 
 import AddressInput from '.';
 
-export const AddressInputDemo = (): React.ReactElement => {
+export const Main = (): React.ReactElement => {
   return <AddressInput />;
 };
 
 export default {
   title: 'Components/AddressInput',
-  component: AddressInputDemo,
+  component: Main,
   parameters: {
-    componentSubtitle: 'Demo of the AddressInput component',
+    componentSubtitle: 'Advanced address input',
   },
 };

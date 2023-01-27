@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react';
+import * as React from 'react';
 import IconButton from '@mui/material/IconButton';
 import SvgIcon from '@mui/material/SvgIcon';
 import Tooltip from '@mui/material/Tooltip';
 
 import usePalette from '../../hooks/usePalette';
 
-import LinkIcon from './LinkIcon';
+import { LinkIcon } from '../Icons';
 
 export type ExplorerButtonProps = {
   title: string;
@@ -15,7 +15,7 @@ export type ExplorerButtonProps = {
 const ExplorerButton = ({
   title,
   href,
-}: ExplorerButtonProps): ReactElement | null => {
+}: ExplorerButtonProps): React.ReactElement | null => {
   const palette = usePalette();
 
   if (!href) return null;

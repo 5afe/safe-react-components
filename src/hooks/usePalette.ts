@@ -6,8 +6,8 @@ import {
   useTheme,
 } from '@mui/material';
 
-import lightPalette from '../theme/colors';
-import darkPalette from '../theme/colors-dark';
+import lightPalette from '../theme/lightPalette';
+import darkPalette from '../theme/darkPalette';
 
 const usePalette = (): any => {
   const theme: Theme = useTheme();

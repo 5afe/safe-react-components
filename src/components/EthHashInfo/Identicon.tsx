@@ -1,5 +1,5 @@
-import React, { ReactElement, CSSProperties, useMemo } from 'react';
-import makeBlockie from 'ethereum-blockies-base64';
+import * as React from 'react';
+import createIdenticon from 'ethereum-blockies-base64';
 import Skeleton from '@mui/material/Skeleton';
 import { styled } from '@mui/material/styles';
 
@@ -8,12 +8,15 @@ type IdenticonProps = {
   size?: number;
 };
 
-const Identicon = ({ address, size = 40 }: IdenticonProps): ReactElement => {
-  const style = useMemo<CSSProperties | null>(() => {
+const Identicon = ({
+  address,
+  size = 40,
+}: IdenticonProps): React.ReactElement => {
+  const style = React.useMemo<React.CSSProperties | null>(() => {
     try {
-      const blockie = makeBlockie(address);
+      const icon = createIdenticon(address);
       return {
-        backgroundImage: `url(${blockie})`,
+        backgroundImage: `url(${icon})`,
         width: `${size}px`,
         height: `${size}px`,
       };

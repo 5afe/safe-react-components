@@ -1,8 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 
 import ExplorerButton from '.';
 
-export const ExplorerLinkDemo = (): React.ReactElement => {
+export const Main = (): React.ReactElement => {
   return (
     <ExplorerButton
       href="https://goerli.etherscan.io/address/0x51A099ac1BF46D471110AA8974024Bfe518Fd6C4"
@@ -13,8 +13,8 @@ export const ExplorerLinkDemo = (): React.ReactElement => {
 
 export default {
   title: 'Components/ExplorerButton',
-  component: ExplorerLinkDemo,
+  component: Main,
   parameters: {
-    componentSubtitle: 'Demo of the ExplorerButton component',
+    componentSubtitle: 'A button for link and redirect to the address explorer',
   },
 };

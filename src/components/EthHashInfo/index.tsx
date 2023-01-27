@@ -1,4 +1,4 @@
-import React, { useState, ReactElement } from 'react';
+import * as React from 'react';
 import { useTheme } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/system/Box';
@@ -42,8 +42,8 @@ const EthHashInfo = ({
   hasExplorer,
   ExplorerButtonProps,
   children,
-}: EthHashInfoProps): ReactElement => {
-  const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
+}: EthHashInfoProps): React.ReactElement => {
+  const [fallbackToIdenticon, setFallbackToIdenticon] = React.useState(false);
   const shouldPrefix = isAddress(address);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));

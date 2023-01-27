@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 
-const AddressInput = () => {
+const AddressInput = (): React.ReactElement => {
   return <div>TODO: AddressInput</div>;
 };
 

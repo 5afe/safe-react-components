@@ -1,16 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 
 import EthHashInfo from './';
 
-export default {
-  title: 'Components/EthHashInfo',
-  component: EthHashInfo,
-  parameters: {
-    componentSubtitle: 'Demo of the new EthHashInfo component',
-  },
-};
-
-export const Simple = (): React.ReactElement => {
+export const Main = (): React.ReactElement => {
   return (
     <EthHashInfo
       showPrefix
@@ -19,6 +11,7 @@ export const Simple = (): React.ReactElement => {
       showCopyButton
       copyPrefix
       hasExplorer
+      name="My Safe address"
       ExplorerButtonProps={{
         title: 'View on goerli.etherscan,io',
         href: 'https://goerli.etherscan.io/address/0x51A099ac1BF46D471110AA8974024Bfe518Fd6C4',
@@ -50,4 +43,12 @@ export const withCopyButton = (): React.ReactElement => {
       copyPrefix
     />
   );
+};
+
+export default {
+  title: 'Components/EthHashInfo',
+  component: Main,
+  parameters: {
+    componentSubtitle: 'Show Ethereum addresses',
+  },
 };

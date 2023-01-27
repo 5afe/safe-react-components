@@ -1,17 +1,19 @@
-import React, {
-  ReactElement,
-  ReactNode,
-  SyntheticEvent,
-  useCallback,
-  useState,
-} from 'react';
+import * as React from 'react';
 import IconButton from '@mui/material/IconButton';
 import SvgIcon from '@mui/material/SvgIcon';
 import Tooltip from '@mui/material/Tooltip';
 
 import usePalette from '../../hooks/usePalette';
+import { CopyIcon } from '../Icons';
 
-import CopyIcon from './CopyIcon';
+type CopyButtonProps = {
+  text: string;
+  className?: string;
+  children?: React.ReactNode;
+  initialToolTipText?: string;
+  ariaLabel?: string;
+  onCopy?: () => void;
+};
 
 const CopyButton = ({
   text,
@@ -19,19 +21,12 @@ const CopyButton = ({
   children,
   initialToolTipText = 'Copy to clipboard',
   onCopy,
-}: {
-  text: string;
-  className?: string;
-  children?: ReactNode;
-  initialToolTipText?: string;
-  ariaLabel?: string;
-  onCopy?: () => void;
-}): ReactElement => {
+}: CopyButtonProps): React.ReactElement => {
   const palette = usePalette();
-  const [tooltipText, setTooltipText] = useState(initialToolTipText);
+  const [tooltipText, setTooltipText] = React.useState(initialToolTipText);
 
-  const handleCopy = useCallback(
-    (e: SyntheticEvent) => {
+  const handleCopy = React.useCallback(
+    (e: React.SyntheticEvent) => {
       e.preventDefault();
       e.stopPropagation();
       navigator.clipboard.writeText(text).then(() => setTooltipText('Copied'));
@@ -40,7 +35,7 @@ const CopyButton = ({
     [text, onCopy]
   );
 
-  const handleMouseLeave = useCallback(() => {
+  const handleMouseLeave = React.useCallback(() => {
     setTimeout(() => setTooltipText(initialToolTipText), 500);
   }, [initialToolTipText]);
 
