@@ -4,7 +4,6 @@ import { addParameters } from '@storybook/react';
 
 import {
   Stack,
-  ThemeProvider,
   Typography,
   IconButton,
   Card,
@@ -16,12 +15,13 @@ import Brightness7Icon from '@mui/icons-material/Brightness7';
 
 import createSafeTheme from '../src/theme/safeTheme.tsx';
 import useThemeMode from '../src/hooks/useThemeMode';
+import SafeThemeProvider from '../src/theme/SafeThemeProvider';
 
 addDecorator((storyFn) => {
   const { switchThemeMode, themeMode } = useThemeMode();
 
   return (
-    <ThemeProvider theme={createSafeTheme(themeMode)}>
+    <SafeThemeProvider theme={createSafeTheme(themeMode)}>
       <CssBaseline />
       <Card>
         <CardContent>
@@ -37,7 +37,7 @@ addDecorator((storyFn) => {
           {storyFn()}
         </CardContent>
       </Card>
-    </ThemeProvider>
+    </SafeThemeProvider>
   );
 });
 

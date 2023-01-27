@@ -19,6 +19,8 @@ import { default as useThemeMode } from './hooks/useThemeMode';
 
 import { default as createSafeTheme } from './theme/safeTheme';
 
+import { default as SafeThemeProvider } from './theme/SafeThemeProvider';
+
 export type { EthHashInfoProps, ExplorerButtonProps };
 
 export {
@@ -27,6 +29,7 @@ export {
   AddressInput,
   useThemeMode,
   createSafeTheme,
+  SafeThemeProvider,
   darkPalette,
   lightPalette,
 };
