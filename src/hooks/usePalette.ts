@@ -1,10 +1,5 @@
 import { useMemo } from 'react';
-import {
-  PaletteOptions,
-  SimplePaletteColorOptions,
-  Theme,
-  useTheme,
-} from '@mui/material';
+import { Theme, useTheme } from '@mui/material';
 
 import lightPalette from '../theme/lightPalette';
 import darkPalette from '../theme/darkPalette';
