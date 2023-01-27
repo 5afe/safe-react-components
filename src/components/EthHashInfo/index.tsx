@@ -3,7 +3,7 @@ import { useTheme } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/system/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { ethers } from 'ethers';
+import { isAddress } from '@ethersproject/address';
 
 import { shortenAddress } from './utils';
 
@@ -44,7 +44,7 @@ const EthHashInfo = ({
   children,
 }: EthHashInfoProps): ReactElement => {
   const [fallbackToIdenticon, setFallbackToIdenticon] = useState(false);
-  const shouldPrefix = ethers.utils.isAddress(address);
+  const shouldPrefix = isAddress(address);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 

@@ -1,8 +1,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
+  mode: 'production',
   entry: './src/index.ts',
   output: {
     publicPath: '',
@@ -62,6 +64,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [{ from: 'src/assets/fonts/fonts.css' }],
     }),
+    new BundleAnalyzerPlugin(),
   ],
   externals: [
     {
@@ -76,6 +79,6 @@ module.exports = {
     },
   ],
   optimization: {
-    minimize: false,
+    minimize: true,
   },
 };
