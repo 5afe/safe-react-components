@@ -16,11 +16,13 @@ As Safe allows to integrate third party applications ("Safe Apps"), these compon
 ## How to install
 
 ### Yarn
+
 ```bash
    yarn add @safe-global/safe-react-components
 ```
 
 ### npm
+
 ```bash
    npm install @safe-global/safe-react-components
 ```
@@ -29,18 +31,22 @@ As Safe allows to integrate third party applications ("Safe Apps"), these compon
 
 This library makes use of [@mui/material - 5.x.x](https://material-ui.com/) as `peer dependency`, this means you must install it in your Safe App. Make sure to provide a compatible version as defined by peer dependencies.
 
-Once everything is installed, you have to instantiate a [ThemeProvider](https://mui.com/material-ui/customization/theming/#theme-provider) and import the theme exported by safe-react-components.
+Once everything is installed, you have to instantiate the SafeThemeProvider with the desired theme mode (light/dark) and with the generated safe theme return a [ThemeProvider](https://mui.com/material-ui/customization/theming/#theme-provider) for the application.
 
 ```js
-import { ThemeProvider } from '@mui/material/styles'
-import { createSafeTheme } from '@safe-global/safe-react-components'
+import { ThemeProvider } from '@mui/material/styles';
+import { SafeThemeProvider } from '@safe-global/safe-react-components';
 
 import App from './App';
 
 export default () => (
-  <ThemeProvider theme={createSafeTheme('light')}>
-    <App />
-  </ThemeProvider>
+  <SafeThemeProvider mode="light">
+    {(safeTheme: Theme) => (
+      <ThemeProvider theme={safeTheme}>
+        <App />
+      </ThemeProvider>
+    )}
+  </SafeThemeProvider>
 );
 ```
 
