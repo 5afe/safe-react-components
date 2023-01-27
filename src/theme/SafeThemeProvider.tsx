@@ -3,21 +3,17 @@ import { PaletteMode, Theme, ThemeProvider } from '@mui/material';
 import createSafeTheme from './safeTheme';
 
 type SafeThemeProviderProps = {
-  children?: React.ReactNode;
-  theme?: Theme;
-  mode?: PaletteMode;
+  children: (theme: Theme) => React.ReactNode;
+  mode: PaletteMode;
 };
 
 const SafeThemeProvider: React.FC<SafeThemeProviderProps> = ({
   children,
-  theme,
   mode,
 }) => {
-  return (
-    <ThemeProvider theme={theme || (mode && createSafeTheme(mode)) || {}}>
-      {children}
-    </ThemeProvider>
-  );
+  const theme = React.useMemo(() => createSafeTheme(mode), [mode]);
+
+  return <ThemeProvider theme={theme}>{children(theme)}</ThemeProvider>;
 };
 
 export default SafeThemeProvider;
