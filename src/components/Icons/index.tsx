@@ -1,5 +1,6 @@
 import * as React from 'react';
 import createSvgIcon from '@mui/material/utils/createSvgIcon';
+import Icon from './Icon';
 
 export const CopyIcon = createSvgIcon(
   <path
@@ -21,3 +22,5 @@ export const LinkIcon = createSvgIcon(
   </>,
   'Link'
 );
+
+export { Icon };

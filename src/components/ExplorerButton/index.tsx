@@ -1,11 +1,8 @@
 import * as React from 'react';
 import IconButton from '@mui/material/IconButton';
-import SvgIcon from '@mui/material/SvgIcon';
 import Tooltip from '@mui/material/Tooltip';
 
-import usePalette from '../../hooks/usePalette';
-
-import { LinkIcon } from '../Icons';
+import { Icon, LinkIcon } from '../Icons';
 
 export type ExplorerButtonProps = {
   title: string;
@@ -16,8 +13,6 @@ const ExplorerButton = ({
   title,
   href,
 }: ExplorerButtonProps): React.ReactElement | null => {
-  const palette = usePalette();
-
   if (!href) return null;
 
   return (
@@ -27,17 +22,7 @@ const ExplorerButton = ({
         target="_blank"
         rel="noopener noreferrer"
         size="small">
-        <SvgIcon
-          component={LinkIcon}
-          inheritViewBox
-          sx={{
-            width: '1rem',
-            height: '1rem',
-            '& path': {
-              fill: palette.border.main,
-            },
-          }}
-        />
+        <Icon component={LinkIcon} />
       </IconButton>
     </Tooltip>
   );

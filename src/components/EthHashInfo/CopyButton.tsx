@@ -1,10 +1,8 @@
 import * as React from 'react';
 import IconButton from '@mui/material/IconButton';
-import SvgIcon from '@mui/material/SvgIcon';
 import Tooltip from '@mui/material/Tooltip';
 
-import usePalette from '../../hooks/usePalette';
-import { CopyIcon } from '../Icons';
+import { CopyIcon, Icon } from '../Icons';
 
 type CopyButtonProps = {
   text: string;
@@ -22,7 +20,6 @@ const CopyButton = ({
   initialToolTipText = 'Copy to clipboard',
   onCopy,
 }: CopyButtonProps): React.ReactElement => {
-  const palette = usePalette();
   const [tooltipText, setTooltipText] = React.useState(initialToolTipText);
 
   const handleCopy = React.useCallback(
@@ -49,20 +46,7 @@ const CopyButton = ({
         onClick={handleCopy}
         className={className}
         size="small">
-        {children ?? (
-          <SvgIcon
-            component={CopyIcon}
-            inheritViewBox
-            fontSize="inherit"
-            sx={{
-              width: '1rem',
-              height: '1rem',
-              '& path': {
-                fill: palette.border.main,
-              },
-            }}
-          />
-        )}
+        {children ?? <Icon component={CopyIcon} />}
       </IconButton>
     </Tooltip>
   );
