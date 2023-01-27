@@ -11,6 +11,8 @@ import Identicon from './Identicon';
 import CopyAddressButton from './CopyAddressButton';
 import ExplorerButton, { ExplorerButtonProps } from '../ExplorerButton';
 
+import typography from '../../theme/typography';
+
 export type EthHashInfoProps = {
   address: string;
   chainId?: string;
@@ -69,7 +71,7 @@ const EthHashInfo = ({
       <Box overflow="hidden">
         {name && (
           <Box
-            sx={{ typography: 'body2' }}
+            sx={{ fontSize: typography.body2?.fontSize }}
             textOverflow="ellipsis"
             overflow="hidden"
             title={name}>

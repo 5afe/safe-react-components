@@ -3,9 +3,9 @@ import { createTheme, Shadows } from '@mui/material/styles';
 
 import palette from './lightPalette';
 import darkPalette from './darkPalette';
+import typography from './typography';
 
 export const base = 8;
-const font = 'DM Sans, sans-serif';
 
 declare module '@mui/material/styles' {
   // Custom color palettes
@@ -85,56 +85,8 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
         : `0 8px 32px ${shadowColor}0a, 0 24px 60px ${shadowColor}14`,
       ...Array(20).fill('none'),
     ] as Shadows,
-    typography: {
-      fontFamily: font,
-      h1: {
-        fontSize: '32px',
-        lineHeight: '36px',
-        fontWeight: 700,
-      },
-      h2: {
-        fontSize: '27px',
-        lineHeight: '34px',
-        fontWeight: 700,
-      },
-      h3: {
-        fontSize: '24px',
-        lineHeight: '30px',
-      },
-      h4: {
-        fontSize: '20px',
-        lineHeight: '26px',
-      },
-      h5: {
-        fontSize: '16px',
-        fontWeight: 700,
-      },
-      body1: {
-        fontSize: '16px',
-        lineHeight: '22px',
-      },
-      body2: {
-        fontSize: '14px',
-        lineHeight: '20px',
-      },
-      caption: {
-        fontSize: '12px',
-        lineHeight: '16px',
-        letterSpacing: '0.4px',
-      },
-      overline: {
-        fontSize: '11px',
-        lineHeight: '14px',
-        textTransform: 'uppercase',
-        letterSpacing: '1px',
-      },
-    },
+    typography,
     components: {
-      MuiTypography: {
-        defaultProps: {
-          fontFamily: font,
-        },
-      },
       MuiTableCell: {
         styleOverrides: {
           head: ({ theme }) => ({
