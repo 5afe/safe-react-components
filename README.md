@@ -64,6 +64,18 @@ const App = (account) => {
 export default App;
 ```
 
+## Adding the fonts
+
+The fonts will be bundled on `build` and a `fonts.css` file will be provided as well for adding the corresponding `font-face` declarations
+
+```
+// from js/ts files
+import '@safe-global/safe-react-components/dist/fonts.css'
+
+// from css files
+@import url(<path-to-node_modules>/@safe-global/safe-react-components/dist/fonts.css)
+```
+
 ## Storybook
 
 You can find documentation and examples of all our components in this [storybook](https://components.gnosis-safe.io/).
