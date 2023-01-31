@@ -1,91 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/ExplorerButton Explorer Link Demo 1`] = `
-<div
-  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-dg4yf5-MuiPaper-root-MuiCard-root"
->
-  <div
-    className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
-  >
-    <div
-      className="css-vaugxt-MuiStack-root"
-    >
-      <button
-        className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-qk9crl-MuiButtonBase-root-MuiIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onContextMenu={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-17ceore-MuiSvgIcon-root"
-          data-testid="Brightness4Icon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"
-          />
-        </svg>
-      </button>
-    </div>
-    <a
-      aria-label="View on goerli.etherscan.io"
-      aria-labelledby={null}
-      className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-nmr6e8-MuiButtonBase-root-MuiIconButton-root"
-      data-mui-internal-clone-element={true}
-      href="https://goerli.etherscan.io/address/0x51A099ac1BF46D471110AA8974024Bfe518Fd6C4"
-      onBlur={[Function]}
-      onContextMenu={[Function]}
-      onDragLeave={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      onMouseDown={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-      rel="noopener noreferrer"
-      tabIndex={0}
-      target="_blank"
-    >
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall css-1ik97kw-MuiSvgIcon-root-MuiSvgIcon-root"
-        data-testid="LinkIcon"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M19.2 19.2V12C19.2 11.5029 19.6029 11.1 20.1 11.1C20.5971 11.1 21 11.5029 21 12V19.2C21 20.1941 20.1941 21 19.2 21H4.8C3.80589 21 3 20.1941 3 19.2V4.8C3 3.80589 3.80589 3 4.8 3H12C12.4971 3 12.9 3.40294 12.9 3.9C12.9 4.39706 12.4971 4.8 12 4.8H4.8V19.2H19.2Z"
-        />
-        <path
-          clipRule="evenodd"
-          d="M17.8362 4.85332H15.44C14.9283 4.85332 14.5134 4.43844 14.5134 3.92666C14.5134 3.41488 14.9283 3 15.44 3H20.0733C20.3292 3 20.5609 3.10372 20.7286 3.27141C20.8963 3.4391 21 3.67077 21 3.92666V8.55995C21 9.07173 20.5851 9.48661 20.0733 9.48661C19.5616 9.48661 19.1467 9.07173 19.1467 8.55995V6.16381L10.5819 14.7286C10.22 15.0905 9.6333 15.0905 9.27141 14.7286C8.90953 14.3667 8.90953 13.78 9.27141 13.4181L17.8362 4.85332Z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </a>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Components/ExplorerButton Main 1`] = `
 <div
   className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-dg4yf5-MuiPaper-root-MuiCard-root"
@@ -153,7 +67,7 @@ exports[`Storyshots Components/ExplorerButton Main 1`] = `
     >
       <svg
         aria-hidden={true}
-        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-4cbnhi-MuiSvgIcon-root"
+        className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1d8g0rh-MuiSvgIcon-root"
         focusable="false"
       />
     </a>

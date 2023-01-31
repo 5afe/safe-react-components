@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import ExplorerButton from '.';
+import ExplorerButton from './';
 
 export const Main = (): React.ReactElement => {
   return (
