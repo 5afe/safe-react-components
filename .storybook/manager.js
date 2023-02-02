@@ -1,10 +1,14 @@
+import { create } from '@storybook/theming/create';
 import { addons } from '@storybook/addons';
-import gnosisTheme from './gnosisTheme';
-
 
 addons.setConfig({
+  disableTelemetry: true,
   enableShortcuts: false,
   showNav: true,
   showPanel: false,
-  theme: gnosisTheme,
+  theme: storyBookTheme,
+});
+
+const storyBookTheme = create({
+  base: 'light',
 });

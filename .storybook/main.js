@@ -1,4 +1,7 @@
 module.exports = {
+  core: {
+    builder: 'webpack5',
+  },
   stories: ['../src/**/*.stories.tsx'],
   addons: [
     '@storybook/addon-actions',
@@ -7,4 +10,5 @@ module.exports = {
     '@storybook/addon-links',
     'storybook-addon-react-docgen',
   ],
+  staticDirs: ['../src/assets/fonts'],
 };

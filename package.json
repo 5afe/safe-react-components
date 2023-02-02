@@ -1,14 +1,14 @@
 {
-  "name": "@gnosis.pm/safe-react-components",
-  "version": "1.2.0",
-  "description": "Gnosis UI components",
+  "name": "@safe-global/safe-react-components",
+  "version": "2.0.0",
+  "description": "Safe UI components",
   "main": "dist/index.min.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "keywords": [
-    "Gnosis"
+    "Safe"
   ],
   "scripts": {
     "types": "yarn tsc",
@@ -22,67 +22,63 @@
     "test:ci": "yarn test --ci --coverage --json --watchAll=false --testLocationInResults --runInBand",
     "prepare": "yarn build"
   },
-  "author": "Gnosis (https://gnosis.pm)",
+  "author": "Safe (https://app.safe.global)",
   "license": "MIT",
   "dependencies": {
-    "react-media": "^1.10.0",
-    "web3-utils": "^1.6.0"
+    "@ethersproject/address": "^5.7.0",
+    "ethereum-blockies-base64": "^1.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.0",
-    "@babel/preset-env": "^7.18.0",
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.0",
     "@babel/preset-typescript": "^7.18.0",
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
-    "@mui/x-data-grid": "4.0.2",
-    "@storybook/addon-actions": "^6.5.10",
-    "@storybook/addon-controls": "^6.5.10",
-    "@storybook/addon-docs": "^6.5.10",
-    "@storybook/addon-links": "^6.5.10",
-    "@storybook/addon-storyshots": "^6.5.10",
-    "@storybook/addons": "^6.5.10",
-    "@storybook/react": "^6.5.10",
-    "@testing-library/jest-dom": "^5.11.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.7",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-controls": "^6.5.15",
+    "@storybook/addon-docs": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/addon-storyshots": "^6.5.15",
+    "@storybook/addons": "^6.5.15",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.2.0",
     "@types/jest": "^26.0.0",
-    "@types/material-ui": "^0.21.12",
     "@types/node": "^16.11.9",
-    "@types/react": "^16.9.55",
-    "@types/react-dom": "^16.9.0",
-    "@types/styled-components": "^5.1.26",
-    "@typescript-eslint/eslint-plugin": "^4.31.0",
-    "@typescript-eslint/parser": "^4.31.0",
-    "eslint": "^7.32.0",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "ethereum-blockies-base64": "^1.0.2",
-    "identity-obj-proxy": "^3.0.0",
+    "isomorphic-style-loader": "^5.3.2",
     "jest": "^26.6.3",
-    "jest-styled-components": "^7.0.6",
     "prettier": "^2.4.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-qr-reader": "2.2.1",
     "rimraf": "^3.0.2",
     "storybook-addon-react-docgen": "^1.2.42",
-    "styled-components": "^5.3.5",
     "ts-loader": "^8.2.0",
-    "typescript": "^4.5.0",
-    "url-loader": "^4.1.1",
-    "webpack": "4.43.0",
-    "webpack-cli": "^3.3.10",
-    "webpack-node-externals": "^2.5.2"
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0",
+    "webpack-bundle-analyzer": "^4.7.0",
+    "webpack-cli": "^5.0.1"
   },
   "peerDependencies": {
-    "@material-ui/core": "4.X.X",
-    "@mui/x-data-grid": "^4.X.X",
-    "react": "16.x.x || 17.x.x",
-    "react-dom": "16.x.x || 17.x.x",
-    "styled-components": "5.x.x"
+    "@mui/material": "5.x.x",
+    "react": "17.x.x || 18.x.x",
+    "react-dom": "17.x.x || 18.x.x"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -110,10 +106,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gnosis/safe-react-components.git"
+    "url": "git+https://github.com/safe-global/safe-react-components.git"
   },
   "bugs": {
-    "url": "https://github.com/gnosis/safe-react-components/issues"
+    "url": "https://github.com/safe-global/safe-react-components/issues"
   },
-  "homepage": "https://github.com/gnosis/safe-react-components#readme"
+  "homepage": "https://github.com/safe-global/safe-react-components#readme"
 }

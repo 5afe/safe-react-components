@@ -2,43 +2,47 @@ module.exports = ({ config }) => {
   config.module.rules.push({
     test: /\.(ts|js)x?$/,
     exclude: [/node_modules/],
-    use: [
-      {
-        loader: require.resolve('ts-loader'),
-      },
-    ]
+    use: {
+      loader: 'ts-loader',
+    },
   });
 
-  // There was a problem with the fonts not being loaded
-  // I took the fix from here: https://github.com/storybookjs/storybook/issues/5936#issuecomment-532902187
-  config.module.rules = config.module.rules.map(rule => {
-    if (rule.test && rule.test.toString().includes('woff')) {
+  config.module.rules.push({
+    test: /\.css$/i,
+    use: ['style-loader', 'css-loader'],
+  });
+
+  // remove svg from existing rule
+  config.module.rules = config.module.rules.map((rule) => {
+    if (
+      String(rule.test) ===
+      String(
+        /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani)(\?.*)?$/
+      )
+    ) {
       return {
         ...rule,
-        test: /\.(svg|ico|jpg|jpeg|png|gif|webp|cur|ani|pdf)(\?.*)?$/
-      }
+        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani)(\?.*)?$/,
+      };
     }
-    return rule
-  })
+
+    return rule;
+  });
 
   config.module.rules.push({
-    test: /\.(svg|png|jpg)$/i,
-    use: [
-      {
-        loader: 'url-loader',
-        query: {
-          name: '[name].[ext]'
-        }
-      }
-    ]
+    test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+    type: 'asset/resource',
+    generator: {
+      filename: '[name][ext][query]',
+    },
+  });
+
+  config.module.rules.push({
+    test: /\.(png|jpg)$/i,
+    type: 'asset/inline',
   });
 
   config.resolve.extensions.push('.ts', '.tsx', 'woff2');
-
-  config.node = {
-    fs: 'empty',
-    child_process: 'empty'
-  };
 
   return config;
 };

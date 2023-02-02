@@ -1,61 +1,79 @@
 # safe-react-components
 
-[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://components.gnosis-safe.io/)
-[![npm](https://img.shields.io/npm/v/@gnosis.pm/safe-react-components)](https://www.npmjs.com/package/@gnosis.pm/safe-react-components)
+![license](https://img.shields.io/github/license/safe-global/safe-react-components)
+![tests](https://img.shields.io/github/actions/workflow/status/safe-global/safe-react-components/test.yml?branch=main)
 
-This repository contains a set of React components written in TypeScript.
+This repository contains a [@mui/material](https://material-ui.com/) theming and a set of useful React components written in TypeScript.
 
-These components are being used to build the [Gnosis Safe](https://github.com/gnosis/safe-react) web and desktop app.
+These components and theming are being used to build the [Safe](https://github.com/safe-global/web-core) web and desktop app.
 
-As Gnosis Safe allows to integrate third party applications ("Safe Apps"), these components can also be used to build Safe Apps with the following benefits:
+As Safe allows to integrate third party applications ("Safe Apps"), these components can also be used to build Safe Apps with the following benefits:
 
-- **Native feel:** Build your Safe Apps with a similar style as the one used by Gnosis Safe. This makes your Safe Apps feel almost like a native feature of the Gnosis Safe.
-- **Responsive:** Most of the components will are optimized to render properly in different resolutions.
+- **Native feel:** Build your Safe Apps with a similar style as the one used by the Safe. This makes your Safe Apps feel almost like a native feature of the Safe.
 - **Blockchain-focused:** Some components solve common blockchain-related problems like inputs for ETH addresses and bigNumbers, identicon images, and more.
 - **Save time:** No need to build all components from scratch.
 
 ## How to install
 
-```bash
-   yarn add @gnosis.pm/safe-react-components
+### Yarn
 
-   npm install @gnosis.pm/safe-react-components
+```bash
+   yarn add @safe-global/safe-react-components
+```
+
+### npm
+
+```bash
+   npm install @safe-global/safe-react-components
 ```
 
 ## Integration
 
-This library makes use of [material-ui - 4.X.X](https://material-ui.com/) and [styled-components - 5.X.X](https://styled-components.com/) as `peer dependencies`, this means you must install it in your Safe App. Make sure to provide the same version as the one being used by the current version of this library.
+This library makes use of [@mui/material - 5.x.x](https://material-ui.com/) as `peer dependency`, this means you must install it in your Safe App. Make sure to provide a compatible version as defined by peer dependencies.
 
-
-Once everything is installed, you have to instantiate a [ThemeProvider](https://styled-components.com/docs/api#themeprovider) from [styled-components](https://styled-components.com/).
-
-This example uses the theme exported by safe-react-components. Here, you can extend this theme to customize it to your needs.
+Once everything is installed, you have to instantiate the SafeThemeProvider with the desired theme mode (light/dark) and with the generated safe theme return a [ThemeProvider](https://mui.com/material-ui/customization/theming/#theme-provider) for the application.
 
 ```js
-import { ThemeProvider } from 'styled-components';
-import { theme } from '@gnosis.pm/safe-react-components';
+import { ThemeProvider } from '@mui/material/styles';
+import { SafeThemeProvider } from '@safe-global/safe-react-components';
 
 import App from './App';
 
 export default () => (
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>
+  <SafeThemeProvider mode="light">
+    {(safeTheme: Theme) => (
+      <ThemeProvider theme={safeTheme}>
+        <App />
+      </ThemeProvider>
+    )}
+  </SafeThemeProvider>
 );
 ```
 
 ## Using the components
 
-You can import every component exported from `@gnosis.pm/safe-react-components` in the same way.
+You can import every component exported from `@safe-global/safe-react-components` in the same way.
 
 ```js
-import { Text } from '@gnosis.pm/safe-react-components';
+import { EthHashInfo } from '@safe-global/safe-react-components';
 
-const App = () => {
-  return <Text size="lg">some text</Text>;
+const App = (account) => {
+  return <EthHashInfo address={account} showCopyButton />;
 };
 
 export default App;
+```
+
+## Adding the fonts
+
+The fonts will be bundled on `build` and a `fonts.css` file will be provided as well for adding the corresponding `font-face` declarations
+
+```
+// from js/ts files
+import '@safe-global/safe-react-components/dist/fonts.css'
+
+// from css files
+@import url(<path-to-node_modules>/@safe-global/safe-react-components/dist/fonts.css)
 ```
 
 ## Storybook
@@ -65,11 +83,13 @@ You can find documentation and examples of all our components in this [storybook
 ## Local development
 
 To develop on your local machine, install the dependencies (including the peer dependencies):
+
 ```
 yarn
 ```
 
 Launch the Storybook:
+
 ```
 yarn storybook
 ```
@@ -79,6 +99,7 @@ yarn storybook
 Snapshot tests are generated automatically from the Storybook stories using the [StoryShots addon](https://github.com/storybookjs/storybook/tree/master/addons/storyshots/storyshots-core).
 
 To run the tests locally:
+
 ```
 yarn test
 ```
@@ -91,4 +112,4 @@ If you want to add a new Jest test, make sure to put a file with the `.test.tsx`
 
 ## Examples
 
-At Gnosis we have developed some example Safe Apps. Here is the [repository](https://github.com/gnosis/safe-react-apps).
+At Safe we have developed some example Safe Apps. Here is the [repository](https://github.com/safe-global/safe-react-apps).

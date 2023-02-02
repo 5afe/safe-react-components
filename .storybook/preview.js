@@ -1,15 +1,53 @@
 import React from 'react';
 import { addDecorator } from '@storybook/react';
 import { addParameters } from '@storybook/react';
-import { ThemeProvider } from 'styled-components';
 
-import theme from '../src/theme';
+import {
+  Stack,
+  Typography,
+  IconButton,
+  Card,
+  CardContent,
+  CssBaseline,
+  ThemeProvider,
+} from '@mui/material';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 
-addDecorator((storyFn) => (
-  <>
-    <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
-  </>
-));
+import createSafeTheme from '../src/theme/safeTheme.tsx';
+import useThemeMode from '../src/hooks/useThemeMode';
+import SafeThemeProvider from '../src/theme/SafeThemeProvider';
+
+addDecorator((storyFn) => {
+  const { switchThemeMode, themeMode } = useThemeMode();
+
+  return (
+    <SafeThemeProvider mode={themeMode}>
+      {(safeTheme) => (
+        <ThemeProvider theme={safeTheme}>
+          <CssBaseline />
+          <Card>
+            <CardContent>
+              <Stack direction="row" alignItems="center" sx={{ mb: 2 }}>
+                <IconButton
+                  onClick={switchThemeMode}
+                  color="inherit"
+                  sx={{ p: 0 }}>
+                  {themeMode === 'light' ? (
+                    <Brightness4Icon />
+                  ) : (
+                    <Brightness7Icon />
+                  )}
+                </IconButton>
+              </Stack>
+              {storyFn()}
+            </CardContent>
+          </Card>
+        </ThemeProvider>
+      )}
+    </SafeThemeProvider>
+  );
+});
 
 addParameters({
   options: {
