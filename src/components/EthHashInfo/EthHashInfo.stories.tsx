@@ -2,9 +2,10 @@ import * as React from 'react';
 
 import EthHashInfo from './';
 
-export const Main = (): React.ReactElement => {
+export const Main = ({ size }): React.ReactElement => {
   return (
     <EthHashInfo
+      avatarSize={size || null}
       showPrefix
       prefix="eth"
       address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"
@@ -43,6 +44,10 @@ export const withCopyButton = (): React.ReactElement => {
       copyPrefix
     />
   );
+};
+
+export const withAvatarSize = (): React.ReactElement => {
+  return <Main size={100} />;
 };
 
 export default {
