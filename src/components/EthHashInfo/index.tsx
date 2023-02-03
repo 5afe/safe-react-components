@@ -119,6 +119,10 @@ const AvatarContainer = styled('div')<{ size?: number }>(({ size }) => ({
   flexShrink: 0,
   width: size || '2.3em !important',
   height: size || '2.3em !important',
+  '> *': {
+    width: '100% !important',
+    height: '100% !important',
+  },
 }));
 
 const AddressContainer = styled('div')({
