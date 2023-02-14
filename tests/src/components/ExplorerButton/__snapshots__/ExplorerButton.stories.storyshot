@@ -49,6 +49,7 @@ exports[`Storyshots Components/ExplorerButton Main 1`] = `
       data-mui-internal-clone-element={true}
       href="https://goerli.etherscan.io/address/0x51A099ac1BF46D471110AA8974024Bfe518Fd6C4"
       onBlur={[Function]}
+      onClick={[Function]}
       onContextMenu={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}

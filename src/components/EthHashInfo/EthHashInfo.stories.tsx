@@ -1,11 +1,15 @@
 import * as React from 'react';
 
-import EthHashInfo from './';
+import EthHashInfo, { type EthHashInfoProps } from './';
 
-export const Main = ({ size }): React.ReactElement => {
+export const Main = ({
+  size,
+}: {
+  size?: EthHashInfoProps['avatarSize'];
+}): React.ReactElement => {
   return (
     <EthHashInfo
-      avatarSize={size || null}
+      avatarSize={size}
       showPrefix
       prefix="eth"
       address="0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"

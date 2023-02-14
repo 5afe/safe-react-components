@@ -50,6 +50,10 @@ const EthHashInfo = ({
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
+  const onError = React.useCallback(() => {
+    setFallbackToIdenticon(true);
+  }, []);
+
   return (
     <Container>
       {showAvatar && (
@@ -58,7 +62,7 @@ const EthHashInfo = ({
             <img
               src={customAvatar}
               alt={address}
-              onError={() => setFallbackToIdenticon(true)}
+              onError={onError}
               width={avatarSize}
               height={avatarSize}
             />
@@ -82,11 +86,9 @@ const EthHashInfo = ({
         <AddressContainer>
           <Box fontWeight="inherit" fontSize="inherit">
             {showPrefix && shouldPrefix && prefix && <b>{prefix}:</b>}
-            {isMobile ? (
-              <span>{shortenAddress(address)}</span>
-            ) : (
-              <span>{shortAddress ? shortenAddress(address) : address}</span>
-            )}
+            <span>
+              {shortAddress || isMobile ? shortenAddress(address) : address}
+            </span>
           </Box>
 
           {showCopyButton && (
