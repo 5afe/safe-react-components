@@ -10,6 +10,8 @@ export type ExplorerButtonProps = {
   href: string;
 };
 
+const stopPropagation = (e: React.SyntheticEvent) => e.stopPropagation();
+
 const ExplorerButton = ({
   title,
   href,
@@ -22,6 +24,7 @@ const ExplorerButton = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={stopPropagation}
         size="small">
         <Icon component={LinkIcon} />
       </IconButton>
