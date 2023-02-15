@@ -59,7 +59,7 @@ jobs:
           repo-token-user-login: 'github-actions[bot]'
         if: success() && github.event.number
         env:
-          REVIEW_FEATURE_URL: https://pr${{ github.event.number }}--review-react-hr.5afe.dev
+          REVIEW_FEATURE_URL: https://pr${{ github.event.number }}--${{ env.REPO_NAME_ALPHANUMERIC }}.review-react-hr.5afe.dev
 
       # Script to upload release files
       - name: 'Upload release build files for production'
