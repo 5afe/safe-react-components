@@ -3,7 +3,7 @@
 BUILD_DIR='storybook-static'
 
 function deploy_pull_request {
-  REVIEW_ENVIRONMENT_DOMAIN='review.gnosisdev.com'
+  REVIEW_ENVIRONMENT_DOMAIN='review-react-hr.5afe.dev'
 
   # Pull request name with "pr" prefix
   PULL_REQUEST_NAME="pr$PR_NUMBER"
