@@ -1,6 +1,6 @@
 {
   "name": "@safe-global/safe-react-components",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Safe UI components",
   "main": "dist/index.min.js",
   "typings": "dist/index.d.ts",
