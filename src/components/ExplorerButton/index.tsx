@@ -19,8 +19,9 @@ const ExplorerButton = ({
   if (!href) return null;
 
   return (
-    <Tooltip title={title} placement="top">
+    <Tooltip title={title} placement="top" key={`tooltip_${href}`}>
       <IconButton
+        key={href}
         href={href}
         target="_blank"
         rel="noopener noreferrer"
