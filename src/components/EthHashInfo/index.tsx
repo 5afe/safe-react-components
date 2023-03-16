@@ -93,9 +93,9 @@ const EthHashInfo = ({
 
           {showCopyButton && (
             <CopyAddressButton
-              prefix={prefix}
+              
               address={address}
-              copyPrefix={shouldPrefix && copyPrefix}
+              
             />
           )}
 

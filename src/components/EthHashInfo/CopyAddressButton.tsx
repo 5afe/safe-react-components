@@ -9,11 +9,11 @@ type CopyAddressButtonProps = {
 };
 
 const CopyAddressButton = ({
-  prefix,
-  address,
-  copyPrefix,
+  
+  address
+  
 }: CopyAddressButtonProps): React.ReactElement => {
-  const addressText = copyPrefix && prefix ? `${prefix}:${address}` : address;
+  const addressText = address;
 
   return <CopyButton text={addressText} />;
 };
