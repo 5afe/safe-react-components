@@ -21,6 +21,7 @@ const ExplorerButton = ({
   return (
     <Tooltip title={title} placement="top">
       <IconButton
+        key="explorer"
         href={href}
         target="_blank"
         rel="noopener noreferrer"
