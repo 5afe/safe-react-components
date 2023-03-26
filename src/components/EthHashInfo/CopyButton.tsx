@@ -42,6 +42,7 @@ const CopyButton = ({
       placement="top"
       onMouseLeave={handleMouseLeave}>
       <IconButton
+        key="copy"
         aria-label={initialToolTipText}
         onClick={handleCopy}
         className={className}
