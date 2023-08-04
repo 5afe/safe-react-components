@@ -1,6 +1,6 @@
 {
   "name": "@safe-global/safe-react-components",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Safe UI components",
   "main": "dist/index.min.js",
   "typings": "dist/index.d.ts",
@@ -35,8 +35,8 @@
     "@babel/preset-typescript": "^7.18.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@mui/icons-material": "^5.11.0",
-    "@mui/material": "^5.11.7",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.3",
     "@storybook/addon-actions": "^6.5.15",
     "@storybook/addon-controls": "^6.5.15",
     "@storybook/addon-docs": "^6.5.15",
