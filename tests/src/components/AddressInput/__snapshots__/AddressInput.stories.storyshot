@@ -8,7 +8,7 @@ exports[`Storyshots Components/AddressInput Main 1`] = `
     className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
   >
     <div
-      className="css-vaugxt-MuiStack-root"
+      className="MuiStack-root css-vaugxt-MuiStack-root"
     >
       <button
         className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-qk9crl-MuiButtonBase-root-MuiIconButton-root"
