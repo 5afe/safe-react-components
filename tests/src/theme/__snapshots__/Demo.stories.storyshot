@@ -8,7 +8,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
     className="MuiCardContent-root css-46bh2p-MuiCardContent-root"
   >
     <div
-      className="css-vaugxt-MuiStack-root"
+      className="MuiStack-root css-vaugxt-MuiStack-root"
     >
       <button
         className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-qk9crl-MuiButtonBase-root-MuiIconButton-root"
@@ -46,7 +46,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
       </button>
     </div>
     <div
-      className="css-678bp8-MuiStack-root"
+      className="MuiStack-root css-8mcjw0-MuiStack-root"
     >
       <div>
         <h1
@@ -106,7 +106,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
         </p>
       </div>
       <div
-        className="css-1dpyoso-MuiStack-root"
+        className="MuiStack-root css-1x33toh-MuiStack-root"
       >
         <h5
           className="MuiTypography-root MuiTypography-h5 css-1lv070m-MuiTypography-root"
@@ -162,7 +162,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
         Buttons
       </h5>
       <div
-        className="css-e53awj-MuiStack-root"
+        className="MuiStack-root css-pl8gqh-MuiStack-root"
       >
         <button
           className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1hkfg6j-MuiButtonBase-root-MuiButton-root"
@@ -235,7 +235,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
         </button>
       </div>
       <div
-        className="css-e53awj-MuiStack-root"
+        className="MuiStack-root css-pl8gqh-MuiStack-root"
       >
         <button
           className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium css-rrl6le-MuiButtonBase-root-MuiButton-root"
@@ -308,7 +308,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
         </button>
       </div>
       <div
-        className="css-e53awj-MuiStack-root"
+        className="MuiStack-root css-pl8gqh-MuiStack-root"
       >
         <button
           className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textError MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textError MuiButton-sizeMedium MuiButton-textSizeMedium css-53pjc6-MuiButtonBase-root-MuiButton-root"
@@ -386,13 +386,13 @@ exports[`Storyshots Demo Simple Demo 1`] = `
         Select
       </h5>
       <div
-        className="css-13qoju5-MuiStack-root"
+        className="MuiStack-root css-1ebh2xp-MuiStack-root"
       >
         <div
           className="MuiFormControl-root MuiFormControl-fullWidth css-q8hpuo-MuiFormControl-root"
         >
           <label
-            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-lpfe3b-MuiFormLabel-root-MuiInputLabel-root"
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-18pzvfc-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink={true}
             id="demo-simple-select-label"
           >
@@ -419,6 +419,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
             </div>
             <input
               aria-hidden={true}
+              aria-invalid={false}
               className="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
               disabled={false}
               onAnimationStart={[Function]}
@@ -454,7 +455,7 @@ exports[`Storyshots Demo Simple Demo 1`] = `
         </div>
       </div>
       <div
-        className="css-1dpyoso-MuiStack-root"
+        className="MuiStack-root css-1x33toh-MuiStack-root"
       >
         <h5
           className="MuiTypography-root MuiTypography-h5 css-1lv070m-MuiTypography-root"
