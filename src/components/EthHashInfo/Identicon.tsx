@@ -1,5 +1,5 @@
 import * as React from 'react';
-import createIdenticon from 'ethereum-blockies-base64';
+import { blo } from 'blo';
 import Skeleton from '@mui/material/Skeleton';
 import { styled } from '@mui/material/styles';
 
@@ -14,7 +14,7 @@ const Identicon = ({
 }: IdenticonProps): React.ReactElement => {
   const style = React.useMemo<React.CSSProperties | null>(() => {
     try {
-      const icon = createIdenticon(address);
+      const icon = blo(address as `0x${string}`);
       return {
         backgroundImage: `url(${icon})`,
         width: `${size}px`,
