@@ -296,7 +296,6 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
             '&. MuiPaper-root': {
               backgroundColor: theme.palette.info.background,
             },
-            border: `1px solid ${theme.palette.info.main}`,
           }),
           standardSuccess: ({ theme }) => ({
             '& .MuiAlert-icon': {
@@ -305,7 +304,6 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
             '&. MuiPaper-root': {
               backgroundColor: theme.palette.success.background,
             },
-            border: `1px solid ${theme.palette.success.main}`,
           }),
           standardWarning: ({ theme }) => ({
             '& .MuiAlert-icon': {
@@ -314,7 +312,6 @@ const createSafeTheme = (mode: PaletteMode): Theme => {
             '&. MuiPaper-root': {
               backgroundColor: theme.palette.warning.background,
             },
-            border: `1px solid ${theme.palette.warning.main}`,
           }),
           root: ({ theme }) => ({
             color: theme.palette.text.primary,
